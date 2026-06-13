@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#fefae0">
+  <title>Tsumori — 積もり</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Desktop Navigation -->
+    <nav id="nav" class="main-nav desktop-nav">
+      <div class="nav-inner">
+        <a href="#dashboard" class="nav-brand">
+          <span class="nav-brand-icon">累</span>
+          <span class="nav-brand-text">Tsumori</span>
+        </a>
+        <div class="nav-links">
+          <a href="#dashboard" class="nav-link" data-view="dashboard">
+            <i data-lucide="layout-dashboard"></i>
+            <span>毎朝レポート</span>
+          </a>
+          <a href="#vocabulary" class="nav-link" data-view="vocabulary">
+            <i data-lucide="book-open"></i>
+            <span>単語帳</span>
+          </a>
+          <a href="#phrases" class="nav-link" data-view="phrases">
+            <i data-lucide="quote"></i>
+            <span>語句庫</span>
+          </a>
+          <a href="#article" class="nav-link" data-view="article">
+            <i data-lucide="newspaper"></i>
+            <span>毎日ニュース</span>
+          </a>
+          <a href="#expert" class="nav-link" data-view="expert">
+            <i data-lucide="sparkles"></i>
+            <span>専門家</span>
+          </a>
+          <a href="#speaking" class="nav-link" data-view="speaking">
+            <i data-lucide="mic"></i>
+            <span>話す</span>
+          </a>
+          <a href="#settings" class="nav-link" data-view="settings">
+            <i data-lucide="settings"></i>
+            <span>設定</span>
+          </a>
+        </div>
+        <div class="nav-user">
+          <span id="nav-user-name" class="nav-user-name"></span>
+          <button id="nav-user-toggle" class="btn-icon" title="ユーザー切替">
+            <i data-lucide="user-circle"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav">
+      <div class="bottom-nav-inner">
+        <button class="bottom-nav-link active" data-view="dashboard">
+          <i data-lucide="layout-dashboard"></i>
+          <span>ホーム</span>
+        </button>
+        <button class="bottom-nav-link" data-view="vocabulary">
+          <i data-lucide="book-open"></i>
+          <span>単語帳</span>
+        </button>
+        <button class="bottom-nav-link" data-view="phrases">
+          <i data-lucide="quote"></i>
+          <span>語句庫</span>
+        </button>
+        <button class="bottom-nav-link" data-view="article">
+          <i data-lucide="newspaper"></i>
+          <span>ニュース</span>
+        </button>
+        <button class="bottom-nav-link" data-view="expert">
+          <i data-lucide="sparkles"></i>
+          <span>専門家</span>
+        </button>
+        <button class="bottom-nav-link" data-view="speaking">
+          <i data-lucide="mic"></i>
+          <span>話す</span>
+        </button>
+        <button class="bottom-nav-link" data-view="settings">
+          <i data-lucide="settings"></i>
+          <span>設定</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+      <!-- Views loaded dynamically -->
+    </main>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal-overlay" class="modal-overlay" style="display:none">
+    <div id="modal-container" class="modal-container"></div>
+  </div>
+
+  <!-- Error Diagnostic -->
+  <script>
+    window.onerror = function(msg, url, line, col, err) {
+      const overlay = document.createElement('div');
+      overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;overflow:auto;';
+      overlay.innerHTML = '<pre style="padding:20px;font-size:13px;color:#ff6b6b;background:#1a1a2e;border-radius:8px;max-width:700px;width:100%;white-space:pre-wrap">' +
+        '<h2 style="color:#fff;margin-bottom:12px">JS Error</h2>' +
+        '<p><b>Message:</b> ' + msg + '</p>' +
+        '<p><b>URL:</b> ' + url + '</p>' +
+        '<p><b>Line:</b> ' + line + (col ? ':' + col : '') + '</p>' +
+        '<p><b>Stack:</b><br>' + (err && err.stack ? err.stack.replace(/\n/g, '<br>') : 'N/A') + '</p>' +
+        '</pre>';
+      document.body.appendChild(overlay);
+      return false;
+    };
+  </script>
+
+  <!-- Scripts -->
+  <script src="js/lucide.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/sm2.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/nhk.js"></script>
+  <script src="js/components/nav.js"></script>
+  <script src="js/components/modal.js"></script>
+  <script src="js/views/dashboard.js"></script>
+  <script src="js/views/vocabulary.js"></script>
+  <script src="js/views/phrases.js"></script>
+  <script src="js/views/article.js"></script>
+  <script src="js/views/speaking.js"></script>
+  <script src="js/views/settings.js"></script>
+  <script src="js/views/expert.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
