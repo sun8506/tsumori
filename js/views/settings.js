@@ -1,187 +1,409 @@
-/** Settings View */
-
 const Settings = {
-  currentTab: 'users',
-  async init() { this.render(); this.renderUserList(); this.loadConfig(); },
+  currentTab: 'account',
+
+  async init() {
+    this.render();
+  },
+
   render() {
-    const main = document.getElementById('main-content');
-    main.innerHTML = `
-      <header class="view-header"><h1>Settings</h1><p class="view-subtitle">Account and app settings</p></header>
+    document.getElementById('main-content').innerHTML = `
+      <header class="view-header">
+        <h1>${t('settings.title')}</h1>
+        <p class="view-subtitle">${t('settings.subtitle')}</p>
+      </header>
       <div class="settings-tabs">
-        <button class="settings-tab active" data-tab="users">Users</button>
-        <button class="settings-tab" data-tab="data">Data</button>
-        <button class="settings-tab" data-tab="profile">Profile</button>
-        <button class="settings-tab" data-tab="expert">Expert</button>
-        <button class="settings-tab" data-tab="about">About</button>
+        <button class="settings-tab" data-tab="account">${t('settings.account')}</button>
+        <button class="settings-tab" data-tab="profile">${t('settings.profile')}</button>
+        <button class="settings-tab" data-tab="api">${t('settings.api')}</button>
+        <button class="settings-tab" data-tab="data">${t('settings.data')}</button>
+        <button class="settings-tab" data-tab="guide">${t('settings.guide')}</button>
+        <button class="settings-tab" data-tab="about">${t('settings.about')}</button>
       </div>
       <div id="settings-body"></div>
     `;
-    this.bindTabEvents(); this.showTab('users');
-  },
-  bindTabEvents() {
     document.querySelectorAll('.settings-tab').forEach(tab => {
       tab.addEventListener('click', () => {
-        document.querySelectorAll('.settings-tab').forEach(t => t.classList.remove('active'));
-        tab.classList.add('active'); this.showTab(tab.dataset.tab);
+        document.querySelectorAll('.settings-tab').forEach(item => item.classList.remove('active'));
+        tab.classList.add('active');
+        this.showTab(tab.dataset.tab);
       });
     });
+    document.querySelector(`[data-tab="${this.currentTab}"]`)?.classList.add('active');
+    this.showTab(this.currentTab);
   },
+
   showTab(tab) {
     this.currentTab = tab;
-    const body = document.getElementById('settings-body');
-    if (!body) return;
-    const config = JSON.parse(Storage.get('_config') || '{}');
-    const uid = config.currentUserId;
-    if (tab === 'users') {
-      body.innerHTML = '<div id="user-list"></div><button class="btn btn-primary" id="btn-add-user" style="margin-top:12px">Add New User</button>';
-      this.renderUserList();
-      document.getElementById('btn-add-user').addEventListener('click', () => this.addUser());
-    } else if (tab === 'data') {
-      body.innerHTML = `
-        <div class="card"><h3 style="margin-bottom:12px">Export</h3><p class="card-subtitle">Export all data as JSON</p><button class="btn btn-primary" id="btn-export">Export Data</button></div>
-        <div class="card" style="margin-top:12px"><h3 style="margin-bottom:12px">Import</h3><p class="card-subtitle">Restore data from JSON</p><input type="file" id="file-import" accept=".json" style="margin-bottom:8px"><button class="btn btn-secondary" id="btn-import">Import Data</button></div>
-        <div class="card" style="margin-top:12px"><h3 style="margin-bottom:12px;color:var(--danger)">Clear All Data</h3><button class="btn btn-danger" id="btn-clear">Delete All</button></div>
-      `;
-      this.bindDataEvents();
-    } else if (tab === 'about') {
-      body.innerHTML = '<div class="card"><h3>About Tsumori</h3><p class="card-subtitle" style="margin-top:8px">Japanese learning toolkit</p><div style="margin-top:16px"><p><strong>Version:</strong> 1.0.0</p><p style="margin-top:4px"><strong>Features:</strong></p><ul style="margin-top:4px;padding-left:20px;line-height:2"><li>SM-2 spaced repetition</li><li>NHK News Web Easy</li><li>Speech recognition</li><li>Multi-user support</li><li>AI expert explanations</li></ul></div></div>';
-    } else if (tab === 'profile') {
-      const p = Storage.getUserProfile(uid); const pr = p.profile || {};
-      const lv = pr.level || 'n3';
-      body.innerHTML = `
-        <div class="card"><h3 style="margin-bottom:12px">Learner Profile</h3>
-        <div class="form-group"><label class="form-label">Explanation Language</label><select class="form-input" id="input-language">
-          <option value="zh" ${pr.language==='zh'?'selected':''}>Chinese</option>
-          <option value="en" ${pr.language==='en'?'selected':''}>English</option>
-          <option value="zh-en" ${pr.language==='zh-en'?'selected':''}>Chinese + English</option>
-          <option value="ja-zh" ${pr.language==='ja-zh'?'selected':''}>Japanese + Chinese</option>
-        </select></div>
-        <div class="form-group"><label class="form-label">Industry</label><select class="form-input" id="input-industry">
-          <option value="none" ${pr.industry==='none'?'selected':''}>General</option>
-          <option value="it" ${pr.industry==='it'?'selected':''}>IT / Tech</option>
-          <option value="sales" ${pr.industry==='sales'?'selected':''}>Sales</option>
-          <option value="realestate" ${pr.industry==='realestate'?'selected':''}>Real Estate</option>
-          <option value="hospitality" ${pr.industry==='hospitality'?'selected':''}>Hospitality</option>
-          <option value="food" ${pr.industry==='food'?'selected':''}>Food &amp; Beverage</option>
-          <option value="service" ${pr.industry==='service'?'selected':''}>Service</option>
-          <option value="education" ${pr.industry==='education'?'selected':''}>Education</option>
-          <option value="manufacturing" ${pr.industry==='manufacturing'?'selected':''}>Manufacturing</option>
-        </select></div>
-        <div class="form-group"><label class="form-label">Japanese Level</label><select class="form-input" id="input-level">
-          <option value="n5" ${lv==='n5'?'selected':''}>N5 (Beginner)</option>
-          <option value="n4" ${lv==='n4'?'selected':''}>N4 (Elementary)</option>
-          <option value="n3" ${lv==='n3'?'selected':''}>N3 (Intermediate)</option>
-          <option value="n2" ${lv==='n2'?'selected':''}>N2 (Upper-Intermediate)</option>
-          <option value="n1" ${lv==='n1'?'selected':''}>N1 (Advanced)</option>
-          <option value="free" ${lv==='free'?'selected':''}>Free</option>
-        </select></div>
-        <button class="btn btn-primary" id="btn-save-profile">Save Profile</button></div>
-      `;
-      document.getElementById('btn-save-profile').addEventListener('click', () => {
-        const l = document.getElementById('input-language').value;
-        const i = document.getElementById('input-industry').value;
-        const lv2 = document.getElementById('input-level').value;
-        Storage.updateUserProfile(uid, { profile: { language: l, industry: i, level: lv2 } });
-        alert('Profile updated');
-      });
-    } else if (tab === 'expert') {
-      const s = (Storage.getUserProfile(uid).settings) || {};
-      const aa = s.autoAddToVocab || false;
-      const se = s.showExamples !== false;
-      const sg = s.showGrammar !== false;
-      const me = s.maxExamples || 3;
-      body.innerHTML = `
-        <div class="card"><h3 style="margin-bottom:12px">Expert Settings</h3>
-        <div class="form-group"><label class="form-label"><input type="checkbox" id="chk-auto-vocab" ${aa?'checked':''}> Auto-add to vocabulary</label></div>
-        <div class="form-group"><label class="form-label"><input type="checkbox" id="chk-show-examples" ${se?'checked':''}> Show example sentences</label></div>
-        <div class="form-group"><label class="form-label"><input type="checkbox" id="chk-show-grammar" ${sg?'checked':''}> Show grammar notes</label></div>
-        <div class="form-group"><label class="form-label">Max examples</label><select class="form-input" id="input-max-examples">
-          <option value="1" ${me===1?'selected':''}>1</option><option value="2" ${me===2?'selected':''}>2</option>
-          <option value="3" ${me===3?'selected':''}>3</option><option value="4" ${me===4?'selected':''}>4</option>
-          <option value="5" ${me===5?'selected':''}>5</option>
-        </select></div>
-        <button class="btn btn-primary" id="btn-save-expert-settings">Save Settings</button></div>
-      `;
-      document.getElementById('btn-save-expert-settings').addEventListener('click', () => {
-        Storage.updateUserProfile(uid, { settings: {
-          autoAddToVocab: document.getElementById('chk-auto-vocab').checked,
-          showExamples: document.getElementById('chk-show-examples').checked,
-          showGrammar: document.getElementById('chk-show-grammar').checked,
-          maxExamples: parseInt(document.getElementById('input-max-examples').value)
-        }});
-        alert('Settings updated');
-      });
-    }
+    if (tab === 'account') this.renderAccount();
+    if (tab === 'profile') this.renderProfile();
+    if (tab === 'api') this.renderApi();
+    if (tab === 'data') this.renderData();
+    if (tab === 'guide') this.renderGuide();
+    if (tab === 'about') this.renderAbout();
   },
-  renderUserList() {
-    const config = JSON.parse(Storage.get('_config') || '{}');
-    const users = config.users || [];
-    const currentId = config.currentUserId;
-    const list = document.getElementById('user-list');
-    if (!list) return;
-    if (users.length === 0) { list.innerHTML = '<p class="empty-hint">No users</p>'; return; }
-    list.innerHTML = users.map(u => `
-      <div class="card ${u.id===currentId?'user-card-current':''}" data-user-id="${u.id}">
-        <div class="card-header"><strong>${this.escapeHtml(u.name)}</strong><span class="badge badge-primary">${u.id===currentId?'Active':''}</span></div>
-        <p class="card-subtitle">Words: ${Storage.count('vocabulary')}</p>
+
+  renderAccount() {
+    const config = Storage.getConfig();
+    const user = config.users.find(item => item.id === config.currentUserId);
+    const storageMode = user?.storageMode === 'cloud' ? 'cloud' : 'local';
+    document.getElementById('settings-body').innerHTML = `
+      <div class="card account-card">
+        <div class="card-header">
+          <div>
+            <h3>${this.escapeHtml(user?.name || '')}</h3>
+            <p class="card-subtitle">${this.escapeHtml(user?.email || '')}</p>
+          </div>
+          <span class="badge badge-primary">${t(`storage.${storageMode}`)}</span>
+        </div>
+        <p class="settings-guide-copy">${t(`storage.${storageMode}Settings`)}</p>
       </div>
-    `).join('');
-  },
-  async addUser() {
-    const name = prompt('Enter new username');
-    if (!name || !name.trim()) return;
-    const config = JSON.parse(Storage.get('_config') || '{}');
-    config.users = config.users || [];
-    config.users.push({ id: 'user_' + Date.now(), name: name.trim() });
-    if (!config.currentUserId) config.currentUserId = config.users[0].id;
-    Storage.set('_config', JSON.stringify(config));
-    this.renderUserList();
-  },
-  async showUserSwitcher() {
-    const config = JSON.parse(Storage.get('_config') || '{}');
-    const users = config.users || [];
-    if (users.length < 2) { if(users.length===1) document.getElementById('nav-user-name').textContent=users[0].name; this.renderUserList(); return; }
-    const name = users.map((u,i) => `${i+1}. ${u.name}${u.id===config.currentUserId?' (Active)':''}`).join('\n');
-    const choice = prompt('Switch user:\n' + name);
-    if (!choice) return;
-    const idx = parseInt(choice) - 1;
-    if (idx >= 0 && idx < users.length) {
-      config.currentUserId = users[idx].id;
-      Storage.set('_config', JSON.stringify(config));
-      document.getElementById('nav-user-name').textContent = users[idx].name;
-      this.renderUserList();
-    }
-  },
-  bindDataEvents() {
-    document.getElementById('btn-export').addEventListener('click', () => {
-      const data = Storage.export();
-      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a'); a.href = url;
-      a.download = 'tsumori_export_' + new Date().toISOString().slice(0,10) + '.json';
-      a.click(); URL.revokeObjectURL(url);
+      <div class="card">
+        <h3>${t('storage.current')}</h3>
+        <div class="storage-mode-settings">
+          <label class="storage-mode-option">
+            <input type="radio" name="settings-storage-mode" value="local" ${storageMode === 'local' ? 'checked' : ''}>
+            <span><strong>${t('storage.local')}</strong><small>${t('storage.localDesc')}</small></span>
+          </label>
+          <label class="storage-mode-option">
+            <input type="radio" name="settings-storage-mode" value="cloud" ${storageMode === 'cloud' ? 'checked' : ''}>
+            <span><strong>${t('storage.cloud')}</strong><small>${t('storage.cloudDesc')}</small></span>
+          </label>
+        </div>
+        <button class="btn btn-primary" id="btn-change-storage">${t('storage.change')}</button>
+      </div>
+      <div class="card">
+        <h3>${t('settings.language')}</h3>
+        <p class="card-subtitle">${t('settings.languageHelp')}</p>
+        <div class="form-group settings-language-field">
+          <select class="form-input" id="settings-ui-language">${I18n.options(user?.uiLanguage || I18n.getLanguage())}</select>
+        </div>
+      </div>
+      <div class="card">
+        <h3>${t('settings.privacy')}</h3>
+        <p class="settings-guide-copy">${t('settings.consentAt')}: ${user?.privacyConsentAt ? I18n.date(user.privacyConsentAt, { year: 'numeric', month: 'long', day: 'numeric' }) : '-'}</p>
+        <button class="btn btn-secondary" id="btn-view-policy">${t('auth.openPolicy')}</button>
+      </div>
+      <button class="btn btn-danger" id="btn-logout">${t('settings.logout')}</button>
+    `;
+    document.getElementById('settings-ui-language').addEventListener('change', event => {
+      I18n.setLanguage(event.target.value);
+      Nav.render();
+      this.render();
     });
-    document.getElementById('btn-import').addEventListener('click', () => {
-      const fi = document.getElementById('file-import');
-      const file = fi.files[0];
-      if (!file) { alert('Please select a file'); return; }
-      const reader = new FileReader();
-      reader.onload = (e) => { try { Storage.import(JSON.parse(e.target.result)); alert('Data imported'); location.reload(); } catch(err) { alert('Import failed: ' + err.message); } };
-      reader.readAsText(file);
+    document.getElementById('btn-change-storage').addEventListener('click', async event => {
+      const button = event.currentTarget;
+      const mode = document.querySelector('input[name="settings-storage-mode"]:checked').value;
+      button.disabled = true;
+      try {
+        await Auth.changeStorageMode(mode);
+        alert(t('storage.saved'));
+        this.renderAccount();
+      } catch (error) {
+        alert(error.message);
+        button.disabled = false;
+      }
     });
-    document.getElementById('btn-clear').addEventListener('click', () => {
-      if (confirm('Delete ALL data and settings?')) {
-        if (confirm('This cannot be undone. Delete everything?')) {
-          localStorage.clear(); alert('All cleared. Reloading...'); location.reload();
+    document.getElementById('btn-view-policy').addEventListener('click', () => Auth.showPolicy());
+    document.getElementById('btn-logout').addEventListener('click', () => Auth.logout());
+  },
+
+  renderUsers() {
+    const config = Storage.getConfig();
+    const body = document.getElementById('settings-body');
+    body.innerHTML = `
+      <div id="user-list">
+        ${config.users.map(user => `
+          <div class="card ${user.id === config.currentUserId ? 'user-card-current' : ''}">
+            <div class="card-header">
+              <strong>${this.escapeHtml(user.name)}</strong>
+              ${user.id === config.currentUserId ? '<span class="badge badge-primary">Active</span>' : `<button class="btn btn-secondary btn-sm" data-switch="${user.id}">Switch</button>`}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="view-actions">
+        <button class="btn btn-primary" id="btn-add-user">Add user</button>
+      </div>
+    `;
+    body.querySelectorAll('[data-switch]').forEach(button => {
+      button.addEventListener('click', () => {
+        Storage.switchUser(button.dataset.switch);
+        Nav.render();
+        this.renderUsers();
+      });
+    });
+    document.getElementById('btn-add-user').addEventListener('click', () => this.addUser());
+  },
+
+  renderProfile() {
+    const userId = Storage._getCurrentUserId();
+    const userData = Storage.getUserProfile(userId);
+    const profile = userData.profile;
+    const settings = userData.settings;
+    document.getElementById('settings-body').innerHTML = `
+      <div class="card">
+        <h3>${t('profile.title')}</h3>
+        <div class="form-group">
+          <label class="form-label">Explanation language</label>
+          <select class="form-input" id="input-language">
+            ${this.option('zh', 'Chinese', profile.language)}
+            ${this.option('en', 'English', profile.language)}
+            ${this.option('zh-en', t('profile.zhEn'), profile.language)}
+            ${this.option('ja-zh', t('profile.jaZh'), profile.language)}
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Industry</label>
+          <select class="form-input" id="input-industry">
+            ${['none', 'it', 'sales', 'realestate', 'hospitality', 'food', 'service', 'education', 'manufacturing'].map(value => this.option(value, t(`industry.${value}`), profile.industry)).join('')}
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Japanese level</label>
+          <select class="form-input" id="input-level">
+            ${['n5', 'n4', 'n3', 'n2', 'n1', 'free'].map(value => this.option(value, value.toUpperCase(), profile.level || 'n3')).join('')}
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><input type="checkbox" id="chk-auto-vocab" ${settings.autoAddToVocab ? 'checked' : ''}> ${t('profile.autoVocab')}</label>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Max examples</label>
+          <input class="form-input" id="input-max-examples" type="number" min="1" max="5" value="${settings.maxExamples || 3}">
+        </div>
+        <button class="btn btn-primary" id="btn-save-profile">${t('common.save')}</button>
+      </div>
+    `;
+    document.getElementById('btn-save-profile').addEventListener('click', () => {
+      Storage.updateUserProfile(userId, {
+        profile: {
+          language: document.getElementById('input-language').value,
+          industry: document.getElementById('input-industry').value,
+          level: document.getElementById('input-level').value
+        },
+        settings: {
+          autoAddToVocab: document.getElementById('chk-auto-vocab').checked,
+          maxExamples: Number(document.getElementById('input-max-examples').value || 3)
         }
+      });
+      alert(t('profile.saved'));
+    });
+  },
+
+  renderApi() {
+    const config = Storage.getConfig();
+    const ai = config.ai;
+    const providerIds = ['gemini', 'openai', 'deepseek'];
+    document.getElementById('settings-body').innerHTML = `
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>${t('api.title')}</h3>
+            <p class="card-subtitle">${t('api.help')}</p>
+          </div>
+        </div>
+        <div class="ai-provider-switch" role="radiogroup" aria-label="AI provider">
+          ${providerIds.map(providerId => `
+            <label class="ai-provider-option ${ai.activeProvider === providerId ? 'active' : ''}">
+              <input type="radio" name="ai-provider" value="${providerId}" ${ai.activeProvider === providerId ? 'checked' : ''}>
+              <span>${AIProvider.PROVIDERS[providerId].label}</span>
+              <small>${ai.activeProvider === providerId ? t('api.enabled') : t('api.disabled')}</small>
+            </label>
+          `).join('')}
+        </div>
+        <div class="ai-provider-configs">
+          ${providerIds.map(providerId => this.providerConfigForm(providerId, ai)).join('')}
+        </div>
+        <div class="view-actions">
+          <button class="btn btn-primary" id="btn-save-api">${t('api.save')}</button>
+        </div>
+      </div>
+    `;
+
+    document.querySelectorAll('input[name="ai-provider"]').forEach(input => {
+      input.addEventListener('change', () => this.updateProviderState(input.value));
+    });
+    this.updateProviderState(ai.activeProvider);
+
+    document.getElementById('btn-save-api').addEventListener('click', () => {
+      const next = Storage.getConfig();
+      const activeProvider = document.querySelector('input[name="ai-provider"]:checked').value;
+      next.ai.activeProvider = activeProvider;
+      providerIds.forEach(providerId => {
+        next.ai.providers[providerId] = {
+          apiKey: document.getElementById(`input-api-key-${providerId}`).value.trim(),
+          model: document.getElementById(`input-model-${providerId}`).value
+        };
+      });
+      Storage.saveConfig(next);
+      alert(`${AIProvider.PROVIDERS[activeProvider].label} is now the active AI provider.`);
+    });
+  },
+
+  providerConfigForm(providerId, ai) {
+    const definition = AIProvider.PROVIDERS[providerId];
+    const provider = ai.providers[providerId];
+    const placeholder = {
+      gemini: 'AIza...',
+      openai: 'sk-...',
+      deepseek: 'sk-...'
+    }[providerId];
+    return `
+      <section class="ai-provider-config" data-provider-config="${providerId}">
+        <div class="form-group">
+          <label class="form-label" for="input-api-key-${providerId}">${definition.label} API Key</label>
+          <input class="form-input" id="input-api-key-${providerId}" type="password" value="${this.escapeAttr(provider.apiKey || '')}" placeholder="${placeholder}" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="input-model-${providerId}">${t('api.model')}</label>
+          <select class="form-input" id="input-model-${providerId}">
+            ${definition.models.map(model => this.option(model.value, model.label, provider.model)).join('')}
+          </select>
+        </div>
+      </section>
+    `;
+  },
+
+  updateProviderState(activeProvider) {
+    document.querySelectorAll('.ai-provider-option').forEach(option => {
+      const input = option.querySelector('input');
+      const active = input.value === activeProvider;
+      option.classList.toggle('active', active);
+      option.querySelector('small').textContent = active ? t('api.enabled') : t('api.disabled');
+    });
+    document.querySelectorAll('[data-provider-config]').forEach(section => {
+      const active = section.dataset.providerConfig === activeProvider;
+      section.classList.toggle('active', active);
+      section.querySelectorAll('input, select').forEach(control => {
+        control.disabled = !active;
+      });
+    });
+  },
+
+  renderData() {
+    document.getElementById('settings-body').innerHTML = `
+      <div class="card">
+        <h3>${t('data.exportTitle')}</h3>
+        <p class="card-subtitle">${t('data.exportHelp')}</p>
+        <button class="btn btn-primary" id="btn-export">${t('data.export')}</button>
+      </div>
+      <div class="card">
+        <h3>${t('data.importTitle')}</h3>
+        <input class="form-input" type="file" id="file-import" accept=".json">
+        <button class="btn btn-secondary" id="btn-import">${t('data.import')}</button>
+      </div>
+      <div class="card">
+        <h3>${t('data.danger')}</h3>
+        <button class="btn btn-danger" id="btn-clear">${t('data.clear')}</button>
+      </div>
+    `;
+    document.getElementById('btn-export').addEventListener('click', () => this.exportData());
+    document.getElementById('btn-import').addEventListener('click', () => this.importData());
+    document.getElementById('btn-clear').addEventListener('click', () => {
+      if (confirm('Delete all local Tsumori data?')) {
+        Object.keys(localStorage).filter(key => key.startsWith(Storage.PREFIX)).forEach(key => localStorage.removeItem(key));
+        Storage.init();
+        location.reload();
       }
     });
   },
-  loadConfig() {
-    const config = JSON.parse(Storage.get('_config') || '{}');
-    const user = (config.users||[]).find(u => u.id === config.currentUserId);
-    if (user) document.getElementById('nav-user-name').textContent = user.name;
+
+  renderGuide() {
+    document.getElementById('settings-body').innerHTML = `
+      <div class="card">
+        <h3>${t('guide.startTitle')}</h3>
+        <p class="settings-guide-copy">${t('guide.start')}</p>
+      </div>
+      <div class="card">
+        <h3>${t('guide.dailyTitle')}</h3>
+        <p class="settings-guide-copy">${t('guide.daily')}</p>
+      </div>
+      <div class="card">
+        <h3>${t('guide.backupTitle')}</h3>
+        <p class="settings-guide-copy">${t('guide.backup')}</p>
+      </div>
+      <div class="card settings-guide-warning">
+        <h3>${t('guide.noticeTitle')}</h3>
+        <p class="settings-guide-copy">${t('guide.notice')}</p>
+      </div>
+    `;
   },
-  escapeHtml(text) { if (!text) return ''; const d=document.createElement('div'); d.textContent=text; return d.innerHTML; }
+
+  renderAbout() {
+    document.getElementById('settings-body').innerHTML = `
+      <div class="card">
+        <h3>${t('about.title')}</h3>
+        <p class="card-subtitle">${t('about.copy')}</p>
+      </div>
+    `;
+  },
+
+  addUser() {
+    const name = prompt('New user name');
+    if (!name?.trim()) return;
+    Storage.addUser(name.trim());
+    Nav.render();
+    this.renderUsers();
+  },
+
+  showUserSwitcher() {
+    const config = Storage.getConfig();
+    if (config.users.length <= 1) {
+      alert('Only one user exists.');
+      return;
+    }
+    const label = config.users.map((user, index) => `${index + 1}. ${user.name}${user.id === config.currentUserId ? ' (active)' : ''}`).join('\n');
+    const choice = Number(prompt('Switch user:\n' + label));
+    const user = config.users[choice - 1];
+    if (user) {
+      Storage.switchUser(user.id);
+      Nav.render();
+      if (this.currentTab === 'users') this.renderUsers();
+    }
+  },
+
+  exportData() {
+    const blob = new Blob([JSON.stringify(Storage.export(), null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'tsumori_export_' + new Date().toISOString().slice(0, 10) + '.json';
+    link.click();
+    URL.revokeObjectURL(url);
+  },
+
+  importData() {
+    const file = document.getElementById('file-import').files[0];
+    if (!file) {
+      alert('Please select a JSON file.');
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = event => {
+      try {
+        Storage.import(JSON.parse(event.target.result));
+        alert('Data imported.');
+        location.reload();
+      } catch (error) {
+        alert('Import failed: ' + error.message);
+      }
+    };
+    reader.readAsText(file);
+  },
+
+  option(value, label, selected) {
+    return `<option value="${value}" ${value === selected ? 'selected' : ''}>${label}</option>`;
+  },
+
+  escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text || '';
+    return div.innerHTML;
+  },
+
+  escapeAttr(text) {
+    return this.escapeHtml(text).replace(/"/g, '&quot;');
+  }
 };
+
 window.Settings = Settings;

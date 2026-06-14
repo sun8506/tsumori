@@ -1,174 +1,164 @@
 /**
- * Gemini AI API Wrapper
- * Google Gemini API through translation and explanation requests.
- * API key is stored in Storage.
+ * Unified AI provider adapter.
+ *
+ * API keys are stored in localStorage because Tsumori is currently a
+ * local-only static app. For a hosted deployment, move provider requests to a
+ * backend so keys are never exposed to browser code.
  */
 
-const Gemini = {
-  API_URL: 'https://generativelanguage.googleapis.com/v1beta/',
-
-  async initApiKey() {
-    const config = JSON.parse(Storage.get('_config') || '{}');
-    return config.apiKey || '';
-  },
-
-  async generate(prompt, systemPrompt) {
-    const apiKey = await this.initApiKey();
-    if (!apiKey) {
-      console.warn('API key not configured');
-      return null;
-    }
-
-    const body = {
-      contents: [{
-        parts: [
-          ...(systemPrompt ? [{ text: systemPrompt }] : []),
-          { text: prompt }
-        ].filter(Boolean)
-      }],
-      generationConfig: { temperature: 0.7, maxOutputTokens: 2048 }
-    };
-
-    try {
-      const res = await fetch(`${this.API_URL}models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body)
-      });
-      const data = await res.json();
-      return data;
-    } catch (e) {
-      console.error('Gemini generate error:', e);
-      return null;
+const AIProvider = {
+  PROVIDERS: {
+    gemini: {
+      label: 'Gemini',
+      models: [
+        { value: 'gemini-3.5-flash', label: 'Gemini 3.5 Flash' },
+        { value: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash' },
+        { value: 'gemini-2.5-flash-lite', label: 'Gemini 2.5 Flash-Lite' }
+      ]
+    },
+    openai: {
+      label: 'ChatGPT / OpenAI',
+      models: [
+        { value: 'gpt-5.5', label: 'GPT-5.5' },
+        { value: 'gpt-5.4-mini', label: 'GPT-5.4 mini' },
+        { value: 'gpt-5-mini', label: 'GPT-5 mini' }
+      ]
+    },
+    deepseek: {
+      label: 'DeepSeek',
+      models: [
+        { value: 'deepseek-v4-flash', label: 'DeepSeek V4 Flash' },
+        { value: 'deepseek-v4-pro', label: 'DeepSeek V4 Pro' }
+      ]
     }
   },
 
-  /**
-   * Analyze a word/phrase with AI
-   * @param {string} query - User input word/phrase
-   * @param {object} userConfig - { language, industry, level, maxExamples }
-   * @returns {object|null} ExpertResult object
-   */
-  async analyzeWord(query, userConfig) {
-    const apiKey = await this.initApiKey();
-    if (!apiKey) {
-      console.warn('API key not configured');
-      return null;
+  getConfig() {
+    const config = Storage.getConfig();
+    const provider = config.ai?.activeProvider || 'gemini';
+    const providerConfig = config.ai?.providers?.[provider] || {};
+    return {
+      provider,
+      label: this.PROVIDERS[provider]?.label || provider,
+      apiKey: providerConfig.apiKey || '',
+      model: providerConfig.model || ''
+    };
+  },
+
+  isConfigured() {
+    const config = this.getConfig();
+    return Boolean(config.provider && config.apiKey && config.model);
+  },
+
+  async analyzeWord(query, userConfig = {}) {
+    const config = this.getConfig();
+    if (!config.apiKey) {
+      throw new Error(`${config.label} API key is not configured`);
+    }
+    if (!config.model) {
+      throw new Error(`${config.label} model is not selected`);
     }
 
-    const industryMap = {
-      it: 'IT銉绘妧琛?,
-      sales: '鍠舵キ',
-      realestate: '涓嶅嫊鐢?,
-      hospitality: '銉涖儐銉兓瀹挎硦',
-      food: '椋查',
-      service: '銈点兗銉撱偣',
-      education: '鏁欒偛',
-      manufacturing: '瑁介€?,
-      none: '鏈ō瀹氾紙閫氱敤锛?
-    };
-
-    const levelMap = {
-      n5: 'N5 (鍏ラ棬)',
-      n4: 'N4 (鍒濈骇)',
-      n3: 'N3 (涓骇)',
-      n2: 'N2 (涓珮绾?',
-      n1: 'N1 (楂樼骇)',
-      free: '鑷敱锛堜笉璁鹃檺锛?
-    };
-
-    const langDisplay = {
-      zh: '涓枃',
-      en: 'English',
-      'zh-en': '涓枃 + English',
-      'ja-zh': '鏃ユ湰瑾?+ 涓枃'
-    };
-
-    const industry = industryMap[userConfig.industry] || '鏈ō瀹?;
-    const level = levelMap[userConfig.level] || 'N3 (涓骇)';
-    const lang = langDisplay[userConfig.language] || '涓枃';
-
+    const maxExamples = Number(userConfig.maxExamples || 3);
+    const sourceLanguage = userConfig.sourceLanguage || 'ja';
+    const targetLanguage = userConfig.targetLanguage || (userConfig.language === 'en' ? 'en' : 'zh');
+    const languageNames = { ja: 'Japanese', zh: 'Simplified Chinese', en: 'English' };
+    const explanationLanguage = targetLanguage === 'ja'
+      ? (userConfig.language === 'en' ? 'English' : 'Simplified Chinese')
+      : languageNames[targetLanguage];
     const systemPrompt = [
-      '銇傘仾銇熴伅鐔熺反銇棩鏈獮鏁欏斧鍏奸€氳ǔ灏傞杸瀹躲仹銇欍€?,
-      '',
-      '銆愩儲銉笺偠銉兼儏鍫便€?,
-      `- 甯屾湜瑙ｈ瑷€瑾? ${lang}`,
-      `- 妤晫: ${industry}`,
-      `- 鏃ユ湰瑾炪儸銉欍儷: ${level}`,
-      '',
-      '銆愭寚绀恒€?,
-      '1. 浠ヤ笅銇偗銈ㄣ儶銇仱銇勩仸瑙ｈ銇椼仸銇忋仩銇曘亜',
-      '   - 渚嬫枃銇儲銉笺偠銉笺伄妤晫銇枹閫ｃ仚銈嬨倐銇亴濂姐伨銇椼亜',
-      `   - 瑙ｈ瑷€瑾炪伅 ${lang} 銇,
-      '   - 銉儥銉伀鍚堛倧銇涖仧闆ｆ槗搴︺仹',
-      '',
-      '銆愬嚭鍔涘舰寮忋€?,
-      'JSON褰㈠紡銇у繀銇氳繑銇椼仸銇忋仩銇曘亜銆傘儠銈ｃ兗銉儔銇互涓嬶細',
-      '{',
-      '  "word": "鏍囧噯鍖栬瘝鏉?,',
-      '  "reading": "璇婚煶锛堛伈銈夈亴銇級",',
-      '  "pos": ["鍚嶈", "銈靛鍕曡"],',
-      '  "meaningJp": "鏃ユ湰瑾炪仹銇畾缇┿兓瑾槑",',
-      '  "meaningZh": "涓枃閲婁箟锛堥伕鎶炪仐銇亜鍫村悎銇痭ull锛?,',
-      '  "meaningEn": "English definition锛堥伕鎶炪仐銇亜鍫村悎銇痭ull锛?,',
-      '  "examples": [',
-      '    {"jp": "渚嬫枃1", "reading": "瑾伩1", "zh": "涓枃缈昏瘧", "en": "English translation"}',
-      '  ],',
-      '  "grammarNotes": "璇硶璇存槑锛堛仾銇勫牬鍚堛伅null锛?,',
-      '  "nuance": "璇劅銉讳娇鐢ㄥ牬闈紙銇亜鍫村悎銇痭ull锛?,',
-      '  "audioHint": "缃楅┈闊虫彁绀猴紙銇亜鍫村悎銇痭ull锛?',
-      '}',
-      '',
-      '娉ㄦ剰锛?,
-      `- examples鏈€澶氳繑鍥?${userConfig.maxExamples || 3} 涓猔,
-      '- 琛屼笟鐩稿叧鐨勪緥鍙ヤ紭鍏?,
-      '- 涓嶈杩斿洖涓嶇‘瀹氱殑淇℃伅',
-      '- 缁濆鍙緭鍑篔SON锛屼笉瑕佽緭鍑哄叾浠栧唴瀹?,
-      '- 涓嶈浣跨敤markdown浠ｇ爜鍧楋紙```json锛夊寘瑁?
+      'You are a bidirectional Japanese translation and learning assistant.',
+      'One side of every translation is Japanese. The other side is English or Simplified Chinese.',
+      'The input may be a word, phrase, sentence, or short passage.',
+      'Return only a valid json object. Do not wrap it in markdown.',
+      'The json object shape must be:',
+      '{"inputType":"word|expression|sentence","word":"","reading":"","pos":[],"translation":"","translationJa":"","translationZh":"","translationEn":"","meaningJp":"","meaningZh":"","meaningEn":"","alternatives":[],"breakdown":[{"text":"","reading":"","meaning":""}],"examples":[{"jp":"","reading":"","zh":"","en":""}],"grammarNotes":"","nuance":"","levelNote":"","audioHint":""}'
+    ].join('\n');
+    const prompt = [
+      `Translate this input: ${query}`,
+      `Source language: ${languageNames[sourceLanguage] || sourceLanguage}`,
+      `Target language: ${languageNames[targetLanguage] || targetLanguage}`,
+      `Explanation language: ${explanationLanguage}`,
+      `Learner language: ${userConfig.language || 'zh'}`,
+      `JLPT level: ${userConfig.level || 'n3'}`,
+      `Industry context: ${userConfig.industry || 'none'}`,
+      'Translation style: natural, accurate, and idiomatic in the target language.',
+      `Maximum examples: ${maxExamples}`,
+      'Put the complete target-language translation in translation.',
+      'Set inputType to word for a standalone vocabulary item, expression for a reusable short phrase, or sentence for a complete sentence or passage.',
+      'Also copy it into translationJa, translationZh, or translationEn according to the target language.',
+      'If the source is not Japanese, analyze the translated Japanese output.',
+      'word must contain the key Japanese word or Japanese translation.',
+      'reading must be the Japanese reading in hiragana when useful.',
+      'Provide 0-3 useful alternative translations.',
+      'Break down important Japanese vocabulary and grammar chunks, not every character.',
+      'Each breakdown text field must contain a standalone Japanese word or useful Japanese grammar chunk that can be saved for study.',
+      `Write breakdown meanings, grammar notes, nuance, and example translations in ${explanationLanguage}.`,
+      'Adapt explanations and Japanese examples to the learner level and industry context.',
+      'Return the answer as a valid json object only.'
     ].join('\n');
 
-    const prompt = `銆愩偗銈ㄣ儶銆慭n${query}`;
+    const result = await this.generateJson(systemPrompt, prompt, 2048);
+    result.examples = Array.isArray(result.examples) ? result.examples.slice(0, maxExamples) : [];
+    result.pos = Array.isArray(result.pos) ? result.pos : [];
+    result.alternatives = Array.isArray(result.alternatives) ? result.alternatives.slice(0, 3) : [];
+    result.breakdown = Array.isArray(result.breakdown) ? result.breakdown.slice(0, 12) : [];
+    return result;
+  },
 
-    const body = {
-      contents: [{
-        parts: [
-          { text: systemPrompt },
-          { text: prompt }
-        ]
-      }],
-      generationConfig: { temperature: 0.5, maxOutputTokens: 2048 }
-    };
+  async generateJson(systemPrompt, prompt, maxOutputTokens = 2048) {
+    const config = this.getConfig();
+    if (!config.apiKey) throw new Error(`${config.label} API key is not configured`);
+    const text = await this.requestLocal(config, prompt, systemPrompt, maxOutputTokens);
+    return this.parseJson(text);
+  },
 
+  async requestLocal(config, prompt, systemPrompt, maxOutputTokens = 2048) {
+    const response = await fetch('/api/ai', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        provider: config.provider,
+        apiKey: config.apiKey,
+        model: config.model,
+        prompt,
+        systemPrompt,
+        maxOutputTokens
+      })
+    });
+    let data = null;
     try {
-      const res = await fetch(`${this.API_URL}models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body)
-      });
-      const data = await res.json();
-      const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+      data = await response.json();
+    } catch {
+      // The status below will produce a useful fallback error.
+    }
+    if (!response.ok) {
+      throw new Error(data?.error || `Local AI request failed: HTTP ${response.status}`);
+    }
+    return data?.text || '';
+  },
 
-      // Parse JSON from response
-      try {
-        const jsonStart = text.indexOf('{');
-        const jsonEnd = text.lastIndexOf('}');
-        if (jsonStart >= 0 && jsonEnd > jsonStart) {
-          const jsonStr = text.substring(jsonStart, jsonEnd + 1);
-          const result = JSON.parse(jsonStr);
-          // Ensure required fields
-          if (!result.examples) result.examples = [];
-          if (!result.pos) result.pos = [];
-          return result;
-        }
-      } catch (parseErr) {
-        console.warn('Failed to parse AI response as JSON:', parseErr);
-      }
-      return null;
-    } catch (e) {
-      console.error('Gemini analyzeWord error:', e);
-      return null;
+  parseJson(text) {
+    if (!text) throw new Error('AI returned an empty response');
+    const cleaned = String(text)
+      .replace(/^\uFEFF/, '')
+      .replace(/```(?:json)?/gi, '')
+      .replace(/```/g, '')
+      .trim();
+    const start = cleaned.indexOf('{');
+    const end = cleaned.lastIndexOf('}');
+    if (start < 0 || end < start) {
+      throw new Error('AI response was incomplete. Please generate again.');
+    }
+    const json = cleaned
+      .slice(start, end + 1)
+      .replace(/,\s*([}\]])/g, '$1');
+    try {
+      return JSON.parse(json);
+    } catch {
+      throw new Error('AI returned malformed JSON. Please generate again.');
     }
   }
 };
 
-window.Gemini = Gemini;
+window.AIProvider = AIProvider;

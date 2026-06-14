@@ -1,1 +1,48 @@
 :root { --primary: #2d6a4f; --primary-light: #40916c; --primary-dark: #1b4332; --accent: #d4a373; --bg: #fefae0; --bg-card: #ffffff; --text: #2d3436; --text-light: #636e72; --text-inverse: #ffffff; --border: #dfe6e9; --danger: #e17055; --success: #00b894; --warning: #fdcb6e; --shadow: 0 2px 12px rgba(0,0,0,0.08); --radius: 10px; --font-main: 'Nunito', 'Hiragino Sans', 'Noto Sans JP', sans-serif; --font-mono: 'SF Mono', 'Consolas', monospace; --nav-height: 60px; --max-width: 900px; } * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: var(--font-main); background: var(--bg); color: var(--text); min-height: 100vh; } a { color: var(--primary); text-decoration: none; } button { font-family: inherit; cursor: pointer; border: none; font-size: inherit; } input, textarea, select { font-family: inherit; font-size: inherit; } #app { display: flex; flex-direction: column; min-height: 100vh; }
+/* Storage mode selection */
+.storage-mode-field {
+  border: 0;
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+.storage-mode-field legend {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.storage-mode-option {
+  align-items: flex-start;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 12px;
+}
+
+.storage-mode-option:has(input:checked) {
+  background: rgba(0, 121, 107, 0.08);
+  border-color: var(--primary);
+}
+
+.storage-mode-option input {
+  flex: 0 0 auto;
+  margin-top: 4px;
+}
+
+.storage-mode-option span {
+  display: grid;
+  gap: 3px;
+}
+
+.storage-mode-option small {
+  color: var(--text-light);
+  line-height: 1.45;
+}
+
+.storage-mode-settings {
+  margin: 16px 0;
+}

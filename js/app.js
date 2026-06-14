@@ -22,6 +22,7 @@ const Router = {
   },
 
   async go(viewName) {
+    if (!window.Auth?.currentUser()) return;
     if (!this.views[viewName]) {
       console.warn("Unknown view:", viewName);
       viewName = "dashboard";
@@ -32,6 +33,7 @@ const Router = {
     if (view && view.init) {
       try {
         await view.init();
+        I18n.apply(document.getElementById('main-content'));
       } catch (e) {
         console.error("View " + viewName + " init error:", e);
         this.showError(viewName, e.message);
@@ -79,11 +81,11 @@ window.Router = Router;
     if (view) Router.register(name, view);
   }
 
-  if (window.Nav) Nav.init();
-  Router.init();
-
-  // Initialize Lucide icons for bottom nav
-  if (window.lucide) {
-    lucide.createIcons({ nodes: document.querySelectorAll('.bottom-nav-link') });
-  }
+  Auth.start(() => {
+    I18n.observe();
+    if (window.Nav) Nav.init();
+    Router.init();
+    I18n.apply(document);
+    if (window.lucide) lucide.createIcons();
+  });
 })();

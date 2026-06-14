@@ -1,0 +1,49 @@
+# Dependencies / package managers
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+out/
+.cache/
+.tmp/
+temp/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment / secrets
+.env
+.env.*
+*.local
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated or downloaded data
+downloads/
+exports/
+*.csv
+*.tsv
+*.sqlite
+*.db
+
+# Third-party vendored assets
+js/lucide.js
+
+# Backups / one-off repair scripts
+*.backup.*
+css/components.backup.css
+fix_settings.py
+
+# Empty scratch/test placeholder
+test_scripts.js

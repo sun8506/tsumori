@@ -9,6 +9,7 @@ const Modal = {
     if (overlay) {
       overlay.style.display = 'none';
     }
+    document.getElementById('modal-container')?.classList.remove('policy-modal');
   },
 
   open() {

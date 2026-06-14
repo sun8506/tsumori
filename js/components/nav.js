@@ -1,91 +1,51 @@
-锘?**
- * Navigation Component
- *
- * - 銉兗銉嗐偅銉炽偘銉忋兂銉夈儶銉炽偘
- * - 鐝惧湪銇儞銉ャ兗銈掋儚銈ゃ儵銈ゃ儓
- * - 銉︺兗銈躲兗鍚嶃伄琛ㄧず/鍒囨浛
+/**
+ * Navigation component.
  */
 
 const Nav = {
-  currentView: 'dashboard',
-
   init() {
     this.bindEvents();
     this.render();
     this.highlightCurrentView();
-    // Re-run Lucide icons for bottom nav elements
-    if (window.lucide) {
-      lucide.createIcons({ nodes: document.querySelectorAll('.bottom-nav-link') });
-    }
   },
 
   bindEvents() {
-    // Desktop nav links
-    document.querySelectorAll('.desktop-nav .nav-link').forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const view = link.dataset.view;
-        this.navigate(view);
+    document.querySelectorAll('[data-view]').forEach(item => {
+      item.addEventListener('click', event => {
+        event.preventDefault();
+        this.navigate(item.dataset.view);
       });
     });
 
-    // Bottom nav buttons
-    document.querySelectorAll('.bottom-nav-link').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const view = btn.dataset.view;
-        this.navigate(view);
-      });
-    });
-
-    // Browser back/forward
-    window.addEventListener('hashchange', () => {
-      this.highlightCurrentView();
-    });
-
-    // User toggle
     const toggle = document.getElementById('nav-user-toggle');
     if (toggle) {
-      toggle.addEventListener('click', () => {
-        Settings.showUserSwitcher();
-      });
+      toggle.addEventListener('click', () => Auth.logout());
     }
   },
 
   navigate(view) {
-    window.location.hash = view;
-    this.highlightCurrentView();
-    if (window.Router) {
-      window.Router.go(view);
+    if (!view) return;
+    if (window.location.hash.replace('#', '') !== view) {
+      window.location.hash = view;
+    } else if (window.Router) {
+      Router.go(view);
     }
+    this.highlightCurrentView();
   },
 
   highlightCurrentView() {
-    const hash = window.location.hash.replace('#', '') || 'dashboard';
-    this.currentView = hash;
-
-    // Highlight desktop nav
-    document.querySelectorAll('.desktop-nav .nav-link').forEach(link => {
-      const isActive = link.dataset.view === hash;
-      link.classList.toggle('active', isActive);
-    });
-
-    // Highlight bottom nav
-    document.querySelectorAll('.bottom-nav-link').forEach(btn => {
-      const isActive = btn.dataset.view === hash;
-      btn.classList.toggle('active', isActive);
+    const current = window.location.hash.replace('#', '') || 'dashboard';
+    document.querySelectorAll('[data-view]').forEach(item => {
+      item.classList.toggle('active', item.dataset.view === current);
     });
   },
 
   render() {
-    const config = JSON.parse(Storage.get('_config') || '{}');
-    const users = config.users || [];
-    const currentId = config.currentUserId;
-    const user = users.find(u => u.id === currentId);
-
-    const nameEl = document.getElementById('nav-user-name');
-    if (nameEl && user) {
-      nameEl.textContent = user.name;
-    }
+    const config = Storage.getConfig();
+    const user = config.users.find(item => item.id === config.currentUserId);
+    const name = document.getElementById('nav-user-name');
+    if (name) name.textContent = user?.name || '';
+    I18n.apply(document);
   }
 };
 

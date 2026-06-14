@@ -1,230 +1,444 @@
 /**
- * Storage Layer 绐躲兓璎桨璎愶疆璎栤埥锝广兓鍠ц瑲锝介泿锝¤灮銉?* 
- * 璎嚶€璀涚敾鐒氳瑦锝毝锝块锝ň澶婏娇銉伙江锝よ瑮锝ヨ溈锝ｉ湋骞勶健寰屄€銉?* 锠栫仒鐕曡灣妯掗传鑽筹胶 localStorage銉绘ⅶ鎮磋瓪锝ヨ溈锝瓥锝胯瑦锝㈣嵆锝?storage-cloud.js銉汇兓upabase/Firebase銉诲敞聙銉?* 
- * 璎楋渐铚匡剑铻傞啀锝猴溅銉汇兓 *   init()           绐躲兓铔绘檹锝у彞鍠с兓浜ャ兓锜掞胶楫熷€╋疆锝ら€曪建璎岋椒閬蹭細锝笺兓 *   get(key)         绐躲兓闂旓椒铚块杸榛掕嵆锝洘锝? *   set(key, value)  绐躲兓鑿檹锝紲榛掕嵆锝洘锝? *   getAll(key)      绐躲兓闂旓椒铚垮寔鐒氭増銉伙郊浜曪交銉籎SON 锜勭ぜ锝溅鑽筹讲闅楋剑璀挵锝笺兓 *   add(key, item)   绐躲兓铚风鐒氭増銉伙娇锝借湁铮拌嵆聙楝橈焦
- *   update(key, id, data) 绐躲兓璀栵酱璀侊桨璎桨鎵堛兓锝革江璀熷锝★焦
- *   remove(key, id)  绐躲兓鑾夊彇鐒氭増銉诲敄楂饯鑽陈€楝橈焦
- *   count(key)       绐躲兓璎桨鎵堛兓锝★焦璎桨
- *   export()         绐躲兓锜囷郊铚冿胶铚堬建椹涳建璎桨璎愶疆
- *   import(data)     绐躲兓锜囷郊铚堬渐铚堬建椹涳建璎桨璎愶疆
+ * Local storage adapter for Tsumori.
+ *
+ * All app data is stored under the "tsumori_" prefix so it can be exported,
+ * imported, or moved to a remote backend later.
  */
 
 const Storage = {
   PREFIX: 'tsumori_',
+  cloudSyncTimer: null,
+  accountSyncTimer: null,
+  hydratingCloud: false,
+  USER_SCOPED_KEYS: new Set([
+    'vocabulary',
+    'phrases',
+    'articles',
+    'expert_queries',
+    'learning_records'
+  ]),
 
-  // 绗徛€绗徛€ 铔绘檹锝у彞鍠?绗徛€绗徛€
   init() {
     if (!this.get('_initialized')) {
-      this.set('_initialized', true);
-      this.set('_users', JSON.stringify([]));
-      this.set('_currentUserId', null);
-      this.set('_config', JSON.stringify({
-        users: [],
-        currentUserId: null,
-        theme: 'light',
-        dailyArticleTime: '09:00'
-      }));
+      this.set('_initialized', 'true');
     }
+
+    const config = this.getConfig();
+    if (!Array.isArray(config.users)) config.users = [];
+    if (config.users.length === 0 && this.hasLegacyData()) {
+      const user = {
+        id: 'user_default',
+        name: 'Default User',
+        profile: { language: 'zh', industry: 'none', level: 'n3' },
+        settings: { autoAddToVocab: false, showExamples: true, showGrammar: true, maxExamples: 3 }
+      };
+      config.users.push(user);
+      config.currentUserId = user.id;
+    }
+    if (!config.currentUserId && config.users.length) config.currentUserId = config.users[0].id;
+    if (!config.theme) config.theme = 'light';
+    if (!config.ai) {
+      config.ai = {
+        activeProvider: 'gemini',
+        providers: {
+          gemini: {
+            apiKey: config.apiKey || '',
+            model: 'gemini-2.5-flash'
+          },
+          openai: {
+            apiKey: '',
+            model: 'gpt-5.4-mini'
+          },
+          deepseek: {
+            apiKey: '',
+            model: 'deepseek-v4-flash'
+          }
+        }
+      };
+    }
+    config.ai.providers = config.ai.providers || {};
+    config.ai.providers.gemini = {
+      apiKey: config.ai.providers.gemini?.apiKey || config.apiKey || '',
+      model: config.ai.providers.gemini?.model || 'gemini-2.5-flash'
+    };
+    config.ai.providers.openai = {
+      apiKey: config.ai.providers.openai?.apiKey || '',
+      model: config.ai.providers.openai?.model || 'gpt-5.4-mini'
+    };
+    config.ai.providers.deepseek = {
+      apiKey: config.ai.providers.deepseek?.apiKey || '',
+      model: config.ai.providers.deepseek?.model || 'deepseek-v4-flash'
+    };
+    if (!['gemini', 'openai', 'deepseek'].includes(config.ai.activeProvider)) {
+      config.ai.activeProvider = 'gemini';
+    }
+    delete config.apiKey;
+    this.set('_config', JSON.stringify(config));
   },
 
-  // 绗徛€绗徛€ 铚€銉晃氳熅锝ヨ湀锝?绗徛€绗徛€
   _key(key) {
     return this.PREFIX + key;
   },
 
-  _jsonParse(str, fallback) {
-    if (!str) return fallback;
+  _parse(value, fallback) {
+    if (value == null || value === '') return fallback;
     try {
-      return JSON.parse(str);
+      return JSON.parse(value);
     } catch {
       return fallback;
     }
   },
 
-  // 绗徛€绗徛€ 铦擄胶璀涳浆闅革交铚€銉荤瑥聙绗徛€
   get(key) {
     return localStorage.getItem(this._key(key));
   },
 
   set(key, value) {
-    localStorage.setItem(this._key(key), value);
+    localStorage.setItem(this._key(key), String(value));
   },
 
-  remove(key) {
+  removeKey(key) {
     localStorage.removeItem(this._key(key));
   },
 
-  // 绗徛€绗徛€ 铚婄﹤锝革姜锜囷焦闆庯健闅革交铚€鍛伙郊鍩熸綌 ID 閭忥舰锠戝寘锝笺兓绗徛€绗徛€
   getAll(key) {
-    const raw = this.get(key);
-    return this._jsonParse(raw, []);
+    const items = this._parse(this.get(key), []);
+    if (!this.USER_SCOPED_KEYS.has(key)) return items;
+    const userId = this._getCurrentUserId();
+    if (!userId) return [];
+    return items.filter(item => item.userId === userId);
+  },
+
+  saveAll(key, items) {
+    if (!this.USER_SCOPED_KEYS.has(key)) {
+      this.set(key, JSON.stringify(items));
+      return;
+    }
+    const userId = this._getCurrentUserId();
+    if (!userId) return;
+    const all = this._parse(this.get(key), []);
+    const otherUsers = all.filter(item => item.userId !== userId);
+    const currentItems = (items || []).map(item => ({ ...item, userId }));
+    this.set(key, JSON.stringify([...otherUsers, ...currentItems]));
+    this.scheduleCloudSync();
   },
 
   add(key, item) {
     const items = this.getAll(key);
-    if (!item.id) {
-      item.id = key + '_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+    const next = { ...item };
+    if (!next.id) {
+      next.id = key + '_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
     }
-    items.push(item);
-    this.set(key, JSON.stringify(items));
-    return item;
+    if (this.USER_SCOPED_KEYS.has(key)) next.userId = this._getCurrentUserId();
+    items.push(next);
+    this.saveAll(key, items);
+    return next;
   },
 
   update(key, id, data) {
     const items = this.getAll(key);
-    const idx = items.findIndex(i => i.id === id);
-    if (idx !== -1) {
-      items[idx] = { ...items[idx], ...data };
-      this.set(key, JSON.stringify(items));
-      return items[idx];
-    }
-    return null;
+    const index = items.findIndex(item => item.id === id);
+    if (index === -1) return null;
+    items[index] = { ...items[index], ...data };
+    this.saveAll(key, items);
+    return items[index];
   },
 
   remove(key, id) {
-    const items = this.getAll(key);
-    const filtered = items.filter(i => i.id !== id);
-    this.set(key, JSON.stringify(filtered));
+    this.saveAll(key, this.getAll(key).filter(item => item.id !== id));
   },
 
   getById(key, id) {
-    return this.getAll(key).find(i => i.id === id);
+    return this.getAll(key).find(item => item.id === id) || null;
   },
 
   count(key) {
     return this.getAll(key).length;
   },
 
-  // 绗徛€绗徛€ 锜囷郊铚冿胶 / 锜囷郊铚堬渐 绗徛€绗徛€
-  export() {
-    const data = {};
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (key.startsWith(this.PREFIX)) {
-        const name = key.replace(this.PREFIX, '');
-        data[name] = localStorage.getItem(key);
-      }
-    }
-    return data;
-  },
-
-  import(data) {
-    for (const [key, value] of Object.entries(data)) {
-      if (key.startsWith('_') || this.PREFIX + key) {
-        localStorage.setItem(this._key(key), value);
-      }
-    }
-  },
-
-  // 绗徛€绗徛€ 楝€★胶锝ц瓱锝ラ毟锝?绗徛€绗徛€
   getDueItems(key) {
-    const items = this.getAll(key);
     const now = new Date();
-    return items.filter(item => {
-      if (!item.nextReview) return true; // 璀涳姜铻熷牶锝癸０
-      const next = new Date(item.nextReview);
-      return next <= now;
-    });
+    return this.getAll(key).filter(item => !item.nextReview || new Date(item.nextReview) <= now);
   },
 
   getTodayItems(key) {
     const today = new Date().toDateString();
-    return this.getAll(key).filter(item => {
-      return item.created && new Date(item.created).toDateString() === today;
-    });
-  }
-};
+    return this.getAll(key).filter(item => item.created && new Date(item.created).toDateString() === today);
+  },
 
-// 闁撅姜铚夛建铔绘檹锝у彞鍠?Storage.init();
+  toDateKey(value = new Date()) {
+    const date = value instanceof Date ? value : new Date(value);
+    if (Number.isNaN(date.getTime())) return '';
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  },
 
-// 锜囷郊铚冿胶钀撳付锝健铦€滃枾鑿达娇閫曪建銉讳亥锝︺倛妫￠倗锝爡銉婚璎栥兓锝笺兓
-  // 绗徛€绗徛€ Expert Queries CRUD 绗徛€绗徛€
-  addExpertQuery(data) {
-    const items = this.getAll('expert_queries');
-    if (!data.id) {
-      data.id = 'eq_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+  getLearningRecords() {
+    return this.getAll('learning_records');
+  },
+
+  getLearningRecord(date = new Date()) {
+    const dateKey = this.toDateKey(date);
+    return this.getLearningRecords().find(item => item.date === dateKey) || null;
+  },
+
+  saveLearningRecord(date, data) {
+    const dateKey = this.toDateKey(date);
+    const records = this.getLearningRecords();
+    const index = records.findIndex(item => item.date === dateKey);
+    const previous = index >= 0 ? records[index] : {};
+    const record = {
+      ...previous,
+      ...data,
+      id: previous.id || `learning_${dateKey}`,
+      date: dateKey,
+      updatedAt: new Date().toISOString()
+    };
+    if (index >= 0) records[index] = record;
+    else records.push(record);
+    records.sort((a, b) => b.date.localeCompare(a.date));
+    this.saveAll('learning_records', records);
+    return record;
+  },
+
+  export() {
+    const config = this.getConfig();
+    const user = config.users.find(item => item.id === config.currentUserId);
+    const safeUser = user ? { ...user } : null;
+    if (safeUser) {
+      delete safeUser.passwordHash;
+      delete safeUser.passwordSalt;
+      delete safeUser.passwordIterations;
     }
-    items.push(data);
-    this.set('expert_queries', JSON.stringify(items));
+    const data = { version: 2, exportedAt: new Date().toISOString(), user: safeUser, collections: {} };
+    this.USER_SCOPED_KEYS.forEach(key => {
+      data.collections[key] = this.getAll(key);
+    });
     return data;
+  },
+
+  import(data) {
+    if (data?.version === 2 && data.collections) {
+      Object.entries(data.collections).forEach(([key, items]) => {
+        if (this.USER_SCOPED_KEYS.has(key) && Array.isArray(items)) this.saveAll(key, items);
+      });
+      this.scheduleCloudSync();
+      return;
+    }
+    Object.entries(data || {}).forEach(([key, value]) => {
+      if (!this.USER_SCOPED_KEYS.has(key)) return;
+      const items = typeof value === 'string' ? this._parse(value, []) : value;
+      if (Array.isArray(items)) this.saveAll(key, items);
+    });
+  },
+
+  getConfig() {
+    return this._parse(this.get('_config'), { users: [], currentUserId: null, theme: 'light' });
+  },
+
+  saveConfig(config) {
+    this.set('_config', JSON.stringify(config));
+  },
+
+  _getCurrentUserId() {
+    return this.getConfig().currentUserId;
+  },
+
+  currentUser() {
+    const config = this.getConfig();
+    return config.users.find(user => user.id === config.currentUserId) || null;
+  },
+
+  storageMode() {
+    return this.currentUser()?.storageMode === 'cloud' ? 'cloud' : 'local';
+  },
+
+  setCurrentAccount(user) {
+    if (!user?.id) return null;
+    const config = this.getConfig();
+    const legacy = config.users.find(item => item.email === user.email && item.id !== user.id);
+    const existing = config.users.findIndex(item => item.id === user.id);
+    const localSettings = existing >= 0 ? config.users[existing] : legacy;
+    const merged = {
+      ...(localSettings || {}),
+      ...user,
+      profile: { ...(localSettings?.profile || {}), ...(user.profile || {}) },
+      settings: { ...(localSettings?.settings || {}), ...(user.settings || {}) }
+    };
+    delete merged.passwordHash;
+    delete merged.passwordSalt;
+    delete merged.passwordIterations;
+    if (existing >= 0) config.users[existing] = merged;
+    else config.users.push(merged);
+    config.users = config.users.filter(item => item.id === user.id || item.email !== user.email);
+    config.currentUserId = user.id;
+    this.saveConfig(config);
+    if (legacy) this.migrateUserData(legacy.id, user.id);
+    this.assignUnownedData(user.id);
+    return merged;
+  },
+
+  migrateUserData(oldUserId, newUserId) {
+    if (!oldUserId || !newUserId || oldUserId === newUserId) return;
+    this.USER_SCOPED_KEYS.forEach(key => {
+      const items = this._parse(this.get(key), []);
+      let changed = false;
+      items.forEach(item => {
+        if (item.userId === oldUserId) {
+          item.userId = newUserId;
+          changed = true;
+        }
+      });
+      if (changed) this.set(key, JSON.stringify(items));
+    });
+  },
+
+  getCurrentCollections() {
+    const collections = {};
+    this.USER_SCOPED_KEYS.forEach(key => {
+      collections[key] = this.getAll(key);
+    });
+    return collections;
+  },
+
+  hydrateCloud(collections) {
+    this.hydratingCloud = true;
+    try {
+      this.USER_SCOPED_KEYS.forEach(key => {
+        this.saveAll(key, Array.isArray(collections?.[key]) ? collections[key] : []);
+      });
+    } finally {
+      this.hydratingCloud = false;
+    }
+  },
+
+  scheduleCloudSync() {
+    if (this.hydratingCloud || this.storageMode() !== 'cloud' || !window.Auth?.hasSession()) return;
+    clearTimeout(this.cloudSyncTimer);
+    this.cloudSyncTimer = setTimeout(() => {
+      Auth.saveCloudData(this.getCurrentCollections()).catch(error => {
+        console.warn('Cloud sync failed:', error.message);
+      });
+    }, 400);
+  },
+
+  scheduleAccountSync() {
+    if (!window.Auth?.hasSession()) return;
+    clearTimeout(this.accountSyncTimer);
+    this.accountSyncTimer = setTimeout(() => {
+      const user = this.currentUser();
+      if (!user) return;
+      Auth.updateAccount({
+        name: user.name,
+        uiLanguage: user.uiLanguage,
+        storageMode: user.storageMode,
+        profile: user.profile,
+        settings: user.settings
+      }).catch(error => console.warn('Account sync failed:', error.message));
+    }, 300);
+  },
+
+  hasLegacyData() {
+    return [...this.USER_SCOPED_KEYS].some(key => this._parse(this.get(key), []).length > 0);
+  },
+
+  assignUnownedData(userId) {
+    this.USER_SCOPED_KEYS.forEach(key => {
+      const items = this._parse(this.get(key), []);
+      let changed = false;
+      items.forEach(item => {
+        if (!item.userId) {
+          item.userId = userId;
+          changed = true;
+        }
+      });
+      if (changed) this.set(key, JSON.stringify(items));
+    });
+  },
+
+  addUser(name) {
+    const config = this.getConfig();
+    const user = {
+      id: 'user_' + Date.now(),
+      name,
+      profile: { language: 'zh', industry: 'none', level: 'n3' },
+      settings: { autoAddToVocab: false, showExamples: true, showGrammar: true, maxExamples: 3 }
+    };
+    config.users.push(user);
+    config.currentUserId = user.id;
+    this.saveConfig(config);
+    return user;
+  },
+
+  switchUser(userId) {
+    const config = this.getConfig();
+    if (config.users.some(user => user.id === userId)) {
+      config.currentUserId = userId;
+      this.saveConfig(config);
+      return true;
+    }
+    return false;
+  },
+
+  updateUserProfile(userId, data) {
+    const config = this.getConfig();
+    const index = config.users.findIndex(user => user.id === userId);
+    if (index === -1) return null;
+    const user = config.users[index];
+    if (data.profile) user.profile = { ...(user.profile || {}), ...data.profile };
+    if (data.settings) user.settings = { ...(user.settings || {}), ...data.settings };
+    Object.keys(data).forEach(key => {
+      if (key !== 'profile' && key !== 'settings') user[key] = data[key];
+    });
+    config.users[index] = user;
+    this.saveConfig(config);
+    this.scheduleAccountSync();
+    return user;
+  },
+
+  getUserProfile(userId) {
+    const user = this.getConfig().users.find(item => item.id === userId);
+    return {
+      profile: user?.profile || {},
+      settings: user?.settings || {}
+    };
+  },
+
+  addExpertQuery(data) {
+    return this.add('expert_queries', {
+      ...data,
+      id: data.id || 'eq_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8)
+    });
   },
 
   getExpertQueries(userId) {
     const items = this.getAll('expert_queries');
-    return userId ? items.filter(q => q.userId === userId) : items;
+    return userId ? items.filter(item => item.userId === userId) : items;
   },
 
   getExpertQuery(id) {
-    return this.getAll('expert_queries').find(q => q.id === id);
+    return this.getById('expert_queries', id);
   },
 
   removeExpertQuery(id) {
-    const items = this.getAll('expert_queries');
-    const filtered = items.filter(q => q.id !== id);
-    this.set('expert_queries', JSON.stringify(filtered));
+    this.remove('expert_queries', id);
   },
 
   updateExpertQuery(id, data) {
-    const items = this.getAll('expert_queries');
-    const idx = items.findIndex(q => q.id === id);
-    if (idx !== -1) {
-      items[idx] = { ...items[idx], ...data };
-      this.set('expert_queries', JSON.stringify(items));
-      return items[idx];
-    }
-    return null;
+    return this.update('expert_queries', id, data);
   },
 
   clearExpertQueries(userId) {
     const items = this.getAll('expert_queries');
-    const filtered = userId ? items.filter(q => q.userId !== userId) : [];
-    this.set('expert_queries', JSON.stringify(filtered));
+    this.saveAll('expert_queries', userId ? items.filter(item => item.userId !== userId) : []);
   },
 
   linkToVocab(queryId, wordId) {
     this.updateExpertQuery(queryId, { linkedWordId: wordId, addedToVocab: true });
-  },
+  }
+};
 
-  // 绗徛€绗徛€ User Profile Helpers 绗徛€绗徛€
-  updateUserProfile(userId, profile) {
-    const config = JSON.parse(this.get('_config') || '{}') || {};
-    const users = config.users || [];
-    const idx = users.findIndex(u => u.id === userId);
-    if (idx !== -1) {
-      users[idx].profile = { ...users[idx].profile, ...profile };
-      if (profile.settings) users[idx].settings = { ...users[idx].settings, ...profile.settings };
-      config.users = users;
-      this.set('_config', JSON.stringify(config));
-      return users[idx];
-    }
-    return null;
-  },
-
-  getUserProfile(userId) {
-    const config = JSON.parse(this.get('_config') || '{}') || {};
-    const users = config.users || [];
-    const user = users.find(u => u.id === userId);
-    return user ? { profile: user.profile || {}, settings: user.settings || {} } : { profile: {}, settings: {} };
-  },
-
-  getDefaultLanguage(userId) {
-    const p = this.getUserProfile(userId);
-    return p.profile.language || 'zh';
-  },
-
-  getIndustry(userId) {
-    const p = this.getUserProfile(userId);
-    return p.profile.industry || 'none';
-  },
-
-  getLevel(userId) {
-    const p = this.getUserProfile(userId);
-    return p.profile.level || 'n3';
-  },
-  // Helper: get current user ID from _config
-  _getCurrentUserId() {
-    const config = JSON.parse(this.get('_config') || '{}') || {};
-    return config.currentUserId;
-  },\nif (typeof window !== 'undefined') {
-  window.TsumoriStorage = Storage;
-}
+Storage.init();
+window.TsumoriStorage = Storage;

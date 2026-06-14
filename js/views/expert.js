@@ -1,325 +1,606 @@
-/**
- * Expert View — 专业日语专家
- * 
- * AI 驱动日语查询、解析、记录、入库。
- */
-
 const Expert = {
-  currentQuery: null,
   isAnalyzing: false,
+  currentRecord: null,
+  direction: { source: 'ja', target: 'zh' },
 
   async init() {
+    this.stopSpeech();
     this.render();
-    this.bindEvents();
-    await this.renderHistory();
-    this.loadLatest();
+    this.renderHistory();
+    const latest = Storage.getExpertQueries(Storage._getCurrentUserId())
+      .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))[0];
+    if (latest) this.renderResult(latest, { preferCurrentDirection: true });
   },
 
   render() {
-    const main = document.getElementById('main-content');
-    const profile = Storage.getUserProfile(Storage._getCurrentUserId());
-    const langLabel = {
-      zh: '中文', en: 'English', 'zh-en': '中文+英文', 'ja-zh': '日文+中文'
-    }[profile.profile?.language || 'zh'] || '中文';
-    const indLabel = {
-      it: 'IT', sales: '营业', realestate: '房产', hospitality: '酒店',
-      food: '餐饮', service: '服务', education: '教育', manufacturing: '制造', none: '通用'
-    }[profile.profile?.industry || 'none'] || '通用';
-
-    main.innerHTML = `
-      <header class="view-header">
-        <h1>🧠 专业日语专家</h1>
-        <p class="view-subtitle">输入词・短语・句子查询解析 — ${langLabel}释义 / ${indLabel}场景</p>
+    const ai = AIProvider.getConfig();
+    const user = this.getUserConfig();
+    this.direction = { source: 'ja', target: this.getPreferredTarget(user.language) };
+    document.getElementById('main-content').innerHTML = `
+      <header class="expert-page-header">
+        <div>
+          <h1>${t('page.expert')}</h1>
+          <p>${user.level.toUpperCase()} · ${this.industryLabel(user.industry)} · ${this.escapeHtml(ai.label)}</p>
+        </div>
+        <button class="expert-provider" id="btn-expert-settings" title="打开 AI 设置">
+          <span class="expert-provider-dot ${AIProvider.isConfigured() ? 'is-ready' : ''}"></span>
+          ${this.escapeHtml(ai.model || '未配置模型')}
+          <i data-lucide="settings-2"></i>
+        </button>
       </header>
-      <div class="view-actions">
-        <input class="form-input" id="expert-input" type="text" placeholder="例：お疲れ様です、見積もり..." autocomplete="off">
-        <button class="btn btn-primary" id="btn-query">🔍 查询</button>
+
+      <div class="expert-layout">
+        <main class="expert-workspace">
+          <section class="translator-shell">
+            <div class="translator-language-bar">
+              <span id="expert-source-language">${this.languageLabel(this.direction.source)}</span>
+              <button class="btn-icon translator-swap" id="btn-swap-language" title="交换翻译方向">
+                <i data-lucide="arrow-left-right"></i>
+              </button>
+              <span id="expert-target-language">${this.languageLabel(this.direction.target)}</span>
+            </div>
+
+            <div class="translator-grid">
+              <div class="translator-pane translator-input-pane">
+                <textarea id="expert-input" maxlength="1000" placeholder="${this.inputPlaceholder(this.direction.source)}"></textarea>
+                <div class="translator-pane-footer">
+                  <div class="translator-tools">
+                    <button class="btn-icon" id="btn-input-speak" title="朗读输入内容"><i data-lucide="volume-2"></i></button>
+                    <button class="btn-icon" id="btn-input-clear" title="清空"><i data-lucide="x"></i></button>
+                  </div>
+                  <span id="expert-char-count">0 / 1000</span>
+                </div>
+              </div>
+
+              <div class="translator-pane translator-output-pane" id="expert-output">
+                <div class="translator-placeholder">
+                  <i data-lucide="languages"></i>
+                  <p>${t('expert.placeholder')}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="translator-actionbar">
+              <span>Ctrl + Enter 快速解析</span>
+              <button class="btn btn-primary" id="btn-query">
+                <i data-lucide="sparkles"></i>
+                翻译并解析
+              </button>
+            </div>
+          </section>
+
+          <div id="expert-status"></div>
+          <div id="expert-learning"></div>
+        </main>
+
+        <aside class="expert-history-panel">
+          <div class="expert-history-header">
+            <h2>${t('expert.recent')}</h2>
+            <button class="btn-icon" id="btn-clear-history" title="清空历史"><i data-lucide="trash-2"></i></button>
+          </div>
+          <div id="expert-history"></div>
+        </aside>
       </div>
-      <div id="expert-status" class="expert-status" style="display:none"></div>
-      <div id="expert-result"></div>
-      <section class="dash-section expert-section" style="margin-top:24px">
-        <h2>查询历史</h2>
-        <div id="expert-history"></div>
-      </section>
     `;
-  },
-
-  _getCurrentUserId() {
-    const config = JSON.parse(Storage.get('_config') || '{}') || {};
-    return config.currentUserId;
-  },
-
-  getUserConfig() {
-    const p = Storage.getUserProfile(this._getCurrentUserId());
-    return {
-      language: p.profile?.language || 'zh',
-      industry: p.profile?.industry || 'none',
-      level: p.profile?.level || 'n3',
-      maxExamples: p.settings?.maxExamples || 3,
-      autoAddToVocab: p.settings?.autoAddToVocab || false
-    };
+    this.bindEvents();
+    if (window.lucide) lucide.createIcons();
   },
 
   bindEvents() {
+    const input = document.getElementById('expert-input');
     document.getElementById('btn-query').addEventListener('click', () => this.handleQuery());
-    document.getElementById('expert-input').addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') this.handleQuery();
+    document.getElementById('btn-input-clear').addEventListener('click', () => {
+      input.value = '';
+      input.focus();
+      this.updateCharCount();
+    });
+    document.getElementById('btn-input-speak').addEventListener('click', () => {
+      this.speak(input.value, this.speechLanguage(this.direction.source));
+    });
+    document.getElementById('btn-swap-language').addEventListener('click', () => this.swapDirection());
+    document.getElementById('btn-expert-settings').addEventListener('click', () => {
+      window.location.hash = 'settings';
+    });
+    document.getElementById('btn-clear-history').addEventListener('click', () => {
+      if (confirm('清空当前用户的 Expert 查询记录？')) {
+        Storage.clearExpertQueries(Storage._getCurrentUserId());
+        this.currentRecord = null;
+        document.getElementById('expert-learning').innerHTML = '';
+        this.renderEmptyOutput();
+        this.renderHistory();
+      }
+    });
+    input.addEventListener('input', () => this.updateCharCount());
+    input.addEventListener('keydown', event => {
+      if (event.key === 'Enter' && (event.ctrlKey || event.metaKey)) this.handleQuery();
     });
   },
 
+  getUserConfig() {
+    const data = Storage.getUserProfile(Storage._getCurrentUserId());
+    return {
+      language: data.profile.language || 'zh',
+      industry: data.profile.industry || 'none',
+      level: data.profile.level || 'n3',
+      maxExamples: data.settings.maxExamples || 3,
+      autoAddToVocab: data.settings.autoAddToVocab || false
+    };
+  },
+
   async handleQuery() {
+    if (this.isAnalyzing) return;
     const input = document.getElementById('expert-input');
     const query = input.value.trim();
-    if (!query) return;
-    if (this.isAnalyzing) return;
-
-    this.isAnalyzing = true;
-    const status = document.getElementById('expert-status');
-    status.style.display = 'block';
-    status.className = 'expert-status expert-status--loading';
-    status.innerHTML = '<p>🔍 正在解析中...</p>';
-
-    try {
-      const config = this.getUserConfig();
-      const result = await Gemini.analyzeWord(query, config);
-
-      if (!result) {
-        status.style.display = 'block';
-        status.className = 'expert-status expert-status--error';
-        status.innerHTML = '<p>❌ 解析失败，请检查 API Key 或重试</p>';
-        return;
-      }
-
-      // Save query record
-      const userId = this._getCurrentUserId();
-      const queryRecord = {
-        id: 'eq_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8),
-        query: query,
-        userId: userId,
-        profileSnapshot: {
-          industry: config.industry,
-          level: config.level,
-          language: config.language
-        },
-        result: result,
-        linkedWordId: null,
-        addedToVocab: false,
-        createdAt: new Date().toISOString(),
-        reviewedCount: 0
-      };
-
-      Storage.addExpertQuery(queryRecord);
-      this.currentQuery = queryRecord;
-
-      // Show result
-      status.style.display = 'none';
-      this.renderResult(queryRecord);
-
-      // Auto add to vocab
-      if (config.autoAddToVocab) {
-        await this.addToVocab(queryRecord, result);
-      }
-
-      // Refresh history
-      await this.renderHistory();
-    } catch (e) {
-      console.error('Query error:', e);
-      status.style.display = 'block';
-      status.className = 'expert-status expert-status--error';
-      status.innerHTML = '<p>❌ 解析出错: ' + this.escapeHtml(e.message) + '</p>';
-    } finally {
-      this.isAnalyzing = false;
-      input.value = '';
+    if (!query) {
+      input.focus();
+      return;
     }
-  },
-
-  renderResult(record) {
-    const r = record.result;
-    const posHtml = (r.pos && r.pos.length > 0) ? r.pos.join('・') : '—';
-    const lang = record.profileSnapshot.language;
-
-    const examplesHtml = (r.examples || []).map((ex) => `
-      <div class="expert-example">
-        <p class="expert-example-jp">${this.escapeHtml(ex.jp)}</p>
-        <p class="expert-example-reading">${this.escapeHtml(ex.reading)}</p>
-        ${ex.zh ? `<p class="expert-example-zh">${this.escapeHtml(ex.zh)}</p>` : ''}
-        ${ex.en ? `<p class="expert-example-en">${this.escapeHtml(ex.en)}</p>` : ''}
-      </div>
-    `).join('');
-
-    const meaningZhHtml = (r.meaningZh && lang !== 'en')
-      ? `<p class="expert-meaning"><span class="expert-label expert-label--zh">🇨🇳 中文</span> ${this.escapeHtml(r.meaningZh)}</p>` : '';
-    const meaningEnHtml = (r.meaningEn && (lang === 'en' || lang === 'zh-en'))
-      ? `<p class="expert-meaning"><span class="expert-label expert-label--en">🇺🇸 English</span> ${this.escapeHtml(r.meaningEn)}</p>` : '';
-
-    const vocabStatus = record.addedToVocab
-      ? '<span class="expert-vocab-badge">✅ 已加入单词库</span>'
-      : `<button class="btn btn-primary btn-sm" id="btn-add-vocab">📚 加入单词库</button>`;
-
-    const deleteBtnHtml = record.addedToVocab
-      ? '<button class="btn btn-sm" disabled style="opacity:0.35" id="btn-delete-query">🗑 已入库，不可删除</button>'
-      : '<button class="btn btn-sm btn-danger" id="btn-delete-query">🗑 删除此条查询</button>';
-
-    const html = `
-      <div class="card expert-card" id="expert-result-card">
-        <div class="card-header">
-          <strong>📋 "${this.escapeHtml(record.query)}"</strong>
-          ${record.addedToVocab ? '<span class="badge badge-primary">已入库</span>' : ''}
-        </div>
-        <div class="expert-meta">
-          <p><span class="expert-label">📖 读音</span> ${this.escapeHtml(r.reading || '—')}</p>
-          <p><span class="expert-label">🏷️ 品词</span> ${this.escapeHtml(posHtml)}</p>
-        </div>
-        <div class="expert-meanings">
-          <p class="expert-meaning"><span class="expert-label">🇯🇵 日文</span> ${this.escapeHtml(r.meaningJp)}</p>
-          ${meaningZhHtml}
-          ${meaningEnHtml}
-        </div>
-        ${examplesHtml ? `
-        <div class="expert-section-block">
-          <h4 class="expert-section-title">📝 行业相关例句</h4>
-          ${examplesHtml}
-        </div>` : ''}
-        ${r.grammarNotes ? `
-        <div class="expert-section-block">
-          <h4 class="expert-section-title">🔤 语法说明</h4>
-          <p class="expert-text">${this.escapeHtml(r.grammarNotes)}</p>
-        </div>` : ''}
-        ${r.nuance ? `
-        <div class="expert-section-block">
-          <h4 class="expert-section-title">💡 语感提示</h4>
-          <p class="expert-text">${this.escapeHtml(r.nuance)}</p>
-        </div>` : ''}
-        <div class="expert-actions">
-          ${vocabStatus}
-          <button class="btn btn-secondary btn-sm" id="btn-close-result">关闭</button>
-        </div>
-        <div class="expert-actions expert-actions--secondary">
-          ${deleteBtnHtml}
-        </div>
-      </div>
-    `;
-
-    document.getElementById('expert-result').innerHTML = html;
-
-    // Bind add-to-vocab
-    const addBtn = document.getElementById('btn-add-vocab');
-    if (addBtn) {
-      addBtn.addEventListener('click', async () => {
-        await this.addToVocab(record, r);
-        const vocabList = Storage.getAll('vocabulary');
-        const linked = vocabList.find(v => v.expertQueryId === record.id);
-        this.currentQuery = { ...record, addedToVocab: true, linkedWordId: linked ? linked.id : null };
-        this.renderResult(this.currentQuery);
-      });
-    }
-
-    // Bind close
-    const closeBtn = document.getElementById('btn-close-result');
-    if (closeBtn) {
-      closeBtn.addEventListener('click', () => {
-        document.getElementById('expert-result').innerHTML = '';
-      });
-    }
-
-    // Bind delete
-    const deleteBtn = document.getElementById('btn-delete-query');
-    if (deleteBtn) {
-      deleteBtn.addEventListener('click', () => {
-        if (confirm('确定删除这条查询记录？（已入库的单词不受影响）')) {
-          Storage.removeExpertQuery(record.id);
-          this.currentQuery = null;
-          document.getElementById('expert-result').innerHTML = '';
-          this.renderHistory();
-        }
-      });
-    }
-  },
-
-  async addToVocab(record, result) {
-    const existing = Storage.getAll('vocabulary').find(
-      v => v.word === result.word && v.expertQueryId === record.id
-    );
-    if (existing) return;
-
-    const vocabItem = {
-      word: result.word || record.query,
-      reading: result.reading || '',
-      meaningJp: result.meaningJp || '',
-      meaningZh: result.meaningZh || '',
-      source: 'expert',
-      expertQueryId: record.id,
-      industry: record.profileSnapshot.industry,
-      level: record.profileSnapshot.level,
-      tags: [],
-      ...SM2.initItem(),
-      created: new Date().toISOString()
-    };
-
-    Storage.add('vocabulary', vocabItem);
-    Storage.linkToVocab(record.id, vocabItem.id);
-    this.currentQuery = { ...record, addedToVocab: true, linkedWordId: vocabItem.id };
-  },
-
-  async renderHistory() {
-    const userId = this._getCurrentUserId();
-    const queries = Storage.getExpertQueries(userId)
-      .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-      .slice(0, 20);
-    const container = document.getElementById('expert-history');
-    if (!container) return;
-
-    if (queries.length === 0) {
-      container.innerHTML = '<p class="empty-hint">还没有查询记录</p>';
+    if (!AIProvider.isConfigured()) {
+      this.showStatus('请先在设置中配置并启用一个 AI 服务。', 'error');
       return;
     }
 
-    container.innerHTML = queries.map(q => {
-      const date = new Date(q.createdAt);
-      const dateStr = (date.getMonth() + 1) + '/' + date.getDate() + ' '
-        + date.getHours().toString().padStart(2, '0') + ':'
-        + date.getMinutes().toString().padStart(2, '0');
-      const statusIcon = q.addedToVocab ? '✅' : '📋';
-      return `
-        <div class="card expert-history-item" data-action="view-history" data-id="${q.id}">
-          <div class="expert-history-row">
-            <div class="expert-history-text">
-              <strong>${this.escapeHtml(q.query)}</strong>
-              <span class="card-subtitle">${dateStr}</span>
-            </div>
-            <span class="expert-history-status">${statusIcon}</span>
+    this.isAnalyzing = true;
+    this.setBusy(true);
+    this.showStatus('正在结合你的等级与行业背景进行解析...', 'loading');
+    try {
+      const config = { ...this.getUserConfig(), mode: 'natural' };
+      config.sourceLanguage = this.direction.source;
+      config.targetLanguage = this.direction.target;
+      const ai = AIProvider.getConfig();
+      const result = await AIProvider.analyzeWord(query, config);
+      const record = Storage.addExpertQuery({
+        query,
+        userId: Storage._getCurrentUserId(),
+        profileSnapshot: {
+          language: config.language,
+          industry: config.industry,
+          level: config.level,
+          sourceLanguage: config.sourceLanguage,
+          targetLanguage: config.targetLanguage
+        },
+        aiSnapshot: { provider: ai.provider, model: ai.model },
+        result,
+        linkedWordId: null,
+        addedToVocab: false,
+        createdAt: new Date().toISOString()
+      });
+      if (config.autoAddToVocab && !this.isSentenceRecord(record)) this.addToVocab(record);
+      this.showStatus('');
+      this.renderResult(Storage.getExpertQuery(record.id) || record);
+      this.renderHistory();
+    } catch (error) {
+      this.showStatus(`解析失败：${error.message}`, 'error');
+    } finally {
+      this.isAnalyzing = false;
+      this.setBusy(false);
+    }
+  },
+
+  renderResult(record, options = {}) {
+    this.currentRecord = record;
+    this.applyRecordDirection(record, options.preferCurrentDirection);
+    const result = record.result || {};
+    const translation = this.getTranslation(result, this.direction.target);
+    const reading = result.reading || '';
+    const alternatives = Array.isArray(result.alternatives) ? result.alternatives : [];
+
+    document.getElementById('expert-input').value = record.query || '';
+    this.updateCharCount();
+    document.getElementById('expert-output').innerHTML = `
+      <div class="translator-result">
+        ${reading ? `<p class="translator-reading">${this.escapeHtml(reading)}</p>` : ''}
+        <p class="translator-translation">${this.escapeHtml(translation || '暂无翻译')}</p>
+        ${alternatives.length ? `
+          <div class="translator-alternatives">
+            ${alternatives.slice(0, 3).map(item => `<span>${this.escapeHtml(item)}</span>`).join('')}
+          </div>
+        ` : ''}
+      </div>
+      <div class="translator-pane-footer">
+        <div class="translator-tools">
+          <button class="btn-icon" id="btn-output-speak" title="朗读${this.languageLabel(this.direction.target)}"><i data-lucide="volume-2"></i></button>
+          <button class="btn-icon" id="btn-output-copy" title="复制译文"><i data-lucide="copy"></i></button>
+        </div>
+        <span>自然翻译</span>
+      </div>
+    `;
+
+    const examples = Array.isArray(result.examples) ? result.examples : [];
+    const parts = Array.isArray(result.breakdown) ? result.breakdown : [];
+    const pos = Array.isArray(result.pos) ? result.pos : [];
+    const isSentence = this.isSentenceRecord(record);
+    const phraseExists = isSentence && this.findExistingPhrase(record);
+    document.getElementById('expert-learning').innerHTML = `
+      <section class="expert-learning-shell">
+        <div class="expert-learning-title">
+          <div>
+            <span>LEARNING NOTES</span>
+            <h2>${this.escapeHtml(result.word || record.query)}</h2>
+          </div>
+          <div class="expert-result-actions">
+            ${pos.map(item => `<span class="expert-pos">${this.escapeHtml(item)}</span>`).join('')}
+            ${isSentence ? `
+              <button class="btn btn-secondary btn-sm" id="btn-add-phrase" ${phraseExists ? 'disabled' : ''}>
+                <i data-lucide="message-square-plus"></i>
+                ${phraseExists ? '已加入表达库' : '整句加入表达库'}
+              </button>
+            ` : `
+              <button class="btn btn-secondary btn-sm" id="btn-add-vocab" ${record.addedToVocab ? 'disabled' : ''}>
+                <i data-lucide="bookmark-plus"></i>
+                ${record.addedToVocab ? '已加入词汇本' : '加入词汇本'}
+              </button>
+            `}
+            <button class="btn-icon" id="btn-delete-query" title="删除记录"><i data-lucide="trash-2"></i></button>
           </div>
         </div>
-      `;
-    }).join('');
 
-    container.querySelectorAll('[data-action="view-history"]').forEach(el => {
-      el.addEventListener('click', async () => {
-        const q = Storage.getExpertQuery(el.dataset.id);
-        if (q) {
-          this.currentQuery = q;
-          this.renderResult(q);
+        <div class="expert-insight-grid">
+          <div class="expert-insight">
+            <span>${this.direction.target === 'ja' ? '日语表达说明' : '日语释义'}</span>
+            <p>${this.escapeHtml(result.meaningJp || '暂无')}</p>
+          </div>
+          <div class="expert-insight">
+            <span>语感与使用场景</span>
+            <p>${this.escapeHtml(result.nuance || result.levelNote || '暂无')}</p>
+          </div>
+        </div>
+
+        ${parts.length ? `
+          <section class="expert-learning-section">
+            <h3><i data-lucide="blocks"></i>句子拆解</h3>
+            <div class="expert-breakdown">
+              ${parts.map(item => `
+                <div class="expert-breakdown-item">
+                  <div>
+                    <strong>${this.escapeHtml(item.text || '')}</strong>
+                    <span>${this.escapeHtml(item.reading || '')}</span>
+                    <p>${this.escapeHtml(item.meaning || '')}</p>
+                  </div>
+                  <button
+                    class="btn-icon expert-breakdown-add"
+                    data-word="${this.escapeAttr(item.text || '')}"
+                    data-reading="${this.escapeAttr(item.reading || '')}"
+                    data-meaning="${this.escapeAttr(item.meaning || '')}"
+                    title="加入词汇本"
+                    ${this.findExistingWord(item.text) ? 'disabled' : ''}
+                  >
+                    <i data-lucide="${this.findExistingWord(item.text) ? 'bookmark-check' : 'bookmark-plus'}"></i>
+                  </button>
+                </div>
+              `).join('')}
+            </div>
+          </section>
+        ` : ''}
+
+        ${result.grammarNotes ? `
+          <section class="expert-learning-section">
+            <h3><i data-lucide="book-open-check"></i>语法与表达</h3>
+            <p class="expert-learning-copy">${this.escapeHtml(result.grammarNotes)}</p>
+          </section>
+        ` : ''}
+
+        ${examples.length ? `
+          <section class="expert-learning-section">
+            <h3><i data-lucide="message-square-text"></i>适合你的例句</h3>
+            <div class="expert-examples">
+              ${examples.map((example, index) => `
+                <article>
+                  <span>${String(index + 1).padStart(2, '0')}</span>
+                  <div>
+                    <p class="expert-example-jp">${this.escapeHtml(example.jp || '')}</p>
+                    ${example.reading ? `<p class="expert-example-reading">${this.escapeHtml(example.reading)}</p>` : ''}
+                    <p class="expert-example-zh">${this.escapeHtml(example.zh || example.en || '')}</p>
+                  </div>
+                  <button class="btn-icon expert-example-speak" data-speak="${this.escapeAttr(example.jp || '')}" title="朗读例句">
+                    <i data-lucide="volume-2"></i>
+                  </button>
+                </article>
+              `).join('')}
+            </div>
+          </section>
+        ` : ''}
+      </section>
+    `;
+
+    document.getElementById('btn-output-speak').addEventListener('click', () => {
+      this.speak(translation, this.speechLanguage(this.direction.target));
+    });
+    document.getElementById('btn-output-copy').addEventListener('click', () => this.copyText(translation));
+    document.getElementById('btn-add-vocab')?.addEventListener('click', () => {
+      this.addToVocab(record);
+      this.renderResult(Storage.getExpertQuery(record.id) || record);
+      this.renderHistory();
+    });
+    document.getElementById('btn-add-phrase')?.addEventListener('click', () => {
+      this.addToPhrases(record);
+      this.renderResult(Storage.getExpertQuery(record.id) || record);
+      this.renderHistory();
+    });
+    document.querySelectorAll('.expert-breakdown-add').forEach(button => {
+      button.addEventListener('click', () => {
+        this.addBreakdownToVocab(record, {
+          text: button.dataset.word,
+          reading: button.dataset.reading,
+          meaning: button.dataset.meaning
+        });
+        this.renderResult(Storage.getExpertQuery(record.id) || record);
+      });
+    });
+    document.getElementById('btn-delete-query').addEventListener('click', () => {
+      if (confirm('删除这条查询记录？')) {
+        Storage.removeExpertQuery(record.id);
+        this.currentRecord = null;
+        this.renderEmptyOutput();
+        document.getElementById('expert-learning').innerHTML = '';
+        this.renderHistory();
+      }
+    });
+    document.querySelectorAll('.expert-example-speak').forEach(button => {
+      button.addEventListener('click', () => this.speak(button.dataset.speak, 'ja-JP'));
+    });
+    if (window.lucide) lucide.createIcons();
+  },
+
+  renderEmptyOutput() {
+    document.getElementById('expert-output').innerHTML = `
+      <div class="translator-placeholder">
+        <i data-lucide="languages"></i>
+        <p>翻译和学习解析会显示在这里</p>
+      </div>
+    `;
+    if (window.lucide) lucide.createIcons();
+  },
+
+  renderHistory() {
+    const history = Storage.getExpertQueries(Storage._getCurrentUserId())
+      .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    const container = document.getElementById('expert-history');
+    if (!container) return;
+    if (!history.length) {
+      container.innerHTML = `<p class="expert-history-empty">${t('expert.empty')}</p>`;
+      return;
+    }
+    container.innerHTML = history.slice(0, 30).map(item => `
+      <button class="expert-history-item ${this.currentRecord?.id === item.id ? 'is-active' : ''}" data-id="${item.id}">
+        <span class="expert-history-query">${this.escapeHtml(item.query)}</span>
+        <span class="expert-history-meaning">${this.escapeHtml(this.getTranslation(
+          item.result || {},
+          item.profileSnapshot?.targetLanguage || this.getPreferredTarget(this.getUserConfig().language)
+        ))}</span>
+        <time>${this.formatTime(item.createdAt)}</time>
+        ${item.addedToVocab ? '<i data-lucide="bookmark-check"></i>' : ''}
+      </button>
+    `).join('');
+    container.querySelectorAll('[data-id]').forEach(button => {
+      button.addEventListener('click', () => {
+        const record = Storage.getExpertQuery(button.dataset.id);
+        if (record) {
+          this.renderResult(record);
+          this.renderHistory();
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
       });
     });
+    if (window.lucide) lucide.createIcons();
   },
 
-  async loadLatest() {
-    const userId = this._getCurrentUserId();
-    const queries = Storage.getExpertQueries(userId)
-      .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-      .slice(0, 1);
-    if (queries.length > 0) {
-      this.currentQuery = queries[0];
+  addToVocab(record) {
+    const result = record.result || {};
+    const existing = Storage.getAll('vocabulary').find(item => item.expertQueryId === record.id);
+    if (existing) return existing;
+    const item = Storage.add('vocabulary', {
+      word: result.word || record.query,
+      reading: result.reading || '',
+      meaningJp: result.meaningJp || '',
+      meaningZh: result.translationZh || result.meaningZh || result.translationEn || result.meaningEn || result.translation || '',
+      source: 'expert',
+      expertQueryId: record.id,
+      ...SM2.initItem(),
+      created: new Date().toISOString()
+    });
+    Storage.linkToVocab(record.id, item.id);
+    return item;
+  },
+
+  addBreakdownToVocab(record, part) {
+    const word = String(part.text || '').trim();
+    if (!word || this.findExistingWord(word)) return null;
+    return Storage.add('vocabulary', {
+      word,
+      reading: part.reading || '',
+      meaningJp: '',
+      meaningZh: part.meaning || '',
+      source: 'expert-breakdown',
+      expertQueryId: record.id,
+      ...SM2.initItem(),
+      created: new Date().toISOString()
+    });
+  },
+
+  addToPhrases(record) {
+    if (this.findExistingPhrase(record)) return null;
+    const result = record.result || {};
+    const japanese = this.getJapaneseText(record);
+    const translation = this.direction.source === 'ja'
+      ? this.getTranslation(result, this.direction.target)
+      : record.query;
+    const phrase = Storage.add('phrases', {
+      japanese,
+      reading: result.reading || '',
+      chinese: translation || '',
+      category: 'other',
+      source: 'expert',
+      expertQueryId: record.id,
+      created: new Date().toISOString()
+    });
+    Storage.updateExpertQuery(record.id, { addedToPhrases: true, linkedPhraseId: phrase.id });
+    return phrase;
+  },
+
+  getJapaneseText(record) {
+    if (this.direction.source === 'ja') return record.query || '';
+    const result = record.result || {};
+    return result.translationJa || result.translation || result.word || '';
+  },
+
+  isSentenceRecord(record) {
+    const inputType = record.result?.inputType;
+    if (inputType === 'sentence' || inputType === 'expression') return true;
+    if (inputType === 'word') return false;
+    const text = String(record.query || '').trim();
+    if (!text) return false;
+    return /[。！？.!?]/.test(text) || /\s/.test(text) || text.length > 18;
+  },
+
+  findExistingWord(word) {
+    const normalized = String(word || '').trim();
+    if (!normalized) return null;
+    return Storage.getAll('vocabulary').find(item => String(item.word || '').trim() === normalized) || null;
+  },
+
+  findExistingPhrase(record) {
+    const japanese = this.getJapaneseText(record).trim();
+    if (!japanese) return null;
+    return Storage.getAll('phrases').find(item =>
+      item.expertQueryId === record.id || String(item.japanese || '').trim() === japanese
+    ) || null;
+  },
+
+  updateCharCount() {
+    const input = document.getElementById('expert-input');
+    const count = document.getElementById('expert-char-count');
+    if (input && count) count.textContent = `${input.value.length} / 1000`;
+  },
+
+  setBusy(busy) {
+    const button = document.getElementById('btn-query');
+    button.disabled = busy;
+    button.innerHTML = busy
+      ? '<span class="expert-spinner"></span>解析中'
+      : '<i data-lucide="sparkles"></i>翻译并解析';
+    if (window.lucide) lucide.createIcons();
+  },
+
+  showStatus(message, type = '') {
+    const status = document.getElementById('expert-status');
+    status.innerHTML = message
+      ? `<div class="expert-status expert-status--${type}">${this.escapeHtml(message)}</div>`
+      : '';
+  },
+
+  speak(text, lang) {
+    if (!text) return;
+    if (!('speechSynthesis' in window)) {
+      this.showStatus('当前浏览器不支持语音朗读。', 'error');
+      return;
+    }
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = lang;
+    utterance.rate = 0.9;
+    window.speechSynthesis.speak(utterance);
+  },
+
+  stopSpeech() {
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+  },
+
+  async copyText(text) {
+    if (!text) return;
+    try {
+      await navigator.clipboard.writeText(text);
+      this.showStatus('译文已复制。');
+      setTimeout(() => this.showStatus(''), 1200);
+    } catch {
+      this.showStatus('复制失败，请手动选择文本。', 'error');
     }
   },
 
+  getPreferredTarget(language) {
+    return language === 'en' ? 'en' : 'zh';
+  },
+
+  languageLabel(language) {
+    return { ja: t('language.japanese'), zh: t('language.chinese'), en: t('language.english') }[language] || language;
+  },
+
+  inputPlaceholder(language) {
+    return {
+      ja: '输入日语单词、句子或一段文字...',
+      zh: '输入中文单词、句子或一段文字...',
+      en: 'Enter an English word, sentence, or short passage...'
+    }[language] || '输入要翻译的内容...';
+  },
+
+  speechLanguage(language) {
+    return { ja: 'ja-JP', zh: 'zh-CN', en: 'en-US' }[language] || 'ja-JP';
+  },
+
+  swapDirection() {
+    const previous = this.direction.source;
+    this.direction.source = this.direction.target;
+    this.direction.target = previous;
+    this.updateDirectionUi();
+    this.renderEmptyOutput();
+    document.getElementById('expert-learning').innerHTML = '';
+    this.currentRecord = null;
+    this.renderHistory();
+    document.getElementById('expert-input').focus();
+  },
+
+  updateDirectionUi() {
+    const source = document.getElementById('expert-source-language');
+    const target = document.getElementById('expert-target-language');
+    const input = document.getElementById('expert-input');
+    if (source) source.textContent = this.languageLabel(this.direction.source);
+    if (target) target.textContent = this.languageLabel(this.direction.target);
+    if (input) input.placeholder = this.inputPlaceholder(this.direction.source);
+  },
+
+  applyRecordDirection(record, preferCurrentDirection = false) {
+    const source = record.profileSnapshot?.sourceLanguage;
+    const target = record.profileSnapshot?.targetLanguage;
+    if (!preferCurrentDirection && source && target) {
+      this.direction = { source, target };
+    } else {
+      this.direction = {
+        source: 'ja',
+        target: this.getPreferredTarget(this.getUserConfig().language)
+      };
+    }
+    this.updateDirectionUi();
+  },
+
+  getTranslation(result, targetLanguage) {
+    if (result.translation) return result.translation;
+    if (targetLanguage === 'ja') {
+      return result.translationJa || result.word || result.meaningJp || '';
+    }
+    if (targetLanguage === 'en') {
+      return result.translationEn || result.meaningEn || result.translationZh || result.meaningZh || '';
+    }
+    return result.translationZh || result.meaningZh || result.translationEn || result.meaningEn || '';
+  },
+
+  industryLabel(industry) {
+    return I18n.translate(NHK?.getIndustryPlan?.(industry)?.label || industry || t('reading.general'));
+  },
+
+  formatTime(value) {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return '';
+    return date.toLocaleDateString('zh-CN', { month: '2-digit', day: '2-digit' });
+  },
+
   escapeHtml(text) {
-    if (!text) return '';
     const div = document.createElement('div');
-    div.textContent = text;
+    div.textContent = text || '';
     return div.innerHTML;
+  },
+
+  escapeAttr(text) {
+    return this.escapeHtml(text).replace(/"/g, '&quot;');
   }
 };
 
