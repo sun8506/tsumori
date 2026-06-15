@@ -6,8 +6,13 @@ const ServerDatabase = require('./server-db');
 const root = __dirname;
 const host = process.env.HOST || '0.0.0.0';
 const port = Number(process.env.PORT || 5173);
+const isProduction = process.env.NODE_ENV === 'production';
+const trustProxy = process.env.TRUST_PROXY === 'true';
 const database = new ServerDatabase(root);
 const CLOUD_KEYS = new Set(['vocabulary', 'phrases', 'articles', 'expert_queries', 'learning_records']);
+const authAttempts = new Map();
+const AUTH_WINDOW_MS = 15 * 60 * 1000;
+const AUTH_MAX_ATTEMPTS = Math.max(10, Number(process.env.AUTH_RATE_LIMIT_MAX || 60));
 
 const mimeTypes = {
   '.html': 'text/html; charset=utf-8',
@@ -24,12 +29,12 @@ const mimeTypes = {
   '.woff2': 'font/woff2'
 };
 
-function send(res, status, body, contentType = 'text/plain; charset=utf-8') {
+function send(res, status, body, contentType = 'text/plain; charset=utf-8', cacheControl = 'no-store') {
   const payload = Buffer.isBuffer(body) ? body : Buffer.from(String(body));
   res.writeHead(status, {
     'Content-Type': contentType,
     'Content-Length': payload.length,
-    'Cache-Control': 'no-store'
+    'Cache-Control': cacheControl
   });
   res.end(payload);
 }
@@ -45,6 +50,56 @@ function bearerToken(req) {
 
 function authenticatedUser(req) {
   return database.getUserByToken(bearerToken(req));
+}
+
+function clientIp(req) {
+  if (trustProxy) {
+    const forwarded = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim();
+    if (forwarded) return forwarded;
+  }
+  return req.socket.remoteAddress || 'unknown';
+}
+
+function allowAuthAttempt(req) {
+  const key = clientIp(req);
+  const now = Date.now();
+  const previous = authAttempts.get(key);
+  const entry = !previous || previous.resetAt <= now
+    ? { count: 0, resetAt: now + AUTH_WINDOW_MS }
+    : previous;
+  entry.count += 1;
+  authAttempts.set(key, entry);
+  return {
+    allowed: entry.count <= AUTH_MAX_ATTEMPTS,
+    retryAfter: Math.max(1, Math.ceil((entry.resetAt - now) / 1000))
+  };
+}
+
+setInterval(() => {
+  const now = Date.now();
+  authAttempts.forEach((entry, key) => {
+    if (entry.resetAt <= now) authAttempts.delete(key);
+  });
+}, AUTH_WINDOW_MS).unref();
+
+function applySecurityHeaders(res) {
+  res.setHeader('Content-Security-Policy', [
+    "default-src 'self'",
+    "base-uri 'self'",
+    "connect-src 'self'",
+    "font-src 'self' https://fonts.gstatic.com",
+    "form-action 'self'",
+    "frame-ancestors 'none'",
+    "img-src 'self' data:",
+    "object-src 'none'",
+    "script-src 'self'",
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com"
+  ].join('; '));
+  res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('Permissions-Policy', 'camera=(), geolocation=(), payment=()');
 }
 
 function sanitizeCollections(value) {
@@ -332,11 +387,26 @@ async function fetchNewsCandidates(industry = 'none') {
 
 const server = http.createServer(async (req, res) => {
   try {
+    applySecurityHeaders(res);
     const requestUrl = new URL(req.url || '/', `http://127.0.0.1:${port}`);
     const pathname = safeDecode(requestUrl.pathname);
 
+    if (pathname === '/healthz') {
+      if (req.method !== 'GET') return sendJson(res, 405, { error: 'METHOD_NOT_ALLOWED' });
+      return sendJson(res, 200, {
+        status: 'ok',
+        uptimeSeconds: Math.floor(process.uptime()),
+        timestamp: new Date().toISOString()
+      });
+    }
+
     if (pathname === '/api/auth/register') {
       if (req.method !== 'POST') return sendJson(res, 405, { error: 'METHOD_NOT_ALLOWED' });
+      const attempt = allowAuthAttempt(req);
+      if (!attempt.allowed) {
+        res.setHeader('Retry-After', String(attempt.retryAfter));
+        return sendJson(res, 429, { error: 'TOO_MANY_ATTEMPTS' });
+      }
       try {
         const body = await readJson(req);
         const email = String(body.email || '').trim().toLowerCase();
@@ -367,6 +437,11 @@ const server = http.createServer(async (req, res) => {
 
     if (pathname === '/api/auth/login') {
       if (req.method !== 'POST') return sendJson(res, 405, { error: 'METHOD_NOT_ALLOWED' });
+      const attempt = allowAuthAttempt(req);
+      if (!attempt.allowed) {
+        res.setHeader('Retry-After', String(attempt.retryAfter));
+        return sendJson(res, 429, { error: 'TOO_MANY_ATTEMPTS' });
+      }
       try {
         const body = await readJson(req);
         const user = database.authenticate(body.email, body.password);
@@ -433,6 +508,7 @@ const server = http.createServer(async (req, res) => {
         send(res, 405, JSON.stringify({ error: 'Method not allowed' }), 'application/json; charset=utf-8');
         return;
       }
+      if (!authenticatedUser(req)) return sendJson(res, 401, { error: 'UNAUTHORIZED' });
       try {
         const text = await requestAI(await readJson(req));
         send(res, 200, JSON.stringify({ text }), 'application/json; charset=utf-8');
@@ -447,6 +523,7 @@ const server = http.createServer(async (req, res) => {
         send(res, 405, JSON.stringify({ error: 'Method not allowed' }), 'application/json; charset=utf-8');
         return;
       }
+      if (!authenticatedUser(req)) return sendJson(res, 401, { error: 'UNAUTHORIZED' });
       try {
         const industry = String(requestUrl.searchParams.get('industry') || 'none').toLowerCase();
         const articles = await fetchNewsCandidates(evergreenTopics[industry] ? industry : 'none');
@@ -459,8 +536,9 @@ const server = http.createServer(async (req, res) => {
 
     const relativePath = pathname === '/' ? 'index.html' : pathname.replace(/^\/+/, '');
     const filePath = path.resolve(root, relativePath);
+    const relativeToRoot = path.relative(root, filePath);
 
-    if (!filePath.startsWith(root)) {
+    if (relativeToRoot.startsWith('..') || path.isAbsolute(relativeToRoot)) {
       send(res, 403, 'Forbidden');
       return;
     }
@@ -470,7 +548,11 @@ const server = http.createServer(async (req, res) => {
         send(res, 404, 'Not found');
         return;
       }
-      send(res, 200, data, mimeTypes[path.extname(filePath).toLowerCase()] || 'application/octet-stream');
+      const extension = path.extname(filePath).toLowerCase();
+      const cacheControl = isProduction && !['.html', '.json'].includes(extension)
+        ? 'public, max-age=3600'
+        : 'no-store';
+      send(res, 200, data, mimeTypes[extension] || 'application/octet-stream', cacheControl);
     });
   } catch (error) {
     send(res, 500, 'Internal server error');
@@ -496,5 +578,22 @@ process.on('unhandledRejection', error => {
 });
 
 server.listen(port, host, () => {
-  console.log(`Tsumori dev server listening at http://127.0.0.1:${port}/`);
+  console.log(`Tsumori server listening on ${host}:${port} (${isProduction ? 'production' : 'development'})`);
 });
+
+function shutdown(signal) {
+  console.log(`${signal} received, shutting down`);
+  server.close(error => {
+    if (error) {
+      console.error(error);
+      process.exitCode = 1;
+    }
+  });
+  setTimeout(() => {
+    console.error('Forced shutdown after timeout');
+    process.exit(1);
+  }, 10000).unref();
+}
+
+process.on('SIGTERM', () => shutdown('SIGTERM'));
+process.on('SIGINT', () => shutdown('SIGINT'));

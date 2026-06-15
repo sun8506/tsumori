@@ -1,5 +1,6 @@
 const Article = {
   candidates: [],
+  isGenerating: false,
   speech: {
     queueToken: 0,
     paused: false,
@@ -142,20 +143,32 @@ const Article = {
       panel.innerHTML = '';
     });
     panel.querySelector('#btn-generate-selected').addEventListener('click', () => {
+      if (this.isGenerating) return;
       const selected = checkboxes
         .filter(input => input.checked)
         .map(input => this.candidates[Number(input.value)]);
-      this.generateSelected(selected, profile);
+      void this.generateSelected(selected, profile);
     });
     updateSelection();
     if (window.lucide) lucide.createIcons();
   },
 
   async generateSelected(selected, profile) {
+    if (this.isGenerating) return;
     const panel = document.getElementById('candidate-panel');
     const status = document.getElementById('article-status');
-    const button = panel.querySelector('#btn-generate-selected');
+    const button = panel?.querySelector('#btn-generate-selected');
+    if (!panel || !status || !button) return;
+
+    this.isGenerating = true;
+    const fetchButton = document.getElementById('btn-fetch-news');
+    if (fetchButton) fetchButton.disabled = true;
     button.disabled = true;
+    button.setAttribute('aria-busy', 'true');
+    button.innerHTML = '<span>文章生成中，请稍候...</span>';
+    panel.querySelectorAll('input, button').forEach(control => {
+      control.disabled = true;
+    });
     try {
       const generated = await NHK.generateSelected(selected, profile, (current, total, source) => {
         status.innerHTML = `
@@ -171,7 +184,15 @@ const Article = {
       this.renderList();
     } catch (error) {
       status.innerHTML = `<div class="card news-error">${this.escapeHtml(error.message)}</div>`;
-      button.disabled = false;
+      panel.querySelectorAll('input, button').forEach(control => {
+        control.disabled = false;
+      });
+      button.removeAttribute('aria-busy');
+      button.innerHTML = '<i data-lucide="sparkles"></i><span>生成所选文章</span>';
+      if (window.lucide) lucide.createIcons();
+    } finally {
+      if (fetchButton) fetchButton.disabled = false;
+      this.isGenerating = false;
     }
   },
 

@@ -116,7 +116,10 @@ const AIProvider = {
   async requestLocal(config, prompt, systemPrompt, maxOutputTokens = 2048) {
     const response = await fetch('/api/ai', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${Auth.token()}`
+      },
       body: JSON.stringify({
         provider: config.provider,
         apiKey: config.apiKey,

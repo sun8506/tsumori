@@ -1,0 +1,12 @@
+.git
+.gitignore
+.aiignore
+data
+backups
+docs
+deployment
+*.py
+*.ps1
+*.md
+*.backup.css
+test_scripts.js

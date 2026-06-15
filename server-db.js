@@ -14,6 +14,10 @@ class ServerDatabase {
 
   load() {
     fs.mkdirSync(this.dir, { recursive: true });
+    if (!fs.existsSync(this.file)) {
+      this.persist();
+      return;
+    }
     try {
       const parsed = JSON.parse(fs.readFileSync(this.file, 'utf8'));
       this.state = {
@@ -22,16 +26,21 @@ class ServerDatabase {
         sessions: Array.isArray(parsed.sessions) ? parsed.sessions : [],
         cloudData: parsed.cloudData && typeof parsed.cloudData === 'object' ? parsed.cloudData : {}
       };
-    } catch {
-      this.persist();
+    } catch (error) {
+      throw new Error(`Database file is unreadable: ${this.file}. Restore a valid backup before starting. ${error.message}`);
     }
     this.removeExpiredSessions();
   }
 
   persist() {
-    const temporary = `${this.file}.tmp`;
-    fs.writeFileSync(temporary, JSON.stringify(this.state, null, 2), 'utf8');
+    const temporary = `${this.file}.${process.pid}.tmp`;
+    fs.writeFileSync(temporary, JSON.stringify(this.state, null, 2), { encoding: 'utf8', mode: 0o600 });
     fs.renameSync(temporary, this.file);
+    try {
+      fs.chmodSync(this.file, 0o600);
+    } catch {
+      // Windows does not apply POSIX file modes.
+    }
   }
 
   removeExpiredSessions() {

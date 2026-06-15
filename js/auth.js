@@ -215,6 +215,7 @@ const Auth = {
       } else {
         await this.login(document.getElementById('auth-email').value, document.getElementById('auth-password').value);
       }
+      history.replaceState(null, '', `${location.pathname}${location.search}#dashboard`);
       location.reload();
     } catch (error) {
       this.render(error.message);

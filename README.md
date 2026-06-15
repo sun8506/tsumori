@@ -42,6 +42,8 @@ node server.js
 
 - [用户使用说明](docs/USER_GUIDE.md)
 - [隐私政策与使用条款](docs/PRIVACY_POLICY.md)
+- [服务器部署说明](docs/DEPLOYMENT.md)
+- [不使用 Docker 的简易部署](docs/SIMPLE_DEPLOY.md)
 - [公开发布前规划](docs/PUBLIC_RELEASE_PLAN.md)
 
 ## 主要功能

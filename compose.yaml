@@ -1,0 +1,27 @@
+services:
+  app:
+    build:
+      context: .
+    container_name: tsumori-app
+    restart: unless-stopped
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+      HOST: ${HOST:-0.0.0.0}
+      PORT: ${PORT:-5173}
+      TRUST_PROXY: ${TRUST_PROXY:-true}
+      TSUMORI_DATA_DIR: ${TSUMORI_DATA_DIR:-/app/data}
+      AUTH_RATE_LIMIT_MAX: ${AUTH_RATE_LIMIT_MAX:-60}
+    ports:
+      - "127.0.0.1:5173:5173"
+    volumes:
+      - ./data:/app/data
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:5173/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

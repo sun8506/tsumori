@@ -105,7 +105,10 @@ const NHK = {
 
   async fetchCandidates(profile = {}) {
     const industry = profile.industry || 'none';
-    const response = await fetch(`/api/news?industry=${encodeURIComponent(industry)}`, { cache: 'no-store' });
+    const response = await fetch(`/api/news?industry=${encodeURIComponent(industry)}`, {
+      cache: 'no-store',
+      headers: { Authorization: `Bearer ${Auth.token()}` }
+    });
     const data = await response.json().catch(() => ({}));
     if (!response.ok) throw new Error(data.error || `News request failed: ${response.status}`);
     return Array.isArray(data.articles) ? data.articles : [];
