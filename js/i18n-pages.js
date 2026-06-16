@@ -138,7 +138,26 @@
     ['action.cancel','取消','Cancel','キャンセル','취소','Hủy','မလုပ်တော့'],
     ['action.close','关闭','Close','閉じる','닫기','Đóng','ပိတ်မည်'],
     ['action.edit','编辑','Edit','編集','편집','Sửa','ပြင်မည်'],
-    ['action.delete','删除','Delete','削除','삭제','Xóa','ဖျက်မည်']
+    ['action.delete','删除','Delete','削除','삭제','Xóa','ဖျက်မည်'],
+    ['phrases.title','短句本','Phrase Book','フレーズ帳','문장 모음','Cụm từ','ဝါကျတိုစာအုပ်'],
+    ['phrases.subtitle','保存可直接拿来用的日语表达，并标记场景、行业和语气。','Save ready-to-use Japanese expressions and tag their scene, industry, and tone.','すぐ使える日本語表現を保存し、場面・業界・語調を記録します。','바로 쓸 수 있는 일본어 표현을 저장하고 상황, 업종, 말투를 기록하세요.','Lưu các cách diễn đạt tiếng Nhật có thể dùng ngay và gắn nhãn ngữ cảnh, ngành, giọng điệu.','ချက်ချင်းအသုံးပြုနိုင်သော ဂျပန်စကားအသုံးအနှုန်းများကို သိမ်းပြီး အခြေအနေ၊ လုပ်ငန်းနှင့် အသံနေအသံထားကို တပ်ပါ။'],
+    ['phrases.add','添加短句','Add phrase','フレーズを追加','문장 추가','Thêm cụm từ','ဝါကျတိုထည့်ရန်'],
+    ['phrases.practice','场景活用练习','Scenario practice','活用練習','상황 활용 연습','Luyện theo tình huống','အခြေအနေအလိုက် လေ့ကျင့်ရန်'],
+    ['phrases.industry','行业','Industry','業界','업종','Ngành','လုပ်ငန်း'],
+    ['phrases.scene','场景','Scene','場面','상황','Ngữ cảnh','အခြေအနေ'],
+    ['phrases.role','对象 / 角色','Role / target','相手 / 役割','대상 / 역할','Vai trò / đối tượng','ပုဂ္ဂိုလ် / အခန်းကဏ္ဍ'],
+    ['phrases.intent','目的','Intent','目的','목적','Mục đích','ရည်ရွယ်ချက်'],
+    ['phrases.tone','语气','Tone','語気','말투','Giọng điệu','အသံနေအသံထား'],
+    ['phrases.variants','可接受写法','Accepted variants','許容表記','허용 표기','Biến thể chấp nhận','လက်ခံနိုင်သော အမျိုးမျိုးရေးနည်း'],
+    ['phrases.prompt','请根据以下场景写出最自然的日语表达：{context}','Write the most natural Japanese expression for this situation: {context}','次の場面に合う自然な日本語を書いてください：{context}','다음 상황에 맞는 가장 자연스러운 일본어를 써 주세요: {context}','Hãy viết cách diễn đạt tiếng Nhật tự nhiên nhất cho tình huống sau: {context}','အောက်ပါအခြေအနေအတွက် အလိုက်ဖက်ဆုံး ဂျပန်စကားအသုံးအနှုန်းကိုရေးပါ：{context}'],
+    ['phrases.reference','参考表达','Reference','参考表現','참고 표현','Câu tham khảo','ကိုးကားစာကြောင်း'],
+    ['phrases.noDue','当前没有可练习的短句。先保存一些场景表达吧。','No phrases are due right now. Save some scenario expressions first.','いま練習できるフレーズはありません。まず場面表現を保存しましょう。','지금 연습할 문장이 없습니다. 먼저 상황 표현을 저장하세요.','Chưa có cụm từ nào đến hạn. Hãy lưu vài câu theo tình huống trước.','လက်ရှိတွင် လေ့ကျင့်ရန် စကားစု မရှိသေးပါ။ အရင်ဆုံး အခြေအနေအလိုက် စကားအသုံးအနှုန်းများကို သိမ်းပါ။'],
+    ['phrases.correct','正确，进入下一题。','Correct, moving on.','正解です。次へ進みます。','정답입니다. 다음 문제로 넘어갑니다.','Chính xác, chuyển sang câu tiếp theo.','မှန်ပါပြီ၊ နောက်တစ်ခုသို့ သွားမည်။'],
+    ['phrases.wrong','不正确。参考表达：{answer}','Incorrect. Reference: {answer}','不正解です。参考表現：{answer}','정답이 아닙니다. 참고 표현: {answer}','Chưa đúng. Câu tham khảo: {answer}','မမှန်ပါ။ ကိုးကားစာကြောင်း：{answer}'],
+    ['phrases.enterAnswer','请输入你会怎么说。','Please type how you would say it.','どう言うか入力してください。','어떻게 말할지 입력하세요.','Vui lòng nhập cách bạn sẽ nói.','သင်ဘယ်လိုပြောမည်ကို ရိုက်ထည့်ပါ။'],
+    ['phrases.showAnswer','看答案','Show answer','答えを見る','정답 보기','Xem đáp án','အဖြေကြည့်ရန်'],
+    ['phrases.next','下一题','Next','次へ','다음 문제','Câu tiếp theo','နောက်တစ်ခု'],
+    ['phrases.submit','确认','Check','確認','확인','Kiểm tra','စစ်ဆေးမည်']
   ];
   I18n.phraseKeys = new Map();
   rows.forEach(([key, zh, en, ja, ko, vi, my]) => {

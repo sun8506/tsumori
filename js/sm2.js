@@ -36,6 +36,7 @@ const SM2 = {
    * @returns {Object} 峏怴屻偺 item
    */
   correct(item, response) {
+    this._normalizeItem(item);
     item.repetitions += 1;
     
     if (item.repetitions === 1) {
@@ -61,6 +62,7 @@ const SM2 = {
    * 暅廗幚峴 ? 晄惓夝偺応崌
    */
   incorrect(item, response) {
+    this._normalizeItem(item);
     item.repetitions = 0;
     item.interval = 1;
     item.mastery = 0;
@@ -79,6 +81,7 @@ const SM2 = {
    * 惓夝傛傝彮偟桪偟偄張棟
    */
   medium(item, response) {
+    this._normalizeItem(item);
     item.repetitions = Math.max(0, item.repetitions - 1);
     if (item.repetitions === 0) {
       item.interval = 1;
@@ -108,6 +111,15 @@ const SM2 = {
     d.setDate(d.getDate() + days);
     d.setHours(0, 0, 0, 0);
     return d.toISOString();
+  },
+
+  _normalizeItem(item) {
+    item.repetitions = Number(item.repetitions || 0);
+    item.interval = Number(item.interval || 0);
+    item.ef = Number(item.ef || this.DEFAULT_EF);
+    item.mastery = Number(item.mastery || this.DEFAULT_MASTERY);
+    if (!Array.isArray(item.history)) item.history = [];
+    return item;
   },
 
   /**
