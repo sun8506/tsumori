@@ -207,7 +207,7 @@ const Dashboard = {
         details,
         checkedIn: stored?.checkedIn || false,
         checkedInAt: stored?.checkedInAt || null,
-        day: date.toLocaleDateString('zh-CN', { month: '2-digit', day: '2-digit' }),
+        day: I18n.date(date, { month: '2-digit', day: '2-digit' }),
         weekday: index === 0 ? t('dash.today') : t(`weekday.${date.getDay()}`),
         isToday: index === 0
       };
@@ -221,20 +221,20 @@ const Dashboard = {
 
     words.filter(item => isDate(item.created)).forEach(item => {
       details.push({
-        type: '新增单词',
+        type: t('dash.addedWord'),
         icon: 'book-open',
         title: item.word,
-        detail: item.meaningZh || item.meaningJp || item.reading || '已加入词库',
+        detail: item.meaningZh || item.meaningJp || item.reading || t('dash.addedLibrary'),
         time: item.created
       });
     });
 
     phrases.filter(item => isDate(item.created)).forEach(item => {
       details.push({
-        type: '收藏短句',
+        type: t('dash.addedPhrase'),
         icon: 'quote',
         title: item.japanese,
-        detail: item.chinese || item.reading || '已加入短句本',
+        detail: item.chinese || item.reading || t('dash.addedPhrases'),
         time: item.created
       });
     });
@@ -242,9 +242,9 @@ const Dashboard = {
     words.forEach(word => {
       const history = Array.isArray(word.history) ? word.history : [];
       history.filter(item => isDate(item.date)).forEach(item => {
-        const result = item.result === true ? '掌握' : item.result === 'medium' ? '较难' : '需重学';
+        const result = item.result === true ? t('dash.mastered') : item.result === 'medium' ? t('dash.difficult') : t('dash.relearn');
         details.push({
-          type: '单词复习',
+          type: t('dash.wordReview'),
           icon: 'brain',
           title: word.word,
           detail: `${result}${word.reading ? ` · ${word.reading}` : ''}`,
@@ -255,10 +255,10 @@ const Dashboard = {
 
     articles.filter(item => isDate(item.created || item.createdAt || item.date)).forEach(item => {
       details.push({
-        type: '阅读文章',
+        type: t('dash.readArticle'),
         icon: 'newspaper',
-        title: item.title || item.titleJp || '日语文章',
-        detail: item.summary || item.source || '已完成阅读',
+        title: item.title || item.titleJp || t('dash.japaneseArticle'),
+        detail: item.summary || item.source || t('dash.readDone'),
         time: item.created || item.createdAt || item.date
       });
     });
@@ -268,12 +268,12 @@ const Dashboard = {
 
   renderHistoryDetail(record) {
     const checkinText = record.checkedIn
-      ? `已打卡${record.checkedInAt ? ` · ${this.formatTime(record.checkedInAt)}` : ''}`
-      : '当天未打卡';
+      ? `${t('dash.checkedAt')}${record.checkedInAt ? ` · ${this.formatTime(record.checkedInAt)}` : ''}`
+      : t('dash.notChecked');
     return `
       <div class="history-detail">
         <div class="history-detail-header">
-          <strong>${record.day} 学习记录</strong>
+          <strong>${record.day} ${t('dash.log')}</strong>
           <span class="${record.checkedIn ? 'is-checked' : ''}">${checkinText}</span>
         </div>
         ${record.details.length ? `
@@ -289,7 +289,7 @@ const Dashboard = {
               </div>
             `).join('')}
           </div>
-        ` : '<p class="history-detail-empty">当天没有学习内容记录。</p>'}
+        ` : `<p class="history-detail-empty">${t('dash.detailEmpty')}</p>`}
       </div>
     `;
   },
@@ -297,7 +297,7 @@ const Dashboard = {
   formatTime(value) {
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return '';
-    return date.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
+    return I18n.time(date, { hour: '2-digit', minute: '2-digit' });
   },
 
   getFocusItems(date, words, phrases, articles) {
@@ -307,17 +307,17 @@ const Dashboard = {
       ...words.filter(item => isDate(item.created)).map(item => ({
         type: t('nav.words'),
         title: item.word,
-        detail: item.meaningZh || item.meaningJp || item.reading || '已加入词库'
+        detail: item.meaningZh || item.meaningJp || item.reading || t('dash.addedLibrary')
       })),
       ...phrases.filter(item => isDate(item.created)).map(item => ({
         type: t('nav.phrases'),
         title: item.japanese,
-        detail: item.chinese || item.reading || '已加入短句本'
+        detail: item.chinese || item.reading || t('dash.addedPhrases')
       })),
       ...articles.filter(item => isDate(item.created || item.createdAt || item.date)).map(item => ({
         type: t('nav.news'),
-        title: item.title || item.titleJp || '日语文章',
-        detail: item.summary || item.source || '已完成阅读'
+        title: item.title || item.titleJp || t('dash.japaneseArticle'),
+        detail: item.summary || item.source || t('dash.readDone')
       }))
     ];
     return items.slice(-3).reverse();

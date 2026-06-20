@@ -9,12 +9,12 @@ const Vocabulary = {
   render() {
     document.getElementById('main-content').innerHTML = `
       <header class="view-header">
-        <h1>Vocabulary</h1>
-        <p class="view-subtitle">Collect words and review them with spaced repetition.</p>
+        <h1>${t('page.vocabulary')}</h1>
+        <p class="view-subtitle">${t('words.subtitle')}</p>
       </header>
       <div class="view-actions">
-        <button class="btn btn-primary" id="btn-add-word">Add word</button>
-        <button class="btn btn-secondary" id="btn-review">Review due words</button>
+        <button class="btn btn-primary" id="btn-add-word">${t('words.add')}</button>
+        <button class="btn btn-secondary" id="btn-review">${t('words.review')}</button>
       </div>
       <div id="word-list"></div>
     `;
@@ -27,34 +27,34 @@ const Vocabulary = {
     const modal = document.getElementById('modal-container');
     modal.innerHTML = `
       <div class="modal-header">
-        <h3>${existing ? 'Edit word' : 'Add word'}</h3>
-        <button class="modal-close" type="button" aria-label="Close" title="Close" id="word-form-close-btn">×</button>
+        <h3>${existing ? t('words.edit') : t('words.add')}</h3>
+        <button class="modal-close" type="button" aria-label="${t('common.close')}" title="${t('common.close')}" id="word-form-close-btn"><i data-lucide="x"></i></button>
       </div>
       <div class="modal-body">
         <div class="form-group">
-          <label class="form-label">Word</label>
+          <label class="form-label">${t('words.word')}</label>
           <input class="form-input" id="input-word" value="${this.escapeAttr(existing?.word)}" placeholder="例: 積もり">
         </div>
         <div class="form-group">
-          <label class="form-label">Reading</label>
+          <label class="form-label">${t('words.reading')}</label>
           <input class="form-input" id="input-reading" value="${this.escapeAttr(existing?.reading)}" placeholder="つもり">
         </div>
         <div class="form-group">
-          <label class="form-label">Accepted spellings</label>
+          <label class="form-label">${t('words.aliases')}</label>
           <input class="form-input" id="input-aliases" value="${this.escapeAttr(this.aliasesToText(existing?.aliases))}" placeholder="カタカナ、别读、其他拼写，用逗号分隔">
         </div>
         <div class="form-group">
-          <label class="form-label">Meaning</label>
+          <label class="form-label">${t('words.meaning')}</label>
           <textarea class="form-input" id="input-meaning-jp" rows="2">${this.escapeHtml(existing?.meaningJp)}</textarea>
         </div>
         <div class="form-group">
-          <label class="form-label">Chinese / notes</label>
+          <label class="form-label">${t('words.notes')}</label>
           <textarea class="form-input" id="input-meaning-zh" rows="2">${this.escapeHtml(existing?.meaningZh)}</textarea>
         </div>
       </div>
       <div class="modal-actions">
-        <button class="btn btn-secondary" onclick="Modal.close()">Cancel</button>
-        <button class="btn btn-primary" id="btn-save-word">Save</button>
+        <button class="btn btn-secondary" type="button" id="word-form-cancel-btn">${t('common.cancel')}</button>
+        <button class="btn btn-primary" id="btn-save-word">${t('common.save')}</button>
       </div>
     `;
     Modal.open();
@@ -64,6 +64,7 @@ const Vocabulary = {
       document.getElementById('modal-container')?.classList.remove('policy-modal');
     };
     document.getElementById('word-form-close-btn')?.addEventListener('click', hideModal);
+    document.getElementById('word-form-cancel-btn')?.addEventListener('click', hideModal);
     document.getElementById('btn-save-word').addEventListener('click', () => {
       const data = {
         word: document.getElementById('input-word').value.trim(),
@@ -73,7 +74,7 @@ const Vocabulary = {
         meaningZh: document.getElementById('input-meaning-zh').value.trim()
       };
       if (!data.word) {
-        alert('Please enter a word.');
+        alert(t('words.required'));
         return;
       }
       if (existing) {
@@ -84,12 +85,13 @@ const Vocabulary = {
       Modal.close();
       this.renderList();
     });
+    if (window.lucide) lucide.createIcons({ nodes: modal.querySelectorAll('[data-lucide]') });
   },
 
   startReview() {
     const due = SM2.getDue(Storage.getAll('vocabulary'));
     if (!due.length) {
-      alert('No words are due right now.');
+      alert(t('words.noDue'));
       return;
     }
 
@@ -121,26 +123,26 @@ const Vocabulary = {
       }
       state.currentId = item.id;
       const progress = state.phase === 'relearn'
-        ? `Relearn ${state.answered + 1}`
-        : `Review ${state.answered + 1} / ${state.total}`;
+        ? `${t('words.relearn')} ${state.answered + 1}`
+        : `${t('words.review')} ${state.answered + 1} / ${state.total}`;
       document.getElementById('modal-container').innerHTML = `
         <div class="modal-header">
           <h3>${progress}</h3>
-        <button class="modal-close" type="button" aria-label="Close" title="Close" id="review-close-btn">×</button>
+        <button class="modal-close" type="button" aria-label="${t('common.close')}" title="${t('common.close')}" id="review-close-btn"><i data-lucide="x"></i></button>
         </div>
         <div class="modal-body review-card spelling-review-card">
-          <p class="review-mode-label">根据单词写出读音。可输入平假名或片假名。</p>
+          <p class="review-mode-label">${t('words.reviewMode')}</p>
           <div class="review-word">${this.escapeHtml(item.word)}</div>
           <p class="review-hint">${this.escapeHtml(item.meaningZh || item.meaningJp || '')}</p>
           <form id="review-answer-form" class="review-answer-form" autocomplete="off">
-            <label class="form-label" for="review-answer">读音 / 拼写</label>
+            <label class="form-label" for="review-answer">${t('words.answerLabel')}</label>
             <input class="form-input review-answer-input" id="review-answer" inputmode="text" autocomplete="off" autocapitalize="none" placeholder="例：きゅうそく / キュウソク">
             <p class="review-feedback" id="review-feedback" aria-live="polite"></p>
           </form>
         </div>
         <div class="modal-actions">
-          <button class="btn btn-secondary" id="btn-show-answer" type="button">看答案</button>
-          <button class="btn btn-primary" id="btn-submit-review" type="submit" form="review-answer-form">确认</button>
+          <button class="btn btn-secondary" id="btn-show-answer" type="button">${t('words.showAnswer')}</button>
+          <button class="btn btn-primary" id="btn-submit-review" type="submit" form="review-answer-form">${t('words.check')}</button>
         </div>
       `;
       Modal.open();
@@ -164,7 +166,7 @@ const Vocabulary = {
           stored.needsRelearn = false;
           Storage.update('vocabulary', stored.id, stored);
           feedback.className = 'review-feedback is-correct';
-          feedback.textContent = '正确，进入下一题。';
+          feedback.textContent = t('words.correct');
           submitButton.disabled = true;
           showAnswerButton.disabled = true;
           setTimeout(() => {
@@ -181,10 +183,12 @@ const Vocabulary = {
         Storage.update('vocabulary', stored.id, stored);
         if (!state.relearnQueue.includes(stored.id)) state.relearnQueue.push(stored.id);
         feedback.className = 'review-feedback is-wrong';
-        feedback.innerHTML = `不正确。正确读音：<strong>${this.escapeHtml(stored.reading || stored.word)}</strong>`;
+        feedback.innerHTML = t('words.wrong', {
+          answer: `<strong>${this.escapeHtml(stored.reading || stored.word)}</strong>`
+        });
         submitButton.disabled = true;
         waitingForNext = true;
-        showAnswerButton.textContent = '下一题';
+        showAnswerButton.textContent = t('words.next');
         showAnswerButton.disabled = false;
       };
 
@@ -201,7 +205,7 @@ const Vocabulary = {
         const response = input.value.trim();
         if (!response) {
           feedback.className = 'review-feedback is-wrong';
-          feedback.textContent = '请输入答案。';
+          feedback.textContent = t('words.enterAnswer');
           input.focus();
           return;
         }
@@ -209,6 +213,7 @@ const Vocabulary = {
       });
       showAnswerButton.addEventListener('click', () => waitingForNext ? goNext() : finishQuestion('wrong'));
       input.focus();
+      if (window.lucide) lucide.createIcons({ nodes: document.getElementById('modal-container').querySelectorAll('[data-lucide]') });
     };
 
     show();
@@ -219,7 +224,7 @@ const Vocabulary = {
     this.reviewState = null;
     Modal.close();
     this.renderList();
-    alert(`复习完成。本轮处理 ${reviewed} 次。`);
+    alert(t('words.finished', { count: reviewed }));
   },
 
   isReadingAnswerCorrect(answer, item) {
@@ -251,7 +256,7 @@ const Vocabulary = {
     const container = document.getElementById('word-list');
     if (!container) return;
     if (!words.length) {
-      container.innerHTML = '<p class="empty-hint">No vocabulary yet. Add your first word.</p>';
+      container.innerHTML = `<p class="empty-hint">${t('words.empty')}</p>`;
       return;
     }
 
@@ -263,14 +268,14 @@ const Vocabulary = {
             <span class="card-subtitle">${this.escapeHtml(word.reading || '')}</span>
           </div>
           <div class="card-actions">
-            <button class="btn btn-secondary btn-sm" data-edit="${word.id}">Edit</button>
-            <button class="btn btn-danger btn-sm" data-delete="${word.id}">Delete</button>
+            <button class="btn btn-secondary btn-sm" data-edit="${word.id}">${t('common.edit')}</button>
+            <button class="btn btn-danger btn-sm" data-delete="${word.id}">${t('common.delete')}</button>
           </div>
         </div>
         <p>${this.escapeHtml(word.meaningJp || '')}</p>
         <p class="card-subtitle">${this.escapeHtml(word.meaningZh || '')}</p>
-        ${word.aliases?.length ? `<p class="card-subtitle">Accepted: ${this.escapeHtml(word.aliases.join(' / '))}</p>` : ''}
-        <p class="card-subtitle">Mastery: ${Number(word.mastery || 0)} / 5</p>
+        ${word.aliases?.length ? `<p class="card-subtitle">${t('words.accepted')}: ${this.escapeHtml(word.aliases.join(' / '))}</p>` : ''}
+        <p class="card-subtitle">${t('words.mastery')}: ${Number(word.mastery || 0)} / 5</p>
       </div>
     `).join('');
 
@@ -279,7 +284,7 @@ const Vocabulary = {
     });
     container.querySelectorAll('[data-delete]').forEach(button => {
       button.addEventListener('click', () => {
-        if (confirm('Delete this word?')) {
+        if (confirm(t('words.deleteConfirm'))) {
           Storage.remove('vocabulary', button.dataset.delete);
           this.renderList();
         }

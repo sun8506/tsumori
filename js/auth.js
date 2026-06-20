@@ -107,6 +107,13 @@ const Auth = {
     return result.user;
   },
 
+  async deleteAccount() {
+    await this.request('/api/account', { method: 'DELETE' });
+    Storage.clearAllLocalData();
+    location.hash = '';
+    location.reload();
+  },
+
   async changeStorageMode(mode) {
     const nextMode = mode === 'cloud' ? 'cloud' : 'local';
     if (nextMode === 'cloud') await this.saveCloudData(Storage.getCurrentCollections());
@@ -151,7 +158,16 @@ const Auth = {
       <main class="auth-page">
         <section class="auth-brand-panel">
           <div class="auth-brand"><span>積</span><strong>Tsumori</strong></div>
-          <div><p class="learning-eyebrow">JAPANESE LEARNING</p><h1>${t('auth.welcome')}</h1><p>${t('auth.subtitle')}</p></div>
+          <div>
+            <p class="learning-eyebrow">JAPANESE LEARNING</p>
+            <h1>${t('auth.welcome')}</h1>
+            <p>${t('auth.subtitle')}</p>
+            <div class="auth-feature-list">
+              <span><i data-lucide="calendar-check"></i>${t('public.featureRecord')}</span>
+              <span><i data-lucide="rotate-ccw"></i>${t('public.featureReview')}</span>
+              <span><i data-lucide="languages"></i>${t('public.featureLanguages')}</span>
+            </div>
+          </div>
           <div class="auth-local-note"><i data-lucide="shield-check"></i><div><strong>${t('auth.accountCloudNotice')}</strong><p>${t('auth.accountCloudDetail')}</p></div></div>
         </section>
         <section class="auth-form-panel">
@@ -181,6 +197,12 @@ const Auth = {
             <button class="btn btn-primary auth-submit" type="submit">${register ? t('auth.register') : t('auth.login')}</button>
             <p class="auth-switch">${register ? t('auth.hasAccount') : t('auth.noAccount')} <button type="button" id="auth-switch">${register ? t('auth.login') : t('auth.register')}</button></p>
             <p class="auth-security"><i data-lucide="lock-keyhole"></i>${t('auth.security')}</p>
+            <nav class="auth-public-links" aria-label="${t('public.information')}">
+              <button type="button" data-public-section="about">${t('public.about')}</button>
+              <button type="button" data-public-section="privacy">${t('public.privacy')}</button>
+              <button type="button" data-public-section="terms">${t('public.terms')}</button>
+              <button type="button" data-public-section="data">${t('public.data')}</button>
+            </nav>
           </form>
         </section>
       </main>
@@ -194,6 +216,9 @@ const Auth = {
       this.render();
     });
     document.getElementById('auth-policy')?.addEventListener('click', () => this.showPolicy());
+    document.querySelectorAll('[data-public-section]').forEach(button => {
+      button.addEventListener('click', () => this.showPublicInfo(button.dataset.publicSection));
+    });
     document.getElementById('auth-form').addEventListener('submit', event => this.handleSubmit(event));
     if (window.lucide) lucide.createIcons();
   },
@@ -228,7 +253,7 @@ const Auth = {
     container.innerHTML = `
       <div class="modal-header">
         <h3>${t('policy.title')}</h3>
-        <button class="modal-close" type="button" aria-label="${t('common.close')}" title="${t('common.close')}" onclick="Modal.close()"><i data-lucide="x"></i></button>
+        <button class="modal-close" type="button" aria-label="${t('common.close')}" title="${t('common.close')}" id="policy-close"><i data-lucide="x"></i></button>
       </div>
       <div class="modal-body policy-content">
         <p>${t('policy.summary')}</p>
@@ -237,11 +262,45 @@ const Auth = {
       <div class="modal-actions"><button class="btn btn-primary" id="policy-agree">${t('policy.agree')}</button></div>
     `;
     Modal.open();
+    document.getElementById('policy-close')?.addEventListener('click', () => Modal.close());
     document.getElementById('policy-agree').addEventListener('click', () => {
       const consent = document.getElementById('auth-consent');
       if (consent) consent.checked = true;
       Modal.close();
     });
+    if (window.lucide) lucide.createIcons({ nodes: container.querySelectorAll('[data-lucide]') });
+  },
+
+  showPublicInfo(section) {
+    if (section === 'privacy' || section === 'terms') {
+      this.showPolicy();
+      return;
+    }
+    const isData = section === 'data';
+    const container = document.getElementById('modal-container');
+    container.classList.add('policy-modal');
+    container.innerHTML = `
+      <div class="modal-header">
+        <h3>${t(isData ? 'public.dataTitle' : 'public.aboutTitle')}</h3>
+        <button class="modal-close" type="button" aria-label="${t('common.close')}" title="${t('common.close')}" id="public-info-close"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body policy-content">
+        <p>${t(isData ? 'public.dataCopy' : 'public.aboutCopy')}</p>
+        <section>
+          <h4>${t(isData ? 'public.localTitle' : 'public.productTitle')}</h4>
+          <p>${t(isData ? 'public.localCopy' : 'public.productCopy')}</p>
+        </section>
+        <section>
+          <h4>${t(isData ? 'public.cloudTitle' : 'public.contactTitle')}</h4>
+          <p>${t(isData ? 'public.cloudCopy' : 'public.contactCopy')}</p>
+        </section>
+      </div>
+      <div class="modal-actions"><button class="btn btn-primary" id="public-info-done">${t('common.close')}</button></div>
+    `;
+    Modal.open();
+    const close = () => Modal.close();
+    document.getElementById('public-info-close')?.addEventListener('click', close);
+    document.getElementById('public-info-done')?.addEventListener('click', close);
     if (window.lucide) lucide.createIcons({ nodes: container.querySelectorAll('[data-lucide]') });
   },
 

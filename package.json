@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "check": "node --check server.js && node --check server-db.js && node --check js/auth.js && node --check js/storage.js && node --check js/api.js && node --check js/nhk.js && node --check js/views/article.js"
+    "check": "node scripts/check-syntax.js",
+    "test": "node scripts/check-syntax.js && node scripts/test-i18n.js && node scripts/test-core.js"
   }
 }

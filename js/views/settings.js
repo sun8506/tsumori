@@ -83,6 +83,11 @@ const Settings = {
         <p class="settings-guide-copy">${t('settings.consentAt')}: ${user?.privacyConsentAt ? I18n.date(user.privacyConsentAt, { year: 'numeric', month: 'long', day: 'numeric' }) : '-'}</p>
         <button class="btn btn-secondary" id="btn-view-policy">${t('auth.openPolicy')}</button>
       </div>
+      <div class="card settings-danger-card">
+        <h3>${t('settings.deleteAccount')}</h3>
+        <p class="settings-guide-copy">${t('settings.deleteAccountHelp')}</p>
+        <button class="btn btn-danger" id="btn-delete-account">${t('settings.deleteAccount')}</button>
+      </div>
       <button class="btn btn-danger" id="btn-logout">${t('settings.logout')}</button>
     `;
     document.getElementById('settings-ui-language').addEventListener('change', event => {
@@ -104,6 +109,19 @@ const Settings = {
       }
     });
     document.getElementById('btn-view-policy').addEventListener('click', () => Auth.showPolicy());
+    document.getElementById('btn-delete-account').addEventListener('click', async event => {
+      if (!confirm(t('settings.deleteAccountConfirm'))) return;
+      const button = event.currentTarget;
+      button.disabled = true;
+      button.textContent = t('settings.deleting');
+      try {
+        await Auth.deleteAccount();
+      } catch (error) {
+        alert(error.message);
+        button.disabled = false;
+        button.textContent = t('settings.deleteAccount');
+      }
+    });
     document.getElementById('btn-logout').addEventListener('click', () => Auth.logout());
   },
 
@@ -144,22 +162,22 @@ const Settings = {
       <div class="card">
         <h3>${t('profile.title')}</h3>
         <div class="form-group">
-          <label class="form-label">Explanation language</label>
+          <label class="form-label">${t('profile.language')}</label>
           <select class="form-input" id="input-language">
-            ${this.option('zh', 'Chinese', profile.language)}
-            ${this.option('en', 'English', profile.language)}
+            ${this.option('zh', t('language.chinese'), profile.language)}
+            ${this.option('en', t('language.english'), profile.language)}
             ${this.option('zh-en', t('profile.zhEn'), profile.language)}
             ${this.option('ja-zh', t('profile.jaZh'), profile.language)}
           </select>
         </div>
         <div class="form-group">
-          <label class="form-label">Industry</label>
+          <label class="form-label">${t('profile.industry')}</label>
           <select class="form-input" id="input-industry">
             ${['none', 'it', 'sales', 'realestate', 'hospitality', 'food', 'service', 'education', 'manufacturing'].map(value => this.option(value, t(`industry.${value}`), profile.industry)).join('')}
           </select>
         </div>
         <div class="form-group">
-          <label class="form-label">Japanese level</label>
+          <label class="form-label">${t('profile.level')}</label>
           <select class="form-input" id="input-level">
             ${['n5', 'n4', 'n3', 'n2', 'n1', 'free'].map(value => this.option(value, value.toUpperCase(), profile.level || 'n3')).join('')}
           </select>
@@ -168,7 +186,7 @@ const Settings = {
           <label class="form-label"><input type="checkbox" id="chk-auto-vocab" ${settings.autoAddToVocab ? 'checked' : ''}> ${t('profile.autoVocab')}</label>
         </div>
         <div class="form-group">
-          <label class="form-label">Max examples</label>
+          <label class="form-label">${t('profile.examples')}</label>
           <input class="form-input" id="input-max-examples" type="number" min="1" max="5" value="${settings.maxExamples || 3}">
         </div>
         <button class="btn btn-primary" id="btn-save-profile">${t('common.save')}</button>
@@ -236,7 +254,7 @@ const Settings = {
         };
       });
       Storage.saveConfig(next);
-      alert(`${AIProvider.PROVIDERS[activeProvider].label} is now the active AI provider.`);
+      alert(t('api.saved', { provider: AIProvider.PROVIDERS[activeProvider].label }));
     });
   },
 
@@ -300,9 +318,8 @@ const Settings = {
     document.getElementById('btn-export').addEventListener('click', () => this.exportData());
     document.getElementById('btn-import').addEventListener('click', () => this.importData());
     document.getElementById('btn-clear').addEventListener('click', () => {
-      if (confirm('Delete all local Tsumori data?')) {
-        Object.keys(localStorage).filter(key => key.startsWith(Storage.PREFIX)).forEach(key => localStorage.removeItem(key));
-        Storage.init();
+      if (confirm(t('data.clearConfirm'))) {
+        Storage.clearAllLocalData();
         location.reload();
       }
     });
@@ -334,8 +351,14 @@ const Settings = {
       <div class="card">
         <h3>${t('about.title')}</h3>
         <p class="card-subtitle">${t('about.copy')}</p>
+        <div class="about-actions">
+          <button class="btn btn-secondary" id="btn-about-policy">${t('auth.openPolicy')}</button>
+          <button class="btn btn-secondary" id="btn-about-data">${t('public.data')}</button>
+        </div>
       </div>
     `;
+    document.getElementById('btn-about-policy')?.addEventListener('click', () => Auth.showPolicy());
+    document.getElementById('btn-about-data')?.addEventListener('click', () => Auth.showPublicInfo('data'));
   },
 
   addUser() {
@@ -375,17 +398,17 @@ const Settings = {
   importData() {
     const file = document.getElementById('file-import').files[0];
     if (!file) {
-      alert('Please select a JSON file.');
+      alert(t('data.selectFile'));
       return;
     }
     const reader = new FileReader();
     reader.onload = event => {
       try {
         Storage.import(JSON.parse(event.target.result));
-        alert('Data imported.');
+        alert(t('data.imported'));
         location.reload();
       } catch (error) {
-        alert('Import failed: ' + error.message);
+        alert(t('data.importFailed', { error: error.message }));
       }
     };
     reader.readAsText(file);

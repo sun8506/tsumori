@@ -9,22 +9,22 @@ const Speaking = {
   render() {
     document.getElementById('main-content').innerHTML = `
       <header class="view-header">
-        <h1>Speaking Practice</h1>
-        <p class="view-subtitle">Listen to Japanese text and compare your pronunciation when speech recognition is available.</p>
+        <h1>${t('page.speaking')}</h1>
+        <p class="view-subtitle">${t('speaking.subtitle')}</p>
       </header>
       <div class="card">
         <div class="form-group">
-          <label class="form-label">Text to practice</label>
+          <label class="form-label">${t('speaking.text')}</label>
           <textarea class="form-input" id="input-text" rows="4" placeholder="例: 今日は日本語を練習します。"></textarea>
         </div>
         <div class="form-group">
-          <label class="form-label">Playback speed</label>
+          <label class="form-label">${t('speaking.speed')}</label>
           <input class="form-input" type="range" id="input-speed" min="0.5" max="1.5" step="0.1" value="0.9">
           <span class="card-subtitle" id="speed-label">0.9x</span>
         </div>
         <div class="speaking-actions">
-          <button class="btn btn-primary" id="btn-speak">Play audio</button>
-          <button class="btn btn-secondary" id="btn-record">Start recording</button>
+          <button class="btn btn-primary" id="btn-speak">${t('speaking.play')}</button>
+          <button class="btn btn-secondary" id="btn-record">${t('speaking.record')}</button>
         </div>
       </div>
       <div class="card speaking-card">
@@ -46,11 +46,11 @@ const Speaking = {
   speak() {
     const text = document.getElementById('input-text').value.trim();
     if (!text) {
-      alert('Please enter text first.');
+      alert(t('speaking.enterFirst'));
       return;
     }
     if (!('speechSynthesis' in window)) {
-      alert('Speech synthesis is not available in this browser.');
+      alert(t('speaking.synthesisUnavailable'));
       return;
     }
     speechSynthesis.cancel();
@@ -63,7 +63,7 @@ const Speaking = {
   toggleRecording() {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
-      alert('Speech recognition is not available in this browser.');
+      alert(t('speaking.recognitionUnavailable'));
       return;
     }
     if (this.isRecording && this.recognition) {
@@ -73,7 +73,7 @@ const Speaking = {
 
     const expected = document.getElementById('input-text').value.trim();
     if (!expected) {
-      alert('Please enter text first.');
+      alert(t('speaking.enterFirst'));
       return;
     }
 
@@ -82,26 +82,26 @@ const Speaking = {
     this.recognition.continuous = false;
     this.recognition.interimResults = false;
     this.isRecording = true;
-    document.getElementById('btn-record').textContent = 'Stop recording';
-    document.getElementById('result-area').innerHTML = '<p class="empty-hint">Listening...</p>';
+    document.getElementById('btn-record').textContent = t('speaking.stop');
+    document.getElementById('result-area').innerHTML = `<p class="empty-hint">${t('speaking.listening')}</p>`;
 
     this.recognition.onresult = event => {
       const transcript = event.results[0][0].transcript;
       const score = this.calculateSimilarity(transcript, expected);
       document.getElementById('result-area').innerHTML = `
         <div class="card score-result">
-          <p><strong>Transcript:</strong> ${this.escapeHtml(transcript)}</p>
-          <p><strong>Expected:</strong> ${this.escapeHtml(expected)}</p>
-          <p><strong>Similarity:</strong> ${score}%</p>
+          <p><strong>${t('speaking.transcript')}:</strong> ${this.escapeHtml(transcript)}</p>
+          <p><strong>${t('speaking.expected')}:</strong> ${this.escapeHtml(expected)}</p>
+          <p><strong>${t('speaking.similarity')}:</strong> ${score}%</p>
         </div>
       `;
     };
     this.recognition.onerror = event => {
-      document.getElementById('result-area').innerHTML = `<p class="empty-hint">Recognition error: ${this.escapeHtml(event.error)}</p>`;
+      document.getElementById('result-area').innerHTML = `<p class="empty-hint">${t('speaking.error', { error: this.escapeHtml(event.error) })}</p>`;
     };
     this.recognition.onend = () => {
       this.isRecording = false;
-      document.getElementById('btn-record').textContent = 'Start recording';
+      document.getElementById('btn-record').textContent = t('speaking.record');
     };
     this.recognition.start();
   },

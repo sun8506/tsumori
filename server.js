@@ -466,9 +466,13 @@ const server = http.createServer(async (req, res) => {
     }
 
     if (pathname === '/api/account') {
-      if (req.method !== 'PATCH') return sendJson(res, 405, { error: 'METHOD_NOT_ALLOWED' });
       const user = authenticatedUser(req);
       if (!user) return sendJson(res, 401, { error: 'UNAUTHORIZED' });
+      if (req.method === 'DELETE') {
+        database.deleteUser(user.id);
+        return sendJson(res, 200, { ok: true });
+      }
+      if (req.method !== 'PATCH') return sendJson(res, 405, { error: 'METHOD_NOT_ALLOWED' });
       try {
         const body = await readJson(req);
         const updated = database.updateUser(user.id, {

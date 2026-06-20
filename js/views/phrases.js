@@ -363,9 +363,9 @@ const Phrases = {
 
   toneOptions(selected) {
     const options = [
-      { value: 'casual', label: 'casual' },
-      { value: 'polite', label: 'polite' },
-      { value: 'honorific', label: 'honorific' }
+      { value: 'casual', label: t('tone.casual') },
+      { value: 'polite', label: t('tone.polite') },
+      { value: 'honorific', label: t('tone.honorific') }
     ];
     return options.map(option => `
       <option value="${option.value}" ${selected === option.value ? 'selected' : ''}>${option.label}</option>
@@ -378,9 +378,9 @@ const Phrases = {
 
   toneLabel(value) {
     const map = {
-      casual: 'casual',
-      polite: 'polite',
-      honorific: 'honorific'
+      casual: t('tone.casual'),
+      polite: t('tone.polite'),
+      honorific: t('tone.honorific')
     };
     return map[value] || value || '';
   },

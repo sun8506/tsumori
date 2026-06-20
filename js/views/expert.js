@@ -22,9 +22,9 @@ const Expert = {
           <h1>${t('page.expert')}</h1>
           <p>${user.level.toUpperCase()} · ${this.industryLabel(user.industry)} · ${this.escapeHtml(ai.label)}</p>
         </div>
-        <button class="expert-provider" id="btn-expert-settings" title="打开 AI 设置">
+        <button class="expert-provider" id="btn-expert-settings" title="${t('expert.settings')}">
           <span class="expert-provider-dot ${AIProvider.isConfigured() ? 'is-ready' : ''}"></span>
-          ${this.escapeHtml(ai.model || '未配置模型')}
+          ${this.escapeHtml(ai.model || t('expert.modelMissing'))}
           <i data-lucide="settings-2"></i>
         </button>
       </header>
@@ -34,7 +34,7 @@ const Expert = {
           <section class="translator-shell">
             <div class="translator-language-bar">
               <span id="expert-source-language">${this.languageLabel(this.direction.source)}</span>
-              <button class="btn-icon translator-swap" id="btn-swap-language" title="交换翻译方向">
+              <button class="btn-icon translator-swap" id="btn-swap-language" title="${t('expert.swap')}">
                 <i data-lucide="arrow-left-right"></i>
               </button>
               <span id="expert-target-language">${this.languageLabel(this.direction.target)}</span>
@@ -45,8 +45,8 @@ const Expert = {
                 <textarea id="expert-input" maxlength="1000" placeholder="${this.inputPlaceholder(this.direction.source)}"></textarea>
                 <div class="translator-pane-footer">
                   <div class="translator-tools">
-                    <button class="btn-icon" id="btn-input-speak" title="朗读输入内容"><i data-lucide="volume-2"></i></button>
-                    <button class="btn-icon" id="btn-input-clear" title="清空"><i data-lucide="x"></i></button>
+                    <button class="btn-icon" id="btn-input-speak" title="${t('expert.speakInput')}"><i data-lucide="volume-2"></i></button>
+                    <button class="btn-icon" id="btn-input-clear" title="${t('expert.clear')}"><i data-lucide="x"></i></button>
                   </div>
                   <span id="expert-char-count">0 / 1000</span>
                 </div>
@@ -61,10 +61,10 @@ const Expert = {
             </div>
 
             <div class="translator-actionbar">
-              <span>Ctrl + Enter 快速解析</span>
+              <span>${t('expert.shortcut')}</span>
               <button class="btn btn-primary" id="btn-query">
                 <i data-lucide="sparkles"></i>
-                翻译并解析
+                ${t('expert.analyze')}
               </button>
             </div>
           </section>
@@ -76,7 +76,7 @@ const Expert = {
         <aside class="expert-history-panel">
           <div class="expert-history-header">
             <h2>${t('expert.recent')}</h2>
-            <button class="btn-icon" id="btn-clear-history" title="清空历史"><i data-lucide="trash-2"></i></button>
+            <button class="btn-icon" id="btn-clear-history" title="${t('expert.clearHistory')}"><i data-lucide="trash-2"></i></button>
           </div>
           <div id="expert-history"></div>
         </aside>
@@ -102,7 +102,7 @@ const Expert = {
       window.location.hash = 'settings';
     });
     document.getElementById('btn-clear-history').addEventListener('click', () => {
-      if (confirm('清空当前用户的 Expert 查询记录？')) {
+      if (confirm(t('expert.clearHistoryConfirm'))) {
         Storage.clearExpertQueries(Storage._getCurrentUserId());
         this.currentRecord = null;
         document.getElementById('expert-learning').innerHTML = '';
@@ -136,13 +136,13 @@ const Expert = {
       return;
     }
     if (!AIProvider.isConfigured()) {
-      this.showStatus('请先在设置中配置并启用一个 AI 服务。', 'error');
+      this.showStatus(t('expert.configure'), 'error');
       return;
     }
 
     this.isAnalyzing = true;
     this.setBusy(true);
-    this.showStatus('正在结合你的等级与行业背景进行解析...', 'loading');
+    this.showStatus(t('expert.analyzingProfile'), 'loading');
     try {
       const config = { ...this.getUserConfig(), mode: 'natural' };
       config.sourceLanguage = this.direction.source;
@@ -170,7 +170,7 @@ const Expert = {
       this.renderResult(Storage.getExpertQuery(record.id) || record);
       this.renderHistory();
     } catch (error) {
-      this.showStatus(`解析失败：${error.message}`, 'error');
+      this.showStatus(t('expert.failed', { error: error.message }), 'error');
     } finally {
       this.isAnalyzing = false;
       this.setBusy(false);
@@ -190,7 +190,7 @@ const Expert = {
     document.getElementById('expert-output').innerHTML = `
       <div class="translator-result">
         ${reading ? `<p class="translator-reading">${this.escapeHtml(reading)}</p>` : ''}
-        <p class="translator-translation">${this.escapeHtml(translation || '暂无翻译')}</p>
+        <p class="translator-translation">${this.escapeHtml(translation || t('expert.noTranslation'))}</p>
         ${alternatives.length ? `
           <div class="translator-alternatives">
             ${alternatives.slice(0, 3).map(item => `<span>${this.escapeHtml(item)}</span>`).join('')}
@@ -199,10 +199,10 @@ const Expert = {
       </div>
       <div class="translator-pane-footer">
         <div class="translator-tools">
-          <button class="btn-icon" id="btn-output-speak" title="朗读${this.languageLabel(this.direction.target)}"><i data-lucide="volume-2"></i></button>
-          <button class="btn-icon" id="btn-output-copy" title="复制译文"><i data-lucide="copy"></i></button>
+          <button class="btn-icon" id="btn-output-speak" title="${t('expert.speakOutput', { language: this.languageLabel(this.direction.target) })}"><i data-lucide="volume-2"></i></button>
+          <button class="btn-icon" id="btn-output-copy" title="${t('expert.copy')}"><i data-lucide="copy"></i></button>
         </div>
-        <span>自然翻译</span>
+        <span>${t('expert.natural')}</span>
       </div>
     `;
 
@@ -215,7 +215,7 @@ const Expert = {
       <section class="expert-learning-shell">
         <div class="expert-learning-title">
           <div>
-            <span>LEARNING NOTES</span>
+            <span>${t('expert.notes')}</span>
             <h2>${this.escapeHtml(result.word || record.query)}</h2>
           </div>
           <div class="expert-result-actions">
@@ -223,32 +223,32 @@ const Expert = {
             ${isSentence ? `
               <button class="btn btn-secondary btn-sm" id="btn-add-phrase" ${phraseExists ? 'disabled' : ''}>
                 <i data-lucide="message-square-plus"></i>
-                ${phraseExists ? '已加入表达库' : '整句加入表达库'}
+                ${phraseExists ? t('expert.phraseAdded') : t('expert.addPhrase')}
               </button>
             ` : `
               <button class="btn btn-secondary btn-sm" id="btn-add-vocab" ${record.addedToVocab ? 'disabled' : ''}>
                 <i data-lucide="bookmark-plus"></i>
-                ${record.addedToVocab ? '已加入词汇本' : '加入词汇本'}
+                ${record.addedToVocab ? t('expert.wordAdded') : t('expert.addWord')}
               </button>
             `}
-            <button class="btn-icon" id="btn-delete-query" title="删除记录"><i data-lucide="trash-2"></i></button>
+            <button class="btn-icon" id="btn-delete-query" title="${t('expert.delete')}"><i data-lucide="trash-2"></i></button>
           </div>
         </div>
 
         <div class="expert-insight-grid">
           <div class="expert-insight">
-            <span>${this.direction.target === 'ja' ? '日语表达说明' : '日语释义'}</span>
-            <p>${this.escapeHtml(result.meaningJp || '暂无')}</p>
+            <span>${this.direction.target === 'ja' ? t('expert.japaneseNote') : t('expert.japaneseMeaning')}</span>
+            <p>${this.escapeHtml(result.meaningJp || t('expert.none'))}</p>
           </div>
           <div class="expert-insight">
-            <span>语感与使用场景</span>
-            <p>${this.escapeHtml(result.nuance || result.levelNote || '暂无')}</p>
+            <span>${t('expert.nuance')}</span>
+            <p>${this.escapeHtml(result.nuance || result.levelNote || t('expert.none'))}</p>
           </div>
         </div>
 
         ${parts.length ? `
           <section class="expert-learning-section">
-            <h3><i data-lucide="blocks"></i>句子拆解</h3>
+            <h3><i data-lucide="blocks"></i>${t('expert.breakdown')}</h3>
             <div class="expert-breakdown">
               ${parts.map(item => `
                 <div class="expert-breakdown-item">
@@ -262,7 +262,7 @@ const Expert = {
                     data-word="${this.escapeAttr(item.text || '')}"
                     data-reading="${this.escapeAttr(item.reading || '')}"
                     data-meaning="${this.escapeAttr(item.meaning || '')}"
-                    title="加入词汇本"
+                    title="${t('expert.addWord')}"
                     ${this.findExistingWord(item.text) ? 'disabled' : ''}
                   >
                     <i data-lucide="${this.findExistingWord(item.text) ? 'bookmark-check' : 'bookmark-plus'}"></i>
@@ -275,14 +275,14 @@ const Expert = {
 
         ${result.grammarNotes ? `
           <section class="expert-learning-section">
-            <h3><i data-lucide="book-open-check"></i>语法与表达</h3>
+            <h3><i data-lucide="book-open-check"></i>${t('expert.grammar')}</h3>
             <p class="expert-learning-copy">${this.escapeHtml(result.grammarNotes)}</p>
           </section>
         ` : ''}
 
         ${examples.length ? `
           <section class="expert-learning-section">
-            <h3><i data-lucide="message-square-text"></i>适合你的例句</h3>
+            <h3><i data-lucide="message-square-text"></i>${t('expert.examples')}</h3>
             <div class="expert-examples">
               ${examples.map((example, index) => `
                 <article>
@@ -292,7 +292,7 @@ const Expert = {
                     ${example.reading ? `<p class="expert-example-reading">${this.escapeHtml(example.reading)}</p>` : ''}
                     <p class="expert-example-zh">${this.escapeHtml(example.zh || example.en || '')}</p>
                   </div>
-                  <button class="btn-icon expert-example-speak" data-speak="${this.escapeAttr(example.jp || '')}" title="朗读例句">
+                  <button class="btn-icon expert-example-speak" data-speak="${this.escapeAttr(example.jp || '')}" title="${t('expert.speakExample')}">
                     <i data-lucide="volume-2"></i>
                   </button>
                 </article>
@@ -328,7 +328,7 @@ const Expert = {
       });
     });
     document.getElementById('btn-delete-query').addEventListener('click', () => {
-      if (confirm('删除这条查询记录？')) {
+      if (confirm(t('expert.deleteConfirm'))) {
         Storage.removeExpertQuery(record.id);
         this.currentRecord = null;
         this.renderEmptyOutput();
@@ -346,7 +346,7 @@ const Expert = {
     document.getElementById('expert-output').innerHTML = `
       <div class="translator-placeholder">
         <i data-lucide="languages"></i>
-        <p>翻译和学习解析会显示在这里</p>
+        <p>${t('expert.placeholder')}</p>
       </div>
     `;
     if (window.lucide) lucide.createIcons();
@@ -477,8 +477,8 @@ const Expert = {
     const button = document.getElementById('btn-query');
     button.disabled = busy;
     button.innerHTML = busy
-      ? '<span class="expert-spinner"></span>解析中'
-      : '<i data-lucide="sparkles"></i>翻译并解析';
+      ? `<span class="expert-spinner"></span>${t('expert.busy')}`
+      : `<i data-lucide="sparkles"></i>${t('expert.analyze')}`;
     if (window.lucide) lucide.createIcons();
   },
 
@@ -492,7 +492,7 @@ const Expert = {
   speak(text, lang) {
     if (!text) return;
     if (!('speechSynthesis' in window)) {
-      this.showStatus('当前浏览器不支持语音朗读。', 'error');
+      this.showStatus(t('speaking.synthesisUnavailable'), 'error');
       return;
     }
     window.speechSynthesis.cancel();
@@ -510,10 +510,10 @@ const Expert = {
     if (!text) return;
     try {
       await navigator.clipboard.writeText(text);
-      this.showStatus('译文已复制。');
+      this.showStatus(t('expert.copied'));
       setTimeout(() => this.showStatus(''), 1200);
     } catch {
-      this.showStatus('复制失败，请手动选择文本。', 'error');
+      this.showStatus(t('expert.copyFailed'), 'error');
     }
   },
 
@@ -527,10 +527,10 @@ const Expert = {
 
   inputPlaceholder(language) {
     return {
-      ja: '输入日语单词、句子或一段文字...',
-      zh: '输入中文单词、句子或一段文字...',
-      en: 'Enter an English word, sentence, or short passage...'
-    }[language] || '输入要翻译的内容...';
+      ja: t('expert.inputJa'),
+      zh: t('expert.inputZh'),
+      en: t('expert.inputEn')
+    }[language] || t('expert.inputJa');
   },
 
   speechLanguage(language) {

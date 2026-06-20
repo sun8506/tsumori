@@ -255,6 +255,24 @@ const Storage = {
     return this.currentUser()?.storageMode === 'cloud' ? 'cloud' : 'local';
   },
 
+  clearCurrentUserData(userId = this._getCurrentUserId()) {
+    if (!userId) return;
+    this.USER_SCOPED_KEYS.forEach(key => {
+      const items = this._parse(this.get(key), []);
+      this.set(key, JSON.stringify(items.filter(item => item.userId !== userId)));
+    });
+    const config = this.getConfig();
+    config.users = config.users.filter(user => user.id !== userId);
+    if (config.currentUserId === userId) config.currentUserId = null;
+    this.saveConfig(config);
+  },
+
+  clearAllLocalData() {
+    Object.keys(localStorage)
+      .filter(key => key.startsWith(this.PREFIX))
+      .forEach(key => localStorage.removeItem(key));
+  },
+
   setCurrentAccount(user) {
     if (!user?.id) return null;
     const config = this.getConfig();

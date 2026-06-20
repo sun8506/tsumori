@@ -46,7 +46,7 @@ const Article = {
         </div>
         <button class="btn btn-primary" id="btn-fetch-news">
           <i data-lucide="search"></i>
-          查找阅读主题
+          ${t('reading.find')}
         </button>
       </header>
       <div id="article-status"></div>
@@ -63,19 +63,19 @@ const Article = {
     const status = document.getElementById('article-status');
     const profile = this.getReadingProfile();
     button.disabled = true;
-    button.innerHTML = '<span>查找中...</span>';
-    status.innerHTML = '<div class="card news-progress">正在整理适合当前行业的主题...</div>';
+    button.innerHTML = `<span>${t('reading.searching')}</span>`;
+    status.innerHTML = `<div class="card news-progress">${t('reading.searchProgress')}</div>`;
 
     try {
       this.candidates = await NHK.fetchCandidates(profile);
-      if (!this.candidates.length) throw new Error('目前没有找到可用的阅读主题。');
+      if (!this.candidates.length) throw new Error(t('reading.noneFound'));
       status.innerHTML = '';
       this.renderCandidatePanel(profile);
     } catch (error) {
       status.innerHTML = `<div class="card news-error">${this.escapeHtml(error.message)}</div>`;
     } finally {
       button.disabled = false;
-      button.innerHTML = '<i data-lucide="refresh-cw"></i><span>重新查找</span>';
+      button.innerHTML = `<i data-lucide="refresh-cw"></i><span>${t('reading.searchAgain')}</span>`;
       if (window.lucide) lucide.createIcons();
     }
   },
@@ -87,9 +87,9 @@ const Article = {
       <section class="candidate-planner">
         <div class="candidate-plan-header">
           <div>
-            <span class="candidate-eyebrow">本次查找范围</span>
-            <h2>${this.escapeHtml(plan.label)}相关内容</h2>
-            <p>${plan.topics.map(topic => this.escapeHtml(topic)).join('、')}</p>
+            <span class="candidate-eyebrow">${t('reading.scope')}</span>
+            <h2>${t('reading.related', { label: this.escapeHtml(I18n.translate(plan.label)) })}</h2>
+            <p>${plan.topics.map(topic => this.escapeHtml(I18n.translate(topic))).join(' · ')}</p>
           </div>
           <span class="badge badge-primary">${profile.level.toUpperCase()}</span>
         </div>
@@ -103,10 +103,10 @@ const Article = {
         </div>
         <div class="candidate-list-header">
           <div>
-            <h3>选择要生成的主题</h3>
-            <p>默认选择 3 篇，生成时才会使用 AI 配额。</p>
+            <h3>${t('reading.choose')}</h3>
+            <p>${t('reading.chooseHelp')}</p>
           </div>
-          <span id="candidate-count">已选 0 / 3</span>
+          <span id="candidate-count">${t('reading.selected', { count: 0 })}</span>
         </div>
         <div class="candidate-list">
           ${this.candidates.slice(0, 8).map((candidate, index) => `
@@ -115,16 +115,16 @@ const Article = {
               <span class="candidate-check"><i data-lucide="check"></i></span>
               <span class="candidate-copy">
                 <strong>${this.escapeHtml(candidate.title)}</strong>
-                <small>${this.escapeHtml(candidate.sourceName || '公开资料')} · ${this.escapeHtml(candidate.category || '综合')}</small>
+                <small>${this.escapeHtml(candidate.sourceName || t('reading.publicSource'))} · ${this.escapeHtml(candidate.category || t('reading.generalCategory'))}</small>
               </span>
             </label>
           `).join('')}
         </div>
         <div class="candidate-actions">
-          <button class="btn btn-secondary" id="btn-cancel-candidates">取消</button>
+          <button class="btn btn-secondary" id="btn-cancel-candidates">${t('common.cancel')}</button>
           <button class="btn btn-primary" id="btn-generate-selected">
             <i data-lucide="sparkles"></i>
-            生成所选文章
+            ${t('reading.generate')}
           </button>
         </div>
       </section>
@@ -135,7 +135,7 @@ const Article = {
       const checked = checkboxes.filter(input => input.checked);
       if (checked.length > 3 && changed) changed.checked = false;
       const count = checkboxes.filter(input => input.checked).length;
-      panel.querySelector('#candidate-count').textContent = `已选 ${count} / 3`;
+      panel.querySelector('#candidate-count').textContent = t('reading.selected', { count });
       panel.querySelector('#btn-generate-selected').disabled = count === 0;
     };
     checkboxes.forEach(input => input.addEventListener('change', () => updateSelection(input)));
@@ -165,7 +165,7 @@ const Article = {
     if (fetchButton) fetchButton.disabled = true;
     button.disabled = true;
     button.setAttribute('aria-busy', 'true');
-    button.innerHTML = '<span>文章生成中，请稍候...</span>';
+    button.innerHTML = `<span>${t('reading.generating')}</span>`;
     panel.querySelectorAll('input, button').forEach(control => {
       control.disabled = true;
     });
@@ -173,14 +173,14 @@ const Article = {
       const generated = await NHK.generateSelected(selected, profile, (current, total, source) => {
         status.innerHTML = `
           <div class="card news-progress">
-            <strong>正在生成 ${current} / ${total}</strong>
+            <strong>${t('reading.progress', { current, total })}</strong>
             <p>${this.escapeHtml(source.title)}</p>
           </div>
         `;
       });
       this.saveGenerated(generated, profile.userId);
       panel.innerHTML = '';
-      status.innerHTML = `<p class="news-success">已生成 ${generated.length} 篇分级文章。</p>`;
+      status.innerHTML = `<p class="news-success">${t('reading.generated', { count: generated.length })}</p>`;
       this.renderList();
     } catch (error) {
       status.innerHTML = `<div class="card news-error">${this.escapeHtml(error.message)}</div>`;
@@ -188,7 +188,7 @@ const Article = {
         control.disabled = false;
       });
       button.removeAttribute('aria-busy');
-      button.innerHTML = '<i data-lucide="sparkles"></i><span>生成所选文章</span>';
+      button.innerHTML = `<i data-lucide="sparkles"></i><span>${t('reading.generate')}</span>`;
       if (window.lucide) lucide.createIcons();
     } finally {
       if (fetchButton) fetchButton.disabled = false;
@@ -242,7 +242,7 @@ const Article = {
           </div>
           <h2>${this.escapeHtml(article.title)}</h2>
           <p>${this.escapeHtml(article.summary || '')}</p>
-          <div class="news-source-line">Based on: ${this.escapeHtml(article.sourceTitle || '')}</div>
+          <div class="news-source-line">${t('reading.basedOn', { title: this.escapeHtml(article.sourceTitle || '') })}</div>
         </div>
         <i class="news-list-arrow" data-lucide="chevron-right"></i>
       </article>
@@ -265,22 +265,22 @@ const Article = {
     const main = document.getElementById('main-content');
     main.innerHTML = `
       <div class="reader-toolbar">
-        <button class="btn-icon reader-back" id="btn-reader-back" title="Back to list">
+        <button class="btn-icon reader-back" id="btn-reader-back" title="${t('common.back')}">
           <i data-lucide="arrow-left"></i>
         </button>
         <div class="reader-toolbar-spacer"></div>
-        <div class="reader-speech-controls" aria-label="朗读控制">
-          <button class="btn-icon" id="btn-reader-play" title="朗读全文">
+        <div class="reader-speech-controls" aria-label="${t('reading.controls')}">
+          <button class="btn-icon" id="btn-reader-play" title="${t('reading.playAll')}">
             <i data-lucide="play"></i>
           </button>
-          <button class="btn-icon" id="btn-reader-pause" title="暂停或继续">
+          <button class="btn-icon" id="btn-reader-pause" title="${t('reading.pause')}">
             <i data-lucide="pause"></i>
           </button>
-          <button class="btn-icon" id="btn-reader-stop" title="停止朗读">
+          <button class="btn-icon" id="btn-reader-stop" title="${t('reading.stop')}">
             <i data-lucide="square"></i>
           </button>
           <label class="reader-speed">
-            <span>语速</span>
+            <span>${t('reading.speed')}</span>
             <select id="reader-speed">
               <option value="0.7">0.7x</option>
               <option value="0.85" selected>0.85x</option>
@@ -304,7 +304,7 @@ const Article = {
           <h1>${this.escapeHtml(article.title)}</h1>
           <p>${this.escapeHtml(article.summary || '')}</p>
         </header>
-        <p class="reader-speech-hint"><i data-lucide="volume-2"></i>点击任意段落，可从该段开始朗读。</p>
+        <p class="reader-speech-hint"><i data-lucide="volume-2"></i>${t('reading.clickParagraph')}</p>
         <div class="reader-body">
           ${(article.paragraphs || []).map((paragraph, index) => `
             <p data-paragraph-index="${index}" tabindex="0">${this.renderSegments(paragraph.segments || [])}</p>
@@ -312,7 +312,7 @@ const Article = {
         </div>
         ${(article.vocab || []).length ? `
           <section class="reader-vocabulary">
-            <h2>Key vocabulary</h2>
+            <h2>${t('reading.keyVocabulary')}</h2>
             <div class="reader-vocab-grid">
               ${(article.vocab || []).map(item => `
                 <div class="reader-vocab-item">
@@ -325,9 +325,9 @@ const Article = {
           </section>
         ` : ''}
         <footer class="reader-source">
-          <strong>Source topic</strong>
+          <strong>${t('reading.sourceTopic')}</strong>
           <p>${this.escapeHtml(article.sourceTitle || '')}</p>
-          ${this.safeUrl(article.sourceUrl) ? `<a href="${this.escapeAttr(article.sourceUrl)}" target="_blank" rel="noopener noreferrer">Open original source</a>` : ''}
+          ${this.safeUrl(article.sourceUrl) ? `<a href="${this.escapeAttr(article.sourceUrl)}" target="_blank" rel="noopener noreferrer">${t('reading.openSource')}</a>` : ''}
         </footer>
       </article>
     `;
@@ -363,7 +363,7 @@ const Article = {
 
   speakParagraphs(paragraphs, startIndex = 0) {
     if (!('speechSynthesis' in window)) {
-      alert('当前浏览器不支持语音朗读。');
+      alert(t('speaking.synthesisUnavailable'));
       return;
     }
     this.stopSpeech();

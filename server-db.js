@@ -133,6 +133,15 @@ class ServerDatabase {
     this.persist();
   }
 
+  deleteUser(userId) {
+    const before = this.state.users.length;
+    this.state.users = this.state.users.filter(user => user.id !== userId);
+    this.state.sessions = this.state.sessions.filter(session => session.userId !== userId);
+    delete this.state.cloudData[userId];
+    if (this.state.users.length !== before) this.persist();
+    return this.state.users.length !== before;
+  }
+
   updateUser(userId, changes) {
     const user = this.state.users.find(item => item.id === userId);
     if (!user) return null;
