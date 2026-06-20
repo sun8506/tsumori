@@ -2,6 +2,7 @@ const Vocabulary = {
   reviewState: null,
 
   async init() {
+    Storage.consolidateVocabulary();
     this.render();
     this.renderList();
   },

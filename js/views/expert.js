@@ -387,10 +387,22 @@ const Expert = {
 
   addToVocab(record) {
     const result = record.result || {};
-    const existing = Storage.getAll('vocabulary').find(item => item.expertQueryId === record.id);
-    if (existing) return existing;
+    const word = result.word || record.query;
+    const existing = this.findExistingWord(word);
+    if (existing) {
+      const merged = Storage.add('vocabulary', {
+        word,
+        reading: result.reading || '',
+        meaningJp: result.meaningJp || '',
+        meaningZh: result.translationZh || result.meaningZh || result.translationEn || result.meaningEn || result.translation || '',
+        source: existing.source || 'expert',
+        expertQueryId: record.id
+      });
+      Storage.linkToVocab(record.id, merged.id);
+      return merged;
+    }
     const item = Storage.add('vocabulary', {
-      word: result.word || record.query,
+      word,
       reading: result.reading || '',
       meaningJp: result.meaningJp || '',
       meaningZh: result.translationZh || result.meaningZh || result.translationEn || result.meaningEn || result.translation || '',
@@ -454,9 +466,11 @@ const Expert = {
   },
 
   findExistingWord(word) {
-    const normalized = String(word || '').trim();
+    const normalized = Storage.normalizeVocabularyTerm(word);
     if (!normalized) return null;
-    return Storage.getAll('vocabulary').find(item => String(item.word || '').trim() === normalized) || null;
+    return Storage.getAll('vocabulary').find(item =>
+      Storage.normalizeVocabularyTerm(item.word) === normalized
+    ) || null;
   },
 
   findExistingPhrase(record) {

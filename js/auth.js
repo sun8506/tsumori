@@ -134,6 +134,7 @@ const Auth = {
 
   async start(onAuthenticated) {
     document.getElementById('app').style.display = 'none';
+    document.getElementById('public-root').innerHTML = '';
     if (this.token()) {
       try {
         const result = await this.request('/api/auth/me');
@@ -141,6 +142,7 @@ const Auth = {
         I18n.setLanguage(result.user.uiLanguage || 'zh', false);
         if (result.user.storageMode === 'cloud') await this.loadCloudData();
         document.getElementById('auth-root').innerHTML = '';
+        document.getElementById('public-root').innerHTML = '';
         document.getElementById('app').style.display = '';
         onAuthenticated();
         return;
@@ -148,12 +150,18 @@ const Auth = {
         localStorage.removeItem(this.TOKEN_KEY);
       }
     }
-    this.mode = 'login';
-    this.render();
+    if (['auth-login', 'auth-register'].includes(location.hash.replace('#', ''))) {
+      this.mode = location.hash.includes('register') ? 'register' : 'login';
+      this.render();
+      return;
+    }
+    PublicSite.init();
   },
 
   render(error = '') {
     const register = this.mode === 'register';
+    document.getElementById('public-root').innerHTML = '';
+    document.getElementById('app').style.display = 'none';
     document.getElementById('auth-root').innerHTML = `
       <main class="auth-page">
         <section class="auth-brand-panel">
@@ -171,6 +179,7 @@ const Auth = {
           <div class="auth-local-note"><i data-lucide="shield-check"></i><div><strong>${t('auth.accountCloudNotice')}</strong><p>${t('auth.accountCloudDetail')}</p></div></div>
         </section>
         <section class="auth-form-panel">
+          <button class="auth-back-library" type="button" id="auth-back-library"><i data-lucide="arrow-left"></i>${t('library.backLibrary')}</button>
           <div class="auth-language"><label for="auth-language">${t('auth.language')}</label><select id="auth-language" class="form-input">${I18n.options()}</select></div>
           <form id="auth-form" class="auth-form">
             <h2>${register ? t('auth.register') : t('auth.login')}</h2>
@@ -210,6 +219,11 @@ const Auth = {
     document.getElementById('auth-language').addEventListener('change', event => {
       I18n.setLanguage(event.target.value, false);
       this.render(error);
+    });
+    document.getElementById('auth-back-library').addEventListener('click', () => {
+      document.getElementById('auth-root').innerHTML = '';
+      location.hash = 'library';
+      PublicSite.route();
     });
     document.getElementById('auth-switch').addEventListener('click', () => {
       this.mode = register ? 'login' : 'register';

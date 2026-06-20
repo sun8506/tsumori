@@ -124,6 +124,7 @@ const Storage = {
   },
 
   add(key, item) {
+    if (key === 'vocabulary') return this.upsertVocabulary(item);
     const items = this.getAll(key);
     const next = { ...item };
     if (!next.id) {
@@ -136,12 +137,171 @@ const Storage = {
   },
 
   update(key, id, data) {
+    if (key === 'vocabulary') return this.upsertVocabulary(data, id);
     const items = this.getAll(key);
     const index = items.findIndex(item => item.id === id);
     if (index === -1) return null;
     items[index] = { ...items[index], ...data };
     this.saveAll(key, items);
     return items[index];
+  },
+
+  normalizeVocabularyTerm(value) {
+    return String(value || '')
+      .normalize('NFKC')
+      .trim()
+      .toLowerCase()
+      .replace(/[\s\u3000]+/g, '');
+  },
+
+  upsertVocabulary(data, id = null) {
+    const items = this.getAll('vocabulary');
+    const currentIndex = id ? items.findIndex(item => item.id === id) : -1;
+    const current = currentIndex >= 0 ? items[currentIndex] : null;
+    const candidate = { ...(current || {}), ...(data || {}) };
+    const normalized = this.normalizeVocabularyTerm(candidate.word);
+    if (!normalized) return current;
+
+    const duplicateIndex = items.findIndex((item, index) =>
+      index !== currentIndex &&
+      this.normalizeVocabularyTerm(item.word) === normalized
+    );
+
+    if (duplicateIndex >= 0) {
+      const duplicate = items[duplicateIndex];
+      const merged = this.mergeVocabularyItems(duplicate, candidate);
+      items[duplicateIndex] = merged;
+      if (currentIndex >= 0) items.splice(currentIndex, 1);
+      this.saveAll('vocabulary', items);
+      if (current?.id && current.id !== merged.id) {
+        this.rewireVocabularyReferences([current.id], merged.id);
+      }
+      return merged;
+    }
+
+    if (currentIndex >= 0) {
+      items[currentIndex] = candidate;
+      this.saveAll('vocabulary', items);
+      return candidate;
+    }
+
+    const next = {
+      ...candidate,
+      id: candidate.id || 'vocabulary_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8),
+      userId: this._getCurrentUserId()
+    };
+    items.push(next);
+    this.saveAll('vocabulary', items);
+    return next;
+  },
+
+  consolidateVocabulary() {
+    const items = this.getAll('vocabulary');
+    const mergedItems = [];
+    const indexes = new Map();
+    const removedIds = new Map();
+
+    items.forEach(item => {
+      const normalized = this.normalizeVocabularyTerm(item.word);
+      if (!normalized || !indexes.has(normalized)) {
+        indexes.set(normalized, mergedItems.length);
+        mergedItems.push(item);
+        return;
+      }
+      const index = indexes.get(normalized);
+      const kept = mergedItems[index];
+      mergedItems[index] = this.mergeVocabularyItems(kept, item);
+      if (item.id && item.id !== kept.id) removedIds.set(item.id, kept.id);
+    });
+
+    if (!removedIds.size) return { merged: 0, items };
+    this.saveAll('vocabulary', mergedItems);
+    removedIds.forEach((keptId, removedId) => {
+      this.rewireVocabularyReferences([removedId], keptId);
+    });
+    return { merged: removedIds.size, items: mergedItems };
+  },
+
+  mergeVocabularyItems(primary, incoming) {
+    const primaryScore = this.vocabularyProgressScore(primary);
+    const incomingScore = this.vocabularyProgressScore(incoming);
+    const progress = incomingScore > primaryScore ? incoming : primary;
+    const readings = [primary.reading, incoming.reading].filter(Boolean);
+    const mergedReading = this.betterVocabularyText(primary.reading, incoming.reading);
+    const aliases = [
+      ...(Array.isArray(primary.aliases) ? primary.aliases : []),
+      ...(Array.isArray(incoming.aliases) ? incoming.aliases : []),
+      ...readings.slice(1)
+    ];
+    const history = [...(Array.isArray(primary.history) ? primary.history : [])];
+    (Array.isArray(incoming.history) ? incoming.history : []).forEach(entry => {
+      const signature = JSON.stringify([entry.date, entry.result, entry.response]);
+      if (!history.some(existing => JSON.stringify([existing.date, existing.result, existing.response]) === signature)) {
+        history.push(entry);
+      }
+    });
+    history.sort((a, b) => new Date(a.date || 0) - new Date(b.date || 0));
+
+    return {
+      ...primary,
+      ...progress,
+      id: primary.id,
+      userId: primary.userId || incoming.userId || this._getCurrentUserId(),
+      word: this.betterVocabularyText(primary.word, incoming.word),
+      reading: mergedReading,
+      meaningJp: this.betterVocabularyText(primary.meaningJp, incoming.meaningJp),
+      meaningZh: this.betterVocabularyText(primary.meaningZh, incoming.meaningZh),
+      aliases: [...new Set(aliases.map(value => String(value).trim()).filter(value =>
+        value && this.normalizeVocabularyTerm(value) !== this.normalizeVocabularyTerm(mergedReading)
+      ))],
+      history,
+      mastery: Math.max(Number(primary.mastery || 0), Number(incoming.mastery || 0)),
+      repetitions: Math.max(Number(primary.repetitions || 0), Number(incoming.repetitions || 0)),
+      lapses: Math.max(Number(primary.lapses || 0), Number(incoming.lapses || 0)),
+      created: this.earlierDate(primary.created, incoming.created),
+      updatedAt: new Date().toISOString(),
+      expertQueryIds: [...new Set([
+        ...(Array.isArray(primary.expertQueryIds) ? primary.expertQueryIds : []),
+        ...(Array.isArray(incoming.expertQueryIds) ? incoming.expertQueryIds : []),
+        primary.expertQueryId,
+        incoming.expertQueryId
+      ].filter(Boolean))]
+    };
+  },
+
+  vocabularyProgressScore(item) {
+    return Number(item?.mastery || 0) * 1000 +
+      Number(item?.repetitions || 0) * 100 +
+      (Array.isArray(item?.history) ? item.history.length : 0);
+  },
+
+  betterVocabularyText(first, second) {
+    const a = String(first || '').trim();
+    const b = String(second || '').trim();
+    if (!a) return b;
+    if (!b) return a;
+    return b.length > a.length ? b : a;
+  },
+
+  earlierDate(first, second) {
+    if (!first) return second;
+    if (!second) return first;
+    return new Date(first) <= new Date(second) ? first : second;
+  },
+
+  rewireVocabularyReferences(removedIds, keptId) {
+    const removed = new Set(removedIds.filter(Boolean));
+    if (!removed.size || !keptId) return;
+    const queries = this.getAll('expert_queries');
+    let changed = false;
+    queries.forEach(query => {
+      if (removed.has(query.linkedWordId)) {
+        query.linkedWordId = keptId;
+        query.addedToVocab = true;
+        changed = true;
+      }
+    });
+    if (changed) this.saveAll('expert_queries', queries);
   },
 
   remove(key, id) {

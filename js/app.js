@@ -23,10 +23,20 @@ const Router = {
 
   async go(viewName) {
     if (!window.Auth?.currentUser()) return;
+    if (viewName === 'welcome' || viewName === 'library' || viewName.startsWith('learn/')) {
+      document.getElementById('app').style.display = 'none';
+      document.getElementById('auth-root').innerHTML = '';
+      if (viewName.startsWith('learn/')) PublicSite.renderDetail(viewName.slice(6));
+      else if (viewName === 'library') PublicSite.renderLibrary();
+      else PublicSite.renderHome();
+      return;
+    }
     if (!this.views[viewName]) {
       console.warn("Unknown view:", viewName);
       viewName = "dashboard";
     }
+    document.getElementById('public-root').innerHTML = '';
+    document.getElementById('app').style.display = '';
     this.currentView = viewName;
     if (window.Nav) Nav.highlightCurrentView();
     const view = this.views[viewName];
@@ -83,6 +93,10 @@ window.Router = Router;
 
   Auth.start(() => {
     I18n.observe();
+    const pendingTarget = window.PublicSite?.consumePendingAction?.();
+    if (pendingTarget) {
+      history.replaceState(null, '', `${location.pathname}${location.search}#${pendingTarget}`);
+    }
     if (window.Nav) Nav.init();
     Router.init();
     I18n.apply(document);
