@@ -15,7 +15,7 @@ const context = {
 context.window = context;
 vm.createContext(context);
 
-for (const file of ['js/i18n.js', 'js/i18n-pages.js', 'js/i18n-storage.js']) {
+for (const file of ['js/i18n.js', 'js/i18n-pages.js', 'js/i18n-storage.js', 'js/i18n-analytics.js']) {
   vm.runInContext(fs.readFileSync(path.join(root, file), 'utf8'), context, { filename: file });
 }
 

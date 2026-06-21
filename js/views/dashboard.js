@@ -125,11 +125,13 @@ const Dashboard = {
     `;
 
     document.getElementById('btn-checkin')?.addEventListener('click', () => {
+      const nextCheckedIn = !todayRecord.checkedIn;
       Storage.saveLearningRecord(today, {
         ...todaySummary,
-        checkedIn: !todayRecord.checkedIn,
+        checkedIn: nextCheckedIn,
         checkedInAt: todayRecord.checkedIn ? null : new Date().toISOString()
       });
+      Analytics.event('daily_check_in', { status: nextCheckedIn ? 'checked' : 'unchecked' });
       this.render();
     });
 

@@ -254,6 +254,7 @@ const Auth = {
       } else {
         await this.login(document.getElementById('auth-email').value, document.getElementById('auth-password').value);
       }
+      Analytics.event(this.mode === 'register' ? 'sign_up' : 'login', { method: 'email' });
       history.replaceState(null, '', `${location.pathname}${location.search}#dashboard`);
       location.reload();
     } catch (error) {
@@ -271,7 +272,7 @@ const Auth = {
       </div>
       <div class="modal-body policy-content">
         <p>${t('policy.summary')}</p>
-        ${['data','ai','key','content','rights'].map(section => `<section><h4>${t(`policy.${section}Title`)}</h4><p>${t(`policy.${section}`)}</p></section>`).join('')}
+        ${['data','ai','key','analytics','content','rights'].map(section => `<section><h4>${t(`policy.${section}Title`)}</h4><p>${t(`policy.${section}`)}</p></section>`).join('')}
       </div>
       <div class="modal-actions"><button class="btn btn-primary" id="policy-agree">${t('policy.agree')}</button></div>
     `;

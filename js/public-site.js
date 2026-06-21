@@ -347,6 +347,12 @@ const PublicSite = {
   },
 
   requestAccount(kind, item, value = '') {
+    Analytics.event('register_prompt_open', {
+      action_kind: kind,
+      lesson_id: item.id,
+      level: item.level,
+      industry: item.industry
+    });
     localStorage.setItem(this.PENDING_KEY, JSON.stringify({
       kind,
       itemId: item.id,
@@ -363,6 +369,10 @@ const PublicSite = {
 
   requestSessionAccount() {
     const stats = this.getStats();
+    Analytics.event('register_prompt_open', {
+      action_kind: 'session',
+      lesson_count: stats.ids.length
+    });
     localStorage.setItem(this.PENDING_KEY, JSON.stringify({
       kind: 'session',
       itemIds: stats.ids,
