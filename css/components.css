@@ -1199,7 +1199,6 @@
   margin-bottom: 1.4em;
   padding: 6px 8px;
   border-radius: 6px;
-  cursor: pointer;
   transition: background 0.15s, box-shadow 0.15s;
 }
 
@@ -1210,6 +1209,40 @@
 .reader-body p.is-speaking {
   background: rgba(253, 203, 110, 0.22);
   box-shadow: inset 3px 0 var(--accent);
+}
+
+.reader-token {
+  position: relative;
+  display: inline-block;
+  margin: 0 2px 6px 0;
+  padding: 1px 4px;
+  color: inherit;
+  background: rgba(45, 106, 79, 0.055);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font: inherit;
+  line-height: inherit;
+  text-align: left;
+  vertical-align: baseline;
+  touch-action: manipulation;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+
+.reader-token:hover,
+.reader-token:focus-visible {
+  background: rgba(45, 106, 79, 0.11);
+  border-color: rgba(45, 106, 79, 0.2);
+  outline: none;
+}
+
+.reader-token.is-pressing {
+  background: rgba(253, 203, 110, 0.28);
+  border-color: var(--accent);
+  box-shadow: inset 0 -3px var(--accent);
+}
+
+.reader-punctuation {
+  display: inline;
 }
 
 .reader-body ruby {
@@ -1243,6 +1276,10 @@
 }
 
 .reader-vocab-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 5px 8px;
+  align-items: start;
   padding: 12px;
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -1253,10 +1290,51 @@
   margin-right: 8px;
 }
 
+.reader-vocab-item > p {
+  grid-column: 1 / -1;
+}
+
 .reader-vocab-item span,
 .reader-vocab-item p {
   color: var(--text-light);
   font-size: 0.78rem;
+}
+
+.reader-vocab-add {
+  width: 32px;
+  height: 32px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.reader-vocab-add i {
+  width: 16px;
+  height: 16px;
+}
+
+.reader-lookup-modal {
+  display: grid;
+  gap: 8px;
+}
+
+.reader-lookup-modal > strong {
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.reader-lookup-modal > span {
+  color: var(--text-light);
+}
+
+.reader-lookup-modal > p {
+  line-height: 1.65;
+}
+
+.reader-lookup-note {
+  padding-top: 8px;
+  color: var(--text-light);
+  border-top: 1px solid var(--border);
+  font-size: 0.84rem;
 }
 
 .reader-source {
@@ -1331,6 +1409,7 @@
 
 /* Daily learning dashboard */
 .learning-hero,
+.dashboard-library-link,
 .yesterday-card,
 .today-report,
 .learning-history {
@@ -1416,6 +1495,56 @@
   margin-top: 2px;
   opacity: 0.72;
   font-size: 0.66rem;
+}
+
+.dashboard-library-link {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 18px;
+}
+
+.dashboard-library-link > span {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: var(--primary);
+  background: rgba(45, 106, 79, 0.09);
+  border-radius: 10px;
+}
+
+.dashboard-library-link > span i {
+  width: 19px;
+  height: 19px;
+}
+
+.dashboard-library-link strong {
+  display: block;
+  font-size: 0.92rem;
+}
+
+.dashboard-library-link p {
+  margin-top: 3px;
+  overflow: hidden;
+  color: var(--text-light);
+  font-size: 0.76rem;
+  line-height: 1.45;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dashboard-library-link .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.dashboard-library-link .btn i {
+  width: 15px;
+  height: 15px;
 }
 
 .yesterday-card {
@@ -1772,20 +1901,82 @@
 }
 
 @media (max-width: 640px) {
+  .learning-hero,
+  .dashboard-library-link,
+  .yesterday-card,
+  .today-report,
+  .learning-history {
+    margin-bottom: 12px;
+  }
+
   .learning-hero {
     display: block;
-    padding: 22px 18px;
+    padding: 18px 16px;
+  }
+
+  .learning-hero h1 {
+    margin: 4px 0 5px;
+    line-height: 1.28;
   }
 
   .checkin-button {
     width: 100%;
-    margin-top: 18px;
+    margin-top: 12px;
+    padding: 11px 13px;
+  }
+
+  .checkin-icon {
+    width: 34px;
+    height: 34px;
   }
 
   .yesterday-card,
+  .dashboard-library-link,
   .today-report,
   .learning-history {
-    padding: 18px 16px;
+    padding: 14px;
+  }
+
+  .dashboard-library-link {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .dashboard-library-link .btn {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .yesterday-card {
+    gap: 14px;
+  }
+
+  .yesterday-copy p,
+  .report-note {
+    margin-top: 5px;
+  }
+
+  .section-heading {
+    margin-bottom: 12px;
+  }
+
+  .report-grid {
+    gap: 8px;
+  }
+
+  .report-metric {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .report-metric-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .report-metric strong {
+    font-size: 1.05rem;
   }
 
   .focus-item {
@@ -1799,10 +1990,11 @@
   .history-day {
     grid-template-columns: 62px minmax(60px, 1fr) 52px 18px 15px;
     gap: 9px;
+    min-height: 40px;
   }
 
   .history-detail {
-    padding: 4px 0 14px;
+    padding: 2px 0 12px;
   }
 
   .bottom-nav {

@@ -46,6 +46,18 @@ const Dashboard = {
         </button>
       </header>
 
+      <section class="dashboard-library-link">
+        <span><i data-lucide="library-big"></i></span>
+        <div>
+          <strong>${t('library.title')}</strong>
+          <p>${t('library.subtitle')}</p>
+        </div>
+        <button class="btn btn-secondary" data-view="library">
+          ${t('library.viewAll')}
+          <i data-lucide="arrow-right"></i>
+        </button>
+      </section>
+
       <section class="yesterday-card">
         <div class="yesterday-copy">
           <span class="section-kicker">${t('dash.yesterday')}</span>

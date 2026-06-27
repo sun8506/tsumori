@@ -1,6 +1,8 @@
 const Article = {
   candidates: [],
   isGenerating: false,
+  lookupPressTimer: null,
+  lookupPressTarget: null,
   speech: {
     queueToken: 0,
     paused: false,
@@ -304,23 +306,31 @@ const Article = {
           <h1>${this.escapeHtml(article.title)}</h1>
           <p>${this.escapeHtml(article.summary || '')}</p>
         </header>
-        <p class="reader-speech-hint"><i data-lucide="volume-2"></i>${t('reading.clickParagraph')}</p>
+        <p class="reader-speech-hint"><i data-lucide="search"></i>长按词语或短句 2 秒查询；朗读请使用上方播放按钮。</p>
         <div class="reader-body">
           ${(article.paragraphs || []).map((paragraph, index) => `
-            <p data-paragraph-index="${index}" tabindex="0">${this.renderSegments(paragraph.segments || [])}</p>
+            <p data-paragraph-index="${index}">${this.renderInteractiveSegments(paragraph.segments || [])}</p>
           `).join('')}
         </div>
         ${(article.vocab || []).length ? `
           <section class="reader-vocabulary">
             <h2>${t('reading.keyVocabulary')}</h2>
             <div class="reader-vocab-grid">
-              ${(article.vocab || []).map(item => `
+              ${(article.vocab || []).map((item, index) => {
+                const exists = this.findExistingWord(item.word);
+                return `
                 <div class="reader-vocab-item">
-                  <strong>${this.escapeHtml(item.word || '')}</strong>
-                  <span>${this.escapeHtml(item.reading || '')}</span>
+                  <div>
+                    <strong>${this.escapeHtml(item.word || '')}</strong>
+                    <span>${this.escapeHtml(item.reading || '')}</span>
+                  </div>
+                  <button class="btn-icon reader-vocab-add" data-reader-vocab-index="${index}" title="${exists ? '已在单词库' : '加入单词库'}" ${exists ? 'disabled' : ''}>
+                    <i data-lucide="${exists ? 'bookmark-check' : 'bookmark-plus'}"></i>
+                  </button>
                   <p>${this.escapeHtml(item.meaningZh || item.meaning || '')}</p>
                 </div>
-              `).join('')}
+              `;
+              }).join('')}
             </div>
           </section>
         ` : ''}
@@ -340,11 +350,16 @@ const Article = {
     document.getElementById('btn-reader-play').addEventListener('click', () => this.speakParagraphs(paragraphs, 0));
     document.getElementById('btn-reader-pause').addEventListener('click', () => this.toggleSpeechPause());
     document.getElementById('btn-reader-stop').addEventListener('click', () => this.stopSpeech());
-    main.querySelectorAll('[data-paragraph-index]').forEach(element => {
-      const play = () => this.speakParagraphs(paragraphs, Number(element.dataset.paragraphIndex));
-      element.addEventListener('click', play);
-      element.addEventListener('keydown', event => {
-        if (event.key === 'Enter' || event.key === ' ') play();
+    this.bindReaderLookups(main);
+    main.querySelectorAll('[data-reader-vocab-index]').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = (article.vocab || [])[Number(button.dataset.readerVocabIndex)];
+        const saved = this.addReaderVocab(item);
+        if (!saved) return;
+        button.disabled = true;
+        button.title = '已在单词库';
+        button.innerHTML = '<i data-lucide="bookmark-check"></i>';
+        if (window.lucide) lucide.createIcons({ nodes: button.querySelectorAll('[data-lucide]') });
       });
     });
     document.getElementById('toggle-furigana').addEventListener('change', event => {
@@ -421,6 +436,212 @@ const Article = {
       const reading = this.escapeHtml(segment.reading || '');
       return reading ? `<ruby>${text}<rt>${reading}</rt></ruby>` : text;
     }).join('');
+  },
+
+  renderInteractiveSegments(segments) {
+    return segments.flatMap(segment => this.readerTokens(segment)).map(token => {
+      const text = this.escapeHtml(token.text);
+      const reading = this.escapeHtml(token.reading || '');
+      const attrs = `data-reader-token="${this.escapeAttr(token.text)}" data-reader-reading="${this.escapeAttr(token.reading || '')}"`;
+      const content = reading ? `<ruby>${text}<rt>${reading}</rt></ruby>` : text;
+      return token.lookup
+        ? `<button class="reader-token" type="button" ${attrs}>${content}</button>`
+        : `<span class="reader-punctuation">${content}</span>`;
+    }).join('');
+  },
+
+  readerTokens(segment) {
+    const text = String(segment?.text || '');
+    const reading = String(segment?.reading || '');
+    if (!text) return [];
+    if (reading) return [{ text, reading, lookup: true }];
+    return text.split(/([、。！？!?「」『』（）()\s]+)/)
+      .filter(part => part)
+      .map(part => ({
+        text: part,
+        reading: '',
+        lookup: !/^[、。！？!?「」『』（）()\s]+$/.test(part)
+      }));
+  },
+
+  bindReaderLookups(root) {
+    root.querySelectorAll('.reader-token').forEach(token => {
+      const start = event => {
+        if (event.pointerType === 'mouse' && event.button !== 0) return;
+        this.cancelReaderLookupPress();
+        this.lookupPressTarget = token;
+        token.classList.add('is-pressing');
+        this.lookupPressTimer = setTimeout(() => {
+          this.lookupPressTimer = null;
+          token.classList.remove('is-pressing');
+          this.lookupReaderToken(token.dataset.readerToken, token.dataset.readerReading);
+        }, 2000);
+      };
+      token.addEventListener('pointerdown', start);
+      token.addEventListener('pointerup', () => this.cancelReaderLookupPress());
+      token.addEventListener('pointerleave', () => this.cancelReaderLookupPress());
+      token.addEventListener('pointercancel', () => this.cancelReaderLookupPress());
+      token.addEventListener('contextmenu', event => event.preventDefault());
+      token.addEventListener('keydown', event => {
+        if (event.key === 'Enter') this.lookupReaderToken(token.dataset.readerToken, token.dataset.readerReading);
+      });
+    });
+  },
+
+  cancelReaderLookupPress() {
+    if (this.lookupPressTimer) clearTimeout(this.lookupPressTimer);
+    this.lookupPressTimer = null;
+    this.lookupPressTarget?.classList.remove('is-pressing');
+    this.lookupPressTarget = null;
+  },
+
+  async lookupReaderToken(text, reading = '') {
+    const query = this.cleanLookupText(text);
+    if (!query) return;
+    const existing = this.findExistingWord(query);
+    if (existing) {
+      this.showLookupModal({
+        title: existing.word,
+        reading: existing.reading || reading,
+        meaning: existing.meaningZh || existing.meaningJp || '',
+        source: '单词库',
+        existing
+      });
+      return;
+    }
+
+    this.showLookupModal({ title: query, reading, loading: true, source: 'AI 查询' });
+    if (!AIProvider.isConfigured()) {
+      this.showLookupModal({
+        title: query,
+        reading,
+        meaning: '单词库里还没有这个词。请先在设置里配置 AI，或直接加入单词库后手动补充释义。',
+        source: '未配置 AI',
+        allowAdd: true
+      });
+      return;
+    }
+
+    try {
+      const user = this.getCurrentUser();
+      const config = {
+        level: user?.profile?.level || 'n3',
+        industry: user?.profile?.industry || 'none',
+        explanationLanguage: user?.profile?.language || 'zh',
+        sourceLanguage: 'ja',
+        targetLanguage: user?.profile?.language === 'en' ? 'en' : 'zh',
+        maxExamples: user?.settings?.maxExamples || 2,
+        mode: 'natural'
+      };
+      const result = await AIProvider.analyzeWord(query, config);
+      const record = Storage.addExpertQuery({
+        query,
+        userId: Storage._getCurrentUserId(),
+        profileSnapshot: config,
+        aiSnapshot: AIProvider.getConfig(),
+        result,
+        linkedWordId: null,
+        addedToVocab: false,
+        createdAt: new Date().toISOString()
+      });
+      this.showLookupModal({
+        title: result.word || query,
+        reading: result.reading || reading,
+        meaning: result.translationZh || result.meaningZh || result.translationEn || result.meaningEn || result.translation || '',
+        nuance: result.nuance || result.levelNote || '',
+        source: 'AI 查询',
+        record,
+        result,
+        allowAdd: true
+      });
+    } catch (error) {
+      this.showLookupModal({
+        title: query,
+        reading,
+        meaning: error.message,
+        source: '查询失败',
+        allowAdd: true
+      });
+    }
+  },
+
+  showLookupModal({ title, reading = '', meaning = '', nuance = '', source = '', loading = false, allowAdd = false, existing = null, record = null, result = null }) {
+    const modal = document.getElementById('modal-container');
+    modal.innerHTML = `
+      <div class="modal-header">
+        <h3>${this.escapeHtml(source || '查询')}</h3>
+        <button class="modal-close" type="button" aria-label="${t('common.close')}" title="${t('common.close')}" id="reader-lookup-close"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body reader-lookup-modal">
+        <strong>${this.escapeHtml(title || '')}</strong>
+        ${reading ? `<span>${this.escapeHtml(reading)}</span>` : ''}
+        ${loading ? '<p>正在查询...</p>' : `<p>${this.escapeHtml(meaning || '暂无释义')}</p>`}
+        ${nuance ? `<p class="reader-lookup-note">${this.escapeHtml(nuance)}</p>` : ''}
+      </div>
+      <div class="modal-actions">
+        ${existing ? `<button class="btn btn-secondary" disabled><i data-lucide="bookmark-check"></i>已在单词库</button>` : ''}
+        ${allowAdd ? `<button class="btn btn-primary" id="reader-lookup-add"><i data-lucide="bookmark-plus"></i>加入单词库</button>` : ''}
+        <button class="btn btn-secondary" id="reader-lookup-expert"><i data-lucide="sparkles"></i>打开查询页</button>
+      </div>
+    `;
+    Modal.open();
+    document.getElementById('reader-lookup-close')?.addEventListener('click', () => Modal.close());
+    document.getElementById('reader-lookup-add')?.addEventListener('click', () => {
+      const saved = this.addReaderVocab({
+        word: result?.word || title,
+        reading: result?.reading || reading,
+        meaningZh: result?.translationZh || result?.meaningZh || result?.translationEn || result?.meaningEn || result?.translation || meaning,
+        meaningJp: result?.meaningJp || '',
+        source: record ? 'reader-ai' : 'reader'
+      });
+      if (record && saved) Storage.linkToVocab(record.id, saved.id);
+      this.showLookupModal({ title: saved?.word || title, reading: saved?.reading || reading, meaning: saved?.meaningZh || meaning, source: '已加入单词库', existing: saved });
+    });
+    document.getElementById('reader-lookup-expert')?.addEventListener('click', () => {
+      Modal.close();
+      window.location.hash = 'expert';
+      setTimeout(() => {
+        const input = document.getElementById('expert-input');
+        if (input) {
+          input.value = title || '';
+          input.dispatchEvent(new Event('input'));
+          input.focus();
+        }
+      }, 80);
+    });
+    if (window.lucide) lucide.createIcons({ nodes: modal.querySelectorAll('[data-lucide]') });
+  },
+
+  addReaderVocab(item) {
+    const word = String(item?.word || '').trim();
+    if (!word) return null;
+    const existing = this.findExistingWord(word);
+    if (existing) return existing;
+    return Storage.add('vocabulary', {
+      word,
+      reading: item.reading || '',
+      meaningJp: item.meaningJp || '',
+      meaningZh: item.meaningZh || item.meaning || '',
+      source: item.source || 'reader',
+      ...SM2.initItem(),
+      created: new Date().toISOString()
+    });
+  },
+
+  findExistingWord(word) {
+    const normalized = Storage.normalizeVocabularyTerm(word);
+    if (!normalized) return null;
+    return Storage.getAll('vocabulary').find(item => {
+      if (Storage.normalizeVocabularyTerm(item.word) === normalized) return true;
+      return Array.isArray(item.aliases) && item.aliases.some(alias => Storage.normalizeVocabularyTerm(alias) === normalized);
+    }) || null;
+  },
+
+  cleanLookupText(text) {
+    return String(text || '')
+      .normalize('NFKC')
+      .replace(/^[\s、。！？!?「」『』（）()]+|[\s、。！？!?「」『』（）()]+$/g, '')
+      .trim();
   },
 
   safeUrl(value) {

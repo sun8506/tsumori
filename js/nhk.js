@@ -91,12 +91,12 @@ const NHK = {
   },
 
   TARGETS: {
-    n5: { characters: '900-1200', grammar: 'N5', vocabulary: 'very common daily vocabulary' },
-    n4: { characters: '1100-1400', grammar: 'N4', vocabulary: 'common daily vocabulary' },
-    n3: { characters: '1400-1800', grammar: 'N3', vocabulary: 'common news and daily vocabulary' },
-    n2: { characters: '1800-2200', grammar: 'N2', vocabulary: 'natural news vocabulary with brief context' },
-    n1: { characters: '2200-2600', grammar: 'N1', vocabulary: 'natural adult news vocabulary' },
-    free: { characters: '1600-2000', grammar: 'natural Japanese', vocabulary: 'natural Japanese vocabulary' }
+    n5: { characters: '420-560', grammar: 'N5', vocabulary: 'very common daily vocabulary' },
+    n4: { characters: '500-650', grammar: 'N4', vocabulary: 'common daily vocabulary' },
+    n3: { characters: '600-780', grammar: 'N3', vocabulary: 'common news and daily vocabulary' },
+    n2: { characters: '700-900', grammar: 'N2', vocabulary: 'natural news vocabulary with brief context' },
+    n1: { characters: '820-1000', grammar: 'N1', vocabulary: 'natural adult news vocabulary' },
+    free: { characters: '650-850', grammar: 'natural Japanese', vocabulary: 'natural Japanese vocabulary' }
   },
 
   getIndustryPlan(industry) {
@@ -133,7 +133,7 @@ const NHK = {
       `Industry focus: ${this.getIndustryPlan(profile.industry).label}`,
       `Source date: ${source.date || ''}`,
       `Target level: ${target.grammar}`,
-      `Target length: ${target.characters} Japanese characters, approximately 15 minutes for a learner.`,
+      `Target length: ${target.characters} Japanese characters, approximately 5 minutes for a learner.`,
       `Vocabulary policy: ${target.vocabulary}.`
     ].join('\n');
 
@@ -142,31 +142,23 @@ const NHK = {
         baseSystemPrompt,
         'Create metadata and vocabulary only. Do not write the article body.',
         'Use this exact shape:',
-        '{"title":"","summary":"","topic":"","level":"","estimatedMinutes":15,"vocabulary":[{"word":"","reading":"","meaningZh":""}]}'
+        '{"title":"","summary":"","topic":"","level":"","estimatedMinutes":5,"vocabulary":[{"word":"","reading":"","meaningZh":""}]}'
       ].join('\n'),
       [
         context,
         'Create a concise title and summary for an AI-adapted learning passage.',
-        'Provide 8-12 important vocabulary items with Chinese meanings.',
+        'Provide 5-8 important vocabulary items with Chinese meanings.',
         'Return one compact json object only.'
       ].join('\n'),
       3072
     );
 
-    const firstHalf = await this.generateArticlePart({
+    const body = await this.generateArticlePart({
       baseSystemPrompt,
       context,
       title: metadata.title || source.title,
       summary: metadata.summary || '',
-      part: 1
-    });
-    const secondHalf = await this.generateArticlePart({
-      baseSystemPrompt,
-      context,
-      title: metadata.title || source.title,
-      summary: metadata.summary || '',
-      part: 2,
-      previousEnding: firstHalf[firstHalf.length - 1] || ''
+      part: 'single'
     });
 
     return {
@@ -180,8 +172,8 @@ const NHK = {
       summary: metadata.summary || '',
       topic: metadata.topic || 'news',
       level,
-      estimatedMinutes: Number(metadata.estimatedMinutes || 15),
-      paragraphs: this.normalizeParagraphs([...firstHalf, ...secondHalf]),
+      estimatedMinutes: Number(metadata.estimatedMinutes || 5),
+      paragraphs: this.normalizeParagraphs(body),
       vocab: Array.isArray(metadata.vocabulary) ? metadata.vocabulary : [],
       generatedAt: new Date().toISOString(),
       date: source.date || new Date().toISOString(),
@@ -190,10 +182,11 @@ const NHK = {
   },
 
   async generateArticlePart({ baseSystemPrompt, context, title, summary, part, previousEnding = '' }) {
+    const isSingle = part === 'single';
     const isFirst = part === 1;
     const systemPrompt = [
       baseSystemPrompt,
-      `Write ${isFirst ? 'the first half' : 'the second half'} of the article body.`,
+      isSingle ? 'Write the complete article body.' : `Write ${isFirst ? 'the first half' : 'the second half'} of the article body.`,
       'Use this exact shape:',
       '{"paragraphs":["日本(にほん)の文章(ぶんしょう)。"]}'
     ].join('\n');
@@ -201,7 +194,9 @@ const NHK = {
       context,
       `Article title: ${title}`,
       `Article summary: ${summary}`,
-      isFirst
+      isSingle
+        ? 'Write 3-4 coherent compact paragraphs for the total target length. Keep it readable in about 5 minutes.'
+        : isFirst
         ? 'Write 4 coherent opening and explanatory paragraphs, about half of the total target length.'
         : 'Write 4 coherent continuation and concluding paragraphs, about half of the total target length.',
       previousEnding ? `Continue naturally after this previous paragraph: ${previousEnding}` : '',
@@ -209,7 +204,7 @@ const NHK = {
       'Return one complete compact json object only.'
     ].filter(Boolean).join('\n');
 
-    const result = await this.generateJsonWithRetry(systemPrompt, prompt, 5120);
+    const result = await this.generateJsonWithRetry(systemPrompt, prompt, isSingle ? 3072 : 5120);
     if (!Array.isArray(result.paragraphs) || result.paragraphs.length === 0) {
       throw new Error('AI returned no article paragraphs.');
     }

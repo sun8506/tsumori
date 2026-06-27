@@ -21,6 +21,10 @@ const Nav = {
     if (toggle) {
       toggle.addEventListener('click', () => Auth.logout());
     }
+    const mobileLogout = document.getElementById('bottom-nav-logout');
+    if (mobileLogout) {
+      mobileLogout.addEventListener('click', () => Auth.logout());
+    }
   },
 
   navigate(view) {
