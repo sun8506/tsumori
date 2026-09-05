@@ -20,6 +20,17 @@ Tsumori 是一个面向中文用户的日语学习工具，围绕每日积累、
 
 要求：Node.js 18 或更高版本。
 
+Linux / macOS / WSL 一键启动（无需安装 npm 依赖）：
+
+```sh
+./start.sh
+```
+
+脚本会自动切换到项目目录并检查 Node.js 版本。按 `Ctrl+C` 停止服务。
+也可通过环境变量指定端口，例如 `PORT=8080 ./start.sh`。
+
+Windows PowerShell：
+
 ```powershell
 .\server.ps1
 ```
