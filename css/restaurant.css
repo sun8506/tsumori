@@ -1,0 +1,1182 @@
+.restaurant-shell {
+  display: grid;
+  gap: 16px;
+  isolation: isolate;
+}
+
+.restaurant-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 24px;
+  color: #fff;
+  background: linear-gradient(135deg, #244236 0%, #2d6a4f 58%, #a15c38 100%);
+  border-radius: 8px;
+  box-shadow: 0 16px 30px rgba(36, 66, 54, 0.18);
+}
+
+.restaurant-header-scene {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(255, 204, 121, 0.36), transparent 28%),
+    radial-gradient(circle at 8% 92%, rgba(77, 153, 126, 0.26), transparent 32%),
+    linear-gradient(135deg, rgba(26, 51, 43, 0.98), rgba(45, 106, 79, 0.9) 54%, rgba(161, 92, 56, 0.94));
+}
+
+.restaurant-header-scene::before,
+.restaurant-header-scene::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.restaurant-header-scene::before {
+  inset: -90px 12% auto auto;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(255, 220, 139, 0.44), transparent 62%);
+  filter: blur(2px);
+}
+
+.restaurant-header-scene::after {
+  right: 28px;
+  bottom: -18px;
+  width: 180px;
+  height: 78px;
+  border-radius: 50%;
+  background: rgba(255, 248, 231, 0.12);
+  transform: rotate(-8deg);
+}
+
+.restaurant-header-scene > * {
+  position: relative;
+  z-index: 1;
+}
+
+.restaurant-header h1 {
+  margin: 4px 0 6px;
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+.restaurant-header p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.restaurant-header-actions,
+.restaurant-header-actions .btn,
+#restaurant-play-again {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.restaurant-header-actions .btn i,
+#restaurant-play-again i {
+  width: 16px;
+  height: 16px;
+}
+
+.restaurant-kicker {
+  color: #d4a373;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.restaurant-scorebar {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.restaurant-level-strip {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.restaurant-level {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  min-height: 58px;
+  padding: 8px;
+  color: var(--text);
+  background: linear-gradient(180deg, #fffdf8, #fff7e8);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.restaurant-level:hover:not(:disabled),
+.restaurant-level.is-active {
+  border-color: #c96e39;
+  box-shadow: 0 10px 18px rgba(136, 79, 45, 0.12), 0 0 0 3px rgba(201, 110, 57, 0.12);
+}
+
+.restaurant-level.is-complete {
+  border-color: rgba(0, 184, 148, 0.42);
+  background: rgba(0, 184, 148, 0.06);
+}
+
+.restaurant-level:disabled {
+  color: var(--text-light);
+  background: rgba(255, 255, 255, 0.54);
+}
+
+.restaurant-level span,
+.restaurant-level strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.restaurant-level span {
+  color: var(--primary);
+  font-size: 0.66rem;
+  font-weight: 800;
+}
+
+.restaurant-level strong {
+  font-size: 0.74rem;
+}
+
+.restaurant-metric {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 12px;
+  background: linear-gradient(180deg, #ffffff, #fff8ec);
+  border: 1px solid #efe2cd;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(74, 48, 28, 0.06);
+}
+
+.restaurant-metric i {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  color: #c96e39;
+}
+
+.restaurant-metric span,
+.restaurant-metric small,
+.restaurant-metric strong {
+  display: block;
+  min-width: 0;
+}
+
+.restaurant-metric small {
+  color: var(--text-light);
+  font-size: 0.66rem;
+}
+
+.restaurant-metric strong {
+  margin-top: 2px;
+  overflow: hidden;
+  color: var(--text);
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.restaurant-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 292px;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.restaurant-scene-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.restaurant-scene {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 34%, rgba(255, 236, 190, 0.82), transparent 27%),
+    radial-gradient(circle at 12% 78%, rgba(82, 132, 113, 0.18), transparent 22%),
+    radial-gradient(circle at 88% 78%, rgba(184, 79, 56, 0.14), transparent 24%),
+    linear-gradient(180deg, #f1d6a8 0 34%, transparent 34%),
+    linear-gradient(90deg, rgba(255,255,255,0.28) 1px, transparent 1px) 0 0 / 44px 44px,
+    linear-gradient(0deg, rgba(255,255,255,0.22) 1px, transparent 1px) 0 0 / 44px 44px,
+    #d7a86d;
+  border: 1px solid #bf874c;
+  border-radius: 8px;
+  box-shadow:
+    inset 0 0 0 8px rgba(255, 255, 255, 0.18),
+    inset 0 -56px 90px rgba(91, 57, 40, 0.18),
+    0 18px 34px rgba(91, 57, 40, 0.14);
+}
+
+.restaurant-scene::before,
+.restaurant-scene::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.restaurant-scene::before {
+  inset: 176px 14% auto;
+  height: 120px;
+  background: radial-gradient(ellipse at center, rgba(255, 245, 205, 0.42), transparent 70%);
+  animation: restaurantLightPulse 4.8s ease-in-out infinite;
+}
+
+.restaurant-scene::after {
+  left: 42%;
+  bottom: 78px;
+  width: 90px;
+  height: 42px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 20% 35%, rgba(255, 255, 255, 0.52), transparent 20%),
+    radial-gradient(circle at 52% 20%, rgba(255, 255, 255, 0.34), transparent 18%),
+    radial-gradient(circle at 80% 42%, rgba(255, 255, 255, 0.3), transparent 18%);
+  opacity: 0.64;
+  filter: blur(1px);
+  animation: restaurantSteam 3.8s ease-in-out infinite;
+}
+
+.scene-back-wall {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 172px;
+  background:
+    radial-gradient(circle at 58% 36%, rgba(255, 233, 175, 0.55), transparent 24%),
+    linear-gradient(90deg, rgba(123, 80, 53, 0.2) 1px, transparent 1px) 0 0 / 54px 54px,
+    #f6e2ba;
+  border-bottom: 5px solid rgba(123, 80, 53, 0.3);
+}
+
+.scene-noren {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  display: grid;
+  place-items: center;
+  width: 170px;
+  height: 48px;
+  color: #fff8e7;
+  background: linear-gradient(180deg, #d8473f, #9f2528);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 12px 20px rgba(128, 36, 31, 0.26), inset 0 -8px 0 rgba(93, 21, 22, 0.18);
+  font-weight: 800;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+}
+
+.scene-noren::before,
+.scene-noren::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(255, 248, 231, 0.22);
+}
+
+.scene-noren::before { left: 33%; }
+.scene-noren::after { right: 33%; }
+
+.scene-noren,
+.scene-menu-board {
+  z-index: 3;
+}
+
+.scene-menu-board {
+  position: absolute;
+  top: 28px;
+  right: 24px;
+  padding: 12px 16px;
+  color: #fff8e7;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 26%),
+    #2f3d34;
+  border: 5px solid #7b5035;
+  border-radius: 8px;
+  font-family: 'Noto Sans JP', var(--font-main);
+  font-weight: 700;
+  box-shadow: 0 14px 22px rgba(47, 61, 52, 0.18);
+}
+
+.scene-station {
+  position: absolute;
+  display: grid;
+  gap: 8px;
+  min-width: 126px;
+  padding: 10px;
+  color: #fff;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent 34%),
+    #5b3928;
+  border: 4px solid #7b5035;
+  border-radius: 8px;
+  box-shadow: 0 12px 20px rgba(57, 38, 24, 0.2);
+  z-index: 4;
+}
+
+.scene-station > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.scene-station i {
+  width: 15px;
+  height: 15px;
+}
+
+.scene-station div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.scene-station b,
+.scene-station small {
+  padding: 4px 7px;
+  color: #5b3928;
+  background: linear-gradient(180deg, #fff8e7, #ffe6b8);
+  border-radius: 999px;
+  font-size: 0.66rem;
+}
+
+.station-counter { top: 104px; left: 24px; }
+.station-kitchen { top: 104px; right: 24px; }
+.station-service { bottom: 24px; left: 24px; }
+.station-cashier { bottom: 24px; right: 24px; }
+
+.scene-tables {
+  position: absolute;
+  inset: 205px 160px 112px 160px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-content: center;
+  z-index: 5;
+}
+
+.scene-empty {
+  grid-column: 1 / -1;
+  display: grid;
+  place-items: center;
+  min-height: 170px;
+  color: rgba(76, 58, 42, 0.56);
+  background: rgba(255, 250, 240, 0.68);
+  border: 2px dashed rgba(123, 80, 53, 0.4);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.scene-customer {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  justify-items: center;
+  min-width: 0;
+  min-height: 164px;
+  padding: 12px;
+  color: var(--text);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(255, 250, 240, 0.94)),
+    #fffaf0;
+  border: 2px solid #9b6b43;
+  border-radius: 8px;
+  box-shadow: 0 12px 0 rgba(94, 60, 36, 0.11), 0 18px 26px rgba(71, 45, 26, 0.12);
+  text-align: center;
+  transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s, filter 0.15s;
+  animation: customerArrive 0.28s ease-out both;
+}
+
+.scene-customer:hover,
+.scene-customer.is-active {
+  border-color: #c96e39;
+  box-shadow: 0 0 0 3px rgba(201, 110, 57, 0.18), 0 12px 0 rgba(94, 60, 36, 0.1), 0 22px 34px rgba(71, 45, 26, 0.15);
+  transform: translateY(-2px);
+  filter: saturate(1.08);
+}
+
+.scene-customer strong,
+.scene-customer small,
+.staff-working {
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scene-customer small,
+.staff-working {
+  color: var(--text-light);
+  font-size: 0.68rem;
+}
+
+.event-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 26px;
+  padding: 4px 8px;
+  color: #fff;
+  border-radius: 999px;
+  font-style: normal;
+  font-size: 0.68rem;
+  font-weight: 800;
+  box-shadow: 0 6px 10px rgba(45, 52, 54, 0.12);
+}
+
+.event-badge i {
+  width: 13px;
+  height: 13px;
+}
+
+.event-red { background: linear-gradient(135deg, #d85b45, #9f2d2f); }
+.event-green { background: linear-gradient(135deg, #40916c, #1b6b50); }
+.event-blue { background: linear-gradient(135deg, #4f8cc9, #2e5f9d); }
+.event-gold { background: linear-gradient(135deg, #d69a2d, #9b5b16); }
+.event-dark { background: linear-gradient(135deg, #4b5563, #24292f); }
+
+.restaurant-dialogue {
+  min-width: 0;
+  padding: 16px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 249, 237, 0.96)),
+    var(--bg-card);
+  border: 1px solid #efe2cd;
+  border-radius: 8px;
+  box-shadow: 0 16px 30px rgba(74, 48, 28, 0.1);
+}
+
+.restaurant-choice-list {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.restaurant-choice-list button {
+  padding: 11px 12px;
+  color: var(--text);
+  background: linear-gradient(180deg, #ffffff, #fff7e8);
+  border: 1px solid #eee4ce;
+  border-radius: 8px;
+  font-family: 'Noto Sans JP', var(--font-main);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.restaurant-choice-list button:hover {
+  border-color: #c96e39;
+  background: #fff2d8;
+  box-shadow: 0 10px 18px rgba(201, 110, 57, 0.12);
+  transform: translateY(-1px);
+}
+
+.restaurant-floor {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.32) 1px, transparent 1px) 0 0 / 42px 42px,
+    linear-gradient(0deg, rgba(255,255,255,0.3) 1px, transparent 1px) 0 0 / 42px 42px,
+    #e7c99b;
+  border: 1px solid #d8b982;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.18);
+}
+
+.restaurant-sign {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  display: grid;
+  place-items: center;
+  width: 158px;
+  height: 42px;
+  color: #fff8e7;
+  background: #a83232;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 0 rgba(90, 30, 28, 0.16);
+  font-weight: 800;
+}
+
+.restaurant-counter {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  padding: 12px;
+  color: #fff;
+  background: #5b3928;
+  border: 5px solid #7b5035;
+  border-radius: 8px;
+}
+
+.restaurant-counter span {
+  display: grid;
+  place-items: center;
+  min-height: 42px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.restaurant-tables {
+  position: absolute;
+  inset: 86px 22px 116px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.restaurant-table {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto 1fr;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+  min-height: 100%;
+  padding: 14px;
+  color: var(--text);
+  background: #fffaf0;
+  border: 2px solid #9b6b43;
+  border-radius: 8px;
+  box-shadow: 0 12px 0 rgba(94, 60, 36, 0.11);
+  text-align: center;
+  transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+
+.restaurant-table:not(.is-empty):hover,
+.restaurant-table.is-active {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.16), 0 12px 0 rgba(94, 60, 36, 0.1);
+  transform: translateY(-2px);
+}
+
+.restaurant-table.is-empty {
+  color: rgba(76, 58, 42, 0.48);
+  background: rgba(255, 250, 240, 0.62);
+  border-style: dashed;
+  box-shadow: none;
+}
+
+.table-number {
+  color: var(--text-light);
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.empty-seat {
+  display: grid;
+  place-items: center;
+  min-height: 150px;
+  font-weight: 700;
+}
+
+.customer-avatar {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  color: #fff;
+  background:
+    radial-gradient(circle at 35% 28%, rgba(255,255,255,0.28), transparent 24%),
+    #2d6a4f;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(45, 52, 54, 0.18);
+  font-weight: 800;
+  font-size: 1.22rem;
+}
+
+.tone-casual { background: radial-gradient(circle at 35% 28%, rgba(255,255,255,0.3), transparent 24%), #cf6f46; }
+.tone-gentle { background: radial-gradient(circle at 35% 28%, rgba(255,255,255,0.3), transparent 24%), #7a8f5b; }
+.tone-bright { background: radial-gradient(circle at 35% 28%, rgba(255,255,255,0.3), transparent 24%), #386fa4; }
+.tone-curious { background: radial-gradient(circle at 35% 28%, rgba(255,255,255,0.3), transparent 24%), #8f5b7a; }
+.tone-strict { background: radial-gradient(circle at 35% 28%, rgba(255,255,255,0.22), transparent 24%), #2d3436; }
+
+.customer-name {
+  overflow: hidden;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.customer-role,
+.customer-need {
+  overflow: hidden;
+  color: var(--text-light);
+  font-size: 0.72rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.patience {
+  height: 7px;
+  overflow: hidden;
+  background: #eadfcd;
+  box-shadow: inset 0 1px 2px rgba(74, 48, 28, 0.1);
+  border-radius: 999px;
+}
+
+.patience span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #00b894, #fdcb6e, #e17055);
+  border-radius: inherit;
+  transition: width 0.25s;
+}
+
+.restaurant-panel {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 12px;
+  min-width: 0;
+}
+
+.restaurant-order-card,
+.restaurant-items,
+.restaurant-learning,
+.restaurant-upgrades,
+.restaurant-result-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.restaurant-order-card {
+  min-height: 230px;
+  padding: 16px;
+}
+
+.restaurant-order-card h2,
+.restaurant-items h2,
+.restaurant-learning h2,
+.restaurant-result-card h2 {
+  margin: 4px 0 10px;
+  font-size: 1.05rem;
+}
+
+.restaurant-japanese {
+  font-family: 'Noto Sans JP', var(--font-main);
+  font-size: 1.16rem;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.restaurant-translation,
+.restaurant-muted,
+.restaurant-feedback {
+  color: var(--text-light);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.restaurant-pending {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.restaurant-pending span,
+.restaurant-result-words span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 5px 9px;
+  color: var(--primary);
+  background: rgba(45, 106, 79, 0.08);
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.restaurant-items {
+  padding: 16px;
+}
+
+.restaurant-item-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.restaurant-item {
+  display: grid;
+  gap: 5px;
+  justify-items: center;
+  min-width: 0;
+  min-height: 104px;
+  padding: 10px 8px;
+  color: var(--text);
+  background: #fbfaf3;
+  border: 1px solid #eee4ce;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.restaurant-item:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.item-plate {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  color: #fff;
+  background: #b84f38;
+  border-radius: 50%;
+  font-weight: 800;
+}
+
+.item-plate.service {
+  background: var(--primary);
+}
+
+.restaurant-item strong,
+.restaurant-item small {
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.restaurant-item strong {
+  font-family: 'Noto Sans JP', var(--font-main);
+  font-size: 0.82rem;
+}
+
+.restaurant-item small {
+  color: var(--text-light);
+  font-size: 0.66rem;
+}
+
+.restaurant-progression {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 16px;
+}
+
+.restaurant-management {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 16px;
+}
+
+.restaurant-staff-panel {
+  padding: 16px;
+  background: linear-gradient(180deg, #ffffff, #fff8ec);
+  border: 1px solid #efe2cd;
+  border-radius: 8px;
+}
+
+.restaurant-staff-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.restaurant-staff-card {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  padding: 10px;
+  background: linear-gradient(180deg, #ffffff, #fff7e8);
+  border: 1px solid #eee4ce;
+  border-radius: 8px;
+}
+
+.restaurant-staff-card.is-hired {
+  border-color: rgba(45, 106, 79, 0.35);
+  background: linear-gradient(180deg, rgba(45, 106, 79, 0.09), rgba(255, 255, 255, 0.92));
+}
+
+.staff-portrait {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 32% 28%, rgba(255,255,255,0.34), transparent 24%),
+    linear-gradient(135deg, var(--primary), #c96e39);
+  border-radius: 50%;
+  font-weight: 800;
+}
+
+.restaurant-staff-card strong,
+.restaurant-staff-card p,
+.restaurant-staff-card small {
+  display: block;
+  min-width: 0;
+}
+
+.restaurant-staff-card strong {
+  font-size: 0.82rem;
+}
+
+.restaurant-staff-card p {
+  margin-top: 3px;
+  color: var(--text-light);
+  font-size: 0.7rem;
+  line-height: 1.45;
+}
+
+.restaurant-staff-card small {
+  margin-top: 4px;
+  color: var(--primary);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.restaurant-staff-card .btn,
+.restaurant-staff-select {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.restaurant-staff-select {
+  min-height: 36px;
+  padding: 7px 9px;
+  color: var(--text);
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.restaurant-learning {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 16px;
+  background: linear-gradient(180deg, #ffffff, #fff8ec);
+  border-color: #efe2cd;
+}
+
+.restaurant-learning p {
+  color: var(--text-light);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.restaurant-log {
+  display: grid;
+  gap: 6px;
+}
+
+.restaurant-log span {
+  overflow: hidden;
+  padding: 8px 10px;
+  color: var(--text-light);
+  background: #fff7e8;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.restaurant-upgrades {
+  padding: 16px;
+}
+
+.restaurant-upgrade-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.restaurant-upgrade-head h2 {
+  font-size: 1.05rem;
+}
+
+.restaurant-upgrade-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.restaurant-upgrade {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  background: #fbfaf3;
+  border: 1px solid #eee4ce;
+  border-radius: 8px;
+}
+
+.restaurant-upgrade-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: var(--primary);
+  background: rgba(45, 106, 79, 0.08);
+  border-radius: 8px;
+}
+
+.restaurant-upgrade-icon i {
+  width: 18px;
+  height: 18px;
+}
+
+.restaurant-upgrade strong,
+.restaurant-upgrade p {
+  display: block;
+  min-width: 0;
+}
+
+.restaurant-upgrade strong {
+  font-size: 0.82rem;
+}
+
+.restaurant-upgrade p {
+  margin-top: 2px;
+  color: var(--text-light);
+  font-size: 0.7rem;
+  line-height: 1.45;
+}
+
+.restaurant-result {
+  position: fixed;
+  inset: 0;
+  z-index: 210;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background:
+    radial-gradient(circle at 50% 32%, rgba(255, 220, 139, 0.2), transparent 24%),
+    rgba(29, 37, 34, 0.62);
+}
+
+.restaurant-result-card {
+  position: relative;
+  display: grid;
+  gap: 14px;
+  width: min(520px, 100%);
+  padding: 22px;
+  background:
+    radial-gradient(circle at 92% 10%, rgba(255, 211, 129, 0.26), transparent 24%),
+    linear-gradient(180deg, #ffffff, #fff7e8);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+@keyframes restaurantLightPulse {
+  0%, 100% { opacity: 0.48; transform: scale(0.98); }
+  50% { opacity: 0.86; transform: scale(1.04); }
+}
+
+@keyframes restaurantSteam {
+  0%, 100% { opacity: 0.26; transform: translateY(8px) scale(0.92); }
+  50% { opacity: 0.68; transform: translateY(-8px) scale(1.08); }
+}
+
+@keyframes customerArrive {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .restaurant-scene::before,
+  .restaurant-scene::after,
+  .scene-customer {
+    animation: none;
+  }
+}
+
+.restaurant-result-card .modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.restaurant-result-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.restaurant-result-words {
+  display: grid;
+  gap: 8px;
+}
+
+.restaurant-result-words > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.restaurant-result-copy {
+  color: var(--text-light);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 860px) {
+  .restaurant-layout,
+  .restaurant-progression,
+  .restaurant-scene-layout,
+  .restaurant-management {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-panel {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .restaurant-header {
+    display: block;
+    padding: 18px 16px;
+  }
+
+  .restaurant-header-actions {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .restaurant-header-actions .btn {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .restaurant-scorebar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .restaurant-level-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .restaurant-scene {
+    min-height: 680px;
+  }
+
+  .scene-menu-board {
+    right: 14px;
+    left: 14px;
+    top: 78px;
+    text-align: center;
+  }
+
+  .station-counter { top: 154px; left: 14px; }
+  .station-kitchen { top: 154px; right: 14px; }
+  .station-service { bottom: 14px; left: 14px; }
+  .station-cashier { bottom: 14px; right: 14px; }
+
+  .scene-station {
+    min-width: 118px;
+  }
+
+  .scene-tables {
+    inset: 250px 14px 132px;
+    grid-template-columns: 1fr;
+    overflow: auto;
+  }
+
+  .scene-customer {
+    min-height: 142px;
+  }
+
+  .restaurant-layout {
+    gap: 12px;
+  }
+
+  .restaurant-floor {
+    min-height: 520px;
+  }
+
+  .restaurant-tables {
+    inset: 74px 14px 106px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .restaurant-table {
+    grid-template-columns: 48px minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto;
+    min-height: 118px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .restaurant-table .table-number {
+    grid-column: 1 / -1;
+  }
+
+  .customer-avatar {
+    grid-row: 2 / 5;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+  }
+
+  .patience,
+  .customer-need {
+    grid-column: 2;
+  }
+
+  .empty-seat {
+    grid-column: 1 / -1;
+    min-height: 72px;
+  }
+
+  .restaurant-counter {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+  }
+
+  .restaurant-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-item-grid,
+  .restaurant-result-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .restaurant-upgrade {
+    grid-template-columns: 34px minmax(0, 1fr);
+  }
+
+  .restaurant-staff-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-upgrade .btn {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+}

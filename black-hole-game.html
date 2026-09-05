@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07080b">
+  <meta name="description" content="驾驶发射器回收探索球，穿越色素黑洞并点亮未知宇宙。">
+  <title>VOID / 黑洞勘探计划</title>
+  <link rel="stylesheet" href="css/black-hole-game.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <a class="brand" href="black-hole-game.html" aria-label="重新载入游戏">
+        <span class="brand-mark">VØID</span>
+        <span class="brand-sub">BLACK HOLE SURVEY</span>
+      </a>
+      <div class="status-pill"><span class="status-dot"></span> 探测链路稳定</div>
+      <button class="icon-button" id="soundButton" type="button" aria-label="切换音效" aria-pressed="true">◉</button>
+    </header>
+
+    <section class="mission-card" aria-labelledby="missionTitle">
+      <div class="mission-copy">
+        <p class="eyebrow">MISSION 07 · 非线性空间</p>
+        <h1 id="missionTitle">让未知，留下痕迹。</h1>
+        <p>移动发射台接住探索球。探索球会从固定的色素入口进入和返回，经过之处会逐格清除黑暗。</p>
+      </div>
+      <div class="legend" aria-label="游戏元素说明">
+        <span><i class="legend-a"></i><b>A</b> 发射器</span>
+        <span><i class="legend-b"></i><b>B</b> 探索球</span>
+        <span><i class="legend-c"></i><b>C</b> 色素入口</span>
+        <span><i class="legend-d"></i><b>D</b> 未知空间</span>
+      </div>
+    </section>
+
+    <section class="game-layout">
+      <div class="canvas-card">
+        <div class="hud" aria-live="polite">
+          <div><span>探索进度</span><strong id="progressValue">0.0%</strong></div>
+          <div><span>勘探得分</span><strong id="scoreValue">0000</strong></div>
+          <div><span>探测器完整度</span><strong id="livesValue" class="lives">● ● ●</strong></div>
+        </div>
+
+        <div class="canvas-wrap" id="canvasWrap">
+          <canvas id="gameCanvas" width="1100" height="720" aria-label="黑洞探索游戏画面"></canvas>
+          <div class="game-overlay" id="gameOverlay">
+            <span class="overlay-kicker">CALIBRATION COMPLETE</span>
+            <h2 id="overlayTitle">准备进入黑洞</h2>
+            <p id="overlayText">拖动或使用 ← → 移动发射器，按空格发射探索球。</p>
+            <button class="primary-button" id="startButton" type="button">开始勘探 <span>↗</span></button>
+          </div>
+          <div class="event-toast" id="eventToast" role="status"></div>
+        </div>
+
+        <div class="controls">
+          <div class="key-help"><kbd>←</kbd><kbd>→</kbd><span>移动发射器</span><kbd>SPACE</kbd><span>发射 / 继续</span></div>
+          <button class="pause-button" id="pauseButton" type="button"><span>Ⅱ</span> 暂停</button>
+        </div>
+      </div>
+
+      <aside class="side-panel">
+        <div class="phase-card">
+          <div class="phase-head"><span>当前阶段</span><b id="phaseIndex">01 / 03</b></div>
+          <h2 id="phaseTitle"><i></i> 捕获信号</h2>
+          <p id="phaseDescription">校准 A 发射器，让 B 探索球保持在你的回收范围内。</p>
+          <div class="phase-track"><span id="phaseTrack"></span></div>
+        </div>
+
+        <div class="brief-card">
+          <p class="eyebrow">FIELD NOTES</p>
+          <ol>
+            <li><b>进入</b><span>将 B 弹向边界上的 C 色素裂隙。</span></li>
+            <li><b>探索</b><span>B 经过的黑色像素会被清空为白色区域。</span></li>
+            <li><b>回收</b><span>B 必须再次穿过固定的 C，随后移动 A 接住它。</span></li>
+          </ol>
+        </div>
+
+        <div class="signal-card">
+          <span>入口坐标</span>
+          <strong id="coordinateValue">C-17 / 稳定</strong>
+          <div class="signal-bars"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </aside>
+    </section>
+
+    <footer><span>VOID RESEARCH UNIT © 2047</span><span>不要试图理解黑洞。只需照亮它。</span></footer>
+  </main>
+  <script src="js/black-hole-game.js"></script>
+</body>
+</html>

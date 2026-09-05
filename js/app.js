@@ -23,6 +23,10 @@ const Router = {
 
   async go(viewName) {
     if (!window.Auth?.currentUser()) return;
+    const previousView = this.views[this.currentView];
+    if (previousView?.destroy && viewName !== this.currentView) {
+      previousView.destroy();
+    }
     if (viewName === 'welcome' || viewName === 'library' || viewName.startsWith('learn/')) {
       document.getElementById('app').style.display = 'none';
       document.getElementById('auth-root').innerHTML = '';
@@ -83,6 +87,7 @@ window.Router = Router;
     vocabulary: window.Vocabulary,
     phrases: window.Phrases,
     article: window.Article,
+    restaurant: window.Restaurant,
     speaking: window.Speaking,
     settings: window.Settings,
     expert: window.Expert,
