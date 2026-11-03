@@ -106,6 +106,20 @@ const AIProvider = {
     return result;
   },
 
+  async analyzeN1Article(text, questions = []) {
+    const config = this.getConfig();
+    if (!config.apiKey) throw new Error(`${config.label} API key is not configured`);
+    const prompt = `Analyze this advanced Japanese reading passage. Return valid JSON only.
+Schema: {"title":"","summaryZh":"","paragraphs":[{"text":"","translationZh":"","keyPoints":"","sentences":[{"text":"","translationZh":"","grammar":[{"point":"","meaningZh":"","note":""}],"vocabulary":[{"word":"","reading":"","meaningZh":"","pos":"","example":""}],"mistakes":""}]}],"questions":[{"question":"","choices":[{"label":"1","text":""}],"answer":"","reasonZh":"","trap":""}],"overallNotes":""}
+title must be a concise natural Japanese title written only in Japanese. Preserve original Japanese exactly; split into clickable sentences; explain every sentence with Chinese translation, key grammar, vocabulary, common mistakes and examples. For every reading question, preserve the complete question and all numbered choices in choices, put only the correct choice label such as "2" in answer, and explain why it is correct and why the distractors are wrong. Do not omit content.
+PASSAGE:\n${text}\nQUESTIONS:\n${questions.join('\n')}`;
+    return this.generateJson(
+      'You are an expert Japanese reading teacher. Be precise and pedagogical. Return JSON only.',
+      prompt,
+      20000
+    );
+  },
+
   async generateJson(systemPrompt, prompt, maxOutputTokens = 2048) {
     const config = this.getConfig();
     if (!config.apiKey) throw new Error(`${config.label} API key is not configured`);
@@ -142,7 +156,7 @@ const AIProvider = {
   },
 
   parseJson(text) {
-    if (!text) throw new Error('AI returned an empty response');
+    if (!text) throw new Error('AI返回了空内容，请重新解析。');
     const cleaned = String(text)
       .replace(/^\uFEFF/, '')
       .replace(/```(?:json)?/gi, '')
@@ -151,16 +165,46 @@ const AIProvider = {
     const start = cleaned.indexOf('{');
     const end = cleaned.lastIndexOf('}');
     if (start < 0 || end < start) {
-      throw new Error('AI response was incomplete. Please generate again.');
+      throw new Error('AI输出未完成，可能达到了长度上限。请缩短文章或分批解析。');
     }
-    const json = cleaned
-      .slice(start, end + 1)
-      .replace(/,\s*([}\]])/g, '$1');
-    try {
-      return JSON.parse(json);
-    } catch {
-      throw new Error('AI returned malformed JSON. Please generate again.');
+    const rawJson = cleaned.slice(start, end + 1);
+    const candidates = [
+      rawJson,
+      rawJson.replace(/,\s*([}\]])/g, '$1'),
+      this.escapeJsonStringControls(rawJson).replace(/,\s*([}\]])/g, '$1')
+    ];
+    for (const candidate of [...new Set(candidates)]) {
+      try { return JSON.parse(candidate); } catch {}
     }
+    throw new Error('AI返回的JSON格式异常。原文和OCR草稿仍已保留，请重新解析。');
+  },
+
+  escapeJsonStringControls(value) {
+    let output = '';
+    let inString = false;
+    let escaped = false;
+    for (const character of String(value)) {
+      if (escaped) {
+        output += character;
+        escaped = false;
+        continue;
+      }
+      if (character === '\\' && inString) {
+        output += character;
+        escaped = true;
+        continue;
+      }
+      if (character === '"') {
+        inString = !inString;
+        output += character;
+        continue;
+      }
+      if (inString && character === '\n') output += '\\n';
+      else if (inString && character === '\r') output += '\\r';
+      else if (inString && character === '\t') output += '\\t';
+      else output += character;
+    }
+    return output;
   }
 };
 

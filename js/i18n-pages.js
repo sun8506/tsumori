@@ -39,6 +39,7 @@
     ['page.vocabulary','单词本','Vocabulary','単語帳','단어장','Từ vựng','စကားလုံးစာအုပ်'],
     ['page.phrases','短句本','Phrase Book','フレーズ帳','문장 모음','Cụm từ','ဝါကျတိုစာအုပ်'],
     ['page.reading','分级阅读','Reading','レベル別読解','수준별 읽기','Đọc theo cấp độ','အဆင့်လိုက်ဖတ်ရှုခြင်း'],
+    ['page.readingWorkbench','读解','Reading','読解','읽기','Đọc hiểu','ဖတ်ရှုခြင်း'],
     ['page.expert','日语理解助手','Japanese Learning Assistant','日本語学習アシスタント','일본어 학습 도우미','Trợ lý học tiếng Nhật','ဂျပန်စာလေ့လာရေးအကူ'],
     ['page.speaking','口语练习','Speaking Practice','スピーキング練習','말하기 연습','Luyện nói','စကားပြောလေ့ကျင့်ခန်း'],
     ['words.subtitle','收藏单词，并通过间隔重复进行复习。','Collect words and review them with spaced repetition.','単語を集め、間隔反復で復習します。','단어를 모아 간격 반복으로 복습하세요.','Lưu từ và ôn tập theo phương pháp lặp lại ngắt quãng.','စကားလုံးများကို စုဆောင်းပြီး အချိန်ခြားပြန်လေ့လာပါ။'],

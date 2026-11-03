@@ -8,7 +8,10 @@ ENV NODE_ENV=production \
 
 WORKDIR /app
 
-COPY package.json server.js server-db.js index.html ./
+COPY package.json package-lock.json ./
+RUN npm ci --omit=dev --omit=optional
+
+COPY server.js server-db.js index.html ./
 COPY css ./css
 COPY js ./js
 

@@ -91,6 +91,8 @@ window.Router = Router;
     speaking: window.Speaking,
     settings: window.Settings,
     expert: window.Expert,
+    reading: window.N1Reader,
+    'n1-reader': window.N1Reader,
   };
   for (const [name, view] of Object.entries(viewMap)) {
     if (view) Router.register(name, view);

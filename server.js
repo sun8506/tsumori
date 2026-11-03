@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const ServerDatabase = require('./server-db');
+const { createWorker, PSM } = require('tesseract.js');
 
 const root = __dirname;
 const host = process.env.HOST || '0.0.0.0';
@@ -9,15 +10,29 @@ const port = Number(process.env.PORT || 5173);
 const isProduction = process.env.NODE_ENV === 'production';
 const trustProxy = process.env.TRUST_PROXY === 'true';
 const database = new ServerDatabase(root);
-const CLOUD_KEYS = new Set(['vocabulary', 'phrases', 'articles', 'expert_queries', 'learning_records']);
+const CLOUD_KEYS = new Set(['vocabulary', 'phrases', 'articles', 'n1_readings', 'expert_queries', 'learning_records']);
 const authAttempts = new Map();
 const AUTH_WINDOW_MS = 15 * 60 * 1000;
 const AUTH_MAX_ATTEMPTS = Math.max(10, Number(process.env.AUTH_RATE_LIMIT_MAX || 60));
+let serverOcrWorkerPromise = null;
+let serverOcrQueue = Promise.resolve();
+const vendorAssets = new Map([
+  ['/vendor/tesseract/tesseract.min.js', 'node_modules/tesseract.js/dist/tesseract.min.js'],
+  ['/vendor/tesseract/worker.min.js', 'node_modules/tesseract.js/dist/worker.min.js'],
+  ['/vendor/tesseract-core/tesseract-core.wasm.js', 'node_modules/tesseract.js-core/tesseract-core.wasm.js'],
+  ['/vendor/tesseract-core/tesseract-core-simd.wasm.js', 'node_modules/tesseract.js-core/tesseract-core-simd.wasm.js'],
+  ['/vendor/tesseract-core/tesseract-core-lstm.wasm.js', 'node_modules/tesseract.js-core/tesseract-core-lstm.wasm.js'],
+  ['/vendor/tesseract-core/tesseract-core-simd-lstm.wasm.js', 'node_modules/tesseract.js-core/tesseract-core-simd-lstm.wasm.js'],
+  ['/vendor/tessdata/jpn.traineddata.gz', 'node_modules/@tesseract.js-data/jpn/4.0.0_best_int/jpn.traineddata.gz'],
+  ['/vendor/pdf/pdf.min.mjs', 'node_modules/pdfjs-dist/build/pdf.min.mjs'],
+  ['/vendor/pdf/pdf.worker.min.mjs', 'node_modules/pdfjs-dist/build/pdf.worker.min.mjs']
+]);
 
 const mimeTypes = {
   '.html': 'text/html; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
   '.js': 'application/javascript; charset=utf-8',
+  '.mjs': 'application/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
@@ -92,7 +107,8 @@ function applySecurityHeaders(res) {
     "frame-ancestors 'none'",
     "img-src 'self' data:",
     "object-src 'none'",
-    "script-src 'self'",
+    "script-src 'self' 'wasm-unsafe-eval'",
+    "worker-src 'self' blob:",
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com"
   ].join('; '));
   res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
@@ -119,13 +135,13 @@ function safeDecode(value) {
   }
 }
 
-function readJson(req) {
+function readJson(req, maxBytes = 5 * 1024 * 1024) {
   return new Promise((resolve, reject) => {
     const chunks = [];
     let size = 0;
     req.on('data', chunk => {
       size += chunk.length;
-      if (size > 5 * 1024 * 1024) {
+      if (size > maxBytes) {
         reject(new Error('Request body is too large'));
         req.destroy();
         return;
@@ -141,6 +157,41 @@ function readJson(req) {
     });
     req.on('error', reject);
   });
+}
+
+async function getServerOcrWorker() {
+  if (!serverOcrWorkerPromise) {
+    serverOcrWorkerPromise = createWorker('jpn', 1, {
+      langPath: path.join(root, 'node_modules/@tesseract.js-data/jpn/4.0.0_best_int'),
+      cacheMethod: 'none',
+      logger: message => {
+        if (message.status) console.log(`[OCR] ${message.status} ${Math.round((message.progress || 0) * 100)}%`);
+      }
+    }).then(async worker => {
+      await worker.setParameters({
+        tessedit_pageseg_mode: PSM.AUTO,
+        preserve_interword_spaces: '1'
+      });
+      return worker;
+    }).catch(error => {
+      serverOcrWorkerPromise = null;
+      throw error;
+    });
+  }
+  return serverOcrWorkerPromise;
+}
+
+function recognizeJapaneseImage(buffer) {
+  const job = serverOcrQueue.then(async () => {
+    const worker = await getServerOcrWorker();
+    const result = await worker.recognize(buffer);
+    return {
+      text: String(result?.data?.text || '').trim(),
+      confidence: Number(result?.data?.confidence || 0)
+    };
+  });
+  serverOcrQueue = job.catch(() => {});
+  return job;
 }
 
 async function readUpstream(response, providerName) {
@@ -165,7 +216,9 @@ async function readUpstream(response, providerName) {
 
 async function requestAI({ provider, apiKey, model, prompt, systemPrompt, maxOutputTokens = 2048 }) {
   if (!apiKey || !model || !prompt) throw new Error('Incomplete AI request configuration');
-  const outputLimit = Math.min(Math.max(Number(maxOutputTokens) || 2048, 512), 8192);
+  const requestedOutput = Math.max(Number(maxOutputTokens) || 2048, 512);
+  const providerOutputLimits = { gemini: 32768, openai: 32768, deepseek: 8192 };
+  const outputLimit = Math.min(requestedOutput, providerOutputLimits[provider] || 8192);
 
   if (provider === 'gemini') {
     const response = await fetch(
@@ -177,7 +230,7 @@ async function requestAI({ provider, apiKey, model, prompt, systemPrompt, maxOut
           systemInstruction: { parts: [{ text: systemPrompt }] },
           contents: [{ role: 'user', parts: [{ text: prompt }] }],
           generationConfig: {
-            temperature: 0.4,
+            temperature: 0.2,
             maxOutputTokens: outputLimit,
             responseMimeType: 'application/json'
           }
@@ -185,7 +238,15 @@ async function requestAI({ provider, apiKey, model, prompt, systemPrompt, maxOut
       }
     );
     const data = await readUpstream(response, 'Gemini');
-    return data?.candidates?.[0]?.content?.parts?.map(part => part.text || '').join('') || '';
+    const candidate = data?.candidates?.[0];
+    const finishReason = candidate?.finishReason || '';
+    if (finishReason === 'MAX_TOKENS') {
+      throw new Error(`Gemini output reached the ${outputLimit}-token limit before the JSON was complete. Shorten the article or split the analysis into smaller sections.`);
+    }
+    if (finishReason && finishReason !== 'STOP') {
+      throw new Error(`Gemini stopped before completing the response (${finishReason}). Please retry or check the article content.`);
+    }
+    return candidate?.content?.parts?.map(part => part.text || '').join('') || '';
   }
 
   if (provider === 'openai') {
@@ -400,6 +461,28 @@ const server = http.createServer(async (req, res) => {
       });
     }
 
+    if (vendorAssets.has(pathname)) {
+      if (!['GET', 'HEAD'].includes(req.method)) return sendJson(res, 405, { error: 'METHOD_NOT_ALLOWED' });
+      const filePath = path.resolve(root, vendorAssets.get(pathname));
+      try {
+        if (req.method === 'HEAD') {
+          const stat = await fs.promises.stat(filePath);
+          const extension = path.extname(filePath).toLowerCase();
+          res.writeHead(200, {
+            'Content-Type': mimeTypes[extension] || 'application/octet-stream',
+            'Content-Length': stat.size,
+            'Cache-Control': 'public, max-age=31536000, immutable'
+          });
+          return res.end();
+        }
+        const data = await fs.promises.readFile(filePath);
+        const extension = path.extname(filePath).toLowerCase();
+        return send(res, 200, data, mimeTypes[extension] || 'application/octet-stream', 'public, max-age=31536000, immutable');
+      } catch {
+        return sendJson(res, 503, { error: 'OCR_ASSET_NOT_INSTALLED' });
+      }
+    }
+
     if (pathname === '/api/auth/register') {
       if (req.method !== 'POST') return sendJson(res, 405, { error: 'METHOD_NOT_ALLOWED' });
       const attempt = allowAuthAttempt(req);
@@ -522,6 +605,23 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
+    if (pathname === '/api/ocr') {
+      if (req.method !== 'POST') return sendJson(res, 405, { error: 'METHOD_NOT_ALLOWED' });
+      if (!authenticatedUser(req)) return sendJson(res, 401, { error: 'UNAUTHORIZED' });
+      try {
+        const body = await readJson(req, 12 * 1024 * 1024);
+        const match = String(body.image || '').match(/^data:image\/(?:png|jpeg|jpg|webp);base64,([A-Za-z0-9+/=]+)$/);
+        if (!match) return sendJson(res, 400, { error: 'INVALID_OCR_IMAGE' });
+        const image = Buffer.from(match[1], 'base64');
+        if (!image.length || image.length > 8 * 1024 * 1024) return sendJson(res, 413, { error: 'OCR_IMAGE_TOO_LARGE' });
+        const result = await recognizeJapaneseImage(image);
+        return sendJson(res, 200, result);
+      } catch (error) {
+        console.error('[OCR] recognition failed:', error.message);
+        return sendJson(res, 502, { error: error.message || 'OCR_FAILED' });
+      }
+    }
+
     if (pathname === '/api/news') {
       if (req.method !== 'GET') {
         send(res, 405, JSON.stringify({ error: 'Method not allowed' }), 'application/json; charset=utf-8');
@@ -587,6 +687,9 @@ server.listen(port, host, () => {
 
 function shutdown(signal) {
   console.log(`${signal} received, shutting down`);
+  if (serverOcrWorkerPromise) {
+    serverOcrWorkerPromise.then(worker => worker.terminate()).catch(() => {});
+  }
   server.close(error => {
     if (error) {
       console.error(error);

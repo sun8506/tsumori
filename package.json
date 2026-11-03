@@ -9,6 +9,12 @@
   "scripts": {
     "start": "node server.js",
     "check": "node scripts/check-syntax.js",
+    "test:ocr": "node scripts/test-ocr-init.js",
     "test": "node scripts/check-syntax.js && node scripts/test-i18n.js && node scripts/test-analytics.js && node scripts/test-public-content.js && node scripts/test-storage.js && node scripts/test-core.js"
+  },
+  "dependencies": {
+    "@tesseract.js-data/jpn": "1.0.0",
+    "pdfjs-dist": "4.8.69",
+    "tesseract.js": "5.1.1"
   }
 }
