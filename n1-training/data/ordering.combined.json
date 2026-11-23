@@ -1,0 +1,1868 @@
+{
+  "dataset": "2018-07-文法 + 2017-12-文法 + 2017-07-文法 + 2016-12-文法 + 2016-07-文法 / 並べ替え",
+  "generatedAt": "2026-11-15T01:05:09.109Z",
+  "status": "verified",
+  "sourceDatasets": [
+    "data/grammar-2018-07.json",
+    "data/grammar-2017-12.json",
+    "data/grammar-2017-07.json",
+    "data/grammar-2016-12.json",
+    "data/grammar-2016-07.json",
+    "data/ordering-2018-07.star-audit.json",
+    "data/ordering-2017-12.star-audit.json",
+    "data/ordering-2017-07.star-audit.json",
+    "data/ordering-2016-12.star-audit.json",
+    "data/ordering-2016-07.star-audit.json"
+  ],
+  "questions": [
+    {
+      "id": "2018-07-36",
+      "year": 2018,
+      "month": 7,
+      "number": 36,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "妹は、来月初に＿＿　＿＿　＿＿　＿＿そうだ。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "買えずにいた",
+        "ソファを買うことにした",
+        "引っ越しするのを機に",
+        "今まで欲しいと思いつつ"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "① 位于第三格（★）；与前项组成「欲しいと思いつつ買えずにいた」，表示一直想要却没能买。",
+        "② 位于第四格，后接「そうだ」，组成「ソファを買うことにしたそうだ」。",
+        "③ 位于第一格，组成「来月初に引っ越しするのを機に」。",
+        "④ 位于第二格，后接「買えずにいた」，由「つつ」构成逆接。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_PER_OPTION_ANALYSIS"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source gives only the complete order 3-4-1-2; these concise notes identify each fragment's unambiguous role."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "starPosition": 2,
+      "starAnswer": 0,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2018-07-37",
+      "year": 2018,
+      "month": 7,
+      "number": 37,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "私の故郷は、自然に囲まれたのどかな所＿＿　＿＿　＿＿　＿＿周りに田んぼしかない、ただの田舎町だ。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "と言えば",
+        "要するに",
+        "聞こえはいいが",
+        "である"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "① 位于第二格，与前项组成「であると言えば」。",
+        "② 位于第四格，以「要するに」概括后文‘只是乡下小镇’的实情。",
+        "③ 位于第三格；「聞こえはいいが」先认可表面说法，再转入相反的实际情况。",
+        "④ 位于第一格，组成名词谓语「のどかな所である」。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_PER_OPTION_ANALYSIS"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source gives only the complete order 4-1-3-2; these concise notes identify each fragment's unambiguous role."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "starPosition": 2,
+      "starAnswer": 2,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2018-07-38",
+      "year": 2018,
+      "month": 7,
+      "number": 38,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "入社2年目でプロジェクトのリーダーに指名されたときは＿＿　＿＿　＿＿　＿＿先輩方の厳しくも温かいサポートのおかげで、無事に務めることができました。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "こんな大役が",
+        "新人に務まるのかと",
+        "不安でいっぱいでしたが",
+        "私ごとき"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "① 位于第一格，以「こんな大役が」提出‘如此重任’这一主语。",
+        "② 位于第三格（★），接在「私ごとき新人に」后，组成「務まるのかと」。",
+        "③ 位于第四格；「不安でいっぱいでしたが」与后文获得前辈支持形成转折。",
+        "④ 位于第二格，组成「こんな大役が私ごとき新人に」。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_PER_OPTION_ANALYSIS"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source gives only the complete order 1-4-2-3; these concise notes identify each fragment's unambiguous role."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "starPosition": 2,
+      "starAnswer": 1,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2018-07-39",
+      "year": 2018,
+      "month": 7,
+      "number": 39,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "都市開発事業を、地域住民の同意を得る＿＿　＿＿　＿＿　＿＿、北市の住民が市長を訴えた。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "なしに",
+        "こと",
+        "として",
+        "進めた"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "① 位于第二格，与前项组成「ことなしに」，表示没有取得同意就做后项。",
+        "② 位于第一格，把「地域住民の同意を得る」名词化。",
+        "③ 位于第四格，组成「進めたとして」，表示居民起诉市长所依据的事由。",
+        "④ 位于第三格，组成「ことなしに進めた」。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_PER_OPTION_ANALYSIS"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source gives only the complete order 2-1-4-3; these concise notes identify each fragment's unambiguous role."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "starPosition": 2,
+      "starAnswer": 3,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2018-07-40",
+      "year": 2018,
+      "month": 7,
+      "number": 40,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "政府が発表した数字によると、昨年4月1日＿＿　＿＿　＿＿　＿＿昨年と比べて15万人少なく、過去最低となった。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "は",
+        "現在",
+        "における",
+        "15歳未満の人口"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "① 位于第四格，以「は」提示主题「15歳未満の人口」。",
+        "② 位于第一格，与日期组成「昨年4月1日現在」。",
+        "③ 位于第二格，组成「現在における」，修饰后面的「人口」。",
+        "④ 位于第三格，组成「現在における15歳未満の人口」。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_PER_OPTION_ANALYSIS"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source gives only the complete order 2-3-4-1; these concise notes identify each fragment's unambiguous role."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "starPosition": 1,
+      "starAnswer": 2,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 1,
+        "intendedStarPosition": 1,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2017-12-36",
+      "year": 2017,
+      "month": 12,
+      "number": 36,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "「乗りかかった船」ということわざは、乗った船が岸を離れれば途中で降りることができない＿＿　＿＿　＿＿　＿＿ことのたとえである。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "物事を始めてしまった",
+        "ことから",
+        "途中でやめるわけにはいかない",
+        "以上"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 4
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "① 位于第二格（★），与后面的「以上」组成「物事を始めてしまった以上」，表示既然已经开始了。",
+        "② 位于第一格；「ことから」承接船离岸后不能中途下船这一事实，表示由此引出后面的比喻义。",
+        "③ 位于第四格，作为「以上」之后的结论，组成「途中でやめるわけにはいかない」。",
+        "④ 位于第三格，接在过去式「始めてしまった」后，表示既然已经如此。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 4
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 4
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_PER_OPTION_ANALYSIS"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source gives only the complete order 2-1-4-3; these concise notes identify each fragment's unambiguous role."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "starPosition": 1,
+      "starAnswer": 0,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 1,
+        "intendedStarPosition": 1,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2017-12-37",
+      "year": 2017,
+      "month": 12,
+      "number": 37,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "年をとって人生を振り返った時に＿＿　＿＿　＿＿　＿＿したくない。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "生き方は",
+        "あの時ああしていたら",
+        "後悔するような",
+        "もっと素晴らしい人生を送れていたはずと"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 4
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "① 位于第四格；「後悔するような」修饰「生き方」，并与句末「したくない」连接。",
+        "② 位于第一格，以「～たら」提出日后回顾时可能产生的假设。",
+        "③ 位于第三格；「後悔するような」修饰后面的名词「生き方」。",
+        "④ 位于第二格（★），以「と」标记「後悔する」的具体内容。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 4
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 4
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_PER_OPTION_ANALYSIS"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source gives only the complete order 2-4-3-1; these concise notes identify each fragment's unambiguous role."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "starPosition": 1,
+      "starAnswer": 3,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 1,
+        "intendedStarPosition": 1,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2017-12-38",
+      "year": 2017,
+      "month": 12,
+      "number": 38,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "NPO法人「音楽の夢」では、音楽を通じたさまざまな教育プロジェクトを展開していくことに＿＿　＿＿　＿＿　＿＿活動をしています。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "目的に",
+        "豊かな社会の実現に寄与する",
+        "ことを",
+        "よって"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "① 位于第四格，和前面的「ことを」组成「ことを目的に」，表示活动目的。",
+        "② 位于第二格，接在「ことによって」后，说明开展项目所带来的贡献。",
+        "③ 位于第三格（★），把「豊かな社会の実現に寄与する」名词化，并与「目的に」连接。",
+        "④ 位于第一格，与题干末尾的「に」组成「ことによって」，表示手段。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 4
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_PER_OPTION_ANALYSIS"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source gives only the complete order 4-2-3-1; these concise notes identify each fragment's unambiguous role."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "starPosition": 2,
+      "starAnswer": 2,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2017-12-39",
+      "year": 2017,
+      "month": 12,
+      "number": 39,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "今は、一学年5クラスもある北森川（きたもりかわ）小学校だが、＿＿　＿＿　＿＿　＿＿危機感があった。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "存続は難しい",
+        "のでは",
+        "という",
+        "かつては少子化で"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "① 位于第二格，作为少子化造成的结果，组成「存続は難しい」。",
+        "② 位于第三格（★），这里是「のではないか」的省略形式，表达对学校难以存续的担忧。",
+        "③ 位于第四格，以「という」把前面的内容连体修饰为「危機感」。",
+        "④ 位于第一格，以「かつては少子化で」交代过去产生危机感的原因。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 4
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_PER_OPTION_ANALYSIS"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source gives only the complete order 4-1-2-3; these concise notes identify each fragment's unambiguous role."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "starPosition": 2,
+      "starAnswer": 1,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2017-12-40",
+      "year": 2017,
+      "month": 12,
+      "number": 40,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "県立高校の校長が、同校に在学する知人の娘の成績証明書を偽造したことが明らかになり、教育関係者からは＿＿　＿＿　＿＿　＿＿と怒りの声が上がった。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "教育現場の長",
+        "行為",
+        "あるまじき",
+        "として"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "① 位于第一格，以「教育現場の長」提出校长的身份。",
+        "② 位于第四格（★），受「あるまじき」修饰，组成「あるまじき行為」。",
+        "③ 位于第三格；「あるまじき」表示不应有的，修饰后面的「行為」。",
+        "④ 位于第二格，与前项组成「教育現場の長として」，表示作为教育一线的负责人。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 4
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "EXPLANATION_SPANS_PAGES_4_5",
+          "SOURCE_NO_PER_OPTION_ANALYSIS"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source gives only the complete order 1-4-3-2; these concise notes identify each fragment's unambiguous role."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "starPosition": 3,
+      "starAnswer": 1,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 3,
+        "intendedStarPosition": 3,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2017-07-36",
+      "year": 2017,
+      "month": 7,
+      "number": 36,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "みなみ水族館はふだんから来館者が多いが、先日ペンギンの赤ちゃんが生まれた＿＿　＿＿　＿＿　＿＿いつも以上ににぎわっている。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "多くの人で",
+        "こともあって",
+        "という",
+        "赤ちゃんを一目見よう"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 4
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "「多くの人で」不能放在其他三项前面，应放在最后。",
+        "题干「赤ちゃんが生まれた」后可以接「こともあって」。",
+        "「という」连接「赤ちゃんを一目見よう」和「多くの人で」；原文给出的正确排序为2－4－3－1。",
+        "「赤ちゃんを一目見よう」与「多くの人で」之间需要「という」连接。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 4
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 4
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "starPosition": 2,
+      "starAnswer": 2,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2017-07-37",
+      "year": 2017,
+      "month": 7,
+      "number": 37,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "新社長は労働条件に問題はないと考えているようだが、実態をわかっていない。労働条件＿＿　＿＿　＿＿　＿＿が業績向上だ。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "の",
+        "なくして",
+        "何",
+        "改善"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 4
+      },
+      "flags": [
+        "QUESTION_CONTINUES_ON_PAGE_5"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "「改善」需要用「の」与其他名词相连，所以选项1要放在选项4前。",
+        "名词＋「なくして」表示“如果没有”，是假设的表达方式。",
+        "「何」位于最后一格，后接「が業績向上だ」，构成反问「何が業績向上だ」。",
+        "「の」用于把「改善」与其他名词相连。原文给出的正确排序为1－4－2－3。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 4
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 4
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "QUESTION_CONTINUES_ON_PAGE_5",
+          "EXPLANATION_SPANS_PAGES_4_5",
+          "MISSING_SOURCE_OPTION_ANALYSIS_3"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source gives the complete order 1-4-2-3 but omits a separate note for 「何」; its role in the completed sentence is unambiguous."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "starPosition": 2,
+      "starAnswer": 1,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2017-07-38",
+      "year": 2017,
+      "month": 7,
+      "number": 38,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "現代の映画音楽界で、作品の世界観に合わせて＿＿　＿＿　＿＿　＿＿だろう。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "彼女以上に優れている",
+        "才能にかけては",
+        "作曲家はまずいない",
+        "音楽を作る"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "「彼女以上に優れている」修饰「作曲家」，与后面的「作曲家はまずいない」构成比较，意为几乎没有比她更优秀的作曲家。",
+        "「にかけて」表示“关于、在……上、论……”；「才能」前需要具体表示某种才能的体言。",
+        "与「まず」构成「まず～いない」；句意为几乎没有比她更优秀的作曲家。",
+        "「音楽を作る」应放在「才能」前，具体说明是哪种才能。原文给出的正确排序为4－2－1－3。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "reviewNotes": [
+          "The pending analysis for option 1 discusses 「まず～いない」, which belongs to option 3; the source's completed order and translation establish option 1's comparative role."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "starPosition": 2,
+      "starAnswer": 0,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2017-07-39",
+      "year": 2017,
+      "month": 7,
+      "number": 39,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "ゼミの教え子たちが新しい技術を使ったソーラーカーの開発に成功した。実用化が近いとされている＿＿　＿＿　＿＿　＿＿効率よく走れるものができたと思う。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "それなりに",
+        "ものには",
+        "A社が開発した",
+        "遠く及ばないにしろ"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "「それなり」表示相应的、有一定的……。",
+        "选项2要放在选项4前，构成「ものには遠く及ばないにしろ」。",
+        "「実用化が近いとされている」和「A社が開発した」都修饰「もの」，所以选项3要放在选项2前。",
+        "「及ばない」表示比不上、不如；「にしろ」等于「にせよ」，表示即使。原文给出的正确排序为3－2－4－1。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "starPosition": 2,
+      "starAnswer": 3,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2017-07-40",
+      "year": 2017,
+      "month": 7,
+      "number": 40,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "これまでにないウェディングドレスを作ろうと思い、デザイン画を描いては＿＿　＿＿　＿＿　＿＿、やっと納得のいくものができた。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "を",
+        "数十回",
+        "直す",
+        "繰り返すこと"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "助词「を」连接「描いては直す」与后面的「繰り返す」。",
+        "「数十回」修饰「繰り返す」，表示反复次数，应放在句尾。",
+        "「动词＋ては动词」表示反复进行某动作，所以先接「直す」。",
+        "「繰り返す」是动词，前面需要宾语；「描いては直す」应放在其前，并用「を」连接。原文给出的正确排序为3－1－4－2。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "MISSING_SOURCE_OPTION_ANALYSIS_2"
+        ],
+        "reviewNotes": [
+          "The explanation PDF explicitly places 「数十回」 last as an inverted quantity expression, but the pending extraction left this option analysis empty."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "starPosition": 2,
+      "starAnswer": 3,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2016-12-36",
+      "year": 2016,
+      "month": 12,
+      "number": 36,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "「アセビ」という、白い花を咲かせる樹木を漢字で「馬酔木」と書くのは、アセビには＿＿　＿＿　＿＿　＿＿そうです。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "由来する",
+        "有毒成分があり",
+        "状態になることに",
+        "馬が食べると酔ったような"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 4
+      },
+      "flags": [
+        "QUESTION_CONTINUES_ON_PAGE_5"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "解析 PDF 未按选项编号分别说明；指出第一空前面的「アセビには」容易联想到存在句「～に～がある」，最后的「そうです」前需接简体形式，并给出正确顺序2-4-3-1。",
+        "解析 PDF 未按选项编号分别说明；指出第一空前面的「アセビには」容易联想到存在句「～に～がある」，最后的「そうです」前需接简体形式，并给出正确顺序2-4-3-1。",
+        "解析 PDF 未按选项编号分别说明；指出选项4最后是「ような」，后接名词，所以选项3应接在选项4后，并给出正确顺序2-4-3-1。",
+        "解析 PDF 未按选项编号分别说明；指出选项4最后是「ような」，后接名词，所以选项3应接在选项4后，并给出正确顺序2-4-3-1。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 4
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 4
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "QUESTION_CONTINUES_ON_PAGE_5",
+          "SOURCE_NO_NUMBERED_PER_OPTION_ANALYSIS"
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "starPosition": 0,
+      "starAnswer": 1,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 1,
+        "intendedStarPosition": 0,
+        "sourceStarConflict": true,
+        "auditStatus": "manual_check"
+      }
+    },
+    {
+      "id": "2016-12-37",
+      "year": 2016,
+      "month": 12,
+      "number": 37,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "家族の時間を大切にする夫は、つい＿＿　＿＿　＿＿　＿＿ありがたい存在です。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "本当に大切なものは何なのか",
+        "私に",
+        "仕事に夢中になりすぎる",
+        "気づかせてくれる"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "解析 PDF 未按选项编号分别说明；指出「気づかせてくれる」是动词使役态，意为使人发觉，其作用对象后用助词「に」，并给出正确顺序3-2-1-4。",
+        "解析 PDF 未按选项编号分别说明；指出选项2应排在选项4前面，且因选项4以动词原形出现，其后应接名词，并给出正确顺序3-2-1-4。",
+        "解析 PDF 未按选项编号分别说明；指出选项2的后面是动词原形，后面也应接名词，并给出正确顺序3-2-1-4。",
+        "解析 PDF 未按选项编号分别说明；指出选项4应放在最后一横线上，并给出正确顺序3-2-1-4。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_NUMBERED_PER_OPTION_ANALYSIS"
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "starPosition": 2,
+      "starAnswer": 0,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 1,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": true,
+        "auditStatus": "manual_check"
+      }
+    },
+    {
+      "id": "2016-12-38",
+      "year": 2016,
+      "month": 12,
+      "number": 38,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "Z県知事の林和夫氏は、週刊誌で、脱税を行った＿＿　＿＿　＿＿　＿＿異なり、名誉を傷つけられたとして、発行元のX社を相手取り訴訟を起こした。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "事実とは全く",
+        "疑いがあるなどと",
+        "報じられた",
+        "ことに対し"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "解析 PDF 未按选项编号分别说明；指出「全く」可以与「異なり」搭配，构成「全く異なり」，并给出正确顺序3-2-4-1。",
+        "解析 PDF 未按选项编号分别说明；指出选项3「報じられた」后接选项2，以「と」表示报道的内容，并给出正确顺序3-2-4-1。",
+        "解析 PDF 未按选项编号分别说明；指出「報じられた」后一般接助词「と」表示内容，因此选项2应接在选项3后，并给出正确顺序3-2-4-1。",
+        "解析 PDF 未按选项编号分别说明；指出选项4接在动词后，把前面的内容名词化，并给出正确顺序3-2-4-1。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_NUMBERED_PER_OPTION_ANALYSIS"
+        ],
+        "reviewNotes": [
+          "The pending analyses repeatedly recorded the sequence as 3-4-1-2; the explanation PDF gives 3-2-4-1."
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "starPosition": 2,
+      "starAnswer": 3,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 1,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": true,
+        "auditStatus": "manual_check"
+      }
+    },
+    {
+      "id": "2016-12-39",
+      "year": 2016,
+      "month": 12,
+      "number": 39,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "Q鉄道が10年ぶりに運賃値上げに踏み切った。安全対策や原油の高騰で支出が増え、経営努力だけでは対応しきれないと判断＿＿　＿＿　＿＿　＿＿。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "という",
+        "の",
+        "ことだ",
+        "して"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "解析 PDF 未按选项编号分别说明；指出选项1「という」一般表示“听说”，通常放在句末，且选项1前通常接简体形，并给出正确顺序4-2-3-1。",
+        "解析 PDF 未按选项编号分别说明；指出选项2应接在「て」形后面，并给出正确顺序4-2-3-1。",
+        "解析 PDF 未按选项编号分别说明；指出选项3「ことだ」必须接在选项1前面，并给出正确顺序4-2-3-1。",
+        "解析 PDF 未按选项编号分别说明；指出「判断」前的助词「と」可以确定此处的「判断」是作动词使用，因此选项4的「して」要接在「判断」后，并给出正确顺序4-2-3-1。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_NUMBERED_PER_OPTION_ANALYSIS"
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "starPosition": 2,
+      "starAnswer": 2,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 1,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": true,
+        "auditStatus": "manual_check"
+      }
+    },
+    {
+      "id": "2016-12-40",
+      "year": 2016,
+      "month": 12,
+      "number": 40,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "世の中にはさまざまな資格があふれているが、資格を取った＿＿　＿＿　＿＿　＿＿世間は甘くないらしい。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "だけ",
+        "ほど",
+        "で",
+        "希望の職につける"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "解析 PDF 未按选项编号分别说明；指出选项1「だけ」和选项3「で」通常搭配，表示仅靠……，并给出正确顺序1-3-4-2。",
+        "解析 PDF 未按选项编号分别说明；指出选项2「ほど」表示程度，接在简体形后，并给出正确顺序1-3-4-2。",
+        "解析 PDF 未按选项编号分别说明；指出选项1「だけ」和选项3「で」通常搭配，表示仅靠……，并给出正确顺序1-3-4-2。",
+        "解析 PDF 未按选项编号分别说明；根据句意，解析将选项4接在选项1、3后，并给出正确顺序1-3-4-2。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_NO_NUMBERED_PER_OPTION_ANALYSIS"
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "starPosition": 3,
+      "starAnswer": 1,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 1,
+        "intendedStarPosition": 3,
+        "sourceStarConflict": true,
+        "auditStatus": "manual_check"
+      }
+    },
+    {
+      "id": "2016-07-36",
+      "year": 2016,
+      "month": 7,
+      "number": 36,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "町の夏祭りに行くときはいつも一人だ。一人で＿＿　＿＿　＿＿　＿＿約束して一緒に行く必要もないからだ。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "誰かと",
+        "誰かしら",
+        "行っても",
+        "友達に会うので"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 4
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "",
+        "译文：我总是一个人去城市里的夏日活动。因为即便是一个人去，也是会和某个朋友见面，所以不需要约谁一起去。要点：「誰かしら」相当于「誰か」，意思是某一个人。正确排序：3241。",
+        "",
+        ""
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 4
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "MISSING_SOURCE_OPTION_ANALYSIS_1",
+          "MISSING_SOURCE_OPTION_ANALYSIS_3",
+          "MISSING_SOURCE_OPTION_ANALYSIS_4"
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "starPosition": 1,
+      "starAnswer": 1,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 1,
+        "intendedStarPosition": 1,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2016-07-37",
+      "year": 2016,
+      "month": 7,
+      "number": 37,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "先月初めて出版した自分の小説の売れ行きが気になっているが、友人の前では、そんなこと＿＿　＿＿　＿＿　＿＿言ってしまう。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "とか",
+        "どうだって",
+        "かまわない",
+        "本心とは違うことを"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 4
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "",
+        "",
+        "译文：虽然我很在意上个月出版的自己小说的销售情况，但在朋友面前，我却会说出“那种事情，管它怎么样呢”这种完全违心的话。要点：「どうだってかまわない」意为“不管怎么样，都没关系”。正确排序：2314。",
+        ""
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 4
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "MISSING_SOURCE_OPTION_ANALYSIS_1",
+          "MISSING_SOURCE_OPTION_ANALYSIS_2",
+          "MISSING_SOURCE_OPTION_ANALYSIS_4"
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "starPosition": 1,
+      "starAnswer": 2,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 1,
+        "intendedStarPosition": 1,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2016-07-38",
+      "year": 2016,
+      "month": 7,
+      "number": 38,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "授業のレポートなどでインターネット上のデータを使用するときは、情報が正しい＿＿　＿＿　＿＿　＿＿も重要である。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "か否か",
+        "確認すること",
+        "いつのデータかを",
+        "だけでなく"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 4
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "",
+        "",
+        "译文：在写上课报告等场合使用网络上的数据时，不仅要确认信息是否正确，确认什么时候的信息也很重要。要点：「だけでなく」意为“不仅仅”。正确排序：1432。",
+        ""
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 4
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "MISSING_SOURCE_OPTION_ANALYSIS_1",
+          "MISSING_SOURCE_OPTION_ANALYSIS_2",
+          "MISSING_SOURCE_OPTION_ANALYSIS_4"
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "starPosition": 2,
+      "starAnswer": 2,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2016-07-39",
+      "year": 2016,
+      "month": 7,
+      "number": 39,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "部屋が汚いことを＿＿　＿＿　＿＿　＿＿、まだ汚いと言われた。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "これ以上",
+        "親に注意されて",
+        "きれいにしたつもりだったが",
+        "きれいにしようがないくらい"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 4
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "",
+        "",
+        "",
+        "译文：父母说我房间太脏了，可我已经把房间打扫得不能再干净了，但还是被说太脏了。要点：「つもり」除表示“打算”之外，还表示“自认为”，在这句中表示自认为的意思。正确排序：2143。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 4
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "MISSING_SOURCE_OPTION_ANALYSIS_1",
+          "MISSING_SOURCE_OPTION_ANALYSIS_2",
+          "MISSING_SOURCE_OPTION_ANALYSIS_3"
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "starPosition": 2,
+      "starAnswer": 3,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    },
+    {
+      "id": "2016-07-40",
+      "year": 2016,
+      "month": 7,
+      "number": 40,
+      "section": "文法・並べ替え",
+      "type": "句子排序",
+      "question": "政府は景気回復のための政策を進めてはいるが、景気が回復してきている＿＿　＿＿　＿＿　＿＿現状である。",
+      "target": "＿＿　＿＿　＿＿　＿＿",
+      "options": [
+        "企業もまだ多い",
+        "までに至らない",
+        "と実感できる",
+        "というのが"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 5
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "译文：虽然政府正在推行恢复经济发展的政策，但是还有很多企业没有经济正在恢复的实感，这就是现状。要点：「～に至らない」表示到达某个程度。正确排序：3214。",
+        "",
+        "",
+        ""
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "MISSING_SOURCE_OPTION_ANALYSIS_2",
+          "MISSING_SOURCE_OPTION_ANALYSIS_3",
+          "MISSING_SOURCE_OPTION_ANALYSIS_4"
+        ]
+      },
+      "interaction": "ordering",
+      "correctOrder": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "starPosition": 2,
+      "starAnswer": 0,
+      "orderingVerification": {
+        "completeOrderFromSourceAudit": true,
+        "starAnswerFromAnswerTable": true,
+        "sourceImageStarPosition": 2,
+        "intendedStarPosition": 2,
+        "sourceStarConflict": false,
+        "auditStatus": "verified"
+      }
+    }
+  ],
+  "verificationSummary": {
+    "totalQuestions": 25,
+    "verified": 25,
+    "manualCheck": 0,
+    "sourceSets": 5,
+    "orderAndStarAnswerAgree": 25,
+    "sourceStarConflicts": 5,
+    "sourceImageAudited": 25
+  }
+}

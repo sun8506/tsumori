@@ -1,0 +1,6024 @@
+{
+  "dataset": "JLPT N1 2022-12 reconstructed mock",
+  "status": "cross_verified_reconstruction",
+  "mode": "full_mock_independent_session",
+  "year": 2022,
+  "month": 12,
+  "sourceClass": "non_official_reconstructed_exam",
+  "timing": {
+    "languageMinutes": 110,
+    "listeningMinutes": 55
+  },
+  "questions": [
+    {
+      "id": "2022-12-01",
+      "year": 2022,
+      "month": 12,
+      "number": 1,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "チームの新しい(監督)が決まった。",
+      "target": "監督",
+      "options": [
+        "かんどく",
+        "がんどく",
+        "かんとく",
+        "がんとく"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          6,
+          8
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "「完読」是“读完”，读音不符。",
+        "「がんどく」不是常用读法。",
+        "「監督（かんとく）」可指领队，读音和语义都正确。",
+        "「がんとく」不是该词的正确读法。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第1题 · 漢字の読み方",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            6,
+            8
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-02",
+      "year": 2022,
+      "month": 12,
+      "number": 2,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "2) これは、外国語から派生した斉葉です。",
+      "target": "派生",
+      "options": [
+        "はしょう",
+        "はせい",
+        "はっしょう",
+        "はっせい"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          9,
+          11
+        ]
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "「はしょう」不是常用读法。",
+        "「派生（はせい）」指由原词引申产生，符合句意。",
+        "「発祥」指起源、发祥，不合语境。",
+        "「発生」指发生，不表示词语引申。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第2题 · 漢字の読み方",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            9,
+            11
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-03",
+      "year": 2022,
+      "month": 12,
+      "number": 3,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "3) 文字が透けている。",
+      "target": "透けて",
+      "options": [
+        "ぼけて",
+        "かけて",
+        "ぬけて",
+        "すけて"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          12,
+          14
+        ]
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "「惚ける」指发呆或糊涂。",
+        "「掛ける」指悬挂等。",
+        "「抜ける」指脱落、漏掉。",
+        "「透ける」指透明、透出，符合句意。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第3题 · 漢字の読み方",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            12,
+            14
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-04",
+      "year": 2022,
+      "month": 12,
+      "number": 4,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "4) この村は湖の恩恵を受けている。",
+      "target": "恩恵",
+      "options": [
+        "おんけい",
+        "おんえい",
+        "いんけい",
+        "いんえい"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          15,
+          17
+        ]
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "「恩恵（おんけい）」指恩惠、好处，搭配正确。",
+        "「おんえい」不是正确读法。",
+        "「いんけい」不是该词读法。",
+        "「陰影（いんえい）」意为阴影。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第4题 · 漢字の読み方",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            15,
+            17
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-05",
+      "year": 2022,
+      "month": 12,
+      "number": 5,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "5) 厳しい練習に臨むお環手たちの次を目にした。",
+      "target": "臨む",
+      "options": [
+        "いどおむ",
+        "はげむ",
+        "なやむ",
+        "のぞむ"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          18,
+          20
+        ]
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "「挑む」是挑战。",
+        "「励む」是努力、勤奋。",
+        "「悩む」是烦恼。",
+        "「臨む」是面临、面对，符合严格训练的语境。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第5题 · 漢字の読み方",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            18,
+            20
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-06",
+      "year": 2022,
+      "month": 12,
+      "number": 6,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "調査データは、地球の温暖化を(如実に)示した。",
+      "target": "如実に",
+      "options": [
+        "じょじつに",
+        "じょうじつに",
+        "にょじつに",
+        "にょうじつに"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          21,
+          25
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "「じょじつ」不是正确读法。",
+        "「情実」指人情、私情。",
+        "「如実（にょじつ）」指如实、真实地呈现。",
+        "「にょうじつ」不是正确读法。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第6题 · 漢字の読み方",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            21,
+            25
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-07",
+      "year": 2022,
+      "month": 12,
+      "number": 7,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "7)、 被害者について報道するときは、仮名を用いてプライバシーを( )している。",
+      "target": "（空欄）",
+      "options": [
+        "保護",
+        "防御",
+        "警備",
+        "支援"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          26,
+          29
+        ]
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "「保護」指保护隐私，符合语境。",
+        "「防御」偏重抵御攻击。",
+        "「警備」指警戒保安。",
+        "「支援」指支持援助。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第7题 · 文脈規定",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            26,
+            29
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 2
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-08",
+      "year": 2022,
+      "month": 12,
+      "number": 8,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "8) この模型は、実際にあった建物を 20 分の1の大きさで( )再現した物だ。",
+      "target": "（空欄）",
+      "options": [
+        "従順に",
+        "厳正に",
+        "忠実に",
+        "均等に"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          30,
+          32
+        ]
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "「従順に」指顺从地。",
+        "「厳正に」指严正地。",
+        "「忠実に」指如实地按原物再现。",
+        "「均等に」指均匀、平均地。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第8题 · 文脈規定",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            30,
+            32
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 2
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-09",
+      "year": 2022,
+      "month": 12,
+      "number": 9,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "9) 川の水が澄んでいてきれいだったので、両手で( )、顔を洗った。",
+      "target": "（空欄）",
+      "options": [
+        "めくって",
+        "すくって",
+        "はさんで",
+        "つまんで"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          33,
+          35
+        ]
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "「捲る」是掀开、翻开。",
+        "「掬う」是用手捧取水，符合句意。",
+        "「挟む」是夹住、隔着。",
+        "「摘む」是捏取、采摘。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第9题 · 文脈規定",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            33,
+            35
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 2
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-10",
+      "year": 2022,
+      "month": 12,
+      "number": 10,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "10) 一生懸命働いて、ついに( )のマイホームを手に入れた。",
+      "target": "（空欄）",
+      "options": [
+        "志望",
+        "本意",
+        "欲求",
+        "念願"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          36,
+          38
+        ]
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "「志望」多指报考或职业志愿。",
+        "「本意」指本心、初衷。",
+        "「欲求」指欲望需求。",
+        "「念願」指长久心愿，符合终于买房。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第10题 · 文脈規定",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            36,
+            38
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 2
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-11",
+      "year": 2022,
+      "month": 12,
+      "number": 11,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "11) きれいな写真を撮るためには、まずカメラの( ) を合わせることが大切です。",
+      "target": "（空欄）",
+      "options": [
+        "ボーズ",
+        "カーソル",
+        "ピント",
+        "テンポ"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          39,
+          41
+        ]
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "「ポーズ」是姿势。",
+        "「カーソル」是光标。",
+        "「ピント」是焦点，「合わせる」表示对焦。",
+        "「テンポ」是节奏速度。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第11题 · 文脈規定",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            39,
+            41
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 2
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-12",
+      "year": 2022,
+      "month": 12,
+      "number": 12,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "12) 全国大会は初出場だったが、茂しい試合を勝ち抜いて何とか上位に( )。",
+      "target": "（空欄）",
+      "options": [
+        "乗り込んだ",
+        "食い込んだ",
+        "駆け込んだ",
+        "追い込んだ"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          42,
+          44
+        ]
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "「乗り込む」是乘上或进入。",
+        "「食い込む」可指挤进名次前列。",
+        "「駆け込む」是跑进。",
+        "「追い込む」是逼入困境。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第12题 · 文脈規定",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            42,
+            44
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 2
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-13",
+      "year": 2022,
+      "month": 12,
+      "number": 13,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "道案内をしてくれたので、（ ）地元の人かと思ったら、実は観光客だった。",
+      "target": "（　）",
+      "options": [
+        "てっきり",
+        "きっぱり",
+        "しっかり",
+        "はっきり"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          45,
+          53
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "「てっきり」表示本以为一定如此，符合误认语境。",
+        "「きっぱり」表示断然、干脆。",
+        "「しっかり」表示牢固、可靠。",
+        "「はっきり」表示清楚明确。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第13题 · 文脈規定",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            45,
+            53
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 2
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-14",
+      "year": 2022,
+      "month": 12,
+      "number": 14,
+      "section": "語彙",
+      "type": "言い換え類義",
+      "question": "14) 必要な資金を調達した。",
+      "target": "調達",
+      "options": [
+        "払った",
+        "預かった",
+        "返却した",
+        "用意した"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          54,
+          57
+        ]
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "「払う」是支付，不等于筹备。",
+        "「預かる」是保管、代管。",
+        "「返却する」是归还。",
+        "「用意する」是准备，与「調達する」最接近。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第14题 · 言い換え類義",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            54,
+            57
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 3
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-15",
+      "year": 2022,
+      "month": 12,
+      "number": 15,
+      "section": "語彙",
+      "type": "言い換え類義",
+      "question": "15) 山田さんは温和な性格だ。",
+      "target": "温和",
+      "options": [
+        "さわやかな",
+        "おだやか",
+        "こまやか",
+        "かろやか"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          58,
+          61
+        ]
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "「爽やか」是清爽、爽朗。",
+        "「穏やか」是平和温和，与「温和」近义。",
+        "「細やか」是细致、浓厚。",
+        "「軽やか」是轻快。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第15题 · 言い換え類義",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            58,
+            61
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 3
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-16",
+      "year": 2022,
+      "month": 12,
+      "number": 16,
+      "section": "語彙",
+      "type": "言い換え類義",
+      "question": "16) おすすめのスポットを教えてください。",
+      "target": "スポット",
+      "options": [
+        "場所",
+        "商品",
+        "方法",
+        "時期"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          62,
+          65
+        ]
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "「場所」即地点，与「スポット」近义。",
+        "「商品」是商品。",
+        "「方法」是方法。",
+        "「時期」是时期。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第16题 · 言い換え類義",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            62,
+            65
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 3
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-17",
+      "year": 2022,
+      "month": 12,
+      "number": 17,
+      "section": "語彙",
+      "type": "言い換え類義",
+      "question": "17) 各国のチームの実力は持抗している。",
+      "target": "拮抗",
+      "options": [
+        "差がある",
+        "差がない",
+        "高くなっている",
+        "低くなっている"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          66,
+          68
+        ]
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "「差がある」与势均力敌相反。",
+        "「差がない」表示实力不相上下。",
+        "「高くなっている」表示升高。",
+        "「低くなっている」表示降低。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第17题 · 言い換え類義",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            66,
+            68
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 3
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-18",
+      "year": 2022,
+      "month": 12,
+      "number": 18,
+      "section": "語彙",
+      "type": "言い換え類義",
+      "question": "18) 住民からの風当たりが相当なものだった。",
+      "target": "風当たり",
+      "options": [
+        "要求",
+        "信頼",
+        "期待",
+        "批判"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          69,
+          72
+        ]
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "「要求」是要求。",
+        "「信頼」是信赖。",
+        "「期待」是期待。",
+        "「批判」对应「風当たり」所指的外界压力、批评。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第18题 · 言い換え類義",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            69,
+            72
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 3
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-19",
+      "year": 2022,
+      "month": 12,
+      "number": 19,
+      "section": "語彙",
+      "type": "言い換え類義",
+      "question": "カメラは子供たちの(あどけない)表情を捉えていた。",
+      "target": "あどけない",
+      "options": [
+        "不安そうな",
+        "真剣な",
+        "無邪気な",
+        "羨ましそうな"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          73,
+          81
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "「不安そう」是显得不安。",
+        "「真剣」是认真。",
+        "「無邪気」是天真无邪，与「あどけない」近义。",
+        "「羨ましそう」是显得羡慕。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第19题 · 言い換え類義",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            73,
+            81
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 3
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-20",
+      "year": 2022,
+      "month": 12,
+      "number": 20,
+      "section": "語彙",
+      "type": "用法",
+      "question": "20) 出荷",
+      "target": "出荷",
+      "options": [
+        "有名俳優の出荷によって、公演のチケットはすぐに完売した。",
+        "海外の需要が高まり、アメリカに新店舗の出荷が決定した。",
+        "好評により注文が殺到していて、商品の出荷が遅れている。",
+        "今回の展覧会では、絵画の出荷が大半を占めた。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          82,
+          90
+        ]
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "「出演」是演出，搭配对象不对。",
+        "「出店」是开店。",
+        "「出荷」是发货；订单多导致发货延迟，用法正确。",
+        "「出展」是参展。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第20题 · 用法",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            82,
+            90
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 4
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-21",
+      "year": 2022,
+      "month": 12,
+      "number": 21,
+      "section": "語彙",
+      "type": "用法",
+      "question": "21) 譲る",
+      "target": "譲る",
+      "options": [
+        "私は早朝起きて、新聞を名家庭に譲る仕事をしている。",
+        "学校の倉庫の鍵を職員室に議るのをすっかり忘れていた。",
+        "新しいテレビを買ったので、古いテレビを友人に議った。",
+        "今朝、自宅近くの公園で拾った財布を交番に譲った。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          91,
+          100
+        ]
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "「配る」是分发。",
+        "「戻す」是放回、退回。",
+        "把旧电视「譲る」给朋友，表示转让，用法正确。",
+        "「届ける」是送达。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第21题 · 用法",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            91,
+            100
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 4
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-22",
+      "year": 2022,
+      "month": 12,
+      "number": 22,
+      "section": "語彙",
+      "type": "用法",
+      "question": "22) 底カ",
+      "target": "底力",
+      "options": [
+        "毎日体を運動しているので、腕の底力なら誰にも負けない。",
+        "彼は目立たない存在だが、大事な場面での底力はすごい。",
+        "石原さんは、動物の言華が分かる特別な底力を持っている。",
+        "留学して、英語を話す底力を伸ばしたいと思っている。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          101,
+          110
+        ]
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "普通的「力」未突出关键时刻的潜能。",
+        "「底力」指潜在实力，关键场合发挥的用法正确。",
+        "该句只泛指能力，不能体现潜力。",
+        "该句同样未体现深藏的潜力。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第22题 · 用法",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            101,
+            110
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 4
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-23",
+      "year": 2022,
+      "month": 12,
+      "number": 23,
+      "section": "語彙",
+      "type": "用法",
+      "question": "23) 絶大",
+      "target": "絶大",
+      "options": [
+        "絶大な開発によって、町の風景がすっかり変わった。",
+        "世界を旅して絶大な山の姿を写真に収めた。",
+        "これまで誰も釣ったことがないような絶大な魚を釣りたい。",
+        "あの歌手は若い人たちに絶大な人気がある。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          111,
+          120
+        ]
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "「大規模」强调规模，不修饰支持度。",
+        "「立派」指优秀、气派。",
+        "「巨大」一般修饰体积规模。",
+        "「絶大な人気」是固定自然搭配，表示极大人气。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第23题 · 用法",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            111,
+            120
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 4
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-24",
+      "year": 2022,
+      "month": 12,
+      "number": 24,
+      "section": "語彙",
+      "type": "用法",
+      "question": "24) 手痛い",
+      "target": "手痛い",
+      "options": [
+        "仕事で手痛いミスをして、周りに迷惑をかけた。",
+        "来週までは、手痛い運動をなるべく避けてください。",
+        "秋が終わって、とうとう手痛い冬がやってきた。",
+        "品川さんはほかの人より手痛いスピードで作業した。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          121,
+          130
+        ]
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "工作上遭受「手痛い」失误/打击，表示严重，正确。",
+        "「激しい」常指程度猛烈，此处搭配不自然。",
+        "「寒い」只表示寒冷。",
+        "「すごい」口语宽泛，不是该词的规范用法。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第24题 · 用法",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            121,
+            130
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 4
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-25",
+      "year": 2022,
+      "month": 12,
+      "number": 25,
+      "section": "語彙",
+      "type": "用法",
+      "question": "誘致",
+      "target": "誘致",
+      "options": [
+        "駐車場で、係員が車を何台も誘致している。",
+        "議会は町の経済を活性化させるために、工場を誘致することを決めた。",
+        "人材が不足しているため、今年は100人以上の新入社員を誘致した。",
+        "あの学校は新しい教授法を誘致したことで、人々の関心を集めている。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          131,
+          145
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "「誘導する」是引导，不是招来机构。",
+        "「工場を誘致する」表示招商引进工厂，正确。",
+        "「募集する」是招募人员。",
+        "「取り入れる」是采纳、引入事物。"
+      ],
+      "phase": "language",
+      "category": "vocabulary",
+      "label": "第25题 · 用法",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            131,
+            145
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 4
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-26",
+      "year": 2022,
+      "month": 12,
+      "number": 26,
+      "section": "文法",
+      "type": "文の文法1",
+      "question": "26) このレストランのシェフはまだ20代だが、著名な料理評論家( )満足させる腕の持ち主で あると、テレビや雑誌で評判になっている。",
+      "target": "（空欄）",
+      "options": [
+        "をも",
+        "とを",
+        "にまで",
+        "までが"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          146,
+          150
+        ]
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "「をも」标示使役对象并以「も」强调“甚至”，正确。",
+        "「とを」无法构成这里的使役对象。",
+        "「にまで」后接本句使役结构不合适。",
+        "「までが」把评论家误作主语。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第26题 · 文の文法1",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            146,
+            150
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 5
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-27",
+      "year": 2022,
+      "month": 12,
+      "number": 27,
+      "section": "文法",
+      "type": "文の文法1",
+      "question": "27) はっきりと覚えていないが、この町には( )来たことがある。",
+      "target": "（空欄）",
+      "options": [
+        "また",
+        "ついに",
+        "いつか",
+        "まもなく"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          151,
+          154
+        ]
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "「また」是又、另外，不表过去某时。",
+        "「ついに」是终于。",
+        "「いつか」可指曾经某时，符合记忆模糊。",
+        "「まもなく」是不久。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第27题 · 文の文法1",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            151,
+            154
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 5
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-28",
+      "year": 2022,
+      "month": 12,
+      "number": 28,
+      "section": "文法",
+      "type": "文の文法1",
+      "question": "28) (ホームページで) 体育館は老朽化のため、本年3月15日( )閉館しました。長年のご利用、 ありがとうございました。",
+      "target": "（空欄）",
+      "options": [
+        "につき",
+        "に至るまで",
+        "をもって",
+        "を皮切りに"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          155,
+          162
+        ]
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "「につき」表每、由于。",
+        "「に至るまで」表范围直到。",
+        "「をもって」表截止时间，符合闭馆日期。",
+        "「を皮切りに」表以此为开端。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第28题 · 文の文法1",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            155,
+            162
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 5
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-29",
+      "year": 2022,
+      "month": 12,
+      "number": 29,
+      "section": "文法",
+      "type": "文の文法1",
+      "question": "29) 高校に入学して、特に入りたいクラブプもなかったので、友人に( )、テニス部に入った。",
+      "target": "（空欄）",
+      "options": [
+        "誘われるまま",
+        "誘われようが",
+        "誘われた上に",
+        "誘われない限り"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          163,
+          165
+        ]
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "「誘われるまま」表示听任劝说而行动，正确。",
+        "「ようが」表即使，后文不构成让步。",
+        "「上に」表叠加，不合逻辑。",
+        "「ない限り」表除非，不合句意。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第29题 · 文の文法1",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            163,
+            165
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 5
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-30",
+      "year": 2022,
+      "month": 12,
+      "number": 30,
+      "section": "文法",
+      "type": "文の文法1",
+      "question": "30) (ホームページで) 当店では、商品に欠陥がある( )、返品及び交換はお受けできませんので、あらかじめご 了承ください。",
+      "target": "（空欄）",
+      "options": [
+        "点に加えて",
+        "点を除いて",
+        "場合に加えて",
+        "場合を除いて"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          166,
+          173
+        ]
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "「点に加えて」是加上某方面。",
+        "「点を除いて」语义近但「点」不指假设情况。",
+        "「場合に加えて」表示再加一种情况。",
+        "「場合を除いて」表示除有缺陷的情况外，正确。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第30题 · 文の文法1",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            166,
+            173
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 5
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-31",
+      "year": 2022,
+      "month": 12,
+      "number": 31,
+      "section": "文法",
+      "type": "文の文法1",
+      "question": "31)。 (取引先へのメールで) 来週の打ち合わせの資料をお送りします。お忙しいとは( ) が、ご確認いただければ幸いです。",
+      "target": "（空欄）",
+      "options": [
+        "いたします",
+        "存じます",
+        "いらっしゃいます",
+        "申し上げます"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          174,
+          178
+        ]
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "「いたします」是「する」的自谦，不能接「とは」。",
+        "「存じます」是「思う」的自谦，商务表达自然。",
+        "「いらっしゃいます」是「いる」等的尊敬语。",
+        "「申し上げます」是「言う」的自谦。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第31题 · 文の文法1",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            174,
+            178
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 6
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-32",
+      "year": 2022,
+      "month": 12,
+      "number": 32,
+      "section": "文法",
+      "type": "文の文法1",
+      "question": "32) 学生時代はずっとサッカーをしていたのだが、社会人に( )、運動する機会がすっかり減っ てしまった。",
+      "target": "（空欄）",
+      "options": [
+        "なってからであっても",
+        "なったばかりなのか",
+        "なってからというもの",
+        "なったばかりだとして"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          179,
+          185
+        ]
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "「なってからであっても」是即使成为之后，逻辑不符。",
+        "「なったばかりなのか」是是否刚成为。",
+        "「なってからというもの」表自从此后持续变化。",
+        "「なったばかりだとして」是假设刚成为。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第32题 · 文の文法1",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            179,
+            185
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 7
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-33",
+      "year": 2022,
+      "month": 12,
+      "number": 33,
+      "section": "文法",
+      "type": "文の文法1",
+      "question": "33) 自転車の鍵が見当たらないと思ったら、昨日はいていたズボンのポケットに( )。",
+      "target": "（空欄）",
+      "options": [
+        "入れたつもり",
+        "入れっぱなしだった",
+        "入れっこなかった",
+        "入れるべきではなかった"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          186,
+          191
+        ]
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "「入れたつもり」是自以为放了，不符实际发现。",
+        "「入れっぱなし」表一直放着未取出，正确。",
+        "「入れっこない」表绝不可能放入。",
+        "「入れるべきではなかった」表不该放，非发现语气。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第33题 · 文の文法1",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            186,
+            191
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 7
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-34",
+      "year": 2022,
+      "month": 12,
+      "number": 34,
+      "section": "文法",
+      "type": "文の文法1",
+      "question": "A「ねえねえ、北市にできた動物園、いったんでしょう？あそこ、相当広いらしいね」 B「（ ）、1日じゃ全部回れなかったよ」。",
+      "target": "（　）",
+      "options": [
+        "広くないはずなんだよ",
+        "広いなんてことはないよ",
+        "広くないわけじゃないんだよ",
+        "広いなんてもんじゃないよ"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          192,
+          199
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "「広くないはず」断言不宽，与后句矛盾。",
+        "「広いなんてことはない」否定很宽，与后句矛盾。",
+        "「広くないわけじゃない」仅弱肯定，程度不足。",
+        "「広いなんてもんじゃない」表示远不止“宽”，与一天逛不完呼应。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第34题 · 文の文法1",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            192,
+            199
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 7
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-35",
+      "year": 2022,
+      "month": 12,
+      "number": 35,
+      "section": "文法",
+      "type": "文の文法1",
+      "question": "私は昔からバイクが大好きだ。小さい頃は、よく父のバイクの後ろに（ ）。",
+      "target": "（　）",
+      "options": [
+        "乗りたがったものだ",
+        "乗りたがったところだ",
+        "乗って欲しがったものだ",
+        "乗って欲しがったところだ"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          200,
+          209
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "「乗りたがったものだ」回忆小时候常有的愿望，正确。",
+        "「ところが」需要转折后项。",
+        "「乗って欲しがる」变成希望别人乘坐。",
+        "既误为希望别人乘坐，又不合「ところだ」时态。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第35题 · 文の文法1",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            200,
+            209
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 7
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-36",
+      "year": 2022,
+      "month": 12,
+      "number": 36,
+      "section": "文法",
+      "type": "文の文法2",
+      "question": "秋の初めてのこの時期は、真夏の戻った __ __ ★ __ 、気温の差が大きくて体調を崩しやすいので、注意が必要だ。",
+      "target": "★",
+      "options": [
+        "日もあり",
+        "日もあれば",
+        "ひんやりとした",
+        "かのような"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          210,
+          212
+        ]
+      },
+      "flags": [
+        "SENTENCE_ORDER_BLANK_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "选项1位于句末，★处不是它。",
+        "「日もあれば」承接前项，位于★处，正确。",
+        "修饰后面的「日」，不在★处。",
+        "与「戻った」组成「かのような」，位于前部。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第36题 · 文の文法2",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            210,
+            212
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 7
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SENTENCE_ORDER_BLANK_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-37",
+      "year": 2022,
+      "month": 12,
+      "number": 37,
+      "section": "文法",
+      "type": "文の文法2",
+      "question": "歴史的価値が高いとされる旧白本小学校の校舎を始めて見たが、とても __ __ ★ __ 驚いた。",
+      "target": "★",
+      "options": [
+        "100年前に",
+        "現代的なデザインに",
+        "建てられたものとは",
+        "思えないほどの"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          213,
+          216
+        ]
+      },
+      "flags": [
+        "SENTENCE_ORDER_BLANK_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "时间状语位于最前，不在★处。",
+        "「現代的なデザインに」位于句末。",
+        "与「ものとは」构成判断，位于第二格。",
+        "「思えないほどの」承前启后，位于★处。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第37题 · 文の文法2",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            213,
+            216
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 8
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SENTENCE_ORDER_BLANK_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-38",
+      "year": 2022,
+      "month": 12,
+      "number": 38,
+      "section": "文法",
+      "type": "文の文法2",
+      "question": "くしゃみや鼻水といった症状が現れる花粉症は、風邪と __ __ ★ __ ケースもあるそうだ。",
+      "target": "★",
+      "options": [
+        "自覚がない",
+        "自分は花粉症だという",
+        "症状が似ている",
+        "こともあって"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          217,
+          220
+        ]
+      },
+      "flags": [
+        "SENTENCE_ORDER_BLANK_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "「自覚がない」位于后部，不在★处。",
+        "与前项组成「花粉症だという」，位于★处。",
+        "紧接「風邪と」，位于第一格。",
+        "「こともあって」表原因，位于第二格。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第38题 · 文の文法2",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            217,
+            220
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 8
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SENTENCE_ORDER_BLANK_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-39",
+      "year": 2022,
+      "month": 12,
+      "number": 39,
+      "section": "文法",
+      "type": "文の文法2",
+      "question": "高校卒業後の進路について両親に反対されたが、誰に何と __ __ ★ __ 思う。",
+      "target": "★",
+      "options": [
+        "思える道を",
+        "信じて進みたいと",
+        "言われようとも",
+        "自分がこれだと"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          221,
+          223
+        ]
+      },
+      "flags": [
+        "SENTENCE_ORDER_BLANK_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "「思える道を」位于★处，正确。",
+        "「信じて進みたいと」收束句子。",
+        "「何と言われようとも」位于最前。",
+        "「自分がこれだと」连接「思える」。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第39题 · 文の文法2",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            221,
+            223
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 8
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "SENTENCE_ORDER_BLANK_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-40",
+      "year": 2022,
+      "month": 12,
+      "number": 40,
+      "section": "文法",
+      "type": "文の文法2",
+      "question": "企業の海外進出が成功するかどうかは、 __ __ ★ __ といってもいいだろう。",
+      "target": "★",
+      "options": [
+        "優秀な人材を確保できる",
+        "にかかっている",
+        "か否か",
+        "その国の事情をよく知る"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          224,
+          262
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN",
+        "SENTENCE_ORDER_BLANK_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "修饰并构成「人材を確保できる」，位于第二格。",
+        "「にかかっている」位于末格。",
+        "「か否か」位于★处，正确。",
+        "「事情をよく知る」修饰人才，位于首格。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第40题 · 文の文法2",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            224,
+            262
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 8
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "SENTENCE_ORDER_BLANK_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN"
+        ],
+        "supplementalAnalysis": false
+      }
+    },
+    {
+      "id": "2022-12-41",
+      "year": 2022,
+      "month": 12,
+      "number": 41,
+      "section": "文法",
+      "type": "文章の文法",
+      "question": "プリプリ海老 昔に比べてレストランのメニュ ーに修飾語が増えたと感じる。「プリプリ海老の00パスタ」 「とろ～りチーズ人りのハンバーグ」 「XX県産のやわらか若鶏の△△」といった感じだ。付加価値や希少価値をアピールして、商品の差別化を図りたいのだろう。 これらの修飾語は 41 食欲を刺激し期待感を高める。でもよくよく考えると、 差別化の中身は実にあいまいだ。プリプリ海老の定義は？チーズはみな、とろ～りするのでは？XX県産が品質保証になるのか？ 実質的な中身を伴った新商品の開発が困難になっていく高度消費社会では、 見せかけの新しさで消費を刺激しようとする傾向が強まる。商品のバッケージを新しくしたり、商品名の変更が頻繁に行われたりするのも 42。消費社会とは、商品の差別化戦略によって中身の空虚な（注1) ネー ミング（注2) が氾濫し、 消費者がそれに踊らされる世界ではないのか。 そのような社会は、私たちの言語感覚43 変えてしまう可能性がある。商品の差別化競争に終わりがないなら、修飾語こそが肝要になる。つまり、修飾語を伴った呼称がデフォルト（注3)となり、裸の名詞が空虚に感じられるようになるかもしれない。 何十年かすれば、生物としての海老という記号は空洞化して、おいしそうな食材としての修飾語が不可欠な要素となり、 「海老」 は「プリプリ海老」、 「海老のチリソース」は 「プリプリ海老のチリソース」と呼ばれているのだろうか。 私たちは、増殖する見せかけの新しさに囲まれながら、空虚な記号と戯れ続ける（注4)しかないのか？メニュ ーに並ぶ修飾語は、 消費社会の遠い未来からの 44。 （注1) 空虚な： 実質的な意味がない （注2) ネー ミング： 名前を付けること （注3) デフォルト： 標準 （注4) 戯れ続ける： ここでは、 付き合い続ける\n\n41",
+      "target": "41",
+      "options": [
+        "むしろ",
+        "かえって",
+        "たしかに",
+        "ようやく"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          263,
+          266
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "「むしろ」表反向强调，与后文转折不顺。",
+        "「かえって」表反而，后文尚未出现逆转。",
+        "「確かに」先承认刺激食欲，再以「でも」转折，正确。",
+        "「ようやく」表终于，无时间进展。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第41题 · 文章の文法",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            263,
+            266
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 9
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-42",
+      "year": 2022,
+      "month": 12,
+      "number": 42,
+      "section": "文法",
+      "type": "文章の文法",
+      "question": "プリプリ海老 昔に比べてレストランのメニュ ーに修飾語が増えたと感じる。「プリプリ海老の00パスタ」 「とろ～りチーズ人りのハンバーグ」 「XX県産のやわらか若鶏の△△」といった感じだ。付加価値や希少価値をアピールして、商品の差別化を図りたいのだろう。 これらの修飾語は 41 食欲を刺激し期待感を高める。でもよくよく考えると、 差別化の中身は実にあいまいだ。プリプリ海老の定義は？チーズはみな、とろ～りするのでは？XX県産が品質保証になるのか？ 実質的な中身を伴った新商品の開発が困難になっていく高度消費社会では、 見せかけの新しさで消費を刺激しようとする傾向が強まる。商品のバッケージを新しくしたり、商品名の変更が頻繁に行われたりするのも 42。消費社会とは、商品の差別化戦略によって中身の空虚な（注1) ネー ミング（注2) が氾濫し、 消費者がそれに踊らされる世界ではないのか。 そのような社会は、私たちの言語感覚43 変えてしまう可能性がある。商品の差別化競争に終わりがないなら、修飾語こそが肝要になる。つまり、修飾語を伴った呼称がデフォルト（注3)となり、裸の名詞が空虚に感じられるようになるかもしれない。 何十年かすれば、生物としての海老という記号は空洞化して、おいしそうな食材としての修飾語が不可欠な要素となり、 「海老」 は「プリプリ海老」、 「海老のチリソース」は 「プリプリ海老のチリソース」と呼ばれているのだろうか。 私たちは、増殖する見せかけの新しさに囲まれながら、空虚な記号と戯れ続ける（注4)しかないのか？メニュ ーに並ぶ修飾語は、 消費社会の遠い未来からの 44。 （注1) 空虚な： 実質的な意味がない （注2) ネー ミング： 名前を付けること （注3) デフォルト： 標準 （注4) 戯れ続ける： ここでは、 付き合い続ける\n\n42",
+      "target": "42",
+      "options": [
+        "それ以来だ",
+        "それだけだ",
+        "そのままだ",
+        "そのためだ"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          267,
+          270
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "「それ以来」表示自那以后，缺少起点。",
+        "「それだけだ」表示仅此而已，不表原因。",
+        "「そのままだ」表示维持原状，与频繁更换矛盾。",
+        "「そのためだ」承接刺激消费这一原因，正确。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第42题 · 文章の文法",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            267,
+            270
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 9
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-43",
+      "year": 2022,
+      "month": 12,
+      "number": 43,
+      "section": "文法",
+      "type": "文章の文法",
+      "question": "プリプリ海老 昔に比べてレストランのメニュ ーに修飾語が増えたと感じる。「プリプリ海老の00パスタ」 「とろ～りチーズ人りのハンバーグ」 「XX県産のやわらか若鶏の△△」といった感じだ。付加価値や希少価値をアピールして、商品の差別化を図りたいのだろう。 これらの修飾語は 41 食欲を刺激し期待感を高める。でもよくよく考えると、 差別化の中身は実にあいまいだ。プリプリ海老の定義は？チーズはみな、とろ～りするのでは？XX県産が品質保証になるのか？ 実質的な中身を伴った新商品の開発が困難になっていく高度消費社会では、 見せかけの新しさで消費を刺激しようとする傾向が強まる。商品のバッケージを新しくしたり、商品名の変更が頻繁に行われたりするのも 42。消費社会とは、商品の差別化戦略によって中身の空虚な（注1) ネー ミング（注2) が氾濫し、 消費者がそれに踊らされる世界ではないのか。 そのような社会は、私たちの言語感覚43 変えてしまう可能性がある。商品の差別化競争に終わりがないなら、修飾語こそが肝要になる。つまり、修飾語を伴った呼称がデフォルト（注3)となり、裸の名詞が空虚に感じられるようになるかもしれない。 何十年かすれば、生物としての海老という記号は空洞化して、おいしそうな食材としての修飾語が不可欠な要素となり、 「海老」 は「プリプリ海老」、 「海老のチリソース」は 「プリプリ海老のチリソース」と呼ばれているのだろうか。 私たちは、増殖する見せかけの新しさに囲まれながら、空虚な記号と戯れ続ける（注4)しかないのか？メニュ ーに並ぶ修飾語は、 消費社会の遠い未来からの 44。 （注1) 空虚な： 実質的な意味がない （注2) ネー ミング： 名前を付けること （注3) デフォルト： 標準 （注4) 戯れ続ける： ここでは、 付き合い続ける\n\n43",
+      "target": "43",
+      "options": [
+        "が",
+        "すら",
+        "なら",
+        "でもって"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          271,
+          274
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "「が」仅作主格标记，不能表达递进极端。",
+        "「すら」表示甚至连语言感觉也会改变，正确。",
+        "「なら」是条件，句法不成立。",
+        "「でもって」是方式手段，不合语境。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第43题 · 文章の文法",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            271,
+            274
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 9
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-44",
+      "year": 2022,
+      "month": 12,
+      "number": 44,
+      "section": "文法",
+      "type": "文章の文法",
+      "question": "プリプリ海老 昔に比べてレストランのメニュ ーに修飾語が増えたと感じる。「プリプリ海老の00パスタ」 「とろ～りチーズ人りのハンバーグ」 「XX県産のやわらか若鶏の△△」といった感じだ。付加価値や希少価値をアピールして、商品の差別化を図りたいのだろう。 これらの修飾語は 41 食欲を刺激し期待感を高める。でもよくよく考えると、 差別化の中身は実にあいまいだ。プリプリ海老の定義は？チーズはみな、とろ～りするのでは？XX県産が品質保証になるのか？ 実質的な中身を伴った新商品の開発が困難になっていく高度消費社会では、 見せかけの新しさで消費を刺激しようとする傾向が強まる。商品のバッケージを新しくしたり、商品名の変更が頻繁に行われたりするのも 42。消費社会とは、商品の差別化戦略によって中身の空虚な（注1) ネー ミング（注2) が氾濫し、 消費者がそれに踊らされる世界ではないのか。 そのような社会は、私たちの言語感覚43 変えてしまう可能性がある。商品の差別化競争に終わりがないなら、修飾語こそが肝要になる。つまり、修飾語を伴った呼称がデフォルト（注3)となり、裸の名詞が空虚に感じられるようになるかもしれない。 何十年かすれば、生物としての海老という記号は空洞化して、おいしそうな食材としての修飾語が不可欠な要素となり、 「海老」 は「プリプリ海老」、 「海老のチリソース」は 「プリプリ海老のチリソース」と呼ばれているのだろうか。 私たちは、増殖する見せかけの新しさに囲まれながら、空虚な記号と戯れ続ける（注4)しかないのか？メニュ ーに並ぶ修飾語は、 消費社会の遠い未来からの 44。 （注1) 空虚な： 実質的な意味がない （注2) ネー ミング： 名前を付けること （注3) デフォルト： 標準 （注4) 戯れ続ける： ここでは、 付き合い続ける\n\n44",
+      "target": "44",
+      "options": [
+        "使者のようでもある",
+        "使者とのことである",
+        "使者だとは言えない",
+        "使者にもなり得まい"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          275,
+          294
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "「使者のようでもある」以比喻表达作者判断，正确。",
+        "「使者とのことである」变成传闻。",
+        "「使者だとは言えまい」否定作者的比喻。",
+        "「使者にもなり得まい」同样否定可能性。"
+      ],
+      "phase": "language",
+      "category": "grammar",
+      "label": "第44题 · 文章の文法",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            275,
+            294
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 9
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-45",
+      "year": 2022,
+      "month": 12,
+      "number": 45,
+      "section": "読解",
+      "type": "短文",
+      "question": "（1） 「嫌い」はネガティブな（注）感情で、まさに嫌悪感をもってしまいがちですが、自分の中に芽生えてきた大切な感情であり、大事な機能でもあります、何より根絶できません。 「嫌い」はとてもパワ ーを必要とする感情ですから、それだけに反動も大きい。 振り回されないための第一歩は、嫌いを認めることです。ネガティブな感情でも、もつことは自然なことであり、生きる上でメリットになる、そして周囲の人にもメリットがあると捉えてみてください。 （注）ネガティブな： 否定的\n\n45 「嫌い」の感情について、 筆者の考えに合うのはどれか。",
+      "target": null,
+      "options": [
+        "否定的で強い感情であり、 振り回されてもしかたがない。",
+        "なくせない感情であり、 受け入れたほうがいい。",
+        "認めることで、 その感清を抑えることができる。",
+        "理由を考えれば、 振り回されることはない。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          295,
+          299
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN",
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "把“会被折腾”说成无可奈何，作者主张先承认并接纳。",
+        "指出无法根除且应接受，符合原文。",
+        "承认的作用是避免被摆布，不等于抑制情绪。",
+        "原文未说追究原因即可不受影响。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第45题 · 短文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            295,
+            299
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 10
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER",
+          "ANSWER_TABLE_VS_PASSAGE_CONFLICT",
+          "ANSWER_CONFLICT_RESOLVED_BY_PASSAGE_AND_THIRD_ANSWER_SOURCE"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-46",
+      "year": 2022,
+      "month": 12,
+      "number": 46,
+      "section": "読解",
+      "type": "短文",
+      "question": "(2) 安く売るべきか、品質にこだわるべきか。事はそんなに単純ではない。どんなに良い商品であったとし ても、できるだけ価格を押えるための努力は必要だ。品質にこだわる戦略というのは、 品質さえ良ければ どんなに高くても買ってもらえるという短絡的な戦略ではない。 できるだけ価格を押える努力はしているけれども、 それでも品質にこだわるとこれ以上は安くできな い。他社の商品よりも高いのだけれども、それだけの価値はある。だからその差額を許容してほしい。そう 訴えることが、品質にこだわった正しい戦略である。\n\n46 品質にこだわる戦略とは、どういうことか。",
+      "target": null,
+      "options": [
+        "品質に見合った価格であると主張する。",
+        "品質の良さと価格の低さを主張する。",
+        "価格に合わせた品質であると主張する。",
+        "価格よりも、品質の良さを主張する。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          309,
+          313
+        ]
+      },
+      "flags": [
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "主张较高价格与相应品质价值匹配，正确。",
+        "原文并非品质与“低价”相称。",
+        "重点是以品质说明价差，不是按价格降低品质。",
+        "作者仍要求压低价格，并非单纯品质优先。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第46题 · 短文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            309,
+            313
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 10
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-47",
+      "year": 2022,
+      "month": 12,
+      "number": 47,
+      "section": "読解",
+      "type": "短文",
+      "question": "(3) 時には、自らに「素朴な質問」を投げかけてみてはどうだろうか。子どもが親に尋ねるような「素朴な質問」というものは、意外にも人生や生きることの本質にかかわることであり、人生論や哲学の課題であることが少なくない。そうした質間を真正面から投げかけられたとき、はっと何か気づかされるところがあって、自分の日常を反省するような反応を示さないとしたら、その人の感性は相当に（注）枯れていると考えたほうがよい。 （注）相当に： かなり\n\n47 筆者が言いたいことは何か。",
+      "target": null,
+      "options": [
+        "素朴な質問に向き合って、 日常を省みることが必要だ。",
+        "親が子どもから人生の本当の意味を教わることもある。",
+        "大人になると、子どもが尋ねるような質問をすることは難しい。",
+        "感性を磨くには、子どもが投げかけた素朴な質問に答えるとよい。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          325,
+          330
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN",
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "简单问题能促使反思日常，符合主旨。",
+        "原文未限定为父母向孩子学习。",
+        "原文建议成人也问，并非强调难以提问。",
+        "重点是正面面对并反思，不只是回答孩子。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第47题 · 短文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            325,
+            330
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 10
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-48",
+      "year": 2022,
+      "month": 12,
+      "number": 48,
+      "section": "読解",
+      "type": "短文",
+      "question": "(4) 科学とは、知れば知るほどわからないことが增えてくるものである。自分は何も知らなかったと思い知らされるのが科学者の日常と言える。つまり、科学者は研究を極めれば極めるほど謙虚になる。自分の無知さを知って謙虚にならざるを得ないのだ。その観点から言えば、知ったかぶりをする(注)科学者はもはや研究をストップしており、それまでに得た知護を誇っているに過ぎないと言うことができる。もはや過去の人であり、その知識は時代遅れになっている可能性が高いのだ。 （注）知ったかぶりをする： 知っているふりをする\n\n48 筆者の考えに合うのはどれか",
+      "target": null,
+      "options": [
+        "科学者は時代に合った知識を持つべきだ。",
+        "科学者は研究を続けることでより謙虚になるものだ。",
+        "謙虚であれば、よい科学者として認められるものだ。",
+        "どんな科学者であっても、 自分の無知を自覚しているものだ。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          357,
+          361
+        ]
+      },
+      "flags": [
+        "PASSAGE_SEVERELY_GARBLED_IN_BOTH_RECONSTRUCTIONS",
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "与时俱进是推论，但非段落核心。",
+        "越钻研越知无知、越谦虚，符合原文。",
+        "谦虚不是优秀科学家的充分条件。",
+        "原文批评装懂者，未作无差别绝对断言。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第48题 · 短文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            357,
+            361
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 11
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "PASSAGE_SEVERELY_GARBLED_IN_BOTH_RECONSTRUCTIONS",
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-49",
+      "year": 2022,
+      "month": 12,
+      "number": 49,
+      "section": "読解",
+      "type": "中文",
+      "question": "(1) ともすると私たち大人は、自分たちの子ども時代の遊びはよくて、今の子どもの遊びは好ましくないと考えがちです。（中略） 今はダメで昔はよかったというような感覚をもって、今の子どもの遊びについて考えると、とんでもないことになります。子どもたちが嬉々として（注）遊んでいるものを取り上げて、今の時代ではおもしろくないような遊びを、無理に押しつ けることになってしまいます。そうなると遊びが遊びでなくなってしまいかねません。 また、私たちが考える好ましい遊び環境となると、なぜかとても整理された空間になりがちです。たとえば画一化された公園を見ると、ムダーつなく機能を重視したオフィスを連想させさえします。限られたスペースで、しかも安全性や管理の問題を考えればそうならざるをえないのかもしれませんが、それでは子どもが遊びたいと思わなくなるのです。 子どもたちの遊び空間には、もしかしたら不自由さや不便さ、大人がムダだと思えるようなものも必要かもしれません。配慮の行き届きすぎた場所は、遊園地とい う商業施設は別として、子どもたちが自由に遊べる環境としては好ましくないのではないでしょうか。 子どもたちの遊び環境について考えるときに大切なのは、 私たち大人の側にあるそのような先入観です。自分は子どものころにこんな遊びをした。今の子どもはそれをしていない。だから今の子どもは遊んでいない。こんな単純な考え方では、決して子どものためになる遊び環境など考えることはできません。 （注）嬉々として： 喜んで\n\n49 とんでもないことになりますとあるが、どうなるのか",
+      "target": null,
+      "options": [
+        "子どもが子ども同士で遊べなくなる。",
+        "子どもが自由に遊びを楽しめなくなる。",
+        "子どもが今の時代の遊びに輿味をもたなくなる。",
+        "子どもが安全に管理された場所でしか遊べなくなる。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          391,
+          399
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN",
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "原文重点不是孩子之间无法合作。",
+        "强迫旧式游戏会剥夺自由享受，正确。",
+        "不是失去对“如今游戏”的兴趣，而是被夺走。",
+        "安全受控空间是另一段问题，非该指代。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第49题 · 中文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            391,
+            399
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 11
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-50",
+      "year": 2022,
+      "month": 12,
+      "number": 50,
+      "section": "読解",
+      "type": "中文",
+      "question": "(1) ともすると私たち大人は、自分たちの子ども時代の遊びはよくて、今の子どもの遊びは好ましくないと考えがちです。（中略） 今はダメで昔はよかったというような感覚をもって、今の子どもの遊びについて考えると、とんでもないことになります。子どもたちが嬉々として（注）遊んでいるものを取り上げて、今の時代ではおもしろくないような遊びを、無理に押しつ けることになってしまいます。そうなると遊びが遊びでなくなってしまいかねません。 また、私たちが考える好ましい遊び環境となると、なぜかとても整理された空間になりがちです。たとえば画一化された公園を見ると、ムダーつなく機能を重視したオフィスを連想させさえします。限られたスペースで、しかも安全性や管理の問題を考えればそうならざるをえないのかもしれませんが、それでは子どもが遊びたいと思わなくなるのです。 子どもたちの遊び空間には、もしかしたら不自由さや不便さ、大人がムダだと思えるようなものも必要かもしれません。配慮の行き届きすぎた場所は、遊園地とい う商業施設は別として、子どもたちが自由に遊べる環境としては好ましくないのではないでしょうか。 子どもたちの遊び環境について考えるときに大切なのは、 私たち大人の側にあるそのような先入観です。自分は子どものころにこんな遊びをした。今の子どもはそれをしていない。だから今の子どもは遊んでいない。こんな単純な考え方では、決して子どものためになる遊び環境など考えることはできません。 （注）嬉々として： 喜んで\n\n50 筆者が言いたいことは何か",
+      "target": null,
+      "options": [
+        "大人は子どもの遊びに干渉するべきではない。",
+        "大人は安全性を考えて、 遊び環境を整えなければならない。",
+        "大人は先入観をもたずに、 子どもの遊び環境を考えるべきだ。",
+        "大人の先入観が遊び環境を考えるうえで役に立つこともある。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          401,
+          409
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN",
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "作者并非要求成人完全不干涉。",
+        "只整顿安全环境正是作者质疑的偏见。",
+        "应放下成人先入观念来考虑环境，正确。",
+        "作者认为先入观念会妨碍设计。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第50题 · 中文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            401,
+            409
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 11
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-51",
+      "year": 2022,
+      "month": 12,
+      "number": 51,
+      "section": "読解",
+      "type": "中文",
+      "question": "（2） 私たち人間は、いろいろなものを食べる雑食性動物です。それに対し、基本的にパンダはササだけを食べ、コ アラ（注1)はユーカリの葉だけを食べます。 動物の生き残り戦略を考えると、雑食性動物の方が、慣れ親しんだ食べものが入手困難な状況になったとしても、それ以外の食べられるものへと嗜好をシフトすることによって飢餓を脱し、生存する確率を高めることができます。雑食性動物は環境適応 性に優れた生きものといえます。 しかしその一方で、新たに見つけ出した食べものが毒性をもっていたり、栄養バランスが悪いものであれば、健康を損ね、最悪死に至る可能性があります。そのため、雑食性動物は、新しい食べものを食べるときには、必ずそのリスクと対峙（注2)しなければなりません。 すなわち雑食性動物は、食べたことのないものを食べるのを躊躇する「食物新奇 性恐怖」と、 積極的に食べようとする 「食物新奇性嗜好」という相矛盾（注3)する行動傾向を、生まれながらに合わせもっているといえます。（中略） 雑食性動物がもつ食べものの新奇性恐怖と新奇性嗜好のジレンマを解消してきたもののひとつが、人の「調理」という行為です。食べたことのない食材、 たとえば昆虫をそのままの ＇＇原型＇＇ で出されると、拒否感を抱く人が多いですが、粉にしてチップスなど、見慣れたお菓子のかたちで提供されれば、食べる人は確実に増えます。さらに慣れ親しんだ調味料で味付けしたものなどであれば、 「あっ、 意外とおいしい」と好評価を得るかもしれません。この調理という操作が、新奇なものを食べるという恐怖を緩和させるのに一役（注4)買っています。 （注l) コアラ： 動物の一種 （注2) 対峙 する： ここでは、 向き合う （注3) 相～ ： 互いに～ （注4) 一役買う： ここでは、 役立つ\n\n51 筆者によると、 雑食性動物の特徴は何か。",
+      "target": null,
+      "options": [
+        "慣れ親しんだものを食べたいという気持ちよりも、新しい食べものへの好奇心の方が強い。",
+        "新しい食べものに対して、恐怖心をもちながらも、挑戦する性質をもっている。",
+        "いろいろなものを食べるので、栄養バランスが偏らず、生存する確率が高い。",
+        "目の前に食べものがあれば、躊躇せずに積極的に食べようとする。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          442,
+          447
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN",
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "原文说恐惧与偏好并存，不是好奇心更强。",
+        "既畏惧又有尝试新食物的倾向，正确。",
+        "杂食也可能营养失衡，不能保证平衡。",
+        "并非毫不犹豫，存在新奇恐惧。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第51题 · 中文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            442,
+            447
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 12
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-52",
+      "year": 2022,
+      "month": 12,
+      "number": 52,
+      "section": "読解",
+      "type": "中文",
+      "question": "（2） 私たち人間は、いろいろなものを食べる雑食性動物です。それに対し、基本的にパンダはササだけを食べ、コ アラ（注1)はユーカリの葉だけを食べます。 動物の生き残り戦略を考えると、雑食性動物の方が、慣れ親しんだ食べものが入手困難な状況になったとしても、それ以外の食べられるものへと嗜好をシフトすることによって飢餓を脱し、生存する確率を高めることができます。雑食性動物は環境適応 性に優れた生きものといえます。 しかしその一方で、新たに見つけ出した食べものが毒性をもっていたり、栄養バランスが悪いものであれば、健康を損ね、最悪死に至る可能性があります。そのため、雑食性動物は、新しい食べものを食べるときには、必ずそのリスクと対峙（注2)しなければなりません。 すなわち雑食性動物は、食べたことのないものを食べるのを躊躇する「食物新奇 性恐怖」と、 積極的に食べようとする 「食物新奇性嗜好」という相矛盾（注3)する行動傾向を、生まれながらに合わせもっているといえます。（中略） 雑食性動物がもつ食べものの新奇性恐怖と新奇性嗜好のジレンマを解消してきたもののひとつが、人の「調理」という行為です。食べたことのない食材、 たとえば昆虫をそのままの ＇＇原型＇＇ で出されると、拒否感を抱く人が多いですが、粉にしてチップスなど、見慣れたお菓子のかたちで提供されれば、食べる人は確実に増えます。さらに慣れ親しんだ調味料で味付けしたものなどであれば、 「あっ、 意外とおいしい」と好評価を得るかもしれません。この調理という操作が、新奇なものを食べるという恐怖を緩和させるのに一役（注4)買っています。 （注l) コアラ： 動物の一種 （注2) 対峙 する： ここでは、 向き合う （注3) 相～ ： 互いに～ （注4) 一役買う： ここでは、 役立つ\n\n52 筆者によると、 調理することでどうなるか。",
+      "target": null,
+      "options": [
+        "食材が限られていても、人間の欲求を満たすことができる。",
+        "新しい食材への好奇心は薄れるが、 恐怖は解消できる。",
+        "慣れ親しんでいないものへの好奇心を高めることができる。",
+        "食べたことのないものへの抵抗感を減らすことができる。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          448,
+          452
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN",
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "原文未谈有限食材满足欲望。",
+        "烹饪缓解恐惧，但未说好奇心减少。",
+        "重点不是增加好奇心。",
+        "熟悉形态和调味能降低对新食物的抗拒，正确。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第52题 · 中文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            448,
+            452
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 12
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-53",
+      "year": 2022,
+      "month": 12,
+      "number": 53,
+      "section": "読解",
+      "type": "中文",
+      "question": "私は、自分の研究をおもしろいと思えるのと同じ程度に、他人の研究をおもしろいと思えるかどうか が、研究者に向いているか否かの判断の基準であると思っている。いくらいいデータを出す人であって も、他人のデータを自分の仕事と同じだけの熱量を持っておもしろがれなければ、研究者としてははっき り不向きであると思わざるを得ない。学者としては失格であろう。 これがもっとも端的にあらわれるのが、研究発表の際に見られる質問の量である。 (中略) 発表された内容を、当事者として自分ならこういうアイデアで実験をし、結果をこう解釈することもでき る、明確な結論を得るためにはこの部分に不備があり、次にはこんな実験を計画すれば、もっとはっきりし た結論に到達することができるのではないか、などなど、考え始めれば、おのずから尋ねたいことは次か ら次へ出てくるはずなのである。 私はこれを「能動的に聞く」と言っている。人の話は、能動的に聞いてこそ、自らの身につくものである。 話された内容をただひたすら覚えようとしたり、吸収しようとしているだけでは、却ってその知識は自分の ものとならない。 「能動的に聞く」とは、話された内容を、自らのこれまでの知の体系のなかに位置づけることであり、 位置づけるためには、聞きつつ常に自分の知の体系を確認し、照合する作業を伴うはずである。外部か らインプットされてくる内容と、既存の自らの知識の箱とのあいだに軌較が生じるのは当然であり、その 皿較こそが質問を促すカになる得なのだ。\n\n53 筆者によると、 研究者として不向きな人とはどのような人か。",
+      "target": null,
+      "options": [
+        "他人の研究に、自分の研究ほどの関心を持てない人。",
+        "他人よりいいデータを出すことができない人。",
+        "自分の研究も他人の研究もおもしろがれない人、。",
+        "自分の研究に、他人の研究成果を生かせない人。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          480,
+          484
+        ]
+      },
+      "flags": [
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "对他人研究不如对自己有兴趣者不适合，正确。",
+        "能否产出优于他人的数据不是标准。",
+        "范围过窄；原文强调对他人研究的兴趣差。",
+        "原文未以能否利用成果作判断标准。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第53题 · 中文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            480,
+            484
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 13
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-54",
+      "year": 2022,
+      "month": 12,
+      "number": 54,
+      "section": "読解",
+      "type": "中文",
+      "question": "私は、自分の研究をおもしろいと思えるのと同じ程度に、他人の研究をおもしろいと思えるかどうか が、研究者に向いているか否かの判断の基準であると思っている。いくらいいデータを出す人であって も、他人のデータを自分の仕事と同じだけの熱量を持っておもしろがれなければ、研究者としてははっき り不向きであると思わざるを得ない。学者としては失格であろう。 これがもっとも端的にあらわれるのが、研究発表の際に見られる質問の量である。 (中略) 発表された内容を、当事者として自分ならこういうアイデアで実験をし、結果をこう解釈することもでき る、明確な結論を得るためにはこの部分に不備があり、次にはこんな実験を計画すれば、もっとはっきりし た結論に到達することができるのではないか、などなど、考え始めれば、おのずから尋ねたいことは次か ら次へ出てくるはずなのである。 私はこれを「能動的に聞く」と言っている。人の話は、能動的に聞いてこそ、自らの身につくものである。 話された内容をただひたすら覚えようとしたり、吸収しようとしているだけでは、却ってその知識は自分の ものとならない。 「能動的に聞く」とは、話された内容を、自らのこれまでの知の体系のなかに位置づけることであり、 位置づけるためには、聞きつつ常に自分の知の体系を確認し、照合する作業を伴うはずである。外部か らインプットされてくる内容と、既存の自らの知識の箱とのあいだに軌較が生じるのは当然であり、その 皿較こそが質問を促すカになる得なのだ。\n\n54 筆者によると、どのようにすれば質問の量が増えるか",
+      "target": null,
+      "options": [
+        "既存の知識に聞いた内容を加えて、知の体系を豊かにする。",
+        "聞いた内容と自分の知の体系を照合し、違いを意識する。",
+        "新しい知の体系のなかに、既存の自分の知識を組み込む。",
+        "自分の既存の知識に、常に疑開を持つ。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          485,
+          489
+        ]
+      },
+      "flags": [
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "仅把内容加入知识体系，未体现比对冲突。",
+        "与既有知识比对并发现冲突会产生问题，正确。",
+        "方向颠倒，原文是定位新输入。",
+        "不是一味怀疑旧知识，而是确认比较。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第54题 · 中文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            485,
+            489
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 13
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-55",
+      "year": 2022,
+      "month": 12,
+      "number": 55,
+      "section": "読解",
+      "type": "中文",
+      "question": "（4） 企業Aと企業Bがあり、ある契約をそのどちらと取り交わすべきか考えるときに、A社は資本金1000万円、B社は資本金1億円であるという情報は、おそらく重要な情報の一つであると想定されるが、すべてではない。従業員数、年商（注）、営業継続年数、支社数・支店数、などなどのうちから、意思決定者が、意思決定の方針に基づいて重要な情報を取捨選択しなければならないだろう。そのとき、ことさらにいくつかの情報に力点を置く報告書があげられたときに、意思決定者（経営者）はそこに存在する「意図」を充分に嗅ぎ取らなくてはならない。つまり、汚染されている可能性があるということである。ここで、報告された情報がすべて確実な事実であったとしても汚染は生じている可能性があるという点に注意が必要である。 したがって、情報汚染とは、ある情報に、本来想定しているもの以外の何かが付随していて、それによってその情報の理解が歪むことをいう。その何かとは、その 情報をもたらした側の意図である。この世界に「データのみで構成されていて、そ こに意図の混入が認められない」という意味での無色透明な情報など存在しない。どのような情報であっても、意図という色で染められている。そして、重要なのはそれが必ずしも汚染ではないという点である。意図が混入するのは当然のことであり、すべての情報には意図が混入しているのであるから、それだけでもってそれを汚染とまでは呼べない。それが汚染となるのは、その情報に含まれる「意図」によって、その情報の本質部分である「データ」の理解が歪められるからである。 （注）年商： 一年間の売り上げ額\n\n55「意図」を充分に嗅ぎ取らなくてはならないとあるが、なぜか。",
+      "target": null,
+      "options": [
+        "事実ではない情報が意図的に混入されているかもしれないから。",
+        "意思決定者に有利な情報が取り除かれているかもしれないから。",
+        "情報には意図が含まれていて、理解が歪められるかもしれないから。",
+        "情報をもたらす側の意図が、歪められて理解されるかもしれないから。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          513,
+          520
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN",
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "问题不在故意掺入虚假，真实信息也可能污染。",
+        "原文未限定删去有利信息。",
+        "携带者意图可能扭曲理解，正确。",
+        "重点是意图扭曲数据，不是意图被误解。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第55题 · 中文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            513,
+            520
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 13
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-56",
+      "year": 2022,
+      "month": 12,
+      "number": 56,
+      "section": "読解",
+      "type": "中文",
+      "question": "（4） 企業Aと企業Bがあり、ある契約をそのどちらと取り交わすべきか考えるときに、A社は資本金1000万円、B社は資本金1億円であるという情報は、おそらく重要な情報の一つであると想定されるが、すべてではない。従業員数、年商（注）、営業継続年数、支社数・支店数、などなどのうちから、意思決定者が、意思決定の方針に基づいて重要な情報を取捨選択しなければならないだろう。そのとき、ことさらにいくつかの情報に力点を置く報告書があげられたときに、意思決定者（経営者）はそこに存在する「意図」を充分に嗅ぎ取らなくてはならない。つまり、汚染されている可能性があるということである。ここで、報告された情報がすべて確実な事実であったとしても汚染は生じている可能性があるという点に注意が必要である。 したがって、情報汚染とは、ある情報に、本来想定しているもの以外の何かが付随していて、それによってその情報の理解が歪むことをいう。その何かとは、その 情報をもたらした側の意図である。この世界に「データのみで構成されていて、そ こに意図の混入が認められない」という意味での無色透明な情報など存在しない。どのような情報であっても、意図という色で染められている。そして、重要なのはそれが必ずしも汚染ではないという点である。意図が混入するのは当然のことであり、すべての情報には意図が混入しているのであるから、それだけでもってそれを汚染とまでは呼べない。それが汚染となるのは、その情報に含まれる「意図」によって、その情報の本質部分である「データ」の理解が歪められるからである。 （注）年商： 一年間の売り上げ額\n\n56 情報の汚染について、筆者はどのように述べているか。",
+      "target": null,
+      "options": [
+        "情報が汚染されているかどうかを見抜くことは難しい。",
+        "情報が汚染されていても、受け取る側の理解に影響はない。",
+        "情報に意図が含まれていても、汚染されているとは限らない。",
+        "すべての情報には意図が含まれているので、汚染されているといえる。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          522,
+          530
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN",
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "原文未把“难以看穿”作为结论。",
+        "污染正是影响、扭曲理解。",
+        "含有意图不必然构成污染，正确。",
+        "只有意图扭曲理解时才算污染。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第56题 · 中文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            522,
+            530
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 13
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-57",
+      "year": 2022,
+      "month": 12,
+      "number": 57,
+      "section": "読解",
+      "type": "長文",
+      "question": "世界的に森林や自然の維持、復元に対する関心が高まってきたとき、この気運 (注 1)を支えた初期 の理論は、人間中心主義的な森林*・自然維持論、つまり人間の生存や未来にとって森林や自然の維持 は不可欠であるという理論であった。いわばそれは、人間のための森林・自然維持論であった。ところが、 この考え方は、たちまち暗礁に乗り上げる (注 2)。 第一に、人間のための森林・自然維持論であるかぎり、人間のための森林・自然の開発論を否定でき なくなる。なぜなら、どちらも「 人間のための」という共通の基盤の上にたっている以上、その違いは価値 観の違いにすぎず、人間の価値観を統一することなごできないばかりでなく、すべきでもないからであ る。 第二に、「人間のための」といっても、その内容はさまざまである。農山村に暮らす人びとと都市の市民 とでは、その感じ方は同じではないし。たとえば同じ山村に暮らす者でも、林業経営をしている者とそうで ない者とでは、考え方が異なってくる。人と森の関係は多様である以上、どうすることが人間のための森 林・自然の維持なのかと問われれば、その答えはさまざまである。 第三に、「人間のための』という発想にたつかぎり、「人間のためにならない」自 然は破壊してもよいと いうことになりかねない。 こうした問題点があったために、「 人間のための」論は、つまり人間中心的な森林・自然維持論は、た ちまち破綻してしまった。自然保護思想の流れをみるなら、それに代わって生まれた理論は、自然中心主 義的な考え方であった。それは、人間 のためになろうとも、ならなかったとしても、自然はそれ自身のうち に生存権をも っており、その生存権は保障されなければならないというものであった。 ところが、この考え方にも問題点があった。なぜならこの理論では、原生林や原生的な自然を維持する 理論としては有効でも、たとえば日本のような、長い歴史のなかで自然と人間とが相互に影響を与えな がら、それぞれが暮らしてきた地域の森林・自然の問題をよく説明できないからである。 ー例をあげれば、かつて上農山村の人びとは、自分たちの暮らしを守るために、人家の近くに里山天然 林をつくりだした。それは、徹底的に人間の手を加えた天然林である。 (中略) 森林ボランティアとは、自発的に株の中で仕事をする人びとである。そうである以上、私たちは、人間 中心主義的な立場にたっことも、自然中心的な立場にたつこ ともできない。 とすれば、 どうすればよいのだろうか。この間いに対して、私たちは、森林・自然と人間の関係を持続的 に維持していくことこそが重要だと考える。単純に人間の未来を守ることでも、森を守ることでもない。森 林と人間の関係を維持することによって、森と人とが相互的な依存関係をもっている日本の森と人の営 みを守っていくことである。 (注 1) 気運: ここでは、意識の高まり (注 2) 暗礁に乗り上げる: ここでは、進められなくなる\n\n57 「人間のための論」の問題点として、 筆者の考えに合うのはどれか。",
+      "target": null,
+      "options": [
+        "人間のための森林・自然の維持に、結びついていないこと。",
+        "人間がいなければ、森林・自然は維持できないと考えていること。",
+        "農山村に暮らす人間の考え方が優先されすぎていること。",
+        "森林・自然の維持に対する考え方は、立場によって異なること。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          580,
+          584
+        ]
+      },
+      "flags": [
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "人本理论恰恰以为人维护自然为基础。",
+        "原文未说无人在就不能维护。",
+        "未说农村观点被过度优先。",
+        "不同立场对“为了人类”的理解不同，正确。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第57题 · 長文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            580,
+            584
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 14
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-58",
+      "year": 2022,
+      "month": 12,
+      "number": 58,
+      "section": "読解",
+      "type": "長文",
+      "question": "世界的に森林や自然の維持、復元に対する関心が高まってきたとき、この気運 (注 1)を支えた初期 の理論は、人間中心主義的な森林*・自然維持論、つまり人間の生存や未来にとって森林や自然の維持 は不可欠であるという理論であった。いわばそれは、人間のための森林・自然維持論であった。ところが、 この考え方は、たちまち暗礁に乗り上げる (注 2)。 第一に、人間のための森林・自然維持論であるかぎり、人間のための森林・自然の開発論を否定でき なくなる。なぜなら、どちらも「 人間のための」という共通の基盤の上にたっている以上、その違いは価値 観の違いにすぎず、人間の価値観を統一することなごできないばかりでなく、すべきでもないからであ る。 第二に、「人間のための」といっても、その内容はさまざまである。農山村に暮らす人びとと都市の市民 とでは、その感じ方は同じではないし。たとえば同じ山村に暮らす者でも、林業経営をしている者とそうで ない者とでは、考え方が異なってくる。人と森の関係は多様である以上、どうすることが人間のための森 林・自然の維持なのかと問われれば、その答えはさまざまである。 第三に、「人間のための』という発想にたつかぎり、「人間のためにならない」自 然は破壊してもよいと いうことになりかねない。 こうした問題点があったために、「 人間のための」論は、つまり人間中心的な森林・自然維持論は、た ちまち破綻してしまった。自然保護思想の流れをみるなら、それに代わって生まれた理論は、自然中心主 義的な考え方であった。それは、人間 のためになろうとも、ならなかったとしても、自然はそれ自身のうち に生存権をも っており、その生存権は保障されなければならないというものであった。 ところが、この考え方にも問題点があった。なぜならこの理論では、原生林や原生的な自然を維持する 理論としては有効でも、たとえば日本のような、長い歴史のなかで自然と人間とが相互に影響を与えな がら、それぞれが暮らしてきた地域の森林・自然の問題をよく説明できないからである。 ー例をあげれば、かつて上農山村の人びとは、自分たちの暮らしを守るために、人家の近くに里山天然 林をつくりだした。それは、徹底的に人間の手を加えた天然林である。 (中略) 森林ボランティアとは、自発的に株の中で仕事をする人びとである。そうである以上、私たちは、人間 中心主義的な立場にたっことも、自然中心的な立場にたつこ ともできない。 とすれば、 どうすればよいのだろうか。この間いに対して、私たちは、森林・自然と人間の関係を持続的 に維持していくことこそが重要だと考える。単純に人間の未来を守ることでも、森を守ることでもない。森 林と人間の関係を維持することによって、森と人とが相互的な依存関係をもっている日本の森と人の営 みを守っていくことである。 (注 1) 気運: ここでは、意識の高まり (注 2) 暗礁に乗り上げる: ここでは、進められなくなる\n\n58 筆者によると、日本に関して、自然中心主義的な考え方が問題なのはなぜか。",
+      "target": null,
+      "options": [
+        "人間の介入によって、維持されてきた森林・自然もあるから。",
+        "人間が手を加えずに、原生林や原生的な自然を維持するのは難しいから。",
+        "自然の維持よりも入間の暮らしを守ることが優先されているから。",
+        "自然の生存権を保障することについて、人間の理解が得られないから。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          585,
+          589
+        ]
+      },
+      "flags": [
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "日本存在长期经人类干预形成的自然，纯自然中心论难说明，正确。",
+        "原文不是说原始自然必须人工维持。",
+        "作者不主张人类生活优先。",
+        "问题不在理解不足。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第58题 · 長文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            585,
+            589
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 14
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-59",
+      "year": 2022,
+      "month": 12,
+      "number": 59,
+      "section": "読解",
+      "type": "長文",
+      "question": "世界的に森林や自然の維持、復元に対する関心が高まってきたとき、この気運 (注 1)を支えた初期 の理論は、人間中心主義的な森林*・自然維持論、つまり人間の生存や未来にとって森林や自然の維持 は不可欠であるという理論であった。いわばそれは、人間のための森林・自然維持論であった。ところが、 この考え方は、たちまち暗礁に乗り上げる (注 2)。 第一に、人間のための森林・自然維持論であるかぎり、人間のための森林・自然の開発論を否定でき なくなる。なぜなら、どちらも「 人間のための」という共通の基盤の上にたっている以上、その違いは価値 観の違いにすぎず、人間の価値観を統一することなごできないばかりでなく、すべきでもないからであ る。 第二に、「人間のための」といっても、その内容はさまざまである。農山村に暮らす人びとと都市の市民 とでは、その感じ方は同じではないし。たとえば同じ山村に暮らす者でも、林業経営をしている者とそうで ない者とでは、考え方が異なってくる。人と森の関係は多様である以上、どうすることが人間のための森 林・自然の維持なのかと問われれば、その答えはさまざまである。 第三に、「人間のための』という発想にたつかぎり、「人間のためにならない」自 然は破壊してもよいと いうことになりかねない。 こうした問題点があったために、「 人間のための」論は、つまり人間中心的な森林・自然維持論は、た ちまち破綻してしまった。自然保護思想の流れをみるなら、それに代わって生まれた理論は、自然中心主 義的な考え方であった。それは、人間 のためになろうとも、ならなかったとしても、自然はそれ自身のうち に生存権をも っており、その生存権は保障されなければならないというものであった。 ところが、この考え方にも問題点があった。なぜならこの理論では、原生林や原生的な自然を維持する 理論としては有効でも、たとえば日本のような、長い歴史のなかで自然と人間とが相互に影響を与えな がら、それぞれが暮らしてきた地域の森林・自然の問題をよく説明できないからである。 ー例をあげれば、かつて上農山村の人びとは、自分たちの暮らしを守るために、人家の近くに里山天然 林をつくりだした。それは、徹底的に人間の手を加えた天然林である。 (中略) 森林ボランティアとは、自発的に株の中で仕事をする人びとである。そうである以上、私たちは、人間 中心主義的な立場にたっことも、自然中心的な立場にたつこ ともできない。 とすれば、 どうすればよいのだろうか。この間いに対して、私たちは、森林・自然と人間の関係を持続的 に維持していくことこそが重要だと考える。単純に人間の未来を守ることでも、森を守ることでもない。森 林と人間の関係を維持することによって、森と人とが相互的な依存関係をもっている日本の森と人の営 みを守っていくことである。 (注 1) 気運: ここでは、意識の高まり (注 2) 暗礁に乗り上げる: ここでは、進められなくなる\n\n59 筆者によると、森朴ボランティアの役割とは何か。",
+      "target": null,
+      "options": [
+        "人間を中心として、森林・自然との関係を維持していくこと。",
+        "人間の営みを制限して、森林・自 然との新たな関係を見付け出すこと。",
+        "森林:自然と人間が共存できる関係を維持していくこと。",
+        "森林・自然が持続できるように、できるだけ自然に任せること。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          590,
+          594
+        ]
+      },
+      "flags": [
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "作者不采取单纯人本立场。",
+        "不是限制活动、建立全新关系。",
+        "维持森林自然与人类可持续共存关系，正确。",
+        "放任自然忽略了人类长期互动。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第59题 · 長文",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            590,
+            594
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 14
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-60",
+      "year": 2022,
+      "month": 12,
+      "number": 60,
+      "section": "読解",
+      "type": "統合理解",
+      "question": "勉強やスポーツなど何かに取り組んでいる時にスランプはつきもの (注) だ。いつもどおりしてい るのに、全く成果が上がらない。そんな時間が続くと、自分には能力が足りないのではないか、これ 以上は上達しないのではないかと自信を失ってしまう。 しかし、スランプとは一時的に調子が悪くなっている状態にすぎない。誰にでも 調子の良い時と 悪い時があり、それは波のようにやってくる。悪い時にはそれを乗り越をようともがくのではなく、波 に身を任せるようにするといい。現状をすなおに受け止め、これまでと同じことをやり続けるのだ。そ うして自然に波を乗り越えれば、またやる気も自信も戻ってくる。そうすれば、自然に次にやるべきこ とも見えてくるものだ。 スランプの状態になると、調子が良かった過去と比べてしまいます。だから、その差にショックを受 けてしまって、自信を無くしてしまうわけですね。調子の波があることは普通なので、良い時と比べ るのは止めましょよう。 それよりも、今に集中することの方が大切です。今の自分を受け入れて、「これからどうするべき か」ということを考えてください。こういう考え方ができれば、前伺きに物事を捉えることができるは ずです。 いつまでも過去に捉われている人は、後悔や焦りといった感情しか出てきませ ん。しかし、今を 見ている人だと、「どうすればいいか」という生産的な考え方ができるわけですね。 (注) つきもの: 当然あるもの\n\n60 スランプの時に落ち込んでしまう原因について、A と B はどのように玉べているか。",
+      "target": null,
+      "options": [
+        "AもBも成果が上がらない原因を考えすぎてしまうからだと玉べている。",
+        "AもBも、過去の状態と比較して、焦ってしまうからだと玉べている。",
+        "Aは何が悪いのかが分からないからだと六べ、B は調子が良い人と比較してしまうからだ と信べている。",
+        "Aは能力の限界だと思ってしまうからだと琉べ、B は良かった時と比較してしまうからだと玉べている。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          624,
+          629
+        ]
+      },
+      "flags": [
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "A提成果不出，B提与好状态比较，不能概括为两者都过度思考原因。",
+        "A未说因比较过去状态而焦虑。",
+        "A不是“不知道问题”，概括不准。",
+        "A说会怀疑能力极限，B说与好状态比较，正确。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第60题 · 統合理解",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            624,
+            629
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 15
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-61",
+      "year": 2022,
+      "month": 12,
+      "number": 61,
+      "section": "読解",
+      "type": "統合理解",
+      "question": "A 勉強やスポーツなど何かに取り組んでいる時にスランプはつきもの（注）だ。いつもどおりしているのに、全く成果が上がらない。そんな時間が続くと、自分には能力が足りないのではないか、これ以上は上達しないのではないかと自信を失ってしまう。 しかし、スランプとは一時的に調子が悪くなっている状態にすぎない。誰にでも 調子の良い時と悪い時があり、それは波のようにやってくる。悪い時にはそれを乗り越えようともがくのではなく、波に身を任せるようにするといい。現状をすなおに受け止め、これまでと同じことをやり続けるのだ。そうして自然に波を乗り越えれば、またやる気も自信も戻ってくる。そうすれば、自然に次にやるべきことも見えてくるものだ。 （注）つきもの： 当然あるもの B スランプの状態になると、調子が良かった過去と比べてしまいます。だから、その差にショックを受けてしまって、自信を無くしてしまうわけですね。調子の波があることは普通なので、良い時と比べるのは止めましょう。 それよりも、今に集中することの方が大切です。今の自分を受け入れて、「これからどうするべきか」ということを考えてください。こういう考え方ができれば、前伺きに物事を捉えることができるはずです。 いつまでも過去に捉われている人は、後悔や焦りといった感情しか出てきませ ん。しかし、今を見ている人だと、「どうすればいいか」という生産的な考え方ができるわけですね。\n\n61 A と B は、 スランプの時はどのようにするのがいいと述べているか。",
+      "target": null,
+      "options": [
+        "AもBも、現状を維持しながら、調子が良くなるのを待てばいいと述べている。",
+        "AもBも成果を上げるための方法を考えたほうがいいと述べている。",
+        "Aはやる気や 自信を取り戻すまで待ったほうがいいと述べ、Bは今の状態を受け入れて、自然に任せていればいいと述べている。",
+        "Aは特別なことは何もしなくてもいいと述べ、Bは 現状を認めて、今後どうす るべきかを考えたほうがいいと述べている。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          630,
+          636
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN",
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "A继续照常做，B还要思考今后，并非都只等待。",
+        "两者都不主张一味提高成果。",
+        "A不是停做等待；B也不是单纯顺其自然。",
+        "A无需特别挣扎，B接纳现状并想下一步，正确。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第61题 · 統合理解",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            630,
+            636
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 15
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-62",
+      "year": 2022,
+      "month": 12,
+      "number": 62,
+      "section": "読解",
+      "type": "主張理解",
+      "question": "だれでも、自分が自分であることを望み、個性的であろうと願っている。そしてその一方では、自分が 他のみんなと違った、自分であることを恐れている。 本当は、「 個性的」であろうと思って、個性的になれるものでもない。それはたいてい、「個性的」といわ れる一つの型に、自分をあてはめていることだったりする。人間にとっては、「個性的であれ」などと言わ れても、どうしてよいかわからないものであって、「個性的」とよばれる型を持ったほうが楽なのだ。しかし それは、本当に個性的なわけではない。 それでも、青年期に向けて、個性的であろうと試みることは、よいことだ。かりにそれが、一つの型にすぎ なくても、あるいは、個性的であろうとして挫折しり、個「生的であることから玩避することも含めて、自分 にとって個性とはと、考えるのはよいことだ。それは、自分が自分であることの、あかしでもある。 そこでは、ときに悩むことがあったり、どうしたら個性的な人間になれるかと、模索することもあるかもし れない。それはじつは、「 個性的」であること以上に、自分というものを意識していく、一つの過程である。 そうした意味では、「 個性的」であるかどうかなんて、本当はたいしたことではなくて、自分というものが確 立していくことが、大事なこととも言える。 そしてじつは、個性というものは、人間のひとりひとりに備わったもので、その個性がありのままに出て いることが、本当の意味で個性的である。むしろ、本当の自分が出せないから、没個性的にもなるのだ。 もちろん、人間はまわりの社会を気にするものであって、自分をよそおうことも含めてしか、社会のなか で存在できない。無理につっぱって、自分のよそおいを捨てようとしても、捨てきれるものではない。そうし た、社会とのかかわりも含めて、自分というものはある。 たいていの場合、つっぱったり、いじけたりしていては、自分の個性は発揮できない。つっぱるまいとする のが一種のつっぱりだったり、いじけまいとしてそのことにいじけたり、なんてことまで問題にしだすと、ちょ っと言葉の遊びみたいになるが、ま、そうしたことまで含めて、気楽に自分であるようにしなくては、本当の 意味で個性的にはなれないものだ。 そして、ありのままの自分を出すことへの不安が、「 個性的」を一つの型にしたり、あるいはそうした型 から逃れる道へ向かわせたりもする。 それでも結局、自分とはありのままの自分しかない。それを自覚したとき、きみは個性的なきみになる。\n\n62 よいことだとあるが、なぜか。",
+      "target": null,
+      "options": [
+        "個性的である必要はないと気づくから。",
+        "挫折したり悩んだりする経験が個性を作るから。",
+        "自分という人間を意識することになるから。",
+        "自分にあてはまる個性の型を見付けられるから。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          680,
+          684
+        ]
+      },
+      "flags": [
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "原文并非说会意识到“不必有个性”，而是借此确认自己。",
+        "不是挫折本身创造个性。",
+        "在摸索中意识到自己是谁，最贴合。",
+        "作者不主张找到某种固定类型。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第62题 · 主張理解",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            680,
+            684
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 16
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-63",
+      "year": 2022,
+      "month": 12,
+      "number": 63,
+      "section": "読解",
+      "type": "主張理解",
+      "question": "だれでも、自分が自分であることを望み、個性的であろうと願っている。そしてその一方では、自分が 他のみんなと違った、自分であることを恐れている。 本当は、「 個性的」であろうと思って、個性的になれるものでもない。それはたいてい、「個性的」といわ れる一つの型に、自分をあてはめていることだったりする。人間にとっては、「個性的であれ」などと言わ れても、どうしてよいかわからないものであって、「個性的」とよばれる型を持ったほうが楽なのだ。しかし それは、本当に個性的なわけではない。 それでも、青年期に向けて、個性的であろうと試みることは、よいことだ。かりにそれが、一つの型にすぎ なくても、あるいは、個性的であろうとして挫折しり、個「生的であることから玩避することも含めて、自分 にとって個性とはと、考えるのはよいことだ。それは、自分が自分であることの、あかしでもある。 そこでは、ときに悩むことがあったり、どうしたら個性的な人間になれるかと、模索することもあるかもし れない。それはじつは、「 個性的」であること以上に、自分というものを意識していく、一つの過程である。 そうした意味では、「 個性的」であるかどうかなんて、本当はたいしたことではなくて、自分というものが確 立していくことが、大事なこととも言える。 そしてじつは、個性というものは、人間のひとりひとりに備わったもので、その個性がありのままに出て いることが、本当の意味で個性的である。むしろ、本当の自分が出せないから、没個性的にもなるのだ。 もちろん、人間はまわりの社会を気にするものであって、自分をよそおうことも含めてしか、社会のなか で存在できない。無理につっぱって、自分のよそおいを捨てようとしても、捨てきれるものではない。そうし た、社会とのかかわりも含めて、自分というものはある。 たいていの場合、つっぱったり、いじけたりしていては、自分の個性は発揮できない。つっぱるまいとする のが一種のつっぱりだったり、いじけまいとしてそのことにいじけたり、なんてことまで問題にしだすと、ちょ っと言葉の遊びみたいになるが、ま、そうしたことまで含めて、気楽に自分であるようにしなくては、本当の 意味で個性的にはなれないものだ。 そして、ありのままの自分を出すことへの不安が、「 個性的」を一つの型にしたり、あるいはそうした型 から逃れる道へ向かわせたりもする。 それでも結局、自分とはありのままの自分しかない。それを自覚したとき、きみは個性的なきみになる。\n\n63 個性について、筆者はどのように考えているか。",
+      "target": null,
+      "options": [
+        "自分から社会とかかわることで、意識できるものだ。",
+        "他人と比較しなければ、自然に発揮できるものだ。",
+        "なりたい自分を意識すれば、自 然に身につくものだ。",
+        "求めて得るものではなく、初めから持っているものだ。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          685,
+          689
+        ]
+      },
+      "flags": [
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "个性不是主要通过社会参与才产生。",
+        "不与他人比较并非充分条件。",
+        "不是意识到想成为谁后获得。",
+        "个性与生俱来，无需向外寻求，正确。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第63题 · 主張理解",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            685,
+            689
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 16
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-64",
+      "year": 2022,
+      "month": 12,
+      "number": 64,
+      "section": "読解",
+      "type": "主張理解",
+      "question": "だれでも、自分が自分であることを望み、個性的であろうと願っている。そしてその一方では、自分が 他のみんなと違った、自分であることを恐れている。 本当は、「 個性的」であろうと思って、個性的になれるものでもない。それはたいてい、「個性的」といわ れる一つの型に、自分をあてはめていることだったりする。人間にとっては、「個性的であれ」などと言わ れても、どうしてよいかわからないものであって、「個性的」とよばれる型を持ったほうが楽なのだ。しかし それは、本当に個性的なわけではない。 それでも、青年期に向けて、個性的であろうと試みることは、よいことだ。かりにそれが、一つの型にすぎ なくても、あるいは、個性的であろうとして挫折しり、個「生的であることから玩避することも含めて、自分 にとって個性とはと、考えるのはよいことだ。それは、自分が自分であることの、あかしでもある。 そこでは、ときに悩むことがあったり、どうしたら個性的な人間になれるかと、模索することもあるかもし れない。それはじつは、「 個性的」であること以上に、自分というものを意識していく、一つの過程である。 そうした意味では、「 個性的」であるかどうかなんて、本当はたいしたことではなくて、自分というものが確 立していくことが、大事なこととも言える。 そしてじつは、個性というものは、人間のひとりひとりに備わったもので、その個性がありのままに出て いることが、本当の意味で個性的である。むしろ、本当の自分が出せないから、没個性的にもなるのだ。 もちろん、人間はまわりの社会を気にするものであって、自分をよそおうことも含めてしか、社会のなか で存在できない。無理につっぱって、自分のよそおいを捨てようとしても、捨てきれるものではない。そうし た、社会とのかかわりも含めて、自分というものはある。 たいていの場合、つっぱったり、いじけたりしていては、自分の個性は発揮できない。つっぱるまいとする のが一種のつっぱりだったり、いじけまいとしてそのことにいじけたり、なんてことまで問題にしだすと、ちょ っと言葉の遊びみたいになるが、ま、そうしたことまで含めて、気楽に自分であるようにしなくては、本当の 意味で個性的にはなれないものだ。 そして、ありのままの自分を出すことへの不安が、「 個性的」を一つの型にしたり、あるいはそうした型 から逃れる道へ向かわせたりもする。 それでも結局、自分とはありのままの自分しかない。それを自覚したとき、きみは個性的なきみになる。\n\n64 筆者が最も言いたいことは何か。",
+      "target": null,
+      "options": [
+        "自分の個性を模索すべきだ。",
+        "自分自身でいることが大事だ。",
+        "ありのままの自分を出せなくてもいい。",
+        "型に縛られない生き方をしたほうがいい。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          690,
+          694
+        ]
+      },
+      "flags": [
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "作者反对刻意寻找模型化个性。",
+        "舒适地做原本的自己最重要，正确。",
+        "仍需认识和确认自己，不能说不用找出。",
+        "不受模型约束是局部，核心是如实做自己。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第64题 · 主張理解",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            690,
+            694
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 16
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-65",
+      "year": 2022,
+      "month": 12,
+      "number": 65,
+      "section": "読解",
+      "type": "情報検索",
+      "question": "星川大学 2022年度「グローバル研究活動助成」募集要項\n1. 応募資格：2022年度に星川大学の大学院に在学し、2021年度に本助成に採択されていない者。\n2. 対象となる研究活動：①渡航期間10日間以上で海外において調査を行う。②海外での研究会議・シンポジウム等で研究発表を行う（渡航期間は問わない）。\n3. 実施期間：2022年8月1日から2023年3月31日まで。\n4. 助成金額等：一人20万円を上限とし、応募は一人1件のみ。\n5. 選考：書類による選考。\n6. 募集期間：2022年5月10日～6月10日。結果通知：2022年7月中旬。\n7. 応募手続き：A申請書、B指導教員作成の推薦書、C発表申し込みの写し（研究発表の場合のみ）を学生本人が研究推進課窓口へまとめて提出する。AとBは窓口配布またはウェブサイトからダウンロードできる。研究発表が未確定でも、募集期間内にAとBを提出すれば応募できる。\n\n応募者：\n西田さん：海外のシンポジウムで講演を聞く／3日間／採択歴なし。\nダリアさん：海外で資料収集・調査／3日間／採択歴なし。\nラワンさん：海外で研究発表／5日間／2020年度に採択歴あり。\n山本さん：海外で調査／12日間／2021年度に採択歴あり。\n\n65 「グローバル研究活動助成」に応募できるのは誰か。",
+      "target": null,
+      "options": [
+        "西田さん。",
+        "ダリアさん。",
+        "ラワンさん。",
+        "山本さん。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          701,
+          718
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN",
+        "TABLE_LAYOUT_UNCERTAIN",
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "只听讲座且3天，不满足研究至少10天或发表。",
+        "海外研究仅3天，不满足最低10天。",
+        "海外发表不受天数限制，且2021年度未获助成，符合。",
+        "虽12天，但2021年度获助成，不具资格。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第65题 · 情報検索",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            701,
+            718
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 17
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "TABLE_LAYOUT_UNCERTAIN",
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER",
+          "INFORMATION_TABLE_RECONSTRUCTED_FROM_THIRD_SOURCE"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-66",
+      "year": 2022,
+      "month": 12,
+      "number": 66,
+      "section": "読解",
+      "type": "情報検索",
+      "question": "星川大学 2022年度「グローバル研究活動助成」募集要項\n1. 応募資格：2022年度に星川大学の大学院に在学し、2021年度に本助成に採択されていない者。\n2. 対象となる研究活動：①渡航期間10日間以上で海外において調査を行う。②海外での研究会議・シンポジウム等で研究発表を行う（渡航期間は問わない）。\n3. 実施期間：2022年8月1日から2023年3月31日まで。\n4. 助成金額等：一人20万円を上限とし、応募は一人1件のみ。\n5. 選考：書類による選考。\n6. 募集期間：2022年5月10日～6月10日。結果通知：2022年7月中旬。\n7. 応募手続き：A申請書、B指導教員作成の推薦書、C発表申し込みの写し（研究発表の場合のみ）を学生本人が研究推進課窓口へまとめて提出する。AとBは窓口配布またはウェブサイトからダウンロードできる。研究発表が未確定でも、募集期間内にAとBを提出すれば応募できる。\n\n66 応募に関して、留意しなければならないことは何か。",
+      "target": null,
+      "options": [
+        "指導教員から研究推進課窓口に提出してもらわなければならない書類がある。",
+        "研究活動が発表か調査かによって、提出しなければならない書類の種類が異なる。",
+        "記入用紙は、5月10日までに研究推進課窓口に取りに行かなければならない。",
+        "研究発表の場合、発表を行うことが確定していないと応募ができない。"
+      ],
+      "source": {
+        "file": "2022.12_N1 T12-2022[MARK].txt",
+        "lines": [
+          719,
+          723
+        ]
+      },
+      "flags": [
+        "OCR_OR_LAYOUT_UNCERTAIN",
+        "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "推荐信由导师写、学生提交，不是导师提交。",
+        "发表活动额外提交发表申请复印件，文件类型不同，正确。",
+        "表格4月26日起可领，并非必须5月10日前。",
+        "发表尚未确定也可先申请。"
+      ],
+      "phase": "language",
+      "category": "reading",
+      "label": "第66题 · 情報検索",
+      "evidence": {
+        "question": {
+          "file": "2022.12_N1 T12-2022[MARK].txt",
+          "lines": [
+            719,
+            723
+          ]
+        },
+        "answer": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 1
+        },
+        "explanation": {
+          "pdf": "2022.12_2022年12月N1真题及解析.txt",
+          "page": 17
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "cross_verified_reconstruction",
+        "flags": [
+          "OCR_OR_LAYOUT_UNCERTAIN",
+          "TARGET_NOT_EXPLICIT_IN_RECONSTRUCTION",
+          "SECOND_ANSWER_TABLE_OCR_UNCERTAIN",
+          "SOURCE_MISSING_PER_OPTION_EXPLANATIONS",
+          "OPTION_ANALYSIS_DERIVED_FROM_SOURCE_TEXT",
+          "SOURCE_MISSING_PER_QUESTION_STATED_ANSWER",
+          "OCR_TYPO_AND_PASSAGE_RESOLVED_BY_THIRD_SOURCE"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2022-12-L1-01",
+      "year": 2022,
+      "month": 12,
+      "number": 1,
+      "section": "聴解",
+      "problem": 1,
+      "item": 1,
+      "displayNumber": "P1-1",
+      "type": "聴解・問題1 · 課題理解",
+      "interaction": "listening",
+      "prompt": "男の学生はこの後、まず何をしなければなりませんか？",
+      "question": "男の学生はこの後、まず何をしなければなりませんか？",
+      "options": [
+        "応募書類の用紙を取りに行く",
+        "指導教員の許可を得る",
+        "説明会に参加する",
+        "経験者に話を聞く"
+      ],
+      "answer": 1,
+      "transcript": "１番 正解：2\n男の学生が大学の学習支援センターに電話をしています。男の学生はこの後、まず何をしなければなりません\nか？\n学生：もしもし、学習支援センターですか？そちらで学生アシスタントを募集していると聞いたんですが。詳しく\n教えていただけますか？\nホクメイジョジョのていきょうでおおくりします。\n女性：はい。今回は学部生のレポート作成の支援をしてくれる大学院生を募集しています。大学院生ですか？\n学生：はい。修士一年です。\n女性：そうですか。募集人数が限られていて、書類と面接で専攻します。\n学生：はい。\n女性：応募には指導教員の先生の許可が必要です。応募することを伝えて承諾も得て来てください。\n学生：はい。\n女性：その上で一度センターまで来てください。応募書類の用紙をお渡しします。\n学生：分かりました。あの、説明会があるって聞いたんですが、いつですか？\n女性：あ～。採用が決まった後に行います。事務手続きの説明もありますので。何か応募前に質問があれば、\nまたこちらに連絡してください。あっ、時々今活動中のアシスタントに話を聞きに来る人がいるんですが、仕事\nの邪魔になるのでそれはお断りしています。\n学生：分かりました。\n質問：男の学生はこの後、まず何をしなければなりませんか？",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「応募書類の用紙を取りに行く」，而是「指導教員の許可を得る」。",
+        "正确：原文的结论对应「指導教員の許可を得る」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「説明会に参加する」，而是「指導教員の許可を得る」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「経験者に話を聞く」，而是「指導教員の許可を得る」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題1",
+          "item": 1
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题1",
+          "item": 1
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題1-1"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题1 · 1番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L1-02",
+      "year": 2022,
+      "month": 12,
+      "number": 2,
+      "section": "聴解",
+      "problem": 1,
+      "item": 2,
+      "displayNumber": "P1-2",
+      "type": "聴解・問題1 · 課題理解",
+      "interaction": "listening",
+      "prompt": "女の人はこの後、昇格のために最初に何をしなければなりませんか？",
+      "question": "女の人はこの後、昇格のために最初に何をしなければなりませんか？",
+      "options": [
+        "部長と面談する",
+        "筆記試験を受ける",
+        "プレゼンテーションをする",
+        "研修を受ける"
+      ],
+      "answer": 3,
+      "transcript": "２番 正解：4\n会社で女の人と男の人が話しています。女の人はこの後、昇格のために最初に何をしなければなりません\nか？\n女の人：課長、お呼びでしょうか。\n男の人：あぁ～加藤さん。実は部長と話したんだけど、加藤さんに来月末の昇格試験を受けてもらおうというこ\nとになったよ。\n女の人：ありがとうございます。先週部長と面談があって、その際に上を目指して頑張っていきたいという気持\nちをお伝えしていたんです。\n男の人：そう？ええ～っと、昇格試験は一日目は筆記試験、二日目はプレゼンテーション、で、プレゼンは当日テ\nーマが与えられて、それについて十分くらい話すんだ。\n女の人：分かりました。\n男の人：それで、試験を受ける条件としてマネジメント研修を受けておく必要があるんだけど、それが今月の終\nわりにあるからね。詳細は後で知らせるよ。\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi\n\n女の人：はい。\n男の人：プレゼンが心配かもしれないけど、日ごろの仕事の範囲のことが出るわけだからね。\n女の人：はい、分かりました。頑張ります。\n問題：女の人はこの後、昇格のために最初に何をしなければなりませんか？",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「部長と面談する」，而是「研修を受ける」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「筆記試験を受ける」，而是「研修を受ける」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「プレゼンテーションをする」，而是「研修を受ける」。",
+        "正确：原文的结论对应「研修を受ける」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題1",
+          "item": 2
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题1",
+          "item": 2
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題1-2"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题1 · 2番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L1-03",
+      "year": 2022,
+      "month": 12,
+      "number": 3,
+      "section": "聴解",
+      "problem": 1,
+      "item": 3,
+      "displayNumber": "P1-3",
+      "type": "聴解・問題1 · 課題理解",
+      "interaction": "listening",
+      "prompt": "部員は何をしなければなりませんか？",
+      "question": "部員は何をしなければなりませんか？",
+      "options": [
+        "代わりの会場を探す",
+        "ポスターを張る場所を探す",
+        "ちらしを配る",
+        "招待券を配る"
+      ],
+      "answer": 2,
+      "transcript": "3 番 正解：3\n大学のオーケストラの長が部員に話しています。部員は何をしなければなりませんか？\n毎年恒例の定期演奏会の季節がやってきました。今年は例年使用していたホールが改装中のため、別の会\n場を探すことになりましたが、無事、青葉ホールを押さえることができました。協力してくれた皆さん、ありがとう\nございます。ポスターとチラシが来週、印刷会社から届く予定で、ポスターはすでに各所に貼っていただくよう\n交渉済みです。チラシの方は全員で手分けして配布したいと思います。それから皆さんには毎年１人6 枚無\n料の招待券を渡していましたが、ここ数年非常に好評でチケットが足りないくらいなので、今年は販売のみと\nしたいと思います。ホクメイジョジョのていきょうでおおくりします。\n問題：部員は何をしなければなりませんか？",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「代わりの会場を探す」，而是「ちらしを配る」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「ポスターを張る場所を探す」，而是「ちらしを配る」。",
+        "正确：原文的结论对应「ちらしを配る」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「招待券を配る」，而是「ちらしを配る」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題1",
+          "item": 3
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题1",
+          "item": 3
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題1-3"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题1 · 3番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L1-04",
+      "year": 2022,
+      "month": 12,
+      "number": 4,
+      "section": "聴解",
+      "problem": 1,
+      "item": 4,
+      "displayNumber": "P1-4",
+      "type": "聴解・問題1 · 課題理解",
+      "interaction": "listening",
+      "prompt": "男の店員は今日、何をしなければなりませんか？",
+      "question": "男の店員は今日、何をしなければなりませんか？",
+      "options": [
+        "新刊の紹介文を書き直す",
+        "新刊を並べる場所を変える",
+        "料理本の在庫を確認する",
+        "料理本を注文する"
+      ],
+      "answer": 1,
+      "transcript": "4 番 正解：2\n本屋で男の店員と女の店長が話しています。男の店員は今日、何をしなければなりませんか？\n男の店員：店長、おはようございます。\n女の店長：おはようございます。\n男の店員：あの～、この新刊なんですが、思ってたほど売れ行きが良くないですよね。売り場に置いた僕が書\nいた本の紹介文、イマイチでしょうか？\n女の店長：う～ん、十分興味を引いていると思いますけど、陳列の仕方かな。今、棚の真ん中の段に入ってたと\n思いますけど、お客さんの目線って下の方に行きやすいからちょっと工夫した方がいいかもしれませんね。\n男の店員：あぁ～そうですね。\n女の店長：さっそく今日お願いします。あっ、昨日テレビで取り上げられてた料理本ありますよね？買いにくるお\n客様や問い合わせが増えるだろうから、在庫がどれくらいあるか確認しといてください。\n男の店員：一応さっき確認したんですが、まだ十分あるので大丈夫だと思います。\n女の店長：そうですか。在庫が少なければ出版社に注文しといた方がいいと思ったんですけど。じゃあ、それは\n今日の様子を見てからまた考えましょう。\n男の店員：はい。\n問題：男の店員は今日何をしなければなりませんか？\n\n\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「新刊の紹介文を書き直す」，而是「新刊を並べる場所を変える」。",
+        "正确：原文的结论对应「新刊を並べる場所を変える」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「料理本の在庫を確認する」，而是「新刊を並べる場所を変える」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「料理本を注文する」，而是「新刊を並べる場所を変える」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題1",
+          "item": 4
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题1",
+          "item": 4
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題1-4"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题1 · 4番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L1-05",
+      "year": 2022,
+      "month": 12,
+      "number": 5,
+      "section": "聴解",
+      "problem": 1,
+      "item": 5,
+      "displayNumber": "P1-5",
+      "type": "聴解・問題1 · 課題理解",
+      "interaction": "listening",
+      "prompt": "女の職員はこれからまず何をしなければなりませんか？",
+      "question": "女の職員はこれからまず何をしなければなりませんか？",
+      "options": [
+        "卒業生に講演会についてのメールを送る",
+        "ホームページに講演会の情報を載せる",
+        "講演会の会場の予約を変更する",
+        "食事会の会場を予約する"
+      ],
+      "answer": 0,
+      "transcript": "5 番 正解：1\n大学で男の職員と女の職員が話しています。女の職員はこれからまず何をしなければなりませんか？\n男の職員：山中先生の退職記念の講演会だけど、今日の会議で予定通りの日に決まったよ。卒業生にお知ら\nせのメールを出してくれる？\n女の職員：あっ、はい。\n男の職員：講演のテーマとか詳細は未定だけど、皆さんお忙しいから日程を知らせておかないと。で、詳細が\n決まったら改めてお知らせして、それから大学のホームぺージにも情報を掲載してね。\n女の職員：分かりました。\n男の職員：それで、講演会の時間は午前か午後、二つ案があったけど、午後の方になったよ。\n女の職員：そうですか。講演会の会場は午前も午後も予約してましたが、午前はキャンセルですね。\n男の職員：あっ、それだけさっきやっといたよ。他に予約希望が出てるから決まり次第知らせてくれって言われ\nてたから。\n女の職員：そうなんですか。講演会の後、学内でお祝いの食事会を開くかもって話でしたが、どうなったでしょ\nうか。必要ならそちらも会場を予約しますが。\n男の職員：あぁ、学内ではやらないことになったから、僕たちの方では手配しなくて大丈夫だよ。ありがとう。\n女の職員：分かりました。\n問題：女の職員はこれからまず何をしなければなりませんか？",
+      "optionAnalysis": [
+        "正确：原文的结论对应「卒業生に講演会についてのメールを送る」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「ホームページに講演会の情報を載せる」，而是「卒業生に講演会についてのメールを送る」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「講演会の会場の予約を変更する」，而是「卒業生に講演会についてのメールを送る」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「食事会の会場を予約する」，而是「卒業生に講演会についてのメールを送る」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題1",
+          "item": 5
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题1",
+          "item": 5
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題1-5"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题1 · 5番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L2-01",
+      "year": 2022,
+      "month": 12,
+      "number": 6,
+      "section": "聴解",
+      "problem": 2,
+      "item": 1,
+      "displayNumber": "P2-1",
+      "type": "聴解・問題2 · ポイント理解",
+      "interaction": "listening",
+      "prompt": "男の学生が今使っている照明器具を選んだ理由はなんですか。",
+      "question": "男の学生が今使っている照明器具を選んだ理由はなんですか。",
+      "options": [
+        "光の強さが細かく調節できるから",
+        "携帯に便利だから",
+        "値段が安かったから",
+        "防水機能があるから"
+      ],
+      "answer": 1,
+      "transcript": "１番 正解：2\n大学で女の学生と男の学生が動画の撮影について話しています。男の学生が今使っている照明器具を選ん\nだ理由はなんですか。\n女：森くん、森くんはインターネットで配信してる食べ歩き動画を見たんだけど、夜でもすごく綺麗に撮れてる\nね。照明器具使ってる？\nホクメイジョジョのていきょうでおおくりします。\n男：うん。暗いところで撮影するなら照明は必需品だよ。\n女：そうだよね。私キャンプの動画の配信を始めたんだけど、夜だと上手く撮れなくて、森くんどんなの使ってる\nの？光の強さとか調節できる？\n男：あぁ、動画やる人にはそういうのがかなり細かく調節できるのが人気だよね。でも僕はそれより持ち運びや\nすさを基準にして決めたんだ。あちこち店を移動するからね。\n女：なるほどね。私もキャンプに持っていくからなぁ。\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi\n\n男：片手に収まるくらい小型なんだ。まあ、値段はそこそこしたけどね。キャンプで使うなら、防水機能があるの\nがいいんじゃない？\n女：ああ、防水機能か。ありがとう！\n質問：男の学生が今使っている照明器具を選んだ理由はなんですか。",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「光の強さが細かく調節できるから」，而是「携帯に便利だから」。",
+        "正确：原文的结论对应「携帯に便利だから」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「値段が安かったから」，而是「携帯に便利だから」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「防水機能があるから」，而是「携帯に便利だから」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題2",
+          "item": 1
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题2",
+          "item": 1
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題2-1"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题2 · 1番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L2-02",
+      "year": 2022,
+      "month": 12,
+      "number": 7,
+      "section": "聴解",
+      "problem": 2,
+      "item": 2,
+      "displayNumber": "P2-2",
+      "type": "聴解・問題2 · ポイント理解",
+      "interaction": "listening",
+      "prompt": "この部署では今年の展示会の準備で何を担当しますか。",
+      "question": "この部署では今年の展示会の準備で何を担当しますか。",
+      "options": [
+        "サンプル商品を会場に運ぶ",
+        "製品の使用例を展示用にまとめる",
+        "ウェブサイトに情報を載せる",
+        "パンフレットを作成する"
+      ],
+      "answer": 1,
+      "transcript": "２番 正解：2\nオフィス用品の会社の会議で課長が話しています。この部署では今年の展示会の準備で何を担当しますか。\n今年です。\n今年も新規模客の獲得のため、展示会に出展することになりました。部署ごとの仕事の割り振りが決まったの\nで、説明します。うちの部署は例年、展示用のポスターの作成とサンプル商品の会場への運搬を担当していま\nしたが、運搬の方は担当から外れました。え～、ポスターでは当社の製品を使用している企業の事例を紹介す\nるので、早速、事例の候補を検討してください。ウェブサイトで紹介しているのとは別の例がいいと思います。\n展示会で配るパンフレットは広報部が作成してくれることになっています。\n質問：この部署では今年の展示会の準備で何を担当しますか。",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「サンプル商品を会場に運ぶ」，而是「製品の使用例を展示用にまとめる」。",
+        "正确：原文的结论对应「製品の使用例を展示用にまとめる」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「ウェブサイトに情報を載せる」，而是「製品の使用例を展示用にまとめる」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「パンフレットを作成する」，而是「製品の使用例を展示用にまとめる」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題2",
+          "item": 2
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题2",
+          "item": 2
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題2-2"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题2 · 2番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L2-03",
+      "year": 2022,
+      "month": 12,
+      "number": 8,
+      "section": "聴解",
+      "problem": 2,
+      "item": 3,
+      "displayNumber": "P2-3",
+      "type": "聴解・問題2 · ポイント理解",
+      "interaction": "listening",
+      "prompt": "女の学生はインターネットで就職の面接を受ける時に、最も気をつけていることは何だと言っていますか？",
+      "question": "女の学生はインターネットで就職の面接を受ける時に、最も気をつけていることは何だと言っていますか？",
+      "options": [
+        "相手が聞き取りやすいようにはっきり話すこと",
+        "画面表示が明るくなるようにすること",
+        "カメラに目線を合わせて話すこと",
+        "音声が途切れても冷静に対処すること"
+      ],
+      "answer": 2,
+      "transcript": "３番 正解：３\n大学で男の学生と女の学生が話しています。女の学生はインターネットで就職の面接を受ける時に、最も気を\nつけていることは何だと言っていますか？\n男：山下さん、僕来週、初めてインターネットで就職の面接を受けるんだ。山下さん、何回か受けたって聞いた\nけど、どんなことに気をつけてる？\n女：そうだね。相手が聞き取りやすいようにゆっくりはっきり話すようにってよく言われてるよね。\n男：あぁ、それは僕も気をつけようと思ってる。\n女：面接の前には画面上の設定を変えないとね。\n男：それ、何かで見た。画面上で顔が明るく見えるように設定を変えといたほうがいいんだよね。まだやってな\nいから、それもやんなきゃいけないな。\n女：あと、画面といえば、ビデオ通話ってカメラを見ないで画面に映る相手の顔を見て話しちゃわない？ずっと\n目線が下がったままだと、面接に集中してないって誤解を与えてしまうかもって聞いたよ。\n男：確かに。\n女：面接で話してると私、時々それやっちゃうから、特に意識してるんだ。\n男：そう。あと面接の時、インターネットの接続に問題が起きて相手に声が聞こえなくなったりしたらどうしよう。\n女：う～ん、そういうことはあるかもしれないけど、まぁ、冷静に対処すれば何とかなるよ。\n男：分かった。\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi\n\n質問：女の学生はインターネットで就職の面接を受ける時に、最も気をつけていることは何だと言っています\nか？",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「相手が聞き取りやすいようにはっきり話すこと」，而是「カメラに目線を合わせて話すこと」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「画面表示が明るくなるようにすること」，而是「カメラに目線を合わせて話すこと」。",
+        "正确：原文的结论对应「カメラに目線を合わせて話すこと」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「音声が途切れても冷静に対処すること」，而是「カメラに目線を合わせて話すこと」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題2",
+          "item": 3
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题2",
+          "item": 3
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題2-3"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题2 · 3番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L2-04",
+      "year": 2022,
+      "month": 12,
+      "number": 9,
+      "section": "聴解",
+      "problem": 2,
+      "item": 4,
+      "displayNumber": "P2-4",
+      "type": "聴解・問題2 · ポイント理解",
+      "interaction": "listening",
+      "prompt": "レポーターは先月発売されたスーツのどのような点が新しいと言っていますか？",
+      "question": "レポーターは先月発売されたスーツのどのような点が新しいと言っていますか？",
+      "options": [
+        "水をはじく加工がしてあること",
+        "においを消す加工がしてあること",
+        "型がくずれないこと",
+        "衣服の中の温度を調節できること"
+      ],
+      "answer": 2,
+      "transcript": "４番 正解：３\nテレビでレポーターが話しています。レポーターは先月発売されたスーツのどのような点が新しいと言っていま\nすか？\n今日は先月発売されたミナミ社のスーツを紹介します。なんと、男性用のスーツが小さく畳めて手のひらサイ\nズの袋に入れられるんです。ミナミはこれまでにも水をはじく加工が施されたスーツや汗の匂いを消す消臭効\n果が高いスーツを発売して話題を呼びました。今回はコンパクトに折りたたんでも、型が崩れることがないス\nーツです。出張の多い方には便利ですね。また、ミナミでは宇宙服の素材を参考に衣服の中の温度を素材が\n感知・調節し、一年中快適に過ごせるスーツの開発にも取り組んでいるとのことです。\n問題：レポーターは先月発売されたスーツのどのような点が新しいと言っていますか？",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「水をはじく加工がしてあること」，而是「型がくずれないこと」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「においを消す加工がしてあること」，而是「型がくずれないこと」。",
+        "正确：原文的结论对应「型がくずれないこと」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「衣服の中の温度を調節できること」，而是「型がくずれないこと」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題2",
+          "item": 4
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题2",
+          "item": 4
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題2-4"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题2 · 4番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L2-05",
+      "year": 2022,
+      "month": 12,
+      "number": 10,
+      "section": "聴解",
+      "problem": 2,
+      "item": 5,
+      "displayNumber": "P2-5",
+      "type": "聴解・問題2 · ポイント理解",
+      "interaction": "listening",
+      "prompt": "男の人はどうして出張することになったと言っていますか？",
+      "question": "男の人はどうして出張することになったと言っていますか？",
+      "options": [
+        "製品の検査スタッフを採用するため",
+        "製品の検査スタッフを指導するため",
+        "本社の専門家の品質検査を受けるため",
+        "機械のトラブルに対応するため"
+      ],
+      "answer": 1,
+      "transcript": "５番 正解：２\nカメラの部品を作る会社で女の人と男の人が話しています。男の人はどうして出張することになったと言って\nいますか？\n女の人：さっき部長に呼ばれて話し込んでたね。\n男の人：あぁ、京都に新しい工場ができて今稼働させる準備をしてるんだけど、その件で来週から出張に行っ\nてこいって。\n女の人：何かあったの？\n男の人：数か月前に検査スタッフを大量に採用して、研修もやったんだけど理解に差があって、技術がみんな\nに均一に定着していないから、品質検査が決められた通りに出来てないことがあるみたいなんだ。それで作\n業効率も落ちてて。\n女の人：工場が本格的に稼働する日も近いんでしょ？稼働の予定に間に合うの？\n男の人：その前に本社の専門家の品質検査も入るしなぁ。それまでに研修、もう一回しっかりやって全体的に\nスタッフのスキルを上げてこなくちゃいけないんだ。これで機械のトラブルでも起きたら最悪だよ。間に合わなく\nなっちゃうよ。\n女の人：頑張ってね。\n質問：男の人はどうして出張することになったと言っていますか？",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「製品の検査スタッフを採用するため」，而是「製品の検査スタッフを指導するため」。",
+        "正确：原文的结论对应「製品の検査スタッフを指導するため」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「本社の専門家の品質検査を受けるため」，而是「製品の検査スタッフを指導するため」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「機械のトラブルに対応するため」，而是「製品の検査スタッフを指導するため」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題2",
+          "item": 5
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题2",
+          "item": 5
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題2-5"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题2 · 5番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L2-06",
+      "year": 2022,
+      "month": 12,
+      "number": 11,
+      "section": "聴解",
+      "problem": 2,
+      "item": 6,
+      "displayNumber": "P2-6",
+      "type": "聴解・問題2 · ポイント理解",
+      "interaction": "listening",
+      "prompt": "男の人は今、お客さんに畳の部屋が好まれるのはどうしてだと言っていますか？",
+      "question": "男の人は今、お客さんに畳の部屋が好まれるのはどうしてだと言っていますか？",
+      "options": [
+        "畳の香りでリラックスできること",
+        "畳が部屋の湿度を調整すること",
+        "畳が空気中の有害物質を吸収すること",
+        "転んでもけがをしにくいこと"
+      ],
+      "answer": 0,
+      "transcript": "６番 正解：１\nラジオでアナウンサーと建築士の男の人が話しています。男の人は今、お客さんに畳の部屋が好まれるのは\nどうしてだと言っていますか？\n\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi\n\nアナウンサー：今日は建築士の伊藤さんにお話を伺います。伊藤さん、最近は新築の家を建てる際に畳の部\n屋を希望する人が増えているそうですね。\n男の人：ええ、生活や建築の洋風化に伴って、畳の部屋が好まれない時期も長く続いたんですが、ここ数年、\nお客様の好みが変化し、畳独特の香りが、体や心を安らかに、ゆったりした気分にしてくれるということで、畳\nの部屋にしてくれという依頼が増加傾向にあります。\nアナウンサー：そうですか。\n男の人：もともと畳は湿気を吸収したり、放出したり、湿度を調節してくれるので、日本の気候には合っている\nんです。それに空気中の有害物質も吸収してくれますしね。\nアナウンサー：そうした利点もあるんですね。\n男の人：ええ、畳はクッション性があるので転倒してもケガをしにくく、小さなお子さんがいるご家庭にもご安心\nいただけます。おすすめですよ。\nアナウンサー：今後さらにお客様からの需要が高まりそうですね。\n質問：男の人は今お客さんに畳の部屋が好まれるのはどうしてだと言っていますか？",
+      "optionAnalysis": [
+        "正确：原文的结论对应「畳の香りでリラックスできること」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「畳が部屋の湿度を調整すること」，而是「畳の香りでリラックスできること」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「畳が空気中の有害物質を吸収すること」，而是「畳の香りでリラックスできること」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「転んでもけがをしにくいこと」，而是「畳の香りでリラックスできること」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題2",
+          "item": 6
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题2",
+          "item": 6
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題2-6"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题2 · 6番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L3-01",
+      "year": 2022,
+      "month": 12,
+      "number": 12,
+      "section": "聴解",
+      "problem": 3,
+      "item": 1,
+      "displayNumber": "P3-1",
+      "type": "聴解・問題3 · 概要理解",
+      "interaction": "listening",
+      "prompt": "社長が言いたいことはなんですか。",
+      "question": "社長が言いたいことはなんですか。",
+      "options": [
+        "会社の業績を回復させてほしい",
+        "会社の伝統を大事にしてほしい",
+        "新しいアイディアを出してほしい",
+        "新しく開発した商品をヒットさせてほしい"
+      ],
+      "answer": 2,
+      "transcript": "１番 正解：３\n文房具の会社で社長が話しています。\nこのところ新たなヒット商品が出せていません。既存の商品の売り上げは順調ですが、会社が飛躍するために\nは、新しいものを生み出す必要があります。伝統にしがみつかず、これまでにないものを提案することは新しい\n文化の創造だと言っても過言ではありません。みなさん、批判を恐れずにどんどん挑戦してください。今はパソ\nコンで文章を書くことが当たり前になっていますが、昔は文字を書くといえば手だったわけです。つまり、今の\n当たり前は、昔は奇抜なものだったかもしれません。周囲に驚かれるようなものこそ、会社にとっては宝なので\nす。\n質問：社長が言いたいことはなんですか。\n1.会社の業績を回復させてほしい。\n2.会社の伝統を大事にしてほしい。\n3.新しいアイディアを出してほしい。\n4.新しく開発した商品をヒットさせてほしい。",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「会社の業績を回復させてほしい」，而是「新しいアイディアを出してほしい」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「会社の伝統を大事にしてほしい」，而是「新しいアイディアを出してほしい」。",
+        "正确：原文的结论对应「新しいアイディアを出してほしい」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「新しく開発した商品をヒットさせてほしい」，而是「新しいアイディアを出してほしい」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題3",
+          "item": 1
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题3",
+          "item": 1
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題3-1"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题3 · 1番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L3-02",
+      "year": 2022,
+      "month": 12,
+      "number": 13,
+      "section": "聴解",
+      "problem": 3,
+      "item": 2,
+      "displayNumber": "P3-2",
+      "type": "聴解・問題3 · 概要理解",
+      "interaction": "listening",
+      "prompt": "俳優は何について話していますか。",
+      "question": "俳優は何について話していますか。",
+      "options": [
+        "今回の役を引き受けた経緯",
+        "役を演じる上で気をつけたこと",
+        "山での撮影の面白さ",
+        "登山家との交流の思い出"
+      ],
+      "answer": 1,
+      "transcript": "２番 正解：２\nテレビでアナウンサーが俳優にインタビューしています。\n女：今日は現在公開中の映画『虹の山』に出演されている河本シンジさんにお話を伺います。河本さん、今回\nは山での撮影が多かったそうですが、何かご苦労ありましたか？\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi\n\n男：標高の高い場所での撮影ということで、体調管理には気を遣いましたね。無事に体調を崩さずに撮影を\n終えることができてほっとしました。\n女：そうですか。河本さんは主人公の登山家を取材するカメラマンの役、ですね？\n男：はい。この役は、始めは山の知識がほとんどない設定なんですが、実は僕自身は登山が大好きで。\n女：あっ、そうなんですか。\n男：ええ。最初にお話しをいただいた時から山での撮影を楽しみにしていたぐらいです。なので、山に慣れてい\nないように振る舞うところは不自然にならないように特に意識しました。\n女：なるほど。\n男：それから登山家の方々に伺った話も参考にして、登山の魅力が伝わるように、ということを心がけました。\n女：そうですか。\n質問：俳優は何について話していますか。\n1.今回の役を引き受けた経緯。\n2.役を演じる上で気をつけたこと。\n3.山での撮影の面白さ。\n4.登山家との交流の思い出。",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「今回の役を引き受けた経緯」，而是「役を演じる上で気をつけたこと」。",
+        "正确：原文的结论对应「役を演じる上で気をつけたこと」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「山での撮影の面白さ」，而是「役を演じる上で気をつけたこと」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「登山家との交流の思い出」，而是「役を演じる上で気をつけたこと」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題3",
+          "item": 2
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题3",
+          "item": 2
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題3-2"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题3 · 2番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L3-03",
+      "year": 2022,
+      "month": 12,
+      "number": 14,
+      "section": "聴解",
+      "problem": 3,
+      "item": 3,
+      "displayNumber": "P3-3",
+      "type": "聴解・問題3 · 概要理解",
+      "interaction": "listening",
+      "prompt": "この選手は何について話していますか。",
+      "question": "この選手は何について話していますか。",
+      "options": [
+        "スポーツ選手に人気の趣味",
+        "ピアノを習い始めたきっかけ",
+        "ピアノが上達する練習方法",
+        "ピアノ演奏がスポーツと共通する点"
+      ],
+      "answer": 3,
+      "transcript": "３番 正解：４\nラジオでサッカー選手が話しています。\nピアノを弾くのが趣味だっていうと驚かれるんですが、子どもの頃7、8 年習ってて、結構弾けるんですよ。他の\n楽器でもそうかもしれませんが、ピアノを引くのって意外に運動に通じるところがあるんです。集中力が求めら\nれますし、リズム感とか体全体で表現する感覚みたいなものが活性化されるというか、聞いてる時、どうすれば\n上達するかって考えながらやっていて、その点でもサッカーと通じるところがあるなと思います。野球選手にも\nピアノ習ってることがプレーに役立ってるって言ってる方がいましたね。\n問題：この選手は何について話していますか。\n1.スポーツ選手に人気の趣味。\n2.ピアノを習い始めたきっかけ。\n3.ピアノが上達する練習方法。\n4.ピアノ演奏がスポーツと共通する点。",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「スポーツ選手に人気の趣味」，而是「ピアノ演奏がスポーツと共通する点」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「ピアノを習い始めたきっかけ」，而是「ピアノ演奏がスポーツと共通する点」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「ピアノが上達する練習方法」，而是「ピアノ演奏がスポーツと共通する点」。",
+        "正确：原文的结论对应「ピアノ演奏がスポーツと共通する点」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題3",
+          "item": 3
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题3",
+          "item": 3
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題3-3"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题3 · 3番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L3-04",
+      "year": 2022,
+      "month": 12,
+      "number": 15,
+      "section": "聴解",
+      "problem": 3,
+      "item": 4,
+      "displayNumber": "P3-4",
+      "type": "聴解・問題3 · 概要理解",
+      "interaction": "listening",
+      "prompt": "医師は何について話していますか。",
+      "question": "医師は何について話していますか。",
+      "options": [
+        "テレビで紹介された健康法の効果",
+        "誰にでも効果がある健康法",
+        "健康法を取り入れる際の注意点",
+        "長生きしている人の体の特徴"
+      ],
+      "answer": 2,
+      "transcript": "４番 正解：３\n講演会で医者が話しています。\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi\n\nテレビなどでよく健康法や長生きの秘訣が紹介されますね。体にいいある食材を毎日食べるなど、誰にでも\n簡単にできる、と言って紹介されるものも多いです。試すこと自体は悪くありません。ただ、患者さんと話してる\nとそういった健康法が誰にでも効果があると思ってる方が多いと感じます。栄養の偏りや運動不足、あるいは\n元々の体質など、健康を損なう原因は人によって違います。ですから、例えば何かの栄養をとることが勧めら\nれていても、すでに十分に足りてる栄養だったら取る必要はないわけです。テレビなどで取り上げられているも\nのでも、自分の状態に合ったものかどうかを見極めることが健康への第一歩なんです。\n問題：医者は何について話していますか。\n1.テレビで紹介された健康法の効果。\n2.誰にでも効果がある健康法。\n3.健康法を取り入れる際の注意点。\n4.長生きしている人の体の特徴。",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「テレビで紹介された健康法の効果」，而是「健康法を取り入れる際の注意点」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「誰にでも効果がある健康法」，而是「健康法を取り入れる際の注意点」。",
+        "正确：原文的结论对应「健康法を取り入れる際の注意点」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「長生きしている人の体の特徴」，而是「健康法を取り入れる際の注意点」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題3",
+          "item": 4
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题3",
+          "item": 4
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題3-4"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题3 · 4番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L3-05",
+      "year": 2022,
+      "month": 12,
+      "number": 16,
+      "section": "聴解",
+      "problem": 3,
+      "item": 5,
+      "displayNumber": "P3-5",
+      "type": "聴解・問題3 · 概要理解",
+      "interaction": "listening",
+      "prompt": "議員が言いたいことは何ですか。",
+      "question": "議員が言いたいことは何ですか。",
+      "options": [
+        "東地区の将来の子どもの数を予測するべきだ",
+        "東小学校を建て替えるべきだ",
+        "教育内容を改革するべきだ",
+        "市の予算を削減するべきだ"
+      ],
+      "answer": 1,
+      "transcript": "５番 正解：２\nある市の議会で議員が話しています。\n東地区では高層マンションの建設が計画されており、それに伴って、今後、学齢期の子どもが増えることが見\n込まれます。東地区の東小学校では、現在の教室数では対応できなくなると予想されています。また、校舎が\n築50 年を経過しており、地震対策など必ずしも万全とはいえません。IT 特別教室などの設備の拡充も必要\nになっています。こうした点を踏まえ、早急に建て直すことが求められます。市の財政も潤沢とは言えませんが、\n未来を担う子どもたちの教育は最優先課題と考え、会計費用を来年度予算に計上することを提案する次第\nです。\n問題：議員が言いたいことはなんですか。\n1.東地区の将来の子どもの数を予測するべきだ。\n2.東小学校を建て替えるべきだ。\n3.教育内容を改革するべきだ。\n4.市の予算を削減するべきだ",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「東地区の将来の子どもの数を予測するべきだ」，而是「東小学校を建て替えるべきだ」。",
+        "正确：原文的结论对应「東小学校を建て替えるべきだ」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「教育内容を改革するべきだ」，而是「東小学校を建て替えるべきだ」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「市の予算を削減するべきだ」，而是「東小学校を建て替えるべきだ」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題3",
+          "item": 5
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题3",
+          "item": 5
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題3-5"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题3 · 5番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L4-01",
+      "year": 2022,
+      "month": 12,
+      "number": 17,
+      "section": "聴解",
+      "problem": 4,
+      "item": 1,
+      "displayNumber": "P4-1",
+      "type": "聴解・問題4 · 即時応答",
+      "interaction": "listening",
+      "prompt": "お客様、そちらは新作のジャケットです。よかったらお召しになってみてください。",
+      "question": "お客様、そちらは新作のジャケットです。よかったらお召しになってみてください。",
+      "options": [
+        "あ、遠慮なくいただきます",
+        "後でお召しになります",
+        "じゃあこれ、試着します"
+      ],
+      "answer": 2,
+      "transcript": "1 番 お客様、そちらは新作のジャケットです。よかったらお召しになってみてください。\n１、あ、遠慮なくいただきます。\n２、後でお召しになります。\n３、じゃあこれ、試着します。→正解",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「あ、遠慮なくいただきます」，而是「じゃあこれ、試着します」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「後でお召しになります」，而是「じゃあこれ、試着します」。",
+        "正确：原文的结论对应「じゃあこれ、試着します」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題4",
+          "item": 1
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题4",
+          "item": 1
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題4-1"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题4 · 1番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L4-02",
+      "year": 2022,
+      "month": 12,
+      "number": 18,
+      "section": "聴解",
+      "problem": 4,
+      "item": 2,
+      "displayNumber": "P4-2",
+      "type": "聴解・問題4 · 即時応答",
+      "interaction": "listening",
+      "prompt": "うちの新人たち、みんな必ず契約取ってみせるって、営業に向かったよ。",
+      "question": "うちの新人たち、みんな必ず契約取ってみせるって、営業に向かったよ。",
+      "options": [
+        "やる気があっていいね",
+        "え？何を見せてもらったの？",
+        "契約取れてよかったね"
+      ],
+      "answer": 0,
+      "transcript": "2 番 うちの新人たち、みんな必ず契約取ってみせるって、営業に向かったよ。\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi\n\n１、やる気があっていいね。→正解\n２、え？何を見せてもらったの？\n３、契約取れてよかったね。",
+      "optionAnalysis": [
+        "正确：原文的结论对应「やる気があっていいね」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「え？何を見せてもらったの？」，而是「やる気があっていいね」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「契約取れてよかったね」，而是「やる気があっていいね」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題4",
+          "item": 2
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题4",
+          "item": 2
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題4-2"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题4 · 2番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L4-03",
+      "year": 2022,
+      "month": 12,
+      "number": 19,
+      "section": "聴解",
+      "problem": 4,
+      "item": 3,
+      "displayNumber": "P4-3",
+      "type": "聴解・問題4 · 即時応答",
+      "interaction": "listening",
+      "prompt": "今の映画のラストシーン、映像と繊細な音楽が相まって印象的だったね。",
+      "question": "今の映画のラストシーン、映像と繊細な音楽が相まって印象的だったね。",
+      "options": [
+        "ほんと、上手く引き立て合ってたね",
+        "音楽が邪魔だったってこと？",
+        "確かにどっちもいまいちだったね"
+      ],
+      "answer": 0,
+      "transcript": "3 番 今の映画のラストシーン、映像と繊細な音楽が相まって印象的だったね。\n1、 ほんと、上手く引き立て合ってたね。→正解\n2、 音楽が邪魔だったってこと？\n3、 確かにどっちもいまいちだったね。\nホク",
+      "optionAnalysis": [
+        "正确：原文的结论对应「ほんと、上手く引き立て合ってたね」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「音楽が邪魔だったってこと？」，而是「ほんと、上手く引き立て合ってたね」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「確かにどっちもいまいちだったね」，而是「ほんと、上手く引き立て合ってたね」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題4",
+          "item": 3
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题4",
+          "item": 3
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題4-3"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题4 · 3番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L4-04",
+      "year": 2022,
+      "month": 12,
+      "number": 20,
+      "section": "聴解",
+      "problem": 4,
+      "item": 4,
+      "displayNumber": "P4-4",
+      "type": "聴解・問題4 · 即時応答",
+      "interaction": "listening",
+      "prompt": "お客様、本日お席にご案内できるまで、お時間頂戴しそうなんですが。",
+      "question": "お客様、本日お席にご案内できるまで、お時間頂戴しそうなんですが。",
+      "options": [
+        "あ、ちょうど空いてましたね",
+        "じゃあ、急ぎます",
+        "どのくらい待ちますか？"
+      ],
+      "answer": 2,
+      "transcript": "4 番 お客様、本日お席にご案内できるまで、お時間頂戴しそうなんですが。\n1、 あ、ちょうど空いてましたね。\n2、 じゃあ、急ぎます。\n3、 どのくらい待ちますか？→正解",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「あ、ちょうど空いてましたね」，而是「どのくらい待ちますか？」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「じゃあ、急ぎます」，而是「どのくらい待ちますか？」。",
+        "正确：原文的结论对应「どのくらい待ちますか？」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題4",
+          "item": 4
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题4",
+          "item": 4
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題4-4"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题4 · 4番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L4-05",
+      "year": 2022,
+      "month": 12,
+      "number": 21,
+      "section": "聴解",
+      "problem": 4,
+      "item": 5,
+      "displayNumber": "P4-5",
+      "type": "聴解・問題4 · 即時応答",
+      "interaction": "listening",
+      "prompt": "総務の佐藤さんの細やかな対応にはいつも頭がさがるよ。",
+      "question": "総務の佐藤さんの細やかな対応にはいつも頭がさがるよ。",
+      "options": [
+        "そんなに不満なんだ",
+        "ほんと、尊敬するよね",
+        "注意してあげたら？"
+      ],
+      "answer": 1,
+      "transcript": "5 番 総務の佐藤さんの細やかな対応にはいつも頭がさがるよメイ。\n1、 そんなに不満なんだ。\n2、 ほんと、尊敬するよね。→正解\n3、 注意してあげたら？",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「そんなに不満なんだ」，而是「ほんと、尊敬するよね」。",
+        "正确：原文的结论对应「ほんと、尊敬するよね」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「注意してあげたら？」，而是「ほんと、尊敬するよね」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題4",
+          "item": 5
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题4",
+          "item": 5
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題4-5"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题4 · 5番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L4-06",
+      "year": 2022,
+      "month": 12,
+      "number": 22,
+      "section": "聴解",
+      "problem": 4,
+      "item": 6,
+      "displayNumber": "P4-6",
+      "type": "聴解・問題4 · 即時応答",
+      "interaction": "listening",
+      "prompt": "今回のプロジェクトは御社のご協力無くしては成功しませんでしたよ。",
+      "question": "今回のプロジェクトは御社のご協力無くしては成功しませんでしたよ。",
+      "options": [
+        "お力になれて何よりです",
+        "ご協力できればよかったんですが",
+        "私どもの力不足でした"
+      ],
+      "answer": 0,
+      "transcript": "6 番 今回のプロジェクトは御社のご協力無くしては成功しませんでしたよ。\n1、 お力になれて何よりです。→正解\n2、 ご協力できればよかったんですが。\n3、 私どもの力不足でした。",
+      "optionAnalysis": [
+        "正确：原文的结论对应「お力になれて何よりです」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「ご協力できればよかったんですが」，而是「お力になれて何よりです」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「私どもの力不足でした」，而是「お力になれて何よりです」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題4",
+          "item": 6
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题4",
+          "item": 6
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題4-6"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题4 · 6番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L4-07",
+      "year": 2022,
+      "month": 12,
+      "number": 23,
+      "section": "聴解",
+      "problem": 4,
+      "item": 7,
+      "displayNumber": "P4-7",
+      "type": "聴解・問題4 · 即時応答",
+      "interaction": "listening",
+      "prompt": "村田さん。来週緑山に初めて登るでしょ？初級者向けの山だけど用心に越したことはないからね。",
+      "question": "村田さん。来週緑山に初めて登るでしょ？初級者向けの山だけど用心に越したことはないからね。",
+      "options": [
+        "確かに用心し過ぎですね",
+        "簡単そうで安心しました",
+        "注意して臨みます"
+      ],
+      "answer": 2,
+      "transcript": "7 番 村田さん。来週緑山に初めて登るでしょ？初級者向けの山だけど用心に越したことはないからね。\n1、 確かに用心し過ぎですね。\n2、 簡単そうで安心しました。\n3、 注意して臨みます。→正解\n\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「確かに用心し過ぎですね」，而是「注意して臨みます」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「簡単そうで安心しました」，而是「注意して臨みます」。",
+        "正确：原文的结论对应「注意して臨みます」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題4",
+          "item": 7
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题4",
+          "item": 7
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題4-7"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题4 · 7番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L4-08",
+      "year": 2022,
+      "month": 12,
+      "number": 24,
+      "section": "聴解",
+      "problem": 4,
+      "item": 8,
+      "displayNumber": "P4-8",
+      "type": "聴解・問題4 · 即時応答",
+      "interaction": "listening",
+      "prompt": "最近涼しいのにアイスこんなに仕入れて売れる見込み無いんじゃない？",
+      "question": "最近涼しいのにアイスこんなに仕入れて売れる見込み無いんじゃない？",
+      "options": [
+        "もう少し仕入れておきましょうか？",
+        "よかった。増え始めたんですね",
+        "いやぁ、需要あると思いますよ"
+      ],
+      "answer": 2,
+      "transcript": "8 番 最近涼しいのにアイスこんなに仕入れて売れる見込み無いんじゃない？ジョ\n１、もう少し仕入れておきましょうか？\n２、よかった。増え始めたんですね。\n３、いやぁ、需要あると思いますよ。→正解",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「もう少し仕入れておきましょうか？」，而是「いやぁ、需要あると思いますよ」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「よかった。増え始めたんですね」，而是「いやぁ、需要あると思いますよ」。",
+        "正确：原文的结论对应「いやぁ、需要あると思いますよ」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題4",
+          "item": 8
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题4",
+          "item": 8
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題4-8"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题4 · 8番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L4-09",
+      "year": 2022,
+      "month": 12,
+      "number": 25,
+      "section": "聴解",
+      "problem": 4,
+      "item": 9,
+      "displayNumber": "P4-9",
+      "type": "聴解・問題4 · 即時応答",
+      "interaction": "listening",
+      "prompt": "サークルのことで相談があるって言ってたよね？今日の夕方だったら時間取れなくもないよ。",
+      "question": "サークルのことで相談があるって言ってたよね？今日の夕方だったら時間取れなくもないよ。",
+      "options": [
+        "今日は無理なんだね",
+        "忙しいのに悪いね",
+        "夕方までだね。分かった"
+      ],
+      "answer": 1,
+      "transcript": "9 番 ホクサークルのことで相談があるって言ってたよね？今日の夕方だったら時間取れなくもないよ。\n1、 今日は無理なんだね。\n2、 忙しいのに悪いね。→正解\n3、 夕方までだね。分かった！",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「今日は無理なんだね」，而是「忙しいのに悪いね」。",
+        "正确：原文的结论对应「忙しいのに悪いね」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「夕方までだね。分かった」，而是「忙しいのに悪いね」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題4",
+          "item": 9
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题4",
+          "item": 9
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題4-9"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题4 · 9番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L4-10",
+      "year": 2022,
+      "month": 12,
+      "number": 26,
+      "section": "聴解",
+      "problem": 4,
+      "item": 10,
+      "displayNumber": "P4-10",
+      "type": "聴解・問題4 · 即時応答",
+      "interaction": "listening",
+      "prompt": "さっき見た映画、アクションシーンが迫力に欠けてたよね。",
+      "question": "さっき見た映画、アクションシーンが迫力に欠けてたよね。",
+      "options": [
+        "アクションシーンだから仕方ないよ",
+        "ちょっと物足りなかったね",
+        "そんなに気にいったんだ？"
+      ],
+      "answer": 1,
+      "transcript": "1 番 お客様、そちらは新作のジャケットです。よかったらお召しになってみてください。\n１、あ、遠慮なくいただきます。\n２、後でお召しになります。\n３、じゃあこれ、試着します。→正解",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「アクションシーンだから仕方ないよ」，而是「ちょっと物足りなかったね」。",
+        "正确：原文的结论对应「ちょっと物足りなかったね」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「そんなに気にいったんだ？」，而是「ちょっと物足りなかったね」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題4",
+          "item": 10
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题4",
+          "item": 10
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題4-10"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题4 · 10番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L4-11",
+      "year": 2022,
+      "month": 12,
+      "number": 27,
+      "section": "聴解",
+      "problem": 4,
+      "item": 11,
+      "displayNumber": "P4-11",
+      "type": "聴解・問題4 · 即時応答",
+      "interaction": "listening",
+      "prompt": "先生に頼まれた文献集め、思いの外、はかどらなかったね。",
+      "question": "先生に頼まれた文献集め、思いの外、はかどらなかったね。",
+      "options": [
+        "長時間探した割にはね",
+        "順調にできてよかったね",
+        "一つも見つからなかったの？"
+      ],
+      "answer": 0,
+      "transcript": "1 番 お客様、そちらは新作のジャケットです。よかったらお召しになってみてください。\n１、あ、遠慮なくいただきます。\n２、後でお召しになります。\n３、じゃあこれ、試着します。→正解",
+      "optionAnalysis": [
+        "正确：原文的结论对应「長時間探した割にはね」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「順調にできてよかったね」，而是「長時間探した割にはね」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「一つも見つからなかったの？」，而是「長時間探した割にはね」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題4",
+          "item": 11
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题4",
+          "item": 11
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題4-11"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题4 · 11番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L5-01",
+      "year": 2022,
+      "month": 12,
+      "number": 28,
+      "section": "聴解",
+      "problem": 5,
+      "item": 1,
+      "displayNumber": "P5-1",
+      "type": "聴解・問題5 · 統合理解",
+      "interaction": "listening",
+      "prompt": "ボランティアを増やすために何をすることにしましたか？",
+      "question": "ボランティアを増やすために何をすることにしましたか？",
+      "options": [
+        "市の広報誌で募集する回数を増やす",
+        "教え方のマニュアルを作る",
+        "ボランティアの種類を分けて募集する",
+        "市内の大学に募集のポスターを貼る"
+      ],
+      "answer": 3,
+      "transcript": "１番 正解：４\n地域の日本語教室でスタッフ3 人が話しています。\n男性A：教室で日本語を教えるボランティアがなかなか増えませんね。市の広報誌に定期的にボランティア募\n集の案内を載せてるんですが。\n女性：少し前に一人見学に来ましたけど、入ってもらえなかったんですよね。\n男性A：その日はいつもよりさらにボランティアの数が少なかったんです。ボランティア一人でいろんなレベル\nの学習者5 人くらいに対応をしてたのでその様子を見て、自分には難しそうって尻込みしちゃったみたいで\nす。\n男性B：じゃあ、教え方のマニュアルでも作りましょうか？\n女性：マニュアルを作って対応できる問題じゃないですよね。学習者のレベルも目的もいろいろだから。\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi\n\n男性A：そうですねぇ。\n男性Ｂ：じゃあ、ボランティアの種類を分けて募集するのはどうですか？日本語を教えるボランティアと会話を\n教えるボランティア。会話のボランティアならやってみようと思う人もいるかもしれませんよ。\n男性A：どちらかというと、教えられる人に来てもらえるといいんですけどねぇ。\n女性：去年まで頑張ってくれてた大学生のボランティアが就職を機に何人か抜けちゃったのが残念ですね。言\n語学や教育学を学んでたから教え方も上手でしたし。市内の大学に募集のポスターを貼らせてもらいましょう\nか？\n男性Ｂ：大学生だと、また就職とかで辞めちゃうんじゃないですか？\n男性A：まぁ、まずは応募してもらわないとね。市の広報誌よりも目に留まりそうだし。やってもらいましょうか。\n今回はボランティアの種類を分けずに募集してみましょう。\n\n問題：ボランティアを増やすために何をすることにしましたか？\n1、 市の広報誌で募集する回数を増やす。\n2、 教え方のマニュアルを作る。\n3、 ボランティアの種類を分けて募集する。\n4、 市内の大学に募集のポスターを貼る。",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「市の広報誌で募集する回数を増やす」，而是「市内の大学に募集のポスターを貼る」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「教え方のマニュアルを作る」，而是「市内の大学に募集のポスターを貼る」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「ボランティアの種類を分けて募集する」，而是「市内の大学に募集のポスターを貼る」。",
+        "正确：原文的结论对应「市内の大学に募集のポスターを貼る」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題5",
+          "item": 1
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题5",
+          "item": 1
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題5-1"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题5 · 1番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L5-02-Q1",
+      "year": 2022,
+      "month": 12,
+      "number": 29,
+      "section": "聴解",
+      "problem": 5,
+      "item": 2,
+      "subQuestion": "質問1",
+      "displayNumber": "P5-2-質問1",
+      "type": "聴解・問題5 · 統合理解",
+      "interaction": "listening",
+      "prompt": "女の人はどの農作物の説明を聞きたいと言っていますか？",
+      "question": "女の人はどの農作物の説明を聞きたいと言っていますか？",
+      "options": [
+        "キャベツ",
+        "キノコ",
+        "イチゴ",
+        "お米"
+      ],
+      "answer": 2,
+      "transcript": "2 番\n質問１ 正解：３\n質問２ 正解：１\nある町の農業に関する説明会で役所の人の説明を聞いた後、男の人と女の人が話しています。\n役所の人：この町で力を入れている4 つの農作物をご紹介します。説明の後で各農作物について個別の相\n談をお受けします。\nまずはホク、高原の涼しい気候を利用したキャベツ栽培。種まきから収穫まで手がかかりますが、近年産地と\nして評価されるようになり、収益性が高いのも特徴です。\n次にメイ、キノコとイチゴ。どちらもハウス栽培で管理は大変ですが、田んぼや畑よりは力仕事が少ないです。\nキノコは栄養が豊富で健康にいいと言うことで安定した需要があります。\nイチゴは観光客向けの収穫体験ツアーにも協力していて、農園の一部をカフェにしているところもあります。\n最後は、お米。この町の米は味が良いことで昔から知られています。設備投資は大掛かりになりますが、農家\nと行政が一体となって美味しい米作りに取り組んでいます。\n\n男の人：いろいろあるんですねぇ。どちらからいらしたんですか？\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi\n\n女の人：東京からです。農業に関わりたいなと思って来たんです。体力にそう自信があるわけじゃないんです\nねどね。\n男の人：力仕事が比較的少ないっていうのもあるみたいですね。\n女の人：ええ。私、人と接するのも好きなので、農作業だけじゃなくお客さんの対応もするのが向いてるかなと\n思って、その説明を聞きたいと思ってます。\n男の人：そうですか。私は農業で生計を立てていきたいのでやっぱり収入を重視しますね。\n女の人：そうですよね。\n男の人：実は私、この町出身なので、伝統的に作られてきたものにも思い入れがあるんですけど…それより、\n新しい地域の名産として評価され始めたものをこれからもっと売り出す方に興味があって、その説明を聞きに\n行こうと思ってます。\n\n質問１、女の人はどの農作物の説明を聞きたいと言っていますか？\n答え：イチゴ\n\n質問２、男の人はどの農作物の説明を聞きたいと言っていますか？\n答え：キャベツ\n\n\n\n\n\n\n\n\n\n\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi",
+      "optionAnalysis": [
+        "错误：原文虽可能提及相关内容，但最终结论不是「キャベツ」，而是「イチゴ」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「キノコ」，而是「イチゴ」。",
+        "正确：原文的结论对应「イチゴ」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「お米」，而是「イチゴ」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題5",
+          "item": 2,
+          "subQuestion": "質問1"
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题5",
+          "item": 2,
+          "subQuestion": "質問1"
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題5-2-質問1"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题5 · 2番",
+      "audioFile": "full.m4a"
+    },
+    {
+      "id": "2022-12-L5-02-Q2",
+      "year": 2022,
+      "month": 12,
+      "number": 30,
+      "section": "聴解",
+      "problem": 5,
+      "item": 2,
+      "subQuestion": "質問2",
+      "displayNumber": "P5-2-質問2",
+      "type": "聴解・問題5 · 統合理解",
+      "interaction": "listening",
+      "prompt": "男の人はどの農作物の説明を聞きたいと言っていますか？",
+      "question": "男の人はどの農作物の説明を聞きたいと言っていますか？",
+      "options": [
+        "キャベツ",
+        "キノコ",
+        "イチゴ",
+        "お米"
+      ],
+      "answer": 0,
+      "transcript": "2 番\n質問１ 正解：３\n質問２ 正解：１\nある町の農業に関する説明会で役所の人の説明を聞いた後、男の人と女の人が話しています。\n役所の人：この町で力を入れている4 つの農作物をご紹介します。説明の後で各農作物について個別の相\n談をお受けします。\nまずはホク、高原の涼しい気候を利用したキャベツ栽培。種まきから収穫まで手がかかりますが、近年産地と\nして評価されるようになり、収益性が高いのも特徴です。\n次にメイ、キノコとイチゴ。どちらもハウス栽培で管理は大変ですが、田んぼや畑よりは力仕事が少ないです。\nキノコは栄養が豊富で健康にいいと言うことで安定した需要があります。\nイチゴは観光客向けの収穫体験ツアーにも協力していて、農園の一部をカフェにしているところもあります。\n最後は、お米。この町の米は味が良いことで昔から知られています。設備投資は大掛かりになりますが、農家\nと行政が一体となって美味しい米作りに取り組んでいます。\n\n男の人：いろいろあるんですねぇ。どちらからいらしたんですか？\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi\n\n女の人：東京からです。農業に関わりたいなと思って来たんです。体力にそう自信があるわけじゃないんです\nねどね。\n男の人：力仕事が比較的少ないっていうのもあるみたいですね。\n女の人：ええ。私、人と接するのも好きなので、農作業だけじゃなくお客さんの対応もするのが向いてるかなと\n思って、その説明を聞きたいと思ってます。\n男の人：そうですか。私は農業で生計を立てていきたいのでやっぱり収入を重視しますね。\n女の人：そうですよね。\n男の人：実は私、この町出身なので、伝統的に作られてきたものにも思い入れがあるんですけど…それより、\n新しい地域の名産として評価され始めたものをこれからもっと売り出す方に興味があって、その説明を聞きに\n行こうと思ってます。\n\n質問１、女の人はどの農作物の説明を聞きたいと言っていますか？\n答え：イチゴ\n\n質問２、男の人はどの農作物の説明を聞きたいと言っていますか？\n答え：キャベツ\n\n\n\n\n\n\n\n\n\n\nTôi Yêu Ngoại Ngữ Group\nYuuki Bùi",
+      "optionAnalysis": [
+        "正确：原文的结论对应「キャベツ」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「キノコ」，而是「キャベツ」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「イチゴ」，而是「キャベツ」。",
+        "错误：原文虽可能提及相关内容，但最终结论不是「お米」，而是「キャベツ」。"
+      ],
+      "evidence": {
+        "question": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_N1 Listening Script T12ー2022.txt",
+          "section": "問題5",
+          "item": 2,
+          "subQuestion": "質問2"
+        },
+        "explanation": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文翻译/问题5",
+          "item": 2,
+          "subQuestion": "質問2"
+        },
+        "answerTable": {
+          "file": "/projects/N1/2022年12月/sources/2022.12_2022年12月N1真题及解析.txt",
+          "section": "2022年12月N1真题听力原文",
+          "item": "問題5-2-質問2"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "supplementalAnalysis": true,
+        "sourceExplanationCorrected": false
+      },
+      "phase": "listening",
+      "category": "listening",
+      "label": "听力 · 问题5 · 2番",
+      "audioFile": "full.m4a"
+    }
+  ],
+  "excludedReviewQueue": [],
+  "verificationSummary": {
+    "expectedScoringUnits": 96,
+    "extractedWritten": 66,
+    "includedWritten": 66,
+    "listening": 30,
+    "includedTotal": 96,
+    "manualCheckExcluded": 0,
+    "note": "无法可靠确认的重构题目保留在复核队列，不进入模拟。"
+  }
+}

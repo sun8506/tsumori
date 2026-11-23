@@ -1,0 +1,1244 @@
+{
+  "dataset": "2018-07-読解 + 2017-12-読解 + 2017-07-読解 + 2016-12-読解 + 2016-07-読解",
+  "generatedAt": "2026-11-15T07:12:28.263Z",
+  "status": "verified",
+  "sourceDatasets": [
+    "data/short-reading-2018-07.json",
+    "data/short-reading-2017-12.json",
+    "data/short-reading-2017-07.json",
+    "data/short-reading-2016-12.json",
+    "data/short-reading-2016-07.json"
+  ],
+  "flags": [],
+  "questions": [
+    {
+      "id": "2018-07-46",
+      "year": 2018,
+      "month": 7,
+      "number": 46,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "（1）人生やビジネスに目標を持つべきだ、というようなことが最近よく言われるが、わたしはそういう言い方に違和感を覚える。目標というものは、「持つべきだ」とか「持ったほうがいい」ものではなく、「持たなければいけない」とわざわざ啓蒙するものでもない。人生のあらゆる局面における「前提」なので、そのことがコンセンサス（注）になっている社会では、目標を持つことについて語られることはないからだ。\n\n（注）コンセンサス：ここでは、共通の理解",
+      "question": "目標について、筆者の考えに合うのはどれか。",
+      "options": [
+        "目標は必ずしも持たなくてよい。",
+        "目標は持っているのが当然である。",
+        "目標は持ちたいと思って持てるものではない。",
+        "目標を持っていても成功するとは限らない。"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 5,
+        "pageEnd": 5
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "① 错误；文中明确目标是人生各种局面的“前提”，并非可有可无。",
+        "② 正确；解析指出文中的“人生和事业应该有目标”不是“最好有”或“需要特地提高”的意思，而是人生各种情况的前提，即目标是必须有的。",
+        "③ 错误；文中并非说想有目标也无法拥有，而是说目标本来就是前提，不应表述成“应该有”或“最好有”。",
+        "④ 错误；文章只讨论是否理所当然地拥有目标，没有讨论有目标后能否成功。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 5,
+          "pageEnd": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_MISSING_OPTION_ANALYSIS_1_3_4"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "解析 PDF 只说明了正确选项；补充三个可由文章直接排除的干扰项理由。"
+        ]
+      }
+    },
+    {
+      "id": "2018-07-47",
+      "year": 2018,
+      "month": 7,
+      "number": 47,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "（2）以下は、恥じらい（注）の表情と喜びの表情の違いについて述べた文章である。\n\n心理学者のアセンドルフは、恥じらいと喜びの表情をいろいろ集めて分析した結果、微笑みが最高潮に達する時期と視線を伏せる時期との微妙なタイミングのズレが鍵であることを突き止めた。すなわち、微笑みがピークに達する一秒ほど前に視線が伏せられると恥じらいの表情として見えるが、ピークに達した直後に目が伏せられるとそれは喜びの表情と判断されるというのだ。\n\n試しに、鏡に向かってやってみていただきたい。違いが分かるだろう。\n\n（注）恥じらい：恥ずかしがること",
+      "question": "恥じらいと喜びの表情はどの点で違うか。",
+      "options": [
+        "微笑みがピークに達するまでの時間が速いか遅いか",
+        "微笑む直前の視線の動きが上か下か",
+        "視線を伏せるのが微笑みのピークの前か後か",
+        "視線を伏せている時間が長いか短いか"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 5,
+        "pageEnd": 5
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "① 错误；区别不在微笑达到峰值所需时间的快慢，而在视线下垂发生于峰值之前还是之后。",
+        "② 错误；文章没有比较视线向上或向下，而是比较视线下垂与微笑峰值的先后。",
+        "③ 正确；解析指出，微笑达到峰值约一秒前垂下视线会显得羞涩，峰值后立即垂下视线则会被判断为喜悦，差异在峰值前后。",
+        "④ 错误；文章比较的是垂下视线的时点，没有比较持续时间长短。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 5,
+          "pageEnd": 5
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_MISSING_OPTION_ANALYSIS_1_2_4"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "解析 PDF 只说明了正确选项；补充三个文章可直接排除的干扰项理由，并将原抽取中把“恥じらい”误译为“困惑”改为“羞涩”。"
+        ]
+      }
+    },
+    {
+      "id": "2018-07-48",
+      "year": 2018,
+      "month": 7,
+      "number": 48,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "（3）「今」の勝負、つまり本番に弱いというひとは、失敗を恐れる気持ちがつよいのだとおもう。誰しも失敗は望まないが、人並み以上に失敗を恐れるのは、皮肉にも精度の高い到達イメージ、完成形が描けている結果だともいえる。\n\n完全なものへの願望は融通に欠ける到達のイメージでひとを縛ってしまうので、「今」起こっている現実そのものに合わせていくという柔軟な態度をゆるさない。予定どおりでないにしろ、その場で、なんとかやり過ごせる（注）、間に合わせられる、という行動が本番では求められているのだ。\n\n（注）やり過ごす：ここでは、切り抜ける",
+      "question": "筆者によると、本番に弱いひとはどうすればいいか。",
+      "options": [
+        "事前に描いた完成形にこだわらず、現実に合わせて対応する。",
+        "事前に完成形を描かずに、あらゆる事態に備える。",
+        "到達イメージを意識しつつ、失敗を恐れない気持ちで臨む。",
+        "精度の高い到達イメージに行動を合わせるようにする。"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 5,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "① 正确；解析指出“不擅长临场的人”若先形成对事情的完整想象，就会被其束缚而难以灵活应对；应按事实处理眼前情况。",
+        "② 错误；文章主张临场时根据现实灵活应对，并未主张不设想完成形并预先防备一切事态。",
+        "③ 错误；文章强调对完成形的执着会妨碍灵活应对，不是要求一边坚持到达意象一边消除恐惧。",
+        "④ 错误；让行动服从高精度的到达意象正会束缚人，与文章要求适应现场现实相反。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 5,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_MISSING_OPTION_ANALYSIS_2_3_4"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "解析 PDF 只说明了正确选项；补充三个可由文章直接排除的干扰项理由。"
+        ]
+      }
+    },
+    {
+      "id": "2018-07-49",
+      "year": 2018,
+      "month": 7,
+      "number": 49,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "（4）日頃の他者とのつきあいでは、相手の一言一言が嘘だと疑ってかかっているわけではない。いちいちそんなふうに接したら失礼にあたる。つまり「性善説」（注）をデフォルト（基本）として相手と接するのが普通だろう。相手の発言は真実だと思ってそれを基準に判断するから、それを嘘だろうと見直すのは難しい。そうすると、仮に多少不自然な言い方やしぐさがあったとしても、そしてそれが実際に嘘の手がかりとして有効であったとしても、見落としてしまう可能性がある。\n\n（注）性善説：人間は生まれつき善い人だという考え方",
+      "question": "見落としてしまう可能性があるのはなぜか。",
+      "options": [
+        "普通相手は嘘をつかないと思っているから。",
+        "相手を疑うのは失礼だと教えられてきたから。",
+        "嘘かどうかを判断する基準を持つのは難しいから。",
+        "嘘を見つける有効な手がかりが見つからないから。"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 6,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "① 正确；解析指出人们相信交往对象说的是真话，并以此为判断标准，所以才有发现不了谎言的可能。",
+        "② 错误；文章只说逐句怀疑对方会显得失礼，没有说人们是被教导成不可怀疑对方。",
+        "③ 错误；人们已有把对方发言当作真实的判断基准，困难的是从这个基准改为怀疑其为谎言。",
+        "④ 错误；文章说有效的说谎线索即使已经出现也可能被忽略，并非找不到线索。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 6,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_MISSING_OPTION_ANALYSIS_2_3_4"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "解析 PDF 只说明了正确选项；补充三个可由文章直接排除的干扰项理由。"
+        ]
+      }
+    },
+    {
+      "id": "2017-12-46",
+      "year": 2017,
+      "month": 12,
+      "number": 46,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "田川優子様\n\nこの度はトラベルライトをご利用いただきありがとうございます。弊社ホームページよりお申し込みいただいた「小型飛行機で行く暁島」（12月9日発）は、航空券の発売がご搭乗日1か月前からとなるため、現時点では仮予約になっております。ご希望の便が確保できましたら、田川様のご自宅宛てに確認書をお送りします。万が一、ご希望に添えなかった場合は、別の便をご提案させていただくこともございます。何とぞご了承ください。それでは、引き続きどうぞよろしくお願いいたします。",
+      "attribution": "2017年9月10日　株式会社トラベルライト（担当　中村）　電話：024-881-6456（平日10～19時・土日祝9～18時）　メールアドレス：toiawase@travellight.co.jp",
+      "question": "このメールで最も伝えたいことは何か。",
+      "options": [
+        "航空券仮予約の確認書を近日中に送ること",
+        "航空券の予約はまだ確定していないこと",
+        "航空券の手配に必要な情報が足りないこと",
+        "航空券が手配できないので別の便を提案したいこと"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. ╒ц╠т 2017─ъ12╘┬ N1.pdf",
+        "page": 6,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "① 确认书要等希望的航班确保后才寄送，并非通知近日寄出。",
+        "② 正确。解析指出，该邮件说明目前只是暂定预约；只有确保所需航班后才寄送确认书，如无法满足还会另提航班，因此机票预约尚未确定。",
+        "③ 邮件没有要求补充信息，未提到手配所需信息不足。",
+        "④ 目前尚未确定能否确保该航班，另提航班只是在无法满足希望时的可能安排。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. ╒ц╠т 2017─ъ12╘┬ N1.pdf",
+          "page": 6,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_OMITS_DISTRACTOR_ANALYSES"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source explains only the correct option; the three distractors are unambiguously contradicted by the notice's stated reservation status and conditional next steps."
+        ]
+      }
+    },
+    {
+      "id": "2017-12-47",
+      "year": 2017,
+      "month": 12,
+      "number": 47,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "あらゆる仕事はなんらかの形で、その人を世界の中に位置づける。畑仕事のような個人作業でもそうだ。自然のサイクルの中に、自分の存在を確かめることができる。人はどんなに大金持ちになっても、なんらかの形で働こうとする生き物だろう。お金持ちはお金持ちなりの仕事を、自分でつくり出すはずだ。それは人間が、外の世界との関わり合いを通じてしか自分が存在する実感を得ることができず、またそれを常に渇望（注）していることを示している。\n\n（注）渇望（かつぼう）する：強く望む",
+      "question": "筆者の考えに合うのはどれか。",
+      "options": [
+        "世界に存在するあらゆる仕事には、それぞれの価値がある。",
+        "自然の中で働き、自身の存在を確認することが大切だ。",
+        "人はどんなに豊かになっても、働くことをやめてはいけない。",
+        "人は仕事を通じて、自身が存在する意義を実感できる。"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. ╒ц╠т 2017─ъ12╘┬ N1.pdf",
+        "page": 6,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "① 文章谈的是工作使人确认自己在世界中的位置，没有论述各种工作的价值高低。",
+        "② 畑仕事只是个人作业也能确认存在的例子，作者并未主张必须在自然中工作。",
+        "③ 文章描述人即使富有也会想工作，并非提出‘不应停止工作’的规范性主张。",
+        "④ 正确。解析指出，文章主旨是人通过工作以及工作给社会带来的价值，找到自己在社会中的位置并确认自身存在的意义。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. ╒ц╠т 2017─ъ12╘┬ N1.pdf",
+          "page": 6,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_OMITS_DISTRACTOR_ANALYSES"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source explains only the correct option; each distractor either generalizes an example or adds a value judgment absent from the passage."
+        ]
+      }
+    },
+    {
+      "id": "2017-12-48",
+      "year": 2017,
+      "month": 12,
+      "number": 48,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "「すべての歴史は現代史である。」この有名な言葉が示す内容は、われわれが史料（注1）に対した場合、けっきょく史料をとおして過去を見るのは、ほかならぬ現在のわれわれであり現在の眼（め）である、ということである。われわれは、公平無私に（注2）、また古い時代の人の心になって対処しようとしても、われわれが生きている現在の人間である、ということから脱出することはできないからである。要するに歴史学は、こうした性格をもった学問である。\n\n（注1）史料：歴史研究のために必要な文献や遺物など\n（注2）公平無私に：私的な感情を持たずに公平に",
+      "question": "筆者によると、歴史学とはどのようなものか。",
+      "options": [
+        "史料の分析をとおして現代史を解明するもの",
+        "古い時代の人々の立場に立って研究するもの",
+        "過去を現代の人々の視点で解釈するもの",
+        "過去を現代史と比較して理解するもの"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. ╒ц╠т 2017─ъ12╘┬ N1.pdf",
+        "page": 6,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "① 文章说的是现代人通过史料看过去，不是通过史料解明现代史。",
+        "② 即使想站在古人的立场，人也无法摆脱自己是现代人的视点。",
+        "③ 正确。解析指出，人无法脱离自己是现代人的事实，每个时代的人都会以本时代的视角解读历史，因此历史学是以现代人的视点解释过去。",
+        "④ 文章没有主张把过去与现代史作比较，而是强调以现在的眼光看过去。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. ╒ц╠т 2017─ъ12╘┬ N1.pdf",
+          "page": 6,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_OMITS_DISTRACTOR_ANALYSES"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source explains only the correct option; the other choices conflict directly with the passage's distinction between studying the past and doing so from a present-day viewpoint."
+        ]
+      }
+    },
+    {
+      "id": "2017-12-49",
+      "year": 2017,
+      "month": 12,
+      "number": 49,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "人間は古い昔から、「人間とは何か」を問うてきた。けれどそれは、早く言えば「人間は動物とどこがちがうか？」という問いかけであった。いわく（注）「人間には動物にはない言語がある」、いわく「人間には思想がある」、「人間には文化がある」等々。しかしこの問いかけは、根本的にまちがっていた。問題は「人間は動物とどこがちがうか？」ではなくて、「人間は他の動物とどこがちがうか？」ということだったのである。これに答えるには、人間はどういう動物であるかを問う以外にない。\n\n（注）いわく：ここでは、よく言われるように",
+      "question": "筆者の考えに合うのはどれか。",
+      "options": [
+        "言語・思想・文化は、人間だけのものと考えるべきではない。",
+        "人間も動物であるという視点で、人間について考えるべきだ。",
+        "人間と他の動物とのちがいを問うても意味がない。",
+        "人間と動物のちがいを根本的に問い直すべきだ。"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. ╒ц╠т 2017─ъ12╘┬ N1.pdf",
+        "page": 6,
+        "pageEnd": 7
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "① 作者没有否定语言、思想和文化是否为人类独有，只指出原来的提问方式有误。",
+        "② 正确。解析指出，原问题应从“人类也是动物的一种”出发，改为追问人类与其他动物有何区别，因此应以人也是动物的视点来思考人类。",
+        "③ 作者并非认为比较没有意义，而是主张追问人类与其他动物有何不同。",
+        "④ 该说法仍把‘人间’与‘动物’对立起来；作者要求先把人类视为动物的一种，再与其他动物比较。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. ╒ц╠т 2017─ъ12╘┬ N1.pdf",
+          "page": 6,
+          "pageEnd": 7
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_OMITS_DISTRACTOR_ANALYSES"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source explains only the correct option; the distractors either assert an unsupported conclusion, reject the comparison, or retain the framing the author explicitly corrects."
+        ]
+      }
+    },
+    {
+      "id": "2017-07-46",
+      "year": 2017,
+      "month": 7,
+      "number": 46,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "以下は、ある企業がホームページに掲載したお知らせである。\n\n関川薬品工業株式会社＞お知らせ\n2017.06.01 重要なお知らせ\n\nすでにお知らせしておりますとおり、西山営業所は5月31日（水）より移転先にて業務を再開しております。しかしながら、移転作業時にファクス機に故障が生じ、本日（6月1日）現在もファクスの送受信ができません。\n\n復旧までは下記の電話もしくはメールをご利用ください。なお、ファクス機が復旧し次第、こちらのホームページ上でお知らせいたします。\n\n関係者の皆様には大変ご迷惑をお掛けし申し訳ございませんが、何卒よろしくお願いいたします。\n電話番号：020-428-4319\nEメール：info@sekikawa.com",
+      "passageTitle": "重要なお知らせ",
+      "question": "西山営業所について、このお知らせで最も伝えたいことは何か。",
+      "options": [
+        "移転が完了し、5月31日から業務を再開している。",
+        "移転が完了したので、電話とメールは使える。",
+        "ファクス機が復旧し次第、業務を再開する。",
+        "ファクス機は不調だが、電話とメールは使える。"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 問題 2017年7月 N1.pdf",
+        "page": 6,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "只说明营业所已于5月31日恢复办公，遗漏了本通知的重点——传真仍无法收发及临时联系方式。",
+        "电话和邮件可用是传真故障期间的替代联系方式，并非因为搬迁完成。",
+        "营业所已于5月31日恢复办公，并不需要等传真机修复后才恢复营业。",
+        "通知说明西山销售部已搬到新办公地点，但搬家过程中传真机发生故障；恢复前可用电话或邮件联系，因此选项4正确。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 問題 2017年7月 N1.pdf",
+          "page": 6,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "MISSING_SOURCE_OPTION_ANALYSIS_1",
+          "MISSING_SOURCE_OPTION_ANALYSIS_2",
+          "MISSING_SOURCE_OPTION_ANALYSIS_3"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source explains only option 4; the other three choices contradict or omit explicit facts in the notice."
+        ]
+      }
+    },
+    {
+      "id": "2017-07-47",
+      "year": 2017,
+      "month": 7,
+      "number": 47,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "以下は、動物園の飼育環境について書かれたものである。\n\n動物たちにとって飼育係は大事な環境要因である。展示場としての環境の改善だけでは、動物たちの飼育環境の真の改善にはならない。日々動物と接触する飼育係は、時として動物たちのストレス源になることがある。飼育係がストレス源にならないためには動物をよく観察し、行動にあわせた世話をし、その動物の種としての特徴、個体としての性格を知らなければならない。",
+      "attribution": "小宮輝之『物語 上野動物園の歴史』による",
+      "question": "筆者の考えに合うのはどれか。",
+      "options": [
+        "動物たちにとって、飼育係との関係は展示場の改善よりも重要である。",
+        "飼育環境を改善しても、動物にストレスがたまることがある。",
+        "飼育環境の改善には、飼育係が動物の特徴や性格を把握することも重要である。",
+        "飼育係の使命は、動物の特徴や性格に合った展示場を作ることである。"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 問題 2017年7月 N1.pdf",
+        "page": 6,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "文章说只改善展示场还不够，并未比较饲养员关系与展示场改善何者更重要。",
+        "文章不是说饲养环境改善后仍会积累压力，而是说饲养员本身也是环境因素，必须避免成为压力源。",
+        "饲养员不仅要观察、接触并照料动物，还要在饲养环境中充分掌握动物的特征和性格，因此选项3正确。",
+        "文章要求饲养员观察动物、按其行为照料并了解其特点和性格，没有说使命是建造展示场。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 問題 2017年7月 N1.pdf",
+          "page": 6,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "MISSING_SOURCE_OPTION_ANALYSIS_1",
+          "MISSING_SOURCE_OPTION_ANALYSIS_2",
+          "MISSING_SOURCE_OPTION_ANALYSIS_4"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source explains only option 3; each distractor conflicts with the passage's explicit account of the keeper's role."
+        ]
+      }
+    },
+    {
+      "id": "2017-07-48",
+      "year": 2017,
+      "month": 7,
+      "number": 48,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "人と人とのコミュニケーションが希薄化していると言われる今日、それを如何に円滑に、如何に真意を外さずに行うかは、誰にとっても大きな課題だ。\n\n時に人は「力」によって他者を動かそうとする。あるいは「経済力」が人を動かす手段ともなる。企業という組織では、「役職＝ポジション」を使って人を動かすケースも多い。\n\nだがそういった「上意下達」（注1）「弱肉強食」のコミュニケーションでは、人は本質的な満足は得られない。人が人である所以（注2）は、力対力の拮抗ではなく、他者との「共感」によって「動く」「動かす」ことができる点にある。\n\n（注1）上意下達：上に立つ者の考えや命令を下位の者へ伝えること\n（注2）所以：理由",
+      "attribution": "佐渡裕・辻秀一『感じて動く』による",
+      "question": "筆者の考えに合うのはどれか。",
+      "options": [
+        "企業では「共感」によるコミュニケーションで人を動かしている。",
+        "企業では「役職」を使って人を動かすことも考えるべきだ。",
+        "人は本質的な満足が得られると確信しない限り動かない。",
+        "人は「力」より「共感」によって動こうとする。"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 問題 2017年7月 N1.pdf",
+        "page": 6,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "文章说企业常用职位推动他人，并未说企业依靠共感进行沟通。",
+        "作者批评利用职位等力量推动他人的沟通方式，并不主张企业应考虑采用这种方式。",
+        "文章没有说人只有确信能获得本质满足才会行动，而是说人能够因与他人共感而行动。",
+        "作者否定以权力驱动人的方式，认为人能够在与他人产生共感的情况下行动，因此选项4正确。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 問題 2017年7月 N1.pdf",
+          "page": 6,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "EXPLANATION_SPANS_PAGES_5_6",
+          "MISSING_SOURCE_OPTION_ANALYSIS_1",
+          "MISSING_SOURCE_OPTION_ANALYSIS_2",
+          "MISSING_SOURCE_OPTION_ANALYSIS_3"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source explains only option 4; the three distractors directly conflict with or add an unsupported condition to the passage."
+        ]
+      }
+    },
+    {
+      "id": "2017-07-49",
+      "year": 2017,
+      "month": 7,
+      "number": 49,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "人間には、道具をつくり、その道具に適応しようとする性質がある。そしてその道具に適応し過ぎてしまうことで、本来の人間の能力を削がれて（注1）しまうことがある。その適応力が仇（注2）となり、人間がつくった道具により人間が左右される。まるで、人間がつくった道具に人間がつくられてしまうかのように。歩きながらでもスマートフォン（注3）を使いたいという欲求にかられ、挙げ句に視野を大きくそこへ奪われ、自ら、そして他者をも危険な状況に追い込んでしまう。これもその現象のひとつだ。\n\n（注1）削ぐ：削る\n（注2）仇：ここでは、害\n（注3）スマートフォン：パソコンの機能もある携帯電話",
+      "attribution": "小川和也『デジタルは人間を奪うのか』による",
+      "question": "その現象とはどのような現象のことか。",
+      "options": [
+        "道具によって人間が便利さに鈍感になる現象",
+        "道具によって人間が振り回されている現象",
+        "道具が人間にとって危険なものになる現象",
+        "道具の発展が人間の欲求を拡大させる現象"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 問題 2017年7月 N1.pdf",
+        "page": 7,
+        "pageEnd": 7
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "文章说人因过度适应工具而能力受损，没有说人会对便利变得迟钝。",
+        "人类制造并使用工具，但在使用工具的过程中，人类自身的能力也受到限制，即人类被工具束缚，因此选项2正确。",
+        "危险处境是人受工具摆布后造成的结果，并非工具本身变成危险物。",
+        "文章没有说工具的发展扩大了欲求；想边走边用手机只是人受工具摆布的例子。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 問題 2017年7月 N1.pdf",
+          "page": 7,
+          "pageEnd": 7
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 6
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "MISSING_SOURCE_OPTION_ANALYSIS_1",
+          "MISSING_SOURCE_OPTION_ANALYSIS_3",
+          "MISSING_SOURCE_OPTION_ANALYSIS_4"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source explains only option 2; the three distractors misstate the phenomenon or substitute one consequence for its definition."
+        ]
+      }
+    },
+    {
+      "id": "2016-12-46",
+      "year": 2016,
+      "month": 12,
+      "number": 46,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "教師＝話す人、生徒＝聞く人という構造が知らず知らずのうちに教室空間にできあがり、そして固定化してしまうのは恐ろしいことではないかと思う。教師が先取りしてしまうことで、生徒が自分自身で考え、解決しようとする芽をつみとってしまう場合がある。\n\nいつも話し続けるのがコミュニケーションでない。教師側が沈黙し、「待つ」という行為も時には大切であろう。もう少し話したい、と思うところで一歩ひいてみる（注）ことで、相手が言おうとすることを引き出すことができるのである。\n\n（注）一歩ひいてみる：ここでは、話すのをやめてみる",
+      "attribution": "（徳井厚子『日本語教師の「衣」再考―多文化共生への課題』による）",
+      "question": "筆者の考えに合うのはどれか。",
+      "options": [
+        "教師と生徒が自由に発言し合うことも必要だ。",
+        "教師は生徒の考えを想像するべきだ。",
+        "教師は生徒の発言を待つことも必要だ。",
+        "教師は生徒に沈黙の時間を与えないようにすべきだ。"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 6,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "① 错误；文章强调教师有时应停止讲话并等待学生发言，并未主张师生自由地相互发言。",
+        "② 解析未把教师揣摩学生的想法列为作者的主张。",
+        "③ 正确；教师适时沉默并等待，可以让学生自己思考，也能引出学生想说的话。",
+        "④ 解析指出问题在于教师不给学生思考、保持沉默的时间，因此此项不符合作者的想法。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 6,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "reviewNotes": [
+          "The pending analyses replaced the passage's specific contrast between teacher talk and waiting for students with a broader claim about equal mutual communication."
+        ]
+      }
+    },
+    {
+      "id": "2016-12-47",
+      "year": 2016,
+      "month": 12,
+      "number": 47,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "以下は、ある市役所のホームページに掲載されたお知らせである。\n\n2016年11月1日\nスポーツ課\n\n市民運動場の予約は、これまで管理事務所窓口で受け付けておりましたが、2017年2月1日よりインターネット上の予約システムでも行うことができるようになります。予約システムの利用は平日、土日祝日を問わず24時間可能で、予約は、窓口での予約と同様に、使用日の一か月前から受け付けます。\n\n予約システムの利用に際しては、事前に利用者登録が必要となりますので、身分を証明できるものを持って管理事務所窓口にお越しください。\n\n市民運動場管理事務所　〒002―3833　南松市中央町3―2　中央公園内\n（受付時間：月曜日～金曜日 9:00～17:00）",
+      "passageTitle": "市民運動場の予約について",
+      "question": "市民運動場の予約について、このお知らせは何を知らせているか。",
+      "options": [
+        "管理事務所窓口での予約受付期間が変更になること",
+        "管理事務所窓口で利用者登録をすれば、インターネット上で予約ができるようになること",
+        "インターネット上での予約受付時間がこれまでより長くなること",
+        "インターネット上の予約システムの導入により、管理事務所窓口での予約ができなくなること"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 6,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "① 错误；通知只增加了网上预约方式，并未改变管理事务所窗口受理预约的时间。",
+        "② 正确；网上预约需要预先登记，登记时须携带可证明身份的材料到管理事务所窗口办理。",
+        "③ 错误；网上预约仍与窗口预约一样，从使用日一个月前开始受理，并未延长预约受理期。",
+        "④ 错误；导入网上预约系统后，管理事务所窗口仍可受理预约。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 6,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 5
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-48",
+      "year": 2016,
+      "month": 12,
+      "number": 48,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "異文化間での対話を議論するときに、必ずといってよいくらい出てくるのが、価値観の理解と共有である。他者と対話を通して、人間関係を樹立していくには、自己の価値観を保持したままで、他者の価値観を理解するという方略だけでは十分ではない。相互的な働きかけを通して、何か新たな価値を共有することが要求されるのである。すなわち、自らの価値観を相対化し、新たな価値を対話という共同作業を通して創り上げ、それを共有していく態度が必要なのだ。",
+      "attribution": "（ARCLE編集委員会・田中茂範・アレン玉井光江・根岸雅史・吉田研作編著『幼児から成人まで一貫した英語教育のための枠組み―CEFR-English Curriculum Framework』による）",
+      "question": "筆者によると、異文化間で対話を通して人間関係を築く上で最も大切なことは何か。",
+      "options": [
+        "自己の価値観を理解してもらおうとする態度",
+        "自己の価値観を保ちながら、他者の価値観を理解する態度",
+        "他者と自己の共通の価値観を創り上げていく態度",
+        "他者の価値観の中に自己の価値観との共通点を見つける態度"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 6,
+        "pageEnd": 7
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "① 错误；文章的重点不是让他人理解自己的价值观，而是通过对话共同创造并共享新的价值。",
+        "② 错误；文章明确指出，只保持自己的价值观并理解他人的价值观还不够。",
+        "③ 正确；文章主张将自己的价值观相对化，并通过对话这一共同作业创造、共享新的价值。",
+        "④ 错误；文章要求共同创造新的价值，而不是只在既有价值观中寻找共同点。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 6,
+          "pageEnd": 7
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 6
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_MISSING_OPTION_ANALYSIS_1_2_4"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The question PDF shows “CEFR-English” without the OCR space. The source explains the correct choice but omits options 1, 2, and 4; their conflicts with the passage are explicit and unambiguous."
+        ]
+      }
+    },
+    {
+      "id": "2016-12-49",
+      "year": 2016,
+      "month": 12,
+      "number": 49,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "以下は、劇を作ることを仕事にしている人が書いた文章である。\n\n僕は「変な人」です。そうでなければ、こんな仕事はしてません。そして僕は「普通の人」です。だからこそこの仕事が成立しています。\n\n「特別なもの」を生み出そうとするとき、それがどんなふうに特別なのかを「普通」という視点から見極める必要があります。「特別」と「普通」、定規を何度も持ち替えるのです。そのために自分の中の普通さを死守するのです。",
+      "attribution": "（小林賢太郎『僕がコントや演劇のために考えていること』による）",
+      "question": "この文章で筆者が述べていることは何か。",
+      "options": [
+        "「普通」という視点がないと、「特別なもの」は作れない。",
+        "「普通の人」が普通のものを作ると、「特別なもの」になる。",
+        "「変な人」が普通のものを作ると、「特別なもの」になる。",
+        "「変な人」の視点でしか、「特別なもの」は作れない。"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 7,
+        "pageEnd": 7
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "① 正确；解析指出作者主张守住自身的“普通”，从普通人的视点出发，才可能创造出特别的事物。",
+        "② 错误；文章不是说普通人制作普通事物就会变得特别，而是说创作特别事物时需要用普通的视点评判。",
+        "③ 错误；文章没有说怪人制作普通事物会成为特别事物，而是强调在“特别”和“普通”两种尺度之间切换。",
+        "④ 错误；文章明确说需要从“普通”的视点判断特别之处，并非只能依靠怪人的视点。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 7,
+          "pageEnd": 7
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 6
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_MISSING_OPTION_ANALYSIS_2_3_4"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The source explains only the correct option; the three distractors directly contradict the passage's stated role of the ordinary viewpoint."
+        ]
+      }
+    },
+    {
+      "id": "2016-07-46",
+      "year": 2016,
+      "month": 7,
+      "number": 46,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "以下は、ある会社の海外駐在員が受け取ったメールである。\n\nムンバイ工場 主任\n高城洋二様\n\nお世話になっております。本社秘書課の横山です。\n来月の副社長出張のスケジュールに関して、以下変更のご連絡です。\n8月8日（月）にムンバイ工場視察の予定でしたが、本社にて会議が入り、副社長のムンバイ到着は9日（火）22時となる見込みとなりました。お手数をおかけしますが、視察日程の調整を翌日以降でお願いいたします。また視察後に予定していた、ムンバイ日本商工会会長の竹内様との面談の調整もお願いいたします。なお、ムンバイ出発は8月12日（金）で変更ありません。\n以上、よろしくお願いいたします。\n\n秘書課\n横山陽一",
+      "question": "このメールを受け取った人がしなければならないことは何か。",
+      "options": [
+        "副社長の工場視察を8月9日に変更し、竹内さんとの面談日程も調整する。",
+        "副社長の工場視察と竹内さんとの面談を8月10日以降で再調整する。",
+        "副社長の工場視察の日程と帰国日が変更になったことを竹内さんに連絡する。",
+        "副社長の工場視察後の面談がキャンセルになったことを竹内さんに連絡する。"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. ╒ц╠т 2016─ъ7╘┬ N1.pdf",
+        "page": 5,
+        "pageEnd": 6
+      },
+      "flags": [
+        "PASSAGE_AND_OPTIONS_SPAN_PAGES"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "副社长9日22时才抵达孟买，工厂视察不能改到9日。",
+        "文中说原定8月8日考察，因日程变化希望顺延一天；会面也同样顺延，因此副社长的工厂考察和与竹内先生的会面都调整到8月10日以后。",
+        "邮件明确说12日离开孟买的安排不变；需要调整的是视察和面谈日程。",
+        "面谈并未取消，邮件要求重新协调面谈日程。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. ╒ц╠т 2016─ъ7╘┬ N1.pdf",
+          "page": 5,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 6
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "PASSAGE_AND_OPTIONS_SPAN_PAGES",
+          "MISSING_SOURCE_OPTION_ANALYSIS_1",
+          "MISSING_SOURCE_OPTION_ANALYSIS_3",
+          "MISSING_SOURCE_OPTION_ANALYSIS_4"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The question PDF says 「見込みとなりました」. The explanation source covers only the correct option; the three distractor reasons are unambiguous from the email."
+        ]
+      }
+    },
+    {
+      "id": "2016-07-47",
+      "year": 2016,
+      "month": 7,
+      "number": 47,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "「自分は間違ってない」と思うことから始まる怒りは、妥当な怒りです。少しも後ろめたくありません。\nむしろ、「間違ってない」と思いながら怒りをごまかしてしまったときのほうが後味は悪いのです。「なんで怒らなかったんだろう」という後悔は、惨めな気持ちになって長く続きます。\n怒りを抑えてばかりいると、この惨めな気持ちにも慣れてしまいます。敗北感に慣らされてしまうのです。わたしはこれがいちばん怖いと思っています。",
+      "attribution": "（和田秀樹『腹が立ったら怒りなさい』による）",
+      "question": "筆者の考えに合うものはどれか。",
+      "options": [
+        "怒りの原因を明らかにしたいなら、怒りをごまかさないほうがいい。",
+        "怒りを抑えていると、ますます怒りが増してしまう。",
+        "自分が間違っていないと思うなら、怒りを抑えなくていい。",
+        "自分が間違っていると気づけば、怒りは長く続かない。"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. ╒ц╠т 2016─ъ7╘┬ N1.pdf",
+        "page": 6,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "文章没有讨论查明愤怒的原因，而是强调自认没错时不应掩饰愤怒。",
+        "文章说压抑愤怒会让人习惯惨痛感和失败感，并非让愤怒越来越强。",
+        "作者认为，自认正确时生气不必遗憾；更可怕的是自认正确却忍气吞声，事后因自己的懦弱而后悔。",
+        "文章没有说意识到自己有错就能缩短愤怒；论述的是自认没错时压抑愤怒的后果。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. ╒ц╠т 2016─ъ7╘┬ N1.pdf",
+          "page": 6,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 6
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "MISSING_SOURCE_OPTION_ANALYSIS_1",
+          "MISSING_SOURCE_OPTION_ANALYSIS_2",
+          "MISSING_SOURCE_OPTION_ANALYSIS_4"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The explanation source covers only the correct option; the three distractor reasons are unambiguous from the passage."
+        ]
+      }
+    },
+    {
+      "id": "2016-07-48",
+      "year": 2016,
+      "month": 7,
+      "number": 48,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "引っ越しというのは、誰にとっても面倒だが、いい面もあるだろう。すなわち、これまでの生活を振り返り、今後望むような生活を思い描きながら、そのために不要なものをどんどん処分する機会である、と。そういう意味では、引っ越しは日常生活を更生させるよいきっかけでもあるはずだ。\n私はいつもそのきっかけを活かしたいと思いながらも、なかなか実行するに至らない。むしろ何十年も、まるで亀のごとく重い物を背負いながら転々としてきたわけである。",
+      "attribution": "（マイク・モラスキー 日本経済新聞2014年3月25日付夕刊による）",
+      "question": "引っ越しについて、筆者はどのように述べているか。",
+      "options": [
+        "不要なものを捨てる機会であり、自分もそのための引っ越しを何度もしている。",
+        "望むような生活をするためであり、自分もいい場所があれば引っ越しをしたい。",
+        "生活を一新する機会だが、自分は引っ越しをしてもそれを活かせていない。",
+        "いい面もあるが、自分は面倒であまり引っ越しをしていない。"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. ╒ц╠т 2016─ъ7╘┬ N1.pdf",
+        "page": 6,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "作者虽多次搬家，却一直没能借机处理不需要的东西，并非为了丢东西而多次搬家。",
+        "文章把理想生活作为整理取舍时的设想，没有说作者想遇到好地方就搬家。",
+        "搬家是让生活焕然一新的机会，但作者虽多次搬家，始终未能借机处理不需要的东西。",
+        "作者几十年来多次搬家；问题不是因嫌麻烦而很少搬家，而是未能利用搬家的机会。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. ╒ц╠т 2016─ъ7╘┬ N1.pdf",
+          "page": 6,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 6
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "MISSING_SOURCE_OPTION_ANALYSIS_1",
+          "MISSING_SOURCE_OPTION_ANALYSIS_2",
+          "MISSING_SOURCE_OPTION_ANALYSIS_4"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The existing correct-option analysis introduced an unsupported acquaintance and misstated the passage. The explanation source covers only the correct option; the three distractor reasons are passage-grounded."
+        ]
+      }
+    },
+    {
+      "id": "2016-07-49",
+      "year": 2016,
+      "month": 7,
+      "number": 49,
+      "section": "読解",
+      "type": "内容理解（短文）",
+      "passage": "いま人間の欲望がいろいろと問題になっているのは、それが余りにも膨みすぎて、欲望の充足それ自体が目的と化し、本来の意味、つまり私たちの必要を満たし、私たちに心身の安定とやすらぎ（幸福）をもたらす範囲を遥かに逸脱してしまったことにある。\n私たちの多くはこの過度に肥大した欲望ゆえに、日々を楽しく過せるどころか、絶えざる欲求不満に苛まれるという不幸な状態に陥っている。",
+      "attribution": "（鈴木孝夫『人にはどれだけの物が必要か―ミニマム生活のすすめ』による）",
+      "question": "欲望について、筆者はどのように述べているか。",
+      "options": [
+        "欲望が満たされたため、本当に必要なものがわからなくなっている。",
+        "欲望が簡単に満たされるために、日々の楽しみが失われている。",
+        "欲望が膨みすぎて、欲望を満たすことをあきらめるようになっている。",
+        "欲望が膨みすぎたため、幸福が感じられなくなっている。"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. ╒ц╠т 2016─ъ7╘┬ N1.pdf",
+        "page": 6,
+        "pageEnd": 6
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "文章说欲望过度膨胀并造成持续不满，不是欲望已经得到满足。",
+        "文章说人们受持续的欲求不满折磨，并非欲望容易得到满足。",
+        "人们没有放弃满足欲望；相反，满足欲望本身已经变成目的。",
+        "欲望本应使人安心并感到幸福，但过度欲望超出这一范围，反而会把人推入不幸，使人感受不到幸福。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. ╒ц╠т 2016─ъ7╘┬ N1.pdf",
+          "page": 6,
+          "pageEnd": 6
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 6
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "MISSING_SOURCE_OPTION_ANALYSIS_1",
+          "MISSING_SOURCE_OPTION_ANALYSIS_2",
+          "MISSING_SOURCE_OPTION_ANALYSIS_3"
+        ],
+        "supplementalAnalysis": true,
+        "reviewNotes": [
+          "The explanation source covers only the correct option; the three distractor reasons are unambiguous from the passage."
+        ]
+      }
+    }
+  ],
+  "verificationSummary": {
+    "totalQuestions": 20,
+    "verified": 20,
+    "manualCheck": 0,
+    "sourceSets": 5
+  }
+}

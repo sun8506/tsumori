@@ -1,0 +1,6584 @@
+{
+  "dataset": "N1-2018-07-vocabulary + N1-2017-12-vocabulary + 2017-07-語彙 + 2016-12-語彙 + 2016-07-語彙",
+  "generatedAt": "2026-11-14T13:43:57.574Z",
+  "status": "verified",
+  "sourceDatasets": [
+    "data/questions.json",
+    "data/2017-12.json",
+    "data/2017-07.json",
+    "data/2016-12.json",
+    "data/2016-07.json"
+  ],
+  "flags": [
+    "SOURCE_ONLY_EXPLAINS_CORRECT_OPTION",
+    "SOURCE_DUPLICATE_OPTION_ANALYSIS_3_4",
+    "SOURCE_EXPLANATION_TYPO_CORRECTED",
+    "SOURCE_OPTION_4_ANALYSIS_GENERIC",
+    "SOURCE_OPTIONS_2_4_ANALYSIS_GENERIC",
+    "SOURCE_OPTION_1_ANALYSIS_GENERIC",
+    "SOURCE_EXPLANATION_INFLECTION_CORRECTED",
+    "SOURCE_EXPLANATION_WORD_CHOICE_CORRECTED"
+  ],
+  "questions": [
+    {
+      "id": "2018-07-01",
+      "year": 2018,
+      "month": 7,
+      "number": 1,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "鈴木氏は当時を回顧して、次のように語った。",
+      "options": [
+        "かいこう",
+        "かいこ",
+        "かいそう",
+        "かいそ"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 1,
+      "optionAnalysis": [
+        "① かいこう（開口）：开口；不是题中「回顧」的读音。",
+        "② かいこ（回顧）：回顾；题意是铃木回顾当时的情况，正确。",
+        "③ かいそう（階層）：阶层；字形和词义均不同。",
+        "④ かいそ（改組）：改组；字形和词义均不同。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-02",
+      "year": 2018,
+      "month": 7,
+      "number": 2,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "彼の話には多少の偽りがあると思われた。",
+      "options": [
+        "へだたり",
+        "あせり",
+        "かたより",
+        "いつわり"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 3,
+      "optionAnalysis": [
+        "① へだたり（隔たり）：分歧、间隔；不表示虚假。",
+        "② あせり（焦り）：焦虑；不表示虚假。",
+        "③ かたより（偏り）：偏、偏颇；不表示虚假。",
+        "④ いつわり（偽り）：不真实、虚伪；符合“话中多少夹杂假话”，正确。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-03",
+      "year": 2018,
+      "month": 7,
+      "number": 3,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "私は特に嫌悪感は持たなかった。",
+      "options": [
+        "けんおかん",
+        "けんあくかん",
+        "げんおかん",
+        "げんあくかん"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 0,
+      "optionAnalysis": [
+        "① けんおかん（嫌悪感）：厌恶之情；「嫌悪」读作「けんお」，所以正确。",
+        "② けんあくかん：把「悪」误读成「あく」；在「嫌悪」中应读「お」，不是「けんあく」。",
+        "③ げんおかん：把「嫌」误读成「げん」；「嫌」在「嫌悪」中应读「けん」。",
+        "④ げんあくかん：「嫌」和「悪」都读错了；正确读音是「けんおかん」。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_ONLY_EXPLAINS_CORRECT_OPTION"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2018-07-04",
+      "year": 2018,
+      "month": 7,
+      "number": 4,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "問題が解決するまで自粛することにした。",
+      "options": [
+        "じしゅう",
+        "じしゅく",
+        "じせい",
+        "じせき"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 1,
+      "optionAnalysis": [
+        "① じしゅう（自習）：自习；不是约束自身言行。",
+        "② じしゅく（自粛）：约束自己的言行；符合解决问题前谨言慎行的语境，正确。",
+        "③ じせい（自制）：自制；词形与题中词不同。",
+        "④ じせき（自責）：自责；词义不合。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-05",
+      "year": 2018,
+      "month": 7,
+      "number": 5,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "自分を戒めたいと思う。",
+      "options": [
+        "あらためたい",
+        "なぐさめたい",
+        "きわめたい",
+        "いましめたい"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 3,
+      "optionAnalysis": [
+        "① あらためたい（改めたい）：想改变；不是自我警戒。",
+        "② なぐさめたい（慰めたい）：想安慰；不是自我警戒。",
+        "③ きわめたい（極めたい）：想达到极限；不是自我警戒。",
+        "④ いましめたい（戒めたい）：想警戒；符合“我想自我警戒”，正确。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-06",
+      "year": 2018,
+      "month": 7,
+      "number": 6,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "この国の南側には、なだらかな丘陵地帯が広がっている。",
+      "options": [
+        "しゅうりょう",
+        "きゅうろう",
+        "きゅうりょう",
+        "しゅうろう"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 2,
+      "optionAnalysis": [
+        "① しゅうりょう（終了）：结束；不是地貌。",
+        "② きゅうろう：解析 PDF 标为无意义的迷惑项。",
+        "③ きゅうりょう（丘陵）：丘陵；符合“一望无际的平缓丘陵地带”，正确。",
+        "④ しゅうろう（就労）：工作、就业；不是地貌。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-07",
+      "year": 2018,
+      "month": 7,
+      "number": 7,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "この商品は非常によく売れていて、どの店にも（　）がほとんどない状態だ。",
+      "options": [
+        "設置",
+        "残留",
+        "所持",
+        "在庫"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 3,
+      "optionAnalysis": [
+        "① 設置（せっち）：设置、设立；不能表示商店的存货。",
+        "② 残留（ざんりゅう）：残留；不能表示商店的存货。",
+        "③ 所持（しょじ）：持有、携带；不能表示商店的库存状态。",
+        "④ 在庫（ざいこ）：存货、库存；符合“哪个店基本都没有库存”，正确。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-08",
+      "year": 2018,
+      "month": 7,
+      "number": 8,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "企業の海外進出は（　）を伴うが、成功すれば利益は大きい。",
+      "options": [
+        "アウト",
+        "エラー",
+        "リスク",
+        "ダウン"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 2,
+      "optionAnalysis": [
+        "① アウト（out）：出局；不表示海外发展的风险。",
+        "② エラー（error）：错误；不表示风险。",
+        "③ リスク（risk）：风险；符合“海外发展虽伴随风险”，正确。",
+        "④ ダウン（down）：下降；不合句意。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-09",
+      "year": 2018,
+      "month": 7,
+      "number": 9,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "不景気が続いても父の会社が倒産しなかったのは、設立以来、（　）経営を続けてきたおかげだ。",
+      "options": [
+        "切実な",
+        "堅実な",
+        "安泰な",
+        "安易な"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 1,
+      "optionAnalysis": [
+        "① 切実な（せつじつな）：迫切的、殷切的；不表示经营稳健。",
+        "② 堅実な（けんじつな）：妥善的、稳妥的、稳健的；符合“持续稳健经营”，正确。",
+        "③ 安泰な（あんたいな）：安泰的、安宁的；不直接修饰经营方式的稳健。",
+        "④ 安易な（あんいな）：容易的；不合句意。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-10",
+      "year": 2018,
+      "month": 7,
+      "number": 10,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "品質の劣化を防ぐには、光を通さない黒い箱に入れて、光を（　）する必要がある。",
+      "options": [
+        "拒絶",
+        "駆除",
+        "遮断",
+        "隔離"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 2,
+      "optionAnalysis": [
+        "① 拒絶（きょぜつ）：拒绝；不能表示阻挡光线。",
+        "② 駆除（くじょ）：驱除；通常用于清除有害物，不合语境。",
+        "③ 遮断（しゃだん）：阻挡、隔断；符合用不透光黑箱阻挡光线，正确。",
+        "④ 隔離（かくり）：分离、隔离；不是阻断光线。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-11",
+      "year": 2018,
+      "month": 7,
+      "number": 11,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "久しぶりに帰省すると、町の様子が（　）変わっていて、驚いた。",
+      "options": [
+        "がらりと",
+        "ずらりと",
+        "けろりと",
+        "ちらりと"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 0,
+      "optionAnalysis": [
+        "① がらりと：状况发生剧烈变化；符合故乡面貌翻天覆地变化，正确。",
+        "② ずらりと：成排地、一大排；强调排列，不表示变化。",
+        "③ けろりと：若无其事；不合语境。",
+        "④ ちらりと：一晃、一闪；不表示彻底变化。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-12",
+      "year": 2018,
+      "month": 7,
+      "number": 12,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "中村さんの勝手な行動には強い怒りを覚えたが、友人に（　）、少し気持ちが落ち着いた。",
+      "options": [
+        "親しまれて",
+        "なだめられて",
+        "勧められて",
+        "ゆだねられて"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 1,
+      "optionAnalysis": [
+        "① 親しまれて（したしまれて）：被亲近；不表示被朋友劝解。",
+        "② なだめられて：被劝解；符合朋友劝解后心情平复，正确。",
+        "③ 勧められて（すすめられて）：被劝告、被推荐；不是安抚劝解。",
+        "④ ゆだねられて：被委托、托付；不合语境。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-13",
+      "year": 2018,
+      "month": 7,
+      "number": 13,
+      "section": "語彙",
+      "type": "文脈規定",
+      "question": "部長は昨日の会議で、新企画について大枠は説明したが、具体的な開始時期には（　）しなかった。",
+      "options": [
+        "供述",
+        "言及",
+        "告白",
+        "通話"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 1,
+      "optionAnalysis": [
+        "① 供述（きょうじゅつ）：口述、供述；多用于陈述案情，不合会议语境。",
+        "② 言及（げんきゅう）：提及、言及；符合“提到框架但未提具体开始时间”，正确。",
+        "③ 告白（こくはく）：告白；不合语境。",
+        "④ 通話（つうわ）：通话、用电话交谈；不合语境。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-14",
+      "year": 2018,
+      "month": 7,
+      "number": 14,
+      "section": "語彙",
+      "type": "言い換え類義",
+      "question": "すみやかに片づけてください。",
+      "options": [
+        "元の通りに",
+        "できるだけきれいに",
+        "できるだけ早く",
+        "決めた通りに"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 2,
+      "optionAnalysis": [
+        "① 元の通りに（もとのとおりに）：像原来一样地；不等于「すみやかに」。",
+        "② できるだけきれいに：尽量整洁地；强调干净，不是迅速。",
+        "③ できるだけ早く：尽快、赶快；与「すみやかに」（快、迅速、及时）同义，正确。",
+        "④ 決めた通り（きめたとおり）：像决定的那样；不表示迅速。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": [
+            2,
+            3
+          ]
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-15",
+      "year": 2018,
+      "month": 7,
+      "number": 15,
+      "section": "語彙",
+      "type": "言い換え類義",
+      "question": "高橋さんの主張は漠然としていた。",
+      "options": [
+        "ぼんやりしていた",
+        "ごちゃごちゃしていた",
+        "あっさりしていた",
+        "はっきりしていた"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 2
+      },
+      "answer": 0,
+      "optionAnalysis": [
+        "① ぼんやりしていた：不清楚、模糊；与「漠然（ばくぜん）」（含糊、笼统）同义，正确。",
+        "② ごちゃごちゃしていた：乱糟糟；不是主张含糊。",
+        "③ あっさりしていた：清淡、淡薄；不等于含糊。",
+        "④ はっきりしていた：清楚、分明；与「漠然」相反。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-16",
+      "year": 2018,
+      "month": 7,
+      "number": 16,
+      "section": "語彙",
+      "type": "言い換え類義",
+      "question": "妨害するつもりはなかったんです。",
+      "options": [
+        "だます",
+        "いたずらする",
+        "からかう",
+        "じゃまする"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 3
+      },
+      "answer": 3,
+      "optionAnalysis": [
+        "① だます：欺骗；不等于「妨害する」。",
+        "② いたずらする：恶作剧；不等于妨碍。",
+        "③ からかう：戏弄；不等于妨碍。",
+        "④ じゃまする：妨碍、阻碍；与「妨害する」同义，正确。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-17",
+      "year": 2018,
+      "month": 7,
+      "number": 17,
+      "section": "語彙",
+      "type": "言い換え類義",
+      "question": "池田さんは、いつもエレガントな服を着ている。",
+      "options": [
+        "活動的な",
+        "地味な",
+        "上品な",
+        "個性的な"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 3
+      },
+      "answer": 2,
+      "optionAnalysis": [
+        "① 活動的な（かつどうてきな）：活跃的；不等于服装优雅。",
+        "② 地味な（じみな）：（打扮、服装）朴素、土气的；与「エレガント」不符。",
+        "③ 上品な（じょうひんな）：优雅、典雅、大方；与「エレガント」同义，正确。",
+        "④ 個性的な（こせいてきな）：有个性的；不一定优雅。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-18",
+      "year": 2018,
+      "month": 7,
+      "number": 18,
+      "section": "語彙",
+      "type": "言い換え類義",
+      "question": "つかの間の休息だった。",
+      "options": [
+        "短い",
+        "久しぶりの",
+        "充実した",
+        "十分な"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 3
+      },
+      "answer": 0,
+      "optionAnalysis": [
+        "① 短い（みじかい）：短暂的；与「つかの間」（特别短的时间、刹那）同义，正确。",
+        "② 久しぶりの（ひさしぶりの）：久违的；不表示时间短暂。",
+        "③ 充実した（じゅうじつした）：充实的；不等于短暂。",
+        "④ 十分な（じゅうぶんな）：充分的；不等于短暂。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-19",
+      "year": 2018,
+      "month": 7,
+      "number": 19,
+      "section": "語彙",
+      "type": "言い換え類義",
+      "question": "またしくじってしまった。",
+      "options": [
+        "緊張して",
+        "失敗して",
+        "遅刻して",
+        "誤解して"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 3
+      },
+      "answer": 1,
+      "optionAnalysis": [
+        "① 緊張して（きんちょうして）：紧张；不等于「しくじる」。",
+        "② 失敗して（しっぱいして）：失败；与「しくじる」同义，正确。",
+        "③ 遅刻して（ちこくして）：迟到；不等于失败。",
+        "④ 誤解して（ごかいして）：误会；不等于失败。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-20",
+      "year": 2018,
+      "month": 7,
+      "number": 20,
+      "section": "語彙",
+      "type": "用法",
+      "question": "巧み",
+      "options": [
+        "山本さんは観察力が巧みで、小さな違いも見逃さない。",
+        "社員全員に意見を募ったところ、巧みなアイディアが寄せられた。",
+        "中島さんは計算が早くて、算数が巧みなんです。",
+        "職人の巧みな技術によって、この器は作り出される"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 3
+      },
+      "answer": 3,
+      "optionAnalysis": [
+        "① 鋭くて（するどくて）：敏锐、灵敏；不是「巧み（たくみ）」的精巧之意。",
+        "② すてき：极好、绝妙；不表示技艺精巧。",
+        "③ 得意（とくい）：擅长；词义和用法与「巧み」不同。",
+        "④ “这个器皿是由匠人精巧的手艺制作出来的”中，「巧み」表示巧妙、精巧，用法正确。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-21",
+      "year": 2018,
+      "month": 7,
+      "number": 21,
+      "section": "語彙",
+      "type": "用法",
+      "question": "配属",
+      "options": [
+        "夜間は患者10人に対して看護師一人を配属している。",
+        "新入社員の全員が希望の部署に配属されるわけではない。",
+        "要請に応じて、毎年日本語講師を海外に配属している。",
+        "営業部の石川部長が次期社長に配属された。"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 3
+      },
+      "answer": 1,
+      "optionAnalysis": [
+        "① 配置（はいち）：布置、配置；不是把人员分到所属部门的「配属」。",
+        "② “不可能所有新员工都能被分到理想的部门”中，「配属」表示分配、配属，用法正确。",
+        "③ 派遣（はけん）：派遣、派出；不等于配属部门。",
+        "④ 抜擢（ばってき）：提拔、提升；不等于配属。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-22",
+      "year": 2018,
+      "month": 7,
+      "number": 22,
+      "section": "語彙",
+      "type": "用法",
+      "question": "乗り出す",
+      "options": [
+        "息子は学生から社会人へと新たな道に乗り出した。",
+        "法律の改正に協力してくれるよう、関係者に乗り出している。",
+        "労働者不足が深刻化し、政府が調査に乗り出した。",
+        "母は買い物から戻ると、すぐに料理に乗り出した。"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 3
+      },
+      "answer": 2,
+      "optionAnalysis": [
+        "① 踏み出した（ふみだした）：迈出、踏出；不是正式投入重大事项的「乗り出す」。",
+        "② 根回しして（ねまわしして）：事先疏通、打好招呼；不表示开始调查。",
+        "③ “劳动力不足情况恶化，政府开始做调查”中，「乗り出す（のりだす）」表示在正式场合或重大事件中积极从事、开始，用法正确。",
+        "④ 取り掛かった（とりかかった）：在生活化场景中着手开始；与本题正式、重大的语境不同。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-23",
+      "year": 2018,
+      "month": 7,
+      "number": 23,
+      "section": "語彙",
+      "type": "用法",
+      "question": "面識",
+      "options": [
+        "A大学の松本先生は、名前は以前からよく知っているが、面識はない。",
+        "このあたりの土地は面識がないので、地図がないとどこにも行けない。",
+        "好きな画家の展示会に行ったら、面識がない新しい絵が展示されていた。",
+        "海外旅行中の友人から届いた絵はがきには、面識のない文字が写っていた。"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 3
+      },
+      "answer": 0,
+      "optionAnalysis": [
+        "① “A 大学的松本老师，之前久仰大名，但没有见过面”中，「面識（めんしき）」表示人与人之间认识、见过面，用法正确。",
+        "② 对土地应说「なじみがない」等，表示不熟悉；「面識」只能用于人与人之间是否认识。",
+        "③ 对画作应说「見覚えがない」等，表示不记得见过；「面識」不能用于画作。",
+        "④ 对文字应说「見覚えのない文字」或「見慣れない文字」，表示不记得见过或不熟悉；「面識」不能用于文字。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_DUPLICATE_OPTION_ANALYSIS_3_4",
+          "SOURCE_EXPLANATION_TYPO_CORRECTED"
+        ],
+        "sourceExplanationCorrected": true
+      }
+    },
+    {
+      "id": "2018-07-24",
+      "year": 2018,
+      "month": 7,
+      "number": 24,
+      "section": "語彙",
+      "type": "用法",
+      "question": "抜粋",
+      "options": [
+        "このシャンプーは、植物から抜粋された天然成分だけで作られています。",
+        "アンケートによって抜粋した消費者の不満の声を今後の商品開発に生かしたい。",
+        "多数の応募者の中から厳正に抜粋した10名に賞品を送った。",
+        "お渡しした資料は、私の論文の一部分を抜粋したものです。"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 3
+      },
+      "answer": 3,
+      "optionAnalysis": [
+        "① 抽出（ちゅうしゅつ）：提炼、萃取；不等于从文章中摘录。",
+        "② 収集（しゅうしゅう）：收集、搜集；不等于摘录。",
+        "③ 選抜（せんばつ）：选拔、挑选；不等于摘录文章片段。",
+        "④ “交给您的资料是我论文的一部分摘录”中，「抜粋（ばっすい）」表示摘录、集锦，用法正确。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2018-07-25",
+      "year": 2018,
+      "month": 7,
+      "number": 25,
+      "section": "語彙",
+      "type": "用法",
+      "question": "心当たり",
+      "options": [
+        "なぜ木村さんが私のことを嫌っているのか、私には心当たりがない。",
+        "このカメラを買ったのは10年も前なので、いくらで買ったか心当たりがない。",
+        "今日は仕事が忙しいので、何時ごろ帰れるか心当たりがない。",
+        "何かいい解決方法がないか考えているが、まだ心当たりがない。"
+      ],
+      "source": {
+        "archive": "N1 2018年7月.ZIP",
+        "pdf": "1. 真题 2018年7月 N1.pdf",
+        "page": 4
+      },
+      "answer": 0,
+      "optionAnalysis": [
+        "① “为什么木村讨厌我，我完全没有头绪”中，「心当たり（こころあたり）」表示自己内心的头绪、线索，用法正确。",
+        "② 覚え（おぼえ）：记忆、记性；不表示对原因有头绪。",
+        "③ 見当（けんとう）：估计、推测；不等于内心已有线索。",
+        "④ 手がかり（てがかり）：来自外界的头绪、线索；与「心当たり」的内在线索有区别。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2018年7月.ZIP",
+          "pdf": "1. 真题 2018年7月 N1.pdf",
+          "page": 4
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-01",
+      "year": 2017,
+      "month": 12,
+      "number": 1,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "新しい販売ルートを開拓した。",
+      "target": "開拓",
+      "options": [
+        "かいたく",
+        "かいだく",
+        "かいせき",
+        "かいぜき"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "かいたく（開拓）：开垦，开拓。",
+        "かいだく（快諾）：欣然承诺。",
+        "かいせき（解析）：解析。",
+        "かいぜき：「開拓」の读音ではない。「拓」は「たく」と読み、「ぜき」にはならない。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_OPTION_4_ANALYSIS_GENERIC"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2017-12-02",
+      "year": 2017,
+      "month": 12,
+      "number": 2,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "私たちは、町の復興に全力で取り組んでいます。",
+      "target": "復興",
+      "options": [
+        "ふっこう",
+        "ふっきょう",
+        "ふくこう",
+        "ふくきょう"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "ふっこう（復興）：复兴。",
+        "ふっきょう：「復興」では「興」を「こう」と読むため、「きょう」は誤り。",
+        "ふくこう（腹腔）：腹腔。",
+        "ふくきょう：「復」は「ふっ」と促音化し、「興」は「こう」と読むため、両方の読み方が誤り。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_OPTIONS_2_4_ANALYSIS_GENERIC"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2017-12-03",
+      "year": 2017,
+      "month": 12,
+      "number": 3,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "書類の確認を怠ったために、問題が生じた。",
+      "target": "怠った",
+      "options": [
+        "いつわった",
+        "ためらった",
+        "あやまった",
+        "おこたった"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "いつわる（偽る）：说谎，假冒。",
+        "ためらう（躊躇う）：踌躇，犹豫。",
+        "あやまる（謝る）：道歉，赔礼。",
+        "おこたる（怠る）：懒惰，疏漏，疏忽。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-04",
+      "year": 2017,
+      "month": 12,
+      "number": 4,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "本人の了承を得て、写真を掲載した。",
+      "target": "了承",
+      "options": [
+        "りょうしゅう",
+        "ろうしょう",
+        "りょうしょう",
+        "ろうしゅう"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "りょうしゅう（領収）：收到。",
+        "ろうしょう（朗誦）：朗诵。",
+        "りょうしょう（了承）：理解，同意。",
+        "ろうしゅう（陋習）：陋习，恶习。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-05",
+      "year": 2017,
+      "month": 12,
+      "number": 5,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "あの人はいつもあれこれ指図をする。",
+      "target": "指図",
+      "options": [
+        "さしじ",
+        "さしず",
+        "しず",
+        "しじ"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "さしじ：「指図」では「図」を「ず」と読むため、「じ」は誤り。",
+        "さしず（指図）：指示。",
+        "しず（静）：【接头／接尾】表示安静、心情平静。",
+        "しじ（支持）：支持。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_OPTION_1_ANALYSIS_GENERIC"
+        ],
+        "supplementalAnalysis": true
+      }
+    },
+    {
+      "id": "2017-12-06",
+      "year": 2017,
+      "month": 12,
+      "number": 6,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "友人と東京の名所を巡り、旅を満喫した。",
+      "target": "巡り",
+      "options": [
+        "さぐり",
+        "たどり",
+        "めぐり",
+        "ねばり"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "さぐり（探り）：探索。",
+        "たどり（辿り）：追溯，查找。",
+        "めぐり（巡り）：巡游，历访。",
+        "ねばり（粘り）：韧性，粘性。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-07",
+      "year": 2017,
+      "month": 12,
+      "number": 7,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "小型カメラの国内市場では、弊社が20パーセントの（　）を占めています。",
+      "target": "（　）",
+      "options": [
+        "レート",
+        "レベル",
+        "ランク",
+        "シェア"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "レート：汇率。",
+        "レベル：水平。",
+        "ランク：排名。",
+        "シェア：份额。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-08",
+      "year": 2017,
+      "month": 12,
+      "number": 8,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "転勤の意向を上司からそれとなく（　）されたが、返答に迷っている。",
+      "target": "（　）",
+      "options": [
+        "自問",
+        "打診",
+        "試行",
+        "探索"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "自問（じもん）：自问。",
+        "打診（だしん）：试探，探问。",
+        "試行（しこう）：试行。",
+        "探索（たんさく）：探索。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-09",
+      "year": 2017,
+      "month": 12,
+      "number": 9,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "新しい上司は、元警察官という（　）の持ち主だ。",
+      "target": "（　）",
+      "options": [
+        "由来",
+        "経路",
+        "経歴",
+        "従来"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "由来（ゆらい）：来历，由来。",
+        "経路（けいろ）：路径，路线。",
+        "経歴（けいれき）：经历，履历。",
+        "従来（じゅうらい）：过去，从前。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-10",
+      "year": 2017,
+      "month": 12,
+      "number": 10,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "布のバッグは水が染み込みやすいが、このバッグは水を（　）素材で作られているので、雨の日も安心だ。",
+      "target": "（　）",
+      "options": [
+        "はじく",
+        "そらす",
+        "さける",
+        "こばむ"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "はじく（弾く）：排斥，防，抗。",
+        "そらす（逸らす）：岔开，偏离。",
+        "さける（避ける）：避开，回避。",
+        "こばむ（拒む）：阻挡，阻止。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-11",
+      "year": 2017,
+      "month": 12,
+      "number": 11,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "今回の活動の趣旨は、この団体の設立目的から大きく（　）している。",
+      "target": "（　）",
+      "options": [
+        "脱退",
+        "逸脱",
+        "分散",
+        "拡散"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "脱退（だったい）：退出，脱离（组织、团体等）。",
+        "逸脱（いつだつ）：越出，脱离（主题、中心等）。",
+        "分散（ぶんさん）：分散，散开。",
+        "拡散（かくさん）：扩散。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-12",
+      "year": 2017,
+      "month": 12,
+      "number": 12,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "インターネットを使えば、様々な情報を（　）簡単に入手できる。",
+      "target": "（　）",
+      "options": [
+        "あえて",
+        "いっそ",
+        "せめて",
+        "いとも"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "あえて：敢于，硬要。",
+        "いっそ：干脆，宁可。",
+        "せめて：起码，至少，总算。",
+        "いとも：非常，十分。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-13",
+      "year": 2017,
+      "month": 12,
+      "number": 13,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "河原の石は形も大きさも（　）で、同じものが一つもないように見えた。",
+      "target": "（　）",
+      "options": [
+        "ごろごろ",
+        "まちまち",
+        "ぐらぐら",
+        "ぬるぬる"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "ごろごろ：雷的轰鸣声；滚动的样子。",
+        "まちまち：各式各样，形形色色。",
+        "ぐらぐら：摇晃，摇摆，不稳定。",
+        "ぬるぬる：黏滑地。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-14",
+      "year": 2017,
+      "month": 12,
+      "number": 14,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "松本氏は自身のブログで抱負を述べていた。",
+      "target": "抱負",
+      "options": [
+        "見解",
+        "感謝",
+        "反省",
+        "決意"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "見解（けんかい）：见解，看法。",
+        "感謝（かんしゃ）：感谢。",
+        "反省（はんせい）：反省。",
+        "決意（けつい）：决心，决意。源解析对题中「抱負」的说明为“心中的决心和理想”。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-15",
+      "year": 2017,
+      "month": 12,
+      "number": 15,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "あのころは、暮らしにゆとりがあった。",
+      "target": "ゆとり",
+      "options": [
+        "目標",
+        "活気",
+        "余裕",
+        "知恵"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "目標（もくひょう）：目标。",
+        "活気（かっき）：活力，生机。",
+        "余裕（よゆう）：充裕，从容，富余。源解析对题中「ゆとり」的说明为“宽裕、余地、轻松”。",
+        "知恵（ちえ）：智慧，主意，办法。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-16",
+      "year": 2017,
+      "month": 12,
+      "number": 16,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "出荷台数は若干伸びている。",
+      "target": "若干",
+      "options": [
+        "いまだに",
+        "わずかに",
+        "つねに",
+        "さらに"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "いまだに：仍然，还（多接否定语）。",
+        "わずかに：少许，一些。源解析对题中「若干」的说明为“少许、有些”。",
+        "つねに：平时，常常地，总是。",
+        "さらに：更加，愈发，再。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-17",
+      "year": 2017,
+      "month": 12,
+      "number": 17,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "その議員は議会での発言を撤回した。",
+      "target": "撤回",
+      "options": [
+        "とりけした",
+        "訂正した",
+        "くりかえした",
+        "省略した"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "とりけした（取り消した）：撤销，取消，作废。源解析对题中「撤回」的说明为“撤销、撤回”。",
+        "訂正した（ていせいした）：订正。",
+        "くりかえした（繰り返した）：重复。",
+        "省略した（しょうりゃくした）：省略。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-18",
+      "year": 2017,
+      "month": 12,
+      "number": 18,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "あの二人はいつも張り合っている。",
+      "target": "張り合って",
+      "options": [
+        "見つめ合って",
+        "助け合って",
+        "競い合って",
+        "傷つけ合って"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "見つめ合って（みつめあって）：互相注视。",
+        "助け合って（たすけあって）：互相帮助。",
+        "競い合って（きそいあって）：互相竞争。源解析对题中「張り合っている」的说明为“竞争、争持、争夺”。",
+        "傷つけ合って（きずつけあって）：互相伤害。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-19",
+      "year": 2017,
+      "month": 12,
+      "number": 19,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "中村（なかむら）氏のかたくなな態度は変わらなかった。",
+      "target": "かたくなな",
+      "options": [
+        "冷静な",
+        "頑固な",
+        "強引な",
+        "真剣な"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "冷静な（れいせいな）：冷静的。",
+        "頑固な（がんこな）：顽固的。源解析对题中「かたくなな」的说明为“顽固、固执的”。",
+        "強引な（ごういんな）：强行的，强硬的。",
+        "真剣な（しんけんな）：认真的。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-20",
+      "year": 2017,
+      "month": 12,
+      "number": 20,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "重複",
+      "target": "重複",
+      "options": [
+        "私は、努力を惜しまず何度も重複して覚えることで、記憶を定着させた。",
+        "大量のデータの中には重複しているものもあり、早急に整理が必要だった。",
+        "健康に自信があっても、無理が重複すれば体を壊してしまいますよ。",
+        "開園を待つ人の列が、驚くほど重複して入場ゲートの前にできていた。"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "源解析指出应使用「繰り返して（くりかえして）」：重复，反复。",
+        "正确用例：大量的数据中有重复的内容，有必要尽快整理。「重複（じゅうふく）」指重复、重合、重叠（多个同样的事物）。",
+        "此处应使用「無理が続けば」：如果持续勉强自己。源解析列作「続いて」，意图是动词「続く」，但在本句条件形中应为「続けば」。",
+        "源解析指出应使用「伸びて（のびて）」：延长，拉长。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_EXPLANATION_INFLECTION_CORRECTED"
+        ],
+        "sourceExplanationCorrected": true
+      }
+    },
+    {
+      "id": "2017-12-21",
+      "year": 2017,
+      "month": 12,
+      "number": 21,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "拠点",
+      "target": "拠点",
+      "options": [
+        "うわさの拠点を追究しても、なにも解決はしないだろう。",
+        "日本近代文学の拠点となった作品として、この小説は高く評価された。",
+        "この都市は、広場を拠点にして道が放射状に伸びている。",
+        "A社は、地元の京都を拠点に全国各地でビジネスを展開している。"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "源解析指出应使用「源（みなもと）」：起源，根源。",
+        "源解析指出应使用「原点（げんてん）」：出发点。",
+        "源解析指出应使用「中心（ちゅうしん）」：中心，圆点。",
+        "正确用例：A公司以所在城市京都为据点，向全国各地发展业务。「拠点（きょてん）」指基地、据点。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-22",
+      "year": 2017,
+      "month": 12,
+      "number": 22,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "真っ先",
+      "target": "真っ先",
+      "options": [
+        "リーダーに適した人として、真っ先に私の頭に浮かんだのは石川（いしかわ）さんだった。",
+        "次のテストではクラスで真っ先になれるように頑張って勉強しようと思う。",
+        "先ほどお配りした資料の真っ先にあるグラフをご覧ください。",
+        "目が悪いので、教室の真っ先に座らないと、黒板の字がよく読めない。"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "正确用例：最适合领导者的人选，我脑海中最先浮现的人是石川先生。「真っ先（まっさき）」指最先、首先、最前面。",
+        "源解析指出应使用「トップ」：第一，首位。",
+        "源解析指出应使用「最初（さいしょ）」：开头，头一个。",
+        "源解析指出应使用「一番前（いちばんまえ）」：第一排，最前方。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-23",
+      "year": 2017,
+      "month": 12,
+      "number": 23,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "緊密",
+      "target": "緊密",
+      "options": [
+        "空港の滑走路を増設したことで、航空機の発着がますます緊密になった。",
+        "今日の講演会は参加者が多く、会場の体育館には緊密にいすが並べられた。",
+        "この二つの単語は意味が緊密に使い分けられているので、習得が難しい。",
+        "この地区では子どもの安全を守るため、学校と地域が緊密に協力している。"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "源解析指出应使用「頻繁（ひんぱん）」：频繁，屡次。",
+        "源解析指出应使用「ぎっしり」：（塞得）满满的。",
+        "此处应使用「微妙に（びみょうに）」：根据细微的意义差别加以区分。源解析写作「微細（びさい）」不符合本句搭配，已修正。",
+        "正确用例：在这个地区，学校和地区密切合作，保证孩子的安全。「緊密（きんみつ）」指紧密、密切。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_EXPLANATION_WORD_CHOICE_CORRECTED"
+        ],
+        "sourceExplanationCorrected": true
+      }
+    },
+    {
+      "id": "2017-12-24",
+      "year": 2017,
+      "month": 12,
+      "number": 24,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "遂げる",
+      "target": "遂げる",
+      "options": [
+        "この町は、近年の再開発により、驚くような変化を遂げた。",
+        "指定の口座に入金した時点で、正式な契約が遂げられる。",
+        "池田（いけだ）さんは若手だが、担当部署で重要な責任を遂げている。",
+        "業者の話では、来月末には駅前の工事を遂げる予定らしい。"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "正确用例：这个小镇由于近年的重新开发，有着相当惊人的变化。「遂げる（とげる）」指完成任务、达成目标、最终形成某种结果。",
+        "源解析指出应使用「発効する（はっこうする）」：生效。",
+        "源解析指出应使用「担って（になって）」：承担，担当。",
+        "源解析指出应使用「完了する（かんりょう）」：完结，完毕。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-12-25",
+      "year": 2017,
+      "month": 12,
+      "number": 25,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "うなだれる",
+      "target": "うなだれる",
+      "options": [
+        "ビルの最上階の窓からうなだれると、あまりの高さに恐怖を感じた。",
+        "昨日の会議では、皆、部長の話に納得し力強くうなだれていた。",
+        "姉は知らせを聞いてがっかりしたのか、うなだれて顔を上げなかった。",
+        "何か踏んだような気がしたので、思わずうなだれて足元を見た。"
+      ],
+      "source": {
+        "archive": "N1 2017年12月.ZIP",
+        "pdf": "1. 真题 2017年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "源解析指出应使用「見下ろす（みおろす）」：从高处往下看；轻视。",
+        "源解析指出应使用「うなずいて」：首肯，同意，答应。",
+        "正确用例：姐姐听了那个消息后，很失望，低下了头。「うなだれる（項垂れる）」指因悲观、失望、担心等低头、垂头。",
+        "源解析指出应使用「うつむいて」：低头，下垂。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年12月.ZIP",
+          "pdf": "1. 真题 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-01",
+      "year": 2017,
+      "month": 7,
+      "number": 1,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "この広大な大地を潤すにはまだまだ不十分だった。",
+      "target": "潤す",
+      "options": [
+        "たがやす",
+        "ぬらす",
+        "うるおす",
+        "いやす"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "たがやす（耕す）：耕地。",
+        "ぬらす（濡らす）：淋湿。",
+        "うるおす（潤す）：湿润，滋润。例：喉を潤す。",
+        "いやす（癒す）：治愈。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-02",
+      "year": 2017,
+      "month": 7,
+      "number": 2,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "使う前に必ず熱湯で殺菌してください。",
+      "target": "殺菌",
+      "options": [
+        "ざっきん",
+        "さっきん",
+        "さっこん",
+        "ざっこん"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "ざっきん（雑菌）：杂菌。",
+        "さっきん（殺菌）：杀菌。",
+        "さっこん（昨今）：最近。",
+        "ざっこん（雑婚）：乱婚。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-03",
+      "year": 2017,
+      "month": 7,
+      "number": 3,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "これが私に託された仕事です。",
+      "target": "託された",
+      "options": [
+        "かされた",
+        "まかされた",
+        "くだされた",
+        "たくされた"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "かされた（貸す）：借出。",
+        "まかされた（任す）：委托。",
+        "くだされた（下さる）：送，给（我）。",
+        "たくされた（託す）：委托。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-04",
+      "year": 2017,
+      "month": 7,
+      "number": 4,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "このコンサートホールは、舞台に向かって床が傾斜している。",
+      "target": "傾斜",
+      "options": [
+        "けいしゃ",
+        "けいさ",
+        "かいしゃ",
+        "かいさ"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "けいしゃ（傾斜）：倾斜。",
+        "けいさ（稽査）：稽查。",
+        "かいしゃ（会社）：公司。",
+        "かいさ：差分。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-05",
+      "year": 2017,
+      "month": 7,
+      "number": 5,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "毎回のように反対派の人々に阻まれてきた。",
+      "target": "阻まれて",
+      "options": [
+        "はばまれて",
+        "にらまれて",
+        "からまれて",
+        "こばまれて"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "はばまれて（阻む）：阻止。",
+        "にらまれて（睨む）：注视。",
+        "からまれて（絡む）：缠绕。",
+        "こばまれて（拒む）：阻挡。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-06",
+      "year": 2017,
+      "month": 7,
+      "number": 6,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "秘密にしていたことを友人に暴露された。",
+      "target": "暴露",
+      "options": [
+        "ばくろう",
+        "ばくろ",
+        "ぼうろ",
+        "ぼうろう"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "ばくろう（博労）：伯乐。",
+        "ばくろ（暴露）：暴露。",
+        "ぼうろ：防露。",
+        "ぼうろう：望楼，瞭望塔。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-07",
+      "year": 2017,
+      "month": 7,
+      "number": 7,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "この学校は教育の（　）として、職業体験活動を授業に取り入れている。",
+      "target": "（　）",
+      "options": [
+        "一環",
+        "一体",
+        "内部",
+        "部門"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "一環（いっかん）：一个重要部分，环节。",
+        "一体（いったい）：一体；一座；总的来说；到底；本来。",
+        "内部（ないぶ）：内部；里面；内幕，内情。",
+        "部門（ぶもん）：部门，部类。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-08",
+      "year": 2017,
+      "month": 7,
+      "number": 8,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "この商品は、特によく売れる時期というものはなく、毎月（　）100個ほど売れる。",
+      "target": "（　）",
+      "options": [
+        "クリアに",
+        "ストレートに",
+        "シンプルに",
+        "コンスタントに"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "クリア：跨过，跳过；解围；清空，清除。",
+        "ストレート：直接；笔直；连续。",
+        "シンプル：质朴，朴素；单纯，简单。",
+        "コンスタント：常数，恒量；经常，一定的。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-09",
+      "year": 2017,
+      "month": 7,
+      "number": 9,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "中学でクラスメートだった石井さんと話しているうちに、昔の記憶が（　）きた。",
+      "target": "（　）",
+      "options": [
+        "さかのぼって",
+        "よみがえって",
+        "引き返して",
+        "立ち直って"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "さかのぼる（遡る）：追溯；逆流而上。",
+        "よみがえる（甦る）：苏生，复活；复兴，复苏。",
+        "引き返す（ひきかえす）：折回，返回；相反。",
+        "立ち直る（たちなおる）：恢复，复原；回升，好转。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-10",
+      "year": 2017,
+      "month": 7,
+      "number": 10,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "林選手は、3度目のオリンピック出場で、ついに（　）の金メダルを獲得した。",
+      "target": "（　）",
+      "options": [
+        "意欲",
+        "志願",
+        "欲求",
+        "念願"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "意欲（いよく）：意志，热情，积极性。",
+        "志願（しがん）：志愿，报名，申请。",
+        "欲求（よっきゅう）：欲望，希望。",
+        "念願（ねんがん）：心愿，愿望。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-11",
+      "year": 2017,
+      "month": 7,
+      "number": 11,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "鈴木さんに表彰状を贈り、永年の功績を（　）。",
+      "target": "（　）",
+      "options": [
+        "敬った",
+        "仰いだ",
+        "たたえた",
+        "もてなした"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "敬う（うやまう）：尊敬。",
+        "仰ぐ（あおぐ）：仰，瞻；依赖，仰仗；请求批准。",
+        "たたえる（称える）：称赞，赞扬；表彰，歌颂。",
+        "もてなす：招待，请客；接待，对待。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-12",
+      "year": 2017,
+      "month": 7,
+      "number": 12,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "今回のトラブルの原因は相手側にあって、池田さんには決して（　）はないよ。",
+      "target": "（　）",
+      "options": [
+        "悪",
+        "非",
+        "苦",
+        "没"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "悪（あく）：恶，坏；坏事；坏人。",
+        "非（ひ）：错误，缺点；不好，罪行；非难，责难。",
+        "苦（く）：痛苦；苦恼；辛苦，费心。",
+        "没（ぼつ）：死；不采用；沉没。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-13",
+      "year": 2017,
+      "month": 7,
+      "number": 13,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "以前はさまざまなジャンルの小説を読んでいたが、最近は（　）推理小説ばかりだ。",
+      "target": "（　）",
+      "options": [
+        "ますます",
+        "しきりに",
+        "もっぱら",
+        "せめて"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "ますます：愈来愈；逐渐地；渐增地。",
+        "しきりに：频繁地；屡次，再三；不停地；一直地。",
+        "もっぱら：专门，主要，净。",
+        "せめて：起码，至少；总算，还算。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-14",
+      "year": 2017,
+      "month": 7,
+      "number": 14,
+      "section": "語彙",
+      "type": "意味が最も近い語",
+      "question": "粘り強く交渉した。",
+      "target": "粘り強く",
+      "options": [
+        "覚悟して",
+        "油断せずに",
+        "思い切って",
+        "あきらめずに"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "覚悟して（かくごして）：下决心。",
+        "油断せずに（ゆだんせずに）：戒备地，警惕地。",
+        "思い切って（おもいきって）：下决心，毅然决然。",
+        "あきらめずに：不放弃。源解析对「粘り強い（ねばりづよい）」的说明为“不屈不挠，坚忍不拔，顽强”。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-15",
+      "year": 2017,
+      "month": 7,
+      "number": 15,
+      "section": "語彙",
+      "type": "意味が最も近い語",
+      "question": "入念に調査を行った。",
+      "target": "入念に",
+      "options": [
+        "厳しく公平に",
+        "細かく丁寧に",
+        "興味を持って",
+        "責任を持って"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "厳しく公平に（きびしくこうへいに）：严肃公平地。",
+        "細かく丁寧に（こまかくていねいに）：细心周到地。源解析对「入念に（にゅうねんに）」的说明为“仔细，周到，谨慎”。",
+        "興味を持って（きょうみをもって）：感兴趣。",
+        "責任を持って（せきにんをもって）：负起责任。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-16",
+      "year": 2017,
+      "month": 7,
+      "number": 16,
+      "section": "語彙",
+      "type": "意味が最も近い語",
+      "question": "本人もうすうす気づいていたと思う。",
+      "target": "うすうす",
+      "options": [
+        "おそらく",
+        "さすがに",
+        "なんとなく",
+        "とっくに"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "おそらく：恐怕，大概；或许。",
+        "さすがに：真不愧是，的确，果然。",
+        "なんとなく：总觉得；不由得；虽然不清楚，但是……。源解析对「うすうす」的说明为“稍稍，隐隐约约，模模糊糊”。",
+        "とっくに：早就。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-17",
+      "year": 2017,
+      "month": 7,
+      "number": 17,
+      "section": "語彙",
+      "type": "意味が最も近い語",
+      "question": "この方法にも難点はある。",
+      "target": "難点",
+      "options": [
+        "悪いところ",
+        "惜しいところ",
+        "無駄なところ",
+        "不安なところ"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "悪いところ（わるいところ）：坏处，缺陷。源解析对「難点」的说明为“不好的地方；缺陷”。",
+        "惜しいところ（おしいところ）：可惜，遗憾。",
+        "無駄なところ（むだなところ）：徒劳，无益，浪费，多余。",
+        "不安なところ（ふあんなところ）：不放心之处，不安之处。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-18",
+      "year": 2017,
+      "month": 7,
+      "number": 18,
+      "section": "語彙",
+      "type": "意味が最も近い語",
+      "question": "橋本さんはむっとしたようだった。",
+      "target": "むっとした",
+      "options": [
+        "驚いたような顔をしていた",
+        "怒ったような顔をしていた",
+        "疲れたような顔をしていた",
+        "飽きたような顔をしていた"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "驚（おどろ）いたような顔をしていた：一脸惊奇。",
+        "怒（おこ）ったような顔をしていた：一脸愤怒。源解析对「むっとした」的说明为“怒上心头，心头火起”。",
+        "疲れ（つかれ）たような顔をしていた：一脸疲惫。",
+        "飽き（あき）たような顔をしていた：满脸厌倦。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-19",
+      "year": 2017,
+      "month": 7,
+      "number": 19,
+      "section": "語彙",
+      "type": "意味が最も近い語",
+      "question": "すぐに照会したほうがいいですよ。",
+      "target": "照会した",
+      "options": [
+        "問い合わせた",
+        "申し込んだ",
+        "知らせた",
+        "訪ねた"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "問い合わせる（といあわせる）：询问。源解析对「照会する」的说明为“询问，查询”。",
+        "申し込む（もうしこむ）：申请。",
+        "知らせる（しらせる）：通知。",
+        "訪ねる（たずねる）：访问。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-20",
+      "year": 2017,
+      "month": 7,
+      "number": 20,
+      "section": "語彙",
+      "type": "言葉の使い方",
+      "question": "昇進",
+      "target": "昇進",
+      "options": [
+        "私の大学は、2年生までに50単位とらないと、3年生に昇進できない。",
+        "中村さんは、料理教室に通うようになって、プロ並みの腕前に昇進した。",
+        "私が応援するチームは、今日の試合に勝って、2位に昇進した。",
+        "松本課長が来月、部長に昇進することになったそうだ。"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "源解析指出应使用「進級（しんきゅう）」：晋级，升级，升班。",
+        "源解析指出应使用「上達（じょうたつ）／スキルアップ」：进步，学术和技术等提高。",
+        "源解析指出应使用「昇格（しょうかく）」：升格，晋级。",
+        "正确用例：听说松本课长下个月要升职为部长了。源解析对「昇進」的说明为“升职（一般指在组织内部的资格或等级提升一个档次）”。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-21",
+      "year": 2017,
+      "month": 7,
+      "number": 21,
+      "section": "語彙",
+      "type": "言葉の使い方",
+      "question": "配布",
+      "target": "配布",
+      "options": [
+        "廊下の角で人とぶつかって、持っていた資料を床に配布してしまった。",
+        "隣のうちの人への郵便物が私のうちに間違って配布されていた。",
+        "駅の案内所では、観光案内地図を無料で配布している。",
+        "この一週間くらい、雨が降らず乾燥しているので、庭の木に水を配布した。"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "应使用「散らしてしまった」：与人相撞后把资料散落在地；源解析误写为「散布」。",
+        "源解析指出应使用「配達（はいたつ）」：投递。",
+        "正确用例：车站的咨询处免费派发观光导游图。源解析对「配布」的说明为“派发，广泛分发”。",
+        "源解析指出应使用「散布（さんぷ）」：散布，撒放。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_OPTIONS_1_4_ANALYSIS_IDENTICAL",
+          "SOURCE_EXPLANATION_TYPO_CORRECTED"
+        ],
+        "sourceExplanationCorrected": true,
+        "reviewNotes": [
+          "The explanation PDF duplicates 「散布」 for options 1 and 4; option 1 describes papers accidentally scattered after a collision, so 「散らしてしまった」 is the contextually correct replacement."
+        ]
+      }
+    },
+    {
+      "id": "2017-07-22",
+      "year": 2017,
+      "month": 7,
+      "number": 22,
+      "section": "語彙",
+      "type": "言葉の使い方",
+      "question": "滅びる",
+      "target": "滅びる",
+      "options": [
+        "事業の失敗が続き、このままでは資金が滅びるおそれがある。",
+        "連日の異常な暑さが原因なのか、水槽の魚が滅びてしまった。",
+        "今日の試合に負けて優勝の望みは滅びたが、最後までがんばろうと思う。",
+        "昔この地域に栄えていた文明は大災害によって滅びたという説がある。"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "源解析指出应使用「絶える（たえる）」：断绝，终了，停止，消失。",
+        "源解析指出应使用「全滅して（ぜんめつして）」：全歼，全灭，完全失败。",
+        "源解析指出应使用「絶たれた（たたれた）」：切断，断绝，解除关系。",
+        "正确用例：有一种说法认为，过去这个地区非常繁荣的文明是被一场大灾害毁灭的。源解析对「滅びる」的说明为“毁灭，曾经存在的东西不复存在了”。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-23",
+      "year": 2017,
+      "month": 7,
+      "number": 23,
+      "section": "語彙",
+      "type": "言葉の使い方",
+      "question": "発足",
+      "target": "発足",
+      "options": [
+        "この団体は、留学生支援を目的に、昨年8月に発足した。",
+        "まもなく発足するバスターミナルは、国内で最大規模のものだ。",
+        "来月10日に発足する国際大会に向け、選手団が日本を出発した。",
+        "一か月間の研修によって、チームリーダーとしての自覚が発足した。"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "正确用例：这个团体以支援留学生为目的，在去年8月成立。源解析对「発足」的说明为“某组织或团体被新建立，并开始活动；成立”。",
+        "源解析指出应使用「完成（かんせい）／竣工（しゅんこう）」：完成，竣工。",
+        "源解析指出应使用「開催（かいさい）」：召开，举办，举行。",
+        "源解析指出应使用「芽生えた（めばえた）」：出芽，发芽，萌发。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2017-07-24",
+      "year": 2017,
+      "month": 7,
+      "number": 24,
+      "section": "語彙",
+      "type": "言葉の使い方",
+      "question": "提起",
+      "target": "提起",
+      "options": [
+        "製品の安全性に問題があることがわかり、消費者に注意を提起している。",
+        "友人に一緒に会社を興さないかと提起したが、断られてしまった。",
+        "今日の議会で、介護制度の在り方について問題を提起した。",
+        "中野監督が引退した後の監督をお願いできないかと、山本氏に提起している。"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "源解析指出应使用「喚起（かんき）」：唤起，引起，提醒。",
+        "源解析指出应使用「提案（ていあん）」：建议，提案。",
+        "正确用例：今天的议会提出了关于看护制度应有的理想状态的问题。源解析对「提起」的说明为“提起（话题）；提起（诉讼）”。",
+        "源解析指出应使用「提案（ていあん）」：建议，提案。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_OPTIONS_2_4_ANALYSIS_IDENTICAL"
+        ]
+      }
+    },
+    {
+      "id": "2017-07-25",
+      "year": 2017,
+      "month": 7,
+      "number": 25,
+      "section": "語彙",
+      "type": "言葉の使い方",
+      "question": "見落とす",
+      "target": "見落とす",
+      "options": [
+        "たとえ親友であっても、不正行為を見落とすわけにはいかない。",
+        "練習しても一向に上達しないので、コーチから見落とされてしまった。",
+        "「300,000円」と書いてあったのに、ゼロを一つ見落として3万円だと勘違いしていた。",
+        "人込みの中を歩いているうちに、前を歩いていた友人を見落としてしまった。"
+      ],
+      "source": {
+        "archive": "N1 2017年7月.ZIP",
+        "pdf": "1. 真题 2017年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "源解析指出应使用「見過ごす（みすごす）」：看漏，忽视，饶恕。",
+        "源解析指出应使用「見放されて（みはなされて）」：抛弃，放弃。",
+        "正确用例：明明写的是30万日元，漏看了一个0以为是3万日元。源解析对「見落とす」的说明为“漏看；忽略”。",
+        "源解析指出应使用「見失って（みうしなって）」：看不见，迷失，看丢。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2017年7月.ZIP",
+          "pdf": "1. 真题 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2017年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-01",
+      "year": 2016,
+      "month": 12,
+      "number": 1,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "社会活動に参加することで、人脈を広げることができた。",
+      "target": "人脈",
+      "options": [
+        "じんみゃく",
+        "じんまく",
+        "にんみゃく",
+        "にんまく"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "人脉（じんみゃく）：人脉，人的关系。",
+        "陣幕（じんまく）：帷幔。",
+        "选项3、4不存在。",
+        "选项3、4不存在。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_OPTIONS_3_4_SHARED_EXPLANATION"
+        ],
+        "reviewNotes": [
+          "The explanation PDF says 「帷幔」; the pending extraction read it as 「帷幕」."
+        ]
+      }
+    },
+    {
+      "id": "2016-12-02",
+      "year": 2016,
+      "month": 12,
+      "number": 2,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "鈴木さんは指摘がいつも的確で、本当に賢い人だと思う。",
+      "target": "賢い",
+      "options": [
+        "するどい",
+        "かしこい",
+        "すごい",
+        "えらい"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "鋭い（するどい）：尖锐的，尖的。",
+        "賢い（かしこい）：聪明的，伶俐的。",
+        "凄い（すごい）：了不起的，可怕的。",
+        "偉い（えらい）：伟大的。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-03",
+      "year": 2016,
+      "month": 12,
+      "number": 3,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "文化の違いが食生活に顕著に現れている。",
+      "target": "顕著",
+      "options": [
+        "げんちょ",
+        "げんじょ",
+        "けんちょ",
+        "けんじょ"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "原著（げんちょ）：原著。",
+        "选项2不存在。",
+        "顕著（けんちょ）：明显地，显著的。",
+        "选项4「けんじょ」不是「顕著」的读法；原解析误列「原書（げんしょ）」。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_EXPLANATION_TYPO_CORRECTED"
+        ],
+        "sourceExplanationCorrected": true,
+        "reviewNotes": [
+          "The explanation PDF's 「原書（げんしょ）」 does not correspond to question-PDF option 4 「けんじょ」."
+        ]
+      }
+    },
+    {
+      "id": "2016-12-04",
+      "year": 2016,
+      "month": 12,
+      "number": 4,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "相談の内容は多岐にわたった。",
+      "target": "多岐",
+      "options": [
+        "たき",
+        "たじ",
+        "だき",
+        "だし"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "多岐（たき）：涉及多方面。",
+        "他事（たじ）：别人的事情。",
+        "选项3「だき」不是「多岐」的读法；原解析误列「多義（たぎ）」。",
+        "选项4「だし」不是「多岐」的读法；原解析误列「足し（たし）」。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_EXPLANATION_TYPO_CORRECTED"
+        ],
+        "sourceExplanationCorrected": true,
+        "reviewNotes": [
+          "The explanation PDF entries 「多義（たぎ）」 and 「足し（たし）」 do not correspond to question-PDF options 3 「だき」 and 4 「だし」."
+        ]
+      }
+    },
+    {
+      "id": "2016-12-05",
+      "year": 2016,
+      "month": 12,
+      "number": 5,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "その風習は、今はもう廃れてしまった。",
+      "target": "廃れて",
+      "options": [
+        "くずれて",
+        "かすれて",
+        "つぶれて",
+        "すたれて"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "崩れる（くずれる）：崩溃，坍塌。",
+        "掠れる（かすれる）：嘶哑；写出飞白。",
+        "潰れる（つぶれる）：压碎；破产。",
+        "廃れる（すたれる）：废除，衰落。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "reviewNotes": [
+          "The explanation PDF says 「掠れる」 and 「嘶哑」; both were misread in the pending extraction."
+        ]
+      }
+    },
+    {
+      "id": "2016-12-06",
+      "year": 2016,
+      "month": 12,
+      "number": 6,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "家賃の相場は地域によって違う。",
+      "target": "相場",
+      "options": [
+        "あいば",
+        "そうば",
+        "あいじょう",
+        "そうじょう"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "愛馬（あいば）：珍爱的马。",
+        "相場（そうば）：行市，市价；汇率；投机买卖。",
+        "愛情（あいじょう）：爱，爱情。",
+        "相乗（そうじょう）：相乘。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "reviewNotes": [
+          "The explanation PDF says 「行市」, not 「行情」."
+        ]
+      }
+    },
+    {
+      "id": "2016-12-07",
+      "year": 2016,
+      "month": 12,
+      "number": 7,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "私はこの土地で定職に就き、生活の（　）を築いた。",
+      "target": "（　）",
+      "options": [
+        "根拠",
+        "基盤",
+        "根源",
+        "基地"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "根拠（こんきょ）：根据，依据。",
+        "基盤（きばん）：基础，底子。",
+        "根源（こんげん）：根源，根本。",
+        "基地（きち）：基地，根据地。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-08",
+      "year": 2016,
+      "month": 12,
+      "number": 8,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "議論は難航すると思ったが、すぐに意見がまとまり、（　）結論が出た。",
+      "target": "（　）",
+      "options": [
+        "すんなり",
+        "うっとり",
+        "ふんわり",
+        "こっそり"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "すんなり：顺利，容易。",
+        "うっとり：发呆，出神；入迷，陶醉。",
+        "ふんわり：轻飘飘地。",
+        "こっそり：偷偷地。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-09",
+      "year": 2016,
+      "month": 12,
+      "number": 9,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "さっき駅前で佐藤さんを（　）んですが、今、海外にいるはずなのに変です。",
+      "target": "（　）",
+      "options": [
+        "見合わせた",
+        "見過ごした",
+        "見かけた",
+        "見違えた"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "見合わせる（みあわせる）：互相看，互视。",
+        "見過ごす（みすごす）：看漏，没看到。",
+        "見かける（みかける）：看到，碰到。",
+        "見違える（みちがえる）：看错。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-10",
+      "year": 2016,
+      "month": 12,
+      "number": 10,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "市長の責任ある行動が住民の不安を（　）し、行政に対する期待が一気に高まった。",
+      "target": "（　）",
+      "options": [
+        "一掃",
+        "追放",
+        "削除",
+        "排出"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "一掃（いっそう）：扫除，肃清。",
+        "追放（ついほう）：放逐，驱除。",
+        "削除（さくじょ）：删掉，删除。",
+        "排出（はいしゅつ）：排出，放出。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-11",
+      "year": 2016,
+      "month": 12,
+      "number": 11,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "十分に煮た野菜は味が（　）柔らかく、とてもおいしかった。",
+      "target": "（　）",
+      "options": [
+        "溶けて",
+        "染みて",
+        "潤って",
+        "沈んで"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "溶ける（とける）：溶化。",
+        "染みる（しみる）：染上，沾染。",
+        "潤う（うるおう）：湿润。",
+        "沈む（しずむ）：下沉，沉没。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-12",
+      "year": 2016,
+      "month": 12,
+      "number": 12,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "このテーブルは私が子どものころから使っているので、（　）があって捨てられない。",
+      "target": "（　）",
+      "options": [
+        "心情",
+        "好感",
+        "熱意",
+        "愛着"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "心情（しんじょう）：心理，心情。",
+        "好感（こうかん）：好感。",
+        "熱意（ねつい）：热忱，热情。",
+        "愛着（あいちゃく）：留恋，依依难舍。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-13",
+      "year": 2016,
+      "month": 12,
+      "number": 13,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "現社長は創立者から経営の（　）を学んだ。",
+      "target": "（　）",
+      "options": [
+        "データベース",
+        "ベテラン",
+        "ライフワーク",
+        "ノウハウ"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "データベース：数据库。",
+        "ベテラン：老手，有经验者。",
+        "ライフワーク：毕生的事业。",
+        "ノウハウ：技术，技巧。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-14",
+      "year": 2016,
+      "month": 12,
+      "number": 14,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "高橋さんにはかねがねお会いしたいと思っていました。",
+      "target": "かねがね",
+      "options": [
+        "直接",
+        "ぜひ",
+        "早く",
+        "以前から"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "直接（ちょくせつ）：直接。",
+        "ぜひ：一定，务必。",
+        "早く（はやく）：早，很快。",
+        "以前（いぜん）から：从以前开始。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-15",
+      "year": 2016,
+      "month": 12,
+      "number": 15,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "林さんはそれを故意に捨てたらしい。",
+      "target": "故意に",
+      "options": [
+        "わざと",
+        "うっかり",
+        "いやいや",
+        "さっさと"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "わざと：故意的。",
+        "うっかり：不小心。",
+        "いやいや：不情不愿，不乐意。",
+        "さっさと：毫不犹豫，迅速。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-16",
+      "year": 2016,
+      "month": 12,
+      "number": 16,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "昨日、鈴木さんにおわびした。",
+      "target": "おわびした",
+      "options": [
+        "文句を言った",
+        "お礼を言った",
+        "断った",
+        "謝った"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "文句を言う（もんくをいう）：抱怨，发牢骚。",
+        "お礼を言う（おれいをいう）：道谢。",
+        "断る（ことわる）：拒绝。",
+        "謝る（あやまる）：道歉。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-17",
+      "year": 2016,
+      "month": 12,
+      "number": 17,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "中村さんの言葉からは強い意気込みが伝わってくる。",
+      "target": "意気込み",
+      "options": [
+        "敬意",
+        "自信",
+        "意欲",
+        "信頼"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "敬意（けいい）：敬意。",
+        "自信（じしん）：自信。",
+        "意欲（いよく）：热情，积极性。",
+        "信頼（しんらい）：信赖。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-18",
+      "year": 2016,
+      "month": 12,
+      "number": 18,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "妹は少しおびえているようだった。",
+      "target": "おびえている",
+      "options": [
+        "焦って",
+        "怖がって",
+        "悩んで",
+        "悔やんで"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "焦る（あせる）：焦急。",
+        "怖がる（こわがる）：害怕。",
+        "悩む（なやむ）：烦恼。",
+        "悔やむ（くやむ）：懊悔，后悔。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-19",
+      "year": 2016,
+      "month": 12,
+      "number": 19,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "私はその一言に安堵した。",
+      "target": "安堵した",
+      "options": [
+        "すっとした",
+        "はっとした",
+        "ほっとした",
+        "かっとした"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "すっとする：迅速的，轻快的；爽快。",
+        "はっとする：惊讶，大吃一惊。",
+        "ほっとする：放心。",
+        "かっとする：耀眼，旺盛；勃然大怒，好发脾气。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "reviewNotes": [
+          "The explanation PDF says 「かっとする」; the pending extraction read it as 「むっとする」."
+        ]
+      }
+    },
+    {
+      "id": "2016-12-20",
+      "year": 2016,
+      "month": 12,
+      "number": 20,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "閑静",
+      "target": "閑静",
+      "options": [
+        "そのレストランは繁華街から外れた閑静な場所にある。",
+        "今日は朝から具合が悪かったので、会社を休んで家で閑静にしていた。",
+        "用事が早く済み、閑静な時間ができたので、映画を見に行くことにした。",
+        "日中はにぎやかな公園だが、夜になると急に閑静になる。"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "那个餐馆在远离闹市区的幽静场所。",
+        "应该是：安静（あんせい）：安静，平静。",
+        "应该用：暇（ひま）：闲暇。",
+        "应该用：静か（しずか）：安静的。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-21",
+      "year": 2016,
+      "month": 12,
+      "number": 21,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "たやすい",
+      "target": "たやすい",
+      "options": [
+        "弟は寝坊したらしく、たやすい物だけ食べて、慌てて出かけていった。",
+        "伊藤氏とは大学時代からの親友で、本音が言えるたやすい関係だ。",
+        "せっかくの日曜日だから、ゆっくり休んでたやすい過ごそうと思う。",
+        "この問題は想像以上に複雑で、たやすく解決できるものではなかった。"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "应该用：軽い（かるい）：简便的，简单的。",
+        "应该用：親しい（したしい）：亲密的，和善的，亲切的。",
+        "应该用：のんびり：舒舒服服，无忧无虑。",
+        "这个问题比想象中要复杂，不是轻而易举就能解决的。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_QUESTION_TYPO_CORRECTED"
+        ],
+        "reviewNotes": [
+          "The question PDF prints 「たやすい解決」, but the answer table and per-question explanation identify option 4 as the correct use; the required adverbial form before 「解決できる」 is 「たやすく」."
+        ]
+      }
+    },
+    {
+      "id": "2016-12-22",
+      "year": 2016,
+      "month": 12,
+      "number": 22,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "察する",
+      "target": "察する",
+      "options": [
+        "医師たちはチームを組み、意見を出し合って、最良の治療法を察した。",
+        "気象予報士はテレビの天気予報で、来週の気温の変化を察し始めた。",
+        "鈴木さんは、私が何も言わなくても、私の気持ちを察して慰めてくれた。",
+        "外を歩いていたら急にいいアイディアを察したので、手帳にメモをした。"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "应该用：探し（さがし）：寻找，寻求。",
+        "应该用：見込む（みこむ）：估计在内，预想。",
+        "即使我什么都不说，铃木也能察觉到我的心情来安慰我。",
+        "应该用：思いついた：忽然想出，忽然想起。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "reviewNotes": [
+          "The explanation PDF says 「即使我什么都不说」; the pending extraction misread 「我」 as 「缺」."
+        ]
+      }
+    },
+    {
+      "id": "2016-12-23",
+      "year": 2016,
+      "month": 12,
+      "number": 23,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "内訳",
+      "target": "内訳",
+      "options": [
+        "来週の内訳を認識したが、予定がないのは木曜の夜だけだ。",
+        "前回の出張費の内訳を見たら、交通費の割合が予想外に高かった。",
+        "司会者は進行を間違えないように、式の内訳を何度も見直した。",
+        "家族の健康のため、栄養の内訳を考えて食事を作っている。"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "应该用：スケジュール：日程安排。",
+        "看了上次出差费用的明细，交通费用所占的比例高得出人意料。",
+        "应该用：進行要項（しんこうようこう）：重点要推行的项目。",
+        "应该用：バランス：平衡。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-12-24",
+      "year": 2016,
+      "month": 12,
+      "number": 24,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "食い違う",
+      "target": "食い違う",
+      "options": [
+        "この事件は、複数の目撃者の話がそれぞれ食い違っており、不明な点が多い。",
+        "金庫を開けようと思ったが、どの鍵も食い違って開けられなかった。",
+        "何だか歩きにくいと思ったら、サンダルの左右が食い違っていた。",
+        "調味料を変えたのか、この料理はいつもと味が食い違っているように感じる。"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "这个事件的多个目击者所说的话都不一致，有很多不明的点。",
+        "应该用：合わなく（あわなく）：不合适，不协调。",
+        "应该用：間違って：弄错。",
+        "应该用：違って（ちがって）：错误的。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [],
+        "reviewNotes": [
+          "The explanation PDF gives the reading 「あわなく」; the pending extraction added an unsupported 「て」."
+        ]
+      }
+    },
+    {
+      "id": "2016-12-25",
+      "year": 2016,
+      "month": 12,
+      "number": 25,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "過密",
+      "target": "過密",
+      "options": [
+        "雑誌で紹介されてから、この商品への過密な注文が続いているらしい。",
+        "水質汚染に関して人々の抗議が過密になり、政府は対策を迫られている。",
+        "今回の出張は過密なスケジュールで、ゆっくり食事する時間もなさそうだ。",
+        "春になると、この池の周りには、色とりどりの花が過密に咲き乱れる。"
+      ],
+      "source": {
+        "archive": "N1 2016年12月.ZIP",
+        "pdf": "1. 真题 2016年12月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "应该用：頻繁（ひんぱん）：频繁。",
+        "应该用：苛烈（かれつ）：激烈。",
+        "今天的出差时间安排非常集中，貌似没有能够慢慢吃饭的时间。",
+        "应该用：盛ん（さかん）：繁盛，旺盛。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年12月.ZIP",
+          "pdf": "1. 真题 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年12月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-01",
+      "year": 2016,
+      "month": 7,
+      "number": 1,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "この寺の周辺には樹木が茂っている。",
+      "target": "樹木",
+      "options": [
+        "しゅもく",
+        "しゅうもく",
+        "じゅもく",
+        "じゅうもく"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "しゅもく（撞木）：撞钟槌。",
+        "しゅうもく（衆目）：众目。",
+        "じゅもく（樹木）：树木。",
+        "じゅうもく（十目）：十目，众目。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_EXPLANATION_TYPO_CORRECTED"
+        ],
+        "sourceExplanationCorrected": true,
+        "reviewNotes": [
+          "The explanation PDF duplicates 「撞钟槌」 in option 1; the duplicate was removed from the learner-facing explanation."
+        ]
+      }
+    },
+    {
+      "id": "2016-07-02",
+      "year": 2016,
+      "month": 7,
+      "number": 2,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "将来のために様々な知識を蓄えておきたい。",
+      "target": "蓄えて",
+      "options": [
+        "たずさえて",
+        "そなえて",
+        "かかえて",
+        "たくわえて"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "たずさえて（携えて）：携える。携带，拿，带。",
+        "そなえて（備えて）：備える。具备；具有；与生俱来；生来就有。",
+        "かかえて（抱えて）：抱える。抱（在胸前），夹（在腋下）。",
+        "たくわえて（蓄えて）：蓄える。（知识，技能）积蓄，积累。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_EXPLANATION_TYPO_CORRECTED"
+        ],
+        "sourceExplanationCorrected": true,
+        "reviewNotes": [
+          "The explanation PDF prints the malformed Chinese phrase 「生与俱来」; it was corrected to 「与生俱来」."
+        ]
+      }
+    },
+    {
+      "id": "2016-07-03",
+      "year": 2016,
+      "month": 7,
+      "number": 3,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "この店は今月から商品の陳列の仕方を変更した。",
+      "target": "陳列",
+      "options": [
+        "ちんれつ",
+        "しんれつ",
+        "ちんれい",
+        "しんれい"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "ちんれつ（陳列）：展览，陈列。",
+        "しんれつ：干扰项。",
+        "ちんれい：干扰项。",
+        "しんれい（心霊）：心灵，灵魂。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-04",
+      "year": 2016,
+      "month": 7,
+      "number": 4,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "今日の舞台は華やかで、観客を大いに楽しませた。",
+      "target": "華やか",
+      "options": [
+        "なごやか",
+        "あざやか",
+        "はなやか",
+        "かろやか"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "なごやか（和やか）：平静；安详；温和；和谐；和睦。",
+        "あざやか（鮮やか）：鲜明，色、形美而清晰。",
+        "はなやか（華やか）：华丽，华美，华贵。",
+        "かろやか（軽やか）：轻松，轻快。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-05",
+      "year": 2016,
+      "month": 7,
+      "number": 5,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "専門家に鑑定を依頼した。",
+      "target": "鑑定",
+      "options": [
+        "かんじょう",
+        "かんてい",
+        "けんてい",
+        "けんじょう"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "かんじょう（勘定）：数，计数，计算。",
+        "かんてい（鑑定）：鉴别，判断。",
+        "けんてい（検定）：审定，检查裁定，甄别。",
+        "けんじょう（謙譲）：谦让，谦逊。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-06",
+      "year": 2016,
+      "month": 7,
+      "number": 6,
+      "section": "語彙",
+      "type": "漢字の読み方",
+      "question": "この雑誌にある情報は少し偏っている。",
+      "target": "偏って",
+      "options": [
+        "こだわって",
+        "あやまって",
+        "いつわって",
+        "かたよって"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "こだわって（拘って）：拘る。拘泥。特别在意。",
+        "あやまって（謝って）：謝る。道歉，赔礼，谢罪。",
+        "いつわって（偽って）：偽る。说谎，歪曲；假装；冒充。",
+        "かたよって（偏って）：偏る。偏颇，不平衡；偏于一，集中于一方。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-07",
+      "year": 2016,
+      "month": 7,
+      "number": 7,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "今回の事故から得た（　）をもとに、再発を防止するための対策を立てた。",
+      "target": "（　）",
+      "options": [
+        "触発",
+        "啓発",
+        "教養",
+        "教訓"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "触発：触发；（受到）刺激，（引起）感情冲动。",
+        "啓発：启发，启迪，启蒙。对人们没有意识到的事情或不足之处进行教诲并使明白。",
+        "教養：教育；修养；教养；文化；学识；素养。",
+        "教訓：教训。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-08",
+      "year": 2016,
+      "month": 7,
+      "number": 8,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "林さんは服の（　）が抜群で、いつもすてきな服装をしている。",
+      "target": "（　）",
+      "options": [
+        "センス",
+        "タイミング",
+        "ステップ",
+        "ニュアンス"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "センス：【英】sense 感觉，审美能力，美感，品味；常识，见识。",
+        "タイミング：【英】timing 时机；适时的；机遇。",
+        "ステップ：【英】step 踏板；舞步；阶段。",
+        "ニュアンス：【法】nuance 细微的差别，微妙的感觉，语言、颜色、声音、调子和感情等的细微差别。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-09",
+      "year": 2016,
+      "month": 7,
+      "number": 9,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "A社は、開発した技術が（　）するのを防ぐため、管理体制を強化した。",
+      "target": "（　）",
+      "options": [
+        "展開",
+        "発散",
+        "流出",
+        "転向"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "展開：开展，展开，逐渐发展；展现，逐步扩展。",
+        "発散：发散，散发，抒发，抒解；发射，发散，光线向四周扩散。",
+        "流出：流出；外流。",
+        "転向：改变方向、方针、兴趣、爱好，改变朝向；改变思想上、政治上的立场。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-10",
+      "year": 2016,
+      "month": 7,
+      "number": 10,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "どんな苦難に直面しても、最善を（　）よう努めている。",
+      "target": "（　）",
+      "options": [
+        "遂げる",
+        "尽くす",
+        "果たす",
+        "極める"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "遂げる：完成（任务），达到（愿望）；最终形成（某种结果）。",
+        "尽くす：尽力；报效，贡献力量；达到极点。",
+        "果たす：完成；实现。",
+        "極める：达到极限。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-11",
+      "year": 2016,
+      "month": 7,
+      "number": 11,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "駅から博物館まではバスが（　）出ているので、ほとんど待たずに乗ることができる。",
+      "target": "（　）",
+      "options": [
+        "頻繁に",
+        "緊密に",
+        "活発に",
+        "円滑に"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "頻繁に：频繁，屡次。",
+        "緊密に：紧密，密切。",
+        "活発に：活泼，活跃。",
+        "円滑に：圆滑；圆满，顺利，协调。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-12",
+      "year": 2016,
+      "month": 7,
+      "number": 12,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "一日中歩いて（　）疲れたので、今夜はゆっくり休みたい。",
+      "target": "（　）",
+      "options": [
+        "すっきり",
+        "からからに",
+        "へとへとに",
+        "ぎっしり"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "すっきり：流畅；通畅；纯净；爽快；痛快；无烦心事，感觉舒畅的样子。",
+        "からからに：嘎啦嘎啦；形容男性高声大笑；形容空无一物；形容极其干燥。",
+        "へとへとに：非常疲乏，精疲力竭，筋疲力尽。形容非常疲惫，身上一点力气也没有。",
+        "ぎっしり：满满的。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": [
+            2,
+            3
+          ]
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_EXPLANATION_TYPO_CORRECTED"
+        ],
+        "sourceExplanationCorrected": true,
+        "reviewNotes": [
+          "The explanation PDF has the punctuation typo 「纯净。；爽快」; the stray full stop was removed."
+        ]
+      }
+    },
+    {
+      "id": "2016-07-13",
+      "year": 2016,
+      "month": 7,
+      "number": 13,
+      "section": "語彙",
+      "type": "文脈に合う語",
+      "question": "母に相談したかったが、忙しそうだったので、なかなか話を（　）ことができなかった。",
+      "target": "（　）",
+      "options": [
+        "押し込む",
+        "切り出す",
+        "割り当てる",
+        "持ち上げる"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "押し込む：塞，塞进，塞入，硬往里装。",
+        "切り出す：开言，开口说话，说出。",
+        "割り当てる：分配，分摊，分派。",
+        "持ち上げる：用手举起，抬起，拿起；奉承，抬举，过分夸奖。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-14",
+      "year": 2016,
+      "month": 7,
+      "number": 14,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "この文は主人公の心情を端的に表している。",
+      "target": "端的",
+      "options": [
+        "明白に",
+        "部分的に",
+        "大げさに",
+        "主に"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "明白に：明白的。",
+        "部分的に：部分的。",
+        "大げさに：夸张的。",
+        "主に：主要的。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-15",
+      "year": 2016,
+      "month": 7,
+      "number": 15,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "わずらわしい作業がやっと終わった。",
+      "target": "わずらわしい",
+      "options": [
+        "苦手な",
+        "面倒な",
+        "単調な",
+        "膨大な"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "苦手な：不擅长的。",
+        "面倒な：麻烦的。",
+        "単調な：单调的。",
+        "膨大な：膨胀的，庞大的。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-16",
+      "year": 2016,
+      "month": 7,
+      "number": 16,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "私は小学校の同級生の名前をかろうじて思い出した。",
+      "target": "かろうじて",
+      "options": [
+        "なぜか",
+        "何とか",
+        "すぐに",
+        "たまたま"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "なぜか：不知为何，不由得。",
+        "何とか：勉强，好歹，总算。",
+        "すぐに：直接，立即。",
+        "たまたま：偶尔，有时。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-17",
+      "year": 2016,
+      "month": 7,
+      "number": 17,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "彼は自尊心を取り戻した。",
+      "target": "自尊心",
+      "options": [
+        "イメージ",
+        "コントロール",
+        "スタイル",
+        "プライド"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 2
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "イメージ：印象。",
+        "コントロール：支配，统治，控制。",
+        "スタイル：风格，姿态，样式。",
+        "プライド：自尊心，自豪感。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 2
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-18",
+      "year": 2016,
+      "month": 7,
+      "number": 18,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "これは私にとってささいな問題だ。",
+      "target": "ささいな",
+      "options": [
+        "重要な",
+        "新たな",
+        "小さな",
+        "深刻な"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "重要な：重要的。",
+        "新たな：崭新的。",
+        "小さな：小的。",
+        "深刻な：深刻的。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-19",
+      "year": 2016,
+      "month": 7,
+      "number": 19,
+      "section": "語彙",
+      "type": "意味の近い語",
+      "question": "佐藤さんは少しとまどっているようだった。",
+      "target": "とまどって",
+      "options": [
+        "困って",
+        "驚いて",
+        "怖がって",
+        "悔やんで"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "困って：困惑。",
+        "驚いて：吃惊。",
+        "怖がって：害怕。",
+        "悔やんで：后悔。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-20",
+      "year": 2016,
+      "month": 7,
+      "number": 20,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "規制",
+      "target": "規制",
+      "options": [
+        "光熱費を最小限に規制して、家計の負担を減らしている。",
+        "今年は就職活動で忙しくなるので、アルバイトは規制するつもりだ。",
+        "マラソン大会当日は交通が規制され、一部の道路が通行止めになる。",
+        "この授業は少人数で行われるため、受講できる学生数が規制されている。"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 2,
+      "optionAnalysis": [
+        "应该用：とどめる：停止，中止。",
+        "应该用：縮（ちぢ）める：缩短，缩小。",
+        "马拉松大会当日的交通被加以限制，一部分的道路禁止通行。",
+        "应该用：制限（せいげん）：限制。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-21",
+      "year": 2016,
+      "month": 7,
+      "number": 21,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "入手",
+      "target": "入手",
+      "options": [
+        "A社は今回の不祥事に関して、世間から多くの批判を入手した。",
+        "社会人になって初めて入手した給料で、両親に贈り物をした。",
+        "高橋氏は幼いころから音楽の才能を発揮し、数々の賞を入手した。",
+        "海外に留学する際には、現地の生活に役立つ情報を入手しておくといい。"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "应该用：受（う）けた：接受，听从。",
+        "应该用：もらった／いただいた：得到。",
+        "应该用：獲得（かくとく）：获得。",
+        "要去海外留学之际，提前获取对自己在当地的生活有利的信息比较好。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-22",
+      "year": 2016,
+      "month": 7,
+      "number": 22,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "素早い",
+      "target": "素早い",
+      "options": [
+        "警察の素早い対応によって、逃走した犯人はその日のうちに逮捕された。",
+        "窓を開けていたら強い風が吹いて、机の上の紙が素早く飛んでしまった。",
+        "鈴木教授は話し方が素早いので、講義の内容が聞き取れないことがある。",
+        "森氏の小説は人気があって、新しい作品が発売されると素早く売り切れてしまう。"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 0,
+      "optionAnalysis": [
+        "通过警察随机应变的处理，逃走的犯人那一天之内就被逮捕了。",
+        "应该用：急（きゅう）に：突然间。",
+        "应该用：早い（はやい）：迅速的，快的；早的。",
+        "应该用：すぐ／たちまち：转眼间，立刻，突然。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-23",
+      "year": 2016,
+      "month": 7,
+      "number": 23,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "経緯",
+      "target": "経緯",
+      "options": [
+        "今年の夏休みは、毎日の経緯を日記に書いて記録に残すことにした。",
+        "社長は今日の会議で、A社との契約問題が解決に至った経緯を説明した。",
+        "この語学学校では、初級と中級の間に初中級という経緯を組み入れている。",
+        "出張でA工場を訪れ、自動車が製造される経緯を視察した。"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "应该用：過（す）ごし方：度过的方式。",
+        "社长在今天的会议上说明了和A公司之间合同问题解决的事情经过。",
+        "应该用：コース：课程。",
+        "应该用：過程（かてい）：过程。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-07-24",
+      "year": 2016,
+      "month": 7,
+      "number": 24,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "退く",
+      "target": "退く",
+      "options": [
+        "不規則な生活を退いてから、体調がよくなってきたと感じている。",
+        "佐藤氏は社長の地位を退いた後も、会社への影響力を持ちつづけた。",
+        "仕事が忙しい時期を退いたら、休暇を取って家族と旅行しようと思っている。",
+        "A市の財政は一時の危機的状況を退いたが、いまだに厳しい運営が続いている。"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 1,
+      "optionAnalysis": [
+        "应该用：やめて 辞职。",
+        "佐藤退出社长职位后，仍持续对公司保持影响力。",
+        "应该用：終（お）える：完成，做完。",
+        "应该用：乗り越えた（のりこえた）：战胜，克服。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_EXPLANATION_TYPO_CORRECTED"
+        ],
+        "sourceExplanationCorrected": true,
+        "reviewNotes": [
+          "The explanation PDF prints the malformed Chinese phrase 「退去社长的职位」; the learner-facing sentence was corrected to express leaving the president position."
+        ]
+      }
+    },
+    {
+      "id": "2016-07-25",
+      "year": 2016,
+      "month": 7,
+      "number": 25,
+      "section": "語彙",
+      "type": "言葉の用法",
+      "question": "還元",
+      "target": "還元",
+      "options": [
+        "林選手は、連日の試合で消耗した体力を還元するため、しばらく休養するそうだ。",
+        "参加の申し込みを取り消した場合、事前に支払った参加費は還元される。",
+        "一時減少した車の生産台数は、今年になって徐々に還元してきた。",
+        "A社は、会社が得た利益を自然保護活動を通じて社会に還元している。"
+      ],
+      "source": {
+        "archive": "N1 2016年7月.ZIP",
+        "pdf": "1. 真题 2016年7月 N1.pdf",
+        "page": 3
+      },
+      "flags": [],
+      "answer": 3,
+      "optionAnalysis": [
+        "应该用：回復（かいふく）：恢复。",
+        "应该用：払い戻される：被退回。",
+        "应该用：増加（ぞうか）：增加。",
+        "A公司通过自然保护活动把公司取得的利益回归给社会。"
+      ],
+      "evidence": {
+        "question": {
+          "archive": "N1 2016年7月.ZIP",
+          "pdf": "1. 真题 2016年7月 N1.pdf",
+          "page": 3
+        },
+        "explanation": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 4
+        },
+        "answerTable": {
+          "pdf": "2. 答案 + 解析 + 听力原文 2016年7月 N1.pdf",
+          "page": 1
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "answerSourcesAgree": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "SOURCE_EXPLANATION_TYPO_CORRECTED"
+        ],
+        "sourceExplanationCorrected": true,
+        "reviewNotes": [
+          "The explanation PDF duplicates 「恢复」 in option 1; the duplicate was removed from the learner-facing explanation."
+        ]
+      }
+    }
+  ],
+  "verificationSummary": {
+    "totalQuestions": 125,
+    "verified": 125,
+    "manualCheck": 0,
+    "sourceSets": 5
+  }
+}

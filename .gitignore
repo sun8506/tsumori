@@ -1,4 +1,4 @@
-data/
+/data/
 backups/
 node_modules/
 .env
