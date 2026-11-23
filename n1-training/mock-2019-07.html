@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>N1 2019年7月 · 实战模拟</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./mock.css">
+</head>
+<body class="mock-page" data-session="2019-07">
+  <main class="mock-shell">
+    <header class="mock-header">
+      <div><p class="crumb">N1 / 2019年7月 / 实战模拟</p><h1>2019年7月 N1 全真模拟</h1></div>
+      <div class="mock-header-actions"><span id="phaseBadge" class="phase-badge">准备</span><time id="timer">110:00</time><a class="ghost mock-back" href="./index.html">返回专项训练</a></div>
+    </header>
+
+    <section id="startScreen" class="mock-card start-card">
+      <p class="eyebrow">整套独立 · 不与其他年份混合</p>
+      <h2>按原卷顺序完成两阶段考试</h2>
+      <div class="rules-grid">
+        <div><strong>第一阶段</strong><span>语言知识与阅读</span><b>110 分钟</b></div>
+        <div><strong>第二阶段</strong><span>听力</span><b>60 分钟</b></div>
+        <div><strong>交卷以后</strong><span>统一评分与逐题解析</span><b>答题中不提示正误</b></div>
+      </div>
+      <p class="mock-note">系统会自动保存本机进度。可以跳题和返回修改；进入听力后不能返回第一阶段。</p>
+      <button id="startBtn" class="primary mock-primary">开始模拟</button>
+    </section>
+
+    <section id="examScreen" class="hidden">
+      <div class="mock-progress"><div><span id="phaseTitle">语言知识・读解</span><b id="position">1 / 69</b></div><i><em id="progressFill"></em></i><button id="sheetToggle" class="ghost">答题卡</button></div>
+      <div id="listeningDock" class="mock-audio listening-dock hidden"><div><strong>2019年7月 · 听力整卷</strong><span>按原考试录音连续播放，切换题目不会中断</span></div><audio id="examAudio" controls preload="metadata" src="./audio/2019-07/full.mp3"></audio></div>
+      <div class="exam-grid">
+        <section id="questionPanel" class="question-panel mock-question"></section>
+        <aside id="answerSheet" class="answer-sheet">
+          <div class="sheet-head"><strong>答题卡</strong><button id="sheetClose" aria-label="关闭">×</button></div>
+          <div id="sheetGrid" class="sheet-grid"></div>
+          <div class="sheet-legend"><span><i></i>未答</span><span><i class="done"></i>已答</span><span><i class="current"></i>当前</span></div>
+        </aside>
+      </div>
+      <div class="mock-nav"><button id="prevBtn" class="ghost">上一题</button><button id="clearBtn" class="ghost">清除答案</button><button id="nextBtn" class="primary">下一题</button></div>
+    </section>
+
+    <section id="resultScreen" class="hidden"></section>
+  </main>
+  <script src="./mock-2019-07.js?v=20261123-1"></script>
+</body>
+</html>

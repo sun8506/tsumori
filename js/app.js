@@ -87,7 +87,7 @@ window.Router = Router;
     vocabulary: window.Vocabulary,
     phrases: window.Phrases,
     article: window.Article,
-    restaurant: window.Restaurant,
+    'n1-training': window.N1Column,
     speaking: window.Speaking,
     settings: window.Settings,
     expert: window.Expert,

@@ -10,7 +10,7 @@ const port = Number(process.env.PORT || 5173);
 const isProduction = process.env.NODE_ENV === 'production';
 const trustProxy = process.env.TRUST_PROXY === 'true';
 const database = new ServerDatabase(root);
-const CLOUD_KEYS = new Set(['vocabulary', 'phrases', 'articles', 'n1_readings', 'expert_queries', 'learning_records']);
+const CLOUD_KEYS = new Set(['vocabulary', 'phrases', 'articles', 'n1_readings', 'n1_exam_progress', 'expert_queries', 'learning_records']);
 const authAttempts = new Map();
 const AUTH_WINDOW_MS = 15 * 60 * 1000;
 const AUTH_MAX_ATTEMPTS = Math.max(10, Number(process.env.AUTH_RATE_LIMIT_MAX || 60));
@@ -34,6 +34,8 @@ const mimeTypes = {
   '.js': 'application/javascript; charset=utf-8',
   '.mjs': 'application/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
+  '.mp3': 'audio/mpeg',
+  '.m4a': 'audio/mp4',
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
@@ -104,7 +106,7 @@ function applySecurityHeaders(res) {
     "connect-src 'self'",
     "font-src 'self' https://fonts.gstatic.com",
     "form-action 'self'",
-    "frame-ancestors 'none'",
+    "frame-ancestors 'self'",
     "img-src 'self' data:",
     "object-src 'none'",
     "script-src 'self' 'wasm-unsafe-eval'",
@@ -114,7 +116,7 @@ function applySecurityHeaders(res) {
   res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
   res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
   res.setHeader('X-Content-Type-Options', 'nosniff');
-  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN');
   res.setHeader('Permissions-Policy', 'camera=(), geolocation=(), payment=()');
 }
 
@@ -647,16 +649,45 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    fs.readFile(filePath, (error, data) => {
-      if (error) {
+    fs.stat(filePath, (error, stat) => {
+      if (error || !stat.isFile()) {
         send(res, 404, 'Not found');
         return;
       }
       const extension = path.extname(filePath).toLowerCase();
+      const contentType = mimeTypes[extension] || 'application/octet-stream';
       const cacheControl = isProduction && !['.html', '.json'].includes(extension)
         ? 'public, max-age=3600'
         : 'no-store';
-      send(res, 200, data, mimeTypes[extension] || 'application/octet-stream', cacheControl);
+      const range = String(req.headers.range || '').match(/^bytes=(\d*)-(\d*)$/);
+      if (range && ['.mp3', '.m4a'].includes(extension)) {
+        const start = range[1] ? Number(range[1]) : 0;
+        const requestedEnd = range[2] ? Number(range[2]) : stat.size - 1;
+        const end = Math.min(requestedEnd, stat.size - 1);
+        if (!Number.isInteger(start) || !Number.isInteger(end) || start < 0 || start > end || start >= stat.size) {
+          res.writeHead(416, { 'Content-Range': `bytes */${stat.size}` });
+          res.end();
+          return;
+        }
+        res.writeHead(206, {
+          'Content-Type': contentType,
+          'Content-Length': end - start + 1,
+          'Content-Range': `bytes ${start}-${end}/${stat.size}`,
+          'Accept-Ranges': 'bytes',
+          'Cache-Control': cacheControl
+        });
+        if (req.method === 'HEAD') return res.end();
+        fs.createReadStream(filePath, { start, end }).pipe(res);
+        return;
+      }
+      res.writeHead(200, {
+        'Content-Type': contentType,
+        'Content-Length': stat.size,
+        'Accept-Ranges': ['.mp3', '.m4a'].includes(extension) ? 'bytes' : 'none',
+        'Cache-Control': cacheControl
+      });
+      if (req.method === 'HEAD') return res.end();
+      fs.createReadStream(filePath).pipe(res);
     });
   } catch (error) {
     send(res, 500, 'Internal server error');

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N1 真题突击</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <aside class="sidebar">
+        <div class="brand"><span class="brand-mark">N1</span><span>突击室</span></div>
+        <nav>
+          <button class="nav-item active" data-view="practice">练习 <span>01</span></button>
+          <button class="nav-item" data-view="mistakes">错题本 <span id="mistakeCount">0</span></button>
+          <button class="nav-item" data-view="bank">题库管理</button>
+        </nav>
+        <div class="sidebar-note"><span class="status-dot"></span><div><strong>本周计划</strong><small>词汇 · 进行中</small></div></div>
+      </aside>
+
+      <section class="content">
+        <header class="topbar"><div><p class="crumb" id="sectionCrumb">N1 / 词汇</p><h1 id="sectionTitle">词汇突击</h1></div><div class="topbar-actions"><div class="mode-tabs" aria-label="训练板块"><button class="mode-tab active" data-mode="vocabulary">词汇</button><button class="mode-tab" data-mode="grammar">语法</button><button class="mode-tab" data-mode="ordering">排序</button><button class="mode-tab" data-mode="cloze">完形</button><button class="mode-tab" data-mode="shortReading">短篇</button><button class="mode-tab" data-mode="mediumReading">中篇</button><button class="mode-tab" data-mode="longReading">长篇</button><button class="mode-tab" data-mode="listening">听力</button><a class="mode-tab mock-entry" href="./mock-2019-07.html">2019实战</a><a class="mode-tab mock-entry" href="./mock-2021-12.html">2021.12实战</a><a class="mode-tab mock-entry" href="./mock-2022-12.html">2022.12实战</a><a class="mode-tab mock-entry" href="./mock-2023-12.html">2023.12实战</a></div><button id="resetBtn" class="ghost">重置本轮</button></div></header>
+
+        <div id="practiceView" class="view">
+          <section class="hero-row">
+            <div><p class="eyebrow">混合真题训练</p><h2 id="sectionSlogan">先做题，再让错题告诉你<br><em>该记什么。</em></h2><p class="intro" id="sectionIntro">按词汇题型混合练习，作答后立即查看解析，并把薄弱点留给下一轮。</p></div>
+            <div class="streak"><span>连续训练</span><strong id="streakValue">0</strong><small>题</small></div>
+          </section>
+
+          <section class="stats"><div><span>本轮进度</span><strong><b id="answered">0</b> / <span id="total">0</span></strong></div><div><span>正确率</span><strong id="accuracy">—</strong></div><div><span>待复习</span><strong id="reviewCount">0</strong></div><div class="bar"><i id="progressBar"></i></div></section>
+
+          <section class="question-panel" id="questionPanel"></section>
+        </div>
+
+        <div id="mistakesView" class="view hidden"><div class="section-heading"><div><p class="eyebrow">复习队列</p><h2>错题本</h2></div><span class="count-badge" id="mistakeSummary">0 题待复习</span></div><div id="mistakesList" class="mistakes-list"></div></div>
+        <div id="bankView" class="view hidden"><div class="section-heading"><div><p class="eyebrow">数据结构</p><h2>题库管理</h2></div></div><div class="import-box"><div class="import-icon">＋</div><div><h3>按统一格式加入题目</h3><p>后续可把人工整理/OCR 的题目追加到 <code>questions.json</code>，原题年份与 PDF 页码会始终保留。</p></div><pre>[ { "year": 2018, "month": 7, "type": "汉字读音", "question": "...", "options": [], "answer": 0, "explanation": "...", "source": "2018年7月 p.2" } ]</pre></div></div>
+      </section>
+    </main>
+    <script src="./app.js?v=20261123-1"></script>
+  </body>
+</html>

@@ -15,6 +15,7 @@ const Storage = {
     'phrases',
     'articles',
     'n1_readings',
+    'n1_exam_progress',
     'expert_queries',
     'learning_records'
   ]),
