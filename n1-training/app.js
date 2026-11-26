@@ -9,7 +9,8 @@ const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const sourceLabel=q=>`${q.year}年${q.month}月 · 第${q.number}题 · 原卷p.${q.evidence?.question?.page??'—'}`;
 const tipFor=q=>({'漢字の読み方':'读音与形近假名','文脈規定':'固定搭配与语境','文脈に合う語':'固定搭配与语境','言い換え類義':'近义表达辨析','意味の近い語':'近义表达辨析','用法':'搭配与正确用法','言葉の用法':'搭配与正确用法','文の文法':'语法形式与接续','文の組み立て':'句子排列与结构','文章の文法':'篇章衔接与语境','内容理解（短文）':'定位原文、辨认主体与排除偷换'}[q.type]||q.type);
-const modeConfig={vocabulary:{path:'./data/questions.combined.json',crumb:'N1 / 词汇',title:'词汇突击'},grammar:{path:'./data/grammar.combined.json',crumb:'N1 / 语法',title:'语法突击'},ordering:{path:'./data/ordering.combined.json',crumb:'N1 / 排序',title:'排序突击'},cloze:{path:'./data/cloze.combined.json',crumb:'N1 / 完形',title:'完形突击'},shortReading:{path:'./data/short-reading.combined.json',crumb:'N1 / 短篇阅读',title:'短篇阅读'},mediumReading:{path:'./data/medium-reading.combined.json',crumb:'N1 / 中篇阅读',title:'中篇阅读'},longReading:{path:'./data/long-reading.combined.json',crumb:'N1 / 长篇阅读',title:'长篇阅读'},listening:{path:'./data/listening-2017-07.json',crumb:'N1 / 听力 / 2017年7月',title:'听力突击'}};
+const modeConfig={vocabulary:{path:'./data/questions.combined.json',crumb:'N1 / 词汇',title:'词汇突击'},practice202207:{path:'./data/practice-2022-07.json',crumb:'N1 / 2022年7月',title:'2022年7月完整训练'},grammar:{path:'./data/grammar.combined.json',crumb:'N1 / 语法',title:'语法突击'},ordering:{path:'./data/ordering.combined.json',crumb:'N1 / 排序',title:'排序突击'},cloze:{path:'./data/cloze.combined.json',crumb:'N1 / 完形',title:'完形突击'},shortReading:{path:'./data/short-reading.combined.json',crumb:'N1 / 短篇阅读',title:'短篇阅读'},mediumReading:{path:'./data/medium-reading.combined.json',crumb:'N1 / 中篇阅读',title:'中篇阅读'},longReading:{path:'./data/long-reading.combined.json',crumb:'N1 / 长篇阅读',title:'长篇阅读'},listening:{path:'./data/listening-2017-07.json',crumb:'N1 / 听力 / 2017年7月',title:'听力突击'}};
+modeConfig.practice202307={path:'./data/practice-2023-07.json',crumb:'N1 / 2023年7月',title:'2023年7月完整训练'};
 const belongsToMode=(question,nextMode)=>{
   if(nextMode==='grammar')return question.number>=26&&question.number<=35;
   if(nextMode==='ordering')return question.number>=36&&question.number<=40;
@@ -39,6 +40,25 @@ function questionHtml(q){
   return `${esc(q.question.slice(0,start))}<mark class="question-target">${esc(target)}</mark>${esc(q.question.slice(start+target.length))}`;
 }
 
+function audioLoopControl(){
+  return `<label class="audio-loop-control">循环 <select class="audio-loop-count" aria-label="音频循环次数"><option value="1">关闭</option><option value="3">3 次</option><option value="5">5 次</option><option value="10">10 次</option></select></label>`;
+}
+
+function bindAudioLoop(audios,status){
+  const select=document.querySelector('.audio-loop-count');if(!select||!audios.length)return;
+  const completed=new Map(audios.map(audio=>[audio,0]));
+  const announce=message=>{if(status)status.textContent=message};
+  select.onchange=()=>{audios.forEach(audio=>completed.set(audio,0));announce(+select.value===1?'循环已关闭':`将连续播放 ${select.value} 次`)};
+  audios.forEach(audio=>{
+    audio.addEventListener('ended',()=>{
+      const count=(completed.get(audio)||0)+1;completed.set(audio,count);
+      const total=+select.value;
+      if(count<total){audio.currentTime=0;audio.play();announce(`正在循环：${count+1} / ${total}`)}
+      else{announce(total===1?'播放完毕':`已循环播放 ${total} 次`);completed.set(audio,0)}
+    });
+  });
+}
+
 function render(){
   const q=questions[current]; if(!q)return; locked=false;selectedOrder=[];
   $('#total').textContent=questions.length; $('#answered').textContent=answered;
@@ -51,7 +71,8 @@ function render(){
   else if(mode==='listening')renderListeningQuestion(q,verified);
   else if(mode==='shortReading'||mode==='mediumReading'||mode==='longReading')renderShortReadingQuestion(q,verified);
   else{
-    $('#questionPanel').innerHTML=`<div class="question-meta"><span>${String(current+1).padStart(2,'0')} / ${String(questions.length).padStart(2,'0')}</span><span><span class="verify-badge ${verified?'verified':''}">${verified?'已核对':'待核对'}</span><span class="tag">${esc(q.type)}</span></span></div><p class="question-text">${questionHtml(q)}</p><div class="options">${q.options.map((o,i)=>`<button class="option" data-i="${i}"><span class="num">${String.fromCharCode(65+i)}</span>${esc(o)}</button>`).join('')}</div><div class="next-row"><span class="source">来源：${sourceLabel(q)}</span><button class="primary skip-ready" id="nextBtn">跳过此题</button></div>`;
+    $('#questionPanel').innerHTML=`<div class="question-meta"><span>${String(current+1).padStart(2,'0')} / ${String(questions.length).padStart(2,'0')}</span><span><span class="verify-badge ${verified?'verified':''}">${verified?'已核对':'待核对'}</span><span class="tag">${esc(q.type)}</span></span></div>${q.audioUrl?`<div class="listening-player"><div class="audio-track"><span>第 ${q.number} 题音频</span><audio controls preload="metadata" src="${esc(q.audioUrl)}"></audio></div><div class="audio-shortcuts">${audioLoopControl()}</div><output class="seek-status" aria-live="polite"></output></div>`:''}<p class="question-text">${questionHtml(q).replaceAll('\n','<br>')}</p><div class="options">${q.options.map((o,i)=>`<button class="option" data-i="${i}"><span class="num">${q.audioUrl?i+1:String.fromCharCode(65+i)}</span>${esc(o)}</button>`).join('')}</div><div class="next-row"><span class="source">来源：${sourceLabel(q)}</span><button class="primary skip-ready" id="nextBtn">跳过此题</button></div>`;
+    if(q.audioUrl)bindAudioLoop([...document.querySelectorAll('audio')],document.querySelector('.seek-status'));
     document.querySelectorAll('.option').forEach(b=>b.onclick=()=>choose(+b.dataset.i)); $('#nextBtn').onclick=next;
   }
 }
@@ -60,8 +81,9 @@ function renderListeningQuestion(q,verified){
   const yearMonth=`${q.year}-${String(q.month).padStart(2,'0')}`;
   const files=q.audioFiles||[q.audioFile].filter(Boolean).concat(q.audioFile?[]:(q.audioTracks||[q.audioTrack]).filter(Boolean).map(track=>`${String(track).padStart(2,'0')}.mp3`));
   const players=files.map((file,index)=>`<div class="audio-track"><span>${files.length>1?`音频 ${index+1}`:'本题音频'} · ${esc(file)}</span><audio controls preload="metadata" src="./audio/${yearMonth}/${encodeURIComponent(file)}"></audio></div>`).join('');
-  $('#questionPanel').innerHTML=`<div class="question-meta"><span>${String(current+1).padStart(2,'0')} / ${String(questions.length).padStart(2,'0')}</span><span><span class="year-badge">${q.year}年${q.month}月</span><span class="verify-badge ${verified?'verified':''}">${verified?'音轨/原文已核对':'待核对'}</span><span class="tag">${esc(q.type)}</span></span></div><div class="listening-player"><div class="listening-player-head"><div><small>按年份顺序训练</small><strong>问题 ${q.section} · ${esc(q.displayNumber||q.questionNumber)}</strong></div><div class="audio-settings"><label>年份 <select id="listeningYear"><option value="2015-07" ${listeningYear==='2015-07'?'selected':''}>2015年7月</option><option value="2016-12" ${listeningYear==='2016-12'?'selected':''}>2016年12月</option><option value="2017-07" ${listeningYear==='2017-07'?'selected':''}>2017年7月</option><option value="2017-12" ${listeningYear==='2017-12'?'selected':''}>2017年12月</option></select></label><label>速度 <select id="audioRate"><option value="0.8">0.8×</option><option value="1" selected>1.0×</option><option value="1.2">1.2×</option></select></label></div></div>${players}<div class="audio-shortcuts"><button type="button" class="ghost" id="rewindBtn">−3 秒</button><button type="button" class="ghost" id="replayBtn">从头播放</button><button type="button" class="ghost" id="forwardBtn">+3 秒</button></div><output class="seek-status" id="seekStatus" aria-live="polite"></output></div>${q.printedPrompt?`<p class="listening-prompt">${esc(q.printedPrompt)}</p>`:''}<div class="options">${q.options.map((o,i)=>`<button class="option" data-i="${i}"><span class="num">${i+1}</span>${esc(o)}</button>`).join('')}</div><div class="next-row"><span class="source">来源：${q.year}年${q.month}月听力 · 问题${q.section}-${esc(q.displayNumber||q.questionNumber)} · ${files.map(esc).join(' + ')}</span><button class="primary skip-ready" id="nextBtn">跳过此题</button></div>`;
+  $('#questionPanel').innerHTML=`<div class="question-meta"><span>${String(current+1).padStart(2,'0')} / ${String(questions.length).padStart(2,'0')}</span><span><span class="year-badge">${q.year}年${q.month}月</span><span class="verify-badge ${verified?'verified':''}">${verified?'音轨/原文已核对':'待核对'}</span><span class="tag">${esc(q.type)}</span></span></div><div class="listening-player"><div class="listening-player-head"><div><small>按年份顺序训练</small><strong>问题 ${q.section} · ${esc(q.displayNumber||q.questionNumber)}</strong></div><div class="audio-settings"><label>年份 <select id="listeningYear"><option value="2015-07" ${listeningYear==='2015-07'?'selected':''}>2015年7月</option><option value="2016-12" ${listeningYear==='2016-12'?'selected':''}>2016年12月</option><option value="2017-07" ${listeningYear==='2017-07'?'selected':''}>2017年7月</option><option value="2017-12" ${listeningYear==='2017-12'?'selected':''}>2017年12月</option></select></label><label>速度 <select id="audioRate"><option value="0.8">0.8×</option><option value="1" selected>1.0×</option><option value="1.2">1.2×</option></select></label></div></div>${players}<div class="audio-shortcuts"><button type="button" class="ghost" id="rewindBtn">−3 秒</button><button type="button" class="ghost" id="replayBtn">从头播放</button><button type="button" class="ghost" id="forwardBtn">+3 秒</button>${audioLoopControl()}</div><output class="seek-status" id="seekStatus" aria-live="polite"></output></div>${q.printedPrompt?`<p class="listening-prompt">${esc(q.printedPrompt)}</p>`:''}<div class="options">${q.options.map((o,i)=>`<button class="option" data-i="${i}"><span class="num">${i+1}</span>${esc(o)}</button>`).join('')}</div><div class="next-row"><span class="source">来源：${q.year}年${q.month}月听力 · 问题${q.section}-${esc(q.displayNumber||q.questionNumber)} · ${files.map(esc).join(' + ')}</span><button class="primary skip-ready" id="nextBtn">跳过此题</button></div>`;
   const audios=[...document.querySelectorAll('audio')];
+  bindAudioLoop(audios,$('#seekStatus'));
   const active=()=>audios.find(audio=>!audio.paused)||audios[0];
   $('#audioRate').onchange=event=>audios.forEach(audio=>audio.playbackRate=+event.target.value);
   $('#listeningYear').onchange=event=>{listeningYear=event.target.value;loadMode('listening')};
@@ -156,15 +178,17 @@ function switchView(view){document.querySelectorAll('.view').forEach(v=>v.classL
 async function loadMode(nextMode){
   mode=nextMode;const config=modeConfig[mode];current=0;answered=0;correct=0;locked=false;
   document.querySelectorAll('.mode-tab').forEach(button=>button.classList.toggle('active',button.dataset.mode===mode));
+  $('#examSetSelect').value=`mode:${mode}`;
   $('#sectionCrumb').textContent=mode==='listening'?`N1 / 听力 / ${listeningYear.replace('-','年')}月`:config.crumb;$('#sectionTitle').textContent=config.title;
-  try{const path=mode==='listening'?`./data/listening-${listeningYear}.json`:config.path;const response=await fetch(path,{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);dataset=await response.json();const verifiedQuestions=dataset.questions.filter(q=>q.verification?.status==='verified'&&belongsToMode(q,mode));questions=(mode==='cloze'||mode==='mediumReading'||mode==='longReading'||mode==='listening')?verifiedQuestions:shuffle(verifiedQuestions);mistakes=JSON.parse(localStorage.getItem(mistakeKey())||'[]').filter(item=>questions.some(q=>q.id===item.id));localStorage.setItem(mistakeKey(),JSON.stringify(mistakes));switchView('practice');render()}
+  try{const path=mode==='listening'?`./data/listening-${listeningYear}.json`:config.path;const response=await fetch(path,{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);dataset=await response.json();const verifiedQuestions=dataset.questions.filter(q=>q.verification?.status==='verified'&&belongsToMode(q,mode));const sequential=dataset.mode==='sequential_single_choice_practice';questions=(sequential||mode==='cloze'||mode==='mediumReading'||mode==='longReading'||mode==='listening')?verifiedQuestions:shuffle(verifiedQuestions);mistakes=JSON.parse(localStorage.getItem(mistakeKey())||'[]').filter(item=>questions.some(q=>q.id===item.id));localStorage.setItem(mistakeKey(),JSON.stringify(mistakes));switchView('practice');render()}
   catch(error){questions=[];mistakes=[];$('#questionPanel').innerHTML=`<div class="load-error"><strong>${esc(config.title)}题库尚未就绪</strong><p>${esc(error.message)}。数据生成完成后刷新或重新点击该板块。</p></div>`}
 }
 async function init(){
   const legacy=localStorage.getItem('n1-mistakes');if(legacy&&!localStorage.getItem('n1-vocabulary-mistakes'))localStorage.setItem('n1-vocabulary-mistakes',legacy);
   document.querySelectorAll('.nav-item').forEach(b=>b.onclick=()=>switchView(b.dataset.view));
   document.querySelectorAll('.mode-tab').forEach(b=>b.onclick=()=>loadMode(b.dataset.mode));
-  $('#resetBtn').onclick=()=>{if(!['cloze','mediumReading','longReading','listening'].includes(mode))questions=shuffle(questions);current=0;answered=0;correct=0;render()};
+  $('#examSetSelect').onchange=event=>{const [kind,value]=event.target.value.split(':');if(kind==='mode')loadMode(value);if(kind==='page')location.href=`./${value}`};
+  $('#resetBtn').onclick=()=>{if(dataset?.mode!=='sequential_single_choice_practice'&&!['cloze','mediumReading','longReading','listening'].includes(mode))questions=shuffle(questions);current=0;answered=0;correct=0;render()};
   await loadMode('vocabulary');
 }
 init();

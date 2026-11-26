@@ -19,7 +19,7 @@
       </aside>
 
       <section class="content">
-        <header class="topbar"><div><p class="crumb" id="sectionCrumb">N1 / 词汇</p><h1 id="sectionTitle">词汇突击</h1></div><div class="topbar-actions"><div class="mode-tabs" aria-label="训练板块"><button class="mode-tab active" data-mode="vocabulary">词汇</button><button class="mode-tab" data-mode="grammar">语法</button><button class="mode-tab" data-mode="ordering">排序</button><button class="mode-tab" data-mode="cloze">完形</button><button class="mode-tab" data-mode="shortReading">短篇</button><button class="mode-tab" data-mode="mediumReading">中篇</button><button class="mode-tab" data-mode="longReading">长篇</button><button class="mode-tab" data-mode="listening">听力</button><a class="mode-tab mock-entry" href="./mock-2019-07.html">2019实战</a><a class="mode-tab mock-entry" href="./mock-2021-12.html">2021.12实战</a><a class="mode-tab mock-entry" href="./mock-2022-12.html">2022.12实战</a><a class="mode-tab mock-entry" href="./mock-2023-12.html">2023.12实战</a></div><button id="resetBtn" class="ghost">重置本轮</button></div></header>
+        <header class="topbar"><div><p class="crumb" id="sectionCrumb">N1 / 词汇</p><h1 id="sectionTitle">词汇突击</h1></div><div class="topbar-actions"><label class="exam-set-picker"><span>训练内容</span><select id="examSetSelect" aria-label="选择训练内容"><optgroup label="专项训练"><option value="mode:vocabulary">词汇</option><option value="mode:grammar">语法</option><option value="mode:ordering">排序</option><option value="mode:cloze">完形填空</option><option value="mode:shortReading">短篇阅读</option><option value="mode:mediumReading">中篇阅读</option><option value="mode:longReading">长篇阅读</option><option value="mode:listening">听力</option></optgroup><optgroup label="完整顺序训练"><option value="mode:practice202207">2022年7月完整训练</option><option value="mode:practice202307">2023年7月完整训练</option></optgroup><optgroup label="实战模拟"><option value="page:mock-2019-07.html">2019年7月实战</option><option value="page:mock-2021-12.html">2021年12月实战</option><option value="page:mock-2022-12.html">2022年12月实战</option><option value="page:mock-2023-12.html">2023年12月实战</option><option value="page:mock-2024-12.html">2024年12月实战</option></optgroup></select></label><button id="resetBtn" class="ghost">重置本轮</button></div></header>
 
         <div id="practiceView" class="view">
           <section class="hero-row">
@@ -36,6 +36,6 @@
         <div id="bankView" class="view hidden"><div class="section-heading"><div><p class="eyebrow">数据结构</p><h2>题库管理</h2></div></div><div class="import-box"><div class="import-icon">＋</div><div><h3>按统一格式加入题目</h3><p>后续可把人工整理/OCR 的题目追加到 <code>questions.json</code>，原题年份与 PDF 页码会始终保留。</p></div><pre>[ { "year": 2018, "month": 7, "type": "汉字读音", "question": "...", "options": [], "answer": 0, "explanation": "...", "source": "2018年7月 p.2" } ]</pre></div></div>
       </section>
     </main>
-    <script src="./app.js?v=20261123-1"></script>
+    <script src="./app.js?v=20261127-1"></script>
   </body>
 </html>

@@ -32,6 +32,7 @@ const N1Column = {
         <button data-n1-page="mock-2021-12.html">2021年12月</button>
         <button data-n1-page="mock-2022-12.html">2022年12月</button>
         <button data-n1-page="mock-2023-12.html">2023年12月</button>
+        <button data-n1-page="mock-2024-12.html">2024年12月</button>
       </nav>
       <section class="n1-column-frame-shell">
         <div class="n1-column-frame-status"><span><i></i>训练进度已连接</span><button id="n1-open-window" type="button">在新窗口打开</button></div>

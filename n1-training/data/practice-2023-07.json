@@ -1,0 +1,3995 @@
+{
+  "dataset": "JLPT N1 2023-07 sequential single-choice practice",
+  "status": "verified_reconstruction",
+  "mode": "sequential_single_choice_practice",
+  "year": 2023,
+  "month": 7,
+  "questions": [
+    {
+      "id": "2023-07-001",
+      "year": 2023,
+      "month": 7,
+      "number": 1,
+      "type": "漢字の読み方",
+      "question": "思わぬ出来事に、辺りは騒然としていた。",
+      "target": "騒然",
+      "options": [
+        "ぼぜん",
+        "そぜん",
+        "ぼうぜん",
+        "そうぜん"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "ぼぜん（墓前）：墓前，坟前。",
+        "そぜん：干扰项",
+        "ぼうぜん（呆然）：茫然，呆呆地。",
+        "そうぜん（騒然）：骚然，喧嚣。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-002",
+      "year": 2023,
+      "month": 7,
+      "number": 2,
+      "type": "漢字の読み方",
+      "question": "西村さんは、いたずらした子どもを優しく諭した。",
+      "target": "ずらした",
+      "options": [
+        "さとした",
+        "あやした",
+        "ただした",
+        "いやした"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "さとした（諭した）：说明（道理），使了解，告戒，教导。",
+        "あやした：哄，逗。",
+        "ただした（正した）：改正；端正；纠正。",
+        "いやした（癒した）：治疗，医治。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-003",
+      "year": 2023,
+      "month": 7,
+      "number": 3,
+      "type": "漢字の読み方",
+      "question": "社会生活を送るうえで、秩序を守ることは重要だ。",
+      "target": "秩序",
+      "options": [
+        "ちつじょう",
+        "しつじょ",
+        "ちつじょ",
+        "しつじょう"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "ちつじょう：干扰项",
+        "しつじょ：干扰项",
+        "ちつじょう：干扰项",
+        "しつじょう：干扰项"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-004",
+      "year": 2023,
+      "month": 7,
+      "number": 4,
+      "type": "漢字の読み方",
+      "question": "この辺りは犯人が潜伏しているという情報が入った。",
+      "target": "潜伏",
+      "options": [
+        "せんふく",
+        "ぜんぷく",
+        "ぜんふく",
+        "せんぷく"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "せんふく：干扰项",
+        "ぜんぷく（全幅）：全幅，总宽度。",
+        "ぜんふく：干扰项",
+        "せんぷく（潜伏）：潜伏，躲藏，隐藏。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-005",
+      "year": 2023,
+      "month": 7,
+      "number": 5,
+      "type": "漢字の読み方",
+      "question": "アナウンサーの朗らかな声が響いた。",
+      "target": "朗らか",
+      "options": [
+        "きよらか",
+        "ほからか",
+        "やわらか",
+        "なめらか"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "きよらか（清らか）：清澈，清洁，洁白，纯洁。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "やわらか（柔らか）：软；柔软；柔和。",
+        "なめらか（滑らか）：光滑，滑溜，平滑，滑润。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-006",
+      "year": 2023,
+      "month": 7,
+      "number": 6,
+      "type": "漢字の読み方",
+      "question": "新しい市長は地域文化の振興に力を入れている。",
+      "target": "振興",
+      "options": [
+        "しんきょう",
+        "じんこう",
+        "しんこう",
+        "じんきょう"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "しんきょう（心境）：心境。",
+        "じんこう（人口）：人口；众人之口，人言。",
+        "しんこう（振興）：振兴。",
+        "じんきょう（塵境）：尘世,俗界。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-007",
+      "year": 2023,
+      "month": 7,
+      "number": 7,
+      "type": "文脈規定",
+      "question": "今は両親と暮らしているが、卒業して就職したら、家を出て（ ☆ ）したいと思っている。",
+      "target": "（ ☆ ）",
+      "options": [
+        "自制",
+        "自立",
+        "自重",
+        "自任"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "1　自制：自制，克制",
+        "2　自立：自立，独立",
+        "3　自重：自重，自爱；保重，珍重",
+        "4　自任：以...为己任；以...自居"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-008",
+      "year": 2023,
+      "month": 7,
+      "number": 8,
+      "type": "文脈規定",
+      "question": "この企業は、売り上げの一部を町に寄付することで、町の人々に利益を（ ☆ ）している。",
+      "target": "（ ☆ ）",
+      "options": [
+        "返上",
+        "還元",
+        "配給",
+        "譲渡"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "1　返上：归还，奉还",
+        "2 還元：还原，返回原样",
+        "3 配給：配给，配售",
+        "4 譲渡：转让，让出"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-009",
+      "year": 2023,
+      "month": 7,
+      "number": 9,
+      "type": "文脈規定",
+      "question": "今日は朝から空が（ ☆ ）と曇っていて、今にも雨が降り出しそうだ。",
+      "target": "（ ☆ ）",
+      "options": [
+        "びっしょり",
+        "どっさり",
+        "どんより",
+        "ぐったり"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "1　びっしょり：湿透",
+        "2　どっさり：很多，好些；重物落下的声音",
+        "3　どんより：阴沉沉",
+        "4　ぐったり：筋疲力尽"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-010",
+      "year": 2023,
+      "month": 7,
+      "number": 10,
+      "type": "文脈規定",
+      "question": "この生産管理システムは、維持費の高さが（ ☆ ）になってなかなか普及しない。",
+      "target": "（ ☆ ）",
+      "options": [
+        "ノイズ",
+        "ロック",
+        "タブー",
+        "ネック"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "1　ノイズ：【英】noise；杂音",
+        "2　ロック：【英】lock；锁死，抱死",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "4　ネック：【英】neck；脖子，领子。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-011",
+      "year": 2023,
+      "month": 7,
+      "number": 11,
+      "type": "文脈規定",
+      "question": "大きな声で歌うと、ストレスの（ ☆ ）になって気分がすっきりする。",
+      "target": "（ ☆ ）",
+      "options": [
+        "発散",
+        "発射",
+        "流出",
+        "排出"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "1 発散（はっさん）：发散，散发。发泄力气，发泄精力",
+        "2　発射（はっしゃ）：发射。",
+        "3　流出（りゅうしゅつ）：外流。",
+        "4　排出（はいしゅつ）：排出，放出。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-012",
+      "year": 2023,
+      "month": 7,
+      "number": 12,
+      "type": "文脈規定",
+      "question": "この二つの漢字はよく似ていて（ ☆ ）ので、読み間違えることがある。",
+      "target": "（ ☆ ）",
+      "options": [
+        "まぎらわしい",
+        "もってもらしい",
+        "ずうずうしい",
+        "なれなれしい"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "1 まぎらわしい（紛らわしい）：易弄错的，容易混淆的",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "3 ずうずうしい：厚颜无耻的，厚脸皮的",
+        "4 なれなれしい：熟不拘礼的，熟头熟脑的，过分亲昵的"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-013",
+      "year": 2023,
+      "month": 7,
+      "number": 13,
+      "type": "文脈規定",
+      "question": "この店は細かいところまで掃除が（ ☆ ）いて、清潔だ。",
+      "target": "（ ☆ ）",
+      "options": [
+        "行き詰まって",
+        "行き交って",
+        "行き着いて",
+        "行き届いて"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "1 行き詰まって：走到尽头，走不过去，走不通，陷入僵局",
+        "2 行き交って：往来",
+        "3 行き着いて：走到，到达",
+        "4 行き届いて：周到，无微不至"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-014",
+      "year": 2023,
+      "month": 7,
+      "number": 14,
+      "type": "言い換え類義",
+      "question": "この条約が締結されると、農業に影響が出ることが懸念される。",
+      "target": "懸念",
+      "options": [
+        "期待",
+        "心配",
+        "予想",
+        "重視"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "1　期待：期待，期望，希望。",
+        "2　心配：担心，不安，操心。",
+        "3　予想：预料，预测，预想。",
+        "4　重視：重视，看重。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-015",
+      "year": 2023,
+      "month": 7,
+      "number": 15,
+      "type": "言い換え類義",
+      "question": "久しぶりに会ったた友人は、何だかやつれているようだった。",
+      "target": "やつれて",
+      "options": [
+        "遠慮して",
+        "張り切って",
+        "やせ衰えて",
+        "感動して"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "1　遠慮して：客气；深谋远虑。",
+        "2　張り切って：紧张；干劲十足。",
+        "3　やせ衰えて：衰弱；烂；消瘦；憔悴。",
+        "4　感動して：感动；激动。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-016",
+      "year": 2023,
+      "month": 7,
+      "number": 16,
+      "type": "言い換え類義",
+      "question": "彼が奮闘している姿を見て、力を貸そうと思った。",
+      "target": "奮闘して",
+      "options": [
+        "じっと我慢して",
+        "必死に頑張って",
+        "激しく怒って",
+        "焦って取り組んで"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "1　じっと我慢して：一声不吭地忍住。",
+        "2　必死に頑張って：拼命努力。",
+        "3　激しく怒って：愤怒。",
+        "4　焦って取り組んで：焦急地努力。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-017",
+      "year": 2023,
+      "month": 7,
+      "number": 17,
+      "type": "言い換え類義",
+      "question": "あれは不慮の事故だったとしか言いようがない。",
+      "target": "不慮",
+      "options": [
+        "しかたない",
+        "ありえない",
+        "思いがけない",
+        "情けない"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "1　しかたない：没办法的。",
+        "2　ありえない：不可能的。",
+        "3　思いがけない：出乎意料的。",
+        "4　情けない：可悲、可怜的。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-018",
+      "year": 2023,
+      "month": 7,
+      "number": 18,
+      "type": "言い換え類義",
+      "question": "倉庫の品物を根こそぎもっていかれた。",
+      "target": "根こそぎ",
+      "options": [
+        "すべて",
+        "だいぶ",
+        "一度に",
+        "次々と"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "1　すべて：所有、一切、全部。",
+        "2　だいぶ：不少、大多数。",
+        "3　一度に：同时、一下子。",
+        "4　次々と：一个接一个。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-019",
+      "year": 2023,
+      "month": 7,
+      "number": 19,
+      "type": "言い換え類義",
+      "question": "若いこと私は、商品開発の仕事に没頭していた。",
+      "target": "没頭して",
+      "options": [
+        "飽きて",
+        "憧れて",
+        "不満を持って",
+        "熱中して"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "1　飽きて：厌倦于......",
+        "2　憧れて：憧憬于......",
+        "3　不満を持って：不满于......",
+        "4　熱中して：热衷于......"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-020",
+      "year": 2023,
+      "month": 7,
+      "number": 20,
+      "type": "言葉の用法",
+      "question": "兆し",
+      "target": "兆し",
+      "options": [
+        "来月は",
+        "００万台バイクを生産する兆しです。",
+        "消費税が上がり、売り上げの兆しが不透明だ。",
+        "多くの人の兆しと違って、Aチームが優勝した。"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-021",
+      "year": 2023,
+      "month": 7,
+      "number": 21,
+      "type": "言葉の用法",
+      "question": "収容",
+      "target": "収容",
+      "options": [
+        "大きなかばんに旅行の荷物を全部収容した。",
+        "このコンサートホールは5,500人の観客を収容することができる。",
+        "この辞書には８万語が収容されている。",
+        "ビタミンを多く収容する食品をたくさん食べるようにしている。"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-022",
+      "year": 2023,
+      "month": 7,
+      "number": 22,
+      "type": "言葉の用法",
+      "question": "さえる",
+      "target": "さえる",
+      "options": [
+        "友人は時間にさえていて、遅刻したことは一度もない。",
+        "父は感情がさえて顔に出るので、分かりやすい。",
+        "コーヒーを飲んだら、目がさえてしまって、眠れない。",
+        "彼の目標はさえていて、一度も変わることはなかった。"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-023",
+      "year": 2023,
+      "month": 7,
+      "number": 23,
+      "type": "言葉の用法",
+      "question": "痛烈",
+      "target": "痛烈",
+      "options": [
+        "その映画は評論家から痛烈な批判を受けた。",
+        "彼らは痛烈な戦いを勝ち抜いて優勝した。",
+        "痛烈な環境でも育つ作物を研究している。",
+        "台風のせいで、痛烈な勢いの風が吹いている。"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-024",
+      "year": 2023,
+      "month": 7,
+      "number": 24,
+      "type": "言葉の用法",
+      "question": "完結",
+      "target": "完結",
+      "options": [
+        "申し込み期間が完結する前に、急いで書類を出しに行った。",
+        "駅前に建設中だったマンションが完結し、入居が始まった。",
+        "",
+        "年間続いた連載小説が、いよいよ次回で完結する。"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解：3",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-025",
+      "year": 2023,
+      "month": 7,
+      "number": 25,
+      "type": "言葉の用法",
+      "question": "もろい",
+      "target": "もろい",
+      "options": [
+        "ここは古い住宅で、壁がもろくなっているため、立ち入り禁止だ。",
+        "以前は力がもろかったので、毎日トレーニングして、筋肉をつけた。",
+        "彼はまだ若く、仕事の経験ももろいが、やる気にあふれている。",
+        "この野菜はあまり火を通しすぎると、栄養がもろくなってしまう。"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-026",
+      "year": 2023,
+      "month": 7,
+      "number": 26,
+      "type": "文の文法",
+      "question": "努力して夢を叶えた弟のことを兄として誇り（ ☆ ）思う。",
+      "target": "（ ☆ ）",
+      "options": [
+        "を",
+        "で",
+        "が",
+        "に"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "～を誇りに思う：为（某事）感到自豪",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "～を誇りに思う：为（某事）感到自豪"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-027",
+      "year": 2023,
+      "month": 7,
+      "number": 27,
+      "type": "文の文法",
+      "question": "失敗は誰でも避けたいのだが、失敗（ ☆ ）学べないこともある。",
+      "target": "（ ☆ ）",
+      "options": [
+        "にまで",
+        "まででも",
+        "からしか",
+        "だけから"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-028",
+      "year": 2023,
+      "month": 7,
+      "number": 28,
+      "type": "文の文法",
+      "question": "合唱コンクールで歌っている子供たちの表情は、（ ☆ ）そのものだった。",
+      "target": "（ ☆ ）",
+      "options": [
+        "真剣",
+        "真剣で",
+        "真剣に",
+        "真剣な"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-029",
+      "year": 2023,
+      "month": 7,
+      "number": 29,
+      "type": "文の文法",
+      "question": "同僚の山下さんは、最初は大人しい人だと思っていたが、一緒に仕事を（ ☆ ）実はよくしゃべる人だということが分かってきた。",
+      "target": "（ ☆ ）",
+      "options": [
+        "する間",
+        "する限り",
+        "するうちに",
+        "するとしたら"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-030",
+      "year": 2023,
+      "month": 7,
+      "number": 30,
+      "type": "文の文法",
+      "question": "忙しく引っ越しの荷造りが（ ☆ ）、荷造りを全部やってくれるサービスがあると友人が教えてくれた。",
+      "target": "（ ☆ ）",
+      "options": [
+        "できずにいたなら",
+        "できずにいたところ",
+        "できないようにしたら",
+        "できないようにしたところ"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-031",
+      "year": 2023,
+      "month": 7,
+      "number": 31,
+      "type": "文の文法",
+      "question": "まだ11月の初めなのに、昨日は雪が（ ☆ ）寒かった。",
+      "target": "（ ☆ ）",
+      "options": [
+        "降ることがあるかのように",
+        "降るなんて思えないぐらい",
+        "降るとは思わないように",
+        "降るんじゃないかというぐらい"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "1　降ることがあるかのように：好像有时会下（雪）",
+        "2　降るなんて思えないぐらい：很难相信要下（雪）",
+        "3　降るとは思わないように：不要指望会下（雪）",
+        "4 降るんじゃないかというぐらい：几乎就像要下（雪）一样"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-032",
+      "year": 2023,
+      "month": 7,
+      "number": 32,
+      "type": "文の文法",
+      "question": "いつも駅から大学までバスを使っているが、2キロほどなので、歩こうとして（ ☆ ）。",
+      "target": "（ ☆ ）",
+      "options": [
+        "歩くほかない",
+        "歩けなくもない",
+        "歩いてはいられない",
+        "歩けるわけがない"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "1　歩くほかない：只能步行",
+        "2　歩けなくもない：也不是不能走；「～なくもない」表示也不是不可以……",
+        "3　歩いてはいられない：不能就这么走",
+        "4　歩けるわけがない：不可能走得动"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-033",
+      "year": 2023,
+      "month": 7,
+      "number": 33,
+      "type": "文の文法",
+      "question": "先日の第三回さくら市教育講演会には、沢山の方が（ ☆ ）。",
+      "target": "（ ☆ ）",
+      "options": [
+        "おいでくださいました",
+        "お越しいただきました",
+        "ご参加いただきました",
+        "ご覧くださいました"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "2　お越しいただきました：谦让语，表示“来”",
+        "3　ご参加いただきました：谦让语，表示“参加”",
+        "4　ご覧くださいました：尊敬语，表示“看”"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-034",
+      "year": 2023,
+      "month": 7,
+      "number": 34,
+      "type": "文の文法",
+      "question": "この辺りの町並みは外国のような雰囲気で、ここを訪れるだけ海外を旅行（ ☆ ）。",
+      "target": "（ ☆ ）",
+      "options": [
+        "するつもりでいる",
+        "してくるつもりだ",
+        "したつもりになれる",
+        "するつもりになっていた"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-035",
+      "year": 2023,
+      "month": 7,
+      "number": 35,
+      "type": "文の文法",
+      "question": "（図書館で）\n娘「図書館っていいね。だって、自分で買わなくてもこんなにたくさんの本が（ ☆ ）。」\n母「そうだね。」",
+      "target": "（ ☆ ）",
+      "options": [
+        "読めるんだもん",
+        "読めるもんか",
+        "読みたいんだもん",
+        "読みたいもんか"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "1　読めるんだもん：因为可以读",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "3　読みたいんだもん：因为想读",
+        "4　読みたいもんか：绝不会想读"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-036",
+      "year": 2023,
+      "month": 7,
+      "number": 36,
+      "type": "文の組み立て",
+      "question": "スピーチやプレゼンテーションにおいて、ジェスチャーを使いながら話すのは　　　　　　　　　★　　　　　印象を悪くすることもある。",
+      "options": [
+        "あまりに",
+        "効果的である反面",
+        "かえって",
+        "大きすぎるジェスチャーは"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "解析：スピーチやプレゼンテーションにおいて、ジェスチャーを使いながら話すのは2効果的である反面　★1あまりに　4大きすぎるジェスチャーは　３かえって印象を悪くすることもあるので注意が必要だ。",
+        "解析：スピーチやプレゼンテーションにおいて、ジェスチャーを使いながら話すのは2効果的である反面　★1あまりに　4大きすぎるジェスチャーは　３かえって印象を悪くすることもあるので注意が必要だ。",
+        "解析：スピーチやプレゼンテーションにおいて、ジェスチャーを使いながら話すのは2効果的である反面　★1あまりに　4大きすぎるジェスチャーは　３かえって印象を悪くすることもあるので注意が必要だ。",
+        "解析：スピーチやプレゼンテーションにおいて、ジェスチャーを使いながら話すのは2効果的である反面　★1あまりに　4大きすぎるジェスチャーは　３かえって印象を悪くすることもあるので注意が必要だ。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-037",
+      "year": 2023,
+      "month": 7,
+      "number": 37,
+      "type": "文の組み立て",
+      "question": "今や、書類や衣料品だけでなく生鮮食品も、インターネットへの　　　　　　　　　★　　　　　時代である。",
+      "options": [
+        "自宅にいながらにして",
+        "手軽に購入できる",
+        "環境があれば",
+        "アクセスが可能な"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "解析：今や、書籍や衣料品だけでなく生鮮食品も、インターネットへの4アクセスが可能な　★3環境があれば　1自宅にいながらにして　2手軽に購入できる時代である。",
+        "解析：今や、書籍や衣料品だけでなく生鮮食品も、インターネットへの4アクセスが可能な　★3環境があれば　1自宅にいながらにして　2手軽に購入できる時代である。",
+        "解析：今や、書籍や衣料品だけでなく生鮮食品も、インターネットへの4アクセスが可能な　★3環境があれば　1自宅にいながらにして　2手軽に購入できる時代である。",
+        "解析：今や、書籍や衣料品だけでなく生鮮食品も、インターネットへの4アクセスが可能な　★3環境があれば　1自宅にいながらにして　2手軽に購入できる時代である。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-038",
+      "year": 2023,
+      "month": 7,
+      "number": 38,
+      "type": "文の組み立て",
+      "question": "よく似た昆虫の判別は大変難しいという。中には、かなり　　　　　　　　　★　　　　　場合もあるそうだ。",
+      "options": [
+        "判別が難しい",
+        "昆虫学者でさえも",
+        "経験を積んだ",
+        "違うほど"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "解析：よく似た昆虫の判別は大変難しいという。中には、かなり3経験を積んだ　2昆虫学者でさえも　★4迷うほど　1判別が難しい場合もあるそうだ。",
+        "解析：よく似た昆虫の判別は大変難しいという。中には、かなり3経験を積んだ　2昆虫学者でさえも　★4迷うほど　1判別が難しい場合もあるそうだ。",
+        "解析：よく似た昆虫の判別は大変難しいという。中には、かなり3経験を積んだ　2昆虫学者でさえも　★4迷うほど　1判別が難しい場合もあるそうだ。",
+        "正解。请结合题干、上下文与接续关系判断。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-039",
+      "year": 2023,
+      "month": 7,
+      "number": 39,
+      "type": "文の組み立て",
+      "question": "今回の　　　　　　　　　★　　　　　気持ちの方が大きかった。",
+      "options": [
+        "転職にあたり",
+        "うそになるが",
+        "少しも不安がなかったといえば",
+        "新たなことに挑戦できてうれしいという"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "解析：今回の　1転職にあたり　3少しも不安がなかったといえば　★2うそになるが　4新たなことに挑戦できてうれしいという　気持ちのほうが大きかった。",
+        "解析：今回の　1転職にあたり　3少しも不安がなかったといえば　★2うそになるが　4新たなことに挑戦できてうれしいという　気持ちのほうが大きかった。",
+        "解析：今回の　1転職にあたり　3少しも不安がなかったといえば　★2うそになるが　4新たなことに挑戦できてうれしいという　気持ちのほうが大きかった。",
+        "解析：今回の　1転職にあたり　3少しも不安がなかったといえば　★2うそになるが　4新たなことに挑戦できてうれしいという　気持ちのほうが大きかった。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-040",
+      "year": 2023,
+      "month": 7,
+      "number": 40,
+      "type": "文の組み立て",
+      "question": "北山市は　　　　　　　　　★　　　　　のどかなところだった。",
+      "options": [
+        "人口10万人を超える都市となったが",
+        "北山駅周辺以外にはほとんど何もない",
+        "今でこそ",
+        "30年前までは"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "解析：北山市は　3今でこそ　1人口10万人を超える都市となったが　★430年前までは　2北山駅周辺以外にはほとんど何もないのどかなところだった。",
+        "解析：北山市は　3今でこそ　1人口10万人を超える都市となったが　★430年前までは　2北山駅周辺以外にはほとんど何もないのどかなところだった。",
+        "解析：北山市は　3今でこそ　1人口10万人を超える都市となったが　★430年前までは　2北山駅周辺以外にはほとんど何もないのどかなところだった。",
+        "解析：北山市は　3今でこそ　1人口10万人を超える都市となったが　★430年前までは　2北山駅周辺以外にはほとんど何もないのどかなところだった。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-041",
+      "year": 2023,
+      "month": 7,
+      "number": 41,
+      "type": "文章の文法",
+      "question": "一生の仕事\n自分の作品を読み返さぬ日はないと言っていい。\n書斎の手近な場所に全著作を収めた棚があり、読書や執筆に倦んだときには適当に一冊を抜き出して読み始める。退屈して寝てしまうときもあれば、仕事をそっちのけでで読了してしまうこともある。\nまさかナルシストではない。復読に耐えるほどたいそうな（ 41 ）。わが子はよその子よりもかわゆいと思う親の情である。\n読みながら勝手に感心したり、あきれ果てたり、（ 42 ）。\n気に入らない点があるのなら書き直せば良さそうなものだが。どうしてもできない。単行本を文庫本するときですら。校閲上の明らかな誤りの他にはまず筆を入れるということがない。横着なわけではなく、読めば読むほどその文章を書いていたころの自分を（ 43 ）のである。いくらか齢を食ったからといって、齢なりに懸命であったおのれの文章を滅ぼすことは忍びないし、その問いに得たものも多いが喪ったものもまた多かろうと思えば勇気も要る。\n出来栄えのいかんに関わらず、自分なりに全きをめざしていたのである。そうした過去の自分には敬意を払い続けねばならないし、また同時に現在の自分は、未来の自分に恥らぬ小説を書かねばなるまい。一生の仕事（ 44 ）そうしたものであろうと思う。\nかにかくに、この短い文章もいつか読み返して愕然とするのであろうが。",
+      "target": "（ 41 ）",
+      "options": [
+        "小説であってもだ",
+        "小説でもあるまい",
+        "小説なのであろうか",
+        "小説なのではないか"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-042",
+      "year": 2023,
+      "month": 7,
+      "number": 42,
+      "type": "文章の文法",
+      "question": "一生の仕事\n自分の作品を読み返さぬ日はないと言っていい。\n書斎の手近な場所に全著作を収めた棚があり、読書や執筆に倦んだときには適当に一冊を抜き出して読み始める。退屈して寝てしまうときもあれば、仕事をそっちのけでで読了してしまうこともある。\nまさかナルシストではない。復読に耐えるほどたいそうな（ 41 ）。わが子はよその子よりもかわゆいと思う親の情である。\n読みながら勝手に感心したり、あきれ果てたり、（ 42 ）。\n気に入らない点があるのなら書き直せば良さそうなものだが。どうしてもできない。単行本を文庫本するときですら。校閲上の明らかな誤りの他にはまず筆を入れるということがない。横着なわけではなく、読めば読むほどその文章を書いていたころの自分を（ 43 ）のである。いくらか齢を食ったからといって、齢なりに懸命であったおのれの文章を滅ぼすことは忍びないし、その問いに得たものも多いが喪ったものもまた多かろうと思えば勇気も要る。\n出来栄えのいかんに関わらず、自分なりに全きをめざしていたのである。そうした過去の自分には敬意を払い続けねばならないし、また同時に現在の自分は、未来の自分に恥らぬ小説を書かねばなるまい。一生の仕事（ 44 ）そうしたものであろうと思う。\nかにかくに、この短い文章もいつか読み返して愕然とするのであろうが。",
+      "target": "（ 41 ）",
+      "options": [
+        "褒めたり叱ったりする",
+        "褒めたり叱ったりしたほうがいい",
+        "褒めたり叱ったりするようだ",
+        "褒めたり叱ったりしても仕方ない"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-043",
+      "year": 2023,
+      "month": 7,
+      "number": 43,
+      "type": "文章の文法",
+      "question": "一生の仕事\n自分の作品を読み返さぬ日はないと言っていい。\n書斎の手近な場所に全著作を収めた棚があり、読書や執筆に倦んだときには適当に一冊を抜き出して読み始める。退屈して寝てしまうときもあれば、仕事をそっちのけでで読了してしまうこともある。\nまさかナルシストではない。復読に耐えるほどたいそうな（ 41 ）。わが子はよその子よりもかわゆいと思う親の情である。\n読みながら勝手に感心したり、あきれ果てたり、（ 42 ）。\n気に入らない点があるのなら書き直せば良さそうなものだが。どうしてもできない。単行本を文庫本するときですら。校閲上の明らかな誤りの他にはまず筆を入れるということがない。横着なわけではなく、読めば読むほどその文章を書いていたころの自分を（ 43 ）のである。いくらか齢を食ったからといって、齢なりに懸命であったおのれの文章を滅ぼすことは忍びないし、その問いに得たものも多いが喪ったものもまた多かろうと思えば勇気も要る。\n出来栄えのいかんに関わらず、自分なりに全きをめざしていたのである。そうした過去の自分には敬意を払い続けねばならないし、また同時に現在の自分は、未来の自分に恥らぬ小説を書かねばなるまい。一生の仕事（ 44 ）そうしたものであろうと思う。\nかにかくに、この短い文章もいつか読み返して愕然とするのであろうが。",
+      "target": "（ 41 ）",
+      "options": [
+        "否定せずにいられなくなる",
+        "否定しがちになる",
+        "否定できなくなる",
+        "否定するようになる"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "解析：前文说到，作者除了校阅方面的明显错误之外，不会动笔改自己的作品。在这里提到作者不愿改动的原因是，越是反复读越会变得无法否定当时写下这些文字的自己。所以这里应该选择选项3「否定できなくなる」。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-044",
+      "year": 2023,
+      "month": 7,
+      "number": 44,
+      "type": "文章の文法",
+      "question": "一生の仕事\n自分の作品を読み返さぬ日はないと言っていい。\n書斎の手近な場所に全著作を収めた棚があり、読書や執筆に倦んだときには適当に一冊を抜き出して読み始める。退屈して寝てしまうときもあれば、仕事をそっちのけでで読了してしまうこともある。\nまさかナルシストではない。復読に耐えるほどたいそうな（ 41 ）。わが子はよその子よりもかわゆいと思う親の情である。\n読みながら勝手に感心したり、あきれ果てたり、（ 42 ）。\n気に入らない点があるのなら書き直せば良さそうなものだが。どうしてもできない。単行本を文庫本するときですら。校閲上の明らかな誤りの他にはまず筆を入れるということがない。横着なわけではなく、読めば読むほどその文章を書いていたころの自分を（ 43 ）のである。いくらか齢を食ったからといって、齢なりに懸命であったおのれの文章を滅ぼすことは忍びないし、その問いに得たものも多いが喪ったものもまた多かろうと思えば勇気も要る。\n出来栄えのいかんに関わらず、自分なりに全きをめざしていたのである。そうした過去の自分には敬意を払い続けねばならないし、また同時に現在の自分は、未来の自分に恥らぬ小説を書かねばなるまい。一生の仕事（ 44 ）そうしたものであろうと思う。\nかにかくに、この短い文章もいつか読み返して愕然とするのであろうが。",
+      "target": "（ 41 ）",
+      "options": [
+        "も含めて",
+        "でない限り",
+        "にしても",
+        "とは"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "解析：前文说，无论成果如何，都达到了自己理想的结果。像这样，既要一直向过去的自己致敬，与此同时，现阶段的自己也要继续创造让未来的自己引以为荣的作品。所谓一生的工作就是如此吧。这句话既是对前文的总结，也达到了扣题的效果，所以这里应该选择选项4「とは」“所谓……（就是……）”，用于表示对前项内容进行解释说明或下一个定义。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-045",
+      "year": 2023,
+      "month": 7,
+      "number": 45,
+      "type": "文章の文法",
+      "question": "(1)\n情報社会、あるいは情報化社会と言ってもいいんですが、そこで懸命に生きていこうとすると、まず出てくる悲鳴があります。つまり、あまりにも多くの情報があって、そのなかのとれが本当なのか、何を選んだらいいのか分からない。今、流行っているものの情報に熱心であればあるほと、世間で流行っていることを知らないと自分が遲れるんじやないか、という焦りみたいなものが人間を突き動かすのが情報化社会の特徵です。\n45.筆者の考えに合うのはどれか。",
+      "options": [
+        "情報を求める人ほど、知らない情報があることに不安を感じる。",
+        "情報を得ることに熱心な人は、世間で流行っていることしか知らない。",
+        "多くの情報から必要なものが選べなければ、世間から遅れてしまう。",
+        "流行っているものの情報に熱心なだけでは、情報化社会で生きられない。"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-046",
+      "year": 2023,
+      "month": 7,
+      "number": 46,
+      "type": "読解",
+      "question": "(2)\n以下は、「書くこと」について述べたものである。\n「思ったこと」や「考えたこと」という抽象的な存在が文字という具体的な存在に変化した瞬間、その筆者は自分自身の「思ったこと」や「考えたこと」を、直接、自分の目で「見た」ことになる。つまり、客観的に「観察」することになるわけだ。「書くこと」は「読むこと」。自分の文章を読みながら書き進めるのが、「書く」という作業なのである。観察はほとんど必然的に「批判」のこころを呼び起こす。「思ったこと」や「考えたこと」の浅さや甘さを、書いた瞬間に思い知らされるのである。\n46.筆者によると、「書くこと」によってどうなるか。",
+      "options": [
+        "自身の新しい考え方に気づく。",
+        "自身の意見を具体的に伝元られる。",
+        "自身の意見を批判的に見ることができる。",
+        "自身のこころの変化を観察することができる。"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-047",
+      "year": 2023,
+      "month": 7,
+      "number": 47,
+      "type": "読解",
+      "question": "(3)\n昔と比べてモノが売れなくなり、広告の効きも悪くなっていることから、表現の面白さや新規性(注1)ばかりに走ってしまう--要は、本来、最も大切であるはずの消费者心理のツボ(注2)を十分につききれていない、分析しきれていない、いわば表面上の、表現にこだわった広告が増えているように感じます。\n消費者心理は「本質」表現は「伝え方」とも言いかえられますが、最も大切な本質を重視せず、表面上の伝え方ばかりに重きが置かれるようになっている状況は、いかがなものでしょうか? 本質なきとこるに良い伝え方など存在するはずがないのです。\n(注1)新規性:ここでは、新しく珍しいこと\n(注2)ツボ:重要なところ\n47.筆者の考えに合うのはとれか。",
+      "options": [
+        "消費者心理を捉えた広告作りは、昔より難しくなっている。",
+        "消费者心理を捉えていないのは、良い広告とは言えない。",
+        "消費者心理を捉えていれば、広告は表現にこだわる必要はない。",
+        "消費者心理を捉えているだけでは、効きめのある広告にはならない。"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-048",
+      "year": 2023,
+      "month": 7,
+      "number": 48,
+      "type": "読解",
+      "question": "(4)\n（注１）身を開く：ここでは、向き合う\n（注2）紡ぎ出す：ここでは、生み出す\n48.対話について、筆者はどのように述べているか。",
+      "options": [
+        "他人とじぶんの違いが大きいほど、厚い対話ができる。",
+        "他人との思考の違いを把握することで、自身の思考が深められる。",
+        "わかりあえないという戸惑いや痛みが克服でき、他人と共感できる。",
+        "思いや考えを表現する能力が鍛えられ、他人に理解してもらいやすくなる。"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-049",
+      "year": 2023,
+      "month": 7,
+      "number": 49,
+      "type": "読解",
+      "question": "(1)\n「常識を疑ってみる」ということ、実はそれが学問の始まりでもあります。勉強が「強いて勉める(注1)」という受動的な側面をもつものであるならば、学問は「問うて学ぶ」ことであり、きわめて能動的な行為です。自ら主体的な行為として問うことを通して、常識とされてきたものの見方を疑い、それを少しずらすなとして、別の見方を見出そうとしていきます。学問の「正解」はひとつとは限りません。学ぶこととは、単純に知識を増やすということではなく、ましてやテストで覚えたことを吐き出すことでもなく、それを自分のものとして再編成していくことであり、さらに言えば自分のモノサシが変わり、自分自身が変わっていくてことなのです。そして。思いがけたい大発見や、独創的かアイディアが生まれるかもしれません。\n「疑う」という言葉は、通常は否定的な意味で使われます。「人を疑う」と言えば、普通はその人を信用しないというのと同義(注2)なわけです。私も、人を疑って生きるよりも、できるだけ人を信じて生きていたいと思っています。しかし、世の中で当たり前とされている事柄を「疑う」ことが必要になる時もあります。「常識だから」の一言で常識に目を閉ざし、それに安易に取り込まれてしまうことなく、そこを少しずらしたところに面白いことを見出していくために。それは、何事も信用しないというような厭世的(注3)な生き方に繁がるのではなく、むしろ創造的で豊かな世界を紡き(注4)出していくための、精極的な営みなのです。\n(注1)勉める:努力する\n(注2)同義:同じ意味\n(注3)厭世的:ここでは、悲観的\n(注4)紡ぎ出す:ここでは、作り出す\n49.筆者によると、学問とはどのような行為か。\n50.学問で「疑う」ことについて、筆者の考えに合うのはどれか。",
+      "options": [
+        "「正解」を求めて、自ら主体的に問い続けていく行為だ。",
+        "独創的なアイディアを得るために、自らのものの見方を変える行為だ。",
+        "自ら問いながら、ものの見方を模索し自分自身が変わっていく行為だ。",
+        "新しい知識を積極的に取り入れることで、自分自身を変えていく行為だ。"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-050",
+      "year": 2023,
+      "month": 7,
+      "number": 50,
+      "type": "読解",
+      "question": "(1)\n「常識を疑ってみる」ということ、実はそれが学問の始まりでもあります。勉強が「強いて勉める(注1)」という受動的な側面をもつものであるならば、学問は「問うて学ぶ」ことであり、きわめて能動的な行為です。自ら主体的な行為として問うことを通して、常識とされてきたものの見方を疑い、それを少しずらすなとして、別の見方を見出そうとしていきます。学問の「正解」はひとつとは限りません。学ぶこととは、単純に知識を増やすということではなく、ましてやテストで覚えたことを吐き出すことでもなく、それを自分のものとして再編成していくことであり、さらに言えば自分のモノサシが変わり、自分自身が変わっていくてことなのです。そして。思いがけたい大発見や、独創的かアイディアが生まれるかもしれません。\n「疑う」という言葉は、通常は否定的な意味で使われます。「人を疑う」と言えば、普通はその人を信用しないというのと同義(注2)なわけです。私も、人を疑って生きるよりも、できるだけ人を信じて生きていたいと思っています。しかし、世の中で当たり前とされている事柄を「疑う」ことが必要になる時もあります。「常識だから」の一言で常識に目を閉ざし、それに安易に取り込まれてしまうことなく、そこを少しずらしたところに面白いことを見出していくために。それは、何事も信用しないというような厭世的(注3)な生き方に繁がるのではなく、むしろ創造的で豊かな世界を紡き(注4)出していくための、精極的な営みなのです。\n(注1)勉める:努力する\n(注2)同義:同じ意味\n(注3)厭世的:ここでは、悲観的\n(注4)紡ぎ出す:ここでは、作り出す\n49.筆者によると、学問とはどのような行為か。\n50.学問で「疑う」ことについて、筆者の考えに合うのはどれか。",
+      "options": [
+        "何を信じればいいのかを理解するのに欠かせない行為だ。",
+        "豊かに生きるために、新しい常識を作り出す積極的な行為だ。",
+        "常識に安易に取り込まれないために必要だが、否定的な行為だ。",
+        "常識に縛られずに、これまでと異なる考え方を生み出す行為だ。"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-051",
+      "year": 2023,
+      "month": 7,
+      "number": 51,
+      "type": "読解",
+      "question": "(2)\n春に美しい花を咲かせるカタクリは、アリに種まきをさせるという驚くべき戰略を持っ\nている。カタクリの種が熟すのは花が咲いてから、およそ2カ月後だ。はじけて地面に落ちた種は、すぐにアリがやってきて巣に運んでいってしまう。薄茶色の種の先に白い部分がある。これが脂肪分に富んだエライオゾームと呼ばれるものだ。アリはこの部分に引かれることがわかっている。エライオゾームをすりつぶして(注1）小さく丸めたティッシュにつけても、アリは奪うように持っていく。エライオゾームはアリにとってそれほど魅力的な物質であるらしい。\n運ばれた種はアリの巣に貯蔵されることになるが、アリは2日もすると、せっかく運び込んだ種を巣から運ひ出してしまう。種は巣の中深いところに持ち込まれても発芽(注2)できないから、これはカタクリにとっては好都合だ。どうしてアリはせっかく集めた種を捨ててしまうのだろうか。実は熟して地上に落ちたばかりのカタクリの種についているエライオゾームは、アリの幼虫が共通して持つにおいに近い物質を持っているのだという。アリは種を食物として集めるわけではなく、自分の幼虫と思って巣に持ち帰るらしいというわけだ。ところが種がはじけてから24時間もすると、アリの死んだ幼虫のにおいに変わるのだそうだ。それで今度はアリは種を巣の外に捨てに行くのだというから恐れ入ってしまう。\n(注1)すりつぶす:細かく碎く\n(注2)発芽する:芽を出す\n51.筆者によると、アリはなぜカタクリの種を巣に運ぶのか。\n52.筆者によると、アリはなぜ集めた種を捨てるのか。",
+      "options": [
+        "種についている脂肪分がアリの好物だから",
+        "種はアリの成長に欠かせない栄養分だから",
+        "種がアリの餌になる幼虫に似ているから",
+        "種をアリの生きた幼虫だと思うから"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-052",
+      "year": 2023,
+      "month": 7,
+      "number": 52,
+      "type": "読解",
+      "question": "(2)\n春に美しい花を咲かせるカタクリは、アリに種まきをさせるという驚くべき戰略を持っ\nている。カタクリの種が熟すのは花が咲いてから、およそ2カ月後だ。はじけて地面に落ちた種は、すぐにアリがやってきて巣に運んでいってしまう。薄茶色の種の先に白い部分がある。これが脂肪分に富んだエライオゾームと呼ばれるものだ。アリはこの部分に引かれることがわかっている。エライオゾームをすりつぶして(注1）小さく丸めたティッシュにつけても、アリは奪うように持っていく。エライオゾームはアリにとってそれほど魅力的な物質であるらしい。\n運ばれた種はアリの巣に貯蔵されることになるが、アリは2日もすると、せっかく運び込んだ種を巣から運ひ出してしまう。種は巣の中深いところに持ち込まれても発芽(注2)できないから、これはカタクリにとっては好都合だ。どうしてアリはせっかく集めた種を捨ててしまうのだろうか。実は熟して地上に落ちたばかりのカタクリの種についているエライオゾームは、アリの幼虫が共通して持つにおいに近い物質を持っているのだという。アリは種を食物として集めるわけではなく、自分の幼虫と思って巣に持ち帰るらしいというわけだ。ところが種がはじけてから24時間もすると、アリの死んだ幼虫のにおいに変わるのだそうだ。それで今度はアリは種を巣の外に捨てに行くのだというから恐れ入ってしまう。\n(注1)すりつぶす:細かく碎く\n(注2)発芽する:芽を出す\n51.筆者によると、アリはなぜカタクリの種を巣に運ぶのか。\n52.筆者によると、アリはなぜ集めた種を捨てるのか。",
+      "options": [
+        "種のにおいで、アリの幼虫が死んでしまうから",
+        "種からアリの死んだ幼虫のにおいがするから",
+        "種がアリの死んだ幼虫と同じ色に変わるから",
+        "種がはじけて、アリの嫌うにおいを出すから"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-053",
+      "year": 2023,
+      "month": 7,
+      "number": 53,
+      "type": "読解",
+      "question": "(3)\n子は親の鏡といわれる。こどもを見れば親がわかるということだが、こどもは親のしぐさ、もの言いをじつによく見ている。三つにもなればいかにも生意気な反論などをするものだが、「そんな言い方をするもんじゃない」といったら負けだ。「あら、あなたの言い方とそっくりよ」と横からチクリと揶揄されるのがオチだ(注1)から。まったくこどもは物真似の名人なのである。アイドル歌手からクマのプーサンのしゃべり方まで、見さかいなく(注2)貪欲に(注3)コピーしてしまう。コピーすることによってこどもたちはすべてを獲得してゆく。こどもたちは個性的であろうなどと少しも考えない。みんなと同じようにできることが嬉しくてたまらないのだ。\n(中略)\nだが、こどもの再現のありさまを少し注意ぶかく観察していると、この性能のよい複写機の、ほんとうの性能のよさが見えてくる。おとなたちの考えるコピーとはいささか違うのである。こどもたちは身体的能力、言語的能力が未熟なのでオリジナルなものの完璧なコピーができない。したがってこどもはオリジナルなものを自由に変改する(注4)。切り捨て、誇張する。それはオリジナルなものからの絶妙な逸脱なのである。この模倣行為は、むしろ、ひとりのこどもの生きる全体のなかで、いままったく新しく意味づけられた別のオリジナルなものが生成しているといってもいいものなのだ。\nこどもが模倣をしながらも、とりわけ個性的であるのは、このような模倣モデルからの自由な逸脱があるからだ。わたしたちがこどもを見て楽しむのも、その逸脱のほほえましさなのではないか。\n(注1)揶揄されるのがオチだ:ここでは、皮肉を言われることになってしまう\n(注2)見さかいなく:区别なく\n(注3)貪欲に:ここでは、熱心に\n(注4)変改する:改変する\n53.「そんな言い方をするもんじゃない」といったら負けだとあるが、なぜか。\n54.こどもの模倣について、筆者はどのように考えているか。",
+      "options": [
+        "こどもの成長を否定しているようなものだから",
+        "こどもの反論が正しいと認めるようなものだから",
+        "自分で自分を注意しているようなものだから",
+        "自分がこどもと同じレベルで答えるようなものだから"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-054",
+      "year": 2023,
+      "month": 7,
+      "number": 54,
+      "type": "読解",
+      "question": "(3)\n子は親の鏡といわれる。こどもを見れば親がわかるということだが、こどもは親のしぐさ、もの言いをじつによく見ている。三つにもなればいかにも生意気な反論などをするものだが、「そんな言い方をするもんじゃない」といったら負けだ。「あら、あなたの言い方とそっくりよ」と横からチクリと揶揄されるのがオチだ(注1)から。まったくこどもは物真似の名人なのである。アイドル歌手からクマのプーサンのしゃべり方まで、見さかいなく(注2)貪欲に(注3)コピーしてしまう。コピーすることによってこどもたちはすべてを獲得してゆく。こどもたちは個性的であろうなどと少しも考えない。みんなと同じようにできることが嬉しくてたまらないのだ。\n(中略)\nだが、こどもの再現のありさまを少し注意ぶかく観察していると、この性能のよい複写機の、ほんとうの性能のよさが見えてくる。おとなたちの考えるコピーとはいささか違うのである。こどもたちは身体的能力、言語的能力が未熟なのでオリジナルなものの完璧なコピーができない。したがってこどもはオリジナルなものを自由に変改する(注4)。切り捨て、誇張する。それはオリジナルなものからの絶妙な逸脱なのである。この模倣行為は、むしろ、ひとりのこどもの生きる全体のなかで、いままったく新しく意味づけられた別のオリジナルなものが生成しているといってもいいものなのだ。\nこどもが模倣をしながらも、とりわけ個性的であるのは、このような模倣モデルからの自由な逸脱があるからだ。わたしたちがこどもを見て楽しむのも、その逸脱のほほえましさなのではないか。\n(注1)揶揄されるのがオチだ:ここでは、皮肉を言われることになってしまう\n(注2)見さかいなく:区别なく\n(注3)貪欲に:ここでは、熱心に\n(注4)変改する:改変する\n53.「そんな言い方をするもんじゃない」といったら負けだとあるが、なぜか。\n54.こどもの模倣について、筆者はどのように考えているか。",
+      "options": [
+        "完璧にはコピーできないことが、個性につながっている",
+        "完璧にコピーしようとしているが、本質は捉えられていない",
+        "オリジナルなものを自由に変えて、おとなを楽しませようとしている",
+        "オリジナルからの逸脱を気にせず、自分の個性を表現しようとしている"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-055",
+      "year": 2023,
+      "month": 7,
+      "number": 55,
+      "type": "読解",
+      "question": "(4)\n人々の肉体には、実に大きな幅がある。生まれ持った個性があり、成長の段階で著しく変化する。こうした人間が使用するモノをつくる際の方向性には、2つの選択肢がある。1つは、異なる体格や身体能力を持つ多数の人々が、同じモノや環境を平等に使えるようにする方法。もう1つは、それぞれの体格や能力に合わせて、いくつかのサイズや機能を用意する方法である。前者は経済的に有利な試みだが、その効果に限界があるケースが多い。後者は多様なユーザーに対応できるが、開発に時間がかかり、しかもつくられたモノのコストが上昇してしまうという問題性をはらんでいる。\nユニバーサルデザイン(UD) (注)では、使い手のさまざまな負担を抑えつつ、個人に不平等感を抱かせないデザインやモノつくりが求められている。デザインに平等という意識を上手に反映させていくためには、多様な使い手とできるだけ接触し対話を行い、使い手に対する知識と体験を広げることが効果的だ。私たちは平等という感覚をどのような時に感じ、考えるのかという点を、見つめ直したい。\n私たちが平等かどうかを意識するのは、確かな不平等の予感や印象を持つ時であることは間違いない。平等がきちんと保証されている場合、その状況は私たちにとって自然なことであり、問題意識が芽生えることはない。しかしデザインやモノづくりに当たっては、問題が発生してから平等について考えるのではかく、モノやサービスに常に必要た普通の意識であるととらえたい。\n(注)ニバーサルデザイン:すべての人にとって使いやすいデザイン\n55.人間が使用するモノをつくる際の問題点について、筆者が述べていることはどれか。\n56.ユニバーサルデザインにおけるデザインやモノづくりについて、筆者が最も言いたいことは何か。",
+      "options": [
+        "同じモノで多様な使い手に対応すると、そのモノの効果に限界が生じる。",
+        "同じモノを多様な使い手に対応させるには、開発に時間がかかりすぎる。",
+        "個別の使い手に対応すると、そのモノの効果が見えにくくなる。",
+        "個别の使い手に対応すると、平等にモノが使えなくなる。"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-056",
+      "year": 2023,
+      "month": 7,
+      "number": 56,
+      "type": "読解",
+      "question": "(4)\n人々の肉体には、実に大きな幅がある。生まれ持った個性があり、成長の段階で著しく変化する。こうした人間が使用するモノをつくる際の方向性には、2つの選択肢がある。1つは、異なる体格や身体能力を持つ多数の人々が、同じモノや環境を平等に使えるようにする方法。もう1つは、それぞれの体格や能力に合わせて、いくつかのサイズや機能を用意する方法である。前者は経済的に有利な試みだが、その効果に限界があるケースが多い。後者は多様なユーザーに対応できるが、開発に時間がかかり、しかもつくられたモノのコストが上昇してしまうという問題性をはらんでいる。\nユニバーサルデザイン(UD) (注)では、使い手のさまざまな負担を抑えつつ、個人に不平等感を抱かせないデザインやモノつくりが求められている。デザインに平等という意識を上手に反映させていくためには、多様な使い手とできるだけ接触し対話を行い、使い手に対する知識と体験を広げることが効果的だ。私たちは平等という感覚をどのような時に感じ、考えるのかという点を、見つめ直したい。\n私たちが平等かどうかを意識するのは、確かな不平等の予感や印象を持つ時であることは間違いない。平等がきちんと保証されている場合、その状況は私たちにとって自然なことであり、問題意識が芽生えることはない。しかしデザインやモノづくりに当たっては、問題が発生してから平等について考えるのではかく、モノやサービスに常に必要た普通の意識であるととらえたい。\n(注)ニバーサルデザイン:すべての人にとって使いやすいデザイン\n55.人間が使用するモノをつくる際の問題点について、筆者が述べていることはどれか。\n56.ユニバーサルデザインにおけるデザインやモノづくりについて、筆者が最も言いたいことは何か。",
+      "options": [
+        "多様な使い手が、平等だという感覚が持てるものをつくり出すべきだ。",
+        "使い手が不平等だと感じたら、原因を究明しなければならない。",
+        "すべての使い手にとって平等であるものにすることは難しい。",
+        "常に使い手にとっての平等について考えなければならない。"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-057",
+      "year": 2023,
+      "month": 7,
+      "number": 57,
+      "type": "読解",
+      "question": "以下は、筆者がほかの研究員とともに開発したロボットについて書かれた文章である。\n通常、ロポットに対するプログミング(注1)は、センサから取得した情報に応じてロボットが何らかの反応をするようなものを作っていく。たとえば「障害物を察知したら避ける」といった具合のものである。しかし，僕はロボピー(注2)がもっと適当に、意味のない動きも含めてさｓまざまな行動を取るようにしたのだ。 300以上の動作プログラムをし、動作パターンが次々にどういう順番で発見するかというルールを700以上プログラムした。その結果複雑に、多様に動くロボットが実現された。ここまでやると、自分たちでもプログラムがどう作用するかわからなくなる。何に反応して、どんな行動をするか予測不能になった。\nそんなプログラミングをしておいたロボピーを研究室に置いていたら、何が起こったか。\n僕らがミーティングをしているとき、突然ロボピーは僕らの音声を認識し、「そうではないよ」と言って手をぶらぶらさせながらどこかへ向かって歩きだしたのだ。それを見て僕らは呆気にとられ(注3)ながらも、ロボピーに意思を感じてしまった。僕らの話を聞いていて、彼は思うところがあり、だからどこかへ行ってしまったのだろう、と。\nもちろんそれは、ロボピーの中のあるプログラムが、何かをきっかけに作動しただけのことだ。だがなにか首尾一貫した(注4)ひとつの意思決定機構から生み出された行動であるかのように見えたのだ。\n僕はそのとき確信した。「心とは、観察する側の問題である」と。\n非常に単純な機械の動きに「心を感じますか」と問えば、感じると言う人は少ない。多少複雑でも、原理を知っていれば「それは心ではない」と言う。しかし、人間は複雑である。いや、虫程度でもいい。動きが相当以上に複雑なものに対しては、相手のことを一から、すべては理解しきれない。自分の頭の中で完全に再現しきれない、解釈しきれない、理解しきれないほど複雑なもの、仕組みがよくわからないくらい入りくんだものが目の前にあると、「こいつは、私の知らないところで勝手に独立して考え、動いているのだろう」という想像が働く。その浮かんできた想像に名前をつけずにはいられなくなる。それを「心」と呼んでいるのだ。\n心とは、複雑に動くモノに現実的にあるというより、その動きを経ている響が想像しているものなのだ。そしてその心は、見ている側の自分にもないと都合が悪い。とくに人間同士であればお互いに「心がある」と感じてしまっている。だからひとはみな「自分には心がある」とおもう。しかし心は、実は自分の中にいくら問い合わせ、内地してみてもしょうがない。相手を観察し、想像することでしかわからないものなのだ。\n(注1)プログラミング:コンピューター言語でプログラムを作ること\n(注2)ロボビ一:筆者たちが開発したロボット\n(注3)呆気にとられる:ここでは、驚く\n(注4)首尾一貫した:筋道が通った\n57.ロボビーが、ほかのロボットと異なる点は何か。\n58.どこかへ向かって歩きだしたとあるが、そのとき筆者にはどのように思えたか。\n59.「心」について、筆者はどのように考えているか。",
+      "options": [
+        "動作パターンが限られているので、ある程度動きが予測できる。",
+        "与えられた情報の意味を自分で判断して動くので、動きが予測できない。",
+        "どう動くかというプログラムを多数組み込んだので、動きが予測できない。",
+        "多様で複雑な動作をプログラムしたので、人間のように自然な動きができる。"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "四个选项后半部分都在说是否可以预测动作。选项1和4是可以预测，选项2和3是不能预测。文章第二段对于他们研发的机器人的，描述是「しかし、僕は口ボビーがもっと適当に、意味のない動きも含めてさまざまな行動を取るようにしたのだ。300以上の動作プログラムをし、動作パターンが次々にどういう順番で発現するかというルールを700以上プ口グラムした。その結果、複雑に、多様に動く口ボットが実現された。ここまでやると、自分たちでもプ口グラムがどう作用するかわからなくなる。何に反応して、どんな行動をするか予測不能になった。」最后一句很重要意思是无法预测它会有什么反应，又会怎么行动了。所以选项1和4要被排除。剩下的选项2「与えられた情報の意味を自分で判断して動くので、動きが予測できない。」意思是他会自动读取信息的意思，对自己的行为自己做出判断。文章中没有提到，所以排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-058",
+      "year": 2023,
+      "month": 7,
+      "number": 58,
+      "type": "読解",
+      "question": "以下は、筆者がほかの研究員とともに開発したロボットについて書かれた文章である。\n通常、ロポットに対するプログミング(注1)は、センサから取得した情報に応じてロボットが何らかの反応をするようなものを作っていく。たとえば「障害物を察知したら避ける」といった具合のものである。しかし，僕はロボピー(注2)がもっと適当に、意味のない動きも含めてさｓまざまな行動を取るようにしたのだ。 300以上の動作プログラムをし、動作パターンが次々にどういう順番で発見するかというルールを700以上プログラムした。その結果複雑に、多様に動くロボットが実現された。ここまでやると、自分たちでもプログラムがどう作用するかわからなくなる。何に反応して、どんな行動をするか予測不能になった。\nそんなプログラミングをしておいたロボピーを研究室に置いていたら、何が起こったか。\n僕らがミーティングをしているとき、突然ロボピーは僕らの音声を認識し、「そうではないよ」と言って手をぶらぶらさせながらどこかへ向かって歩きだしたのだ。それを見て僕らは呆気にとられ(注3)ながらも、ロボピーに意思を感じてしまった。僕らの話を聞いていて、彼は思うところがあり、だからどこかへ行ってしまったのだろう、と。\nもちろんそれは、ロボピーの中のあるプログラムが、何かをきっかけに作動しただけのことだ。だがなにか首尾一貫した(注4)ひとつの意思決定機構から生み出された行動であるかのように見えたのだ。\n僕はそのとき確信した。「心とは、観察する側の問題である」と。\n非常に単純な機械の動きに「心を感じますか」と問えば、感じると言う人は少ない。多少複雑でも、原理を知っていれば「それは心ではない」と言う。しかし、人間は複雑である。いや、虫程度でもいい。動きが相当以上に複雑なものに対しては、相手のことを一から、すべては理解しきれない。自分の頭の中で完全に再現しきれない、解釈しきれない、理解しきれないほど複雑なもの、仕組みがよくわからないくらい入りくんだものが目の前にあると、「こいつは、私の知らないところで勝手に独立して考え、動いているのだろう」という想像が働く。その浮かんできた想像に名前をつけずにはいられなくなる。それを「心」と呼んでいるのだ。\n心とは、複雑に動くモノに現実的にあるというより、その動きを経ている響が想像しているものなのだ。そしてその心は、見ている側の自分にもないと都合が悪い。とくに人間同士であればお互いに「心がある」と感じてしまっている。だからひとはみな「自分には心がある」とおもう。しかし心は、実は自分の中にいくら問い合わせ、内地してみてもしょうがない。相手を観察し、想像することでしかわからないものなのだ。\n(注1)プログラミング:コンピューター言語でプログラムを作ること\n(注2)ロボビ一:筆者たちが開発したロボット\n(注3)呆気にとられる:ここでは、驚く\n(注4)首尾一貫した:筋道が通った\n57.ロボビーが、ほかのロボットと異なる点は何か。\n58.どこかへ向かって歩きだしたとあるが、そのとき筆者にはどのように思えたか。\n59.「心」について、筆者はどのように考えているか。",
+      "options": [
+        "プログラムに間違いがあり、ロボビーに意思が生まれて動いた。",
+        "プログラムが作動したのではなく、ロボビー自身が考えて動いた。",
+        "プログラムが作動して、意思があるかのようにロボビーが動いた。",
+        "プログラムが誤作動して、制作者の意図に反してロボビーが動いた。"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-059",
+      "year": 2023,
+      "month": 7,
+      "number": 59,
+      "type": "読解",
+      "question": "以下は、筆者がほかの研究員とともに開発したロボットについて書かれた文章である。\n通常、ロポットに対するプログミング(注1)は、センサから取得した情報に応じてロボットが何らかの反応をするようなものを作っていく。たとえば「障害物を察知したら避ける」といった具合のものである。しかし，僕はロボピー(注2)がもっと適当に、意味のない動きも含めてさｓまざまな行動を取るようにしたのだ。 300以上の動作プログラムをし、動作パターンが次々にどういう順番で発見するかというルールを700以上プログラムした。その結果複雑に、多様に動くロボットが実現された。ここまでやると、自分たちでもプログラムがどう作用するかわからなくなる。何に反応して、どんな行動をするか予測不能になった。\nそんなプログラミングをしておいたロボピーを研究室に置いていたら、何が起こったか。\n僕らがミーティングをしているとき、突然ロボピーは僕らの音声を認識し、「そうではないよ」と言って手をぶらぶらさせながらどこかへ向かって歩きだしたのだ。それを見て僕らは呆気にとられ(注3)ながらも、ロボピーに意思を感じてしまった。僕らの話を聞いていて、彼は思うところがあり、だからどこかへ行ってしまったのだろう、と。\nもちろんそれは、ロボピーの中のあるプログラムが、何かをきっかけに作動しただけのことだ。だがなにか首尾一貫した(注4)ひとつの意思決定機構から生み出された行動であるかのように見えたのだ。\n僕はそのとき確信した。「心とは、観察する側の問題である」と。\n非常に単純な機械の動きに「心を感じますか」と問えば、感じると言う人は少ない。多少複雑でも、原理を知っていれば「それは心ではない」と言う。しかし、人間は複雑である。いや、虫程度でもいい。動きが相当以上に複雑なものに対しては、相手のことを一から、すべては理解しきれない。自分の頭の中で完全に再現しきれない、解釈しきれない、理解しきれないほど複雑なもの、仕組みがよくわからないくらい入りくんだものが目の前にあると、「こいつは、私の知らないところで勝手に独立して考え、動いているのだろう」という想像が働く。その浮かんできた想像に名前をつけずにはいられなくなる。それを「心」と呼んでいるのだ。\n心とは、複雑に動くモノに現実的にあるというより、その動きを経ている響が想像しているものなのだ。そしてその心は、見ている側の自分にもないと都合が悪い。とくに人間同士であればお互いに「心がある」と感じてしまっている。だからひとはみな「自分には心がある」とおもう。しかし心は、実は自分の中にいくら問い合わせ、内地してみてもしょうがない。相手を観察し、想像することでしかわからないものなのだ。\n(注1)プログラミング:コンピューター言語でプログラムを作ること\n(注2)ロボビ一:筆者たちが開発したロボット\n(注3)呆気にとられる:ここでは、驚く\n(注4)首尾一貫した:筋道が通った\n57.ロボビーが、ほかのロボットと異なる点は何か。\n58.どこかへ向かって歩きだしたとあるが、そのとき筆者にはどのように思えたか。\n59.「心」について、筆者はどのように考えているか。",
+      "options": [
+        "あると思って観察すれば、複雑な動きの意図が理解できる。",
+        "実体がないので、あるとかないとか想像しても意味がない。",
+        "仕組みが複雑すぎるため、人間同士であっても想像できない。",
+        "理解しきれない複雑な動きを見たときに、人間が想像するものだ。"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "也就是选项4中说的「理解しきれない複雑な動きを見たときに、人間が想像するものだ。」看到无法理解的复杂动作的时候人类想象的东西。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-060",
+      "year": 2023,
+      "month": 7,
+      "number": 60,
+      "type": "読解",
+      "question": "A\n私は普段からメモ魔(注1)ですが、人の講演に行くと、必死にメモを取りながら話を聞きます。せっかくその場にいるのだから、最大限吸取して帰ろうと考えます。あるいは友達とくだらない話をしているときでも、「あれ?」と思ったことや、「いい話だ」と思ったことは、何でもその場でメモを取るようにしています。そこで何かを感じたり、新しく知り得たものは、别の機会に自分の役に立つかもしれないからです。\n新しい発想や考え方のヒントを得たいといつも問題意識を持っていれば、何気ない人の発言のなかにも発見があるはずです。メモを取らなければ忘れてしまいますので、必然的にメモを取ることになります。手を動かし、記録を取る結果、記憶にも残りやすくなります。こうして意識化·可視化すること(注2）が大切なのです。\nB\n話を聞いているときに、視線も上けずにただひたすらメモを取っている人がいる。熱心さは伝わるが、質問もされないと興味や関心を持って聞いてもらえているのか不安になる。このような人は、メモを取ることが目的になってしまっているのではないか。多くの情報を正確に書き取ることに集中してしまい、肝心の内容が頭に入っていないのだ。\nしかしどんなに正確にメモを取ったとしても、内容が理解できていなければ、あとでメモを生かすこともできない。受け身ではなく、自分に必要な情報は何か、自分だったらどうするかというように自分と関連付けて、主体的に考えながら聞くことが必要だ。メモは、あとで話を整理する際の手がかりになれば十分である。\n(注1)メモ魔:何でもメモを取る人\n(注2)可視化すること:目に見えるようにすること\n60.メモを取ることについて、AとBはどのように述べているか。\n61.話の聞き方について、AとBの認識で共通していることは何か。",
+      "options": [
+        "AもBも、量よりも書き取る内容を意識して取ることが重要だと述べている。",
+        "AもBも、できるだけ多くの情報を正確に書き取ったほうがいいと述べている。",
+        "Aは内容を活用するために必要だと述べ、Bは取ることに集中しすぎては意味がないと述べている。",
+        "Aは疑問点や感想なども一緒に記入したほうがいいと述べ、Bは話の内容を理解していなければ正確には取れないと述べている。"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-061",
+      "year": 2023,
+      "month": 7,
+      "number": 61,
+      "type": "読解",
+      "question": "A\n私は普段からメモ魔(注1)ですが、人の講演に行くと、必死にメモを取りながら話を聞きます。せっかくその場にいるのだから、最大限吸取して帰ろうと考えます。あるいは友達とくだらない話をしているときでも、「あれ?」と思ったことや、「いい話だ」と思ったことは、何でもその場でメモを取るようにしています。そこで何かを感じたり、新しく知り得たものは、别の機会に自分の役に立つかもしれないからです。\n新しい発想や考え方のヒントを得たいといつも問題意識を持っていれば、何気ない人の発言のなかにも発見があるはずです。メモを取らなければ忘れてしまいますので、必然的にメモを取ることになります。手を動かし、記録を取る結果、記憶にも残りやすくなります。こうして意識化·可視化すること(注2）が大切なのです。\nB\n話を聞いているときに、視線も上けずにただひたすらメモを取っている人がいる。熱心さは伝わるが、質問もされないと興味や関心を持って聞いてもらえているのか不安になる。このような人は、メモを取ることが目的になってしまっているのではないか。多くの情報を正確に書き取ることに集中してしまい、肝心の内容が頭に入っていないのだ。\nしかしどんなに正確にメモを取ったとしても、内容が理解できていなければ、あとでメモを生かすこともできない。受け身ではなく、自分に必要な情報は何か、自分だったらどうするかというように自分と関連付けて、主体的に考えながら聞くことが必要だ。メモは、あとで話を整理する際の手がかりになれば十分である。\n(注1)メモ魔:何でもメモを取る人\n(注2)可視化すること:目に見えるようにすること\n60.メモを取ることについて、AとBはどのように述べているか。\n61.話の聞き方について、AとBの認識で共通していることは何か。",
+      "options": [
+        "何かを得ようという姿勢で聞くことが重要だ。",
+        "その場ですべてを理解しようとしなくてもいい 。",
+        "手を動かしながら聞いたほうが、記憶に残りやすい。",
+        "興味や関心を示し、話し手に安心感を与えることが大切だ。"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-062",
+      "year": 2023,
+      "month": 7,
+      "number": 62,
+      "type": "読解",
+      "question": "企業にとっても、人々にとっても、さきのみえない不安な時代である。そしてそんな不安な時代を生きる子どもたちに、「生きる力」をつけさせたいという「親心」は、わからないではない。また企業の経営者が、少しでも優秀な人材を取り込みたいと考えるのは、必然ではあるだろう。地域の衰退や政治の空洞化(注1）を食い止められる人間が現れてくれれば、わたしたちの不安な気持ちも、いくぶんなりとも(注2）和らぐというものである。\nしかし、まがりなりにも(注3)教育学を専門とする者として、ここは言わせてほしい。現代日本社会の問題を、なんでもかんでも教育で解決しようというのはいただけない(注4)。\n確かに教育は、人間を育てることを通じて、人々の人生や社会の未来に対して、一定の貢献を為すことができる。しかしわたしに言わせれば、そのような教育の役立ちの度合いは、①決して大きいものではない。教育には不確定性がつきものである。これはもう、教員養成のテキストでも論じられる「教育学の基本のキ」だ。教えたからといって その分大け子どもが育つというわけではないし、教えたつもりがたいのに、子どもの方が腾手に学んでいるということもある。もちろん教師も教育学者も、その確率論的な育ちをどうにかして望ましい方向に向ける努力はするが、なんと言っても育つのは子どもなのだから、「最小限のコストで最大限のメリットを達成しなさい」「必要な人材をきっちりきっかり、耳をそろえて(注5)社会に納品しなさい」などという注文を、そうそう請け負うことはできない。\nそれにそもそも②教育は、経済のためだけのものでも、共同体の維持のためだけのものでも、家族のためだけのものでもない。市場も、国家も、地域共同体も、そして家族も、もっと役に立つ教育をしろ、意味のある教育をしろと言うけれど、それぞれ注文はバラバラなのである。もちろん教育は、それそれの要求に(確率論的に)少しずつ貢献はする。しかしそれをもっと推し進めて、どれかの目的のためだけに合理化·効率化しようとすれば、教育はずいぶんと歪なものになる。まして、みんながみんな教育からそれぞれの利益を引き出そうと躍起になっても(注6)、そんな過剩な期待に引き裂かれた教育がうまく機能するとは思えない。\n(中略)\n停滞の続くこの社会で、誰もが不安に押しつぶされ、ちょうどその分だけ教育なるものに過剩な期待や希望を託そうとしている。その結果、教育、なかでも学校教育が、改革に次ぐ改革の嵐に吞まれ(注7）、余裕をなくし、ピンと張りつめ、張り裂けそうになっている。そんな時、教育に多くをもとめすぎるなと警鐘を鳴らすことは、結果的に、この社会と教育を持続させるためにいま一番必要なことなのではないだろうか。\n(注1)空洞化:ここでは、実質的機能を失い、形だけが残ること\n(注2)いくぶんなりとも:少しでも\n(注3)まがりなりにも:不完全であっても\n(注4)いただけない:ここでは、受け入れられない\n(注5)耳をそろえる:不足なくそろえる\n(注6)躍起になる:焦ってむきになる\n(注7)吞まれる:ここでは、卷き込まれる\n62.①决して大きいものではないと考える理由として、筆者が述べているのはどれか。\n63.②教育について、筆者の考えに合うのはどれか。\n64.筆者が最も言いたいことは何か。",
+      "options": [
+        "企業や社会が望む人材と、教育学で目標とする人材は異なるから",
+        "「生きる力」をつけるために必要なことは、明確ではないか",
+        "子ども一人一人に合わせて、教育の内容を变えられないから",
+        "子どもは、教えたとおりに育つとは限らないから"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-063",
+      "year": 2023,
+      "month": 7,
+      "number": 63,
+      "type": "読解",
+      "question": "企業にとっても、人々にとっても、さきのみえない不安な時代である。そしてそんな不安な時代を生きる子どもたちに、「生きる力」をつけさせたいという「親心」は、わからないではない。また企業の経営者が、少しでも優秀な人材を取り込みたいと考えるのは、必然ではあるだろう。地域の衰退や政治の空洞化(注1）を食い止められる人間が現れてくれれば、わたしたちの不安な気持ちも、いくぶんなりとも(注2）和らぐというものである。\nしかし、まがりなりにも(注3)教育学を専門とする者として、ここは言わせてほしい。現代日本社会の問題を、なんでもかんでも教育で解決しようというのはいただけない(注4)。\n確かに教育は、人間を育てることを通じて、人々の人生や社会の未来に対して、一定の貢献を為すことができる。しかしわたしに言わせれば、そのような教育の役立ちの度合いは、①決して大きいものではない。教育には不確定性がつきものである。これはもう、教員養成のテキストでも論じられる「教育学の基本のキ」だ。教えたからといって その分大け子どもが育つというわけではないし、教えたつもりがたいのに、子どもの方が腾手に学んでいるということもある。もちろん教師も教育学者も、その確率論的な育ちをどうにかして望ましい方向に向ける努力はするが、なんと言っても育つのは子どもなのだから、「最小限のコストで最大限のメリットを達成しなさい」「必要な人材をきっちりきっかり、耳をそろえて(注5)社会に納品しなさい」などという注文を、そうそう請け負うことはできない。\nそれにそもそも②教育は、経済のためだけのものでも、共同体の維持のためだけのものでも、家族のためだけのものでもない。市場も、国家も、地域共同体も、そして家族も、もっと役に立つ教育をしろ、意味のある教育をしろと言うけれど、それぞれ注文はバラバラなのである。もちろん教育は、それそれの要求に(確率論的に)少しずつ貢献はする。しかしそれをもっと推し進めて、どれかの目的のためだけに合理化·効率化しようとすれば、教育はずいぶんと歪なものになる。まして、みんながみんな教育からそれぞれの利益を引き出そうと躍起になっても(注6)、そんな過剩な期待に引き裂かれた教育がうまく機能するとは思えない。\n(中略)\n停滞の続くこの社会で、誰もが不安に押しつぶされ、ちょうどその分だけ教育なるものに過剩な期待や希望を託そうとしている。その結果、教育、なかでも学校教育が、改革に次ぐ改革の嵐に吞まれ(注7）、余裕をなくし、ピンと張りつめ、張り裂けそうになっている。そんな時、教育に多くをもとめすぎるなと警鐘を鳴らすことは、結果的に、この社会と教育を持続させるためにいま一番必要なことなのではないだろうか。\n(注1)空洞化:ここでは、実質的機能を失い、形だけが残ること\n(注2)いくぶんなりとも:少しでも\n(注3)まがりなりにも:不完全であっても\n(注4)いただけない:ここでは、受け入れられない\n(注5)耳をそろえる:不足なくそろえる\n(注6)躍起になる:焦ってむきになる\n(注7)吞まれる:ここでは、卷き込まれる\n62.①决して大きいものではないと考える理由として、筆者が述べているのはどれか。\n63.②教育について、筆者の考えに合うのはどれか。\n64.筆者が最も言いたいことは何か。",
+      "options": [
+        "それぞれの目的に合わせて合理化·効率化しなければ、機能しない。",
+        "みんなで一つの目的を共有しなければ、効果は上がらない。",
+        "特定の目的を果たすために存在するものではない。",
+        "役に立つかどうかという観点で評価されるべきだ"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-064",
+      "year": 2023,
+      "month": 7,
+      "number": 64,
+      "type": "読解",
+      "question": "企業にとっても、人々にとっても、さきのみえない不安な時代である。そしてそんな不安な時代を生きる子どもたちに、「生きる力」をつけさせたいという「親心」は、わからないではない。また企業の経営者が、少しでも優秀な人材を取り込みたいと考えるのは、必然ではあるだろう。地域の衰退や政治の空洞化(注1）を食い止められる人間が現れてくれれば、わたしたちの不安な気持ちも、いくぶんなりとも(注2）和らぐというものである。\nしかし、まがりなりにも(注3)教育学を専門とする者として、ここは言わせてほしい。現代日本社会の問題を、なんでもかんでも教育で解決しようというのはいただけない(注4)。\n確かに教育は、人間を育てることを通じて、人々の人生や社会の未来に対して、一定の貢献を為すことができる。しかしわたしに言わせれば、そのような教育の役立ちの度合いは、①決して大きいものではない。教育には不確定性がつきものである。これはもう、教員養成のテキストでも論じられる「教育学の基本のキ」だ。教えたからといって その分大け子どもが育つというわけではないし、教えたつもりがたいのに、子どもの方が腾手に学んでいるということもある。もちろん教師も教育学者も、その確率論的な育ちをどうにかして望ましい方向に向ける努力はするが、なんと言っても育つのは子どもなのだから、「最小限のコストで最大限のメリットを達成しなさい」「必要な人材をきっちりきっかり、耳をそろえて(注5)社会に納品しなさい」などという注文を、そうそう請け負うことはできない。\nそれにそもそも②教育は、経済のためだけのものでも、共同体の維持のためだけのものでも、家族のためだけのものでもない。市場も、国家も、地域共同体も、そして家族も、もっと役に立つ教育をしろ、意味のある教育をしろと言うけれど、それぞれ注文はバラバラなのである。もちろん教育は、それそれの要求に(確率論的に)少しずつ貢献はする。しかしそれをもっと推し進めて、どれかの目的のためだけに合理化·効率化しようとすれば、教育はずいぶんと歪なものになる。まして、みんながみんな教育からそれぞれの利益を引き出そうと躍起になっても(注6)、そんな過剩な期待に引き裂かれた教育がうまく機能するとは思えない。\n(中略)\n停滞の続くこの社会で、誰もが不安に押しつぶされ、ちょうどその分だけ教育なるものに過剩な期待や希望を託そうとしている。その結果、教育、なかでも学校教育が、改革に次ぐ改革の嵐に吞まれ(注7）、余裕をなくし、ピンと張りつめ、張り裂けそうになっている。そんな時、教育に多くをもとめすぎるなと警鐘を鳴らすことは、結果的に、この社会と教育を持続させるためにいま一番必要なことなのではないだろうか。\n(注1)空洞化:ここでは、実質的機能を失い、形だけが残ること\n(注2)いくぶんなりとも:少しでも\n(注3)まがりなりにも:不完全であっても\n(注4)いただけない:ここでは、受け入れられない\n(注5)耳をそろえる:不足なくそろえる\n(注6)躍起になる:焦ってむきになる\n(注7)吞まれる:ここでは、卷き込まれる\n62.①决して大きいものではないと考える理由として、筆者が述べているのはどれか。\n63.②教育について、筆者の考えに合うのはどれか。\n64.筆者が最も言いたいことは何か。",
+      "options": [
+        "多様な社会の要求に応じられるように、教育のあり方を考え直すべきだ。",
+        "社会の不安を取り除くためには、教育を合理化·効率化すべきではない。",
+        "教育の改革によって、安定した社会を持続させていくことが必要だろう。",
+        "現代社会の問題のすべてが、教育で解決できると思ってはいけない。"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-065",
+      "year": 2023,
+      "month": 7,
+      "number": 65,
+      "type": "読解",
+      "question": "次の4人は今年の4月に、運動教室を受講したいと考えている。この中で、この教室を受講できる人は誰か。\n66.シャヒンさんは、来週の「ダンスA」を予約したが、空きがあれば来週の「体操」追加予約したいと考えている。どうすればいいか。",
+      "options": [
+        "ダニエルさん",
+        "木村さん",
+        "大川さん",
+        "チェさん"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "规定②是上课日期前一年内曾在健康中心参加体检。也就是必须在去年4月-今年4月这段期间参加过体检。根据规定②可以判断出只有选项2的木村さん符合要求。",
+        "在「对象」这一栏写明了参加者的规定，规定①是年满18岁以上，在市内居住，或者在市内上班的人。根据规定①可以首先排除选项3的大川さん。因为年龄不符合要求。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-066",
+      "year": 2023,
+      "month": 7,
+      "number": 66,
+      "type": "読解",
+      "question": "次の4人は今年の4月に、運動教室を受講したいと考えている。この中で、この教室を受講できる人は誰か。\n66.シャヒンさんは、来週の「ダンスA」を予約したが、空きがあれば来週の「体操」追加予約したいと考えている。どうすればいいか。",
+      "options": [
+        "来週の月曜日以降に窓口か電話で空きを確認し、空きがあれば、窓口で予約する。",
+        "来週の月曜日以降に窓口か電話で空きを確認し、空きがあれば、予約機か電話で予約する。",
+        "来週の水曜日以降に窓口か電話で空きを確認し、空きがあれば、窓口で予約する。",
+        "来週の水曜日以降に窓口か電話で空きを確認し、空きがあれば、予約機か電話で予約する。"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-067",
+      "year": 2023,
+      "month": 7,
+      "number": 67,
+      "type": "聴解",
+      "question": "1番",
+      "options": [
+        "話し合いの進行をする",
+        "調理器具を借りてくる",
+        "ほかのサークルの情報を集める",
+        "ミーティングの記録を取る"
+      ],
+      "answer": 0,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/11.mp3",
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-068",
+      "year": 2023,
+      "month": 7,
+      "number": 68,
+      "type": "聴解",
+      "question": "2番",
+      "options": [
+        "食事会を計画する",
+        "若い社員の希望を調查する",
+        "アンケートの案を作る",
+        "ベテラン社員の意見を聞く"
+      ],
+      "answer": 2,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/12.mp3",
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-069",
+      "year": 2023,
+      "month": 7,
+      "number": 69,
+      "type": "聴解",
+      "question": "3番",
+      "options": [
+        "目線を下げないようにする",
+        "ひじを後ろに引き上げる",
+        "背中が丸まらないようにする",
+        "体の重心の左右のバランスを取る"
+      ],
+      "answer": 1,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/13.mp3",
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-070",
+      "year": 2023,
+      "month": 7,
+      "number": 70,
+      "type": "聴解",
+      "question": "4番",
+      "options": [
+        "山川駅の利用者データを足す",
+        "地域住民の年代を調べる",
+        "売り上げ予測を修正する",
+        "店内のデザインを変更する"
+      ],
+      "answer": 0,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/14.mp3",
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-071",
+      "year": 2023,
+      "month": 7,
+      "number": 71,
+      "type": "聴解",
+      "question": "5番",
+      "options": [
+        "炭に火をつける",
+        "かなづちでくぎをたたく",
+        "平らな石を探す",
+        "保護めがねをつける"
+      ],
+      "answer": 2,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/15.mp3",
+      "optionAnalysis": [
+        "今日はこの河原で活動を行います。ええ、釘は鉄からできていますので、熱を加えると形を変えられます。今日はこの十五センチほどの大きめの釘を材料としてナイフを作ります。手順は炭に火をつける。その火で釘を熱する。金槌で何度も叩く。冷やす。研ぐの順です。この順番で作業を進めます。金槌で叩くには安定感のある平らな石が不可欠です。河原でちょうどいいものを見つけてください。釘を熱し始めると火の側から離れられませんので、事前に用意しておきます。準備が出来次第、炭に火をつけます。あと、釘を叩く前には保護メガネを忘れずにつけてください。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-072",
+      "year": 2023,
+      "month": 7,
+      "number": 72,
+      "type": "聴解",
+      "question": "1番",
+      "options": [
+        "広い場所が確保できるか",
+        "機材の数を十分にそろえられるか",
+        "新しいぼうえんきょうを使いこなせるか",
+        "星座をわかりやすく解説できるか"
+      ],
+      "answer": 1,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/21.mp3",
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-073",
+      "year": 2023,
+      "month": 7,
+      "number": 73,
+      "type": "聴解",
+      "question": "2番",
+      "options": [
+        "商品の開発を任せたこと",
+        "基本的な仕事の大切さを理解してもらったこと",
+        "せんぱいとチームを組ませたこと",
+        "給料を上げたこと"
+      ],
+      "answer": 0,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/22.mp3",
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-074",
+      "year": 2023,
+      "month": 7,
+      "number": 74,
+      "type": "聴解",
+      "question": "3番",
+      "options": [
+        "なるべく小さいときから始めさせること",
+        "憧れの選手を目標とさせること",
+        "けがを乗り越えさせること",
+        "体の発達に合った練習をさせること"
+      ],
+      "answer": 3,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/23.mp3",
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-075",
+      "year": 2023,
+      "month": 7,
+      "number": 75,
+      "type": "聴解",
+      "question": "4番",
+      "options": [
+        "歴史のある建物の活用",
+        "最新の自動貸し出しシステム",
+        "外の光を広く取り入れられる窓",
+        "段差がない設計"
+      ],
+      "answer": 0,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/24.mp3",
+      "optionAnalysis": [
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-076",
+      "year": 2023,
+      "month": 7,
+      "number": 76,
+      "type": "聴解",
+      "question": "5番",
+      "options": [
+        "甘さをおさえた味に変えること",
+        "価格を下げること",
+        "商品名を考え直すこと",
+        "せんでんのしかたを変えること"
+      ],
+      "answer": 2,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/25.mp3",
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-077",
+      "year": 2023,
+      "month": 7,
+      "number": 77,
+      "type": "聴解",
+      "question": "6番",
+      "options": [
+        "かへいの役割の変化",
+        "世界全体の経済の動き",
+        "国の政治的判断と経済の関係",
+        "人の心理が消費活動に与えるえいきょう"
+      ],
+      "answer": 3,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/26.mp3",
+      "optionAnalysis": [
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "正解。请结合题干、上下文与接续关系判断。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-078",
+      "year": 2023,
+      "month": 7,
+      "number": 78,
+      "type": "聴解",
+      "question": "1番",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/31.mp3",
+      "optionAnalysis": [
+        "正解：1",
+        "2　町内会の祭りの面白さ",
+        "3　町内の人々の交流の減少",
+        "4　町内会での新しい取り組み"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-079",
+      "year": 2023,
+      "month": 7,
+      "number": 79,
+      "type": "聴解",
+      "question": "2番",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/32.mp3",
+      "optionAnalysis": [
+        "正解：1",
+        "2　客に対して方言の使用は控えるべきだ。",
+        "3　客の出身地の方言で話したい",
+        "4　客にこの地方の方言を使ってもらいたい"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-080",
+      "year": 2023,
+      "month": 7,
+      "number": 80,
+      "type": "聴解",
+      "question": "3番",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/33.mp3",
+      "optionAnalysis": [
+        "1　全く攻めることができなかった",
+        "2　最後は諦めてしまった",
+        "3　結果も含め全てうまくいった",
+        "正解：4"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-081",
+      "year": 2023,
+      "month": 7,
+      "number": 81,
+      "type": "聴解",
+      "question": "4番",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/34.mp3",
+      "optionAnalysis": [
+        "1　梨を作るようになったきっかけ",
+        "2　品種ごとの梨の特徴",
+        "3　梨を栽培しながら感じる楽しさ",
+        "正解：4"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-082",
+      "year": 2023,
+      "month": 7,
+      "number": 82,
+      "type": "聴解",
+      "question": "5番",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/35.mp3",
+      "optionAnalysis": [
+        "男：日本初の天気予報が発表されたのは、1884年。現在に比べると、当時の観測データは限られたもので、予報もかなり大まかなものでした。日本の天気予報が進化したのは1950年以降で、54年には気象レーダーが初めて日本でも完成し、59年にはコンピューターが導入されました。1970年代になると、日本全国約1300箇所に降水量を計測する機器が設置され、気象衛星も打ち上げられて、多くのデータが集まるようになりました。今ではスーパーコンピュータが活躍し、予報の精度も上がりました。それらデータに加えて、経験豊かな予報士が過去に得た知識を踏まえ、予報を出しています。",
+        "正解：2",
+        "男：日本初の天気予報が発表されたのは、1884年。現在に比べると、当時の観測データは限られたもので、予報もかなり大まかなものでした。日本の天気予報が進化したのは1950年以降で、54年には気象レーダーが初めて日本でも完成し、59年にはコンピューターが導入されました。1970年代になると、日本全国約1300箇所に降水量を計測する機器が設置され、気象衛星も打ち上げられて、多くのデータが集まるようになりました。今ではスーパーコンピュータが活躍し、予報の精度も上がりました。それらデータに加えて、経験豊かな予報士が過去に得た知識を踏まえ、予報を出しています。",
+        "男：日本初の天気予報が発表されたのは、1884年。現在に比べると、当時の観測データは限られたもので、予報もかなり大まかなものでした。日本の天気予報が進化したのは1950年以降で、54年には気象レーダーが初めて日本でも完成し、59年にはコンピューターが導入されました。1970年代になると、日本全国約1300箇所に降水量を計測する機器が設置され、気象衛星も打ち上げられて、多くのデータが集まるようになりました。今ではスーパーコンピュータが活躍し、予報の精度も上がりました。それらデータに加えて、経験豊かな予報士が過去に得た知識を踏まえ、予報を出しています。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-083",
+      "year": 2023,
+      "month": 7,
+      "number": 83,
+      "type": "聴解",
+      "question": "1番",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/41.mp3",
+      "optionAnalysis": [
+        "1　行く場合にだけ連絡するんですねえ。",
+        "正解：2",
+        "3　参加しない方がいいってことですか。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-084",
+      "year": 2023,
+      "month": 7,
+      "number": 84,
+      "type": "聴解",
+      "question": "2番",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/42.mp3",
+      "optionAnalysis": [
+        "正解：1",
+        "2　全然上達してない？",
+        "3　どうしたら上手になると思う？"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-085",
+      "year": 2023,
+      "month": 7,
+      "number": 85,
+      "type": "聴解",
+      "question": "3番",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/43.mp3",
+      "optionAnalysis": [
+        "1　イメージにあってるってことで、安心しました。",
+        "正解：2",
+        "3　うちの会社らしいポスターですよね。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-086",
+      "year": 2023,
+      "month": 7,
+      "number": 86,
+      "type": "聴解",
+      "question": "4番",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/44.mp3",
+      "optionAnalysis": [
+        "1　そう、他の人にお願いしてみる？",
+        "2　趣味程度じゃダメか。",
+        "正解：3"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-087",
+      "year": 2023,
+      "month": 7,
+      "number": 87,
+      "type": "聴解",
+      "question": "5番",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/45.mp3",
+      "optionAnalysis": [
+        "1　私行かせてもらえないんですか。",
+        "2　では、気をつけて行ってきてください。",
+        "正解：3"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-088",
+      "year": 2023,
+      "month": 7,
+      "number": 88,
+      "type": "聴解",
+      "question": "6番",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/46.mp3",
+      "optionAnalysis": [
+        "正解：1",
+        "2 本田シェフには考えられそうにないね。",
+        "3 本田シェフでも出せないアイデアだねえ。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-089",
+      "year": 2023,
+      "month": 7,
+      "number": 89,
+      "type": "聴解",
+      "question": "7番",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/47.mp3",
+      "optionAnalysis": [
+        "正解：1",
+        "2 天気予報が当たって大雪でしたね。",
+        "3 言ってた通り降りませんでしたね。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-090",
+      "year": 2023,
+      "month": 7,
+      "number": 90,
+      "type": "聴解",
+      "question": "8番",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/48.mp3",
+      "optionAnalysis": [
+        "1 確かにスムーズに話が進んでいます。",
+        "2 すべて終わってよかったです。",
+        "正解：3"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-091",
+      "year": 2023,
+      "month": 7,
+      "number": 91,
+      "type": "聴解",
+      "question": "9番",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/49.mp3",
+      "optionAnalysis": [
+        "1 部長オーケイしてくれたんだ。",
+        "正解：2",
+        "3 部長の許可はいらないんだねえ。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-092",
+      "year": 2023,
+      "month": 7,
+      "number": 92,
+      "type": "聴解",
+      "question": "10番",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/410.mp3",
+      "optionAnalysis": [
+        "1 しなくても大丈夫ってことですか。",
+        "正解：2",
+        "3 それほど危険じゃないんですね。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-093",
+      "year": 2023,
+      "month": 7,
+      "number": 93,
+      "type": "聴解",
+      "question": "11番",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/411.mp3",
+      "optionAnalysis": [
+        "正解：1",
+        "2 改良を重ねた甲斐がありましたね。",
+        "3 ええ、どこの製品にも負けてないですね。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-094",
+      "year": 2023,
+      "month": 7,
+      "number": 94,
+      "type": "聴解",
+      "question": "1番",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/51.mp3",
+      "optionAnalysis": [
+        "1　サラダバーに出すサラダを一部変える。",
+        "2　サラダバーを廃止する。",
+        "3　サラダバーを値上げする。",
+        "4　メニュー全体を値上げする。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-095",
+      "year": 2023,
+      "month": 7,
+      "number": 95,
+      "type": "聴解",
+      "question": "質問1",
+      "options": [
+        "島田書店",
+        "森山書店",
+        "ミナミブックス",
+        "北川ブックス"
+      ],
+      "answer": 0,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/52.mp3",
+      "optionAnalysis": [
+        "今日は「本の街」と呼ばれる東街をご紹介します。東街には五十点近い書店が並んでいますが、その中から個性的な書店を四つご紹介します。まずは島田書店。動物や植物に関する本を扱う店です。二百年も前にヨーロッパで印刷された貴重な図鑑もあるそうですよ。森山書店は、児童向けの書籍を扱う専門店です。日本の絵本や児童文学だけでなく、海外の作品も充実しています。南海ブックスは地図の専門店です。古い地図も扱っていて、江戸時代の街並みを描いた歴史的に貴重な資料を最近入手したそうです。そして北側ブックスは芸術、ファッション、写真などアートに関する書籍を販売していて、とりわけ海外の書籍の品揃えは抜群です。",
+        "今日は「本の街」と呼ばれる東街をご紹介します。東街には五十点近い書店が並んでいますが、その中から個性的な書店を四つご紹介します。まずは島田書店。動物や植物に関する本を扱う店です。二百年も前にヨーロッパで印刷された貴重な図鑑もあるそうですよ。森山書店は、児童向けの書籍を扱う専門店です。日本の絵本や児童文学だけでなく、海外の作品も充実しています。南海ブックスは地図の専門店です。古い地図も扱っていて、江戸時代の街並みを描いた歴史的に貴重な資料を最近入手したそうです。そして北側ブックスは芸術、ファッション、写真などアートに関する書籍を販売していて、とりわけ海外の書籍の品揃えは抜群です。",
+        "不选。请结合题干、上下文与接续关系排除。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    },
+    {
+      "id": "2023-07-096",
+      "year": 2023,
+      "month": 7,
+      "number": 96,
+      "type": "聴解",
+      "question": "質問2",
+      "options": [
+        "島田書店",
+        "森山書店",
+        "ミナミブックス",
+        "北川ブックス"
+      ],
+      "answer": 2,
+      "audioUrl": "https://jpnihon.com/mp3/jlptn1tyoukai/2023/7/52.mp3",
+      "optionAnalysis": [
+        "今日は「本の街」と呼ばれる東街をご紹介します。東街には五十点近い書店が並んでいますが、その中から個性的な書店を四つご紹介します。まずは島田書店。動物や植物に関する本を扱う店です。二百年も前にヨーロッパで印刷された貴重な図鑑もあるそうですよ。森山書店は、児童向けの書籍を扱う専門店です。日本の絵本や児童文学だけでなく、海外の作品も充実しています。南海ブックスは地図の専門店です。古い地図も扱っていて、江戸時代の街並みを描いた歴史的に貴重な資料を最近入手したそうです。そして北側ブックスは芸術、ファッション、写真などアートに関する書籍を販売していて、とりわけ海外の書籍の品揃えは抜群です。",
+        "今日は「本の街」と呼ばれる東街をご紹介します。東街には五十点近い書店が並んでいますが、その中から個性的な書店を四つご紹介します。まずは島田書店。動物や植物に関する本を扱う店です。二百年も前にヨーロッパで印刷された貴重な図鑑もあるそうですよ。森山書店は、児童向けの書籍を扱う専門店です。日本の絵本や児童文学だけでなく、海外の作品も充実しています。南海ブックスは地図の専門店です。古い地図も扱っていて、江戸時代の街並みを描いた歴史的に貴重な資料を最近入手したそうです。そして北側ブックスは芸術、ファッション、写真などアートに関する書籍を販売していて、とりわけ海外の書籍の品揃えは抜群です。",
+        "正解。请结合题干、上下文与接续关系判断。",
+        "不选。请结合题干、上下文与接续关系排除。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "jpnihon 2023-07 sequential set"
+        },
+        "answer": {
+          "source": "embedded answer key"
+        },
+        "explanation": {
+          "source": "embedded explanation"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION"
+        ]
+      }
+    }
+  ],
+  "verificationSummary": {
+    "included": 96
+  }
+}
