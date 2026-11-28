@@ -1,0 +1,4135 @@
+{
+  "dataset": "JLPT N1 2025-07 sequential single-choice practice",
+  "status": "verified_reconstruction",
+  "mode": "sequential_single_choice_practice",
+  "year": 2025,
+  "month": 7,
+  "questions": [
+    {
+      "id": "2025-07-001",
+      "year": 2025,
+      "month": 7,
+      "number": 1,
+      "type": "漢字の読み方",
+      "question": "余暇の楽しみ方は色々ある。",
+      "target": "余暇",
+      "options": [
+        "ようか",
+        "よか",
+        "よが",
+        "ようが"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "Real word: 八日",
+        "余暇",
+        "✕ Not a word",
+        "Real word: 洋画"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-002",
+      "year": 2025,
+      "month": 7,
+      "number": 2,
+      "type": "漢字の読み方",
+      "question": "その動物は動きが鈍い。",
+      "target": "鈍い",
+      "options": [
+        "するどい",
+        "にぶい",
+        "あらい",
+        "あやうい"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "Real word: 鋭い",
+        "鈍い",
+        "Real word: 荒い",
+        "Real word: 危うい"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-003",
+      "year": 2025,
+      "month": 7,
+      "number": 3,
+      "type": "漢字の読み方",
+      "question": "検閲は行われていない。",
+      "target": "検閲",
+      "options": [
+        "けんさく",
+        "けんえき",
+        "けんせつ",
+        "けんえつ"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "Real word: 検索",
+        "Real word: 検疫",
+        "Real word: 建設",
+        "検閲"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-004",
+      "year": 2025,
+      "month": 7,
+      "number": 4,
+      "type": "漢字の読み方",
+      "question": "彼の唱える理念は崇高なものだ。",
+      "target": "崇高",
+      "options": [
+        "すうこう",
+        "しゅうこう",
+        "しょうこう",
+        "そうこう"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "崇高",
+        "✕ Not a word",
+        "Real words: 症候・昇降",
+        "Real words: 走行・草稿"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-005",
+      "year": 2025,
+      "month": 7,
+      "number": 5,
+      "type": "漢字の読み方",
+      "question": "自分には裁くことができなかった。",
+      "target": "裁く",
+      "options": [
+        "あばく",
+        "つらぬく",
+        "あざむく",
+        "さばく"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "Real word: 暴く",
+        "Real word: 貫く",
+        "Real word: 欺く",
+        "裁く"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-006",
+      "year": 2025,
+      "month": 7,
+      "number": 6,
+      "type": "漢字の読み方",
+      "question": "親友に複雑な胸中を打ち明ける。",
+      "target": "胸中",
+      "options": [
+        "きょうじゅう",
+        "きゅうちゅう",
+        "きょうちゅう",
+        "きゅうじゅう"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "✕ Not a word",
+        "Real word: 宮中",
+        "胸中",
+        "✕ Not a word"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-007",
+      "year": 2025,
+      "month": 7,
+      "number": 7,
+      "type": "文脈規定",
+      "question": "二つの会社の（ ）によって、国内最大規模の食品会社が誕生した。",
+      "options": [
+        "合併",
+        "連鎖",
+        "合致",
+        "連帯"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "合併（がっぺい）",
+        "連鎖（れんさ）",
+        "合致（がっち）",
+        "連帯（れんたい）"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-008",
+      "year": 2025,
+      "month": 7,
+      "number": 8,
+      "type": "文脈規定",
+      "question": "中山さんは（ ）が器用で、子供たちの洋服はすべて自分で作っているそうだ。",
+      "options": [
+        "手元",
+        "手芸",
+        "手先",
+        "手際"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "手元（てもと）",
+        "手芸（しゅげい）",
+        "手先（てさき）",
+        "手際（てぎわ）"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-009",
+      "year": 2025,
+      "month": 7,
+      "number": 9,
+      "type": "文脈規定",
+      "question": "彼はまだ19歳だが、20歳以上が参加できるイベントに年齢を（ ）参加しようとした。",
+      "options": [
+        "惑わして",
+        "ごまかして",
+        "裏切って",
+        "くらまして"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "惑わす（まどわす）",
+        "ごまかす",
+        "裏切る（うらぎる）",
+        "くらます（晦ます）"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-010",
+      "year": 2025,
+      "month": 7,
+      "number": 10,
+      "type": "文脈規定",
+      "question": "活動報告の案をまとめたので、確認の上、足りない点があれば（ ）してください。",
+      "options": [
+        "混入",
+        "添加",
+        "加筆",
+        "注入"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "混入（こんにゅう）",
+        "添加（てんか）",
+        "加筆（かひつ）",
+        "注入（ちゅうにゅう）"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-011",
+      "year": 2025,
+      "month": 7,
+      "number": 11,
+      "type": "文脈規定",
+      "question": "原田さんは育児で何年も（ ）があったが、資格を取得し再就職が決まったそうだ。",
+      "options": [
+        "ブランク",
+        "ギャップ",
+        "フリー",
+        "ブレイク"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "ブランク",
+        "ギャップ",
+        "フリー",
+        "ブレイク"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-012",
+      "year": 2025,
+      "month": 7,
+      "number": 12,
+      "type": "文脈規定",
+      "question": "近頃の彼女の態度から、彼女の気持ちが変わったことには（ ）気づいていた。",
+      "options": [
+        "そよそよ",
+        "うすうす",
+        "ひんやり",
+        "しっとり"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "そよそよ",
+        "うすうす",
+        "ひんやり",
+        "しっとり"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-013",
+      "year": 2025,
+      "month": 7,
+      "number": 13,
+      "type": "文脈規定",
+      "question": "古い曲を聞いていたら、子供の頃の友の顔が（ ）に浮かんだ。",
+      "options": [
+        "内心",
+        "頭上",
+        "眼下",
+        "脳裏"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "内心（ないしん）",
+        "頭上（ずじょう）",
+        "眼下（がんか）",
+        "脳裏（のうり）"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-014",
+      "year": 2025,
+      "month": 7,
+      "number": 14,
+      "type": "言い換え類義",
+      "question": "まだいくつか着手していない仕事がある。",
+      "target": "着手して",
+      "options": [
+        "終わらせて",
+        "引き受けて",
+        "始めて",
+        "やり直して"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "終わらせる（おわらせる）",
+        "引き受ける（ひきうける）",
+        "始める（はじめる）",
+        "やり直す（やりなおす）"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-015",
+      "year": 2025,
+      "month": 7,
+      "number": 15,
+      "type": "言い換え類義",
+      "question": "このトレンドはしばらく続くものと見られている。",
+      "target": "トレンド",
+      "options": [
+        "関係",
+        "議論",
+        "混乱",
+        "傾向"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "関係（かんけい）",
+        "議論（ぎろん）",
+        "混乱（こんらん）",
+        "傾向（けいこう）"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-016",
+      "year": 2025,
+      "month": 7,
+      "number": 16,
+      "type": "言い換え類義",
+      "question": "中川さんは転職した会社で破格の待遇を受けたらしい。",
+      "target": "破格",
+      "options": [
+        "最も低い",
+        "不公平な",
+        "希望どおりの",
+        "特別によい"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "最も低い（もっともひくい）",
+        "不公平（ふこうへい）",
+        "希望どおり（きぼうどおり）",
+        "特別によい"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-017",
+      "year": 2025,
+      "month": 7,
+      "number": 17,
+      "type": "言い換え類義",
+      "question": "小学生の頃、友達を冷やかして叱られた。",
+      "target": "冷やかして",
+      "options": [
+        "だまして",
+        "からかって",
+        "驚かせて",
+        "たたいて"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "だます（騙す）",
+        "からかう",
+        "驚かせる（おどろかせる）",
+        "たたく（叩く）"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-018",
+      "year": 2025,
+      "month": 7,
+      "number": 18,
+      "type": "言い換え類義",
+      "question": "話を聞いた大木さんは怪訝な顔をした。",
+      "target": "怪訝な",
+      "options": [
+        "傷ついたような",
+        "あきれたような",
+        "不思議そうな",
+        "残念そうな"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "傷つく（きずつく）",
+        "あきれる（呆れる）",
+        "不思議（ふしぎ）そう",
+        "残念（ざんねん）そう"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-019",
+      "year": 2025,
+      "month": 7,
+      "number": 19,
+      "type": "言い換え類義",
+      "question": "娘は反抗期なので、親の言うことに悉く反発する。",
+      "target": "悉く",
+      "options": [
+        "すべて",
+        "激しく",
+        "しつこく",
+        "わざと"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "すべて（全て）",
+        "激しく（はげしく）",
+        "しつこく",
+        "わざと"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-020",
+      "year": 2025,
+      "month": 7,
+      "number": 20,
+      "type": "言葉の用法",
+      "question": "「保留」の使い方として最もよいものを選んでください。",
+      "target": "保留",
+      "options": [
+        "デパートで子どもが迷子になったが、店員さんが保留",
+        "上司の意見を聞く必要があるため、先方への返答を保留",
+        "顧客のデータは随時このパソコンに保留",
+        "帰ろうとしたら、「もう少しゆっくりしていってください」と、保留"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "不选「デパートで子どもが迷子になったが、店員さんが保留」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「上司の意見を聞く必要があるため、先方への返答を保留」。符合题干的语义、搭配或上下文条件。",
+        "不选「顧客のデータは随時このパソコンに保留」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「帰ろうとしたら、「もう少しゆっくりしていってください」と、保留」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-021",
+      "year": 2025,
+      "month": 7,
+      "number": 21,
+      "type": "言葉の用法",
+      "question": "「緩和」の使い方として最もよいものを選んでください。",
+      "target": "緩和",
+      "options": [
+        "工事についてあらかじめ住民に知らせたほうが、苦情の緩和",
+        "社員の働きやすさを実現するため、職場環境の緩和",
+        "無駄なコピーをしないようにすることで、経費の緩和",
+        "電車の車両を増やすことで、通勤時における混雑の緩和"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选「工事についてあらかじめ住民に知らせたほうが、苦情の緩和」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「社員の働きやすさを実現するため、職場環境の緩和」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「無駄なコピーをしないようにすることで、経費の緩和」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「電車の車両を増やすことで、通勤時における混雑の緩和」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-022",
+      "year": 2025,
+      "month": 7,
+      "number": 22,
+      "type": "言葉の用法",
+      "question": "「程遠い」の使い方として最もよいものを選んでください。",
+      "target": "程遠い",
+      "options": [
+        "店の売り上げはかなり増えたが、まだ目標には程遠い",
+        "卒業後、学生時代の友人とのつながりが徐々に程遠く",
+        "子どものころのことは、記憶が程遠く",
+        "職場の同僚たちは、それぞれ年齢や趣味は程遠い"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解「店の売り上げはかなり増えたが、まだ目標には程遠い」。符合题干的语义、搭配或上下文条件。",
+        "不选「卒業後、学生時代の友人とのつながりが徐々に程遠く」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「子どものころのことは、記憶が程遠く」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「職場の同僚たちは、それぞれ年齢や趣味は程遠い」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-023",
+      "year": 2025,
+      "month": 7,
+      "number": 23,
+      "type": "言葉の用法",
+      "question": "「まろやか」の使い方として最もよいものを選んでください。",
+      "target": "まろやか",
+      "options": [
+        "迷子になって泣いている子どもを安心させようと、まろやか",
+        "妹は怒りっぽい私とは反対で、まろやか",
+        "少しクリームと砂糖を入れたら、まろやか",
+        "この毛布はとてもまろやか"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选「迷子になって泣いている子どもを安心させようと、まろやか」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「妹は怒りっぽい私とは反対で、まろやか」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「少しクリームと砂糖を入れたら、まろやか」。符合题干的语义、搭配或上下文条件。",
+        "不选「この毛布はとてもまろやか」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-024",
+      "year": 2025,
+      "month": 7,
+      "number": 24,
+      "type": "言葉の用法",
+      "question": "「脱却」の使い方として最もよいものを選んでください。",
+      "target": "脱却",
+      "options": [
+        "組織の発展のためには、現在の古い体制から脱却",
+        "仕事が忙しくなったので、趣味で続けていたテニスのサークルを脱却",
+        "マラソン大会で、林選手は皆の予想を脱却",
+        "少し疲れたので、パーティーの途中で会場から脱却"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解「組織の発展のためには、現在の古い体制から脱却」。符合题干的语义、搭配或上下文条件。",
+        "不选「仕事が忙しくなったので、趣味で続けていたテニスのサークルを脱却」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「マラソン大会で、林選手は皆の予想を脱却」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「少し疲れたので、パーティーの途中で会場から脱却」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-025",
+      "year": 2025,
+      "month": 7,
+      "number": 25,
+      "type": "言葉の用法",
+      "question": "「使いこなす」の使い方として最もよいものを選んでください。",
+      "target": "使いこなす",
+      "options": [
+        "今年度の予算は使いこなして",
+        "あの人は相手によって態度を使いこなす",
+        "革のかばんは、長く使いこなす",
+        "兄はマニュアルを少し読んだだけで、その機材を使いこなして"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选「今年度の予算は使いこなして」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「あの人は相手によって態度を使いこなす」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「革のかばんは、長く使いこなす」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「兄はマニュアルを少し読んだだけで、その機材を使いこなして」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-026",
+      "year": 2025,
+      "month": 7,
+      "number": 26,
+      "type": "文の文法",
+      "question": "好きなことを我慢して　する節約は長く続かないと思う。",
+      "options": [
+        "さえ",
+        "まで",
+        "こそ",
+        "のみ"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "さえeven… (giving an extreme example) — attaches after a noun or particle (「子どもさえ知っている」), so it does not attach to Vて.",
+        "まで「〜てまで」＝going so far as to…, which neatly carries the extreme sense of 'putting up with even the things one likes'.　✓",
+        "こそonly through… / precisely by… (emphasis) — 「〜てこそ」 is a positive evaluation (努力してこそ成功する), the opposite of the critical tone of the following clause.",
+        "のみonly, merely (limitation, literary) — attaches to nouns, not Vて."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-027",
+      "year": 2025,
+      "month": 7,
+      "number": 27,
+      "type": "文の文法",
+      "question": "脳科学の研究が進んだ現代　、人が夢を見るメカニズムについては解明できない部分が多い。",
+      "options": [
+        "にあっても",
+        "に至っては",
+        "をめぐって",
+        "を踏まえて"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "にあってもEven in an age of… — it comes with an adversative sense, which neatly catches the contrast in the second half.　✓",
+        "に至ってはAs for…, then all the more… (commenting by giving an extreme example) — the following clause must evaluate that example, and it does not express a turn.",
+        "をめぐってCentering on… (the focal point of a debate) — the following clause must be a contentious act such as 「議論する／対立する」, not 「部分が多い」.",
+        "を踏まえてBased on… (taking … as the basis for a further action) — the following clause must be a volitional act (「〜を踏まえて検討する), not a description of a state."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-028",
+      "year": 2025,
+      "month": 7,
+      "number": 28,
+      "type": "文の文法",
+      "question": "同僚の山川さんは、相手が　おかしいと思ったことを指摘せずにはいられない性格だ。",
+      "options": [
+        "先輩やら上司やら",
+        "先輩なり上司なり",
+        "先輩というか上司というか",
+        "先輩だろうが上司だろうが"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "先輩やら上司やらboth a senior and a superior (jumbled listing) — 「〜やら〜やら」 indicates a messy heap of things, with a weary, fed-up tone; the following clause is mostly about chaos or trouble.",
+        "先輩なり上司なりeither a senior or a superior will do (choose either) — it gives the other person a choice, and the following clause is often a command or suggestion (「相談するなりしなさい」).",
+        "先輩というか上司というかwhether to call them a senior or a superior (hesitant wording) — used when the speaker is unsure how to describe something, but here the other person's status is clear.",
+        "先輩だろうが上司だろうがWhether a senior or a superior, it is pointed out all the same.　✓"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-029",
+      "year": 2025,
+      "month": 7,
+      "number": 29,
+      "type": "文の文法",
+      "question": "今日だけは遅刻できない　、なぜか電車が遅れる。",
+      "options": [
+        "ときに限って",
+        "ことに反して",
+        "というときに限って",
+        "ということに反して"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "ときに限って just when… — the meaning is right but the attachment is wrong. What comes before must be a noun; it cannot take a full sentence.",
+        "ことに反してcontrary to… — 「〜に反して」 is contrary to expectation (「予想に反して」), and it also attaches to nouns, so it is a double mismatch.",
+        "というときに限ってSentence ＋「という」＋「ときに限って」 — both attachment and meaning are right.　✓",
+        "ということに反して「という」 is right on this point, but the meaning (contrary) and the nuance (helplessness) are both wrong."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-030",
+      "year": 2025,
+      "month": 7,
+      "number": 30,
+      "type": "文の文法",
+      "question": "この小説は、政界の権力の争いを題材　、描かれているのは家族のきずなであり、多くの人の心に響く感動の物語となっている。",
+      "options": [
+        "であることで",
+        "とすることで",
+        "でありながらも",
+        "としながらも"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "であることで「である」 clashes with the preceding 「を」, and 「ことで」 has no turn either — wrong on both counts.",
+        "とすることで「と」 is right, but 「ことで」＝ by… (means), and it cannot lead into the contrast that follows.",
+        "でありながらも「ながらも」 is right, but 「である」 clashes with 「を」 — 「争いを題材である」 does not work.",
+        "としながらもThe 「を〜とする」 frame + adversative 「ながらも」 — both layers are right.　✓"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-031",
+      "year": 2025,
+      "month": 7,
+      "number": 31,
+      "type": "文の文法",
+      "question": "昨日、ジョギング中に足首を痛めてしまった。ちょっとひねっただけなので、病院で　、今朝もまだ少し痛む。",
+      "options": [
+        "診てもらうほどではないものの",
+        "診てもらうほどではないどころか",
+        "診てもらわなくてはならないものの",
+        "診てもらわなくてはならないどころか"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "診てもらうほどではないもののAlthough it's not bad enough to see a doctor, (it still hurts a little) — both the degree and the contrast are right. ✓",
+        "診てもらうほどではないどころかThe degree judgment is right, but the clause after 「どころか」 must be more extreme, 「まだ少し痛む」 falls far short.",
+        "診てもらわなくてはならないもののThe concessive is right, but it clashes with the previous sentence 「ちょっとひねっただけ」, which makes it contradictory — if it was only a slight twist, how could going be a must?",
+        "診てもらわなくてはならないどころかBoth the degree and the connective are wrong."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-032",
+      "year": 2025,
+      "month": 7,
+      "number": 32,
+      "type": "文の文法",
+      "question": "息子は子どもの頃、色の好き嫌いがはっきりしていて、嫌な服を決して　。",
+      "options": [
+        "着るまでもなかった",
+        "着るわけにはいかなかった",
+        "着ようがなかった",
+        "着ようとはしなかった"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "着るまでもなかったNo need to wear it (unnecessary) — an objective judgment that it's unnecessary, not that the child refuses.",
+        "着るわけにはいかなかったCannot wear it (external constraint: duty, rules, social obligation) — but here the resistance comes from the child himself.",
+        "着ようがなかったWants to but has no way to wear it (lacking means or conditions) — the clothes are right there, so it's not that there is no way.",
+        "着ようとはしなかったRefuses to wear it no matter what — the resistance comes from the subject's own will. ✓"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-033",
+      "year": 2025,
+      "month": 7,
+      "number": 33,
+      "type": "文の文法",
+      "question": "弊社は地球環境に配慮した製品の開発をさらに進めて　。",
+      "options": [
+        "まいります",
+        "いたします",
+        "いらっしゃいます",
+        "なさいます"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "まいりますThe humble form of 「〜ていきます」, expressing continuing from now on — the register and the attachment are both correct. ✓",
+        "いたしますHumble form of 「する」 — does not follow 「て形」 (it would have to be 「開発をいたします」).",
+        "いらっしゃいます「いる／行く／来る」 is the honorific form — used for the other party; applying it to one's own company is wrong.",
+        "なさいます「する」's honorific form — likewise usable only for the other party."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-034",
+      "year": 2025,
+      "month": 7,
+      "number": 34,
+      "type": "文の文法",
+      "question": "友人の田中が起業した会社が順調だという。あのとき、「うちの会社に来ないか」という彼の誘いを断らなければ、今ごろ部長くらいには　。",
+      "options": [
+        "なってきたようだ",
+        "なっていたかもしれない",
+        "なってほしいようだ",
+        "なっていくかもしれない"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "なってきたようだ(Has kept) becoming… — 「〜てくる」 describes a process that actually took place, which contradicts the counterfactual.",
+        "なっていたかもしれないMight already have become — 「〜ていた」 + conjecture is exactly the form a counterfactual sentence needs. ✓",
+        "なってほしいようだHope (he) becomes… — this turns into a wish, and the person is wrong (the sentence is about the speaker himself).",
+        "なっていくかもしれないWill gradually become — 「〜ていく」 points toward the future, but a counterfactual is about what should already have happened in the past."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-035",
+      "year": 2025,
+      "month": 7,
+      "number": 35,
+      "type": "文の文法",
+      "question": "あんな大きな問題を起こした彼が、何の責任も　。",
+      "options": [
+        "取りかねないわけだ",
+        "取らざるを得ないわけだ",
+        "取らずに済むわけがない",
+        "取り切れるわけがない"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "取りかねないわけだMight end up taking it (no wonder) — 「かねない」 expresses a possible bad outcome, and 「わけだ」 expresses a sudden realization, so the tone is completely off.",
+        "取らざるを得ないわけだHas no choice but to take it (no wonder) — the meaning points the right way, but 「わけだ」 has the 「no wonder」 explanatory tone, and the sentence has no premise that needs explaining.",
+        "取らずに済むわけがないImpossible not to take it — a double negative, picking up the 「何の〜も」.　✓",
+        "取り切れるわけがないIt's impossible to take it all — 「〜切れる」 means 'able to finish doing', so it would become 'there is too much responsibility to bear it all', which departs from the original meaning."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-036",
+      "year": 2025,
+      "month": 7,
+      "number": 36,
+      "type": "文の組み立て",
+      "question": "高級車には憧れるが、私の給料では、宝くじに ★ ＿＿ ＿＿ ＿＿ 一生買いそうにない。",
+      "options": [
+        "しない",
+        "でも",
+        "当たり",
+        "限り"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选「しない」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「でも」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「当たり」。符合题干的语义、搭配或上下文条件。",
+        "不选「限り」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "source_conflict",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE",
+          "SECONDARY_ANSWER_CONFLICT"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-037",
+      "year": 2025,
+      "month": 7,
+      "number": 37,
+      "type": "文の組み立て",
+      "question": "年中無休で営業していて、私たちの日常生活に欠かせない ＿＿ ＿＿ ★ ＿＿ 店舗も出てきている。",
+      "options": [
+        "コンビニだが",
+        "定休日を設ける",
+        "近年の人手不足などにより",
+        "存在である"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "不选「コンビニだが」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「定休日を設ける」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「近年の人手不足などにより」。符合题干的语义、搭配或上下文条件。",
+        "不选「存在である」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-038",
+      "year": 2025,
+      "month": 7,
+      "number": 38,
+      "type": "文の組み立て",
+      "question": "3歳の娘は毎日同じアニメのDVDを楽しそうに見ている。いくら ＿＿ ＿＿ ★ ＿＿ その様子がない。",
+      "options": [
+        "一向に",
+        "飽きそうなものなのに",
+        "毎日見ていたら",
+        "好きだからといって"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "不选「一向に」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「飽きそうなものなのに」。符合题干的语义、搭配或上下文条件。",
+        "不选「毎日見ていたら」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「好きだからといって」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-039",
+      "year": 2025,
+      "month": 7,
+      "number": 39,
+      "type": "文の組み立て",
+      "question": "医者「よく寝ているはずなのに日中眠い、夜中に何度も目が覚める ＿＿ ＿＿ ★ ＿＿ 可能性があります。睡眠のことでお悩みの方は、一度医療機関を受診されることをお勧めします。」",
+      "options": [
+        "何らかの病気の",
+        "といった",
+        "睡眠に関する症状は",
+        "サインである"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解「何らかの病気の」。符合题干的语义、搭配或上下文条件。",
+        "不选「といった」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「睡眠に関する症状は」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「サインである」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-040",
+      "year": 2025,
+      "month": 7,
+      "number": 40,
+      "type": "文の組み立て",
+      "question": "先日、環境問題をテーマにしたシンポジウムに参加し、専門家による ＿＿ ＿＿ ★ ＿＿ 深く考えさせられた。",
+      "options": [
+        "現状について",
+        "便利で快適な暮らしと引き換えに",
+        "講演を聞いて",
+        "限りある大切な資源が失われつつある"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选「現状について」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「便利で快適な暮らしと引き換えに」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「講演を聞いて」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「限りある大切な資源が失われつつある」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-041",
+      "year": 2025,
+      "month": 7,
+      "number": 41,
+      "type": "文章の文法",
+      "question": "以下は、元アナウンサーが人間関係やコミュニケーションについて書いた文章である。\n元アナウンサーなのでよく「失敗しないコミュニケーション術を教えてください」ときかれます。失敗しないコミュニケーションとはなんでしょう。ニュースキャスターのように滑らかに喋れるようになること？ひな壇トークの真似事（注1）が上手になること？私はどちらも違うと思います。\nそもそも、コミュニケーションの目的はなんでしょうか。誰からも嫌われないこと？注目されること？ほめられること？賢そうに見せること？相手を思い通りに動かすこと？なるほど、どれも就活の面接や仕事のプレゼンでは役に立ちそうですね。でも、それ　41　人との関わりではありません。\n私は、今でも人と関わることが苦手です。もっと人の気持ちをわかるようになりたいと悔いることばかりです。でも、みんな脳みそが違うからどうしたってわからないのです。それなりに考えて言った言葉に対して予期せぬ反応が返ってくることも珍しくありません。迂闊なミスもあります。相手の心のコンディションにもよります。人とのやりとりは、しょっちゅう　42　。\n相手の反応が予測と違った時は、関係を変化させる好機でもあります。ずれの修正の過程で以前より親しくなることも。誤解を　43　長い話し合いが必要になるでしょう。それにちゃんと取り組むのはなかなか胆力がいります。このめんどくさいやりとりこそが、人との関わりの醍醐味です。摩擦を回避するために「失敗しない会話」をマスターしようとするのは、むしろコミュニケーションからの　44　。\nそつなく（注2）話す人が増えるよりも、めんどくさくても時間がかかっても、なんとかして伝えられないかと悩む人、つまり諦めが悪く懲りない人が増える方が、世の中は寛容で豊かになるでしょう。失敗万歳です。\n（注1）ひな壇トークの真似事：テレビに出るタレントのように、テンポよく話すこと\n　（注2）そつなく：要領よく\n\n",
+      "options": [
+        "しか",
+        "なら",
+        "すらも",
+        "だけが"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "しか「しか」 must pair with a negative, but 「しか〜ではありません」 = 「only … is not …」, which twists the meaning completely.",
+        "ならIf it is … (condition)—there is no hypothesis in the sentence, and 「それなら」 would become a conjunction, which makes no sense.",
+        "すらもEven … (extreme example)—「not even this counts as interaction」 is too strong, and with the previous sentence's 「なるほど、役に立ちそう」 (a partial affirmation) it is self-contradictory.",
+        "だけが「〜だけが〜ではない」＝Partial negation: not only these. ✓"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-042",
+      "year": 2025,
+      "month": 7,
+      "number": 42,
+      "type": "文章の文法",
+      "question": "以下は、元アナウンサーが人間関係やコミュニケーションについて書いた文章である。\n元アナウンサーなのでよく「失敗しないコミュニケーション術を教えてください」ときかれます。失敗しないコミュニケーションとはなんでしょう。ニュースキャスターのように滑らかに喋れるようになること？ひな壇トークの真似事（注1）が上手になること？私はどちらも違うと思います。\nそもそも、コミュニケーションの目的はなんでしょうか。誰からも嫌われないこと？注目されること？ほめられること？賢そうに見せること？相手を思い通りに動かすこと？なるほど、どれも就活の面接や仕事のプレゼンでは役に立ちそうですね。でも、それ　41　人との関わりではありません。\n私は、今でも人と関わることが苦手です。もっと人の気持ちをわかるようになりたいと悔いることばかりです。でも、みんな脳みそが違うからどうしたってわからないのです。それなりに考えて言った言葉に対して予期せぬ反応が返ってくることも珍しくありません。迂闊なミスもあります。相手の心のコンディションにもよります。人とのやりとりは、しょっちゅう　42　。\n相手の反応が予測と違った時は、関係を変化させる好機でもあります。ずれの修正の過程で以前より親しくなることも。誤解を　43　長い話し合いが必要になるでしょう。それにちゃんと取り組むのはなかなか胆力がいります。このめんどくさいやりとりこそが、人との関わりの醍醐味です。摩擦を回避するために「失敗しない会話」をマスターしようとするのは、むしろコミュニケーションからの　44　。\nそつなく（注2）話す人が増えるよりも、めんどくさくても時間がかかっても、なんとかして伝えられないかと悩む人、つまり諦めが悪く懲りない人が増える方が、世の中は寛容で豊かになるでしょう。失敗万歳です。\n（注1）ひな壇トークの真似事：テレビに出るタレントのように、テンポよく話すこと\n　（注2）そつなく：要領よく\n\n",
+      "options": [
+        "失敗しっぱい",
+        "失敗しっぱい",
+        "失敗しっぱい",
+        "失敗しっぱい"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "失敗するに越したことはありませんFailure is best—「に越したことはない」 is a recommendation of the best option, and saying 「it is best to fail」 is absurd.",
+        "失敗するわけにはいきませんMust not fail—expresses will or obligation, but the author's claim throughout the text is exactly the opposite (it ends with 「失敗万歳」).",
+        "失敗するものなのですFailing is only natural (common sense)—it sums up the three preceding examples, and the tone fits too. ✓",
+        "失敗するほどですTo the extent of failing—「〜ほどだ」 is used to illustrate a degree, and it needs a preceding thing to describe; the sentence structure does not fit."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-043",
+      "year": 2025,
+      "month": 7,
+      "number": 43,
+      "type": "文章の文法",
+      "question": "以下は、元アナウンサーが人間関係やコミュニケーションについて書いた文章である。\n元アナウンサーなのでよく「失敗しないコミュニケーション術を教えてください」ときかれます。失敗しないコミュニケーションとはなんでしょう。ニュースキャスターのように滑らかに喋れるようになること？ひな壇トークの真似事（注1）が上手になること？私はどちらも違うと思います。\nそもそも、コミュニケーションの目的はなんでしょうか。誰からも嫌われないこと？注目されること？ほめられること？賢そうに見せること？相手を思い通りに動かすこと？なるほど、どれも就活の面接や仕事のプレゼンでは役に立ちそうですね。でも、それ　41　人との関わりではありません。\n私は、今でも人と関わることが苦手です。もっと人の気持ちをわかるようになりたいと悔いることばかりです。でも、みんな脳みそが違うからどうしたってわからないのです。それなりに考えて言った言葉に対して予期せぬ反応が返ってくることも珍しくありません。迂闊なミスもあります。相手の心のコンディションにもよります。人とのやりとりは、しょっちゅう　42　。\n相手の反応が予測と違った時は、関係を変化させる好機でもあります。ずれの修正の過程で以前より親しくなることも。誤解を　43　長い話し合いが必要になるでしょう。それにちゃんと取り組むのはなかなか胆力がいります。このめんどくさいやりとりこそが、人との関わりの醍醐味です。摩擦を回避するために「失敗しない会話」をマスターしようとするのは、むしろコミュニケーションからの　44　。\nそつなく（注2）話す人が増えるよりも、めんどくさくても時間がかかっても、なんとかして伝えられないかと悩む人、つまり諦めが悪く懲りない人が増える方が、世の中は寛容で豊かになるでしょう。失敗万歳です。\n（注1）ひな壇トークの真似事：テレビに出るタレントのように、テンポよく話すこと\n　（注2）そつなく：要領よく\n\n",
+      "options": [
+        "解くとく",
+        "解かとか",
+        "解いとい",
+        "解いとい"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "解くためにはIn order to resolve the misunderstanding (purpose) → a long talk is needed (means). Both the order and the logic are right. ✓",
+        "解かなければIf it is not resolved (condition)—the main clause should be a negative consequence, not 「a long talk is needed」.",
+        "解いたうえでAfter resolving it, and then …—treats 「resolving」 as an already-completed premise, yet the long talk is exactly what resolves it, so this is a reversal of cause and effect.",
+        "解いたからこそPrecisely because it was resolved …—again treats resolving as already done, and 「〜からこそ」 must be followed by a good result, which does not fit 「a long talk is needed」."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-044",
+      "year": 2025,
+      "month": 7,
+      "number": 44,
+      "type": "文章の文法",
+      "question": "以下は、元アナウンサーが人間関係やコミュニケーションについて書いた文章である。\n元アナウンサーなのでよく「失敗しないコミュニケーション術を教えてください」ときかれます。失敗しないコミュニケーションとはなんでしょう。ニュースキャスターのように滑らかに喋れるようになること？ひな壇トークの真似事（注1）が上手になること？私はどちらも違うと思います。\nそもそも、コミュニケーションの目的はなんでしょうか。誰からも嫌われないこと？注目されること？ほめられること？賢そうに見せること？相手を思い通りに動かすこと？なるほど、どれも就活の面接や仕事のプレゼンでは役に立ちそうですね。でも、それ　41　人との関わりではありません。\n私は、今でも人と関わることが苦手です。もっと人の気持ちをわかるようになりたいと悔いることばかりです。でも、みんな脳みそが違うからどうしたってわからないのです。それなりに考えて言った言葉に対して予期せぬ反応が返ってくることも珍しくありません。迂闊なミスもあります。相手の心のコンディションにもよります。人とのやりとりは、しょっちゅう　42　。\n相手の反応が予測と違った時は、関係を変化させる好機でもあります。ずれの修正の過程で以前より親しくなることも。誤解を　43　長い話し合いが必要になるでしょう。それにちゃんと取り組むのはなかなか胆力がいります。このめんどくさいやりとりこそが、人との関わりの醍醐味です。摩擦を回避するために「失敗しない会話」をマスターしようとするのは、むしろコミュニケーションからの　44　。\nそつなく（注2）話す人が増えるよりも、めんどくさくても時間がかかっても、なんとかして伝えられないかと悩む人、つまり諦めが悪く懲りない人が増える方が、世の中は寛容で豊かになるでしょう。失敗万歳です。\n（注1）ひな壇トークの真似事：テレビに出るタレントのように、テンポよく話すこと\n　（注2）そつなく：要領よく\n\n",
+      "options": [
+        "逃避とうひ",
+        "逃避とうひ",
+        "逃避とうひ",
+        "逃避とうひ"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "逃避だと思うでしょう(You) would probably think it is an escape—this becomes guessing the reader's thoughts, pushing the author's own claim onto someone else.",
+        "逃避でしょう(One can say) it is an escape, I suppose—the author's own assertion, with just the right tone. ✓",
+        "逃避だと思いがちですYou tend to think it is an escape—「〜がちだ」 = tends to, often, describing a general tendency, not the author making a judgment.",
+        "逃避であるかのようですAs if it were an escape—「〜かのようだ」 is a simile (implying that it actually is not), but the author thinks it is an escape."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-045",
+      "year": 2025,
+      "month": 7,
+      "number": 45,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n（１）社会というのは抽象的な概念だ。だから、社会を見せてみろといわれても、見せることはできない。テレビでニュース映像を見ていても社会を見たことにはならない。では、社会はどうしたら目に見えるか。それが街である。街の中で人と人がどう具体的に関係し合っているかを見せるしか、社会は見せようがない。人と人の具体的な関係こそが社会だからだ。物をつくる人がいて、運ぶ人がいて、売る人がいて、買う人がいる。そうした人々の無数の行為の連関として社会は存在する。街は、その諸行為の連関を具体的に見せてくれる場なのだ。\n(注)連関：ここでは、つながり\n\nSociety is an abstract concept.So even if someone tells you to “show me society,” you cannot put it on display.Even watching news footage on TV does not mean you have seen society.So how can society be made visible?The answer is the town.Society can be shown only by showing how people in the town are concretely connected to one another; there is no other way.Because the concrete relationships between people are society itself.There are people who make things, people who transport them, people who sell them, and people who buy them.Society exists precisely as the interconnection of the countless acts of these people.The town is the place that shows us concretely the interconnection of these many acts.\n\n社会について、筆者はどのように考えているか。",
+      "options": [
+        "街の人々の個々の行為を理解することで、社会の仕組みが把握できる。",
+        "街の人々の多様性に着目することで、社会の複雑さに気づける。",
+        "街の人々の関係を見ることで、社会の姿が捉えられる。",
+        "街の経済活動に参加することで、社会のつながりが見えてくる。"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "街の人々の個々の行為を理解することで、社会の仕組みが把握できる。すり替えSwaps what the author emphasizes, 「関係 (relationships between people)」, for 「個々の行為 (individual acts)」. The author says 「人と人の具体的な関係こそが社会」; the point is relationships, not isolated individual acts; also, 「社会の仕組みを把握」 is not how the text puts it (the original is about making society “visible”).",
+        "街の人々の多様性に着目することで、社会の複雑さに気づける。本文になし「多様性」「複雑さ」: in the text, neither is mentioned. The author is explaining “how to make an abstract society visible,” not discussing the diversity or complexity of society.",
+        "正解 ○This is a paraphrase of the key sentences 「街の中で人と人がどう関係し合っているかを見せる」＋「人と人の関係こそが社会」, restated.Looking at how people in the town relate (関係を見る) = capturing the shape of society (社会の姿が捉えられる): a perfect match.",
+        "街の経済活動に参加することで、社会のつながりが見えてくる。すり替えSwaps 「見せる／見る (to show / to look at)」 for 「参加する (to participate)」. The author's logic is “making society visible through looking at the town”; he never says one must “take part in economic activity”; and 「経済活動」 also narrows 「作る・運ぶ・売る・買う」 down."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-046",
+      "year": 2025,
+      "month": 7,
+      "number": 46,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n（２）病気は、しばしば「鵺」にたとえられます。「鵺」は、頭は猿、胴は狸、尾は蛇、手足は虎という奇怪な物の怪で、からだの一部だけを見てもその本態を捉えることはできません。実は「病気」もこの「鵺」によく似ていて、私たちに多彩な症状を見せますが、その症状を生み出している、病気の「本体」を捉えることは容易ではありません。私たち医師は、病気というさまざまな「鵺」を、症状を手がかりにして引きずり出さなければならないのです。\n(注)物の怪：ここでは、想像上の生き物\n\nDisease is often compared to the “nue.”The “nue” is a strange creature with the head of a monkey, the body of a tanuki, the tail of a snake, and the limbs of a tiger; looking at just one part of its body, you cannot grasp its true form.In fact, “disease” closely resembles this “nue”: it presents us with a wide variety of symptoms, but grasping the “thing itself,” the disease that produces those symptoms, is not easy.We doctors must use symptoms as clues to drag out each of these “nue” that are diseases.\n\n筆者によると、診断のときに医師はどうするべきか。",
+      "options": [
+        "あらゆる症状を見て、病気を特定するべきだ。",
+        "からだ全体を見て、目に見えない症状を探るべきだ。",
+        "多様な症状を見て、複数の病気の影響を疑うべきだ。",
+        "特徴的な症状から、根本的な原因を見つけ出すべきだ。"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解 ○「あらゆる症状 (all symptoms)」 is exactly the flip side of 「一部だけを見てもダメ」 (one must look at everything); 「病気を特定 (pin down the disease)」 = 「病気という鵺を引きずり出す (drag out the disease itself)」. Fully consistent.",
+        "からだ全体を見て、目に見えない症状を探るべきだ。本文になし「目に見えない症状を探る」 has no basis in the text—the text says what a disease presents is 「多彩な症状 (the various visible symptoms)」, and what must be combined are these symptoms, not a search for “invisible symptoms.” 「からだ全体」 also mistakes the vehicle of the metaphor (the nue's body) for the patient's body.",
+        "多様な症状を見て、複数の病気の影響を疑うべきだ。すり替えReplaces 「一つの病気 showing varied symptoms」 with 「複数の病気 (multiple diseases)」. The text says that the same disease (one “nue”) shows many symptoms, and what must be grasped is its sole 「本体」, not a suspicion of several diseases acting together.",
+        "特徴的な症状から、根本的な原因を見つけ出すべきだ。筆者と逆「特徴的な症状（から）」 = going by just one or some symptoms, which collides head-on with what the author denies: 「一部だけを見てもその本態を捉えることはできません」. What the author wants is all the symptoms viewed together, the opposite of “starting from characteristic symptoms.”"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "source_conflict",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE",
+          "SECONDARY_ANSWER_CONFLICT"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-047",
+      "year": 2025,
+      "month": 7,
+      "number": 47,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n（３）特許とは、ある企業が開発した新製品を、別な企業がまねして生産して利益をあげることを一定期間防止する制度である。新製品の開発には通常多額の資金が必要なので、新製品を一定期間独占的に販売して開発資金の回収を認める仕組みになっている。こうした制度がなければ、企業はリスクのある新製品開発に躊躇してしまい、社会の発展が阻害されてしまう。特許には、企業同士の公正な開発競争を促す目的があるのだ。\n\nA patent is a system that prevents other companies, for a certain period, from imitating a new product developed by a company and profiting from producing it.Because developing a new product usually requires a huge amount of money, the system is designed to let a company sell the new product exclusively for a certain period in order to recover its development funds.Without such a system, companies would hesitate to develop risky new products, and the development of society would be hindered as a result.The purpose of the patent system is to promote fair development competition among companies.\n\n筆者によると、特許制度による企業の利点は何か。",
+      "options": [
+        "一定期間にいろいろな新製品を販売することができる。",
+        "新製品の開発に必要な資金を抑えることができる。",
+        "新製品の開発に安心して取り組むことができる。",
+        "ほかの企業との厳しい開発競争に勝つことができる。"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "一定期間にいろいろな新製品を販売することができる。すり替え「いろいろな新製品」 is an exaggeration. The text says 「新製品を一定期間独占的に販売」—exclusive selling of its own single new product, not “selling a wide variety of new products.” It borrows the wording of 「一定期間」 to mislead.",
+        "新製品の開発に必要な資金を抑えることができる。すり替えReplaces 「資金の回収 (recovering costs)」 with 「資金を抑える (holding costs down)」. A patent lets a company recover the huge sums it has invested, and it does not reduce the funds that development requires.",
+        "正解 ○Matches the flip side of sentence 3: 「制度がなければ企業は開発に躊躇してしまう」 = with a system, one can do R&D with peace of mind without worry. Add 「独占販売で開発資金を回収できる」, and this is exactly the benefit that lets companies 「安心して取り組む」.",
+        "ほかの企業との厳しい開発競争に勝つことができる。すり替えReplaces 「公正な開発競争を促す (promote fair competition)」 with 「競争に勝つ (win the competition)」. The purpose of a patent is to create fair competition, not to guarantee that a given company “wins”; 「厳しい」 is also an embellishment absent from the text."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-048",
+      "year": 2025,
+      "month": 7,
+      "number": 48,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n（４）知を愛し求める人は、自らの無知に人一倍、敏感であるがゆえに、ふだんは意識しない日々の営みの細部にまで十分な意識を払います。そこで自分があたりまえに受け入れていたことを見つけ出し、それは本当にあたりまえなのかと疑おうとするのです。このような仕方で「問い」を発し、あたりまえの根拠を吟味する経験を積み重ねると、一見すると透明に見える日常世界にもじつはさまざまな問題が隠れている、と感知できるようになります。\n\nA person who loves and pursues wisdom, being especially sensitive to their own ignorance, gives sufficient attention even to the details of everyday matters that ordinarily go unnoticed.He then picks out things he has always accepted as a matter of course, and tries to question whether they really are a matter of course.By continuing to ask questions in this way and repeatedly scrutinizing the grounds behind what is “taken for granted,” one comes in time to notice that, in an everyday world that looks clear and transparent, all sorts of problems in fact lie hidden.\n\n筆者の考えに合うのはどれか。",
+      "options": [
+        "自らの無知に気づいたら、当然だと思っていることを疑うべきだ。",
+        "ふだん意識しないことに意識を払えば、日々の問題解決につながる。",
+        "日常の多様な問題を吟味し問いを発し続ければ、人生が豊かになる。",
+        "無意識に受け入れていたことを疑うことで、見えなかった問題が見えてくる。"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "自らの無知に気づいたら、当然だと思っていることを疑うべきだ。部分的It picks up only the process of “doubting what is taken for granted,” and misses the author's real destination—「隠れた問題が見えてくる (noticing the hidden problems)」, the result. Moreover, the text describes how a lover of wisdom acts, and does not make a claim to the reader that one “should (べき)” do so.",
+        "ふだん意識しないことに意識を払えば、日々の問題解決につながる。すり替えReplaces 「問題が隠れていると感知できる (noticing that problems exist)」 with 「問題解決につながる (helps solve problems)」. What the author talks about is finding or seeing problems, with no mention of “solving” at all.",
+        "日常の多様な問題を吟味し問いを発し続ければ、人生が豊かになる。本文になしTwo errors: what is scrutinized is 「あたりまえの根拠 (the grounds for what is taken for granted)」, not 「多様な問題」; and the conclusion 「人生が豊かになる (life becomes richer)」 in the text never appears—the result in the text is “noticing hidden problems.”",
+        "正解 ○「無意識に受け入れていたこと」＝「あたりまえに受け入れていたこと」; 「疑う」 corresponds to 「疑おうとする」; 「見えなかった問題が見えてくる」 is exactly 「透明に見える日常世界にもさまざまな問題が隠れていると感知できる」. A point-by-point match."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-049",
+      "year": 2025,
+      "month": 7,
+      "number": 49,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n以下は、スポーツの分野におけるリーダーについて書かれた文章である。リーダーと呼ばれる立場にある者は、専門性をつねに高めていく努力を怠ってはならないのだが、以前なら、専門書を読むとか、より高い知識を持つ人に訊ねるとか、あるいは海外の最先端の情報を翻訳するなどすれば、ある程度は事足りたように思う。いわゆる「受け売り」であっても、それなりにカバーできたのだ。しかし、これだけ情報化が進むと、その程度の「知識」は、得ようとすれば誰もが得ることができる。誰もが知り得ていることを話しても意味はない。相手の行動を変えるきっかけにはなり得ない。つまり、もはや「受け売り」の専門性は通用しないということだ。誰もが知り得る知識を、より深めたものでなければ「専門性」にはならないのである。そうした専門性を身につけるためには、自分自身がほかの人間が知り得ないことを見聞したとか、あるいは実際にそうした領域に足を踏み入れたとかして、獲得したものでなければ、共感は呼びにくくなるのではないだろうか。そういう専門性が、これからは求められるのではないかと私は思うのだ。（中略）つまり、専門性にはなんらかの裏付けが必要になる、リアリティを感じさせることが重要になるということである。言葉を変えれば、「知っている」だけでは専門性にはならないということだ。「わかって」いなければならないということである。「知った」ことを、それまでの経験なども付け加えながら自分のなかで自分の言葉として置き換え、「わかる」に変換させなければ、専門性を高めたことにはならないのだ。\n(注1)事足りる：間に合う　(注2)カバーする：ここでは、必要を満たす\n\nThe following is a passage about leaders in the field of sports.Those in a position called leader must never neglect the effort to continually improve their expertise, but in the past, it seems that reading specialist books, asking people with greater knowledge, or translating the latest information from overseas was enough to get by to some extent.Even so-called “secondhand knowledge” could cover the need reasonably well.However, with information technology this advanced, anyone can acquire that level of “knowledge” if they try.There is no point in talking about what everyone already knows.It cannot become an occasion for changing the other person's behavior.In other words, expertise based on “secondhand knowledge” no longer works.Unless it deepens the knowledge that anyone can obtain, it does not count as “expertise.”To acquire such expertise, unless it has been gained by personally seeing and hearing things that other people cannot know, or by actually stepping into such a field, it would probably be hard to win empathy.I think that this kind of expertise will be what is required from now on.In other words, expertise needs some kind of backing, and it becomes important to convey a sense of reality.Put differently, merely “knowing” does not make for expertise.One must truly “understand.”Expertise has not been improved unless what has been “learned” is restated in one's own words, adding past experience and the like, and converted into “understanding.”\n\n「受け売り」の専門性について、筆者はどのように述べているか。",
+      "options": [
+        "情報化が進み、誰もが専門家のようになって必要なくなった。",
+        "情報や知識を誰もが簡単に得られる時代になり、意味がなくなった。",
+        "以前なら受け入れられたが、今では誰も関心を持たなくなった。",
+        "より新しい知識や情報が求められるようになり、役に立たなくなった。"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "不选「情報化が進み、誰もが専門家のようになって必要なくなった。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「情報や知識を誰もが簡単に得られる時代になり、意味がなくなった。」。符合题干的语义、搭配或上下文条件。",
+        "不选「以前なら受け入れられたが、今では誰も関心を持たなくなった。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「より新しい知識や情報が求められるようになり、役に立たなくなった。」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "source_conflict",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE",
+          "SECONDARY_ANSWER_CONFLICT"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-050",
+      "year": 2025,
+      "month": 7,
+      "number": 50,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n以下は、スポーツの分野におけるリーダーについて書かれた文章である。リーダーと呼ばれる立場にある者は、専門性をつねに高めていく努力を怠ってはならないのだが、以前なら、専門書を読むとか、より高い知識を持つ人に訊ねるとか、あるいは海外の最先端の情報を翻訳するなどすれば、ある程度は事足りたように思う。いわゆる「受け売り」であっても、それなりにカバーできたのだ。しかし、これだけ情報化が進むと、その程度の「知識」は、得ようとすれば誰もが得ることができる。誰もが知り得ていることを話しても意味はない。相手の行動を変えるきっかけにはなり得ない。つまり、もはや「受け売り」の専門性は通用しないということだ。誰もが知り得る知識を、より深めたものでなければ「専門性」にはならないのである。そうした専門性を身につけるためには、自分自身がほかの人間が知り得ないことを見聞したとか、あるいは実際にそうした領域に足を踏み入れたとかして、獲得したものでなければ、共感は呼びにくくなるのではないだろうか。そういう専門性が、これからは求められるのではないかと私は思うのだ。（中略）つまり、専門性にはなんらかの裏付けが必要になる、リアリティを感じさせることが重要になるということである。言葉を変えれば、「知っている」だけでは専門性にはならないということだ。「わかって」いなければならないということである。「知った」ことを、それまでの経験なども付け加えながら自分のなかで自分の言葉として置き換え、「わかる」に変換させなければ、専門性を高めたことにはならないのだ。\n(注1)事足りる：間に合う　(注2)カバーする：ここでは、必要を満たす\n\nThe following is a passage about leaders in the field of sports.Those in a position called leader must never neglect the effort to continually improve their expertise, but in the past, it seems that reading specialist books, asking people with greater knowledge, or translating the latest information from overseas was enough to get by to some extent.Even so-called “secondhand knowledge” could cover the need reasonably well.However, with information technology this advanced, anyone can acquire that level of “knowledge” if they try.There is no point in talking about what everyone already knows.It cannot become an occasion for changing the other person's behavior.In other words, expertise based on “secondhand knowledge” no longer works.Unless it deepens the knowledge that anyone can obtain, it does not count as “expertise.”To acquire such expertise, unless it has been gained by personally seeing and hearing things that other people cannot know, or by actually stepping into such a field, it would probably be hard to win empathy.I think that this kind of expertise will be what is required from now on.In other words, expertise needs some kind of backing, and it becomes important to convey a sense of reality.Put differently, merely “knowing” does not make for expertise.One must truly “understand.”Expertise has not been improved unless what has been “learned” is restated in one's own words, adding past experience and the like, and converted into “understanding.”\n\n筆者によると、リーダーに求められることは何か。",
+      "options": [
+        "今持っている専門的な知識や情報に満足せず、さらに知ろうとすること。",
+        "専門的な知識や情報に自身の経験などを加えて、専門性を高めていくこと。",
+        "より高い知識と最先端の情報を獲得して、専門性をさらに高めていくこと。",
+        "共感を得るために、専門的なことをわかりやすく伝えられるようにすること。"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "…満足せず、さらに知ろうとすること。部分的ズレOnly a quantitative “knowing a bit more (さらに知ろう)”, which lacks the key point: turning 「知る」 into 「わかる」 through experience, a qualitative change. Off target.",
+        "正解 ○「自身の経験などを加えて」＝ original それまでの経験なども付け加えながら; 「専門性を高めていく」＝ わかるに変換. It matches the concluding sentence.",
+        "より高い知識と最先端の情報を獲得して…筆者と逆“Higher knowledge and cutting-edge information” is precisely the former “受け売り” approach, which the author considers no longer workable. Contrary to the author's claim.",
+        "共感を得るために、わかりやすく伝えられるように…すり替えEmpathy comes from the 裏付け of “firsthand experience and actual involvement”, not “explaining things in an easy-to-understand way (わかりやすく伝える)”. The means is swapped."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-051",
+      "year": 2025,
+      "month": 7,
+      "number": 51,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n人はなにも考えないということはできません。考えていないようでも、いろんな記憶や印象や思いや感情がゴチャマゼになって決して筋道立ってなどいないでしょうが、なにかを考えてはいるのです。（中略）それを誰かに伝えなければいけないときは、私たちは、それを本の頁や原稿用紙のマス目に沿って絞り出すように、なんとかきれいに整えて「出力」していきます。そうでなければ、ほかの誰かは、あなたの考えを知ることも読むこともできないからです。そうすることで頭のなかが整理されたり、自分で思ってもいなかったような発想が浮かんでくることもあるでしょう。それこそが、書くことの恵みです。だから、ときどき私たちは、そうして出力されたものが最初から頭のなかにあったかのように勘違いをしてしまいます。でも、当然のことながら、頭のなかが最初からそうなっていたわけではありません。逆に、書いたり読んだり反問したりすることで、渾然一体としていた思いや感情や印象や考えの矛盾の「かたまり」のような豊かさが選別され、角を落とされ、成形されてしまうことも当然あります。これはある意味、とても惜しいことです。なぜなら、そういう腑分けは、されていない「かたまり」のような状態も、立派な「思考」だからです。そして、創造的な飛躍やひらめき、天から降ってきたようなアイデアというのは、こうした「かたまり」の思考がふつふつと化学反応のようなことを起こして、自分でもわからないまま、その「すきま」からひょいと飛び出してきたものなのです。\n\nPeople cannot think about nothing at all.Even when we seem not to be thinking, various memories, impressions, thoughts, and feelings are jumbled together with no real logical order, yet we are still thinking about something.When we have to convey that to someone, we wring it out along the lines of a book page or the squares of manuscript paper, tidying it up as neatly as we can and “outputting” it.Otherwise, other people can neither know nor read what one is thinking.By doing so, the mind may become organized, and ideas we had never imagined may even come to mind.That is precisely the blessing of writing.So we sometimes mistakenly think that what we have output in this way was in our minds from the start.But naturally, the mind was not like that from the start.Conversely, through writing, reading, and questioning ourselves, the rich “lump” of contradictory thoughts, feelings, impressions, and ideas that was once a seamless whole is inevitably sorted out, has its corners rounded off, and gets shaped.In a sense, this is a great pity.This is because even that state of not having been dissected, like a “lump,” is itself a worthy form of “thinking.”And creative leaps, flashes of inspiration, and ideas that seem to have fallen from the sky are things that this “lump” of thinking, bubbling away like a chemical reaction, suddenly sprang out of through its “gaps,” without even the thinker understanding how.\n\n筆者によると、書くことの利点は何か。",
+      "options": [
+        "記憶や感情が整理され、論理的に説明できるようになること。",
+        "深く考えるようになり、自分の考えがより明確になり得ること。",
+        "整えて書こうとすることで、人より優れた発想が得られること。",
+        "まとまりのない思いや感情が整理され、新しい発想につながりうること。"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选「記憶や感情が整理され、論理的に説明できるようになること。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「深く考えるようになり、自分の考えがより明確になり得ること。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「整えて書こうとすることで、人より優れた発想が得られること。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「まとまりのない思いや感情が整理され、新しい発想につながりうること。」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-052",
+      "year": 2025,
+      "month": 7,
+      "number": 52,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n人はなにも考えないということはできません。考えていないようでも、いろんな記憶や印象や思いや感情がゴチャマゼになって決して筋道立ってなどいないでしょうが、なにかを考えてはいるのです。（中略）それを誰かに伝えなければいけないときは、私たちは、それを本の頁や原稿用紙のマス目に沿って絞り出すように、なんとかきれいに整えて「出力」していきます。そうでなければ、ほかの誰かは、あなたの考えを知ることも読むこともできないからです。そうすることで頭のなかが整理されたり、自分で思ってもいなかったような発想が浮かんでくることもあるでしょう。それこそが、書くことの恵みです。だから、ときどき私たちは、そうして出力されたものが最初から頭のなかにあったかのように勘違いをしてしまいます。でも、当然のことながら、頭のなかが最初からそうなっていたわけではありません。逆に、書いたり読んだり反問したりすることで、渾然一体としていた思いや感情や印象や考えの矛盾の「かたまり」のような豊かさが選別され、角を落とされ、成形されてしまうことも当然あります。これはある意味、とても惜しいことです。なぜなら、そういう腑分けは、されていない「かたまり」のような状態も、立派な「思考」だからです。そして、創造的な飛躍やひらめき、天から降ってきたようなアイデアというのは、こうした「かたまり」の思考がふつふつと化学反応のようなことを起こして、自分でもわからないまま、その「すきま」からひょいと飛び出してきたものなのです。\n\nPeople cannot think about nothing at all.Even when we seem not to be thinking, various memories, impressions, thoughts, and feelings are jumbled together with no real logical order, yet we are still thinking about something.When we have to convey that to someone, we wring it out along the lines of a book page or the squares of manuscript paper, tidying it up as neatly as we can and “outputting” it.Otherwise, other people can neither know nor read what one is thinking.By doing so, the mind may become organized, and ideas we had never imagined may even come to mind.That is precisely the blessing of writing.So we sometimes mistakenly think that what we have output in this way was in our minds from the start.But naturally, the mind was not like that from the start.Conversely, through writing, reading, and questioning ourselves, the rich “lump” of contradictory thoughts, feelings, impressions, and ideas that was once a seamless whole is inevitably sorted out, has its corners rounded off, and gets shaped.In a sense, this is a great pity.This is because even that state of not having been dissected, like a “lump,” is itself a worthy form of “thinking.”And creative leaps, flashes of inspiration, and ideas that seem to have fallen from the sky are things that this “lump” of thinking, bubbling away like a chemical reaction, suddenly sprang out of through its “gaps,” without even the thinker understanding how.\n\n「とても惜しいことです」とあるが、なぜか。",
+      "options": [
+        "創造的なアイデアには思考の矛盾が不可欠だから。",
+        "整理されていない状態にも大切な思考があるから。",
+        "常に同じようなアイデアしか生み出せなくなるから。",
+        "思いや感情からしか創造的な思考は生まれないから。"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "…思考の矛盾が不可欠だから。すり替え“Contradiction” is merely a description of the lump-like thoughts; the author never says “contradiction is indispensable (矛盾が不可欠)”. A modifier is promoted to a reason.",
+        "正解 ○「整理されていない状態にも大切な思考がある」＝ original されていない「かたまり」のような状態も、立派な「思考」だ. It corresponds directly to なぜなら.",
+        "常に同じようなアイデアしか生み出せなくなるから。本文になし“Can only produce the same old ideas” is completely absent from the text. The consequence is fabricated out of nowhere.",
+        "思いや感情からしか創造的な思考は生まれないから。言い過ぎ“Only from thoughts and feelings can creative thinking arise (〜からしか…ない)” is an absolute statement; the text says creativity pops out of the “gaps” in lump-like thinking and makes no such claim."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-053",
+      "year": 2025,
+      "month": 7,
+      "number": 53,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n打ち合わせは参加するすべての人で議論をし、ひとつの結論を導き出していく作業である。その裏を返せば、意見が採用されていない人のほうが大勢いるのである。こうした場合、その場では納得しているものの、周囲からの扱われ方次第ではストレスが溜まっていくことになるであろう。「それならば、私はいなくてもいいじゃないですか」当然ながら、この先この人からはポジティブな発言は得られないであろう。メイン・アイデアを考えた人がすべての権限を握り始めたときは、特に注意が必要だ。最初に考えた人がその案件に責任を持つことは当然であるが、それと同時にチームのモチベーションへの責任も持つことになると心得なければならない。そのために、本筋でないことは譲るクセをつけてみてはいかがだろうか。では何が本筋で、何が本筋でないのか。それを客観的に計る基準は「正しいか、正しくないか」「好きか、嫌いか」に判断することができる。本筋は「正しいか、正しくないか」で判断され、本筋でないものは「好きか、嫌いか」で判断される。つまり、好きか、嫌いかという好みに関しては、個人的な一存で切り捨てるのではなく、さまざまな意見を積極的に受け入れるべきであると考える。そのことでチームのひとりひとりが自分の存在意義を感じ、前向きなアイデアを出してくれるようになるだろう。\n(注1)ポジティブな：前向きな　(注2)モチベーション：やる気　(注3)個人的な一存：自分ひとりだけの考え\n\nA meeting is a process in which everyone taking part discusses and draws out a single conclusion.Looking at it from the other side, those whose opinions are not adopted are in the majority.In such cases, although they accept the outcome on the spot, stress is likely to build up depending on how they are treated by those around them.“In that case, it makes no difference whether I'm here or not, does it?”Naturally, no positive remarks are likely to come from this person from then on.Special caution is needed when the person who came up with the main idea begins to hold all the authority.It is natural for the person who thought of it first to be responsible for the project, but they must bear in mind that, at the same time, they are also responsible for the team's motivation.For that reason, why not try getting into the habit of giving way on matters that are not the main point?So what is the main point, and what is not?The standard for measuring this objectively can be judged as “right or wrong” and “like or dislike.”The main point is judged by “right or wrong,” and what is not the main point is judged by “like or dislike.”In other words, I believe that when it comes to preferences of like or dislike, one should not cut things off on one's own personal say, but should actively accept a variety of opinions.By doing so, each member of the team will feel their own reason for being there and will come to offer positive ideas.\n\n自分の意見が採用されない人について、筆者はどのように述べているか。",
+      "options": [
+        "結論に納得できない場合でも、みんなの意見に従うようになるだろう。",
+        "どんな打ち合わせにも今後参加したくなくなるだろう。",
+        "周囲の人の意見に対して、否定的な意見しか言わなくなるだろう。",
+        "周囲の対応によっては、前向きな意見を言わなくなるだろう。"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选「結論に納得できない場合でも、みんなの意見に従うようになるだろう。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「どんな打ち合わせにも今後参加したくなくなるだろう。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「周囲の人の意見に対して、否定的な意見しか言わなくなるだろう。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「周囲の対応によっては、前向きな意見を言わなくなるだろう。」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-054",
+      "year": 2025,
+      "month": 7,
+      "number": 54,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n打ち合わせは参加するすべての人で議論をし、ひとつの結論を導き出していく作業である。その裏を返せば、意見が採用されていない人のほうが大勢いるのである。こうした場合、その場では納得しているものの、周囲からの扱われ方次第ではストレスが溜まっていくことになるであろう。「それならば、私はいなくてもいいじゃないですか」当然ながら、この先この人からはポジティブな発言は得られないであろう。メイン・アイデアを考えた人がすべての権限を握り始めたときは、特に注意が必要だ。最初に考えた人がその案件に責任を持つことは当然であるが、それと同時にチームのモチベーションへの責任も持つことになると心得なければならない。そのために、本筋でないことは譲るクセをつけてみてはいかがだろうか。では何が本筋で、何が本筋でないのか。それを客観的に計る基準は「正しいか、正しくないか」「好きか、嫌いか」に判断することができる。本筋は「正しいか、正しくないか」で判断され、本筋でないものは「好きか、嫌いか」で判断される。つまり、好きか、嫌いかという好みに関しては、個人的な一存で切り捨てるのではなく、さまざまな意見を積極的に受け入れるべきであると考える。そのことでチームのひとりひとりが自分の存在意義を感じ、前向きなアイデアを出してくれるようになるだろう。\n(注1)ポジティブな：前向きな　(注2)モチベーション：やる気　(注3)個人的な一存：自分ひとりだけの考え\n\nA meeting is a process in which everyone taking part discusses and draws out a single conclusion.Looking at it from the other side, those whose opinions are not adopted are in the majority.In such cases, although they accept the outcome on the spot, stress is likely to build up depending on how they are treated by those around them.“In that case, it makes no difference whether I'm here or not, does it?”Naturally, no positive remarks are likely to come from this person from then on.Special caution is needed when the person who came up with the main idea begins to hold all the authority.It is natural for the person who thought of it first to be responsible for the project, but they must bear in mind that, at the same time, they are also responsible for the team's motivation.For that reason, why not try getting into the habit of giving way on matters that are not the main point?So what is the main point, and what is not?The standard for measuring this objectively can be judged as “right or wrong” and “like or dislike.”The main point is judged by “right or wrong,” and what is not the main point is judged by “like or dislike.”In other words, I believe that when it comes to preferences of like or dislike, one should not cut things off on one's own personal say, but should actively accept a variety of opinions.By doing so, each member of the team will feel their own reason for being there and will come to offer positive ideas.\n\n「チームのモチベーションへの責任も持つ」とあるが、どうすればいいか。",
+      "options": [
+        "主観的な判断に委ねられるものは、チームの一人一人の意見を尊重する。",
+        "客観的な判断が必要とされる場合は、チーム全体で議論する。",
+        "本筋かどうかにかかわらず、チームのひとりひとりに責任を持たせる。",
+        "本筋のものは、さまざまな意見に耳を傾けチーム全体で決定する。"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解 ○「主観的な判断に委ねられるもの」＝ 好きか嫌いか＝本筋でないもの; 「一人一人の意見を尊重」＝ さまざまな意見を積極的に受け入れる. A full match.",
+        "客観的な判断が必要とされる場合は、チーム全体で議論する。筆者と逆Objective judgment =本筋＝正しいか, and here the author argues for “not giving way (譲らない)”, not for leaving it to group discussion. The direction is opposite.",
+        "本筋かどうかにかかわらず…責任を持たせる。本文になし“Regardless of whether it is the main point, make each person take responsibility” is not in the text; the author in fact stresses distinguishing 本筋 from non-本筋.",
+        "本筋のものは、さまざまな意見に耳を傾け…決定する。筆者と逆“Welcoming a wide range of opinions” applies to non-本筋 (likes and dislikes), not to 本筋; the two are swapped."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-055",
+      "year": 2025,
+      "month": 7,
+      "number": 55,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\nガラス張りの床のある部屋で、赤ちゃんに自由にハイハイや寝返りなどをさせる実験があります。床は一部が深く掘ってありますが、その上をガラスで覆ってあるので安全です。赤ちゃんは最初は平気でガラス床の上をハイハイして通過します。ところが、ハイハイの経験が積み重なってくるとガラス床の上には這って出なくなります。転んだり落ちたりした経験があるからです。これは重要なことです。なぜなら、ヒヨコでは異なる結果が出るからです。卵から孵ったばかりのヒヨコを同じ床に置くと、初めからガラス床の上に出て行きません。野生の世界では、ヒヨコは一度でもどこかに落ちたら助からない可能性が高い。だから落ちないように、生まれたときから「高いところは怖い」ことが脳回路にインストールされているのです。一方、ヒトの場合は生まれてから自分で移動できるようになることで、経験を通じて、つまり痛い思いを通じて、「高さ」に恐怖を感じるようになります。（中略）見方を変えると、ヒヨコは本能で決まってしまっている範囲内でしか生きられません。でも、ヒトは後天的に学ぶために高い柔軟性を備えています。さらに一歩進めば、「怖いけれど、崖を下りてみよう」などと判断することもできますから、冒険の範囲が広がります。生まれた直後の判断能力は、動物たちのほうが高いかもしれませんが、ヒトの「初期能力の低さ」は、のちに「柔軟性の高さ」へと化ける、いわば先行投資。そのリターンは絶大で、充分に元がとれます。\n(注1)寝返り：寝ているときに体の向きを変えること　(注2)後天的に：ここでは、生まれたあとで　(注3)リターン：ここでは、得られるもの　(注4)元がとれる：ここでは、利益が得られる\n\nThere is an experiment in which a baby is allowed to crawl and roll over freely in a room with a glass-covered floor.Part of the floor has been dug out deeply, but it is covered over with glass, so it is safe.At first, the baby crawls across the glass floor without concern.However, as crawling experience accumulates, the baby stops crawling out onto the glass floor.This is because of experiences of falling over and falling down.This is important.This is because chicks produce a different result.If a chick that has just hatched from its egg is placed on the same floor, it does not go out onto the glass floor from the start.In the wild, a chick that falls somewhere even once is likely not to survive.So that it will not fall, the fear that “high places are scary” is installed in its brain circuitry from the moment it is born.Humans, on the other hand, become able to move by themselves after birth, and through experience, that is, through painful experience, come to feel fear of “height.”Looked at another way, chicks can only live within the range already determined by instinct.Humans, however, are equipped with a high degree of flexibility in order to learn after birth.Going one step further, a person can even decide, “It's scary, but let's try going down the cliff,” so the range of adventure expands.The judgment ability right after birth may be higher in animals, but the “low initial ability” of humans later transforms into “high flexibility,” a kind of up-front investment, so to speak.The return on it is enormous, and it more than pays for itself.\n\n「初めからガラス床の上に出て行きません」とあるが、なぜか。",
+      "options": [
+        "ガラスは危険なものだと本能で察知できるから。",
+        "致命的な危険を避ける本能が備わっているから。",
+        "未経験のことに対する恐怖心が強いから。",
+        "高いところに興味を持たないから。"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "不选「ガラスは危険なものだと本能で察知できるから。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「致命的な危険を避ける本能が備わっているから。」。符合题干的语义、搭配或上下文条件。",
+        "不选「未経験のことに対する恐怖心が強いから。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「高いところに興味を持たないから。」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-056",
+      "year": 2025,
+      "month": 7,
+      "number": 56,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\nガラス張りの床のある部屋で、赤ちゃんに自由にハイハイや寝返りなどをさせる実験があります。床は一部が深く掘ってありますが、その上をガラスで覆ってあるので安全です。赤ちゃんは最初は平気でガラス床の上をハイハイして通過します。ところが、ハイハイの経験が積み重なってくるとガラス床の上には這って出なくなります。転んだり落ちたりした経験があるからです。これは重要なことです。なぜなら、ヒヨコでは異なる結果が出るからです。卵から孵ったばかりのヒヨコを同じ床に置くと、初めからガラス床の上に出て行きません。野生の世界では、ヒヨコは一度でもどこかに落ちたら助からない可能性が高い。だから落ちないように、生まれたときから「高いところは怖い」ことが脳回路にインストールされているのです。一方、ヒトの場合は生まれてから自分で移動できるようになることで、経験を通じて、つまり痛い思いを通じて、「高さ」に恐怖を感じるようになります。（中略）見方を変えると、ヒヨコは本能で決まってしまっている範囲内でしか生きられません。でも、ヒトは後天的に学ぶために高い柔軟性を備えています。さらに一歩進めば、「怖いけれど、崖を下りてみよう」などと判断することもできますから、冒険の範囲が広がります。生まれた直後の判断能力は、動物たちのほうが高いかもしれませんが、ヒトの「初期能力の低さ」は、のちに「柔軟性の高さ」へと化ける、いわば先行投資。そのリターンは絶大で、充分に元がとれます。\n(注1)寝返り：寝ているときに体の向きを変えること　(注2)後天的に：ここでは、生まれたあとで　(注3)リターン：ここでは、得られるもの　(注4)元がとれる：ここでは、利益が得られる\n\nThere is an experiment in which a baby is allowed to crawl and roll over freely in a room with a glass-covered floor.Part of the floor has been dug out deeply, but it is covered over with glass, so it is safe.At first, the baby crawls across the glass floor without concern.However, as crawling experience accumulates, the baby stops crawling out onto the glass floor.This is because of experiences of falling over and falling down.This is important.This is because chicks produce a different result.If a chick that has just hatched from its egg is placed on the same floor, it does not go out onto the glass floor from the start.In the wild, a chick that falls somewhere even once is likely not to survive.So that it will not fall, the fear that “high places are scary” is installed in its brain circuitry from the moment it is born.Humans, on the other hand, become able to move by themselves after birth, and through experience, that is, through painful experience, come to feel fear of “height.”Looked at another way, chicks can only live within the range already determined by instinct.Humans, however, are equipped with a high degree of flexibility in order to learn after birth.Going one step further, a person can even decide, “It's scary, but let's try going down the cliff,” so the range of adventure expands.The judgment ability right after birth may be higher in animals, but the “low initial ability” of humans later transforms into “high flexibility,” a kind of up-front investment, so to speak.The return on it is enormous, and it more than pays for itself.\n\nヒトの能力について、筆者はどのように述べているか。",
+      "options": [
+        "痛さや恐怖を感じた経験をしなければ、柔軟な判断能力は身につかない。",
+        "幼少期に多くの経験を積むことで、柔軟に判断できるようになる。",
+        "生まれた時の判断能力が低いからこそ、柔軟に経験から学ぶことができる。",
+        "生まれたときの判断能力が低ければ低いほど、判断能力が大きく伸びる。"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "…経験をしなければ、柔軟な判断能力は身につかない。言い過ぎ“Without going through pain and fear, one cannot learn (〜しなければ…ない)” is an absolute condition that the text does not assert. Exaggeration.",
+        "幼少期に多くの経験を積むことで…ズレThe text focuses on the conversion “low initial ability → flexibility”, and does not stress “early childhood as the time to build up many experiences”. The focus is shifted.",
+        "正解 ○「判断能力が低いからこそ、柔軟に経験から学べる」＝ original 初期能力の低さ→柔軟性の高さへ化ける／後天的に学ぶ柔軟性. It matches the main idea exactly.",
+        "…低ければ低いほど、判断能力が大きく伸びる。言い過ぎ“the lower…, the more sharply it improves (低ければ低いほど)” — a proportional claim like this is absent from the text. Over-extension."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-057",
+      "year": 2025,
+      "month": 7,
+      "number": 57,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n以下は、ある日本の美術館の館長が書いた文章である。美術館は芸術作品を楽しむ場所だ。しかし、予備知識なしに無心で楽しめるエンターテインメントと違って、アートを楽しむには特別な知識がいると①思っている人は多い。私はそうした考え方は大きな誤解だと思っている。しかし、そう考える人の気持ちがわからないではない。なぜなら、この国では子どもの頃からアートに親しむ環境が整っていないからだ。美術館では子どもはうるさくて邪魔な存在だとされるのは仕方がない。しかし、その逆に、子どもの頃から美術館に何度も足を運び、なじみのある場所になっていれば、芸術作品との距離はもっと近づくだろう。では、子どもたちに美術館を楽しんでもらうことはどうすればいいのだろうか。（中略）私がよくやるのは②「宝探し」だ。もともとはシカゴ美術館にいたときに同僚が実践しているのを見て面白いと思い、日本の美術館に来てからも実践している。「宝探し」のルールは簡単だ。子どもたちに美術館で販売されているポストカードを渡して、展示されているその作品を探すように言う。すると、彼らは絵を一生懸命見て、ポストカードに印刷されている絵を探す。作品を見つけ出したら、そのポストカードに感想を書いてもらう。どんなことを書いてもいい。感想が思い浮かばなければ、その絵の中に何が描かれているかということでいい。「見た」ものを書いてもらうだけでいいのだ。とにかく、作品は「見る」きっかけを作ることが目的である。大人はともすれば絵を頭で理解しようとする。この絵は印象派の巨匠〇〇が描いた絵だからすばらしい、というように、知識と実物を一致させるだけで満足してしまう。しかし、そんな見方が果たして本当に作品を「見た」と言えるだろうか。子どもたちは予備知識を持たずに絵を見る。そのときに「感動」しなくてもかまわない。一生懸命「見る」だけでいいのだ。一枚の絵を一生懸命に見たという体験だけで、美術館に来た価値は十分にある。美術館のすばらしいところは「本物」をその目で見られることだ。子どもたちは手にしたポストカードと作品を見比べて「色が違う」と気づくかもしれない。それだけでも立派な「発見」だ。本物と印刷物は違うのだということがわかるだけでも、実物を見た甲斐がある。私は、教育とは、自分の感性で感じ、自分の頭で考えられるよう、感性と知性を鍛えることだと思っている。問いに対する答えを教えるのだけが教育ではないはずだ。そして、美術館は、うまく使えば、感性を鍛えるすばらしい学校になりうる場所だ。なぜなら、美術館は「答えがたくさんある」ことを教えるのに最適な場だからだ。一人ひとり見る「目」も違えば、その作品を感じる「心」も、そこから考える「頭」も違う。答えは決して一つではないのだ。\n\nThe following is a text written by the director of a museum in Japan.An art museum is a place to enjoy works of art.However, unlike entertainment that can be enjoyed with a clear mind and no background knowledge, many people ①think that enjoying art requires special knowledge.I believe this way of thinking is a major misunderstanding.Still, I can understand how people who think this way feel.This is because, in this country, an environment where children grow up familiar with art is not in place.In museums, children are regarded as noisy nuisances, and that can't be helped.On the other hand, if children visit museums many times from an early age and the museum becomes a familiar place, the distance between them and works of art would surely shrink.So how can we get children to enjoy museums?What I often do is ②“treasure hunt.”I originally saw a colleague doing it when I was at the Chicago art museum and found it interesting, and I have kept doing it since coming to a museum in Japan.The rules of the “treasure hunt” are simple.I give the children postcards sold at the museum and tell them to find the corresponding works on display.Then they look hard at the paintings, searching for the one printed on the postcard.Once they find the work, I have them write their impressions on that postcard.They can write anything.If no impression comes to mind, it is fine to write what is depicted in the painting.It is enough for them simply to write down what they “saw.”In any case, the aim is to create an opportunity to “look” at the work.Adults tend to try to understand a painting with their heads.They are satisfied just by matching knowledge to the real thing, as in “This painting is wonderful because it was painted by so-and-so, a master of Impressionism.”But can such a way of viewing really be called having “seen” the work?Children look at paintings without any background knowledge.It doesn't matter if they are not “moved” at that point.It is enough for them to “look” with all their effort.The experience of having looked hard at a single painting is alone enough to make the museum visit worthwhile.What is wonderful about a museum is that you can see the “real thing” with your own eyes.Comparing the postcard in their hands with the work, children may notice that “the colors are different.”Even that alone is already a wonderful “discovery.”Even just understanding that the real thing differs from a print makes the trip to see the actual work worthwhile.I believe education is about training sensibility and intellect so that people can feel with their own sensibility and think with their own minds.Teaching others the answers to questions should not be all there is to education.And a museum, if used well, can become an excellent school for training sensibility.That is because a museum is the best place to teach that “there are many answers.”Each person's “eyes” differ, and so do the “heart” that feels the work and the “mind” that thinks about it.There is never just one answer.\n\n【①思っている人は多い】とあるが、そういう人たちの気持ちについて筆者はどのように考えているか",
+      "options": [
+        "美術館は楽しむより学ぶ場所だと思われているから理解できる。",
+        "美術館には知識がないと理解できない作品が多いから理解できる。",
+        "芸術作品の楽しみ方は大人になってからしか学べないから理解できる。",
+        "子供の頃から芸術作品に触れる体験が十分ではないから、理解できる。"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选「美術館は楽しむより学ぶ場所だと思われているから理解できる。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「美術館には知識がないと理解できない作品が多いから理解できる。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「芸術作品の楽しみ方は大人になってからしか学べないから理解できる。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「子供の頃から芸術作品に触れる体験が十分ではないから、理解できる。」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-058",
+      "year": 2025,
+      "month": 7,
+      "number": 58,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n以下は、ある日本の美術館の館長が書いた文章である。美術館は芸術作品を楽しむ場所だ。しかし、予備知識なしに無心で楽しめるエンターテインメントと違って、アートを楽しむには特別な知識がいると①思っている人は多い。私はそうした考え方は大きな誤解だと思っている。しかし、そう考える人の気持ちがわからないではない。なぜなら、この国では子どもの頃からアートに親しむ環境が整っていないからだ。美術館では子どもはうるさくて邪魔な存在だとされるのは仕方がない。しかし、その逆に、子どもの頃から美術館に何度も足を運び、なじみのある場所になっていれば、芸術作品との距離はもっと近づくだろう。では、子どもたちに美術館を楽しんでもらうことはどうすればいいのだろうか。（中略）私がよくやるのは②「宝探し」だ。もともとはシカゴ美術館にいたときに同僚が実践しているのを見て面白いと思い、日本の美術館に来てからも実践している。「宝探し」のルールは簡単だ。子どもたちに美術館で販売されているポストカードを渡して、展示されているその作品を探すように言う。すると、彼らは絵を一生懸命見て、ポストカードに印刷されている絵を探す。作品を見つけ出したら、そのポストカードに感想を書いてもらう。どんなことを書いてもいい。感想が思い浮かばなければ、その絵の中に何が描かれているかということでいい。「見た」ものを書いてもらうだけでいいのだ。とにかく、作品は「見る」きっかけを作ることが目的である。大人はともすれば絵を頭で理解しようとする。この絵は印象派の巨匠〇〇が描いた絵だからすばらしい、というように、知識と実物を一致させるだけで満足してしまう。しかし、そんな見方が果たして本当に作品を「見た」と言えるだろうか。子どもたちは予備知識を持たずに絵を見る。そのときに「感動」しなくてもかまわない。一生懸命「見る」だけでいいのだ。一枚の絵を一生懸命に見たという体験だけで、美術館に来た価値は十分にある。美術館のすばらしいところは「本物」をその目で見られることだ。子どもたちは手にしたポストカードと作品を見比べて「色が違う」と気づくかもしれない。それだけでも立派な「発見」だ。本物と印刷物は違うのだということがわかるだけでも、実物を見た甲斐がある。私は、教育とは、自分の感性で感じ、自分の頭で考えられるよう、感性と知性を鍛えることだと思っている。問いに対する答えを教えるのだけが教育ではないはずだ。そして、美術館は、うまく使えば、感性を鍛えるすばらしい学校になりうる場所だ。なぜなら、美術館は「答えがたくさんある」ことを教えるのに最適な場だからだ。一人ひとり見る「目」も違えば、その作品を感じる「心」も、そこから考える「頭」も違う。答えは決して一つではないのだ。\n\nThe following is a text written by the director of a museum in Japan.An art museum is a place to enjoy works of art.However, unlike entertainment that can be enjoyed with a clear mind and no background knowledge, many people ①think that enjoying art requires special knowledge.I believe this way of thinking is a major misunderstanding.Still, I can understand how people who think this way feel.This is because, in this country, an environment where children grow up familiar with art is not in place.In museums, children are regarded as noisy nuisances, and that can't be helped.On the other hand, if children visit museums many times from an early age and the museum becomes a familiar place, the distance between them and works of art would surely shrink.So how can we get children to enjoy museums?What I often do is ②“treasure hunt.”I originally saw a colleague doing it when I was at the Chicago art museum and found it interesting, and I have kept doing it since coming to a museum in Japan.The rules of the “treasure hunt” are simple.I give the children postcards sold at the museum and tell them to find the corresponding works on display.Then they look hard at the paintings, searching for the one printed on the postcard.Once they find the work, I have them write their impressions on that postcard.They can write anything.If no impression comes to mind, it is fine to write what is depicted in the painting.It is enough for them simply to write down what they “saw.”In any case, the aim is to create an opportunity to “look” at the work.Adults tend to try to understand a painting with their heads.They are satisfied just by matching knowledge to the real thing, as in “This painting is wonderful because it was painted by so-and-so, a master of Impressionism.”But can such a way of viewing really be called having “seen” the work?Children look at paintings without any background knowledge.It doesn't matter if they are not “moved” at that point.It is enough for them to “look” with all their effort.The experience of having looked hard at a single painting is alone enough to make the museum visit worthwhile.What is wonderful about a museum is that you can see the “real thing” with your own eyes.Comparing the postcard in their hands with the work, children may notice that “the colors are different.”Even that alone is already a wonderful “discovery.”Even just understanding that the real thing differs from a print makes the trip to see the actual work worthwhile.I believe education is about training sensibility and intellect so that people can feel with their own sensibility and think with their own minds.Teaching others the answers to questions should not be all there is to education.And a museum, if used well, can become an excellent school for training sensibility.That is because a museum is the best place to teach that “there are many answers.”Each person's “eyes” differ, and so do the “heart” that feels the work and the “mind” that thinks about it.There is never just one answer.\n\n筆者が、子どもたちに【②「宝探し」】をさせるのは何のためか。",
+      "options": [
+        "本物の価値を理解させるため。",
+        "本物を実際に見る機会を作るため。",
+        "本物を見た感動を忘れないようにするため。",
+        "本物を通して知識を確かなものにするため。"
+      ],
+      "answer": 1,
+      "optionAnalysis": [
+        "不选「本物の価値を理解させるため。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「本物を実際に見る機会を作るため。」。符合题干的语义、搭配或上下文条件。",
+        "不选「本物を見た感動を忘れないようにするため。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「本物を通して知識を確かなものにするため。」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-059",
+      "year": 2025,
+      "month": 7,
+      "number": 59,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n以下は、ある日本の美術館の館長が書いた文章である。美術館は芸術作品を楽しむ場所だ。しかし、予備知識なしに無心で楽しめるエンターテインメントと違って、アートを楽しむには特別な知識がいると①思っている人は多い。私はそうした考え方は大きな誤解だと思っている。しかし、そう考える人の気持ちがわからないではない。なぜなら、この国では子どもの頃からアートに親しむ環境が整っていないからだ。美術館では子どもはうるさくて邪魔な存在だとされるのは仕方がない。しかし、その逆に、子どもの頃から美術館に何度も足を運び、なじみのある場所になっていれば、芸術作品との距離はもっと近づくだろう。では、子どもたちに美術館を楽しんでもらうことはどうすればいいのだろうか。（中略）私がよくやるのは②「宝探し」だ。もともとはシカゴ美術館にいたときに同僚が実践しているのを見て面白いと思い、日本の美術館に来てからも実践している。「宝探し」のルールは簡単だ。子どもたちに美術館で販売されているポストカードを渡して、展示されているその作品を探すように言う。すると、彼らは絵を一生懸命見て、ポストカードに印刷されている絵を探す。作品を見つけ出したら、そのポストカードに感想を書いてもらう。どんなことを書いてもいい。感想が思い浮かばなければ、その絵の中に何が描かれているかということでいい。「見た」ものを書いてもらうだけでいいのだ。とにかく、作品は「見る」きっかけを作ることが目的である。大人はともすれば絵を頭で理解しようとする。この絵は印象派の巨匠〇〇が描いた絵だからすばらしい、というように、知識と実物を一致させるだけで満足してしまう。しかし、そんな見方が果たして本当に作品を「見た」と言えるだろうか。子どもたちは予備知識を持たずに絵を見る。そのときに「感動」しなくてもかまわない。一生懸命「見る」だけでいいのだ。一枚の絵を一生懸命に見たという体験だけで、美術館に来た価値は十分にある。美術館のすばらしいところは「本物」をその目で見られることだ。子どもたちは手にしたポストカードと作品を見比べて「色が違う」と気づくかもしれない。それだけでも立派な「発見」だ。本物と印刷物は違うのだということがわかるだけでも、実物を見た甲斐がある。私は、教育とは、自分の感性で感じ、自分の頭で考えられるよう、感性と知性を鍛えることだと思っている。問いに対する答えを教えるのだけが教育ではないはずだ。そして、美術館は、うまく使えば、感性を鍛えるすばらしい学校になりうる場所だ。なぜなら、美術館は「答えがたくさんある」ことを教えるのに最適な場だからだ。一人ひとり見る「目」も違えば、その作品を感じる「心」も、そこから考える「頭」も違う。答えは決して一つではないのだ。\n\nThe following is a text written by the director of a museum in Japan.An art museum is a place to enjoy works of art.However, unlike entertainment that can be enjoyed with a clear mind and no background knowledge, many people ①think that enjoying art requires special knowledge.I believe this way of thinking is a major misunderstanding.Still, I can understand how people who think this way feel.This is because, in this country, an environment where children grow up familiar with art is not in place.In museums, children are regarded as noisy nuisances, and that can't be helped.On the other hand, if children visit museums many times from an early age and the museum becomes a familiar place, the distance between them and works of art would surely shrink.So how can we get children to enjoy museums?What I often do is ②“treasure hunt.”I originally saw a colleague doing it when I was at the Chicago art museum and found it interesting, and I have kept doing it since coming to a museum in Japan.The rules of the “treasure hunt” are simple.I give the children postcards sold at the museum and tell them to find the corresponding works on display.Then they look hard at the paintings, searching for the one printed on the postcard.Once they find the work, I have them write their impressions on that postcard.They can write anything.If no impression comes to mind, it is fine to write what is depicted in the painting.It is enough for them simply to write down what they “saw.”In any case, the aim is to create an opportunity to “look” at the work.Adults tend to try to understand a painting with their heads.They are satisfied just by matching knowledge to the real thing, as in “This painting is wonderful because it was painted by so-and-so, a master of Impressionism.”But can such a way of viewing really be called having “seen” the work?Children look at paintings without any background knowledge.It doesn't matter if they are not “moved” at that point.It is enough for them to “look” with all their effort.The experience of having looked hard at a single painting is alone enough to make the museum visit worthwhile.What is wonderful about a museum is that you can see the “real thing” with your own eyes.Comparing the postcard in their hands with the work, children may notice that “the colors are different.”Even that alone is already a wonderful “discovery.”Even just understanding that the real thing differs from a print makes the trip to see the actual work worthwhile.I believe education is about training sensibility and intellect so that people can feel with their own sensibility and think with their own minds.Teaching others the answers to questions should not be all there is to education.And a museum, if used well, can become an excellent school for training sensibility.That is because a museum is the best place to teach that “there are many answers.”Each person's “eyes” differ, and so do the “heart” that feels the work and the “mind” that thinks about it.There is never just one answer.\n\n筆者によると、美術館は子どもたちの教育にどのように役立つか。",
+      "options": [
+        "子供たちは様々な発見を通して感性を磨けるようになる。",
+        "子どもたちは多くの作品の中から価値のあるものが見極められるようになる。",
+        "子どもたちは考えることより感じることのほうが大切だとわかるようになる。",
+        "子どもたちは感性を鍛えることができより良い答えが見つけ出せるようになる。"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解 ○Directly matches the last paragraph:「美術館は…感性を鍛えるすばらしい学校になりうる」, plus things like「色が違う」, which count as「立派な『発見』」. That is, “sharpening sensibility through various discoveries,” which fits the meaning of the text.",
+        "子どもたちは多くの作品の中から価値のあるものが見極められるようになる。本文になし“Telling the valuable ones apart from many works” is never mentioned in the text. The author emphasizes「答えは決して一つではない」, which runs directly against judging “which is more valuable.”",
+        "子どもたちは考えることより感じることのほうが大切だとわかるようになる。言い過ぎThe author says「感性と知性を鍛える」「感じ、考えられるよう」— feeling and thinking are equally weighted, and never says “feeling is more important than thinking.” Setting the two against each other and ranking them is overreaching.",
+        "子どもたちは感性を鍛えることができより良い答えが見つけ出せるようになる。筆者と逆The first half「感性を鍛える」is right, but「より良い答えを見つけ出せる」is the opposite of the author's view. The author claims「答えがたくさんある」「答えは決して一つではない」; the point is not finding a “better single answer.”"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-060",
+      "year": 2025,
+      "month": 7,
+      "number": 60,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\nA\n人は不安を感じたり緊張したりすると、慌てたり身体の動きがぎこちなくなったりして、本来の力が発揮できなくなることがある。そういうときは、「うまくいかなかったらどうしよう」といったマイナスの思考をしないようにする必要がある。そのためには、自分自身に肯定的な言葉を発することが効果的だ。「きっとうまくいく」と言い聞かせたり、「こうなりたい」という具体的なイメージを言葉にしたりする。脳は自分が発した言葉を真実だと認識しようとするので、その言葉どおりになると思えてきて不安な気持ちが和らいでいく。つまり、心の状態はコントロールが可能なのだ。心の状態が好転すれば、身体もスムーズに動き本来の力が発揮できるはずだ。\n\nB\n人は不安な状態に陥ると、反射的に下を向いてしまいます。このように、人間の身体というものは、心の微妙な動きに反応しているのです。こうした身体と心の関係性をうまく活用すると、身体の動きを操作することで心の動きまでもコントロールすることができるようになります。たとえば、不安でしょうがない状態になったときは意識的に目線をあげてみる。極度に緊張して呼吸が早くなったとしたら、息を大きく吸い込んで深呼吸をしてみる。シンプルにいうならば、今の身体の状態に対して、すべて反対の方向に身体を動かせばよいのです。目線をあげれば不安は解消されますし、深呼吸をすれば落ち着いた状態になります。そもそも、心の状態というものは、自律神経を通して身体の反応へと現れてくるものなのですが、こうした作用を逆転させてやることで、身体の動きから自律神経に対して、逆のアプローチをかけていくことができるのです。\n(注)自律神経：意志とは無関係に、身体の機能を自動的に調節する神経\n\nA\nWhen people feel anxious or nervous, they get flustered, their bodies stiffen, and sometimes they cannot perform at their true ability.At such times, it is necessary to avoid negative thoughts such as “What if I mess up?”For this, it is effective to say positive words to oneself.Tell oneself “It will definitely go well,” or put into words a concrete image of “what I want to become.”The brain tries to treat the words one says as true, so one gradually comes to feel that things will go as the words say, and the anxiety eases.In other words, one's state of mind can be controlled.When one's state of mind improves, the body also moves smoothly, and one should be able to perform at one's true ability.\n\nB\nWhen people fall into an anxious state, they unconsciously lower their heads.Like this, the human body is in fact responding to subtle changes in the mind.If one can make good use of this relationship between body and mind, then by controlling the movements of the body, one can also control the movements of the mind.For example, when anxiety is unbearable, try deliberately raising the line of sight.If one is extremely nervous and breathing quickly, breathe in deeply and take deep breaths.Simply put, one just moves the whole body in the opposite direction to its current state.Raise the gaze and anxiety dissolves; take deep breaths and one can enter a calm state.Originally, the state of mind shows up as bodily reactions through the autonomic nervous system, but by reversing this action, one can start from the body's movements and intervene on the autonomic nervous system in the opposite direction.\n\n不安を感じたり緊張したりしたとき、AとBはどうすればよいと述べているか。",
+      "options": [
+        "AもBも、深呼吸しながらうまくいっている状態をイメージすればよいと述べている。",
+        "AもBも、今の身体の状態を落ち着かせる動きをすればよいと述べている。",
+        "Aは自分がどうなりたいかを具体的に言葉にすればよいと述べ、Bは身体の力を抜いて呼吸を整えればよいと述べている。",
+        "Aは自分に前向きな言葉をかければよいと述べ、Bは今の身体の状態が反対になるようにすればよいと述べている。"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "不选「AもBも、深呼吸しながらうまくいっている状態をイメージすればよいと述べている。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「AもBも、今の身体の状態を落ち着かせる動きをすればよいと述べている。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「Aは自分がどうなりたいかを具体的に言葉にすればよいと述べ、Bは身体の力を抜いて呼吸を整えればよいと述べている。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「Aは自分に前向きな言葉をかければよいと述べ、Bは今の身体の状態が反対になるようにすればよいと述べている。」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-061",
+      "year": 2025,
+      "month": 7,
+      "number": 61,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\nA\n人は不安を感じたり緊張したりすると、慌てたり身体の動きがぎこちなくなったりして、本来の力が発揮できなくなることがある。そういうときは、「うまくいかなかったらどうしよう」といったマイナスの思考をしないようにする必要がある。そのためには、自分自身に肯定的な言葉を発することが効果的だ。「きっとうまくいく」と言い聞かせたり、「こうなりたい」という具体的なイメージを言葉にしたりする。脳は自分が発した言葉を真実だと認識しようとするので、その言葉どおりになると思えてきて不安な気持ちが和らいでいく。つまり、心の状態はコントロールが可能なのだ。心の状態が好転すれば、身体もスムーズに動き本来の力が発揮できるはずだ。\n\nB\n人は不安な状態に陥ると、反射的に下を向いてしまいます。このように、人間の身体というものは、心の微妙な動きに反応しているのです。こうした身体と心の関係性をうまく活用すると、身体の動きを操作することで心の動きまでもコントロールすることができるようになります。たとえば、不安でしょうがない状態になったときは意識的に目線をあげてみる。極度に緊張して呼吸が早くなったとしたら、息を大きく吸い込んで深呼吸をしてみる。シンプルにいうならば、今の身体の状態に対して、すべて反対の方向に身体を動かせばよいのです。目線をあげれば不安は解消されますし、深呼吸をすれば落ち着いた状態になります。そもそも、心の状態というものは、自律神経を通して身体の反応へと現れてくるものなのですが、こうした作用を逆転させてやることで、身体の動きから自律神経に対して、逆のアプローチをかけていくことができるのです。\n(注)自律神経：意志とは無関係に、身体の機能を自動的に調節する神経\n\nA\nWhen people feel anxious or nervous, they get flustered, their bodies stiffen, and sometimes they cannot perform at their true ability.At such times, it is necessary to avoid negative thoughts such as “What if I mess up?”For this, it is effective to say positive words to oneself.Tell oneself “It will definitely go well,” or put into words a concrete image of “what I want to become.”The brain tries to treat the words one says as true, so one gradually comes to feel that things will go as the words say, and the anxiety eases.In other words, one's state of mind can be controlled.When one's state of mind improves, the body also moves smoothly, and one should be able to perform at one's true ability.\n\nB\nWhen people fall into an anxious state, they unconsciously lower their heads.Like this, the human body is in fact responding to subtle changes in the mind.If one can make good use of this relationship between body and mind, then by controlling the movements of the body, one can also control the movements of the mind.For example, when anxiety is unbearable, try deliberately raising the line of sight.If one is extremely nervous and breathing quickly, breathe in deeply and take deep breaths.Simply put, one just moves the whole body in the opposite direction to its current state.Raise the gaze and anxiety dissolves; take deep breaths and one can enter a calm state.Originally, the state of mind shows up as bodily reactions through the autonomic nervous system, but by reversing this action, one can start from the body's movements and intervene on the autonomic nervous system in the opposite direction.\n\nAとBで共通して述べられていることは何か。",
+      "options": [
+        "心の状態を変えるには思考を変える必要がある。",
+        "心の状態を自覚することは難しい。",
+        "心の状態は身体の状態から影響を受けやすい。",
+        "心の状態は自分の力で良い方向に変えられる。"
+      ],
+      "answer": 3,
+      "optionAnalysis": [
+        "心の状態を変えるには思考を変える必要がある。A だけ“Changing thinking” leans toward A (and A emphasizes「言葉」rather than pure thinking); B takes the body-movement route and says nothing about changing thinking — not common ground.",
+        "心の状態を自覚することは難しい。本文になし“Hard to be aware of one's own state of mind” — A and B neither mention this idea; it is invented out of nothing.",
+        "心の状態は身体の状態から影響を受けやすい。B だけThis is exactly B 's view (body → mind); whereas A says exactly the opposite:「心が好転すれば身体もスムーズ」(mind → body). It is only one side's claim, and it also states A backwards.",
+        "正解 ○A「心の状態はコントロールが可能」＋ B「心の動きまでもコントロールできる」＝ both argue“the state of mind can be actively adjusted for the better by oneself”. The overlap of the two texts."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-062",
+      "year": 2025,
+      "month": 7,
+      "number": 62,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n人間同士の将棋、勝負というのは、ただ盤上(注1)で能力を発揮し合うだけのものではありません。必ずそこに至るまでのプロセスがあります。強い相手と戦うことになってプレッシャーを受けたり、「ああ、厳しい相手だなあ」と萎縮してしまって勉強の意欲が減ったりすることだってあります。でも、「それじゃダメだ」と自分の心と戦ったり、整理をつけたりして最終的に対局当日を迎える。もちろん対局(注2)上の戦いもすごく大変なのですが、必ず事前にそういうステップを踏んでいます。人間の強さというのは、他人との戦いはもちろんですが、自分自身との戦いによっても生まれ、育っていくものなのです。それに、人間は疲れも感じるし、集中力も永遠には続きません。判断ミスだって何度もします。しかし、そんなちっぽけな一人の人間が焦りや苦しさを乗り越えて、観ている側が感動したり、あっと驚くような勝負をしたりする。それこそが人間の将棋の醍醐味だと思うのです。（中略）よく言われることですが、コンピューターに悩みやプレッシャーはありません。いくらコンピューターが強くても、先ほど述べたような人間的なプロセスを乗り越えてきているわけではない。強いコンピューターというのは、開発者のプログラミング(注3)能力とか、また人間的な意味で言えば開発に懸ける情熱とか、そういうものが評価されています。ただそれは、人間の将棋の強さとは別の軸にあるものだと思うのです。その相容れない(注4)まったく別物の強さを競わせたのが、棋士(注5)対コンピューター戦です。その結果、コンピューターのほうが強かったとしても、人間の強さが魅力や意味を失うわけではないでしょう。もちろん、棋士がコンピューターに負けたら、ファンの方がガッカリする気持ちもわかります。いままで人間同士の素晴らしい戦いを観てきて、最強棋士のすごさを体感してきた。そういう中でソフトという新しい存在が出てきてそれに負かされたら、人間は感情の生き物である以上、落胆するのも当然だと思うのです。いままで自分が興奮や感動してきたものは何だったのだ、と。ただ実は、人間とコンピューターの強さというのは秤にかけるものではなくて、それぞれが固有の良さを持っているものだと思うのです。人間対人間、人間対コンピューター、コンピューター対コンピューター。大きく分ければこの三つになると思いますが、これらはそれぞれに独立した魅力があって、お互いを阻害するものではありません。そこを分けて考えることが大事なのではないでしょうか。この三つのコンテンツ(注6)を徹底的に味わい尽くしたうえで、コンピューター対コンピューターの対戦が一番面白いと思えば、人間の強さに魅力を感じなくなっても仕方がないとは思います。でもきちんと比較もせずに、なんとなく時代の流れやちょっとしたインパクトだけで、人間対人間の面白さの魅力が薄らいだと思うのはすごくもったいない。\n(注1)盤：ここでは、将棋をする台　(注2)対局：ここでは、勝負　(注3)プログラミング：コンピューターのプログラムを作ること。　(注4)相容れない：ここでは、性質が異なる。　(注5)棋士：職業として将棋をする人。　(注6)コンテンツ：ここでは、対戦の内容\n\nShogi between humans, a contest, is not merely a matter of displaying one's abilities on the board.There is always a process that leads up to it.Sometimes one has to face a strong opponent and feels the pressure, or shrinks back thinking, “Ah, this is a tough opponent,” and one's motivation to study declines.But one fights with one's own heart, telling oneself “this won't do,” and sorts out one's feelings, and finally arrives at the day of the game.Of course the fighting in the game itself is very hard too, but one always goes through such steps beforehand.Human strength is of course born in fights with others, but it is also born and nurtured through the fight with oneself.Moreover, humans feel fatigue, and their concentration does not last forever.They make misjudgments again and again, too.Yet such a tiny individual overcomes impatience and pain, and plays a game that moves the spectators or makes them gasp in astonishment.I believe that is precisely the true thrill of human shogi.As is often said, computers have no worries or pressure.No matter how strong a computer is, it has not gone through the kind of human process described above.What is valued in a strong computer is the developers' programming ability or, in a human sense, the passion they put into development, and the like.But I think that lies on a different axis from the strength of human shogi.What pits these mutually incompatible, entirely different kinds of strength against each other is the match between professional players and computers.Even if the computer turns out to be stronger as a result, human strength would not lose its appeal or meaning.Of course, if a professional loses to a computer, I understand why fans feel disappointed.They have watched wonderful games between humans and experienced the greatness of the strongest players.In that context, a new presence called software appears and defeats them; since humans are emotional creatures, I think it is only natural to feel dejected.They wonder what all the excitement and emotion they had felt until now was about.But actually, I think the strength of humans and that of computers are not things to be weighed against each other; each has its own distinctive merits.Human versus human, human versus computer, computer versus computer.Broadly speaking there are these three, and each has its own independent appeal; they do not undermine one another.I think it is important to think about them separately.If, after savoring these three kinds of content to the full, one finds computer-versus-computer matches the most interesting, then I suppose it can't be helped if one no longer finds human strength appealing.But to feel that the appeal of human-versus-human play has faded merely because of the trend of the times or some slight impact, without properly comparing them, is a great shame.\n\n人間同士の将棋の魅力について、筆者はどのように考えているか。",
+      "options": [
+        "勝負に至るまでの苦悩を抱えつつ、戦いに臨んでいる棋士に魅力がある。",
+        "勝負自体ではなく、勝負の前の自分自身と戦うプロセスに感動する。",
+        "焦りや苦しさを克服して、勝った棋士に魅力が感じられる。",
+        "弱い側が強い相手に挑んで勝つ勝負にこそ感動する。"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解「勝負に至るまでの苦悩を抱えつつ、戦いに臨んでいる棋士に魅力がある。」。符合题干的语义、搭配或上下文条件。",
+        "不选「勝負自体ではなく、勝負の前の自分自身と戦うプロセスに感動する。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「焦りや苦しさを克服して、勝った棋士に魅力が感じられる。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「弱い側が強い相手に挑んで勝つ勝負にこそ感動する。」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "source_conflict",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE",
+          "SECONDARY_ANSWER_CONFLICT"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-063",
+      "year": 2025,
+      "month": 7,
+      "number": 63,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n人間同士の将棋、勝負というのは、ただ盤上(注1)で能力を発揮し合うだけのものではありません。必ずそこに至るまでのプロセスがあります。強い相手と戦うことになってプレッシャーを受けたり、「ああ、厳しい相手だなあ」と萎縮してしまって勉強の意欲が減ったりすることだってあります。でも、「それじゃダメだ」と自分の心と戦ったり、整理をつけたりして最終的に対局当日を迎える。もちろん対局(注2)上の戦いもすごく大変なのですが、必ず事前にそういうステップを踏んでいます。人間の強さというのは、他人との戦いはもちろんですが、自分自身との戦いによっても生まれ、育っていくものなのです。それに、人間は疲れも感じるし、集中力も永遠には続きません。判断ミスだって何度もします。しかし、そんなちっぽけな一人の人間が焦りや苦しさを乗り越えて、観ている側が感動したり、あっと驚くような勝負をしたりする。それこそが人間の将棋の醍醐味だと思うのです。（中略）よく言われることですが、コンピューターに悩みやプレッシャーはありません。いくらコンピューターが強くても、先ほど述べたような人間的なプロセスを乗り越えてきているわけではない。強いコンピューターというのは、開発者のプログラミング(注3)能力とか、また人間的な意味で言えば開発に懸ける情熱とか、そういうものが評価されています。ただそれは、人間の将棋の強さとは別の軸にあるものだと思うのです。その相容れない(注4)まったく別物の強さを競わせたのが、棋士(注5)対コンピューター戦です。その結果、コンピューターのほうが強かったとしても、人間の強さが魅力や意味を失うわけではないでしょう。もちろん、棋士がコンピューターに負けたら、ファンの方がガッカリする気持ちもわかります。いままで人間同士の素晴らしい戦いを観てきて、最強棋士のすごさを体感してきた。そういう中でソフトという新しい存在が出てきてそれに負かされたら、人間は感情の生き物である以上、落胆するのも当然だと思うのです。いままで自分が興奮や感動してきたものは何だったのだ、と。ただ実は、人間とコンピューターの強さというのは秤にかけるものではなくて、それぞれが固有の良さを持っているものだと思うのです。人間対人間、人間対コンピューター、コンピューター対コンピューター。大きく分ければこの三つになると思いますが、これらはそれぞれに独立した魅力があって、お互いを阻害するものではありません。そこを分けて考えることが大事なのではないでしょうか。この三つのコンテンツ(注6)を徹底的に味わい尽くしたうえで、コンピューター対コンピューターの対戦が一番面白いと思えば、人間の強さに魅力を感じなくなっても仕方がないとは思います。でもきちんと比較もせずに、なんとなく時代の流れやちょっとしたインパクトだけで、人間対人間の面白さの魅力が薄らいだと思うのはすごくもったいない。\n(注1)盤：ここでは、将棋をする台　(注2)対局：ここでは、勝負　(注3)プログラミング：コンピューターのプログラムを作ること。　(注4)相容れない：ここでは、性質が異なる。　(注5)棋士：職業として将棋をする人。　(注6)コンテンツ：ここでは、対戦の内容\n\nShogi between humans, a contest, is not merely a matter of displaying one's abilities on the board.There is always a process that leads up to it.Sometimes one has to face a strong opponent and feels the pressure, or shrinks back thinking, “Ah, this is a tough opponent,” and one's motivation to study declines.But one fights with one's own heart, telling oneself “this won't do,” and sorts out one's feelings, and finally arrives at the day of the game.Of course the fighting in the game itself is very hard too, but one always goes through such steps beforehand.Human strength is of course born in fights with others, but it is also born and nurtured through the fight with oneself.Moreover, humans feel fatigue, and their concentration does not last forever.They make misjudgments again and again, too.Yet such a tiny individual overcomes impatience and pain, and plays a game that moves the spectators or makes them gasp in astonishment.I believe that is precisely the true thrill of human shogi.As is often said, computers have no worries or pressure.No matter how strong a computer is, it has not gone through the kind of human process described above.What is valued in a strong computer is the developers' programming ability or, in a human sense, the passion they put into development, and the like.But I think that lies on a different axis from the strength of human shogi.What pits these mutually incompatible, entirely different kinds of strength against each other is the match between professional players and computers.Even if the computer turns out to be stronger as a result, human strength would not lose its appeal or meaning.Of course, if a professional loses to a computer, I understand why fans feel disappointed.They have watched wonderful games between humans and experienced the greatness of the strongest players.In that context, a new presence called software appears and defeats them; since humans are emotional creatures, I think it is only natural to feel dejected.They wonder what all the excitement and emotion they had felt until now was about.But actually, I think the strength of humans and that of computers are not things to be weighed against each other; each has its own distinctive merits.Human versus human, human versus computer, computer versus computer.Broadly speaking there are these three, and each has its own independent appeal; they do not undermine one another.I think it is important to think about them separately.If, after savoring these three kinds of content to the full, one finds computer-versus-computer matches the most interesting, then I suppose it can't be helped if one no longer finds human strength appealing.But to feel that the appeal of human-versus-human play has faded merely because of the trend of the times or some slight impact, without properly comparing them, is a great shame.\n\nコンピューターによる将棋について、筆者はどのように述べているか。",
+      "options": [
+        "強さの基準が人間とは異なるので、人間の将棋と比べられるものではない。",
+        "常に一定の能力が発揮できるので、人間を感動させる勝負はできない。",
+        "人間には超えることができない力があり、人間と勝負することに意味はない。",
+        "人間のような焦りや苦しさは感じないので、人間の強さは超えられない。"
+      ],
+      "answer": 0,
+      "optionAnalysis": [
+        "正解「強さの基準が人間とは異なるので、人間の将棋と比べられるものではない。」。符合题干的语义、搭配或上下文条件。",
+        "不选「常に一定の能力が発揮できるので、人間を感動させる勝負はできない。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「人間には超えることができない力があり、人間と勝負することに意味はない。」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「人間のような焦りや苦しさは感じないので、人間の強さは超えられない。」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-064",
+      "year": 2025,
+      "month": 7,
+      "number": 64,
+      "type": "読解",
+      "question": "💡 分からない文をタップ → その一文だけ訳（もう一度で隠す）\n人間同士の将棋、勝負というのは、ただ盤上(注1)で能力を発揮し合うだけのものではありません。必ずそこに至るまでのプロセスがあります。強い相手と戦うことになってプレッシャーを受けたり、「ああ、厳しい相手だなあ」と萎縮してしまって勉強の意欲が減ったりすることだってあります。でも、「それじゃダメだ」と自分の心と戦ったり、整理をつけたりして最終的に対局当日を迎える。もちろん対局(注2)上の戦いもすごく大変なのですが、必ず事前にそういうステップを踏んでいます。人間の強さというのは、他人との戦いはもちろんですが、自分自身との戦いによっても生まれ、育っていくものなのです。それに、人間は疲れも感じるし、集中力も永遠には続きません。判断ミスだって何度もします。しかし、そんなちっぽけな一人の人間が焦りや苦しさを乗り越えて、観ている側が感動したり、あっと驚くような勝負をしたりする。それこそが人間の将棋の醍醐味だと思うのです。（中略）よく言われることですが、コンピューターに悩みやプレッシャーはありません。いくらコンピューターが強くても、先ほど述べたような人間的なプロセスを乗り越えてきているわけではない。強いコンピューターというのは、開発者のプログラミング(注3)能力とか、また人間的な意味で言えば開発に懸ける情熱とか、そういうものが評価されています。ただそれは、人間の将棋の強さとは別の軸にあるものだと思うのです。その相容れない(注4)まったく別物の強さを競わせたのが、棋士(注5)対コンピューター戦です。その結果、コンピューターのほうが強かったとしても、人間の強さが魅力や意味を失うわけではないでしょう。もちろん、棋士がコンピューターに負けたら、ファンの方がガッカリする気持ちもわかります。いままで人間同士の素晴らしい戦いを観てきて、最強棋士のすごさを体感してきた。そういう中でソフトという新しい存在が出てきてそれに負かされたら、人間は感情の生き物である以上、落胆するのも当然だと思うのです。いままで自分が興奮や感動してきたものは何だったのだ、と。ただ実は、人間とコンピューターの強さというのは秤にかけるものではなくて、それぞれが固有の良さを持っているものだと思うのです。人間対人間、人間対コンピューター、コンピューター対コンピューター。大きく分ければこの三つになると思いますが、これらはそれぞれに独立した魅力があって、お互いを阻害するものではありません。そこを分けて考えることが大事なのではないでしょうか。この三つのコンテンツ(注6)を徹底的に味わい尽くしたうえで、コンピューター対コンピューターの対戦が一番面白いと思えば、人間の強さに魅力を感じなくなっても仕方がないとは思います。でもきちんと比較もせずに、なんとなく時代の流れやちょっとしたインパクトだけで、人間対人間の面白さの魅力が薄らいだと思うのはすごくもったいない。\n(注1)盤：ここでは、将棋をする台　(注2)対局：ここでは、勝負　(注3)プログラミング：コンピューターのプログラムを作ること。　(注4)相容れない：ここでは、性質が異なる。　(注5)棋士：職業として将棋をする人。　(注6)コンテンツ：ここでは、対戦の内容\n\nShogi between humans, a contest, is not merely a matter of displaying one's abilities on the board.There is always a process that leads up to it.Sometimes one has to face a strong opponent and feels the pressure, or shrinks back thinking, “Ah, this is a tough opponent,” and one's motivation to study declines.But one fights with one's own heart, telling oneself “this won't do,” and sorts out one's feelings, and finally arrives at the day of the game.Of course the fighting in the game itself is very hard too, but one always goes through such steps beforehand.Human strength is of course born in fights with others, but it is also born and nurtured through the fight with oneself.Moreover, humans feel fatigue, and their concentration does not last forever.They make misjudgments again and again, too.Yet such a tiny individual overcomes impatience and pain, and plays a game that moves the spectators or makes them gasp in astonishment.I believe that is precisely the true thrill of human shogi.As is often said, computers have no worries or pressure.No matter how strong a computer is, it has not gone through the kind of human process described above.What is valued in a strong computer is the developers' programming ability or, in a human sense, the passion they put into development, and the like.But I think that lies on a different axis from the strength of human shogi.What pits these mutually incompatible, entirely different kinds of strength against each other is the match between professional players and computers.Even if the computer turns out to be stronger as a result, human strength would not lose its appeal or meaning.Of course, if a professional loses to a computer, I understand why fans feel disappointed.They have watched wonderful games between humans and experienced the greatness of the strongest players.In that context, a new presence called software appears and defeats them; since humans are emotional creatures, I think it is only natural to feel dejected.They wonder what all the excitement and emotion they had felt until now was about.But actually, I think the strength of humans and that of computers are not things to be weighed against each other; each has its own distinctive merits.Human versus human, human versus computer, computer versus computer.Broadly speaking there are these three, and each has its own independent appeal; they do not undermine one another.I think it is important to think about them separately.If, after savoring these three kinds of content to the full, one finds computer-versus-computer matches the most interesting, then I suppose it can't be helped if one no longer finds human strength appealing.But to feel that the appeal of human-versus-human play has faded merely because of the trend of the times or some slight impact, without properly comparing them, is a great shame.\n\n筆者の考えに合うのはどれか。",
+      "options": [
+        "三つの対戦を十分に味わってはじめて、将棋の本当の魅力に気づくことができる。",
+        "三つの対戦をきちんと比較すれば、人間同士の将棋が最も面白いとわかる。",
+        "コンピューターによる将棋の出現で人間同士の将棋の魅力が失われたわけではない。",
+        "コンピューターによる将棋の出現のおかげで将棋の魅力が増したとは言えない。"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "三つの対戦を十分に味わってはじめて、将棋の本当の魅力に気づくことができる。言い過ぎThe author says “after fully savoring them (味わい尽くしたうえで), even preferring computer matches can't be helped,” used to underscore what a waste it is to “belittle humans without comparing”, and does not claim that “only by savoring them all can one discover the true appeal.”",
+        "三つの対戦をきちんと比較すれば、人間同士の将棋が最も面白いとわかる。筆者と逆The author in fact says 「秤にかけるものではない」, and that the three each have their own independent appeal, rejecting any ranking; the author even accepts that some people find computer matches the most interesting after comparing. Asserting that “human-versus-human is the most interesting” is contrary to the author.",
+        "正解 ○Corresponds to 「コンピューターのほうが強かったとしても、人間の強さが魅力や意味を失うわけではない」. The appearance of computer shogi has not made human-versus-computer matches lose their appeal.",
+        "コンピューターによる将棋の出現のおかげで将棋の魅力が増したとは言えない。本文になし“Whether the appearance of computers increased shogi's appeal” as an argument is never touched on in the text. What the author discusses is that one should not, because of computers, belittle the appeal of humans; this has nothing to do with “whether the appeal has increased.”"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-065",
+      "year": 2025,
+      "month": 7,
+      "number": 65,
+      "type": "読解",
+      "question": "玉北市市民学習センター\n「市民企画講座」募集\n\nA.「市民企画講座」とは\n市内で活動する団体の皆さんに, 講座を企画・運営してもらうものです.市民学習センターは, 広報, 受講者の募集, 会場の提供を行います.\nB.応募条件\n【申し込める団体】\n玉北市在住者による団体\n【実施できる講座】\n＜内容・場所・講師＞\n文化や芸術, 歴史等に関する内容で, 当センター内の教室(和室含む)で開講できるもの\n団体のメンバーが講師をすることも, 外部の講師を招くことも可能 ※外部の講師は玉北市在住でない方でも可能\n＜実施期間・回数＞\n4月1日〜9月30日の間で, 計4〜6回の実施\n＜定員・受講対象者＞\n定員10〜30人\n受講対象者は玉北市在住者とし, 年齢による限定をしないこと\n※夏休み期間中(7月25日〜8月31日)に行う講座のみ, 「子供」または「親子」に対象を限定してもかまいません.\n\n応募を検討している4団体\n団体名・実施内容実施期間・回数開講場所受講対象者・定員\n大空グループ「絵画教室」4月と5月に計5回玉北市内の公園玉北市在住者15〜20人\nもみじの会「俳句教室」7月〜9月に計6回学習センター内の教室60歳以上の玉北市在住者20〜30人\nたまきた文化の家「茶道体験」8月に計4回学習センター内の和室玉北市在住の親子10〜20人\n玉北市歴史クラブ「玉北市の歴史」9月に計4回学習センター内の教室玉北市在住の親子15〜30人\n\nC.スケジュール\n①事前説明会:1月13日(土)14時〜16時\n応募や企画・運営の注意点等をご説明します.初めて応募する団体の代表者は, 必ず出席してください.事前申し込みは不要です.\n②応募書類提出:1月15日(月)〜1月31日(水)\n応募書類(「申請書」と「講座概要」)を, 開館時間内(平日9時〜19時)に窓口に持参してください.代表者が提出してください.\n「講座概要」は, 講師が作成してください.\n③選考会(面接):2月24日(土)午後\n代表者が必ず出席してください.代表者と講師が異なる場合は, 講師も一緒に出席してください.\n結果は3月上旬に郵送します.\n\n【問い合わせ】玉北市市民学習センター 電話021-885-5700 ・ 〒665-2243玉北市浅田町2-5\n\n次の4つの団体は、玉北市在住者による団体で、今後、以下の講座の開講を検討している。この中で「市民企画講座」に応募できるのはどの団体か。",
+      "options": [
+        "大空グループ",
+        "もみじの会",
+        "たまきた文化の家",
+        "玉北市歴史クラブ"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "大空グループ「絵画教室」場所NGThe venue is 「玉北市内の公園」 — not 「センター内の教室」, so the venue does not meet the condition.",
+        "もみじの会「俳句教室」年齢限定NGThe audience is restricted to 「60歳以上」 = an age restriction, violating 「年齢による限定をしないこと」. The 夏休み exception only allows limiting to 「子供/親子」, not age limits.",
+        "正解 ○和室（教室に含む）✓・8月= during 夏休み → limiting to 「親子」 is OK・4 sessions in total (within 4〜6) ✓・capacity 10〜20 (within 10〜30) ✓・content 茶道 (culture) ✓.全条件クリア.",
+        "玉北市歴史クラブ「玉北市の歴史」親子限定の時期NGThe audience is limited to 「親子」, but it is held in9月 — compare the 夏休み (〜8/31): it falls outside that period, so limiting the audience is not allowed then. Apart from September, the other conditions would all be fine; only the timing is off."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-066",
+      "year": 2025,
+      "month": 7,
+      "number": 66,
+      "type": "読解",
+      "question": "玉北市市民学習センター\n「市民企画講座」募集\n\nA.「市民企画講座」とは\n市内で活動する団体の皆さんに, 講座を企画・運営してもらうものです.市民学習センターは, 広報, 受講者の募集, 会場の提供を行います.\nB.応募条件\n【申し込める団体】\n玉北市在住者による団体\n【実施できる講座】\n＜内容・場所・講師＞\n文化や芸術, 歴史等に関する内容で, 当センター内の教室(和室含む)で開講できるもの\n団体のメンバーが講師をすることも, 外部の講師を招くことも可能 ※外部の講師は玉北市在住でない方でも可能\n＜実施期間・回数＞\n4月1日〜9月30日の間で, 計4〜6回の実施\n＜定員・受講対象者＞\n定員10〜30人\n受講対象者は玉北市在住者とし, 年齢による限定をしないこと\n※夏休み期間中(7月25日〜8月31日)に行う講座のみ, 「子供」または「親子」に対象を限定してもかまいません.\n\nC.スケジュール\n①事前説明会:1月13日(土)14時〜16時\n応募や企画・運営の注意点等をご説明します.初めて応募する団体の代表者は, 必ず出席してください.事前申し込みは不要です.\n②応募書類提出:1月15日(月)〜1月31日(水)\n応募書類(「申請書」と「講座概要」)を, 開館時間内(平日9時〜19時)に窓口に持参してください.代表者が提出してください.\n「講座概要」は, 講師が作成してください.\n③選考会(面接):2月24日(土)午後\n代表者が必ず出席してください.代表者と講師が異なる場合は, 講師も一緒に出席してください.\n結果は3月上旬に郵送します.\n\n【問い合わせ】玉北市市民学習センター 電話021-885-5700 ・ 〒665-2243玉北市浅田町2-5\n\n田村さんはある団体の代表者を務めており、今回初めて「市民企画講座」に応募したいと考えている。外部の講師を探しているが、講師について留意しなければならないことは何か。",
+      "options": [
+        "玉北市在住で、③に出席し、②に同伴してくれる人を選ぶ。",
+        "玉北市在住で、「講座概要」を作成し、①と③に出席してくれる人を選ぶ。",
+        "「講座概要」を作成し、③に出席してくれる人を選ぶ。",
+        "「講座概要」を作成し、①と③に出席してくれる人を選ぶ。"
+      ],
+      "answer": 2,
+      "optionAnalysis": [
+        "玉北市在住で、③に出席し、②に同伴…居住NG＋②誤“Residence in 玉北市” is not required; and ② is a submission of materials by the代表者, so the lecturer need not come along. It also omits “the lecturer writes the outline.”",
+        "玉北市在住で、概要作成、①と③に出席…居住NG＋①誤“Residence in 玉北市” is not required; briefing session ① requires only the代表者 to attend; the lecturer need not go to ①.",
+        "正解 ○The lecturer must do exactly two things:write the 「講座概要」＋出席③選考会 (because the representative and the lecturer differ). No residence requirement, and ① is not needed.",
+        "概要作成、①と③に出席…①誤The outline ✓ and ③ ✓, but counting ① as the lecturer's duty as well is the mistake — ① requires only the representative of a first-time applicant group to attend."
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/reading"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-067",
+      "year": 2025,
+      "month": 7,
+      "number": 67,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "合宿の申請書",
+        "活動計画書",
+        "駐車許可の申請書",
+        "参加者の名簿"
+      ],
+      "answer": 0,
+      "audioUrl": "https://media.learnwithsubs.uk/m/0bab78d2f2219950.mp3",
+      "transcript": "男：バスケットボールのサークルで来月合宿に行くんですけど、その手続きに参りました。\n男：これ、合宿の申請書です。\n女：はい。\n女：申請には別途活動計画書も必要なんですが、お持ちですか？\n男：はい。\n女：では、まず、合宿の申請書を確認しますね。\n女：不備があると再提出になります。\n女：え～、問題なさそうですね。\n女：顧問の先生の欄、先生の署名が漏れていますよ。\n男：あ、はい。\n女：それから、活動計画書、当日貸切バスで大学から出発なんですね？\n女：バスが大学の敷地内に駐車するための許可が必要になります。\n女：駐車許可の申請書は書くのは日時とサークル名だけなので、記入いただけますか？\n女：こちらの用紙です。\n男：はい、記入しました。\n女：あと、参加者の名簿も必要なので、参加者が決定次第、ご持参ください。\n男：あ、持ってます。これです。\n女：え～、はい。\n女：では問題がない書類はお預かりします。\n女：先ほどの書類は再提出をお願いします。\n男：分かりました。\n問：男の学生はこの後、事務室に何を再提出しますか？",
+      "optionAnalysis": [
+        "正解「合宿の申請書」。符合题干的语义、搭配或上下文条件。",
+        "不选「活動計画書」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「駐車許可の申請書」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「参加者の名簿」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-068",
+      "year": 2025,
+      "month": 7,
+      "number": 68,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "応募フォームに記入する",
+        "引き渡しの条件をかくにんする",
+        "育てる環境が分かる資料を出す",
+        "講習を受ける"
+      ],
+      "answer": 1,
+      "audioUrl": "https://media.learnwithsubs.uk/m/a4dd95b9cab98ae0.mp3",
+      "transcript": "男：もしもし、ホームページで猫の写真を見ました。\n男：あの～、猫を飼いたいんですが。どうすればいいですか？\n女：はい、私たちの団体は飼い主のいない保護猫と飼いたい方の橋渡しをしています。\n女：まずは私どものホームページの応募フォームにご記入後、送信いただきます。\n女：サイトの紹介ページで、猫の譲渡の条件をよくご覧になってから、応募お願いします。\n男：あ、そうなんですね。\n男：分かりました。\n男：あの、猫とはいつ会えるんですか？\n女：審査が通れば対面になりますが、\n女：その前に、ご自宅が猫を育てられる環境かどうか確認できる資料の提出をお願いします。\n女：また、対面する前には講習会の受講をお願いしています。\n男：はい、分かりました。\n問：男の人はこの後まず、何をしなければなりませんか？",
+      "optionAnalysis": [
+        "不选「応募フォームに記入する」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「引き渡しの条件をかくにんする」。符合题干的语义、搭配或上下文条件。",
+        "不选「育てる環境が分かる資料を出す」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「講習を受ける」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-069",
+      "year": 2025,
+      "month": 7,
+      "number": 69,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "説明会の日時を決める",
+        "説明会の内容の案を出す",
+        "ちらし用の集合写真を撮る",
+        "ユニホームに着替える"
+      ],
+      "answer": 3,
+      "audioUrl": "https://media.learnwithsubs.uk/m/0a15d61eb0696c84.mp3",
+      "transcript": "−：新学期が近いので、新入部員の勧誘活動の準備をしたいと思います。\n−：日時は他のサークルと調整中で、今日は当日の説明会で何をするか、内容について案を出しましょう。\n−：それから、新入生向けに作るチラシに載せる集合写真、\n−：今日、後でユニフォームに着替えて撮ろうってことになってましたね。\n−：今日は本田くんが早く帰るとのことなので、話し合いの前に全員で写真を撮ります。\n−：じゃ、準備しましょう。\n問：部員はこの後、まず何をしなければなりませんか？",
+      "optionAnalysis": [
+        "不选「説明会の日時を決める」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「説明会の内容の案を出す」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「ちらし用の集合写真を撮る」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「ユニホームに着替える」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-070",
+      "year": 2025,
+      "month": 7,
+      "number": 70,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "現状の分析に数値を入れる",
+        "問題点の指摘に実例を出す",
+        "価格を見直す",
+        "リスクの分析をより詳しく書く"
+      ],
+      "answer": 1,
+      "audioUrl": "https://media.learnwithsubs.uk/m/e8551258170c5c4b.mp3",
+      "transcript": "女：課長、従来のものから今回新しくリニューアルする日焼け止めクリームの企画書ですが、コメントをいただけますか？\n男：ええ。\n男：まず、現状の分析のところで、昨年の売り上げが落ちてるところを具体的に数値で指摘してて、分かりやすいですね。\n女：はい。\n男：次に、問題点の指摘の項目ですが、従来の商品についてのお客様の声など、実例を出してもらえますか？\n男：その方が売り上げが落ちた理由が分かりやすいと思います。\n女：はい。\n男：価格は据え置き変更なしということで問題ないと思います。\n男：最後のリスクの分析はなかなかの出来なんじゃないかな。\n男：あと一歩、先ほどの点、修正してみてください。\n女：はい。\n女：ありがとうございます。\n問：女の人は企画書をどう修正しますか？",
+      "optionAnalysis": [
+        "不选「現状の分析に数値を入れる」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「問題点の指摘に実例を出す」。符合题干的语义、搭配或上下文条件。",
+        "不选「価格を見直す」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「リスクの分析をより詳しく書く」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-071",
+      "year": 2025,
+      "month": 7,
+      "number": 71,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "見学の担当者を増やす",
+        "クイズのシートを作る",
+        "スタンプを押す場所を設置する",
+        "見学通路の窓を大きくする"
+      ],
+      "answer": 2,
+      "audioUrl": "https://media.learnwithsubs.uk/m/4bd81c4ecc4e17d1.mp3",
+      "transcript": "男：あの、部長、工場見学のことなんですが、今年になって、小学校の見学が増えてきて、特に1、2年生の見学でちょっと困ってるんです。\n女：あ一。\n女：小さいお子さんたちだと、担当者の増員が必要だね。\n女：迷子になることはないでしょうけど、安全面の配慮は絶対ですから。\n男：はい。\n男：それから人数を増やして対応済みなんですが、途中で退屈しちゃうと思いまして。\n女：そう。\n女：う～ん、前にクイズ形式のまるばつをつけるシートとか、子供用に作ってなかった？\n男：はい、それは実施してます。\n女：シートはそのままで、裏にスタンプを押せるようにするとか？\n女：見学ルートの途中何箇所かで。\n男：あ～いいですね。\n女：スタンプは前イベントで使ったのあるから、机とかを置いて。\n女：でも、そもそも見学通路の窓をもっと大きくして、工場内を見やすくしたら、迫力があって、子供たちも喜びそうですけどね。\n男：そうですね。\n女：でもまあ、費用もかかるから、急には改修できないでしょうね。\n男：はい。\n男：できることからやろうと思います。\n問：男の人はこの後、まず何をしますか？",
+      "optionAnalysis": [
+        "不选「見学の担当者を増やす」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「クイズのシートを作る」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「スタンプを押す場所を設置する」。符合题干的语义、搭配或上下文条件。",
+        "不选「見学通路の窓を大きくする」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-072",
+      "year": 2025,
+      "month": 7,
+      "number": 72,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "せまい台所に置けるかどうか",
+        "さまざまな食器が入れやすいかどうか",
+        "使用する水が少ないかどうか",
+        "すすぎの温度が高いかどうか"
+      ],
+      "answer": 3,
+      "audioUrl": "https://media.learnwithsubs.uk/m/dcc1acb5815545ad.mp3",
+      "transcript": "客：あの、台所が狭くても置ける食洗機を探しているんですが。\n店員：いらっしゃいませ。\n店員：食器洗い乾燥機ですね。\n店員：こちらが狭い場所にも置けるスリムタイプです。\n客：たくさんあるんですね。\n店員：スリムタイプでも、ほとんどのものがこびりついた汚れをしっかり落とせるのはもちろん、\n店員：食器の大きさや形が様々でも入れやすい設計になっています。\n店員：選ぶ時に見ていただきたいのは殺菌効果が高いかどうかですね。\n客：そうですか。\n客：節水タイプがいいなと思っていたんですが。\n店員：最近はどのメーカーも使用する水の量を減らす節水タイプになっています。\n店員：そこで高温ですすぎができるか、それが決め手になると思います。\n客：なるほど。\n問：店員は商品を選ぶ時、どんな点に注目するといいと言っていますか？",
+      "optionAnalysis": [
+        "不选「せまい台所に置けるかどうか」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「さまざまな食器が入れやすいかどうか」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「使用する水が少ないかどうか」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「すすぎの温度が高いかどうか」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-073",
+      "year": 2025,
+      "month": 7,
+      "number": 73,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "みんなが元気でいられるところ",
+        "みんなでコートを走り回るところ",
+        "みんなで助け合うところ",
+        "みんなが満足いくプレーができるところ"
+      ],
+      "answer": 2,
+      "audioUrl": "https://media.learnwithsubs.uk/m/000d470cbf7d3962.mp3",
+      "transcript": "−：アナウンサー：今日はサッカーグラウンドに来ています。\n−：内田さんにお話を伺います。\n男：内田です。\n男：このチームはメンバーが全員60歳以上なんです。\n男：アナウンサー：60歳以上ということですが、皆さん大変お元気ですね。\n男：いや、かつてのようにコートを全員で走り回ることに憧れていますが。\n男：私のチームには怪我や病気を経験し、十分に走れない人もいます。\n男：走れない人がボールを取られた時は、全員でカバーを合言葉に、ピンチを凌ぐのです。\n男：この年齢ですから、みんなが満足いくプレイができるとは限りませんが、互いに助け合います。\n男：そのようなことが魅力だと感じます。\n男：元気でいるためにも、未経験の皆さんにも是非参加してほしいですね。\n問：男の人は自分のサッカーチームでプレイすることのどんな点がいいと言っていますか？",
+      "optionAnalysis": [
+        "不选「みんなが元気でいられるところ」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「みんなでコートを走り回るところ」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「みんなで助け合うところ」。符合题干的语义、搭配或上下文条件。",
+        "不选「みんなが満足いくプレーができるところ」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-074",
+      "year": 2025,
+      "month": 7,
+      "number": 74,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "受信機の反応を良くする",
+        "車の本体を軽くする",
+        "タイヤを大きくする",
+        "パワーの強いバッテリーに替える"
+      ],
+      "answer": 2,
+      "audioUrl": "https://media.learnwithsubs.uk/m/d2fbf5821a92f91b.mp3",
+      "transcript": "女：先輩、リモコンカーを作って、速度を競う課題に取り組んでいるんですが、ちょっと相談に乗ってください。\n男：あ、僕も3年生の時にやったよ。\n男：記録会があって盛り上がるんだよね。\n女：試運転の動画があるんですが、見てもらってもいいですか？\n女：思ったほどスピードが出ないんですよ。\n女：赤外線の受信機の反応が鈍いかなと思って改良したんですが、あまり速度に変化がなくて、本体はこれです。\n男：持ってみていい？\n女：どうぞ。\n男：車本体も割と軽いし、本体と比べるとタイヤのサイズが小さめだね。\n女：あまり直径を大きくしすぎないようにして、軽さを追求したんです。\n男：うん、サイズを変えると速度が変わると思うよ。\n男：後はパワーかな。\n男：パワーの強いバッテリーに変えるのはどう？\n女：これ以上強くするとバッテリーが持たないと思います。\n男：そう。\n男：じゃあ、車輪の直径を変えてみて。\n女：ありがとうございます。\n問：先輩はリモコンカーをどう直した方がいいと言っていますか？",
+      "optionAnalysis": [
+        "不选「受信機の反応を良くする」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「車の本体を軽くする」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「タイヤを大きくする」。符合题干的语义、搭配或上下文条件。",
+        "不选「パワーの強いバッテリーに替える」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-075",
+      "year": 2025,
+      "month": 7,
+      "number": 75,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "舞台にいろいろな装置があること",
+        "観客がかけ声をかけること",
+        "着物がごうかできれいなこと",
+        "男性の俳優が女性役をすること"
+      ],
+      "answer": 1,
+      "audioUrl": "https://media.learnwithsubs.uk/m/735006aee44e66b1.mp3",
+      "transcript": "−：男の留学生です。\n男：アンさん、昨日は誘ってくれてありがとう。\n男：僕、初めて歌舞伎を見たんだけど、すごく面白かった。\n男：まさに動く浮世絵だよね。\n女：よかった。\n男：あんなにいろいろな装置があるって思わなくて。\n女：びっくりしたでしょう？\n女：だって、通路とか舞台の下から人が飛び出してくるんだもんね。\n女：舞台がぐるっと回ったり、私も初めて見た時、おーって、声が出ちゃった。\n男：声といえば、上演中、僕の隣の男の人が突然大声で叫んだから、びっくりしちゃったよ。\n女：あー、あれはね、人気のある俳優の名前とかを叫んでいて、「待ってたよ」って意味の掛け声なんだって。\n女：むしろあれがないとつまらないかな。\n男：えー、今回の衝撃は何と言ってもこれだ。\n男：着物が豪華で綺麗なのは知ってたけど、それは全然知らなかったんだよね。\n女：そうなんだ。\n女：私はやっぱり俳優が全て男性ってところね。\n女：だって、どう見ても美しい女性にしか見えないんだもん。\n問：男の留学生が一番驚いたことは何だと言っていますか？",
+      "optionAnalysis": [
+        "不选「舞台にいろいろな装置があること」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「観客がかけ声をかけること」。符合题干的语义、搭配或上下文条件。",
+        "不选「着物がごうかできれいなこと」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「男性の俳優が女性役をすること」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "source_conflict",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE",
+          "SECONDARY_ANSWER_CONFLICT"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-076",
+      "year": 2025,
+      "month": 7,
+      "number": 76,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "底の部分の硬さ",
+        "生地の色の組み合わせ",
+        "生地の防水性",
+        "ひもを通す穴の位置"
+      ],
+      "answer": 0,
+      "audioUrl": "https://media.learnwithsubs.uk/m/1f70f4c3b3d6ce48.mp3",
+      "transcript": "男：部長、新商品のランニングシューズ、1回目の試作品が出来上がりました。\n男：説明資料はこちらです。\n女：靴の底は硬い方が反発性が高まってはやく走れるって調査結果から硬くしたいんですよね。\n女：触った感じは思ったより柔らかいですね。\n女：もう少し硬さを増したものでデータ取ってみましょうか？\n男：そうですね。\n男：生地の色の組み合わせはどうでしょうか？\n男：カラートレンドを意識しました。\n女：生地の色の組み合わせ、ちょっと派手ですね。\n女：まあ、目に留まっていいですけど、生地はずいぶん薄いですね。\n女：生地の防水加工は大丈夫ですか？\n男：強い雨には対応できませんが、小雨程度なら。\n男：説明資料に詳細を載せています。\n女：防水性を高めすぎると空気の通りが悪くなるし。\n女：これでいいとしましょう。\n女：靴の紐を通す穴がまっすぐに並んでませんけど、穴の位置をずらしてしっかり紐が結べるようになっているんですね。\n男：実験の結果、このような穴の位置になりました。\n男：これですと、紐が解けにくいです。\n女：分かりました。\n女：では、2回目の試作品の作成、お願いします。\n女：出来上がったら全体の会議に出してみましょう。\n男：はい。\n問：ランニングシューズの次の試作品では何を変えますか？",
+      "optionAnalysis": [
+        "正解「底の部分の硬さ」。符合题干的语义、搭配或上下文条件。",
+        "不选「生地の色の組み合わせ」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「生地の防水性」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「ひもを通す穴の位置」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-077",
+      "year": 2025,
+      "month": 7,
+      "number": 77,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "介護士の活動紹介",
+        "地域のお祭りへの参加",
+        "小学生との交流会",
+        "高校の介護体験の受け入れ"
+      ],
+      "answer": 3,
+      "audioUrl": "https://media.learnwithsubs.uk/m/784e475900a32de3.mp3",
+      "transcript": "−：私どもの介護施設は多くのお年寄りが利用されていて、地域に根ざした運営を心がけています。\n−：まず施設の雰囲気を知ってもらうために、インターネットで介護士の活動を紹介してきました。\n−：おかげさまで多くの反響をいただいております。\n−：また、毎年地域のお祭りにも参加しています。\n−：それから、近くの小学生が定期的に来てくれ交流会を行っています。\n−：若い人たちが施設に来ると、お年寄りの皆様にいい刺激になるようです。\n−：近隣の高校から介護体験を受け入れることも決まりました。\n−：これらの活動を通して、多くの人と施設の接点を今後も作っていきたいと思います。\n問：この施設では新しくどんな取り組みを始めると言っていますか？",
+      "optionAnalysis": [
+        "不选「介護士の活動紹介」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「地域のお祭りへの参加」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「小学生との交流会」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「高校の介護体験の受け入れ」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-078",
+      "year": 2025,
+      "month": 7,
+      "number": 78,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "audioUrl": "https://media.learnwithsubs.uk/m/f89d322f7f03500c.mp3",
+      "transcript": "−：こんにちは。\n−：ガイドの森田です。\n−：よろしくお願いします。\n−：えー、この自然公園では珍しい動物や植物に出会うことができます。\n−：特に冬の今の時期は木々の葉が落ちているので、野鳥を探しやすいです。\n−：散策しながら、野生の小鳥たちのさえずりに耳を傾けてみましょう。\n−：これから雑木林の中に整備された遊歩道を進みますが、双眼鏡がなくても肉眼で可愛い姿を見つけられます。\n−：種類を見分けるには羽や嘴がそれぞれ特徴的なので、様子眺めてみてください。\n−：運が良ければ保護の対象になっている貴重な野鳥にも巡り会えるかもしれません。\n問：ガイドは何について話していますか？\n1：1.野鳥の観察の楽しみ方\n2：2.自然公園で育つ植物\n3：3.自然公園を歩く時の注意点\n4：4.野鳥の保護の必要性",
+      "optionAnalysis": [
+        "正解「1」。符合题干的语义、搭配或上下文条件。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「3」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「4」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-079",
+      "year": 2025,
+      "month": 7,
+      "number": 79,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "audioUrl": "https://media.learnwithsubs.uk/m/f52b8c969e00ef34.mp3",
+      "transcript": "−：空飛ぶ車は新たな交通手段として期待されており、開発が進んでいます。\n−：デザインも各社競争が加速しています。\n−：ただ、都市部では墜落したら大きな被害につながると心配する人々もいます。\n−：しかし、一部の地方では鉄道もなくなり、交通手段の確保が問題になっていて、空飛ぶ車を求める声が多いんです。\n−：空飛ぶ車の普及で、点在する民家と医療機関や商業施設を結ぶことができれば、ずっと便利になるでしょう。\n問：講師は主に空飛ぶ車の何について話していますか？\n1：1.デザインの特徴\n2：2.技術開発の難しさ\n3：3.重大な事故の危険性\n4：4.地方での活用への期待",
+      "optionAnalysis": [
+        "不选「1」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「3」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「4」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-080",
+      "year": 2025,
+      "month": 7,
+      "number": 80,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "audioUrl": "https://media.learnwithsubs.uk/m/539748b9c538ac50.mp3",
+      "transcript": "−：醤油の主な原料は大豆と小麦、それから塩です。\n−：原料の配合、割合、作り方や熟成期間は作られる地方によって異なります。\n−：例えば、日本の南の地方では甘味料が入っている甘めのものが作られ、西の方では塩分が濃い、しょっぱいものが作られています。\n−：それぞれの地方の風土や嗜好などに深く根ざし、様々な味が生まれます。\n−：どこの醤油を用いるかで、料理の味も様々に変わります。\n−：いろんな醤油を試してみてください。\n問：料理研究家は何について話していますか？\n1：1.醤油の作り方\n2：2.醤油の製造に適した地方\n3：3.地方によって異なる醤油の味\n4：4.醤油の上手な選び方",
+      "optionAnalysis": [
+        "不选「1」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「3」。符合题干的语义、搭配或上下文条件。",
+        "不选「4」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-081",
+      "year": 2025,
+      "month": 7,
+      "number": 81,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "audioUrl": "https://media.learnwithsubs.uk/m/11d38be9776b6d86.mp3",
+      "transcript": "女：今日は家具職人の山下さんにお話を伺います。\n男：山下です。\n男：私は家具を手作りで作っています。\n男：木材は時間が経つにつれて変化するので、木の家具は年月が経つと色や質感にいい味が出てくるんです。\n男：私は木材それぞれの特徴を常々勉強し、木材の変化を見越して、最適なものを選ぶことが大切だと思っています。\n男：数十年後の色に深みが増し、木目が様々な美しい模様に変化する姿をイメージし、一つ一つ作っています。\n問：家具を作る職人は何について話していますか？\n1：1.家具職人としてのこだわり\n2：2.家具に使用される木の種類\n3：3.木の家具の手入れの仕方\n4：4.家具職人の大変さ",
+      "optionAnalysis": [
+        "正解「1」。符合题干的语义、搭配或上下文条件。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「3」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「4」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-082",
+      "year": 2025,
+      "month": 7,
+      "number": 82,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "audioUrl": "https://media.learnwithsubs.uk/m/e78e33f514db3b4f.mp3",
+      "transcript": "−：公衆電話の数は携帯電話の普及に伴い、減少する一方です。\n−：このまますっかり消えてしまうのでしょうか？\n−：実は公衆電話は一定区域に一つは設置するよう、国の規則で決められています。\n−：というのも公衆電話は災害時の最も有効な通信手段だからです。\n−：停電時であっても使用可能で電話回線が混み合っても、通信制限の対象になりません。\n−：このようなことから一定数設置されています。\n問：専門家は何について話していますか？\n1：1.今後の公衆電話に必要な機能\n2：2.災害時の公衆電話をかけ方\n3：3.公衆電話を利用する時の注意\n4：4.公衆電話が完全になくならない理由",
+      "optionAnalysis": [
+        "不选「1」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「3」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「4」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-083",
+      "year": 2025,
+      "month": 7,
+      "number": 83,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audioUrl": "https://media.learnwithsubs.uk/m/4802f75994675b75.mp3",
+      "transcript": "問：営業部の伊藤さんと原田さん、この頃ギクシャクしてない？\n−：1.コミュニケーションがうまく取れてるんだね。\n−：2.2人、気が合っていいね。\n−：3.会議で言い合いになってたんだよ。",
+      "optionAnalysis": [
+        "不选「1」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「3」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-084",
+      "year": 2025,
+      "month": 7,
+      "number": 84,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audioUrl": "https://media.learnwithsubs.uk/m/34e06744b047345b.mp3",
+      "transcript": "問：日曜日に引っ越すんだって？\n−：土曜日なら手伝えたんだけど。\n−：1.人は足りてるから大丈夫だよ。\n−：2.じゃあ。日曜日待ってるね。\n−：3.日曜日に手伝ってくれるの？",
+      "optionAnalysis": [
+        "正解「1」。符合题干的语义、搭配或上下文条件。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「3」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-085",
+      "year": 2025,
+      "month": 7,
+      "number": 85,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audioUrl": "https://media.learnwithsubs.uk/m/e3412a3f8f1dceb9.mp3",
+      "transcript": "問：小野さん、会議で出すペットボトルのお茶、切らしてますよ。\n−：1.お茶足りて良かったですね。\n−：2.古いものは捨てておきます。\n−：3.あ、全然ありませんか？すぐ注文します。",
+      "optionAnalysis": [
+        "不选「1」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「3」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-086",
+      "year": 2025,
+      "month": 7,
+      "number": 86,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audioUrl": "https://media.learnwithsubs.uk/m/d7e64c7ea6ffd5f9.mp3",
+      "transcript": "問：今年から営業部に移動したんですけど、一向に慣れないんですよ。\n−：1.そのうち慣れますよ。\n−：2.慣れるの早いですね。\n−：3.少し慣れてきたんですね。",
+      "optionAnalysis": [
+        "正解「1」。符合题干的语义、搭配或上下文条件。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「3」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-087",
+      "year": 2025,
+      "month": 7,
+      "number": 87,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audioUrl": "https://media.learnwithsubs.uk/m/7ff4f79c3153aefe.mp3",
+      "transcript": "問：さっき先輩が体育館に入ってくるなり出てっちゃったよ。\n−：1.すぐに？どうしたんだろうね。\n−：2.しばらくは体育館にいたんだね。\n−：3.体育館に入って来なかったの？",
+      "optionAnalysis": [
+        "正解「1」。符合题干的语义、搭配或上下文条件。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「3」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-088",
+      "year": 2025,
+      "month": 7,
+      "number": 88,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audioUrl": "https://media.learnwithsubs.uk/m/1bec11693bc514a9.mp3",
+      "transcript": "問：工事の報告ですが。\n−：スケジュールの遅れに天候不良の影響はありません。\n−：1.困りましたね。すぐに対策を考えないとね。\n−：2.全く問題ないんですね。それは安心しました。\n−：3.スケジュールにちょっと遅れが出てるんですね。",
+      "optionAnalysis": [
+        "不选「1」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「2」。符合题干的语义、搭配或上下文条件。",
+        "不选「3」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-089",
+      "year": 2025,
+      "month": 7,
+      "number": 89,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audioUrl": "https://media.learnwithsubs.uk/m/d6fa12bac48323a0.mp3",
+      "transcript": "問：阿部さん、先月のプロジェクト、山田さんがいなければ失敗してたと思いませんか？\n−：1.残念だけど。仕方ないですね。\n−：2.山田さんがいてくれたらよかったですね。\n−：3.本当、山田さんのおかげですね。",
+      "optionAnalysis": [
+        "不选「1」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「3」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-090",
+      "year": 2025,
+      "month": 7,
+      "number": 90,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audioUrl": "https://media.learnwithsubs.uk/m/85cf7bec1bcb027e.mp3",
+      "transcript": "問：ねー、森さん、本田さんがまくらを変えたら、いびきを一切かかなくなったんだって。\n−：1.やっぱりまくらを変えたくらいじゃ変わらないんだ。\n−：2.いびきは小さくなったの？\n−：3.まくらでそんなに違うんだ。",
+      "optionAnalysis": [
+        "不选「1」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「3」。符合题干的语义、搭配或上下文条件。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-091",
+      "year": 2025,
+      "month": 7,
+      "number": 91,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audioUrl": "https://media.learnwithsubs.uk/m/27717dcfcd88e726.mp3",
+      "transcript": "問：免許とか資格は仕事で使えてこそだと思わない？\n−：1.仕事で役に立つものがいいね。\n−：2.資格なら何でもいいって話？\n−：3.仕事で使えなくてもいいんだ。",
+      "optionAnalysis": [
+        "正解「1」。符合题干的语义、搭配或上下文条件。",
+        "不选「2」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「3」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-092",
+      "year": 2025,
+      "month": 7,
+      "number": 92,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audioUrl": "https://media.learnwithsubs.uk/m/b613f3f62b5f99f7.mp3",
+      "transcript": "問：青葉食品って、昔ながらの方法で味噌を作ってるんだって。\n−：1.昔とは違う方法で作ってるんだね。\n−：2.ヘー、昔からずっと変わらないんだ。\n−：3.最新の技術を導入してるなんて、すごいね。",
+      "optionAnalysis": [
+        "不选「1」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「2」。符合题干的语义、搭配或上下文条件。",
+        "不选「3」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-093",
+      "year": 2025,
+      "month": 7,
+      "number": 93,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audioUrl": "https://media.learnwithsubs.uk/m/f2ff4d1f8ce17327.mp3",
+      "transcript": "問：うちの課に新しく入った野田さんを見てると、手伝わないではいられないんですよ。\n−：1.何もサポートの必要がないんですね。\n−：2.つい手伝いたくなっちゃいますよね。\n−：3.もう1人でできるようになったんですね。",
+      "optionAnalysis": [
+        "不选「1」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「2」。符合题干的语义、搭配或上下文条件。",
+        "不选「3」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-094",
+      "year": 2025,
+      "month": 7,
+      "number": 94,
+      "type": "聴解",
+      "question": "听录音后，选择最合适的答案。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "audioUrl": "https://media.learnwithsubs.uk/m/1b9f400f764652a6.mp3",
+      "transcript": "女1：毎年恒例の夏の若葉山ハイキング、いつも行っている5番コースが今年は整備中で使えないんだよね。\n女1：他に4つコースがあるけど、今年はどのコースにしようか。\n女1：2人は何度も行ってるから詳しいよね？\n女2：参加者はいつも20人ぐらいですよね？\n女2：今年も同じぐらいでしょうか。\n女1：うん、初めて参加する人もいると思うからそれも考慮しないとね。\n女2：いつものコースが使えないなら、1番コースがいいんじゃないんですか？\n女2：道の幅が広いし、傾斜も比較的緩いから、初めての人にもいいと思います。\n男：あそこは歩きやすくて人気のコースだから混雑することが多いですよ。\n女2：じゃ、2番コースはどうですか？\n女2：所要時間が長いから人はあまり多くないですよね？\n女2：道もなだらかだし、みんなでおしゃべりしながら歩けると思います。\n男：うーん、僕は渓流に沿った3番コースが景色が楽しめていいと思うんですけど、小さい滝も見られますし、途中、急なところはありますが。\n女1：そっか。\n男：それか4番コースはどうでしょうか。\n男：道があまり整備されてなくて歩きにくいですが、きれいな林が続いてて気持ちがいいですよ。\n女2：初めて参加する人も多いから歩きやすいコースのほうがいいかと。\n女1：そうだね。\n女1：今回は交流が1番の目的だからみんなでゆっくり話しながら歩けるコースで、混まないほうにしよう。\n女1：景色のいいコースは次の機会に行けたらいいね。\n問：今年のハイキングはどのコースにしますか。\n1：1.1番コース\n2：2.2番コース\n3：3.3番コース\n4：4.4番コース",
+      "optionAnalysis": [
+        "不选「1」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「2」。符合题干的语义、搭配或上下文条件。",
+        "不选「3」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「4」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-095",
+      "year": 2025,
+      "month": 7,
+      "number": 95,
+      "type": "聴解",
+      "question": "質問1　男の人は何番の香水にすると言っていますか。",
+      "options": [
+        "1番",
+        "2番",
+        "3番",
+        "4番"
+      ],
+      "answer": 2,
+      "audioUrl": "https://media.learnwithsubs.uk/m/f3a85dfea1852f31.mp3",
+      "transcript": "女1：本日は皆さんに香水作りを体験していただきます。\n女1：前のテーブルに先ほど嗅いでいただいた香水が4種類置いてあります。\n女1：この中から一つ、好きな香りを選んで作っていただきますが、改めて各香水についてご説明します。\n女1：1番の香水はレモンのような果物系の香りです。\n女1：どなたにも好まれる香りです。\n女1：2番は夏にぴったりの爽やかなハーブの香りです。\n女1：つけているとスッキリした気分になれます。\n女1：3番はスパイスのような刺激的で独特な香りです。\n女1：4番は甘い花の香りの香水です。\n女1：優しい印象を演出してくれます。\n女1：では、選んだ方からこちらに材料を取りに来てください。\n女2：どれもいい香りだったね。\n女2：どれにする?\n男：うん、スパイスみたいな香りかフルーツの香りかで迷うな。\n男：でもフルーツの香りが好きで普段から使っているんだよね。\n男：それにしようかな。\n女2：私は、気分がスッキリっていうのにする。\n女2：甘い香りのも良かつたけど、同じようなの持ってるから。\n男：そうか。\n男：やっぱり僕もいつも使っているのと違うほうにするよ。\n女2：じゃ、材料をもらいに行こう。\n問1：男の人は何番の香水にすると言っていますか。\n問2：女の人は何番の香水にすると言っていますか。",
+      "optionAnalysis": [
+        "不选「1番」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「2番」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「3番」。符合题干的语义、搭配或上下文条件。",
+        "不选「4番」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    },
+    {
+      "id": "2025-07-096",
+      "year": 2025,
+      "month": 7,
+      "number": 96,
+      "type": "聴解",
+      "question": "質問2　女の人は何番の香水にすると言っていますか。",
+      "options": [
+        "1番",
+        "2番",
+        "3番",
+        "4番"
+      ],
+      "answer": 1,
+      "audioUrl": "https://media.learnwithsubs.uk/m/f3a85dfea1852f31.mp3",
+      "transcript": "女1：本日は皆さんに香水作りを体験していただきます。\n女1：前のテーブルに先ほど嗅いでいただいた香水が4種類置いてあります。\n女1：この中から一つ、好きな香りを選んで作っていただきますが、改めて各香水についてご説明します。\n女1：1番の香水はレモンのような果物系の香りです。\n女1：どなたにも好まれる香りです。\n女1：2番は夏にぴったりの爽やかなハーブの香りです。\n女1：つけているとスッキリした気分になれます。\n女1：3番はスパイスのような刺激的で独特な香りです。\n女1：4番は甘い花の香りの香水です。\n女1：優しい印象を演出してくれます。\n女1：では、選んだ方からこちらに材料を取りに来てください。\n女2：どれもいい香りだったね。\n女2：どれにする?\n男：うん、スパイスみたいな香りかフルーツの香りかで迷うな。\n男：でもフルーツの香りが好きで普段から使っているんだよね。\n男：それにしようかな。\n女2：私は、気分がスッキリっていうのにする。\n女2：甘い香りのも良かつたけど、同じようなの持ってるから。\n男：そうか。\n男：やっぱり僕もいつも使っているのと違うほうにするよ。\n女2：じゃ、材料をもらいに行こう。\n問1：男の人は何番の香水にすると言っていますか。\n問2：女の人は何番の香水にすると言っていますか。",
+      "optionAnalysis": [
+        "不选「1番」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "正解「2番」。符合题干的语义、搭配或上下文条件。",
+        "不选「3番」。与正确项相比，语义、搭配、接续或上下文条件不符。",
+        "不选「4番」。与正确项相比，语义、搭配、接续或上下文条件不符。"
+      ],
+      "evidence": {
+        "question": {
+          "source": "https://learnwithsubs.uk/en/jlpt/n1/2025-07/listening"
+        },
+        "answer": {
+          "source": "https://sjds.net/606795.html cross-checked against page correct marker"
+        },
+        "explanation": {
+          "source": "LearnWithSubs option analysis; fallback analysis added where absent"
+        }
+      },
+      "verification": {
+        "aExtracted": true,
+        "bExtracted": true,
+        "cChecked": true,
+        "status": "verified",
+        "flags": [
+          "NON_OFFICIAL_RECONSTRUCTION",
+          "NATIVE_HTML_SOURCE"
+        ]
+      }
+    }
+  ],
+  "verificationSummary": {
+    "included": 96,
+    "nativeHtmlSource": 96,
+    "answerCrossChecked": 91,
+    "answerMismatches": [
+      {
+        "number": 36,
+        "pageAnswer": 3,
+        "referenceAnswer": 2
+      },
+      {
+        "number": 46,
+        "pageAnswer": 1,
+        "referenceAnswer": 4
+      },
+      {
+        "number": 49,
+        "pageAnswer": 2,
+        "referenceAnswer": 3
+      },
+      {
+        "number": 62,
+        "pageAnswer": 1,
+        "referenceAnswer": 4
+      },
+      {
+        "number": 75,
+        "pageAnswer": 2,
+        "referenceAnswer": 4
+      }
+    ],
+    "listeningAudio": 30
+  }
+}

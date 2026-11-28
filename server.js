@@ -108,6 +108,7 @@ function applySecurityHeaders(res) {
     "form-action 'self'",
     "frame-ancestors 'self'",
     "img-src 'self' data:",
+    "media-src 'self' https://jpnihon.com https://media.learnwithsubs.uk",
     "object-src 'none'",
     "script-src 'self' 'wasm-unsafe-eval'",
     "worker-src 'self' blob:",
@@ -638,6 +639,56 @@ const server = http.createServer(async (req, res) => {
         send(res, 502, JSON.stringify({ error: error.message }), 'application/json; charset=utf-8');
       }
       return;
+    }
+
+    if (pathname === '/api/n1-media/2022-07/q74.png') {
+      if (!['GET', 'HEAD'].includes(req.method || '')) return sendJson(res, 405, { error: 'METHOD_NOT_ALLOWED' });
+      try {
+        const upstream = await fetch('https://media.learnwithsubs.uk/m/89919893c94d9db6.png', {
+          method: req.method,
+          headers: { 'User-Agent': 'Tsumori-N1-Media/1.0' }
+        });
+        if (!upstream.ok) return send(res, 502, `Image upstream returned HTTP ${upstream.status}`);
+        const body = req.method === 'HEAD' ? null : Buffer.from(await upstream.arrayBuffer());
+        const responseHeaders = {
+          'Content-Type': upstream.headers.get('content-type') || 'image/png',
+          'Cache-Control': 'public, max-age=86400'
+        };
+        const contentLength = upstream.headers.get('content-length');
+        if (contentLength) responseHeaders['Content-Length'] = contentLength;
+        res.writeHead(200, responseHeaders);
+        return body ? res.end(body) : res.end();
+      } catch (error) {
+        console.error('[N1 media proxy] failed:', error.message);
+        return send(res, 502, 'Question image is temporarily unavailable');
+      }
+    }
+
+    const n1AudioMatch = pathname.match(/^\/api\/n1-audio\/2022-07\/([1-5]\d{1,2})\.mp3$/);
+    if (n1AudioMatch) {
+      if (!['GET', 'HEAD'].includes(req.method || '')) return sendJson(res, 405, { error: 'METHOD_NOT_ALLOWED' });
+      const upstreamUrl = `https://jpnihon.com/mp3/jlptn1tyoukai/2022/7/${n1AudioMatch[1]}.mp3`;
+      try {
+        const headers = { 'User-Agent': 'Tsumori-N1-Audio/1.0' };
+        if (req.headers.range) headers.Range = String(req.headers.range);
+        const upstream = await fetch(upstreamUrl, { method: req.method, headers });
+        if (!upstream.ok && upstream.status !== 206) return send(res, 502, `Audio upstream returned HTTP ${upstream.status}`);
+        const body = req.method === 'HEAD' ? null : Buffer.from(await upstream.arrayBuffer());
+        const responseHeaders = {
+          'Content-Type': upstream.headers.get('content-type') || 'audio/mpeg',
+          'Accept-Ranges': 'bytes',
+          'Cache-Control': 'public, max-age=86400'
+        };
+        ['content-length', 'content-range', 'etag', 'last-modified'].forEach(name => {
+          const value = upstream.headers.get(name);
+          if (value) responseHeaders[name] = value;
+        });
+        res.writeHead(upstream.status, responseHeaders);
+        return body ? res.end(body) : res.end();
+      } catch (error) {
+        console.error('[N1 audio proxy] failed:', error.message);
+        return send(res, 502, 'Audio is temporarily unavailable');
+      }
     }
 
     const relativePath = pathname === '/' ? 'index.html' : pathname.replace(/^\/+/, '');

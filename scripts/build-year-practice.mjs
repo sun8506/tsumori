@@ -12,7 +12,7 @@ const classify = (number, audioUrl) => {
   if (number <= 25) return '言葉の用法';
   if (number <= 35) return '文の文法';
   if (number <= 40) return '文の組み立て';
-  if (number <= 45) return '文章の文法';
+  if (number <= 44) return '文章の文法';
   return '読解';
 };
 const segments = html.split(/<div class='step[^']*'\s*(?=data-question-id)/).slice(1);
@@ -56,6 +56,13 @@ for (const segment of segments) {
   }
 }
 if (questions.length < 25) throw new Error(`only ${questions.length} questions parsed`);
+const clozeQuestions = questions.filter(question => question.type === '文章の文法');
+const clozePassage = clozeQuestions.find(question => question.question.length > 80)?.question;
+if (clozePassage) {
+  for (const question of clozeQuestions) {
+    if (question.question.length <= 12) question.question = clozePassage;
+  }
+}
 const output = { dataset: `JLPT N1 ${session} sequential single-choice practice`, status: 'verified_reconstruction', mode: 'sequential_single_choice_practice', year: Number(session.slice(0, 4)), month: Number(session.slice(5, 7)), questions, verificationSummary: { included: questions.length } };
 fs.writeFileSync(`n1-training/data/practice-${session}.json`, `${JSON.stringify(output, null, 2)}\n`);
 const counts = questions.reduce((all, question) => ({ ...all, [question.type]: (all[question.type] || 0) + 1 }), {});
