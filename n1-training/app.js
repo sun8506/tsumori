@@ -18,6 +18,27 @@ modeConfig.practice202507={path:'./data/practice-2025-07.json',crumb:'N1 / 2025�
 modeConfig.practice202512={path:'./data/practice-2025-12.json',crumb:'N1 / 2025年12月',title:'2025年12月完整训练'};
 const progressKey=(progressMode=mode)=>`n1-training-progress-${progressMode}`;
 const isPersistentPractice=()=>dataset?.mode==='sequential_single_choice_practice';
+const sectionLabels={'漢字の読み方':'汉字读音','文脈規定':'语境选词','文脈に合う語':'语境选词','言い換え類義':'近义替换','意味の近い語':'近义替换','言葉の用法':'词语用法','用法':'词语用法','文の文法':'语法选择','文の組み立て':'句子排序','文章の文法':'文章语法','読解':'阅读','聴解':'听力'};
+function practiceSections(){
+  return questions.reduce((sections,question,index)=>{
+    const previous=sections.at(-1);
+    if(previous?.type===question.type){previous.end=index;return sections}
+    sections.push({type:question.type,label:sectionLabels[question.type]||question.type,start:index,end:index});
+    return sections;
+  },[]);
+}
+function renderStatsUtility(){
+  const utility=$('#statsUtility');
+  if(!isPersistentPractice()){
+    utility.innerHTML='<div class="bar" aria-label="本轮作答进度"><i id="progressBar"></i></div>';
+    $('#progressBar').style.width=(answered/questions.length*100)+'%';
+    return;
+  }
+  const sections=practiceSections();
+  const active=sections.findIndex(section=>current>=section.start&&current<=section.end);
+  utility.innerHTML=`<label class="question-locator"><span>快速定位</span><select id="questionLocator" aria-label="快速定位到大题">${sections.map((section,index)=>`<option value="${section.start}" ${index===active?'selected':''}>${esc(section.label)} · 第${questions[section.start].number}–${questions[section.end].number}题</option>`).join('')}</select></label>`;
+  $('#questionLocator').onchange=event=>{current=+event.target.value;saveProgress();render();$('#questionPanel').scrollIntoView({block:'start',behavior:'smooth'})};
+}
 function saveProgress(){
   if(!isPersistentPractice())return;
   localStorage.setItem(progressKey(),JSON.stringify({version:1,current,responses:[...roundResponses],updatedAt:new Date().toISOString()}));
@@ -70,6 +91,17 @@ function practiceQuestionHtml(q){
   return esc(passage).replace(marker,match=>`<mark class="question-target">${match}</mark>`);
 }
 
+function practiceReference(q){
+  if(!q.passage&&!q.referenceQuestion)return null;
+  const question=q.referenceQuestion||q.question;
+  const splitAt=q.referenceQuestion?q.question.lastIndexOf(q.referenceQuestion):-1;
+  const rawPassage=q.passage||(splitAt>0?q.question.slice(0,splitAt).trim():'');
+  const firstLine=rawPassage.split('\n')[0];
+  const title=q.passageTitle||firstLine||'阅读资料';
+  const passage=rawPassage.startsWith(title)?rawPassage.slice(title.length).trimStart():rawPassage;
+  return {title,passage,question};
+}
+
 function audioLoopControl(){
   return `<label class="audio-loop-control">循环 <select class="audio-loop-count" aria-label="音频循环次数"><option value="1">关闭</option><option value="3">3 次</option><option value="5">5 次</option><option value="10">10 次</option></select></label>`;
 }
@@ -109,7 +141,7 @@ function render(){
   $('#total').textContent=questions.length; $('#answered').textContent=answered;
   $('#accuracy').textContent=answered?Math.round(correct/answered*100)+'%':'—';
   $('#reviewCount').textContent=mistakes.length; $('#mistakeCount').textContent=mistakes.length;
-  $('#streakValue').textContent=answered; $('#progressBar').style.width=(answered/questions.length*100)+'%';
+  $('#streakValue').textContent=answered; renderStatsUtility();
   const verified=q.verification?.status==='verified';
   if(q.interaction==='ordering')renderOrderingQuestion(q,verified);
   else if(q.interaction==='cloze')renderClozeQuestion(q,verified);
@@ -117,7 +149,8 @@ function render(){
   else if(mode==='shortReading'||mode==='mediumReading'||mode==='longReading')renderShortReadingQuestion(q,verified);
   else{
     const isPracticePassage=dataset?.mode==='sequential_single_choice_practice'&&q.type==='文章の文法';
-    $('#questionPanel').innerHTML=`<div class="question-meta"><span>${String(current+1).padStart(2,'0')} / ${String(questions.length).padStart(2,'0')}</span><span><span class="verify-badge ${verified?'verified':''}">${verified?'已核对':'待核对'}</span><span class="tag">${esc(q.type)}</span></span></div>${q.audioUrl?`<div class="listening-player"><div class="audio-track"><span>第 ${q.number} 题音频</span><audio controls preload="metadata" src="${esc(audioSource(q.audioUrl))}"></audio></div><div class="audio-shortcuts">${audioLoopControl()}</div><output class="seek-status" aria-live="polite"></output></div>`:''}${transcriptDisclosure(q)}${q.imageUrl?`<figure class="practice-question-visual"><img src="${esc(q.imageUrl)}" alt="${esc(q.imageAlt||'题目配图')}" loading="eager"></figure>`:''}<div class="question-text${isPracticePassage?' practice-passage':''}">${practiceQuestionHtml(q).replaceAll('\n','<br>')}</div><div class="options">${q.options.map((o,i)=>`<button class="option" data-i="${i}"><span class="num">${q.audioUrl?i+1:String.fromCharCode(65+i)}</span>${esc(o)}</button>`).join('')}</div><div class="next-row"><span class="source">来源：${sourceLabel(q)}</span><button class="primary skip-ready" id="nextBtn">跳过此题</button></div>`;
+    const reference=practiceReference(q);
+    $('#questionPanel').innerHTML=`<div class="question-meta"><span>${String(current+1).padStart(2,'0')} / ${String(questions.length).padStart(2,'0')}</span><span><span class="verify-badge ${verified?'verified':''}">${verified?'已核对':'待核对'}</span><span class="tag">${esc(q.type)}</span></span></div>${q.audioUrl?`<div class="listening-player"><div class="audio-track"><span>第 ${q.number} 题音频</span><audio controls preload="metadata" src="${esc(audioSource(q.audioUrl))}"></audio></div><div class="audio-shortcuts">${audioLoopControl()}</div><output class="seek-status" aria-live="polite"></output></div>`:''}${transcriptDisclosure(q)}${q.imageUrl?`<figure class="practice-question-visual"><img src="${esc(q.imageUrl)}" alt="${esc(q.imageAlt||'题目配图')}" loading="eager"></figure>`:''}${reference?`<article class="reading-card practice-reference"><h3>${esc(reference.title)}</h3><div class="reading-passage">${esc(reference.passage).replaceAll('\n','<br>')}</div></article>`:''}<div class="question-text${isPracticePassage?' practice-passage':''}">${reference?esc(reference.question):practiceQuestionHtml(q).replaceAll('\n','<br>')}</div><div class="options">${q.options.map((o,i)=>`<button class="option" data-i="${i}"><span class="num">${q.audioUrl?i+1:String.fromCharCode(65+i)}</span>${esc(o)}</button>`).join('')}</div><div class="next-row"><span class="source">来源：${sourceLabel(q)}</span><button class="primary skip-ready" id="nextBtn">跳过此题</button></div>`;
     if(q.audioUrl)bindAudioLoop([...document.querySelectorAll('audio')],document.querySelector('.seek-status'));
     document.querySelectorAll('.option').forEach(b=>b.onclick=()=>choose(+b.dataset.i)); $('#nextBtn').onclick=next;
   }

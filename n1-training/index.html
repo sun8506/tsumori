@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>N1 真题突击</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20261128-2" />
   </head>
   <body>
     <main class="shell">
@@ -27,7 +27,7 @@
             <div class="streak"><span>连续训练</span><strong id="streakValue">0</strong><small>题</small></div>
           </section>
 
-          <section class="stats"><div><span>本轮进度</span><strong><b id="answered">0</b> / <span id="total">0</span></strong></div><div><span>正确率</span><strong id="accuracy">—</strong></div><div><span>待复习</span><strong id="reviewCount">0</strong></div><div class="bar"><i id="progressBar"></i></div></section>
+          <section class="stats"><div><span>本轮进度</span><strong><b id="answered">0</b> / <span id="total">0</span></strong></div><div><span>正确率</span><strong id="accuracy">—</strong></div><div><span>待复习</span><strong id="reviewCount">0</strong></div><div class="stats-utility" id="statsUtility"><div class="bar"><i id="progressBar"></i></div></div></section>
 
           <section class="question-panel" id="questionPanel"></section>
         </div>
@@ -36,6 +36,6 @@
         <div id="bankView" class="view hidden"><div class="section-heading"><div><p class="eyebrow">数据结构</p><h2>题库管理</h2></div></div><div class="import-box"><div class="import-icon">＋</div><div><h3>按统一格式加入题目</h3><p>后续可把人工整理/OCR 的题目追加到 <code>questions.json</code>，原题年份与 PDF 页码会始终保留。</p></div><pre>[ { "year": 2018, "month": 7, "type": "汉字读音", "question": "...", "options": [], "answer": 0, "explanation": "...", "source": "2018年7月 p.2" } ]</pre></div></div>
       </section>
     </main>
-    <script src="./app.js?v=20261128-9"></script>
+    <script src="./app.js?v=20261128-12"></script>
   </body>
 </html>
